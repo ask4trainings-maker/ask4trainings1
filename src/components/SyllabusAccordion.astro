@@ -1,0 +1,28 @@
+---
+export interface Props {
+  syllabus: {
+    module: string;
+    topics: string[];
+  }[];
+}
+const { syllabus } = Astro.props;
+---
+<div class="space-y-4">
+  {syllabus.map((item) => (
+    <details class="group bg-surface-0 border border-border rounded-lg overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+      <summary class="flex items-center justify-between p-4 cursor-pointer hover:bg-surface-50 transition-colors font-heading font-semibold text-ink-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset">
+        <span class="pr-4">{item.module}</span>
+        <span class="text-primary transition-transform duration-200 group-open:rotate-180 flex-shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </span>
+      </summary>
+      <div class="p-4 pt-0 border-t border-border bg-surface-50">
+        <ul class="list-disc list-inside text-ink-700 space-y-2 mt-4 text-sm md:text-base">
+          {item.topics.map(topic => <li>{topic}</li>)}
+        </ul>
+      </div>
+    </details>
+  ))}
+</div>

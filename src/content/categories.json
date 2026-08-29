@@ -1,0 +1,57 @@
+{
+  "guidewire": {
+    "label": "Guidewire",
+    "intro": "Master Guidewire PolicyCenter, BillingCenter, and ClaimCenter with our industry-leading training programs. Learn from certified experts and get hands-on experience with real-world scenarios.\n\nOur curriculum is designed to meet current market demands and prepare you for Guidewire certification.",
+    "careerOpportunities": "Guidewire developers and business analysts are in high demand across global insurance carriers, offering lucrative salaries and excellent career growth."
+  },
+  "siemens": {
+    "label": "Siemens",
+    "intro": "Comprehensive Siemens Teamcenter PLM and AWC training. Learn to manage complex product data and processes across the entire lifecycle.\n\nGain the skills needed to implement and customize Teamcenter solutions for enterprise environments.",
+    "careerOpportunities": "PLM consultants and developers are highly sought after in manufacturing, automotive, and aerospace industries."
+  },
+  "new-courses": {
+    "label": "New Courses",
+    "intro": "Stay ahead of the curve with our latest training offerings in Palantir Foundry, Kinaxis, Camstar, and Polarion.\n\nWe constantly update our curriculum to include emerging enterprise technologies.",
+    "careerOpportunities": "Early adopters of these niche enterprise tools command premium rates in the consulting market."
+  },
+  "cloud-computing": {
+    "label": "Cloud Computing",
+    "intro": "Build a robust foundation in cloud architecture with our AWS, Azure, GCP, Snowflake, and OCI courses.\n\nLearn to design, deploy, and manage scalable cloud infrastructure.",
+    "careerOpportunities": "Cloud engineers and architects are consistently among the highest-paid IT professionals globally."
+  },
+  "oracle": {
+    "label": "Oracle",
+    "intro": "Expert-led training in Oracle Fusion Financials, HCM, SCM, and Technical modules.\n\nMaster enterprise resource planning and implementation best practices.",
+    "careerOpportunities": "Oracle Fusion consultants enjoy global opportunities across diverse industry verticals."
+  },
+  "devops": {
+    "label": "DevOps",
+    "intro": "Master modern CI/CD pipelines, Kubernetes, Docker, and Terraform.\n\nLearn to bridge the gap between development and operations for faster software delivery.",
+    "careerOpportunities": "DevOps engineers are essential to modern software teams, offering excellent job security and compensation."
+  },
+  "development": {
+    "label": "Development",
+    "intro": "Comprehensive Full Stack development training in Python, Java, and MERN stack.\n\nBuild responsive, scalable web applications from front to back.",
+    "careerOpportunities": "Full stack developers have the versatility to work in startups, product companies, or as independent consultants."
+  },
+  "ms-d365": {
+    "label": "MS D365",
+    "intro": "In-depth Microsoft Dynamics 365 Finance & Operations and CRM training.\n\nLearn to implement and customize Microsoft's flagship enterprise solutions.",
+    "careerOpportunities": "Dynamics 365 professionals are in high demand as organizations migrate to cloud-based ERP solutions."
+  },
+  "sap": {
+    "label": "SAP",
+    "intro": "Extensive SAP module training including FICO, MM, SD, PP, ABAP, and more.\n\nLearn from industry veterans and prepare for SAP global certification.",
+    "careerOpportunities": "SAP consultants remain the backbone of enterprise IT, with abundant global opportunities."
+  },
+  "trending-courses": {
+    "label": "Trending Courses",
+    "intro": "Master today's most sought-after platforms including Salesforce and ServiceNow.\n\nGet specialized training in specific modules and industry clouds.",
+    "careerOpportunities": "Salesforce and ServiceNow professionals enjoy some of the most dynamic and fastest-growing career paths in tech."
+  },
+  "other-tools": {
+    "label": "Other Tools",
+    "intro": "Specialized training in SailPoint IdentityIQ, PTC Windchill, Workday, and Duck Creek.\n\nDevelop niche skills that set you apart in the job market.",
+    "careerOpportunities": "Specialists in these tools often face less competition and command higher consulting rates."
+  }
+}

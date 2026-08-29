@@ -1,0 +1,26 @@
+---
+import categoriesData from '../content/categories.json';
+
+const categories = Object.keys(categoriesData).map(key => ({
+  key,
+  label: (categoriesData as any)[key].label
+}));
+---
+<div class="group relative">
+  <button class="font-medium text-ink-700 hover:text-primary transition-colors flex items-center gap-1 py-4" aria-expanded="false" aria-haspopup="true">
+    All Courses
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg>
+  </button>
+  
+  <div class="absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-surface-0 shadow-xl border border-border rounded-lg opacity-0 scale-95 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:pointer-events-auto focus-within:opacity-100 focus-within:scale-100 focus-within:pointer-events-auto transition-all duration-150 ease-out z-50">
+    <div class="p-6 grid grid-cols-3 gap-4">
+      {categories.map(cat => (
+        <a href={`/courses/${cat.key}`} class="block p-3 rounded-lg hover:bg-surface-50 group/item transition-colors">
+          <span class="block font-heading font-semibold text-ink-900 group-hover/item:text-primary transition-colors">{cat.label}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>

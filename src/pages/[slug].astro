@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import CourseLayout from '../layouts/CourseLayout.astro';
+
+export async function getStaticPaths() {
+  const courses = await getCollection('courses');
+  return courses.map(course => ({
+    params: { slug: course.data.slug }, // root-flat URL as defined in schema
+    props: { course },
+  }));
+}
+
+const { course } = Astro.props;
+const { Content } = await render(course);
+---
+<CourseLayout 
+  title={course.data.title}
+  category={course.data.category}
+  duration={course.data.batchInfo.duration}
+  format={course.data.batchInfo.format}
+  valueProp={course.data.valueProp}
+  syllabus={course.data.syllabus}
+>
+  <Content />
+</CourseLayout>

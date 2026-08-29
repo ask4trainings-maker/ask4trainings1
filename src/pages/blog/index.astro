@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('blog');
+const sortedPosts = allPosts.sort((a, b) => b.data.publishDate.getTime() - a.data.publishDate.getTime());
+---
+<BaseLayout title="Blog & Career Guides | Ask 4 Trainings">
+  <div class="bg-surface-50 border-b border-border py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-ink-900 mb-4">Career Guides & Insights</h1>
+      <p class="text-lg text-ink-700 max-w-2xl mx-auto">Stay updated with the latest trends in enterprise IT and career development.</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-16 max-w-5xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {sortedPosts.map(post => (
+        <a href={`/blog/${post.id}`} class="block bg-surface-0 border border-border rounded-lg p-6 hover:-translate-y-1 hover:shadow-lg transition-all duration-200 flex flex-col h-full">
+          <span class="text-xs font-bold text-primary uppercase tracking-wider mb-2 block">{post.data.category}</span>
+          <h2 class="text-2xl font-heading font-bold text-ink-900 mb-3 flex-grow">{post.data.title}</h2>
+          <time class="text-sm text-ink-500 mb-4 block">{new Date(post.data.publishDate).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>
+          <span class="text-accent font-medium text-sm flex items-center gap-1 mt-auto">
+            Read Article
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </span>
+        </a>
+      ))}
+    </div>
+    
+    {sortedPosts.length === 0 && (
+      <div class="text-center py-12 text-ink-500">
+        <p>No blog posts found. Check back later!</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>

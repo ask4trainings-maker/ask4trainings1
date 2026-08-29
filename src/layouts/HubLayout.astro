@@ -1,0 +1,35 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  categoryLabel: string;
+  intro: string;
+  careerOpportunities: string;
+}
+const { categoryLabel, intro, careerOpportunities } = Astro.props;
+---
+<BaseLayout title={`${categoryLabel} Training Courses | Ask 4 Trainings`} description={intro.slice(0, 150)}>
+  <div class="bg-surface-50 border-b border-border py-12">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <h1 class="text-3xl md:text-5xl font-heading font-bold text-ink-900 mb-6">{categoryLabel} Training Courses</h1>
+      <p class="text-lg text-ink-700 whitespace-pre-line mb-8 text-left md:text-center">{intro}</p>
+      
+      <div class="bg-surface-0 border border-border p-6 rounded-lg shadow-sm text-left">
+        <h2 class="font-heading font-bold text-xl text-ink-900 mb-3 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-accent" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          </svg>
+          Career Opportunities
+        </h2>
+        <p class="text-ink-700">{careerOpportunities}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-16">
+    <h2 class="text-2xl font-heading font-bold text-ink-900 mb-8">Available Courses</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <slot />
+    </div>
+  </div>
+</BaseLayout>

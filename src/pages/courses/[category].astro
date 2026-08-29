@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import HubLayout from '../../layouts/HubLayout.astro';
+import CourseCard from '../../components/CourseCard.astro';
+import categoriesData from '../../content/categories.json';
+
+export async function getStaticPaths() {
+  const categories = Object.keys(categoriesData);
+  return categories.map(category => ({
+    params: { category },
+    props: { data: (categoriesData as any)[category] },
+  }));
+}
+
+const { category } = Astro.params;
+const { data } = Astro.props;
+
+const allCourses = await getCollection('courses');
+const categoryCourses = allCourses.filter(course => course.data.category === category);
+---
+<HubLayout 
+  categoryLabel={data.label}
+  intro={data.intro}
+  careerOpportunities={data.careerOpportunities}
+>
+  {categoryCourses.length > 0 ? (
+    categoryCourses.map(course => (
+      <CourseCard 
+        title={course.data.title}
+        category={course.data.category}
+        duration={course.data.batchInfo.duration}
+        format={course.data.batchInfo.format}
+        slug={course.data.slug}
+      />
+    ))
+  ) : (
+    <p class="text-ink-500 col-span-full text-center py-10">No courses found for this category yet. Check back soon!</p>
+  )}
+</HubLayout>

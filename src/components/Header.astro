@@ -1,0 +1,42 @@
+---
+import MegaMenu from './MegaMenu.astro';
+import SearchModal from './SearchModal.astro';
+---
+<header class="w-full bg-surface-0 shadow-sm sticky top-0 z-40">
+  <div class="bg-primary text-surface-0 text-sm py-2">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="flex gap-4">
+        <a href="mailto:ask4trainings@gmail.com" class="hover:text-accent-hover transition-colors">ask4trainings@gmail.com</a>
+        <a href="tel:+918099949888" class="hover:text-accent-hover transition-colors">+91 8099949888</a>
+      </div>
+      <div class="hidden md:flex gap-4">
+        <a href="/write-review" class="font-medium hover:text-accent-hover transition-colors">Write Reviews</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center relative">
+    <a href="/" class="text-2xl font-heading font-bold text-primary">Ask 4 Trainings</a>
+    
+    <nav class="hidden lg:flex items-center gap-6">
+      <a href="/" class="font-medium text-ink-700 hover:text-primary transition-colors">Home</a>
+      <MegaMenu />
+      <a href="/blog" class="font-medium text-ink-700 hover:text-primary transition-colors">Blog</a>
+      <a href="/contact-us" class="font-medium text-ink-700 hover:text-primary transition-colors">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <button id="search-trigger" aria-label="Search" class="p-2 text-ink-700 hover:text-primary transition-colors">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </button>
+      <div class="hidden md:block">
+        <a href="https://wa.me/918099949888" target="_blank" rel="noopener noreferrer" class="bg-whatsapp hover:bg-whatsapp-hover text-surface-0 px-4 py-2 rounded-lg font-medium transition-colors flex items-center gap-2">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+  <SearchModal />
+</header>
