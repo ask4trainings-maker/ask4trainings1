@@ -1,0 +1,8 @@
+{
+  "categories": [
+    { "id": "guidewire", "title": "Guidewire Suite", "description": "Master PolicyCenter, ClaimCenter & BillingCenter.", "icon": "" },
+    { "id": "sap", "title": "SAP", "description": "Master SAP modules like FICO, MM, and SD.", "icon": "" },
+    { "id": "devops", "title": "DevOps", "description": "Learn CI/CD, Docker, and Kubernetes.", "icon": "" },
+    { "id": "cloud-computing", "title": "Cloud Computing", "description": "Master AWS, Azure, and GCP.", "icon": "" }
+  ]
+}

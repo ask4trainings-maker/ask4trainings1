@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "badge": "Next Enterprise Batches Starting This Weekend",
+    "headline": "Master Enterprise IT.<br />",
+    "headlineGradient": "Secure High-Impact Roles.",
+    "subheadline": "Industry-led training in Guidewire, Siemens Teamcenter PLM, SAP S/4HANA, Cloud DevOps, and ServiceNow with real-time sandbox labs.",
+    "primaryCta": "Explore Courses",
+    "secondaryCta": "Book Live Demo"
+  },
+  "metrics": [
+    { "value": "15+", "label": "Years Exp" },
+    { "value": "50k+", "label": "Alumni" },
+    { "value": "100%", "label": "Placement" },
+    { "value": "200+", "label": "Partners" }
+  ],
+  "bento": [
+    {
+      "title": "Live Interactive Classes",
+      "description": "HD live weekend/weekday sessions with real-time screen share, architectural whiteboarding, and instructor doubt clearing."
+    },
+    {
+      "title": "Dedicated Cloud Labs",
+      "description": "Pre-configured virtual enterprise environments for hands-on configuration."
+    },
+    {
+      "title": "Comprehensive Study Vault",
+      "description": "Lifetime access to study guides, interview blueprints, and architecture diagrams."
+    },
+    {
+      "title": "1-on-1 Mock Interviews & Placement",
+      "description": "Extensive resume crafting, profile marketing, and direct corporate referral support for premium roles."
+    }
+  ],
+  "roadmap": [
+    {
+      "title": "Core Architecture",
+      "description": "Master foundational concepts and enterprise frameworks."
+    },
+    {
+      "title": "Hands-On Projects",
+      "description": "Configure real-world scenarios in dedicated cloud labs."
+    },
+    {
+      "title": "Certifications",
+      "description": "Clear mock interviews and prepare for global certs."
+    },
+    {
+      "title": "Corporate Placement",
+      "description": "Direct referral and placement support via 200+ partners."
+    }
+  ],
+  "conversion": {
+    "headline": "Ready to Upgrade Your <br/><span class=\"text-primary-light\">Career Trajectory?</span>",
+    "subtext": "Get free counseling from our senior architects. Tell us your goals, and we'll craft a personalized learning and placement roadmap."
+  }
+}

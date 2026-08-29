@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import aboutData from '../data/pages/about.json';
 ---
 <BaseLayout title="About Us | Ask 4 Trainings">
   <div class="bg-[#090D16] border-b border-white/5 py-20 relative overflow-hidden">
@@ -11,34 +12,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-surface-0 mb-6 text-center">About Ask 4 Trainings</h1>
       <p class="text-lg md:text-xl text-slate-300 max-w-4xl mx-auto text-center leading-relaxed mb-16">
-        Ask 4 Trainings is a premier IT training institute located in Ameerpet, Hyderabad, specializing in enterprise-grade software technologies. We bridge the gap between academic education and industry requirements.
+        {aboutData.story}
       </p>
 
       <!-- Section: Timeline -->
       <div class="mb-20">
         <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Our Journey</h2>
         <div class="space-y-6">
-          <div class="flex gap-4 items-start">
-            <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0 text-primary font-bold">2018</div>
-            <div class="bg-slate-800/40 border border-white/10 rounded-xl p-5 flex-1">
-              <h3 class="text-lg font-bold text-surface-0 mb-2">Foundation</h3>
-              <p class="text-slate-300">Started with a single vision to provide high-quality SAP and Oracle training in Ameerpet.</p>
+          {aboutData.milestones.map((milestone: any) => (
+            <div class="flex gap-4 items-start">
+              <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0 text-primary font-bold">{milestone.year}</div>
+              <div class="bg-slate-800/40 border border-white/10 rounded-xl p-5 flex-1">
+                <h3 class="text-lg font-bold text-surface-0 mb-2">{milestone.title}</h3>
+                <p class="text-slate-300">{milestone.description}</p>
+              </div>
             </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0 text-primary font-bold">2020</div>
-            <div class="bg-slate-800/40 border border-white/10 rounded-xl p-5 flex-1">
-              <h3 class="text-lg font-bold text-surface-0 mb-2">Digital Transformation</h3>
-              <p class="text-slate-300">Successfully transitioned to global online Live instructor-led training models.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0 text-primary font-bold">2024</div>
-            <div class="bg-slate-800/40 border border-white/10 rounded-xl p-5 flex-1">
-              <h3 class="text-lg font-bold text-surface-0 mb-2">Enterprise Expansion</h3>
-              <p class="text-slate-300">Expanded our catalog to 50+ enterprise courses including Guidewire, Salesforce, and Cloud Computing.</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
@@ -46,14 +35,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="mb-20">
         <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Expert Faculty</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[1,2,3].map((i) => (
+          {aboutData.faculty.map((member: any) => (
             <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 text-center hover:border-primary/30 transition-colors">
               <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-primary/50 mb-4 flex items-center justify-center">
                 <svg class="w-8 h-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
-              <h3 class="text-lg font-bold text-surface-0">Industry Expert</h3>
-              <p class="text-sm text-primary mb-3">Senior Architect</p>
-              <p class="text-sm text-slate-400">12+ years of enterprise experience with top MNCs.</p>
+              <h3 class="text-lg font-bold text-surface-0">{member.name}</h3>
+              <p class="text-sm text-primary mb-3">{member.role}</p>
+              <p class="text-sm text-slate-400">{member.bio}</p>
             </div>
           ))}
         </div>
@@ -67,9 +56,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <h3 class="text-xl font-bold text-surface-0 mb-4">24/7 Dedicated Sandbox Access</h3>
             <p class="text-slate-300 mb-4">We provide high-performance cloud lab environments for all our students. Practice complex integrations and deployments without worrying about local hardware limitations.</p>
             <ul class="space-y-2 text-sm text-slate-400">
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Zero-setup environments</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> 99.9% Uptime Guarantee</li>
-              <li class="flex items-center gap-2"><svg class="w-4 h-4 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Pre-configured datasets</li>
+              {aboutData.infrastructure.map((item: string) => (
+                <li class="flex items-center gap-2"><svg class="w-4 h-4 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> {item}</li>
+              ))}
             </ul>
           </div>
           <div class="md:w-1/2 bg-slate-900 border border-white/5 rounded-xl p-6 shadow-inner w-full">

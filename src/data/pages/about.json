@@ -1,0 +1,18 @@
+{
+  "story": "Ask 4 Trainings is a premier IT training institute located in Ameerpet, Hyderabad, specializing in enterprise-grade software technologies. We bridge the gap between academic education and industry requirements.",
+  "milestones": [
+    { "year": "2018", "title": "Foundation", "description": "Started with a single vision to provide high-quality SAP and Oracle training in Ameerpet." },
+    { "year": "2020", "title": "Digital Transformation", "description": "Successfully transitioned to global online Live instructor-led training models." },
+    { "year": "2024", "title": "Enterprise Expansion", "description": "Expanded our catalog to 50+ enterprise courses including Guidewire, Salesforce, and Cloud Computing." }
+  ],
+  "faculty": [
+    { "name": "Industry Expert", "role": "Senior Architect", "bio": "12+ years of enterprise experience with top MNCs." },
+    { "name": "Cloud Specialist", "role": "DevOps Engineer", "bio": "AWS & Azure Certified Architect with 8+ years experience." },
+    { "name": "Data Scientist", "role": "Lead Data Analyst", "bio": "Worked on 20+ ML projects in Fortune 500 companies." }
+  ],
+  "infrastructure": [
+    "Zero-setup environments",
+    "99.9% Uptime Guarantee",
+    "Pre-configured datasets"
+  ]
+}

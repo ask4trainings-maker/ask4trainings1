@@ -1,0 +1,20 @@
+{
+  "contact": {
+    "email": "ask4trainings@gmail.com",
+    "phone1": "+91 8099949888",
+    "phone2": "+91 9182909609",
+    "address": "Ameerpet, Hyderabad, Telangana, India",
+    "mapsUrl": "https://maps.google.com/maps?q=ameerpet",
+    "hours": "Mon-Sat 8:00 AM - 8:00 PM"
+  },
+  "socials": {
+    "facebook": "https://www.facebook.com/hopeinfotech",
+    "twitter": "https://x.com/hopeinfotech",
+    "linkedin": "https://www.linkedin.com/company/hope-infotech",
+    "youtube": "https://www.youtube.com/@hopeinfotechclasses9",
+    "instagram": "https://www.instagram.com/hope_infotech"
+  },
+  "topBanner": {
+    "text": "Enroll in our new Guidewire Weekend Batch starting this Saturday!"
+  }
+}

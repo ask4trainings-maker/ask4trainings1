@@ -9,53 +9,231 @@ media_folder: "public/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  # 1. COURSES COLLECTION
   - name: "courses"
     label: "Courses"
     folder: "src/content/courses"
     create: true
     slug: "{{slug}}"
     format: "frontmatter"
+    extension: "md"
+    editor:
+      preview: false
     fields:
       - { label: "Course Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
-      - { label: "Category", name: "category", widget: "select", options: ["guidewire", "siemens", "sap", "oracle", "cloud-computing", "devops", "ms-d365", "development", "trending-courses", "new-courses", "other-tools"] }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Lower case, no spaces, hyphens only" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options: ["guidewire", "siemens", "sap", "oracle", "cloud-computing", "devops", "ms-d365", "development", "trending-courses", "new-courses", "other-tools"]
       - { label: "Value Proposition", name: "valueProp", widget: "text" }
+      
       - label: "Highlights"
         name: "highlights"
         widget: "list"
-        field: { label: "Highlight", name: "item", widget: "string" }
+        fields:
+          - { label: "Icon SVG/Name", name: "icon", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
+          
       - label: "Batch Info"
         name: "batchInfo"
         widget: "object"
         fields:
-          - { label: "Duration", name: "duration", widget: "string", default: "45-60 Hours" }
-          - { label: "Mode", name: "mode", widget: "string", default: "Live Online / Classroom" }
-          - { label: "Next Batch", name: "nextBatch", widget: "string", default: "Starting This Weekend" }
+          - label: "Format"
+            name: "format"
+            widget: "select"
+            options: ["Online", "Classroom", "Hybrid"]
+          - { label: "Duration", name: "duration", widget: "string" }
+          - { label: "Start Date", name: "startDate", widget: "string", required: false }
+          - { label: "Timings", name: "timings", widget: "string", required: false }
+          
       - label: "Syllabus Modules"
         name: "syllabus"
         widget: "list"
         fields:
-          - { label: "Module Title", name: "moduleTitle", widget: "string" }
-          - { label: "Topics", name: "topics", widget: "list", field: { label: "Topic", widget: "string" } }
+          - { label: "Module Title", name: "module", widget: "string" }
+          - label: "Topics"
+            name: "topics"
+            widget: "list"
+            field: { label: "Topic", name: "topic", widget: "string" }
+            
+      - label: "Prerequisites"
+        name: "prerequisites"
+        widget: "list"
+        required: false
+        field: { label: "Prerequisite", name: "prereq", widget: "string" }
+        
       - label: "FAQs"
         name: "faqs"
         widget: "list"
+        required: false
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
-      - label: "SEO"
+          
+      - { label: "Related Guide Slug", name: "relatedGuideSlug", widget: "string", required: false }
+      
+      - label: "SEO Metadata"
         name: "seo"
         widget: "object"
         fields:
           - { label: "Meta Title", name: "metaTitle", widget: "string" }
           - { label: "Meta Description", name: "metaDescription", widget: "text" }
+          
+      # Legacy fields (hidden or optional in editor but kept for schema)
+      - { label: "Legacy URL", name: "legacyUrl", widget: "string", required: false }
+      - { label: "Legacy Impressions", name: "legacyImpressions", widget: "number", required: false }
 
-  - name: "site_settings"
-    label: "Site Settings"
-    file: "src/content/settings/general.json"
-    fields:
-      - { label: "Facebook URL", name: "facebook", widget: "string", default: "https://www.facebook.com/hopeinfotech" }
-      - { label: "X (Twitter) URL", name: "x", widget: "string", default: "https://x.com/hopeinfotech" }
-      - { label: "LinkedIn URL", name: "linkedin", widget: "string", default: "https://www.linkedin.com/company/hope-infotech" }
-      - { label: "YouTube URL", name: "youtube", widget: "string", default: "https://www.youtube.com/@hopeinfotechclasses9" }
-      - { label: "Instagram URL", name: "instagram", widget: "string", default: "https://www.instagram.com/hope_infotech" }
+  # 2. CATEGORIES HUB
+  - name: "categories_collection"
+    label: "Categories Hub"
+    editor:
+      preview: false
+    files:
+      - label: "Master Categories"
+        name: "categories"
+        file: "src/data/categories.json"
+        format: "json"
+        fields:
+          - label: "Categories List"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "ID/Key", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+
+  # 3. GLOBAL SITE SETTINGS
+  - name: "global_settings"
+    label: "Global Settings"
+    editor:
+      preview: false
+    files:
+      - label: "Site Settings"
+        name: "settings"
+        file: "src/data/settings.json"
+        format: "json"
+        fields:
+          - label: "Contact Information"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone Primary", name: "phone1", widget: "string" }
+              - { label: "Phone Secondary", name: "phone2", widget: "string", required: false }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Google Maps URL", name: "mapsUrl", widget: "string", required: false }
+              - { label: "Operating Hours", name: "hours", widget: "string", required: false }
+          - label: "Social Links"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "X / Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+              - { label: "YouTube", name: "youtube", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Top Banner"
+            name: "topBanner"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link URL", name: "url", widget: "string", required: false }
+
+      - label: "Navigation"
+        name: "navigation"
+        file: "src/data/navigation.json"
+        format: "json"
+        fields:
+          - label: "Main Navigation"
+            name: "mainNav"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Footer Quick Links"
+            name: "footerLinks"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - { label: "LMS Portal Button Text", name: "lmsButtonText", widget: "string", default: "Student Portal" }
+
+  # 4. STATIC PAGES
+  - name: "pages"
+    label: "Static Pages"
+    editor:
+      preview: false
+    files:
+      - label: "Homepage"
+        name: "home"
+        file: "src/data/pages/home.json"
+        format: "json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string" }
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subheadline", name: "subheadline", widget: "text" }
+              - { label: "Primary CTA", name: "primaryCta", widget: "string" }
+              - { label: "Secondary CTA", name: "secondaryCta", widget: "string" }
+          - label: "Trust Metrics"
+            name: "metrics"
+            widget: "list"
+            fields:
+              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+          - label: "Bento Grid Tiles"
+            name: "bento"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Feature Tags"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+          - label: "Conversion Banner"
+            name: "conversion"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string" }
+              - { label: "Subtext", name: "subtext", widget: "string" }
+              
+      - label: "About Us Page"
+        name: "about"
+        file: "src/data/pages/about.json"
+        format: "json"
+        fields:
+          - { label: "Institute Story", name: "story", widget: "text" }
+          - label: "Timeline Milestones"
+            name: "milestones"
+            widget: "list"
+            fields:
+              - { label: "Year", name: "year", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Faculty Highlights"
+            name: "faculty"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text" }
+          - label: "Infrastructure Points"
+            name: "infrastructure"
+            widget: "list"
+            field: { label: "Point", name: "point", widget: "string" }
+            
+      - label: "Contact Us Page"
+        name: "contact"
+        file: "src/data/pages/contact.json"
+        format: "json"
+        fields:
+          - { label: "Support Guidelines", name: "guidelines", widget: "text" }
+          - { label: "Form Header", name: "formHeader", widget: "string" }
+          - { label: "Form Subtext", name: "formSubtext", widget: "string" }

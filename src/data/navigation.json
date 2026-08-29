@@ -1,0 +1,14 @@
+{
+  "mainNav": [
+    { "title": "Home", "href": "/" },
+    { "title": "Courses", "href": "/courses" },
+    { "title": "About Us", "href": "/about-us" },
+    { "title": "Contact", "href": "/contact-us" }
+  ],
+  "footerLinks": [
+    { "title": "About Us", "href": "/about-us" },
+    { "title": "Contact", "href": "/contact-us" },
+    { "title": "Blog & Guides", "href": "/blog" }
+  ],
+  "lmsButtonText": "Student Portal"
+}
