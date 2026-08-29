@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-github-org/ask4trainings
+  repo: rahulabhishek/ask4trainings
   branch: main
   base_url: https://ask4trainings.com
   auth_endpoint: /oauth/auth
@@ -14,31 +14,48 @@ collections:
     folder: "src/content/courses"
     create: true
     slug: "{{slug}}"
+    format: "frontmatter"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "category", widget: "select", options: ["guidewire", "sap", "oracle", "salesforce", "cloud-computing", "devops", "other-tools"]}
-      - {label: "Legacy URL (Optional)", name: "legacyUrl", widget: "string", required: false}
-      - {label: "Legacy Impressions", name: "legacyImpressions", widget: "number", required: false}
-      - {label: "Value Proposition", name: "valueProp", widget: "text"}
-      - {label: "Batch Info", name: "batchInfo", widget: "object", fields: [{label: "Format", name: "format", widget: "select", options: ["Online", "Classroom", "Hybrid"]}, {label: "Start Date", name: "startDate", widget: "string", required: false}, {label: "Duration", name: "duration", widget: "string"}, {label: "Timings", name: "timings", widget: "string", required: false}]}
-      - {label: "SEO", name: "seo", widget: "object", fields: [{label: "Meta Title", name: "metaTitle", widget: "string"}, {label: "Meta Description", name: "metaDescription", widget: "text"}]}
-      - {label: "Syllabus", name: "syllabus", widget: "list", fields: [{label: "Module", name: "module", widget: "string"}, {label: "Topics", name: "topics", widget: "list"}]}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "src/content/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "publishDate", widget: "datetime"}
-      - {label: "Category", name: "category", widget: "string"}
-      - {label: "SEO", name: "seo", widget: "object", fields: [{label: "Meta Title", name: "metaTitle", widget: "string"}, {label: "Meta Description", name: "metaDescription", widget: "text"}]}
-      - {label: "Body", name: "body", widget: "markdown"}
-  - name: "categories"
-    label: "Categories Taxonomy"
-    file: "src/content/categories.json"
-    fields:
-      - label: "Categories Map"
-        name: "categories"
+      - { label: "Course Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["guidewire", "siemens", "sap", "oracle", "cloud-computing", "devops", "ms-d365", "development", "trending-courses", "new-courses", "other-tools"] }
+      - { label: "Value Proposition", name: "valueProp", widget: "text" }
+      - label: "Highlights"
+        name: "highlights"
+        widget: "list"
+        field: { label: "Highlight", name: "item", widget: "string" }
+      - label: "Batch Info"
+        name: "batchInfo"
         widget: "object"
+        fields:
+          - { label: "Duration", name: "duration", widget: "string", default: "45-60 Hours" }
+          - { label: "Mode", name: "mode", widget: "string", default: "Live Online / Classroom" }
+          - { label: "Next Batch", name: "nextBatch", widget: "string", default: "Starting This Weekend" }
+      - label: "Syllabus Modules"
+        name: "syllabus"
+        widget: "list"
+        fields:
+          - { label: "Module Title", name: "moduleTitle", widget: "string" }
+          - { label: "Topics", name: "topics", widget: "list", field: { label: "Topic", widget: "string" } }
+      - label: "FAQs"
+        name: "faqs"
+        widget: "list"
+        fields:
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        fields:
+          - { label: "Meta Title", name: "metaTitle", widget: "string" }
+          - { label: "Meta Description", name: "metaDescription", widget: "text" }
+
+  - name: "site_settings"
+    label: "Site Settings"
+    file: "src/content/settings/general.json"
+    fields:
+      - { label: "Facebook URL", name: "facebook", widget: "string", default: "https://www.facebook.com/hopeinfotech" }
+      - { label: "X (Twitter) URL", name: "x", widget: "string", default: "https://x.com/hopeinfotech" }
+      - { label: "LinkedIn URL", name: "linkedin", widget: "string", default: "https://www.linkedin.com/company/hope-infotech" }
+      - { label: "YouTube URL", name: "youtube", widget: "string", default: "https://www.youtube.com/@hopeinfotechclasses9" }
+      - { label: "Instagram URL", name: "instagram", widget: "string", default: "https://www.instagram.com/hope_infotech" }

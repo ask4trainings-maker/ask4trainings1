@@ -19,6 +19,24 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.com').href} />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:site_name" content="Ask 4 Trainings" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.com').href} />
+    <meta property="og:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">

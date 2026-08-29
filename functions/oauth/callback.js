@@ -1,56 +1,45 @@
 export async function onRequest(context) {
-  const { request, env } = context;
-  const url = new URL(request.url);
+  const url = new URL(context.request.url);
   const code = url.searchParams.get('code');
-  
+  const client_id = context.env.GITHUB_CLIENT_ID;
+  const client_secret = context.env.GITHUB_CLIENT_SECRET;
+
   if (!code) {
-    return new Response('Missing authorization code.', { status: 400 });
+    return new Response('Missing authorization code', { status: 400 });
   }
 
-  try {
-    const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        client_id: env.GITHUB_CLIENT_ID,
-        client_secret: env.GITHUB_CLIENT_SECRET,
-        code: code,
-      }),
-    });
+  const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      'User-Agent': 'Ask4Trainings-CMS'
+    },
+    body: JSON.stringify({ client_id, client_secret, code })
+  });
 
-    const tokenData = await tokenResponse.json();
-    
-    if (tokenData.error) {
-      return new Response(`Error: ${tokenData.error_description}`, { status: 400 });
-    }
+  const tokenData = await tokenResponse.json();
 
-    // Pass token back to Sveltia CMS window
-    const html = `
-      <!DOCTYPE html>
-      <html>
-      <head><title>Authentication Success</title></head>
+  const postMessageContent = tokenData.access_token
+    ? `authorizing:github:success:${JSON.stringify({ token: tokenData.access_token, provider: 'github' })}`
+    : `authorizing:github:error:${JSON.stringify(tokenData)}`;
+
+  const html = `
+    <!doctype html>
+    <html>
       <body>
-        <p>Authentication successful. You can close this window if it doesn't close automatically.</p>
         <script>
-          const message = {
-            token: "${tokenData.access_token}",
-            provider: "github"
-          };
-          const targetOrigin = window.location.origin;
-          window.opener.postMessage("authorization:github:success:" + JSON.stringify(message), targetOrigin);
-          window.close();
+          (() => {
+            window.addEventListener("message", () => {}, false);
+            window.opener.postMessage('${postMessageContent}', '*');
+            window.close();
+          })();
         </script>
       </body>
-      </html>
-    `;
+    </html>
+  `;
 
-    return new Response(html, {
-      headers: { 'Content-Type': 'text/html;charset=UTF-8' },
-    });
-  } catch (err) {
-    return new Response(`Authentication failed: ${err.message}`, { status: 500 });
-  }
+  return new Response(html, {
+    headers: { 'Content-Type': 'text/html;charset=UTF-8' }
+  });
 }

@@ -1,4 +1,9 @@
 ---
+import IconFacebook from './icons/IconFacebook.astro';
+import IconX from './icons/IconX.astro';
+import IconLinkedIn from './icons/IconLinkedIn.astro';
+import IconYouTube from './icons/IconYouTube.astro';
+import IconInstagram from './icons/IconInstagram.astro';
 ---
 <footer class="bg-ink-900 text-surface-50 py-12">
   <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -7,7 +12,24 @@
       <p class="text-ink-500 text-sm leading-relaxed mb-4">
         Leading IT training institute providing real-time, project-based training on enterprise technologies.
       </p>
-      <p class="text-sm text-ink-500">Ameerpet, Hyderabad</p>
+      <p class="text-sm text-ink-500 mb-6">Ameerpet, Hyderabad</p>
+      <div class="flex items-center gap-4">
+        <a href="https://www.facebook.com/hopeinfotech" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-slate-400 hover:text-white transition-colors">
+          <IconFacebook class="w-5 h-5"/>
+        </a>
+        <a href="https://x.com/hopeinfotech" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" class="text-slate-400 hover:text-white transition-colors">
+          <IconX class="w-5 h-5"/>
+        </a>
+        <a href="https://www.linkedin.com/company/hope-infotech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-slate-400 hover:text-white transition-colors">
+          <IconLinkedIn class="w-5 h-5"/>
+        </a>
+        <a href="https://www.youtube.com/@hopeinfotechclasses9" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-slate-400 hover:text-white transition-colors">
+          <IconYouTube class="w-5 h-5"/>
+        </a>
+        <a href="https://www.instagram.com/hope_infotech" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-slate-400 hover:text-white transition-colors">
+          <IconInstagram class="w-5 h-5"/>
+        </a>
+      </div>
     </div>
     <div>
       <h4 class="font-heading font-semibold mb-4 text-surface-0">Quick Links</h4>
