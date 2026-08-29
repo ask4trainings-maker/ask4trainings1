@@ -1,26 +1,60 @@
 ---
+import { getCollection } from 'astro:content';
+const allCourses = await getCollection('courses');
+const coursesData = allCourses.map(c => ({
+  title: c.data.title,
+  url: `/${c.id}`
+}));
 ---
-<div id="search-modal" class="fixed inset-0 z-50 bg-ink-900/80 hidden opacity-0 transition-opacity duration-200 flex items-start justify-center pt-24 px-4 backdrop-blur-sm">
-  <div class="bg-surface-0 w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden transform -translate-y-4 transition-transform duration-200" id="search-container">
-    <div class="p-4 border-b border-border flex justify-between items-center bg-surface-50">
-      <h2 class="font-heading font-semibold text-ink-900">Search Courses</h2>
-      <button id="close-search" class="text-ink-500 hover:text-error transition-colors p-1" aria-label="Close search">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div id="search-modal" class="fixed inset-0 z-50 bg-slate-900/80 hidden opacity-0 transition-opacity duration-200 flex items-start justify-center pt-24 px-4 backdrop-blur-sm">
+  <div class="bg-slate-800 border border-white/10 w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden transform -translate-y-4 transition-transform duration-200" id="search-container">
+    <div class="p-4 border-b border-white/10 flex justify-between items-center bg-slate-900">
+      <h2 class="font-heading font-semibold text-surface-0 flex items-center gap-2">
+        <svg class="w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        Search Courses
+      </h2>
+      <button id="close-search" class="text-slate-400 hover:text-error transition-colors p-1 bg-white/5 rounded-lg hover:bg-white/10" aria-label="Close search">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
     </div>
-    <div class="p-4 min-h-[300px]">
-      <div id="search-ui" class="w-full"></div>
+    
+    <!-- Dev Fallback UI (Hidden by default) -->
+    <div id="dev-search-fallback" class="hidden p-4 min-h-[300px]">
+      <div class="mb-4 p-3 rounded-lg bg-accent/10 border border-accent/20 text-accent text-sm font-medium flex items-start gap-3">
+        <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <div>
+          <p>Search index is generated during build.</p>
+          <p class="opacity-80 font-normal mt-0.5">Run <code>npm run build && npm run preview</code> to test full search. Using lightweight local fallback for dev.</p>
+        </div>
+      </div>
+      <input type="text" id="dev-search-input" placeholder="Filter courses..." class="w-full bg-slate-900 border border-white/10 rounded-lg px-4 py-3 text-surface-0 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 mb-4 placeholder-slate-500" />
+      <ul id="dev-search-results" class="space-y-1 max-h-[300px] overflow-y-auto">
+        <!-- JS will populate this -->
+      </ul>
+    </div>
+
+    <!-- Production Pagefind UI -->
+    <div id="prod-search-wrapper" class="p-4 min-h-[300px]">
+      <div id="search-ui" class="w-full text-surface-0"></div>
     </div>
   </div>
 </div>
 
-<script>
+<script define:vars={{ coursesData }}>
   const trigger = document.getElementById('search-trigger');
   const modal = document.getElementById('search-modal');
   const container = document.getElementById('search-container');
   const close = document.getElementById('close-search');
+  const devFallback = document.getElementById('dev-search-fallback');
+  const prodWrapper = document.getElementById('prod-search-wrapper');
+  const devInput = document.getElementById('dev-search-input');
+  const devResults = document.getElementById('dev-search-results');
   let loaded = false;
 
   const openModal = async () => {
@@ -33,23 +67,45 @@
     });
 
     if (!loaded) {
-      // Load standard pagefind CSS/JS from built assets
       try {
-        // Create CSS link
+        // Create CSS link dynamically
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = '/_pagefind/pagefind-ui.css';
+        link.href = '/pagefind/pagefind-ui.css';
         document.head.appendChild(link);
         
-        // Load UI script, ignoring Vite build step since pagefind runs post-build
-        const { PagefindUI } = await import(/* @vite-ignore */ '/_pagefind/pagefind-ui.js' as any);
-        new PagefindUI({ element: "#search-ui", showSubResults: true });
+        // Build URL for dynamic import
+        const pagefindUrl = '/pagefind/pagefind-ui.js';
+        const { PagefindUI } = await import(/* @vite-ignore */ pagefindUrl);
+        new PagefindUI({ element: "#search-ui", showSubResults: true, showImages: false });
         loaded = true;
       } catch (e) {
-        console.error('Pagefind not found. Make sure you build the site first.', e);
-        const el = document.getElementById('search-ui');
-        if (el) el.innerHTML = '<p class="text-error">Search is only available in the production build.</p>';
+        console.warn('Pagefind not found (expected in dev mode). Falling back to local filter.');
+        if (prodWrapper) prodWrapper.classList.add('hidden');
+        if (devFallback) devFallback.classList.remove('hidden');
+        
+        // Init fallback logic
+        if (devInput && devResults) {
+          const render = (query) => {
+            const q = query.toLowerCase();
+            const filtered = coursesData.filter(c => c.title.toLowerCase().includes(q));
+            devResults.innerHTML = filtered.slice(0, 10).map(c => 
+              `<li><a href="${c.url}" class="block p-3 hover:bg-white/5 rounded-lg text-slate-300 hover:text-primary transition-colors border border-transparent hover:border-white/10">${c.title}</a></li>`
+            ).join('');
+          };
+          render('');
+          devInput.addEventListener('input', (e) => render(e.target.value));
+          devInput.focus();
+        }
+        loaded = true; // Mark loaded so we don't try again
       }
+    } else {
+      // Focus the input if already loaded
+      setTimeout(() => {
+        const pfInput = document.querySelector('.pagefind-ui__search-input');
+        if (pfInput) pfInput.focus();
+        if (devInput && !devFallback.classList.contains('hidden')) devInput.focus();
+      }, 100);
     }
   };
 
@@ -63,20 +119,76 @@
 
   trigger?.addEventListener('click', openModal);
   close?.addEventListener('click', closeModal);
-  modal?.addEventListener('click', (e) => {
+  
+  // Safe backdrop click
+  modal?.addEventListener('mousedown', (e) => {
     if (e.target === modal) closeModal();
   });
   
+  // Global Keyboard shortcuts
   document.addEventListener('keydown', (e) => {
+    // Escape to close
     if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
       closeModal();
+    }
+    // Ctrl+K or Cmd+K to open
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openModal();
     }
   });
 </script>
 
 <style is:global>
-  /* Customise Pagefind UI */
+  /* Customise Pagefind UI for Dark Mode */
+  .pagefind-ui {
+    --pagefind-ui-scale: 0.9;
+    --pagefind-ui-primary: theme('colors.primary.DEFAULT');
+    --pagefind-ui-text: theme('colors.slate.200');
+    --pagefind-ui-background: theme('colors.slate.900');
+    --pagefind-ui-border: theme('colors.white / 10%');
+    --pagefind-ui-tag: theme('colors.slate.800');
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-font: inherit;
+  }
+  
   .pagefind-ui__search-input {
-    @apply border-border focus:ring-primary focus:border-primary rounded-lg w-full outline-none p-3;
+    background-color: theme('colors.slate.900');
+    border: 1px solid theme('colors.white / 10%');
+    color: theme('colors.surface.0');
+    padding: 0.75rem 1rem 0.75rem 2.5rem !important;
+  }
+  
+  .pagefind-ui__search-input:focus {
+    outline: none;
+    border-color: theme('colors.primary.DEFAULT');
+    box-shadow: 0 0 0 1px theme('colors.primary.DEFAULT');
+  }
+
+  .pagefind-ui__search-clear {
+    background-color: transparent !important;
+    color: theme('colors.slate.400') !important;
+  }
+
+  .pagefind-ui__result {
+    border-bottom: 1px solid theme('colors.white / 5%') !important;
+    padding: 1rem 0 !important;
+  }
+  
+  .pagefind-ui__result-title, .pagefind-ui__result-link {
+    color: theme('colors.primary.DEFAULT') !important;
+    font-weight: 600 !important;
+  }
+  
+  .pagefind-ui__result-excerpt {
+    color: theme('colors.slate.400') !important;
+  }
+
+  mark {
+    background-color: theme('colors.accent.DEFAULT / 20%');
+    color: theme('colors.accent.DEFAULT');
+    padding: 0 2px;
+    border-radius: 2px;
   }
 </style>

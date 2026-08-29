@@ -1,5 +1,9 @@
 ---
 import WhatsAppCTA from './WhatsAppCTA.astro';
+export interface Props {
+  courseName?: string;
+}
+const { courseName } = Astro.props;
 ---
 <div class="md:hidden fixed bottom-0 inset-x-0 z-50 bg-surface-0 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex border-t border-border">
   <a href="tel:+918099949888" class="flex-1 flex justify-center items-center gap-2 py-4 text-ink-700 font-medium border-r border-border hover:bg-surface-50 transition-colors" aria-label="Call Ask 4 Trainings">
@@ -8,5 +12,5 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
     </svg>
     Call Now
   </a>
-  <WhatsAppCTA className="flex-1 py-4 !rounded-none !bg-whatsapp text-surface-0" />
+  <WhatsAppCTA courseName={courseName} className="flex-1 py-4 !rounded-none !bg-whatsapp text-surface-0" />
 </div>

@@ -8,5 +8,6 @@
       "@layouts/*": ["src/layouts/*"],
       "@content/*": ["src/content/*"]
     }
-  }
+  },
+  "exclude": ["hopeinfotech", "node_modules", "dist", ".fallow"]
 }

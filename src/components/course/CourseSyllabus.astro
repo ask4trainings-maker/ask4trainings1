@@ -1,0 +1,49 @@
+---
+export interface Props {
+  syllabus: { module: string; topics: string[] }[];
+}
+
+const { syllabus = [] } = Astro.props;
+---
+<div class="mb-12">
+  <h2 class="text-2xl font-heading font-bold text-surface-0 mb-6">Course Syllabus</h2>
+  
+  <div class="space-y-3">
+    {syllabus.map((mod, i) => (
+      <details class="syllabus-item group bg-slate-800/60 border border-white/10 rounded-xl overflow-hidden hover:border-primary/40 transition-colors shadow-sm">
+        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none select-none font-semibold text-surface-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+          <span class="flex items-center gap-4">
+            <span class="flex-shrink-0 w-8 h-8 bg-primary/20 border border-primary/30 text-primary text-sm font-bold rounded-full flex items-center justify-center">
+              {i + 1}
+            </span>
+            <span class="leading-tight">{mod.module}</span>
+          </span>
+          <span class="flex items-center gap-3">
+            <span class="hidden sm:inline-block text-xs font-medium text-slate-400 bg-white/5 border border-white/10 px-2 py-0.5 rounded-md">
+              {mod.topics.length} topics
+            </span>
+            <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </span>
+        </summary>
+        <ul class="px-5 pb-5 pt-3 space-y-3 border-t border-white/5 bg-slate-800/40">
+          {mod.topics.map(topic => (
+            <li class="flex items-start gap-3 text-slate-300 text-sm sm:text-base">
+              <svg class="w-4 h-4 mt-0.5 text-primary shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+              </svg>
+              <span class="leading-relaxed">{topic}</span>
+            </li>
+          ))}
+        </ul>
+      </details>
+    ))}
+  </div>
+</div>
+
+<style>
+  /* Custom summary marker hide — cross-browser */
+  details > summary::-webkit-details-marker { display: none; }
+  details > summary::marker { display: none; }
+</style>

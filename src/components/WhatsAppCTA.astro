@@ -4,7 +4,9 @@ export interface Props {
   className?: string;
 }
 const { courseName, className = '' } = Astro.props;
-const message = courseName ? `Hi Ask4Trainings, I want details about ${courseName}` : 'Hi Ask4Trainings, I want details about your courses';
+const message = courseName 
+  ? `Hi, I am interested in ${courseName} training. Please share the syllabus and upcoming batch details.` 
+  : 'Hi, I am interested in your training courses. Please share the syllabus and upcoming batch details.';
 const url = `https://wa.me/918099949888?text=${encodeURIComponent(message)}`;
 ---
 <a href={url} target="_blank" rel="noopener noreferrer" class={`inline-flex items-center justify-center gap-2 bg-whatsapp hover:bg-whatsapp-hover text-surface-0 font-medium rounded-lg transition-colors ${className}`}>

@@ -1,0 +1,212 @@
+---
+export interface Props {
+  courseName?: string;
+  sourcePage?: string;
+  lockCourseName?: boolean;
+  title?: string;
+  subtitle?: string;
+}
+
+const { 
+  courseName = '', 
+  sourcePage = '', 
+  lockCourseName = false,
+  title = "Get Free Counselling",
+  subtitle = "Tell us your query and we'll call you back within 2 hours." 
+} = Astro.props;
+
+const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
+---
+<div class="enquiry-form-container relative w-full h-full bg-slate-900 border border-white/10 rounded-2xl p-5 sm:p-6 lg:p-8 flex flex-col justify-between shadow-2xl">
+  
+  <!-- Optimistic Success UI -->
+  <div id={`${formId}-success`} class="absolute inset-0 z-20 flex-col items-center justify-center bg-slate-900/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 opacity-0 pointer-events-none flex">
+    <div class="w-12 sm:w-16 h-12 sm:h-16 bg-whatsapp/10 rounded-full flex items-center justify-center mb-4 border border-whatsapp/30">
+      <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+      </svg>
+    </div>
+    <div class="rounded-xl border border-whatsapp/20 bg-whatsapp/5 p-3 sm:p-4 text-center text-xs sm:text-sm font-medium text-surface-0 mb-6 w-full max-w-[280px]">
+      Thank you! Your enquiry has been received. Our team will contact you shortly.
+    </div>
+    <button type="button" class="reset-form-btn px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-300 text-sm font-semibold rounded-lg transition-colors border border-white/10">
+      Submit another enquiry
+    </button>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl sm:text-2xl font-bold font-heading tracking-tight text-surface-0">{title}</h3>
+    <p class="mt-1 text-sm text-slate-400">{subtitle}</p>
+  </div>
+
+  <form id={formId} class="enquiry-form flex flex-col space-y-4" data-source={sourcePage}>
+    <!-- Honeypot -->
+    <input type="text" name="b_field" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+    
+    <div>
+      <label for={`${formId}-name`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+        Full Name <span class="text-error">*</span>
+      </label>
+      <input
+        id={`${formId}-name`}
+        name="name"
+        type="text"
+        placeholder="e.g. Rahul Sharma"
+        required
+        class="w-full rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+      />
+    </div>
+
+    <div>
+      <label for={`${formId}-phone`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+        Phone Number <span class="text-error">*</span>
+      </label>
+      <div class="flex gap-2 w-full">
+        <select
+          name="countryCode"
+          class="w-[30%] max-w-[96px] shrink-0 truncate rounded-lg border border-white/10 bg-slate-800/50 px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium text-surface-0 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 appearance-none"
+        >
+          <option value="+91">+91 (IN)</option>
+          <option value="+1">+1 (US)</option>
+          <option value="+44">+44 (UK)</option>
+          <option value="+61">+61 (AU)</option>
+          <option value="+971">+971 (AE)</option>
+        </select>
+        <input
+          id={`${formId}-phone`}
+          name="phone"
+          type="tel"
+          pattern="^[6-9]\\d{9}$"
+          placeholder="10-digit mobile number"
+          required
+          title="Please enter a valid 10-digit Indian mobile number starting with 6-9."
+          class="flex-1 min-w-0 rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+        />
+      </div>
+    </div>
+
+    <div>
+      <label for={`${formId}-email`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+        Email <span class="text-slate-500 font-normal normal-case">(optional)</span>
+      </label>
+      <input
+        id={`${formId}-email`}
+        name="email"
+        type="email"
+        placeholder="you@email.com"
+        class="w-full rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+      />
+    </div>
+
+    <div>
+      <label for={`${formId}-course`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+        Course of Interest
+      </label>
+      <input
+        id={`${formId}-course`}
+        name="course"
+        type="text"
+        placeholder="e.g. AWS Cloud Architect"
+        value={courseName}
+        readonly={lockCourseName ? true : undefined}
+        class={`w-full rounded-lg border px-4 py-3 text-sm font-medium transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500 ${
+          lockCourseName 
+            ? 'cursor-not-allowed bg-slate-800/80 border-white/5 text-slate-400' 
+            : 'bg-slate-800/50 border-white/10 text-surface-0'
+        }`}
+      />
+    </div>
+
+    <button
+      type="submit"
+      class="submit-btn mt-2 w-full rounded-lg bg-primary hover:bg-primary-hover px-6 py-3.5 text-center text-base font-semibold text-white shadow-lg shadow-primary/20 hover:shadow-primary/40 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed border border-primary-light/20"
+    >
+      <span class="submit-text">Enquire Now — Free</span>
+      <svg class="loading-spinner hidden animate-spin w-5 h-5 text-white" fill="none" viewBox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+      </svg>
+    </button>
+  </form>
+</div>
+
+<script>
+  const forms = document.querySelectorAll('.enquiry-form');
+  const APPS_SCRIPT_URL = import.meta.env.PUBLIC_STUDENT_APPS_SCRIPT_URL || import.meta.env.PUBLIC_APPS_SCRIPT_URL;
+
+  forms.forEach(form => {
+    const formId = form.id;
+    const successUI = document.getElementById(`${formId}-success`);
+    const resetBtn = successUI?.querySelector('.reset-form-btn');
+    const submitBtn = form.querySelector('.submit-btn') as HTMLButtonElement;
+    const submitText = form.querySelector('.submit-text');
+    const loadingSpinner = form.querySelector('.loading-spinner');
+
+    const resetForm = () => {
+      if (successUI) {
+        successUI.classList.add('opacity-0', 'pointer-events-none');
+      }
+      (form as HTMLFormElement).reset();
+    };
+
+    resetBtn?.addEventListener('click', resetForm);
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(form as HTMLFormElement);
+      const data = Object.fromEntries(formData.entries());
+      
+      // Honeypot check
+      if (data.b_field) {
+        resetForm();
+        return;
+      }
+
+      // Lock state
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitText) submitText.textContent = 'Submitting...';
+      if (loadingSpinner) loadingSpinner.classList.remove('hidden');
+
+      const fullPhoneNumber = `${data.countryCode} ${data.phone}`;
+      
+      const payload = {
+        type: 'student',
+        date: new Date().toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        time: new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' }),
+        name: data.name,
+        phone: fullPhoneNumber,
+        email: data.email,
+        course: data.course || 'General Enquiry',
+        sourceUrl: form.getAttribute('data-source') || window.location.href
+      };
+
+      try {
+        if (!APPS_SCRIPT_URL) {
+          console.info("Dev Mode: Apps Script URL not defined. Simulated submission payload:", payload);
+          await new Promise(r => setTimeout(r, 800));
+        } else {
+          await fetch(APPS_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain' },
+            body: JSON.stringify(payload)
+          });
+        }
+        
+        // Optimistic UI Success
+        if (successUI) {
+          successUI.classList.remove('opacity-0', 'pointer-events-none');
+        }
+      } catch (err) {
+        console.error('Submission failed', err);
+        alert('There was a problem submitting your enquiry. Please try again or contact us via WhatsApp.');
+      } finally {
+        // Unlock state
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitText) submitText.textContent = 'Enquire Now — Free';
+        if (loadingSpinner) loadingSpinner.classList.add('hidden');
+      }
+    });
+  });
+</script>

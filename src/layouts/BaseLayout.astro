@@ -2,13 +2,15 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyMobileBar from '../components/StickyMobileBar.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
 
 export interface Props {
   title: string;
   description?: string;
+  courseName?: string;
 }
 
-const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in Hyderabad' } = Astro.props;
+const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in Hyderabad', courseName } = Astro.props;
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -20,13 +22,35 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <slot name="head" />
+    <style is:global>
+      ::selection {
+        background-color: theme('colors.primary.DEFAULT');
+        color: white;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: theme('colors.slate.dark');
+      }
+      ::-webkit-scrollbar-thumb {
+        background: theme('colors.slate.muted');
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: theme('colors.primary.DEFAULT');
+      }
+    </style>
   </head>
-  <body class="bg-surface-50 text-ink-900 font-body antialiased flex flex-col min-h-screen">
+  <body class="bg-[#090D16] text-surface-0 font-body antialiased flex flex-col min-h-screen selection:bg-primary selection:text-white">
     <Header />
-    <main class="flex-grow">
+    <main class="flex-grow pb-15 md:pb-0 overflow-x-clip w-full min-w-0">
       <slot />
     </main>
     <Footer />
-    <StickyMobileBar />
+    <StickyMobileBar courseName={courseName} />
+    <WhatsAppButton courseName={courseName} />
   </body>
 </html>

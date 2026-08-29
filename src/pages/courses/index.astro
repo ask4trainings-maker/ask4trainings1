@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CourseCard from '../../components/CourseCard.astro';
+import SearchModal from '../../components/SearchModal.astro';
 import categoriesData from '../../content/categories.json';
 import { getCollection } from 'astro:content';
 
@@ -10,38 +11,82 @@ const categories = Object.keys(categoriesData).map(key => ({
   label: (categoriesData as any)[key].label
 }));
 ---
-<BaseLayout title="All Courses | Ask 4 Trainings">
-  <div class="bg-surface-50 border-b border-border py-16 text-center">
-    <div class="container mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-heading font-bold text-ink-900 mb-4">Course Catalog</h1>
-      <p class="text-lg text-ink-700 max-w-2xl mx-auto">Browse our comprehensive list of enterprise IT training programs designed to accelerate your career.</p>
-    </div>
-  </div>
-
-  <div class="container mx-auto px-4 py-16">
-    <div class="flex flex-wrap gap-2 justify-center mb-12">
-      <a href="/courses" class="bg-primary text-surface-0 px-4 py-2 rounded-full text-sm font-medium">All Courses</a>
-      {categories.map(cat => (
-        <a href={`/courses/${cat.key}`} class="bg-surface-50 hover:bg-surface-100 text-ink-700 border border-border px-4 py-2 rounded-full text-sm font-medium transition-colors">{cat.label}</a>
-      ))}
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {allCourses.map(course => (
-        <CourseCard 
-          title={course.data.title}
-          category={course.data.category}
-          duration={course.data.batchInfo.duration}
-          format={course.data.batchInfo.format}
-          slug={course.data.slug}
-        />
-      ))}
+<BaseLayout title="All Courses | Ask 4 Trainings" description="Browse our comprehensive list of enterprise IT training programs designed to accelerate your career.">
+  <!-- Header Section -->
+  <div class="bg-[#090D16] border-b border-white/5 py-16 text-center relative overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px]"></div>
     </div>
     
-    {allCourses.length === 0 && (
-      <div class="text-center py-12 text-ink-500">
-        <p>No courses found. Check back later!</p>
+    <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-surface-0 mb-4">Course Catalog</h1>
+      <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-10">Browse our comprehensive list of enterprise IT training programs designed to accelerate your career.</p>
+      
+      <!-- Search Trigger Bar -->
+      <div class="max-w-xl mx-auto relative group">
+        <button 
+          id="catalog-search-trigger"
+          class="w-full bg-slate-900/60 backdrop-blur-md border border-white/20 hover:border-primary/50 text-slate-300 px-6 py-4 rounded-xl text-left flex items-center gap-3 transition-all duration-300 hover:shadow-[0_0_20px_rgba(13,110,79,0.2)] focus:outline-none focus:ring-2 focus:ring-primary"
+          aria-label="Search courses"
+        >
+          <svg class="w-6 h-6 text-slate-400 group-hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+          <span class="text-lg">Search for courses, skills, or tools...</span>
+          <div class="ml-auto hidden sm:flex items-center gap-1 opacity-60">
+            <kbd class="font-sans px-2 py-0.5 bg-slate-800 border border-white/10 rounded text-xs">Ctrl</kbd>
+            <kbd class="font-sans px-2 py-0.5 bg-slate-800 border border-white/10 rounded text-xs">K</kbd>
+          </div>
+        </button>
       </div>
-    )}
+    </div>
   </div>
+
+  <!-- Content Section -->
+  <div class="bg-[#090D16]">
+    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-16">
+      
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap gap-3 justify-center mb-12">
+        <a href="/courses" class="bg-primary text-surface-0 px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_0_15px_rgba(13,110,79,0.3)] transition-transform hover:-translate-y-0.5">All Courses</a>
+        {categories.map(cat => (
+          <a href={`/courses/${cat.key}`} class="bg-slate-800/60 hover:bg-slate-700/60 text-slate-300 border border-white/10 hover:border-white/20 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5">{cat.label}</a>
+        ))}
+      </div>
+
+      <!-- Course Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {allCourses.map(course => (
+          <CourseCard 
+            title={course.data.title}
+            category={course.data.category}
+            duration={course.data.batchInfo.duration}
+            format={course.data.batchInfo.format}
+            slug={course.data.slug}
+          />
+        ))}
+      </div>
+      
+      {allCourses.length === 0 && (
+        <div class="text-center py-12 text-slate-500">
+          <p class="text-lg">No courses found. Check back later!</p>
+        </div>
+      )}
+    </div>
+  </div>
+
+  <SearchModal />
+
+  <script>
+    // Search trigger logic
+    document.getElementById('catalog-search-trigger')?.addEventListener('click', () => {
+      const modal = document.getElementById('search-modal');
+      const input = document.getElementById('search-input');
+      if (modal && input) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        input.focus();
+      }
+    });
+  </script>
 </BaseLayout>

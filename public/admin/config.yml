@@ -1,0 +1,44 @@
+backend:
+  name: github
+  repo: your-github-org/ask4trainings
+  branch: main
+  base_url: https://ask4trainings.com
+  auth_endpoint: /oauth/auth
+
+media_folder: "public/assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "courses"
+    label: "Courses"
+    folder: "src/content/courses"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["guidewire", "sap", "oracle", "salesforce", "cloud-computing", "devops", "other-tools"]}
+      - {label: "Legacy URL (Optional)", name: "legacyUrl", widget: "string", required: false}
+      - {label: "Legacy Impressions", name: "legacyImpressions", widget: "number", required: false}
+      - {label: "Value Proposition", name: "valueProp", widget: "text"}
+      - {label: "Batch Info", name: "batchInfo", widget: "object", fields: [{label: "Format", name: "format", widget: "select", options: ["Online", "Classroom", "Hybrid"]}, {label: "Start Date", name: "startDate", widget: "string", required: false}, {label: "Duration", name: "duration", widget: "string"}, {label: "Timings", name: "timings", widget: "string", required: false}]}
+      - {label: "SEO", name: "seo", widget: "object", fields: [{label: "Meta Title", name: "metaTitle", widget: "string"}, {label: "Meta Description", name: "metaDescription", widget: "text"}]}
+      - {label: "Syllabus", name: "syllabus", widget: "list", fields: [{label: "Module", name: "module", widget: "string"}, {label: "Topics", name: "topics", widget: "list"}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "publishDate", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "SEO", name: "seo", widget: "object", fields: [{label: "Meta Title", name: "metaTitle", widget: "string"}, {label: "Meta Description", name: "metaDescription", widget: "text"}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "categories"
+    label: "Categories Taxonomy"
+    file: "src/content/categories.json"
+    fields:
+      - label: "Categories Map"
+        name: "categories"
+        widget: "object"
