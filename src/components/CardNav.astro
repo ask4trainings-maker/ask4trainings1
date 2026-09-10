@@ -2,9 +2,9 @@
 import WhatsAppCTA from './WhatsAppCTA.astro';
 ---
 <div class="card-nav-container relative w-full z-50 mt-4 px-4">
-  <div class="container mx-auto px-4 py-4 flex justify-between items-center bg-slate-900/90 backdrop-blur-md border border-white/10 rounded-2xl shadow-xl relative z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center bg-white/90 backdrop-blur-md border border-slate-200 rounded-2xl shadow-xl relative z-50">
     <div class="flex items-center gap-4">
-      <button id="card-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu" class="p-2 text-slate-300 hover:text-surface-0 transition-colors relative group">
+      <button id="card-nav-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu" class="p-2 text-slate-600 hover:text-slate-900 transition-colors relative group">
         <span class="sr-only">Open menu</span>
         <div class="w-6 h-5 relative flex flex-col justify-between overflow-hidden">
           <span class="w-full h-0.5 bg-current transform transition-all duration-300 origin-left group-aria-expanded:rotate-45"></span>
@@ -12,7 +12,7 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
           <span class="w-full h-0.5 bg-current transform transition-all duration-300 origin-left group-aria-expanded:-rotate-45"></span>
         </div>
       </button>
-      <button id="search-trigger" aria-label="Search Courses" class="p-2 text-slate-300 hover:text-surface-0 transition-colors hover:bg-white/5 rounded-full">
+      <button id="search-trigger" aria-label="Search Courses" class="p-2 text-slate-600 hover:text-slate-900 transition-colors hover:bg-white/5 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
         </svg>
@@ -22,7 +22,7 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
     <a href="/" class="font-bold text-lg text-white">Ask 4 <span class="text-accent">Trainings</span></a>
     
     <div class="flex items-center gap-3">
-      <a href="/contact-us" class="hidden sm:block bg-accent hover:bg-accent-hover text-surface-0 px-4 py-2 rounded-lg font-medium transition-colors text-sm">
+      <a href="/contact-us" class="hidden sm:block bg-accent hover:bg-accent-hover text-slate-900 px-4 py-2 rounded-lg font-medium transition-colors text-sm">
         Enquire Now
       </a>
       <WhatsAppCTA className="hidden lg:flex px-4 py-2 text-sm shadow-[0_0_15px_rgba(37,211,102,0.3)] hover:shadow-[0_0_20px_rgba(37,211,102,0.5)]" />
@@ -32,10 +32,10 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
   <!-- Expandable Content -->
   <div class="card-nav-menu grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out absolute left-4 right-4 top-full pt-2">
     <div class="overflow-hidden">
-      <div class="card-nav-content flex flex-col lg:flex-row gap-6 p-4 bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl mt-2">
+      <div class="card-nav-content flex flex-col lg:flex-row gap-6 p-4 bg-white/95 backdrop-blur-xl border border-slate-200 rounded-2xl shadow-2xl mt-2">
         
         <!-- Card 1 (Core Enterprise ERP & PLM) -->
-        <div class="nav-card bg-[#0D3A2B]/90 border border-primary/20 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-primary/50 transition-colors">
+        <div class="nav-card bg-emerald-50 border border-primary/20 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-primary/50 transition-colors">
           <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-4">Enterprise ERP & Core</h3>
           <ul class="space-y-4 flex-grow">
             <li><a href="/courses/guidewire" class="block hover:text-primary-light transition-colors flex justify-between items-center">Guidewire Suite <span>↗</span></a></li>
@@ -46,7 +46,7 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
         </div>
         
         <!-- Card 2 (Cloud, DevOps & Emerging Tech) -->
-        <div class="nav-card bg-slate-800/90 border border-white/10 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-blue-400/50 transition-colors">
+        <div class="nav-card bg-slate-100/90 border border-slate-200 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-blue-400/50 transition-colors">
           <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-4">Cloud, DevOps & Tech</h3>
           <ul class="space-y-4 flex-grow">
             <li><a href="/courses/cloud-computing" class="block hover:text-blue-300 transition-colors flex justify-between items-center">Cloud Computing <span>↗</span></a></li>
@@ -57,12 +57,12 @@ import WhatsAppCTA from './WhatsAppCTA.astro';
         </div>
         
         <!-- Card 3 (Development, Tools & Support) -->
-        <div class="nav-card bg-[#2E2310]/90 border border-accent/20 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-accent/50 transition-colors">
+        <div class="nav-card bg-amber-50 border border-accent/20 text-white rounded-xl p-6 flex-1 flex flex-col group hover:border-accent/50 transition-colors">
           <h3 class="text-xl font-bold mb-6 border-b border-white/20 pb-4">Development & Support</h3>
           <ul class="space-y-4 flex-grow">
             <li><a href="/courses/development" class="block hover:text-accent-light transition-colors flex justify-between items-center">Full Stack Dev <span>↗</span></a></li>
             <li><a href="/courses/oracle" class="block hover:text-accent-light transition-colors flex justify-between items-center">Oracle & Tools <span>↗</span></a></li>
-            <li class="pt-4 mt-2 border-t border-white/10"><a href="/courses" class="block font-medium hover:text-accent-light transition-colors flex justify-between items-center text-accent">Full Course Catalog <span>↗</span></a></li>
+            <li class="pt-4 mt-2 border-t border-slate-200"><a href="/courses" class="block font-medium hover:text-accent-light transition-colors flex justify-between items-center text-accent">Full Course Catalog <span>↗</span></a></li>
             <li><a href="/about-us" class="block hover:text-accent-light transition-colors flex justify-between items-center">About Us <span>↗</span></a></li>
             <li><a href="/contact-us" class="block hover:text-accent-light transition-colors flex justify-between items-center">Contact & Placements <span>↗</span></a></li>
           </ul>

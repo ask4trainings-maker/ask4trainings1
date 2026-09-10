@@ -3,28 +3,28 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import aboutData from '../data/pages/about.json';
 ---
 <BaseLayout title="About Us | Ask 4 Trainings">
-  <div class="bg-[#090D16] border-b border-white/5 py-20 relative overflow-hidden">
+  <div class="bg-slate-50 border-b border-slate-100 py-20 relative overflow-hidden">
     <!-- Ambient glows -->
     <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]"></div>
     </div>
     
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-surface-0 mb-6 text-center">About Ask 4 Trainings</h1>
-      <p class="text-lg md:text-xl text-slate-300 max-w-4xl mx-auto text-center leading-relaxed mb-16">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-6 text-center">About Ask 4 Trainings</h1>
+      <p class="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto text-center leading-relaxed mb-16">
         {aboutData.story}
       </p>
 
       <!-- Section: Timeline -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Our Journey</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Our Journey</h2>
         <div class="space-y-6">
           {aboutData.milestones.map((milestone: any) => (
             <div class="flex gap-4 items-start">
               <div class="w-12 h-12 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center shrink-0 text-primary font-bold">{milestone.year}</div>
-              <div class="bg-slate-800/40 border border-white/10 rounded-xl p-5 flex-1">
-                <h3 class="text-lg font-bold text-surface-0 mb-2">{milestone.title}</h3>
-                <p class="text-slate-300">{milestone.description}</p>
+              <div class="bg-slate-100/40 border border-slate-200 rounded-xl p-5 flex-1">
+                <h3 class="text-lg font-bold text-slate-900 mb-2">{milestone.title}</h3>
+                <p class="text-slate-600">{milestone.description}</p>
               </div>
             </div>
           ))}
@@ -33,16 +33,16 @@ import aboutData from '../data/pages/about.json';
 
       <!-- Section: Faculty -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Expert Faculty</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Expert Faculty</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           {aboutData.faculty.map((member: any) => (
-            <div class="bg-slate-900/60 border border-white/10 rounded-2xl p-6 text-center hover:border-primary/30 transition-colors">
-              <div class="w-20 h-20 mx-auto rounded-full bg-slate-800 border-2 border-primary/50 mb-4 flex items-center justify-center">
-                <svg class="w-8 h-8 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+            <div class="bg-white/60 border border-slate-200 rounded-2xl p-6 text-center hover:border-primary/30 transition-colors">
+              <div class="w-20 h-20 mx-auto rounded-full bg-slate-100 border-2 border-primary/50 mb-4 flex items-center justify-center">
+                <svg class="w-8 h-8 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
               </div>
-              <h3 class="text-lg font-bold text-surface-0">{member.name}</h3>
+              <h3 class="text-lg font-bold text-slate-900">{member.name}</h3>
               <p class="text-sm text-primary mb-3">{member.role}</p>
-              <p class="text-sm text-slate-400">{member.bio}</p>
+              <p class="text-sm text-slate-500">{member.bio}</p>
             </div>
           ))}
         </div>
@@ -50,24 +50,24 @@ import aboutData from '../data/pages/about.json';
 
       <!-- Section: Infrastructure -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Lab Infrastructure</h2>
-        <div class="bg-slate-800/40 border border-white/10 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8">
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Lab Infrastructure</h2>
+        <div class="bg-slate-100/40 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2">
-            <h3 class="text-xl font-bold text-surface-0 mb-4">24/7 Dedicated Sandbox Access</h3>
-            <p class="text-slate-300 mb-4">We provide high-performance cloud lab environments for all our students. Practice complex integrations and deployments without worrying about local hardware limitations.</p>
-            <ul class="space-y-2 text-sm text-slate-400">
+            <h3 class="text-xl font-bold text-slate-900 mb-4">24/7 Dedicated Sandbox Access</h3>
+            <p class="text-slate-600 mb-4">We provide high-performance cloud lab environments for all our students. Practice complex integrations and deployments without worrying about local hardware limitations.</p>
+            <ul class="space-y-2 text-sm text-slate-500">
               {aboutData.infrastructure.map((item: string) => (
                 <li class="flex items-center gap-2"><svg class="w-4 h-4 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> {item}</li>
               ))}
             </ul>
           </div>
-          <div class="md:w-1/2 bg-slate-900 border border-white/5 rounded-xl p-6 shadow-inner w-full">
-            <div class="flex gap-2 mb-4 border-b border-white/10 pb-2">
+          <div class="md:w-1/2 bg-white border border-slate-100 rounded-xl p-6 shadow-inner w-full">
+            <div class="flex gap-2 mb-4 border-b border-slate-200 pb-2">
               <div class="w-3 h-3 rounded-full bg-red-500"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
               <div class="w-3 h-3 rounded-full bg-green-500"></div>
             </div>
-            <div class="font-mono text-sm text-slate-400 space-y-2">
+            <div class="font-mono text-sm text-slate-500 space-y-2">
               <p><span class="text-accent">root@sandbox</span><span class="text-white">:</span><span class="text-blue-400">~</span>$ docker-compose up -d</p>
               <p>Starting enterprise_db ... <span class="text-whatsapp">done</span></p>
               <p>Starting app_server ... <span class="text-whatsapp">done</span></p>
@@ -79,10 +79,10 @@ import aboutData from '../data/pages/about.json';
 
       <!-- Section: Partners -->
       <div>
-        <h2 class="text-2xl font-heading font-bold text-surface-0 mb-8 border-b border-white/10 pb-4">Corporate Training Partners</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Corporate Training Partners</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
           {[1,2,3,4,5,6].map((i) => (
-            <div class="bg-white/5 border border-white/10 rounded-lg h-24 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
+            <div class="bg-white/5 border border-slate-200 rounded-lg h-24 flex items-center justify-center grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all">
               <span class="text-slate-500 font-bold tracking-widest text-sm">PARTNER {i}</span>
             </div>
           ))}

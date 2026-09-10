@@ -48,7 +48,7 @@ const categories = Object.keys(categoriesData).map(key => ({
       <!-- Left: Scaler Value Prop (7 cols) -->
       <div class="lg:col-span-7 xl:col-span-7 animate-fade-in-up">
         <!-- Live Batch Pill -->
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-white/10 text-slate-300 text-xs font-mono mb-8 backdrop-blur-md">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100/80 border border-slate-200 text-slate-600 text-xs font-mono mb-8 backdrop-blur-md">
           <span class="relative flex h-2 w-2">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
@@ -56,17 +56,17 @@ const categories = Object.keys(categoriesData).map(key => ({
           {homeData.hero.badge}
         </div>
         
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-surface-0 mb-6 leading-[1.1] tracking-tight">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-slate-900 mb-6 leading-[1.1] tracking-tight">
           <Fragment set:html={homeData.hero.headline} />
           <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">{homeData.hero.headlineGradient}</span>
         </h1>
         
-        <p class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl font-light">
+        <p class="text-lg md:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl font-light">
           {homeData.hero.subheadline}
         </p>
 
         <!-- Metric Counter Strip -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 border-y border-white/10 py-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 border-y border-slate-200 py-6">
           {homeData.metrics.map((metric: any) => (
             <div>
               <div class="text-2xl md:text-3xl font-bold font-mono text-primary-light mb-1">{metric.value}</div>
@@ -92,9 +92,9 @@ const categories = Object.keys(categoriesData).map(key => ({
         <!-- Glowing drop shadow -->
         <div class="absolute -inset-0.5 bg-gradient-to-b from-white/10 to-transparent rounded-2xl blur opacity-50"></div>
         
-        <div class="relative bg-[#090D16] border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[500px]">
+        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[500px]">
           <!-- Mac OS Window Header -->
-          <div class="bg-[#141C24] border-b border-white/10 px-4 py-3 flex items-center justify-between">
+          <div class="bg-[#141C24] border-b border-slate-200 px-4 py-3 flex items-center justify-between">
             <div class="flex items-center gap-2">
               <div class="w-3 h-3 rounded-full bg-red-500/80 border border-red-500/50"></div>
               <div class="w-3 h-3 rounded-full bg-yellow-500/80 border border-yellow-500/50"></div>
@@ -107,27 +107,27 @@ const categories = Object.keys(categoriesData).map(key => ({
           </div>
           
           <!-- Tab Switcher -->
-          <div class="flex border-b border-white/5 bg-[#0F172A]">
+          <div class="flex border-b border-slate-100 bg-[#0F172A]">
             <button class="ide-tab active flex-1 py-3 text-[11px] font-mono text-white/80 border-b-2 border-primary bg-white/5 transition-colors" data-target="tab-1">live-class.tsx</button>
-            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-300 transition-colors" data-target="tab-2">terminal.sh</button>
-            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-300 transition-colors" data-target="tab-3">study-vault.md</button>
+            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-600 transition-colors" data-target="tab-2">terminal.sh</button>
+            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-600 transition-colors" data-target="tab-3">study-vault.md</button>
           </div>
 
           <!-- Tab Content Area -->
-          <div class="flex-grow relative bg-[#090D16] p-4 font-mono text-sm overflow-hidden">
+          <div class="flex-grow relative bg-slate-50 p-4 font-mono text-sm overflow-hidden">
             
             <!-- Tab 1: Live Interactive Batch -->
             <div id="tab-1" class="ide-content absolute inset-0 p-4 flex flex-col opacity-100 transition-opacity duration-300">
-              <div class="flex-grow bg-slate-900 rounded border border-white/5 relative overflow-hidden group">
+              <div class="flex-grow bg-white rounded border border-slate-100 relative overflow-hidden group">
                 <div class="absolute inset-0 flex items-center justify-center">
                   <svg class="w-12 h-12 text-slate-700" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
                 </div>
                 <!-- Instructor Notes Overlay -->
-                <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur border border-white/10 rounded p-2 text-[10px] text-slate-300">
+                <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur border border-slate-200 rounded p-2 text-[10px] text-slate-600">
                   <span class="text-primary-light font-bold">Instructor:</span> "Notice how the PolicyCenter API handles the transaction..."
                 </div>
               </div>
-              <div class="h-24 mt-2 border-t border-white/10 pt-2 flex flex-col gap-1 overflow-y-auto">
+              <div class="h-24 mt-2 border-t border-slate-200 pt-2 flex flex-col gap-1 overflow-y-auto">
                 <div class="text-[10px]"><span class="text-accent">Rahul (Student):</span> Got it, the payload requires a token.</div>
                 <div class="text-[10px]"><span class="text-blue-400">System:</span> Snippet shared to workbench.</div>
                 <div class="text-[10px]"><span class="text-slate-500">Connecting to Sandbox...</span></div>
@@ -136,11 +136,11 @@ const categories = Object.keys(categoriesData).map(key => ({
             
             <!-- Tab 2: Cloud Sandbox Lab -->
             <div id="tab-2" class="ide-content absolute inset-0 p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-              <div class="text-slate-400 mb-2">ask4trainings-lab ~ % <span class="text-white">ssh student@sandbox.ask4trainings.local</span></div>
+              <div class="text-slate-500 mb-2">ask4trainings-lab ~ % <span class="text-white">ssh student@sandbox.ask4trainings.local</span></div>
               <div class="text-slate-500 mb-2">Authenticating...</div>
               <div class="text-green-400 mb-4">SUCCESS: Connected to SAP S/4HANA Instance.</div>
-              <div class="text-slate-400 mb-1">Loading modules... [OK]</div>
-              <div class="text-slate-400 mb-1">Mounting volumes... [OK]</div>
+              <div class="text-slate-500 mb-1">Loading modules... [OK]</div>
+              <div class="text-slate-500 mb-1">Mounting volumes... [OK]</div>
               <div class="mt-4 flex gap-2 items-center text-primary-light">
                 <span class="animate-pulse">_</span>
               </div>
@@ -148,14 +148,14 @@ const categories = Object.keys(categoriesData).map(key => ({
             
             <!-- Tab 3: PDF Study Vault -->
             <div id="tab-3" class="ide-content absolute inset-0 p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-              <div class="text-slate-400 mb-4 flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg> /materials/guidewire</div>
+              <div class="text-slate-500 mb-4 flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg> /materials/guidewire</div>
               <div class="space-y-2">
-                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-white/5 hover:bg-white/10 cursor-pointer transition-colors">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-300"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Architecture_Guide_v2.pdf</div>
+                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-slate-100 hover:bg-white/10 cursor-pointer transition-colors">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-600"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Architecture_Guide_v2.pdf</div>
                   <span class="text-[9px] text-slate-500">2.4 MB</span>
                 </div>
-                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-white/5 hover:bg-white/10 cursor-pointer transition-colors">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-300"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Interview_QnA_Bank.pdf</div>
+                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-slate-100 hover:bg-white/10 cursor-pointer transition-colors">
+                  <div class="flex items-center gap-2 text-[11px] text-slate-600"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Interview_QnA_Bank.pdf</div>
                   <span class="text-[9px] text-slate-500">1.1 MB</span>
                 </div>
               </div>
@@ -178,8 +178,8 @@ const categories = Object.keys(categoriesData).map(key => ({
   <section id="course-catalog" class="py-20 relative">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-surface-0 mb-4">Enterprise Course Catalog</h2>
-        <p class="text-slate-400 max-w-2xl mx-auto">Filter by specialized domains to find your targeted career track.</p>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Enterprise Course Catalog</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Filter by specialized domains to find your targeted career track.</p>
       </div>
 
       <!-- Horizontal Pill Selector -->
@@ -188,7 +188,7 @@ const categories = Object.keys(categoriesData).map(key => ({
           All Courses
         </button>
         {categories.map(cat => (
-          <button class="filter-btn shrink-0 px-5 py-2 rounded-full border border-white/10 text-slate-300 bg-white/5 text-sm font-medium transition-all hover:border-white/30 hover:bg-white/10" data-filter={cat.slug}>
+          <button class="filter-btn shrink-0 px-5 py-2 rounded-full border border-slate-200 text-slate-600 bg-white/5 text-sm font-medium transition-all hover:border-white/30 hover:bg-white/10" data-filter={cat.slug}>
             {cat.label}
           </button>
         ))}
@@ -210,7 +210,7 @@ const categories = Object.keys(categoriesData).map(key => ({
       </div>
       
       <div class="mt-12 text-center">
-        <a href="/courses" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-surface-0 group border-b border-dashed border-slate-600 hover:border-surface-0 transition-all pb-1">
+        <a href="/courses" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 group border-b border-dashed border-slate-600 hover:border-surface-0 transition-all pb-1">
           View Entire Catalog 
           <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
         </a>
@@ -224,14 +224,14 @@ const categories = Object.keys(categoriesData).map(key => ({
     <div class="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-50 pointer-events-none"></div>
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="mb-12">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-surface-0 mb-4">The Ask4Trainings Learning Ecosystem</h2>
-        <p class="text-slate-400 max-w-2xl">A complete end-to-end framework designed for enterprise skill mastery.</p>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">The Ask4Trainings Learning Ecosystem</h2>
+        <p class="text-slate-500 max-w-2xl">A complete end-to-end framework designed for enterprise skill mastery.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
         
         <!-- Live Classes -->
-        <div class="lg:col-span-2 bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-primary/40 transition-colors">
+        <div class="lg:col-span-2 bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-primary/40 transition-colors">
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none"></div>
           <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[80px] group-hover:bg-primary/30 transition-colors"></div>
           
@@ -239,39 +239,39 @@ const categories = Object.keys(categoriesData).map(key => ({
             <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-primary-light" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
             </div>
-            <h3 class="text-2xl font-bold font-heading text-surface-0 mb-2">{homeData.bento[0].title}</h3>
-            <p class="text-slate-400">{homeData.bento[0].description}</p>
+            <h3 class="text-2xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[0].title}</h3>
+            <p class="text-slate-500">{homeData.bento[0].description}</p>
           </div>
         </div>
 
         <!-- Cloud Sandboxes -->
-        <div class="bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-accent/40 transition-colors">
+        <div class="bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-accent/40 transition-colors">
           <div class="absolute top-0 left-0 w-48 h-48 bg-accent/10 blur-[60px] group-hover:bg-accent/20 transition-colors"></div>
           
           <div class="relative z-20">
             <div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-accent-light" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
             </div>
-            <h3 class="text-xl font-bold font-heading text-surface-0 mb-2">{homeData.bento[1].title}</h3>
-            <p class="text-slate-400 text-sm">{homeData.bento[1].description}</p>
+            <h3 class="text-xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[1].title}</h3>
+            <p class="text-slate-500 text-sm">{homeData.bento[1].description}</p>
           </div>
         </div>
 
         <!-- PDF Vault -->
-        <div class="bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-blue-500/40 transition-colors">
+        <div class="bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-blue-500/40 transition-colors">
           <div class="absolute bottom-0 right-0 w-48 h-48 bg-blue-500/10 blur-[60px] group-hover:bg-blue-500/20 transition-colors"></div>
           
           <div class="relative z-20">
             <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
             </div>
-            <h3 class="text-xl font-bold font-heading text-surface-0 mb-2">{homeData.bento[2].title}</h3>
-            <p class="text-slate-400 text-sm">{homeData.bento[2].description}</p>
+            <h3 class="text-xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[2].title}</h3>
+            <p class="text-slate-500 text-sm">{homeData.bento[2].description}</p>
           </div>
         </div>
 
         <!-- Mock Interviews -->
-        <div class="lg:col-span-2 bg-slate-900/50 backdrop-blur-md border border-white/10 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-whatsapp/40 transition-colors">
+        <div class="lg:col-span-2 bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-whatsapp/40 transition-colors">
           <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
           <div class="absolute bottom-0 left-0 w-64 h-64 bg-whatsapp/10 blur-[80px] group-hover:bg-whatsapp/20 transition-colors"></div>
           
@@ -279,8 +279,8 @@ const categories = Object.keys(categoriesData).map(key => ({
             <div class="w-12 h-12 rounded-xl bg-whatsapp/20 flex items-center justify-center mb-6">
               <svg class="w-6 h-6 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
             </div>
-            <h3 class="text-2xl font-bold font-heading text-surface-0 mb-2">{homeData.bento[3].title}</h3>
-            <p class="text-slate-400">{homeData.bento[3].description}</p>
+            <h3 class="text-2xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[3].title}</h3>
+            <p class="text-slate-500">{homeData.bento[3].description}</p>
           </div>
         </div>
 
@@ -294,8 +294,8 @@ const categories = Object.keys(categoriesData).map(key => ({
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-accent/5 via-transparent to-transparent opacity-50 pointer-events-none"></div>
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-surface-0 mb-4">Structured Career Roadmap</h2>
-        <p class="text-slate-400 max-w-2xl mx-auto">From fundamentals to your first offer letter.</p>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Structured Career Roadmap</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">From fundamentals to your first offer letter.</p>
       </div>
 
       <div class="relative max-w-5xl mx-auto">
@@ -304,40 +304,40 @@ const categories = Object.keys(categoriesData).map(key => ({
         
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
           <!-- Step 1 -->
-          <div class="bg-slate-900/80 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               1
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-primary rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-surface-0 mb-2">{homeData.roadmap[0].title}</h4>
-            <p class="text-xs text-slate-400">{homeData.roadmap[0].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[0].title}</h4>
+            <p class="text-xs text-slate-500">{homeData.roadmap[0].description}</p>
           </div>
           <!-- Step 2 -->
-          <div class="bg-slate-900/80 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               2
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-primary rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-surface-0 mb-2">{homeData.roadmap[1].title}</h4>
-            <p class="text-xs text-slate-400">{homeData.roadmap[1].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[1].title}</h4>
+            <p class="text-xs text-slate-500">{homeData.roadmap[1].description}</p>
           </div>
           <!-- Step 3 -->
-          <div class="bg-slate-900/80 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-center relative group hover:border-accent/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-accent text-accent-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-accent/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-accent text-accent-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               3
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-accent rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-surface-0 mb-2">{homeData.roadmap[2].title}</h4>
-            <p class="text-xs text-slate-400">{homeData.roadmap[2].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[2].title}</h4>
+            <p class="text-xs text-slate-500">{homeData.roadmap[2].description}</p>
           </div>
           <!-- Step 4 -->
-          <div class="bg-slate-900/80 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-center relative group hover:border-whatsapp/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-800 border-2 border-whatsapp text-whatsapp flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-whatsapp/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-whatsapp text-whatsapp flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               4
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-whatsapp rounded-full border-2 border-slate-900 animate-pulse"></div>
             </div>
-            <h4 class="font-bold text-surface-0 mb-2">{homeData.roadmap[3].title}</h4>
-            <p class="text-xs text-slate-400">{homeData.roadmap[3].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[3].title}</h4>
+            <p class="text-xs text-slate-500">{homeData.roadmap[3].description}</p>
           </div>
         </div>
       </div>
@@ -351,20 +351,20 @@ const categories = Object.keys(categoriesData).map(key => ({
 
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
       <div>
-        <h2 class="text-3xl md:text-5xl font-heading font-bold text-surface-0 mb-6 leading-tight">
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 leading-tight">
           <Fragment set:html={homeData.conversion.headline} />
         </h2>
-        <p class="text-lg text-slate-400 mb-8 max-w-lg leading-relaxed">
+        <p class="text-lg text-slate-500 mb-8 max-w-lg leading-relaxed">
           {homeData.conversion.subtext}
         </p>
-        <div class="flex items-center gap-4 text-sm text-slate-300">
+        <div class="flex items-center gap-4 text-sm text-slate-600">
           <div class="flex -space-x-3">
             <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://ui-avatars.com/api/?name=Admin&background=0D6E4F&color=fff" alt="Counselor">
             <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://ui-avatars.com/api/?name=Tech&background=F59E0B&color=fff" alt="Counselor">
-            <div class="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-xs font-bold">+5</div>
+            <div class="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-100 flex items-center justify-center text-xs font-bold">+5</div>
           </div>
           <div>
-            <div class="font-bold text-surface-0">Response time: &lt; 2 hours</div>
+            <div class="font-bold text-slate-900">Response time: &lt; 2 hours</div>
             <div class="text-slate-500">During business hours</div>
           </div>
         </div>
@@ -419,9 +419,9 @@ const categories = Object.keys(categoriesData).map(key => ({
       // Update active button styling
       filterBtns.forEach(b => {
         b.classList.remove('active', 'border-primary', 'text-primary-light', 'bg-primary/20');
-        b.classList.add('border-white/10', 'text-slate-300', 'bg-white/5');
+        b.classList.add('border-slate-200', 'text-slate-600', 'bg-white/5');
       });
-      btn.classList.remove('border-white/10', 'text-slate-300', 'bg-white/5');
+      btn.classList.remove('border-slate-200', 'text-slate-600', 'bg-white/5');
       btn.classList.add('active', 'border-primary', 'text-primary-light', 'bg-primary/20');
 
       const filter = btn.getAttribute('data-filter');

@@ -10,36 +10,36 @@ const { categoryLabel, intro, careerOpportunities } = Astro.props;
 ---
 <BaseLayout title={`${categoryLabel} Training Courses | Ask 4 Trainings`} description={intro.slice(0, 150)}>
   <!-- Hub Header -->
-  <div class="bg-[#090D16] border-b border-white/5 py-16 relative overflow-hidden">
+  <div class="bg-slate-50 border-b border-slate-100 py-16 relative overflow-hidden">
     <!-- Ambient glow -->
     <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px]"></div>
     </div>
     
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full text-center">
-      <div class="inline-block mb-4 px-3 py-1 bg-white/5 border border-white/10 rounded-full text-sm font-medium text-slate-300">
+      <div class="inline-block mb-4 px-3 py-1 bg-white/5 border border-slate-200 rounded-full text-sm font-medium text-slate-600">
         Course Category Hub
       </div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-surface-0 mb-6 leading-tight">{categoryLabel} Training Courses</h1>
-      <p class="text-lg md:text-xl text-slate-300 whitespace-pre-line mb-10 max-w-4xl mx-auto leading-relaxed">{intro}</p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-6 leading-tight">{categoryLabel} Training Courses</h1>
+      <p class="text-lg md:text-xl text-slate-600 whitespace-pre-line mb-10 max-w-4xl mx-auto leading-relaxed">{intro}</p>
       
-      <div class="bg-slate-900/60 backdrop-blur-md border border-white/10 p-6 sm:p-8 rounded-2xl shadow-xl text-left max-w-4xl mx-auto hover:border-primary/30 transition-colors">
-        <h2 class="font-heading font-bold text-xl text-surface-0 mb-4 flex items-center gap-2">
+      <div class="bg-white/60 backdrop-blur-md border border-slate-200 p-6 sm:p-8 rounded-2xl shadow-xl text-left max-w-4xl mx-auto hover:border-primary/30 transition-colors">
+        <h2 class="font-heading font-bold text-xl text-slate-900 mb-4 flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-accent" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
           </svg>
           Career Opportunities in {categoryLabel}
         </h2>
-        <p class="text-slate-300 leading-relaxed">{careerOpportunities}</p>
+        <p class="text-slate-600 leading-relaxed">{careerOpportunities}</p>
       </div>
     </div>
   </div>
 
   <!-- Course Grid -->
-  <div class="bg-[#090D16]">
+  <div class="bg-slate-50">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-16 md:py-24">
       <div class="flex items-center justify-between mb-10">
-        <h2 class="text-2xl md:text-3xl font-heading font-bold text-surface-0">Available {categoryLabel} Courses</h2>
+        <h2 class="text-2xl md:text-3xl font-heading font-bold text-slate-900">Available {categoryLabel} Courses</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <slot />

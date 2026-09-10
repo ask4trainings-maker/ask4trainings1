@@ -9,8 +9,8 @@ const { syllabus } = Astro.props;
 ---
 <div class="space-y-4">
   {syllabus.map((item) => (
-    <details class="group bg-slate-900/40 backdrop-blur-md border border-white/10 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden hover:border-primary/50 transition-colors">
-      <summary class="flex items-center justify-between p-4 md:p-6 cursor-pointer hover:bg-white/5 transition-colors font-heading font-semibold text-surface-0 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset">
+    <details class="group bg-white/40 backdrop-blur-md border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden hover:border-primary/50 transition-colors">
+      <summary class="flex items-center justify-between p-4 md:p-6 cursor-pointer hover:bg-white/5 transition-colors font-heading font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset">
         <span class="pr-4">{item.module}</span>
         <span class="text-primary-light bg-primary/20 p-1.5 rounded-full border border-primary/30 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -18,8 +18,8 @@ const { syllabus } = Astro.props;
           </svg>
         </span>
       </summary>
-      <div class="p-4 md:p-6 pt-0 border-t border-white/10 bg-black/20">
-        <ul class="list-disc list-inside text-slate-300 space-y-3 mt-4 text-sm md:text-base leading-relaxed">
+      <div class="p-4 md:p-6 pt-0 border-t border-slate-200 bg-black/20">
+        <ul class="list-disc list-inside text-slate-600 space-y-3 mt-4 text-sm md:text-base leading-relaxed">
           {item.topics.map(topic => <li>{topic}</li>)}
         </ul>
       </div>

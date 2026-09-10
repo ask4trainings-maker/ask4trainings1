@@ -17,26 +17,26 @@ const {
 
 const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
 ---
-<div class="enquiry-form-container relative w-full h-full bg-slate-900 border border-white/10 rounded-2xl p-5 sm:p-6 lg:p-8 flex flex-col justify-between shadow-2xl">
+<div class="enquiry-form-container relative w-full h-full bg-white border border-slate-200 rounded-2xl p-5 sm:p-6 lg:p-8 flex flex-col justify-between shadow-2xl">
   
   <!-- Optimistic Success UI -->
-  <div id={`${formId}-success`} class="absolute inset-0 z-20 flex-col items-center justify-center bg-slate-900/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 opacity-0 pointer-events-none flex">
+  <div id={`${formId}-success`} class="absolute inset-0 z-20 flex-col items-center justify-center bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-6 text-center transition-all duration-300 opacity-0 pointer-events-none flex">
     <div class="w-12 sm:w-16 h-12 sm:h-16 bg-whatsapp/10 rounded-full flex items-center justify-center mb-4 border border-whatsapp/30">
       <svg class="w-8 h-8 text-whatsapp" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
       </svg>
     </div>
-    <div class="rounded-xl border border-whatsapp/20 bg-whatsapp/5 p-3 sm:p-4 text-center text-xs sm:text-sm font-medium text-surface-0 mb-6 w-full max-w-[280px]">
+    <div class="rounded-xl border border-whatsapp/20 bg-whatsapp/5 p-3 sm:p-4 text-center text-xs sm:text-sm font-medium text-slate-900 mb-6 w-full max-w-[280px]">
       Thank you! Your enquiry has been received. Our team will contact you shortly.
     </div>
-    <button type="button" class="reset-form-btn px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-300 text-sm font-semibold rounded-lg transition-colors border border-white/10">
+    <button type="button" class="reset-form-btn px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-600 text-sm font-semibold rounded-lg transition-colors border border-slate-200">
       Submit another enquiry
     </button>
   </div>
 
   <div class="mb-6">
-    <h3 class="text-xl sm:text-2xl font-bold font-heading tracking-tight text-surface-0">{title}</h3>
-    <p class="mt-1 text-sm text-slate-400">{subtitle}</p>
+    <h3 class="text-xl sm:text-2xl font-bold font-heading tracking-tight text-slate-900">{title}</h3>
+    <p class="mt-1 text-sm text-slate-500">{subtitle}</p>
   </div>
 
   <form id={formId} class="enquiry-form flex flex-col space-y-4" data-source={sourcePage}>
@@ -44,7 +44,7 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
     <input type="text" name="b_field" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
     
     <div>
-      <label for={`${formId}-name`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+      <label for={`${formId}-name`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
         Full Name <span class="text-error">*</span>
       </label>
       <input
@@ -53,18 +53,18 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         type="text"
         placeholder="e.g. Rahul Sharma"
         required
-        class="w-full rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+        class="w-full rounded-lg border border-slate-200 bg-slate-100/50 px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
       />
     </div>
 
     <div>
-      <label for={`${formId}-phone`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+      <label for={`${formId}-phone`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
         Phone Number <span class="text-error">*</span>
       </label>
       <div class="flex gap-2 w-full">
         <select
           name="countryCode"
-          class="w-[30%] max-w-[96px] shrink-0 truncate rounded-lg border border-white/10 bg-slate-800/50 px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium text-surface-0 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 appearance-none"
+          class="w-[30%] max-w-[96px] shrink-0 truncate rounded-lg border border-slate-200 bg-slate-100/50 px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium text-slate-900 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 appearance-none"
         >
           <option value="+91">+91 (IN)</option>
           <option value="+1">+1 (US)</option>
@@ -80,13 +80,13 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
           placeholder="10-digit mobile number"
           required
           title="Please enter a valid 10-digit Indian mobile number starting with 6-9."
-          class="flex-1 min-w-0 rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+          class="flex-1 min-w-0 rounded-lg border border-slate-200 bg-slate-100/50 px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
         />
       </div>
     </div>
 
     <div>
-      <label for={`${formId}-email`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+      <label for={`${formId}-email`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
         Email <span class="text-slate-500 font-normal normal-case">(optional)</span>
       </label>
       <input
@@ -94,12 +94,12 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         name="email"
         type="email"
         placeholder="you@email.com"
-        class="w-full rounded-lg border border-white/10 bg-slate-800/50 px-4 py-3 text-sm font-medium text-surface-0 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
+        class="w-full rounded-lg border border-slate-200 bg-slate-100/50 px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500"
       />
     </div>
 
     <div>
-      <label for={`${formId}-course`} class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-1.5">
+      <label for={`${formId}-course`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
         Course of Interest
       </label>
       <input
@@ -111,8 +111,8 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         readonly={lockCourseName ? true : undefined}
         class={`w-full rounded-lg border px-4 py-3 text-sm font-medium transition-all focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 placeholder:text-slate-500 ${
           lockCourseName 
-            ? 'cursor-not-allowed bg-slate-800/80 border-white/5 text-slate-400' 
-            : 'bg-slate-800/50 border-white/10 text-surface-0'
+            ? 'cursor-not-allowed bg-slate-100/80 border-slate-100 text-slate-500' 
+            : 'bg-slate-100/50 border-slate-200 text-slate-900'
         }`}
       />
     </div>
