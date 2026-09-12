@@ -35,7 +35,7 @@ const categories = Object.keys(categoriesData).map(key => ({
 ---
 <BaseLayout title="Ask 4 Trainings | Master Enterprise IT">
   <Fragment slot="head">
-    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
   </Fragment>
 
   <!-- Hero Section -->

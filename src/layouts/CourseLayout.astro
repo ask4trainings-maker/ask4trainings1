@@ -61,7 +61,7 @@ const schemaGraph = {
 <BaseLayout title={seo?.metaTitle || `${title} | Ask 4 Trainings`} description={metaDesc} courseName={title}>
   <Fragment slot="head">
     {slug && <link rel="canonical" href={`${siteUrl}${slug}/`} />}
-    <script type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
   </Fragment>
 
   <!-- Modular Hero Component -->
