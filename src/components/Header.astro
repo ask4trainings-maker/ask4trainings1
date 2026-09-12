@@ -15,6 +15,11 @@ function cleanMegaTitle(title: string): string {
     .trim();
 }
 
+function getCourseUrl(course: any): string {
+  const cleanSlug = course.id.replace(/\.mdx?$/, '');
+  return `/${cleanSlug}/`;
+}
+
 const categories = categoriesData.categories.map((cat: any) => ({
   id: cat.id,
   name: cat.title,
@@ -32,7 +37,7 @@ const totalCourseCount = allCourses.length;
 
 // Route Normalization & Active State Logic
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
-const courseSlugs = allCourses.map(c => `/${c.data.slug}`);
+const courseSlugs = allCourses.map(c => getCourseUrl(c));
 const isCoursesActive = currentPath === '/courses' || currentPath.startsWith('/courses/') || courseSlugs.includes(currentPath);
 const isAboutActive = currentPath === '/about-us';
 const isContactActive = currentPath === '/contact-us';
@@ -156,11 +161,11 @@ const isContactActive = currentPath === '/contact-us';
                         <div class="grid grid-cols-2 gap-2 max-h-[440px] overflow-y-auto pr-2 custom-scrollbar">
                           {(coursesByCategory[cat.id] || []).map((course: any) => (
                             <a
-                              href={`/${course.data.slug}`}
+                              href={getCourseUrl(course)}
                               class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
                             >
                               <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors">
-                                {cleanMegaTitle(course.data.title)}
+                                {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
                               </span>
                               <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
                                 <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
@@ -267,8 +272,8 @@ const isContactActive = currentPath === '/contact-us';
             View All {cat.name} →
           </a>
           {(coursesByCategory[cat.id] || []).map((course: any) => (
-            <a href={`/${course.data.slug}`} class="mobile-link block py-2 px-3 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-200/50 rounded transition-colors line-clamp-1">
-              {course.data.title}
+            <a href={getCourseUrl(course)} class="mobile-link block py-2 px-3 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-200/50 rounded transition-colors line-clamp-1">
+              {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
             </a>
           ))}
         </div>
