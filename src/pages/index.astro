@@ -190,7 +190,7 @@ function cleanTitle(title: string): string {
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           Show All {totalCourses} Courses
         </button>
-        <a href="/courses" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 group border-b border-dashed border-slate-300 hover:border-emerald-400 transition-all pb-1">
+        <a href="/courses/" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 group border-b border-dashed border-slate-300 hover:border-emerald-400 transition-all pb-1">
           View Full Catalog →
         </a>
       </div>
@@ -211,41 +211,41 @@ function cleanTitle(title: string): string {
 
       <div class="relative max-w-5xl mx-auto">
         <!-- Connecting Line -->
-        <div class="absolute top-1/2 left-0 w-full h-1 bg-white/5 -translate-y-1/2 hidden md:block"></div>
+        <div class="absolute top-1/2 left-0 w-full h-1 bg-slate-200 -translate-y-1/2 hidden md:block"></div>
         
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
           <!-- Step 1 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-600 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               1
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-white shadow-sm"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[0].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[0].description}</p>
           </div>
           <!-- Step 2 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-600 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               2
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-white shadow-sm"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[1].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[1].description}</p>
           </div>
           <!-- Step 3 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors shadow-sm">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-600 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               3
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-white shadow-sm"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[2].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[2].description}</p>
           </div>
           <!-- Step 4 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors shadow-sm">
             <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-600 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               4
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900 animate-pulse"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-white shadow-sm animate-pulse"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[3].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[3].description}</p>
@@ -270,9 +270,9 @@ function cleanTitle(title: string): string {
         </p>
         <div class="flex items-center gap-4 text-sm text-slate-600">
           <div class="flex -space-x-3">
-            <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://ui-avatars.com/api/?name=Admin&background=0D6E4F&color=fff" alt="Counselor">
-            <img class="w-10 h-10 rounded-full border-2 border-slate-900" src="https://ui-avatars.com/api/?name=Tech&background=F59E0B&color=fff" alt="Counselor">
-            <div class="w-10 h-10 rounded-full border-2 border-slate-900 bg-slate-100 flex items-center justify-center text-xs font-bold">+5</div>
+            <img class="w-10 h-10 rounded-full border-2 border-white shadow-sm" src="https://ui-avatars.com/api/?name=Admin&background=0D6E4F&color=fff" alt="Counselor">
+            <img class="w-10 h-10 rounded-full border-2 border-white shadow-sm" src="https://ui-avatars.com/api/?name=Tech&background=F59E0B&color=fff" alt="Counselor">
+            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-xs font-bold shadow-sm">+5</div>
           </div>
           <div>
             <div class="font-bold text-slate-900">Response time: &lt; 2 hours</div>

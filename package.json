@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "check": "astro check",
     "build": "astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs",
     "build:quick": "astro build && node scripts/audit-internal-links.mjs",
     "audit:links": "node scripts/audit-internal-links.mjs",

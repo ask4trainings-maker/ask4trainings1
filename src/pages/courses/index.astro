@@ -68,9 +68,9 @@ function cleanTitle(title: string): string {
       
       <!-- Category Filter Pills -->
       <div class="flex flex-wrap gap-3 justify-center mb-12">
-        <a href="/courses" class="bg-emerald-600 text-slate-900 px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_0_15px_rgba(13,110,79,0.3)] transition-transform hover:-translate-y-0.5">All Courses</a>
+        <a href="/courses/" class="bg-emerald-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-emerald-600/20 transition-transform hover:-translate-y-0.5">All Courses</a>
         {categories.map(cat => (
-          <a href={`/courses/${cat.key}`} class="bg-slate-100/60 hover:bg-slate-700/60 text-slate-600 border border-slate-200 hover:border-white/20 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5">{cat.label}</a>
+          <a href={`/courses/${cat.key}/`} class="bg-white hover:bg-emerald-50 text-slate-700 hover:text-emerald-700 border border-slate-200 hover:border-emerald-300 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5 shadow-sm">{cat.label}</a>
         ))}
       </div>
 
