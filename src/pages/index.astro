@@ -26,12 +26,26 @@ import EnquiryForm from '../components/EnquiryForm.astro';
 import Ecosystem from '../components/Ecosystem.astro';
 
 const allCourses = await getCollection('courses');
-// Sort or get featured courses (limit to 6 for the catalog display)
-const displayCourses = allCourses.slice(0, 9);
-const categories = Object.keys(categoriesData).map(key => ({
-  slug: key,
-  label: (categoriesData as any)[key].label
-}));
+// Sort alphabetically by title for consistent ordering
+const sortedCourses = [...allCourses].sort((a, b) => a.data.title.localeCompare(b.data.title));
+const totalCourses = sortedCourses.length;
+
+// Derive unique categories from the live collection, ordered by category definition
+const categoryOrder = categoriesData.categories.map((c: any) => c.id);
+const uniqueCategoryIds = [...new Set(sortedCourses.map(c => c.data.category))]
+  .sort((a, b) => categoryOrder.indexOf(a) - categoryOrder.indexOf(b));
+const categories = uniqueCategoryIds.map(id => {
+  const meta = categoriesData.categories.find((c: any) => c.id === id);
+  return { slug: id, label: meta?.title ?? id };
+});
+
+// Clean title: strip legacy prefixes from display
+function cleanTitle(title: string): string {
+  return title
+    .replace(/^(Best\s+|Course\s+Tag\s*[-–]?\s*|Courses\s*)/i, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
 ---
 <BaseLayout title="Ask 4 Trainings | Master Enterprise IT">
   <Fragment slot="head">
@@ -146,12 +160,22 @@ const categories = Object.keys(categoriesData).map(key => ({
         ))}
       </div>
 
-      <!-- 3-Column Course Grid -->
+      <!-- Course Count Badge -->
+      <div class="flex items-center justify-center gap-3 mb-8">
+        <span class="text-xs font-mono text-slate-400 tabular-nums">
+          Showing <span id="visible-count" class="font-bold text-slate-700">{totalCourses}</span> of <span class="font-bold text-emerald-600">{totalCourses}</span> courses
+        </span>
+      </div>
+
+      <!-- 3-Column Course Grid (all courses, progressive disclosure) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="course-grid">
-        {displayCourses.map(course => (
-          <div class="course-item" data-category={course.data.category}>
+        {sortedCourses.map((course, idx) => (
+          <div
+            class={`course-item transition-all duration-300${idx >= 12 ? ' catalog-extra hidden' : ''}`}
+            data-category={course.data.category}
+          >
             <CourseCard 
-              title={course.data.title}
+              title={cleanTitle(course.data.title)}
               category={course.data.category}
               duration={course.data.batchInfo.duration}
               format={course.data.batchInfo.format}
@@ -160,11 +184,18 @@ const categories = Object.keys(categoriesData).map(key => ({
           </div>
         ))}
       </div>
-      
-      <div class="mt-12 text-center">
-        <a href="/courses" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 group border-b border-dashed border-slate-600 hover:border-surface-0 transition-all pb-1">
-          View Entire Catalog 
-          <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+
+      <!-- Progressive Disclosure Controls -->
+      <div class="mt-10 text-center flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button
+          id="show-more-btn"
+          class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-400 text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-all"
+        >
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          Show All {totalCourses} Courses
+        </button>
+        <a href="/courses" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-emerald-600 group border-b border-dashed border-slate-300 hover:border-emerald-400 transition-all pb-1">
+          View Full Catalog →
         </a>
       </div>
     </div>
@@ -263,32 +294,68 @@ const categories = Object.keys(categoriesData).map(key => ({
 </BaseLayout>
 
 <script>
-  // Course Category Filtering Logic
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const courseItems = document.querySelectorAll('.course-item');
+  // ── Course Catalog: Filtering + Progressive Disclosure ─────────────────
+  const filterBtns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const courseItems = document.querySelectorAll<HTMLElement>('.course-item');
+  const showMoreBtn = document.getElementById('show-more-btn') as HTMLButtonElement | null;
+  const visibleCountEl = document.getElementById('visible-count');
+
+  let expandedAll = false;
+  let currentFilter = 'all';
+
+  function updateVisibleCount() {
+    const visible = document.querySelectorAll<HTMLElement>('.course-item:not([style*="display: none"])').length;
+    if (visibleCountEl) visibleCountEl.textContent = String(visible);
+  }
+
+  function applyFilter(filter: string) {
+    currentFilter = filter;
+    let shownCount = 0;
+
+    courseItems.forEach((item) => {
+      const matchesCategory = filter === 'all' || item.getAttribute('data-category') === filter;
+      const isExtra = item.classList.contains('catalog-extra');
+
+      if (matchesCategory && (!isExtra || expandedAll || filter !== 'all')) {
+        item.style.display = 'block';
+        item.style.animation = 'none';
+        void item.offsetHeight;
+        item.style.animation = 'fadeInUp 0.35s ease forwards';
+        shownCount++;
+      } else if (!matchesCategory) {
+        item.style.display = 'none';
+      } else if (isExtra && !expandedAll && filter === 'all') {
+        item.style.display = 'none';
+      } else {
+        item.style.display = 'block';
+        shownCount++;
+      }
+    });
+
+    updateVisibleCount();
+
+    // Hide show-more when a specific category is active (show all for that category)
+    if (showMoreBtn) {
+      showMoreBtn.style.display = filter === 'all' && !expandedAll ? 'inline-flex' : 'none';
+    }
+  }
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Update active button styling
-      filterBtns.forEach(b => {
-        b.setAttribute('data-active', 'false');
-      });
+      filterBtns.forEach(b => b.setAttribute('data-active', 'false'));
       btn.setAttribute('data-active', 'true');
-
-      const filter = btn.getAttribute('data-filter');
-
-      // Filter courses
-      courseItems.forEach(item => {
-        if (filter === 'all' || item.getAttribute('data-category') === filter) {
-          (item as HTMLElement).style.display = 'block';
-          // Small animation restart
-          (item as HTMLElement).style.animation = 'none';
-          (item as HTMLElement).offsetHeight; // trigger reflow
-          (item as HTMLElement).style.animation = 'fadeInUp 0.4s ease forwards';
-        } else {
-          (item as HTMLElement).style.display = 'none';
-        }
-      });
+      const filter = btn.getAttribute('data-filter') ?? 'all';
+      expandedAll = false; // reset expand state on filter change
+      applyFilter(filter);
     });
   });
+
+  showMoreBtn?.addEventListener('click', () => {
+    expandedAll = true;
+    showMoreBtn.style.display = 'none';
+    applyFilter(currentFilter);
+  });
+
+  // Init
+  applyFilter('all');
 </script>

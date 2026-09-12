@@ -7,10 +7,23 @@ import IconInstagram from './icons/IconInstagram.astro';
 import settingsData from '../data/settings.json';
 import navigationData from '../data/navigation.json';
 import categoriesData from '../data/categories.json';
+import { getCollection } from 'astro:content';
 
 const currentYear = new Date().getFullYear();
 const categories = categoriesData?.categories ?? [];
-const topCategories = categories.slice(0, 5);
+
+// Popular Courses: top 8 by GSC impressions from live collection
+const allCourses = await getCollection('courses');
+const popularCourses = [...allCourses]
+  .sort((a, b) => (b.data.legacyImpressions ?? 0) - (a.data.legacyImpressions ?? 0))
+  .slice(0, 8);
+
+function cleanFooterTitle(title: string): string {
+  return title
+    .replace(/^(Best\s+|Course\s+Tag\s*[-–]?\s*|Courses\s*)/i, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
 ---
 <footer class="bg-slate-950 text-slate-300 py-16 border-t border-slate-900" data-pagefind-ignore>
   <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -32,14 +45,17 @@ const topCategories = categories.slice(0, 5);
       </div>
     </div>
 
-    <!-- Column 2: Trending Tech -->
+    <!-- Column 2: Popular Courses -->
     <div>
-      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Trending Tech</h4>
+      <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300 mb-4">Popular Courses</h4>
       <ul class="space-y-3">
-        {topCategories.map((cat: any) => (
+        {popularCourses.map((course) => (
           <li>
-            <a href={`/courses?category=${cat.id}`} class="text-[13px] text-slate-400 tabular-nums leading-relaxed hover:text-emerald-400 hover:translate-x-1 transition-all inline-block">
-              {cat.title}
+            <a
+              href={`/${course.data.slug}/`}
+              class="text-[13px] text-slate-400 leading-relaxed hover:text-emerald-400 hover:translate-x-1 transition-all inline-block line-clamp-1"
+            >
+              {cleanFooterTitle(course.data.title)}
             </a>
           </li>
         ))}

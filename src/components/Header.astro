@@ -7,6 +7,14 @@ import SearchModal from './SearchModal.astro';
 
 const allCourses = await getCollection('courses');
 
+// Clean legacy title prefixes for display in micro-cards
+function cleanMegaTitle(title: string): string {
+  return title
+    .replace(/^(Best\s+|Course\s+Tag\s*[-–]?\s*|Courses\s*)/i, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
 const categories = categoriesData.categories.map((cat: any) => ({
   id: cat.id,
   name: cat.title,
@@ -14,9 +22,13 @@ const categories = categoriesData.categories.map((cat: any) => ({
 }));
 
 const coursesByCategory = categories.reduce((acc, cat) => {
-  acc[cat.id] = allCourses.filter(c => c.data.category === cat.id);
+  const cats = allCourses.filter(c => c.data.category === cat.id);
+  // Sort alphabetically within each category
+  acc[cat.id] = cats.sort((a, b) => a.data.title.localeCompare(b.data.title));
   return acc;
 }, {} as Record<string, any[]>);
+
+const totalCourseCount = allCourses.length;
 
 // Route Normalization & Active State Logic
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
@@ -141,14 +153,14 @@ const isContactActive = currentPath === '/contact-us';
                         </div>
 
                         <!-- Sub-course Grid -->
-                        <div class="grid grid-cols-2 gap-2 max-h-[300px] overflow-y-auto pr-1 custom-scrollbar">
+                        <div class="grid grid-cols-2 gap-2 max-h-[440px] overflow-y-auto pr-2 custom-scrollbar">
                           {(coursesByCategory[cat.id] || []).map((course: any) => (
                             <a
                               href={`/${course.data.slug}`}
                               class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
                             >
                               <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors">
-                                {course.data.title}
+                                {cleanMegaTitle(course.data.title)}
                               </span>
                               <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
                                 <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
@@ -167,7 +179,7 @@ const isContactActive = currentPath === '/contact-us';
                           24/7 Sandbox Lab Access Included
                         </span>
                         <a href="/courses" class="text-slate-600 hover:text-emerald-600 font-medium">
-                          Explore All 52+ Courses →
+                          Explore All {totalCourseCount} Courses →
                         </a>
                       </div>
                     </div>
