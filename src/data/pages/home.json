@@ -10,7 +10,7 @@
   "metrics": [
     { "value": "15+", "label": "Years Exp" },
     { "value": "50k+", "label": "Alumni" },
-    { "value": "100%", "label": "Placement" },
+    { "value": "100%", "label": "Placement Support" },
     { "value": "200+", "label": "Partners" }
   ],
   "bento": [
@@ -50,7 +50,7 @@
     }
   ],
   "conversion": {
-    "headline": "Ready to Upgrade Your <br/><span class=\"text-emerald-600\">Career Trajectory?</span>",
+    "headline": "Ready to Upgrade Your <br/><span class=\"text-primary-light\">Career Trajectory?</span>",
     "subtext": "Get free counseling from our senior architects. Tell us your goals, and we'll craft a personalized learning and placement roadmap."
   }
 }

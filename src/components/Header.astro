@@ -37,10 +37,11 @@ const totalCourseCount = allCourses.length;
 
 // Route Normalization & Active State Logic
 const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
-const courseSlugs = allCourses.map(c => getCourseUrl(c));
-const isCoursesActive = currentPath === '/courses' || currentPath.startsWith('/courses/') || courseSlugs.includes(currentPath);
-const isAboutActive = currentPath === '/about-us';
-const isContactActive = currentPath === '/contact-us';
+const checkActive = (href: string) => currentPath === href.replace(/\/$/, '') || (href === '/' && currentPath === '/');
+
+const isCoursesActive = currentPath === '/courses' || currentPath.startsWith('/courses/');
+const isAboutActive = checkActive('/about-us');
+const isContactActive = checkActive('/contact-us');
 ---
 <header class="w-full sticky top-0 z-50 transition-all duration-300">
   <!-- Top Contact Strip -->
@@ -150,8 +151,8 @@ const isContactActive = currentPath === '/contact-us';
                             <p class="text-xs text-slate-500 line-clamp-1">{cat.description}</p>
                           </div>
                           <a
-                            href={`/courses/${cat.id}/`}
-                            class="text-xs text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-1 shrink-0"
+                            href={`/courses/${cat.id}`}
+                            class="text-xs text-emerald-600 hover:text-amber-400 font-medium flex items-center gap-1 shrink-0"
                           >
                             View Category Hub ↗
                           </a>
@@ -183,7 +184,7 @@ const isContactActive = currentPath === '/contact-us';
                           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                           24/7 Sandbox Lab Access Included
                         </span>
-                        <a href="/courses/" class="text-slate-600 hover:text-emerald-600 font-medium">
+                        <a href="/courses" class="text-slate-600 hover:text-emerald-600 font-medium">
                           Explore All {totalCourseCount} Courses →
                         </a>
                       </div>
@@ -196,13 +197,13 @@ const isContactActive = currentPath === '/contact-us';
           </li>
           
           <li>
-            <a href="/about-us/" class={`group/link relative py-5 block transition-colors ${isAboutActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isAboutActive ? 'page' : undefined}>
+            <a href="/about-us" class={`group/link relative py-5 block transition-colors ${isAboutActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isAboutActive ? 'page' : undefined}>
               About Us
               <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isAboutActive ? 'w-full' : 'w-0 group-hover/link:w-full'}`}></span>
             </a>
           </li>
           <li>
-            <a href="/contact-us/" class={`group/link relative py-5 block transition-colors ${isContactActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isContactActive ? 'page' : undefined}>
+            <a href="/contact-us" class={`group/link relative py-5 block transition-colors ${isContactActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isContactActive ? 'page' : undefined}>
               Contact
               <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isContactActive ? 'w-full' : 'w-0 group-hover/link:w-full'}`}></span>
             </a>
@@ -213,18 +214,13 @@ const isContactActive = currentPath === '/contact-us';
       <!-- Action Cluster -->
       <div class="hidden lg:flex items-center gap-4 flex-shrink-0">
         <!-- Search Trigger -->
-        <button
-          id="desktop-search-trigger"
-          class="flex items-center gap-2.5 px-3.5 py-2 text-sm text-slate-500 hover:text-slate-900 bg-slate-100 hover:bg-slate-200/70 border border-slate-200 rounded-lg transition-all"
-          aria-label="Search courses"
-        >
-          <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <span class="hidden xl:inline">Search courses...</span>
-          <kbd class="hidden xl:inline-flex text-[10px] bg-white border border-slate-200 text-slate-500 px-1.5 py-0.5 rounded font-mono font-bold">⌘K</kbd>
+        <button id="search-trigger" class="p-2 text-slate-500 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition-colors border border-transparent hover:border-slate-200 flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <span class="text-xs font-mono bg-slate-100 border border-slate-200 px-1.5 py-0.5 rounded text-slate-500">⌘K</span>
         </button>
         
         <!-- LMS Portal Ghost Button -->
-        <a href="#lms" class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 border border-slate-200 hover:border-slate-300 rounded-lg transition-all flex items-center gap-2 group relative bg-white shadow-sm">
+        <a href="#lms" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-slate-900 border border-slate-700 hover:border-slate-500 rounded-lg transition-all flex items-center gap-2 group relative">
           <svg class="w-4 h-4 text-slate-500 group-hover:text-slate-900 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           {navigationData.lmsButtonText}
           <div class="absolute top-full right-0 mt-2 w-64 bg-slate-100 border border-slate-200 rounded-xl p-4 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all text-left z-50">
@@ -236,78 +232,78 @@ const isContactActive = currentPath === '/contact-us';
         <!-- Enquire / WhatsApp CTA -->
         <a href="https://wa.me/918099949888" target="_blank" rel="noopener noreferrer" class="px-5 py-2 text-sm font-semibold bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-all shadow-md hover:-translate-y-0.5 flex items-center gap-2">
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          Enquire Now
-        </a>
-      </div>
-      
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-toggle" aria-expanded="false" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none z-[60] relative" aria-label="Toggle Menu">
-        <svg id="hamburger-icon" class="w-6 h-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <svg id="close-icon" class="w-6 h-6 hidden transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
+        Enquire Now
+      </a>
     </div>
-  </nav>
+    
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-toggle" aria-expanded="false" class="lg:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none z-[60] relative" aria-label="Toggle Menu">
+      <svg id="hamburger-icon" class="w-6 h-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg id="close-icon" class="w-6 h-6 hidden transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+</nav>
 
-  <SearchModal />
+<SearchModal />
 </header>
 
 <!-- Mobile Slide-Over Drawer -->
 <div id="mobile-drawer-overlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm z-[55] hidden opacity-0 transition-opacity duration-300"></div>
 <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[300px] sm:w-[350px] bg-white border-l border-slate-200 z-[55] transform translate-x-full transition-transform duration-300 overflow-y-auto flex flex-col">
-  <div class="p-5 border-b border-slate-200 flex-shrink-0 mt-14">
-    <button id="mobile-search-btn" class="w-full flex items-center justify-between p-3 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-emerald-600/50 transition-colors">
-      <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg> Search Courses</span>
-    </button>
-  </div>
+<div class="p-5 border-b border-slate-200 flex-shrink-0 mt-14">
+  <button id="mobile-search-btn" class="w-full flex items-center justify-between p-3 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-emerald-600/50 transition-colors">
+    <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg> Search Courses</span>
+  </button>
+</div>
 
-  <div class="flex-1 overflow-y-auto overscroll-contain p-5 custom-scrollbar">
-    <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Course Categories</h3>
-    <div class="space-y-2 mb-8">
-      {categories.map(cat => (
-        <details class="group bg-slate-100/30 rounded-lg overflow-hidden border border-transparent hover:border-slate-100 transition-colors">
-          <summary class="flex items-center justify-between p-3 cursor-pointer list-none text-slate-600 hover:text-slate-900 text-sm font-medium focus:outline-none">
-            <span class="flex items-center gap-2">
-              {cat.name}
-              <span class="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-mono">{(coursesByCategory[cat.id] || []).length}</span>
-            </span>
-            <svg class="w-4 h-4 text-slate-500 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </summary>
-          <div class="px-3 pb-3 pt-1 space-y-1 bg-slate-100/20">
-            <a href={`/courses/${cat.id}/`} class="mobile-link block py-2 px-3 text-xs text-emerald-600 hover:text-emerald-500 bg-emerald-600/10 rounded font-medium transition-colors">
-              View All {cat.name} →
+<div class="flex-1 overflow-y-auto overscroll-contain p-5 custom-scrollbar">
+  <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Course Categories</h3>
+  <div class="space-y-2 mb-8">
+    {categories.map(cat => (
+      <details class="group bg-slate-100/30 rounded-lg overflow-hidden border border-transparent hover:border-slate-100 transition-colors">
+        <summary class="flex items-center justify-between p-3 cursor-pointer list-none text-slate-600 hover:text-slate-900 text-sm font-medium focus:outline-none">
+          <span class="flex items-center gap-2">
+            {cat.name}
+            <span class="text-[10px] bg-slate-100 text-slate-500 px-1.5 py-0.5 rounded font-mono">{(coursesByCategory[cat.id] || []).length}</span>
+          </span>
+          <svg class="w-4 h-4 text-slate-500 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </summary>
+        <div class="px-3 pb-3 pt-1 space-y-1 bg-slate-100/20">
+          <a href={`/courses/${cat.id}`} class="mobile-link block py-2 px-3 text-xs text-emerald-600 hover:text-emerald-500 bg-emerald-600/10 rounded font-medium transition-colors">
+            View All {cat.name} →
+          </a>
+          {(coursesByCategory[cat.id] || []).map((course: any) => (
+            <a href={getCourseUrl(course)} class="mobile-link block py-2 px-3 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-200/50 rounded transition-colors line-clamp-1">
+              {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
             </a>
-            {(coursesByCategory[cat.id] || []).map((course: any) => (
-              <a href={getCourseUrl(course)} class="mobile-link block py-2 px-3 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-200/50 rounded transition-colors line-clamp-1">
-                {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
-              </a>
-            ))}
-          </div>
-        </details>
-      ))}
-      <div class="pt-2">
-        <a href="/courses/" class="mobile-link flex items-center justify-between p-3 rounded-lg text-emerald-600 font-medium hover:bg-emerald-50 transition-colors">
-          View Entire Course Catalog
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-        </a>
-      </div>
+          ))}
+        </div>
+      </details>
+    ))}
+    <div class="pt-2">
+      <a href="/courses" class="mobile-link flex items-center justify-between p-3 rounded-lg text-emerald-600 font-medium hover:bg-emerald-50 transition-colors">
+        View Entire Course Catalog
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
     </div>
-
-    <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Company</h3>
-    <ul class="space-y-1">
-      <li><a href="/about-us/" class={`mobile-link block p-3 rounded-lg transition-colors ${isAboutActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`} aria-current={isAboutActive ? 'page' : undefined}>About Us</a></li>
-      <li><a href="/contact-us/" class={`mobile-link block p-3 rounded-lg transition-colors ${isContactActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`} aria-current={isContactActive ? 'page' : undefined}>Contact Us</a></li>
-    </ul>
   </div>
 
-  <div class="p-5 border-t border-slate-200 space-y-3 flex-shrink-0 bg-white">
-    <a href="https://wa.me/918099949888" target="_blank" class="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">
-      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      WhatsApp Us
-    </a>
-    <a href="/contact-us/" class="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">
-      Enquire Now
-    </a>
-  </div>
+  <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Company</h3>
+  <ul class="space-y-1">
+    <li><a href="/about-us" class={`mobile-link block p-3 rounded-lg transition-colors ${isAboutActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`} aria-current={isAboutActive ? 'page' : undefined}>About Us</a></li>
+    <li><a href="/contact-us" class={`mobile-link block p-3 rounded-lg transition-colors ${isContactActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'}`} aria-current={isContactActive ? 'page' : undefined}>Contact Us</a></li>
+  </ul>
+</div>
+
+<div class="p-5 border-t border-slate-200 space-y-3 flex-shrink-0 bg-white">
+  <a href="https://wa.me/918099949888" target="_blank" class="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp Us
+  </a>
+  <a href="/contact-us" class="w-full flex items-center justify-center gap-2 p-3 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white font-semibold transition-colors">
+    Enquire Now
+  </a>
+</div>
 </div>
 
 <script>

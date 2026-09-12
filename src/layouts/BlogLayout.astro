@@ -15,9 +15,6 @@ const formattedDate = new Date(publishDate).toLocaleDateString('en-US', {
 });
 ---
 <BaseLayout title={`${title} | Ask 4 Trainings Blog`}>
-  <Fragment slot="head">
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
-  </Fragment>
   <article class="container mx-auto px-4 py-12 max-w-3xl">
     <header class="mb-10 text-center">
       <span class="text-sm font-bold text-emerald-600 tracking-wider uppercase mb-4 block">{category}</span>
