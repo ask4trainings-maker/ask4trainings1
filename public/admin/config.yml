@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: rahulabhishek/ask4trainings
+  repo: rahulabhishek5/ask4trainings
   branch: main
   base_url: https://ask4trainings.com
   auth_endpoint: /oauth/auth
