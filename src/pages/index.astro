@@ -102,38 +102,34 @@ function cleanTitle(title: string): string {
         </div>
       </div>
 
-      <!-- Right: Human Illustration (5 cols) -->
+      <!-- Right: Hero Student Image (5 cols) -->
       <div class="lg:col-span-5 xl:col-span-5 relative flex items-center justify-center lg:justify-end w-full animate-fade-in" style="animation-delay: 0.2s;">
-        <!-- Illustration Container -->
-        <div class="relative w-full max-w-lg aspect-square flex items-center justify-center">
-          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-2xl">
-            <!-- Background Blob -->
-            <path d="M304.5 106.5C345.5 146.5 358.5 211.5 334.5 259.5C310.5 307.5 249.5 338.5 186.5 331.5C123.5 324.5 58.5 279.5 39.5 219.5C20.5 159.5 47.5 84.5 98.5 46.5C149.5 8.5 224.5 25.5 264.5 66.5Z" fill="#ecfdf5"/>
-            <!-- Desk -->
-            <rect x="50" y="280" width="300" height="15" rx="7.5" fill="#cbd5e1"/>
-            <rect x="80" y="295" width="20" height="80" fill="#94a3b8"/>
-            <rect x="300" y="295" width="20" height="80" fill="#94a3b8"/>
-            <!-- Body -->
-            <path d="M120 280C120 200 160 160 200 160C240 160 280 200 280 280H120Z" fill="#10b981"/>
-            <path d="M140 280C140 220 170 190 200 190C230 190 260 220 260 280H140Z" fill="#059669"/>
-            <!-- Head -->
-            <circle cx="200" cy="120" r="45" fill="#fde68a"/>
-            <!-- Hair -->
-            <path d="M155 120C155 80 180 70 200 70C220 70 245 80 245 120C245 100 220 90 200 90C180 90 155 100 155 120Z" fill="#0f766e"/>
-            <!-- Laptop -->
-            <path d="M220 280H310L290 210H200L220 280Z" fill="#64748b"/>
-            <rect x="180" y="275" width="150" height="10" rx="4" fill="#475569"/>
-            <path d="M240 240H270" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
-          </svg>
+        <!-- Image Container with Floating Elements -->
+        <div class="relative w-full max-w-sm sm:max-w-md">
+          <!-- Ambient Glow behind Image -->
+          <div class="absolute -inset-2 sm:-inset-4 bg-gradient-to-tr from-emerald-200/40 via-teal-100/30 to-emerald-50/50 rounded-3xl blur-2xl -z-10"></div>
+
+          <!-- Rounded Image Card -->
+          <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-emerald-950/10 border border-slate-100/80 bg-slate-50">
+            <img
+              src="/assets/student_image.jpg"
+              alt="Ask 4 Trainings student preparing for enterprise IT careers"
+              class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500 ease-out"
+              width="417"
+              height="626"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
 
           <!-- Floating Badges -->
-          <div class="absolute -bottom-3 left-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800">
-            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            100% Practical Labs
+          <div class="absolute -bottom-3 -left-3 sm:-left-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800 z-10">
+            <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span class="font-medium">100% Practical Labs</span>
           </div>
-          <div class="absolute top-4 -right-2 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800">
-            <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            Industry Mentors
+          <div class="absolute top-6 -right-2 sm:-right-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800 z-10">
+            <svg class="w-5 h-5 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <span class="font-medium">Industry Mentors</span>
           </div>
         </div>
       </div>
