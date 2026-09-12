@@ -38,30 +38,30 @@ const categories = Object.keys(categoriesData).map(key => ({
   </Fragment>
 
   <!-- Hero Section -->
-  <section class="relative overflow-hidden min-h-[90vh] flex items-center pt-24 pb-20">
-    <!-- Codecrafters Ambient Glows -->
-    <div class="absolute top-0 left-1/4 -translate-x-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
-    <div class="absolute bottom-0 right-1/4 translate-x-1/4 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[100px] pointer-events-none"></div>
+  <section class="relative overflow-hidden min-h-[90vh] flex items-center pt-24 pb-20 bg-white">
+    <!-- Ambient Glows -->
+    <div class="absolute -top-20 -right-20 w-96 h-96 bg-emerald-100/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -bottom-20 left-1/4 w-80 h-80 bg-teal-50/60 rounded-full blur-3xl pointer-events-none -z-10"></div>
     
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
       
       <!-- Left: Scaler Value Prop (7 cols) -->
       <div class="lg:col-span-7 xl:col-span-7 animate-fade-in-up">
         <!-- Live Batch Pill -->
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-100/80 border border-slate-200 text-slate-600 text-xs font-mono mb-8 backdrop-blur-md">
+        <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold px-3.5 py-1.5 rounded-full inline-flex items-center gap-2 mb-8">
           <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
           {homeData.hero.badge}
         </div>
         
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-slate-900 mb-6 leading-[1.1] tracking-tight">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-slate-900 mb-6 leading-[1.1] tracking-tight">
           <Fragment set:html={homeData.hero.headline} />
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-light">{homeData.hero.headlineGradient}</span>
+          <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent font-extrabold">{homeData.hero.headlineGradient}</span>
         </h1>
         
-        <p class="text-lg md:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl font-light">
+        <p class="text-slate-600 text-lg leading-relaxed font-normal md:text-xl mb-10 max-w-2xl">
           {homeData.hero.subheadline}
         </p>
 
@@ -69,105 +69,56 @@ const categories = Object.keys(categoriesData).map(key => ({
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 border-y border-slate-200 py-6">
           {homeData.metrics.map((metric: any) => (
             <div>
-              <div class="text-2xl md:text-3xl font-bold font-mono text-primary-light mb-1">{metric.value}</div>
-              <div class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">{metric.label}</div>
+              <div class="text-slate-900 font-bold text-2xl lg:text-3xl mb-1">{metric.value}</div>
+              <div class="text-slate-500 text-xs font-semibold uppercase tracking-wider">{metric.label}</div>
             </div>
           ))}
         </div>
 
         <!-- Dual CTAs -->
         <div class="flex flex-col sm:flex-row gap-4">
-          <a href="#course-catalog" class="bg-accent hover:bg-accent-hover text-slate-900 font-bold px-8 py-4 rounded-lg transition-all text-sm md:text-base shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] hover:-translate-y-0.5 text-center flex justify-center items-center gap-2">
+          <a href="#course-catalog" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 text-white font-semibold transition-all duration-200 hover:bg-emerald-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-600/25 active:translate-y-0 group text-sm md:text-base">
             {homeData.hero.primaryCta}
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
-          <a href="#enquiry-section" class="bg-transparent border border-primary text-primary-light hover:bg-primary/10 font-bold px-8 py-4 rounded-lg transition-all text-sm md:text-base text-center">
+          <a href="#enquiry-section" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold transition-all duration-200 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50/40 hover:-translate-y-0.5 text-sm md:text-base">
             {homeData.hero.secondaryCta}
           </a>
         </div>
       </div>
 
-      <!-- Right: Codecrafters LMS Studio Workbench (5 cols) -->
-      <div class="lg:col-span-5 xl:col-span-5 relative w-full mx-auto lg:mx-0 animate-fade-in" style="animation-delay: 0.2s;">
-        <!-- Glowing drop shadow -->
-        <div class="absolute -inset-0.5 bg-gradient-to-b from-white/10 to-transparent rounded-2xl blur opacity-50"></div>
-        
-        <div class="relative bg-slate-50 border border-slate-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col h-[500px]">
-          <!-- Mac OS Window Header -->
-          <div class="bg-[#141C24] border-b border-slate-200 px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-              <div class="w-3 h-3 rounded-full bg-red-500/80 border border-red-500/50"></div>
-              <div class="w-3 h-3 rounded-full bg-yellow-500/80 border border-yellow-500/50"></div>
-              <div class="w-3 h-3 rounded-full bg-green-500/80 border border-green-500/50"></div>
-            </div>
-            <div class="flex items-center gap-2 px-3 py-1 bg-green-500/10 border border-green-500/20 rounded-md">
-              <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-              <span class="text-[10px] font-mono text-green-400 font-semibold uppercase tracking-wider">Live Sandbox Active</span>
-            </div>
-          </div>
-          
-          <!-- Tab Switcher -->
-          <div class="flex border-b border-slate-100 bg-[#0F172A]">
-            <button class="ide-tab active flex-1 py-3 text-[11px] font-mono text-white/80 border-b-2 border-primary bg-white/5 transition-colors" data-target="tab-1">live-class.tsx</button>
-            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-600 transition-colors" data-target="tab-2">terminal.sh</button>
-            <button class="ide-tab flex-1 py-3 text-[11px] font-mono text-slate-500 border-b-2 border-transparent hover:text-slate-600 transition-colors" data-target="tab-3">study-vault.md</button>
-          </div>
+      <!-- Right: Human Illustration (5 cols) -->
+      <div class="lg:col-span-5 xl:col-span-5 relative flex items-center justify-center lg:justify-end w-full animate-fade-in" style="animation-delay: 0.2s;">
+        <!-- Illustration Container -->
+        <div class="relative w-full max-w-lg aspect-square flex items-center justify-center">
+          <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full drop-shadow-2xl">
+            <!-- Background Blob -->
+            <path d="M304.5 106.5C345.5 146.5 358.5 211.5 334.5 259.5C310.5 307.5 249.5 338.5 186.5 331.5C123.5 324.5 58.5 279.5 39.5 219.5C20.5 159.5 47.5 84.5 98.5 46.5C149.5 8.5 224.5 25.5 264.5 66.5Z" fill="#ecfdf5"/>
+            <!-- Desk -->
+            <rect x="50" y="280" width="300" height="15" rx="7.5" fill="#cbd5e1"/>
+            <rect x="80" y="295" width="20" height="80" fill="#94a3b8"/>
+            <rect x="300" y="295" width="20" height="80" fill="#94a3b8"/>
+            <!-- Body -->
+            <path d="M120 280C120 200 160 160 200 160C240 160 280 200 280 280H120Z" fill="#10b981"/>
+            <path d="M140 280C140 220 170 190 200 190C230 190 260 220 260 280H140Z" fill="#059669"/>
+            <!-- Head -->
+            <circle cx="200" cy="120" r="45" fill="#fde68a"/>
+            <!-- Hair -->
+            <path d="M155 120C155 80 180 70 200 70C220 70 245 80 245 120C245 100 220 90 200 90C180 90 155 100 155 120Z" fill="#0f766e"/>
+            <!-- Laptop -->
+            <path d="M220 280H310L290 210H200L220 280Z" fill="#64748b"/>
+            <rect x="180" y="275" width="150" height="10" rx="4" fill="#475569"/>
+            <path d="M240 240H270" stroke="#f8fafc" stroke-width="4" stroke-linecap="round"/>
+          </svg>
 
-          <!-- Tab Content Area -->
-          <div class="flex-grow relative bg-slate-50 p-4 font-mono text-sm overflow-hidden">
-            
-            <!-- Tab 1: Live Interactive Batch -->
-            <div id="tab-1" class="ide-content absolute inset-0 p-4 flex flex-col opacity-100 transition-opacity duration-300">
-              <div class="flex-grow bg-white rounded border border-slate-100 relative overflow-hidden group">
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <svg class="w-12 h-12 text-slate-700" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-                </div>
-                <!-- Instructor Notes Overlay -->
-                <div class="absolute bottom-2 left-2 right-2 bg-black/60 backdrop-blur border border-slate-200 rounded p-2 text-[10px] text-slate-600">
-                  <span class="text-primary-light font-bold">Instructor:</span> "Notice how the PolicyCenter API handles the transaction..."
-                </div>
-              </div>
-              <div class="h-24 mt-2 border-t border-slate-200 pt-2 flex flex-col gap-1 overflow-y-auto">
-                <div class="text-[10px]"><span class="text-accent">Rahul (Student):</span> Got it, the payload requires a token.</div>
-                <div class="text-[10px]"><span class="text-blue-400">System:</span> Snippet shared to workbench.</div>
-                <div class="text-[10px]"><span class="text-slate-500">Connecting to Sandbox...</span></div>
-              </div>
-            </div>
-            
-            <!-- Tab 2: Cloud Sandbox Lab -->
-            <div id="tab-2" class="ide-content absolute inset-0 p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-              <div class="text-slate-500 mb-2">ask4trainings-lab ~ % <span class="text-white">ssh student@sandbox.ask4trainings.local</span></div>
-              <div class="text-slate-500 mb-2">Authenticating...</div>
-              <div class="text-green-400 mb-4">SUCCESS: Connected to SAP S/4HANA Instance.</div>
-              <div class="text-slate-500 mb-1">Loading modules... [OK]</div>
-              <div class="text-slate-500 mb-1">Mounting volumes... [OK]</div>
-              <div class="mt-4 flex gap-2 items-center text-primary-light">
-                <span class="animate-pulse">_</span>
-              </div>
-            </div>
-            
-            <!-- Tab 3: PDF Study Vault -->
-            <div id="tab-3" class="ide-content absolute inset-0 p-4 opacity-0 pointer-events-none transition-opacity duration-300">
-              <div class="text-slate-500 mb-4 flex items-center gap-2"><svg class="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg> /materials/guidewire</div>
-              <div class="space-y-2">
-                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-slate-100 hover:bg-white/10 cursor-pointer transition-colors">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-600"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Architecture_Guide_v2.pdf</div>
-                  <span class="text-[9px] text-slate-500">2.4 MB</span>
-                </div>
-                <div class="flex items-center justify-between p-2 rounded bg-white/5 border border-slate-100 hover:bg-white/10 cursor-pointer transition-colors">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-600"><svg class="w-3 h-3 text-red-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg> Interview_QnA_Bank.pdf</div>
-                  <span class="text-[9px] text-slate-500">1.1 MB</span>
-                </div>
-              </div>
-            </div>
-            
+          <!-- Floating Badges -->
+          <div class="absolute -bottom-3 left-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800">
+            <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            100% Practical Labs
           </div>
-          
-          <!-- Footer Badge -->
-          <div class="bg-primary/10 border-t border-primary/20 px-4 py-2.5 flex items-center justify-center">
-            <span class="text-[11px] font-semibold text-primary-light uppercase tracking-wider flex items-center gap-1.5">
-              ⚡ 24/7 Sandbox Lab Access Included
-            </span>
+          <div class="absolute top-4 -right-2 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800">
+            <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            Industry Mentors
           </div>
         </div>
       </div>
@@ -379,37 +330,6 @@ const categories = Object.keys(categoriesData).map(key => ({
 </BaseLayout>
 
 <script>
-  // Hero Section IDE Tab Switcher Logic
-  const tabs = document.querySelectorAll('.ide-tab');
-  const contents = document.querySelectorAll('.ide-content');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // Remove active states
-      tabs.forEach(t => {
-        t.classList.remove('active', 'border-primary', 'text-white/80', 'bg-white/5');
-        t.classList.add('border-transparent', 'text-slate-500');
-      });
-      contents.forEach(c => {
-        c.classList.remove('opacity-100');
-        c.classList.add('opacity-0', 'pointer-events-none');
-      });
-
-      // Add active state to clicked
-      tab.classList.remove('border-transparent', 'text-slate-500');
-      tab.classList.add('active', 'border-primary', 'text-white/80', 'bg-white/5');
-      
-      const targetId = tab.getAttribute('data-target');
-      if (targetId) {
-        const targetContent = document.getElementById(targetId);
-        if (targetContent) {
-          targetContent.classList.remove('opacity-0', 'pointer-events-none');
-          targetContent.classList.add('opacity-100');
-        }
-      }
-    });
-  });
-
   // Course Category Filtering Logic
   const filterBtns = document.querySelectorAll('.filter-btn');
   const courseItems = document.querySelectorAll('.course-item');
