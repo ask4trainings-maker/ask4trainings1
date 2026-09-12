@@ -108,12 +108,12 @@ const isContactActive = currentPath === '/contact-us';
                   {categories.map((cat, idx) => (
                     <button
                       type="button"
-                      class={`category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between ${idx === 0 ? 'bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600' : 'text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent'}`}
+                      class={`category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between ${idx === 0 ? 'bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600' : 'text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent'}`}
                       data-category-target={cat.id}
                       data-is-active={idx === 0 ? "true" : "false"}
                     >
                       <span>{cat.name}</span>
-                      <span class="text-[10px] text-slate-500 font-mono">({(coursesByCategory[cat.id] || []).length})</span>
+                      <span class="text-[11px] text-slate-500 font-medium tabular-nums">({(coursesByCategory[cat.id] || []).length})</span>
                     </button>
                   ))}
                 </div>
@@ -147,10 +147,10 @@ const isContactActive = currentPath === '/contact-us';
                               href={`/${course.data.slug}`}
                               class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
                             >
-                              <span class="text-xs font-medium text-slate-800 group-hover:text-emerald-600 transition-colors line-clamp-1">
+                              <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors">
                                 {course.data.title}
                               </span>
-                              <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5">
+                              <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
                                 <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
                                 <span>•</span>
                                 <span class="text-emerald-600">{course.data.batchInfo?.format || 'Live Online'}</span>
@@ -297,10 +297,10 @@ const setActiveCategory = (targetId: string) => {
   categoryTabs.forEach(tab => {
     if (tab.getAttribute('data-category-target') === targetId) {
       tab.setAttribute('data-is-active', 'true');
-      tab.className = 'category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600';
+      tab.className = 'category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600';
     } else {
       tab.setAttribute('data-is-active', 'false');
-      tab.className = 'category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent';
+      tab.className = 'category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent';
     }
   });
 

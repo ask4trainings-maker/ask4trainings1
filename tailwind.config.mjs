@@ -12,9 +12,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Inter', 'system-ui', 'sans-serif'],
-        body: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['"Geist Variable"', 'system-ui', '-apple-system', 'sans-serif'],
+        heading: ['"Geist Variable"', 'system-ui', '-apple-system', 'sans-serif'],
+        body: ['"Geist Variable"', 'system-ui', '-apple-system', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-out forwards',

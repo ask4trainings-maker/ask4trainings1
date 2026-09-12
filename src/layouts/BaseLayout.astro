@@ -3,6 +3,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyMobileBar from '../components/StickyMobileBar.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
+import '@fontsource-variable/geist';
 
 export interface Props {
   title: string;
@@ -42,6 +43,11 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <slot name="head" />
     <style is:global>
+      body {
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
       ::selection {
         background-color: theme('colors.emerald.600');
         color: white;
