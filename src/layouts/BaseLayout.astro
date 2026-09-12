@@ -38,9 +38,6 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <slot name="head" />
     <style is:global>
       body {

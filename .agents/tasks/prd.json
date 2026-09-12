@@ -88,7 +88,7 @@
     {
       "id": "US-002",
       "title": "URL Migration and SEO Preservation",
-      "status": "done",
+      "status": "verified",
       "dependsOn": [
         "US-001"
       ],
@@ -100,9 +100,18 @@
         "Negative case: A legacy URL returns a 404 error during tests."
       ],
       "completedAt": "2026-09-12T08:37:33.364Z",
-      "updatedAt": "2026-09-12T08:37:33.364Z",
+      "verifiedAt": "2026-09-12T09:01:00.000Z",
+      "updatedAt": "2026-09-12T09:01:00.000Z",
       "startedAt": "2026-09-12T08:37:33.364Z",
-      "passes": true
+      "passes": true,
+      "verificationNotes": [
+        "71 phantom markdown files purged (not in Screaming Frog 200-OK crawl).",
+        "85 live-verified course slugs retained with legacyUrl patched.",
+        "66 new 301 redirect rules added to public/_redirects (180 total) covering all GSC history URLs.",
+        "Privacy-policy and terms-of-service pages created (were referenced but missing).",
+        "Internal link audit: 0 broken links across 105 HTML files (23,990 OK links verified).",
+        "Build: 104 pages, 0 errors, 0 TypeScript warnings."
+      ]
     },
     {
       "id": "US-003",
