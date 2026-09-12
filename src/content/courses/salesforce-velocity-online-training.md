@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Salesforce Velocity Training | Ask 4 Trainings"
+  metaTitle: "Salesforce Velocity Online Training"
   metaDescription: "Enroll in the best Salesforce Velocity Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/salesforce-velocity-online-training/"
 legacyImpressions: 178

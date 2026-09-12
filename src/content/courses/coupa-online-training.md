@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Coupa Training | Ask 4 Trainings"
-  metaDescription: "Enroll in the best Coupa Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Best Coupa Online Training | No.1 Course and Certification"
+  metaDescription: "Join the best Coupa Online Training to master procurement, invoicing, sourcing, and spend management with real-time projects and certification."
 legacyUrl: "https://ask4trainings.com/coupa-online-training/"
 legacyImpressions: 1235
 ---

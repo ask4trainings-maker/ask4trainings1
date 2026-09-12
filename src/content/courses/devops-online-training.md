@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Devops Training | Ask 4 Trainings"
-  metaDescription: "Enroll in the best Devops Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Best DevOps Online Training | NO.1 Course and Certification"
+  metaDescription: "DevOps Online Training – Learn CI/CD, Docker, Kubernetes, Jenkins, AWS, Git & Linux with real-time project, certification & placement."
 legacyUrl: "https://ask4trainings.com/devops-online-training/"
 legacyImpressions: 9
 ---

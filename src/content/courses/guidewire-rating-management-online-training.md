@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Guidewire Rating Management Training | Ask 4 Trainings"
+  metaTitle: "Guidewire Rating Management Online Training"
   metaDescription: "Enroll in the best Guidewire Rating Management Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/guidewire-rating-management-online-training/"
 legacyImpressions: 167

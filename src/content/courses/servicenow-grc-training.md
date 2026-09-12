@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Servicenow Grc Training | Ask 4 Trainings"
+  metaTitle: "Servicenow Grc Training"
   metaDescription: "Enroll in the best Servicenow Grc Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/servicenow-grc-training/"
 legacyImpressions: 171

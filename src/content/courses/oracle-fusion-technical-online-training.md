@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Oracle Fusion Technical Training | Ask 4 Trainings"
+  metaTitle: "Oracle Fusion Technical Online Training"
   metaDescription: "Enroll in the best Oracle Fusion Technical Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/oracle-fusion-technical-online-training/"
 legacyImpressions: 38

@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Workday Integration Training | Ask 4 Trainings"
+  metaTitle: "Workday Integration Online Training"
   metaDescription: "Enroll in the best Workday Integration Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/workday-integration-online-training/"
 legacyImpressions: 256

@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Sap Cpi Training | Ask 4 Trainings"
+  metaTitle: "Sap Cpi Online Training"
   metaDescription: "Enroll in the best Sap Cpi Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/sap-cpi-online-training/"
 legacyImpressions: 65

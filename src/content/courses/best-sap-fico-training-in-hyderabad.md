@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Best Sap Fico Training | Ask 4 Trainings"
+  metaTitle: "Best Sap Fico Training In Hyderabad"
   metaDescription: "Enroll in the best Best Sap Fico Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/best-sap-fico-training-in-hyderabad/"
 legacyImpressions: 6

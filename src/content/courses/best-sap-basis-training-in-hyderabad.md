@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Best Sap Basis Training | Ask 4 Trainings"
+  metaTitle: "Best Sap Basis Training In Hyderabad"
   metaDescription: "Enroll in the best Best Sap Basis Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/best-sap-basis-training-in-hyderabad/"
 legacyImpressions: 99

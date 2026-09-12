@@ -32,8 +32,16 @@
     "auth": "Sveltia CMS (GitHub/Cloudflare Pages auth)"
   },
   "routes": [
-    { "path": "/*", "name": "Preserved Legacy Routes", "purpose": "Match old website URLs for SEO." },
-    { "path": "/admin", "name": "Sveltia CMS Admin", "purpose": "Content management interface." }
+    {
+      "path": "/*",
+      "name": "Preserved Legacy Routes",
+      "purpose": "Match old website URLs for SEO."
+    },
+    {
+      "path": "/admin",
+      "name": "Sveltia CMS Admin",
+      "purpose": "Content management interface."
+    }
   ],
   "uiNotes": [
     "Move away from dark themes; adopt a brighter, professional EdTech vibe.",
@@ -41,7 +49,13 @@
     "Must be fully responsive across all device types."
   ],
   "dataModel": [
-    { "entity": "Content Collection", "fields": ["Markdown Frontmatter", "Body"] }
+    {
+      "entity": "Content Collection",
+      "fields": [
+        "Markdown Frontmatter",
+        "Body"
+      ]
+    }
   ],
   "importFormat": {
     "description": "Not applicable",
@@ -74,15 +88,21 @@
     {
       "id": "US-002",
       "title": "URL Migration and SEO Preservation",
-      "status": "open",
-      "dependsOn": ["US-001"],
+      "status": "done",
+      "dependsOn": [
+        "US-001"
+      ],
       "description": "As an SEO manager, I want all legacy URLs to map correctly to new Astro pages with their respective content.",
       "acceptanceCriteria": [
         "Create new Astro page files (or dynamic routes) mapping to all legacy URLs.",
         "Populate pages with migrated content to preserve SEO.",
         "Example: Accessing legacy '/courses/old-course-name' loads successfully.",
         "Negative case: A legacy URL returns a 404 error during tests."
-      ]
+      ],
+      "completedAt": "2026-09-12T08:37:33.364Z",
+      "updatedAt": "2026-09-12T08:37:33.364Z",
+      "startedAt": "2026-09-12T08:37:33.364Z",
+      "passes": true
     },
     {
       "id": "US-003",
@@ -102,7 +122,10 @@
       "id": "US-004",
       "title": "Performance Optimization & Validation",
       "status": "open",
-      "dependsOn": ["US-001", "US-002"],
+      "dependsOn": [
+        "US-001",
+        "US-002"
+      ],
       "description": "As a user, I want the site to load quickly and not shift around as it renders.",
       "acceptanceCriteria": [
         "Audit and fix any components causing layout shifts to ensure CLS < 0.1.",

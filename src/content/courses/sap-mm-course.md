@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Sap Mm Course Training | Ask 4 Trainings"
+  metaTitle: "Sap Mm Course"
   metaDescription: "Enroll in the best Sap Mm Course Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/sap-mm-course/"
 legacyImpressions: 44

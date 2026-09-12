@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Salesforce Omnistudio Training | Ask 4 Trainings"
+  metaTitle: "Salesforce Omnistudio Online Training"
   metaDescription: "Enroll in the best Salesforce Omnistudio Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/salesforce-omnistudio-online-training/"
 legacyImpressions: 15

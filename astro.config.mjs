@@ -6,6 +6,10 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://ask4trainings.com',
   output: 'static',
+  trailingSlash: 'always',
+  build: {
+    format: 'directory',
+  },
   integrations: [
     tailwind({
       applyBaseStyles: true,

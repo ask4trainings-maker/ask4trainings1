@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Microsoft Dynamics 365 Finance And Operations Training | ..."
-  metaDescription: "Enroll in the best Microsoft Dynamics 365 Finance And Operations Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Best Microsoft Dynamics 365 Finance and Operations |#1Course"
+  metaDescription: "Microsoft Dynamics 365 Finance and Operations helps manage finance, supply chain, and operations with automation and scalable performance."
 legacyUrl: "https://ask4trainings.com/microsoft-dynamics-365-finance-and-operations/"
 legacyImpressions: 1790
 ---

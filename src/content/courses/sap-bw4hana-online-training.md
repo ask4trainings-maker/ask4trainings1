@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Sap Bw4hana Training | Ask 4 Trainings"
+  metaTitle: "Sap Bw4hana Online Training"
   metaDescription: "Enroll in the best Sap Bw4hana Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/sap-bw4hana-online-training/"
 legacyImpressions: 4

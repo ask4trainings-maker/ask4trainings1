@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Snowflake Training | Ask 4 Trainings"
+  metaTitle: "Snowflake Training In Hyderabad"
   metaDescription: "Enroll in the best Snowflake Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/snowflake-training-in-hyderabad/"
 legacyImpressions: 32

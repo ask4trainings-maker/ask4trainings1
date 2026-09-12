@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Duck Creek Training | Ask 4 Trainings"
-  metaDescription: "Enroll in the best Duck Creek Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Best Duck Creek Online Training | NO.1 Certification"
+  metaDescription: "Advance your career with Duck Creek Online Training . Learn insurance software, real-time projects & placement support from experts."
 legacyUrl: "https://ask4trainings.com/duck-creek-online-training/"
 legacyImpressions: 253
 ---

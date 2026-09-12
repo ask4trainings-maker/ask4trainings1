@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Kinaxis Training | Ask 4 Trainings"
-  metaDescription: "Enroll in the best Kinaxis Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Kinaxis Online Training in Hyd | No.1 Rapid Response Course"
+  metaDescription: "Master Kinaxis online Training Rapid Response with expert-led, hands-on project and certification support to boost your career."
 legacyUrl: "https://ask4trainings.com/kinaxis-online-training-in-hyderabad/"
 legacyImpressions: 192
 ---

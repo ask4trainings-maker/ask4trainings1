@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Salesforce Data Cloud Training | Ask 4 Trainings"
+  metaTitle: "Salesforce Data Cloud Online Training"
   metaDescription: "Enroll in the best Salesforce Data Cloud Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/salesforce-data-cloud-online-training/"
 legacyImpressions: 3

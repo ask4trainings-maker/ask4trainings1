@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Sap Brim Course Training | Ask 4 Trainings"
+  metaTitle: "Sap Brim Course In Hyderabad"
   metaDescription: "Enroll in the best Sap Brim Course Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/sap-brim-course-in-hyderabad/"
 legacyImpressions: 6

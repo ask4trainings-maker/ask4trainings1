@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Oracle Transportation Management Otm Training | Ask 4 Tra..."
+  metaTitle: "Oracle Transportation Management Otm Training"
   metaDescription: "Enroll in the best Oracle Transportation Management Otm Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/oracle-transportation-management-otm-training/"
 legacyImpressions: 5

@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Salesforce B2b Commerce Cloud Training | Ask 4 Trainings"
+  metaTitle: "Salesforce B2b Commerce Cloud Training"
   metaDescription: "Enroll in the best Salesforce B2b Commerce Cloud Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/salesforce-b2b-commerce-cloud-training/"
 legacyImpressions: 54

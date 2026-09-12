@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Guidewire Training | Ask 4 Trainings"
+  metaTitle: "Guidewire Online Training"
   metaDescription: "Enroll in the best Guidewire Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/guidewire-online-training/"
 legacyImpressions: 613

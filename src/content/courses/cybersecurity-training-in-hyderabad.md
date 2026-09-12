@@ -42,8 +42,8 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Cybersecurity Training | Ask 4 Trainings"
-  metaDescription: "Enroll in the best Cybersecurity Training. Get hands-on experience with real-time projects and secure your dream job."
+  metaTitle: "Best Cybersecurity Training in Hyderabad | #1 Certification"
+  metaDescription: "Join Cybersecurity Training in Hyderabad with hands-on labs, real-time projects, expert mentors, certification support and placement ."
 legacyUrl: "https://ask4trainings.com/cybersecurity-training-in-hyderabad/"
 legacyImpressions: 1
 ---

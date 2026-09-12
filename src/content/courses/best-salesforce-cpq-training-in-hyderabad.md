@@ -42,7 +42,7 @@ faqs:
   - question: "Do you provide placement assistance?"
     answer: "Yes, we provide 100% placement assistance, resume building, and mock interviews."
 seo:
-  metaTitle: "Best Salesforce Cpq Training | Ask 4 Trainings"
+  metaTitle: "Best Salesforce Cpq Training In Hyderabad"
   metaDescription: "Enroll in the best Best Salesforce Cpq Training. Get hands-on experience with real-time projects and secure your dream job."
 legacyUrl: "https://ask4trainings.com/best-salesforce-cpq-training-in-hyderabad/"
 legacyImpressions: 6
