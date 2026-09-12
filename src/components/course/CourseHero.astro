@@ -12,43 +12,43 @@ export interface Props {
 const { title, category, duration, format, valueProp } = Astro.props;
 const categoryLabel = (categoriesData as any)[category]?.label || category.replace(/-/g, ' ');
 ---
-<div class="relative bg-gradient-to-b from-slate-900 via-slate-900/95 to-[#090D16] overflow-hidden border-b border-slate-100">
+<div class="relative bg-gradient-to-b from-emerald-50/40 via-white to-white border-b border-slate-100 py-12 lg:py-16 overflow-hidden">
   <!-- Ambient glows -->
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-    <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary/15 rounded-full blur-3xl"></div>
-    <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-emerald-600/10 rounded-full blur-3xl"></div>
   </div>
 
-  <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-14 md:py-20">
+  <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
       
       <!-- Left Column: Content -->
       <div class="lg:col-span-7 xl:col-span-8">
         <!-- Breadcrumb -->
         <nav class="flex flex-wrap items-center gap-2 text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
-          <a href="/" class="hover:text-primary-light transition-colors">Home</a>
+          <a href="/" class="hover:text-emerald-500 transition-colors">Home</a>
           <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
-          <a href={`/courses/${category}`} class="hover:text-primary-light transition-colors">{categoryLabel}</a>
+          <a href={`/courses/${category}`} class="hover:text-emerald-500 transition-colors">{categoryLabel}</a>
           <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           <span class="text-slate-900 font-semibold truncate max-w-[200px] sm:max-w-xs">{title}</span>
         </nav>
 
         <!-- Badge Bar -->
         <div class="flex flex-wrap items-center gap-3 mb-6">
-          <span class="text-xs font-semibold text-primary-light bg-primary/10 border border-primary/20 px-2.5 py-1 rounded-full uppercase tracking-wider">
+          <span class="text-xs font-semibold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-sm uppercase tracking-wider">
             {categoryLabel}
           </span>
-          <span class="text-xs font-semibold text-whatsapp bg-whatsapp/10 border border-whatsapp/20 px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5">
+          <span class="text-xs font-semibold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-sm uppercase tracking-wider flex items-center gap-1.5">
             <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-whatsapp opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-whatsapp"></span>
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-600 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-600"></span>
             </span>
             Weekend Batch Starting Soon
           </span>
-          <span class="text-xs font-semibold text-slate-600 bg-white/5 border border-slate-200 px-2.5 py-1 rounded-full uppercase tracking-wider">
+          <span class="text-xs font-semibold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-sm uppercase tracking-wider">
             {duration}
           </span>
-          <span class="text-xs font-semibold text-accent-light bg-accent/10 border border-accent/20 px-2.5 py-1 rounded-full uppercase tracking-wider">
+          <span class="text-xs font-semibold text-emerald-800 bg-white border border-emerald-200 px-3 py-1 rounded-full shadow-sm uppercase tracking-wider">
             {format}
           </span>
         </div>
@@ -65,19 +65,18 @@ const categoryLabel = (categoriesData as any)[category]?.label || category.repla
       <!-- Right Column: Media Placeholders -->
       <div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-5 w-full max-w-sm mx-auto lg:ml-auto lg:mr-0">
         <!-- YouTube Placeholder -->
-        <div class="w-full aspect-video bg-slate-100 border border-slate-200 rounded-2xl overflow-hidden relative group flex items-center justify-center shadow-2xl">
-          <div class="absolute inset-0 bg-white/50 group-hover:bg-white/40 transition-colors z-0"></div>
-          <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(220,38,38,0.5)] z-10 transition-transform group-hover:scale-110">
-            <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <div class="w-full aspect-video bg-white border border-slate-200 rounded-2xl overflow-hidden relative group flex items-center justify-center shadow-md p-2">
+          <div class="w-full h-full bg-slate-100 rounded-xl flex items-center justify-center relative overflow-hidden group-hover:bg-slate-200 transition-colors">
+            <div class="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center shadow-lg z-10 transition-transform group-hover:scale-110">
+              <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
           </div>
-          <span class="absolute bottom-3 right-3 bg-white/80 text-white text-xs px-2 py-1 rounded font-mono z-10">[YouTube Embed]</span>
         </div>
 
         <!-- Image Placeholder -->
-        <div class="w-full aspect-[4/3] sm:aspect-video lg:aspect-[4/3] bg-slate-100 border border-slate-200 rounded-2xl overflow-hidden relative group flex items-center justify-center shadow-lg">
-          <div class="absolute inset-0 bg-gradient-to-tr from-slate-800 to-slate-700 opacity-50 z-0"></div>
-          <div class="text-slate-500 flex flex-col items-center gap-3 z-10">
-            <svg class="w-10 h-10 opacity-50 group-hover:opacity-100 group-hover:text-primary transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="w-full aspect-[4/3] sm:aspect-video lg:aspect-[4/3] bg-white border border-slate-200 rounded-2xl overflow-hidden relative group flex items-center justify-center shadow-md p-2">
+          <div class="w-full h-full bg-slate-100 rounded-xl flex items-center justify-center flex-col gap-3 group-hover:bg-slate-200 transition-colors text-slate-500">
+            <svg class="w-10 h-10 opacity-50 group-hover:opacity-100 group-hover:text-emerald-600 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
             </svg>
             <span class="font-mono text-sm">[Course Image]</span>

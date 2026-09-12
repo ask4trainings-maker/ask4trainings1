@@ -17,12 +17,12 @@ const formattedDate = new Date(publishDate).toLocaleDateString('en-US', {
 <BaseLayout title={`${title} | Ask 4 Trainings Blog`}>
   <article class="container mx-auto px-4 py-12 max-w-3xl">
     <header class="mb-10 text-center">
-      <span class="text-sm font-bold text-primary tracking-wider uppercase mb-4 block">{category}</span>
-      <h1 class="text-3xl md:text-5xl font-heading font-bold text-ink-900 mb-6 leading-tight">{title}</h1>
-      <p class="text-ink-500 text-sm">Published on <time datetime={publishDate.toISOString()}>{formattedDate}</time></p>
+      <span class="text-sm font-bold text-emerald-600 tracking-wider uppercase mb-4 block">{category}</span>
+      <h1 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 leading-tight">{title}</h1>
+      <p class="text-slate-500 text-sm">Published on <time datetime={publishDate.toISOString()}>{formattedDate}</time></p>
     </header>
 
-    <div class="prose prose-lg prose-slate mx-auto prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-primary prose-headings:font-heading">
+    <div class="prose prose-lg prose-slate mx-auto prose-a:text-emerald-600 prose-a:no-underline hover:prose-a:underline prose-blockquote:border-emerald-600 prose-headings:font-heading">
       <slot />
     </div>
   </article>

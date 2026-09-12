@@ -23,6 +23,7 @@ import homeData from '../data/pages/home.json';
 import { getCollection } from 'astro:content';
 import CourseCard from '../components/CourseCard.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
+import Ecosystem from '../components/Ecosystem.astro';
 
 const allCourses = await getCollection('courses');
 // Sort or get featured courses (limit to 6 for the catalog display)
@@ -135,11 +136,11 @@ const categories = Object.keys(categoriesData).map(key => ({
 
       <!-- Horizontal Pill Selector -->
       <div class="flex gap-3 overflow-x-auto pb-4 mb-10 scrollbar-hide snap-x justify-start md:justify-center">
-        <button class="filter-btn active shrink-0 px-5 py-2 rounded-full border border-primary text-primary-light bg-primary/20 text-sm font-semibold transition-all hover:bg-primary/30" data-filter="all">
+        <button class="filter-btn shrink-0 px-5 py-2 rounded-full border text-sm font-medium transition-all data-[active=true]:bg-emerald-600 data-[active=true]:text-white data-[active=true]:border-emerald-600 data-[active=true]:shadow-sm data-[active=false]:bg-white data-[active=false]:border-slate-200 data-[active=false]:text-slate-700 hover:data-[active=false]:border-emerald-500 hover:data-[active=false]:text-emerald-600" data-filter="all" data-active="true">
           All Courses
         </button>
         {categories.map(cat => (
-          <button class="filter-btn shrink-0 px-5 py-2 rounded-full border border-slate-200 text-slate-600 bg-white/5 text-sm font-medium transition-all hover:border-white/30 hover:bg-white/10" data-filter={cat.slug}>
+          <button class="filter-btn shrink-0 px-5 py-2 rounded-full border text-sm font-medium transition-all data-[active=true]:bg-emerald-600 data-[active=true]:text-white data-[active=true]:border-emerald-600 data-[active=true]:shadow-sm data-[active=false]:bg-white data-[active=false]:border-slate-200 data-[active=false]:text-slate-700 hover:data-[active=false]:border-emerald-500 hover:data-[active=false]:text-emerald-600" data-filter={cat.slug} data-active="false">
             {cat.label}
           </button>
         ))}
@@ -169,75 +170,7 @@ const categories = Object.keys(categoriesData).map(key => ({
     </div>
   </section>
 
-  <!-- LMS Learning Ecosystem Bento Grid -->
-  <section class="py-24 relative">
-    <!-- Ambient Glow -->
-    <div class="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-50 pointer-events-none"></div>
-    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
-      <div class="mb-12">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">The Ask4Trainings Learning Ecosystem</h2>
-        <p class="text-slate-500 max-w-2xl">A complete end-to-end framework designed for enterprise skill mastery.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
-        
-        <!-- Live Classes -->
-        <div class="lg:col-span-2 bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-primary/40 transition-colors">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10 pointer-events-none"></div>
-          <div class="absolute top-0 right-0 w-64 h-64 bg-primary/20 blur-[80px] group-hover:bg-primary/30 transition-colors"></div>
-          
-          <div class="relative z-20">
-            <div class="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-primary-light" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-            </div>
-            <h3 class="text-2xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[0].title}</h3>
-            <p class="text-slate-500">{homeData.bento[0].description}</p>
-          </div>
-        </div>
-
-        <!-- Cloud Sandboxes -->
-        <div class="bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-accent/40 transition-colors">
-          <div class="absolute top-0 left-0 w-48 h-48 bg-accent/10 blur-[60px] group-hover:bg-accent/20 transition-colors"></div>
-          
-          <div class="relative z-20">
-            <div class="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-accent-light" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/></svg>
-            </div>
-            <h3 class="text-xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[1].title}</h3>
-            <p class="text-slate-500 text-sm">{homeData.bento[1].description}</p>
-          </div>
-        </div>
-
-        <!-- PDF Vault -->
-        <div class="bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-blue-500/40 transition-colors">
-          <div class="absolute bottom-0 right-0 w-48 h-48 bg-blue-500/10 blur-[60px] group-hover:bg-blue-500/20 transition-colors"></div>
-          
-          <div class="relative z-20">
-            <div class="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-            </div>
-            <h3 class="text-xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[2].title}</h3>
-            <p class="text-slate-500 text-sm">{homeData.bento[2].description}</p>
-          </div>
-        </div>
-
-        <!-- Mock Interviews -->
-        <div class="lg:col-span-2 bg-white/50 backdrop-blur-md border border-slate-200 rounded-2xl p-8 flex flex-col justify-end relative overflow-hidden group hover:border-whatsapp/40 transition-colors">
-          <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50"></div>
-          <div class="absolute bottom-0 left-0 w-64 h-64 bg-whatsapp/10 blur-[80px] group-hover:bg-whatsapp/20 transition-colors"></div>
-          
-          <div class="relative z-20">
-            <div class="w-12 h-12 rounded-xl bg-whatsapp/20 flex items-center justify-center mb-6">
-              <svg class="w-6 h-6 text-whatsapp" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-            </div>
-            <h3 class="text-2xl font-bold font-heading text-slate-900 mb-2">{homeData.bento[3].title}</h3>
-            <p class="text-slate-500">{homeData.bento[3].description}</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
+  <Ecosystem />
 
   <!-- Career Transition Roadmap -->
   <section class="py-24 relative">
@@ -255,37 +188,37 @@ const categories = Object.keys(categoriesData).map(key => ({
         
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
           <!-- Step 1 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               1
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-primary rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[0].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[0].description}</p>
           </div>
           <!-- Step 2 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-primary/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-primary text-primary-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               2
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-primary rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[1].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[1].description}</p>
           </div>
           <!-- Step 3 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-accent/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-accent text-accent-light flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-500 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               3
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-accent rounded-full border-2 border-slate-900"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[2].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[2].description}</p>
           </div>
           <!-- Step 4 -->
-          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-whatsapp/40 transition-colors">
-            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-whatsapp text-whatsapp flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
+          <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-100 border-2 border-emerald-600 text-emerald-600 flex items-center justify-center text-lg font-bold mx-auto mb-4 relative">
               4
-              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-whatsapp rounded-full border-2 border-slate-900 animate-pulse"></div>
+              <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900 animate-pulse"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[3].title}</h4>
             <p class="text-xs text-slate-500">{homeData.roadmap[3].description}</p>
@@ -298,7 +231,7 @@ const categories = Object.keys(categoriesData).map(key => ({
   <!-- Conversion Bottom Section -->
   <section id="enquiry-section" class="py-24 relative overflow-hidden">
     <!-- Glows -->
-    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-600/10 rounded-full blur-[150px] pointer-events-none"></div>
 
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
       <div>
@@ -338,11 +271,9 @@ const categories = Object.keys(categoriesData).map(key => ({
     btn.addEventListener('click', () => {
       // Update active button styling
       filterBtns.forEach(b => {
-        b.classList.remove('active', 'border-primary', 'text-primary-light', 'bg-primary/20');
-        b.classList.add('border-slate-200', 'text-slate-600', 'bg-white/5');
+        b.setAttribute('data-active', 'false');
       });
-      btn.classList.remove('border-slate-200', 'text-slate-600', 'bg-white/5');
-      btn.classList.add('active', 'border-primary', 'text-primary-light', 'bg-primary/20');
+      btn.setAttribute('data-active', 'true');
 
       const filter = btn.getAttribute('data-filter');
 

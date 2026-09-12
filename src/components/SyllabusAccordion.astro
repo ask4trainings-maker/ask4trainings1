@@ -9,10 +9,10 @@ const { syllabus } = Astro.props;
 ---
 <div class="space-y-4">
   {syllabus.map((item) => (
-    <details class="group bg-white/40 backdrop-blur-md border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden hover:border-primary/50 transition-colors">
-      <summary class="flex items-center justify-between p-4 md:p-6 cursor-pointer hover:bg-white/5 transition-colors font-heading font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset">
+    <details class="group bg-white/40 backdrop-blur-md border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden hover:border-emerald-600/50 transition-colors">
+      <summary class="flex items-center justify-between p-4 md:p-6 cursor-pointer hover:bg-white/5 transition-colors font-heading font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-inset">
         <span class="pr-4">{item.module}</span>
-        <span class="text-primary-light bg-primary/20 p-1.5 rounded-full border border-primary/30 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
+        <span class="text-emerald-500 bg-emerald-600/20 p-1.5 rounded-full border border-emerald-600/30 transition-transform duration-300 group-open:rotate-180 flex-shrink-0">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>

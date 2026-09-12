@@ -17,6 +17,13 @@ const coursesByCategory = categories.reduce((acc, cat) => {
   acc[cat.id] = allCourses.filter(c => c.data.category === cat.id);
   return acc;
 }, {} as Record<string, any[]>);
+
+// Route Normalization & Active State Logic
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const courseSlugs = allCourses.map(c => `/${c.data.slug}`);
+const isCoursesActive = currentPath === '/courses' || currentPath.startsWith('/courses/') || courseSlugs.includes(currentPath);
+const isAboutActive = currentPath === '/about-us';
+const isContactActive = currentPath === '/contact-us';
 ---
 <header class="w-full sticky top-0 z-50 transition-all duration-300">
   <!-- Top Contact Strip -->
@@ -25,11 +32,11 @@ const coursesByCategory = categories.reduce((acc, cat) => {
       <!-- Left: Contacts -->
       <div class="flex items-center gap-6">
         <a href={`tel:${settingsData.contact.phone2}`} class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
           {settingsData.contact.phone2}
         </a>
         <a href={`mailto:${settingsData.contact.email}`} class="hover:text-slate-900 transition-colors flex items-center gap-1.5">
-          <svg class="w-3.5 h-3.5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           {settingsData.contact.email}
         </a>
       </div>
@@ -75,17 +82,18 @@ const coursesByCategory = categories.reduce((acc, cat) => {
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 h-16 flex justify-between items-center w-full">
       <!-- Logo -->
       <a href="/" class="flex-shrink-0 flex items-center">
-        <span class="text-2xl font-black font-heading text-slate-900 tracking-tight">Ask 4 <span class="text-accent">Trainings</span></span>
+        <span class="text-2xl font-black font-heading text-slate-900 tracking-tight">Ask 4 <span class="text-emerald-600">Trainings</span></span>
       </a>
 
       <!-- Desktop Nav -->
       <div class="hidden lg:flex flex-1 justify-center">
         <ul class="flex items-center gap-8 font-medium text-sm text-slate-600">
           <!-- Mega Menu Dropdown -->
-          <li class="group relative">
-            <button class="mega-menu-trigger hover:text-slate-900 transition-colors py-5 flex items-center gap-1.5 focus:outline-none">
+          <li class="group/menu relative">
+            <button class={`mega-menu-trigger transition-colors py-5 flex items-center gap-1.5 focus:outline-none relative ${isCoursesActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isCoursesActive ? 'page' : undefined}>
               All Courses
-              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <svg class="w-4 h-4 transition-transform group-hover/menu:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isCoursesActive ? 'w-full' : 'w-0 group-hover/menu:w-full'}`}></span>
             </button>
             
             <!-- Hover Bridge to prevent menu closing -->
@@ -100,7 +108,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
                   {categories.map((cat, idx) => (
                     <button
                       type="button"
-                      class={`category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between ${idx === 0 ? 'bg-primary/20 text-white font-bold border-l-2 border-primary' : 'text-slate-600 font-semibold hover:text-white hover:bg-white/5 border-l-2 border-transparent'}`}
+                      class={`category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between ${idx === 0 ? 'bg-emerald-600/20 text-white font-bold border-l-2 border-emerald-600' : 'text-slate-600 font-semibold hover:text-white hover:bg-white/5 border-l-2 border-transparent'}`}
                       data-category-target={cat.id}
                       data-is-active={idx === 0 ? "true" : "false"}
                     >
@@ -126,7 +134,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
                           </div>
                           <a
                             href={`/courses/${cat.id}`}
-                            class="text-xs text-accent hover:text-amber-400 font-medium flex items-center gap-1 shrink-0"
+                            class="text-xs text-emerald-600 hover:text-amber-400 font-medium flex items-center gap-1 shrink-0"
                           >
                             View Category Hub ↗
                           </a>
@@ -137,9 +145,9 @@ const coursesByCategory = categories.reduce((acc, cat) => {
                           {(coursesByCategory[cat.id] || []).map((course: any) => (
                             <a
                               href={`/${course.data.slug}`}
-                              class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-white/10 border border-slate-100 hover:border-primary/40 transition-all flex flex-col gap-1"
+                              class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-white/10 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
                             >
-                              <span class="text-xs font-medium text-slate-200 group-hover:text-primary transition-colors line-clamp-1">
+                              <span class="text-xs font-medium text-slate-200 group-hover:text-emerald-600 transition-colors line-clamp-1">
                                 {course.data.title}
                               </span>
                               <span class="text-[10px] font-mono text-slate-500 flex items-center gap-1.5">
@@ -171,10 +179,16 @@ const coursesByCategory = categories.reduce((acc, cat) => {
           </li>
           
           <li>
-            <a href="/about-us" class="hover:text-slate-900 transition-colors py-5 block">About Us</a>
+            <a href="/about-us" class={`group/link relative py-5 block transition-colors ${isAboutActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isAboutActive ? 'page' : undefined}>
+              About Us
+              <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isAboutActive ? 'w-full' : 'w-0 group-hover/link:w-full'}`}></span>
+            </a>
           </li>
           <li>
-            <a href="/contact-us" class="hover:text-slate-900 transition-colors py-5 block">Contact</a>
+            <a href="/contact-us" class={`group/link relative py-5 block transition-colors ${isContactActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isContactActive ? 'page' : undefined}>
+              Contact
+              <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isContactActive ? 'w-full' : 'w-0 group-hover/link:w-full'}`}></span>
+            </a>
           </li>
         </ul>
       </div>
@@ -193,7 +207,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
           {navigationData.lmsButtonText}
           <div class="absolute top-full right-0 mt-2 w-64 bg-slate-100 border border-slate-200 rounded-xl p-4 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all text-left z-50">
             <p class="text-xs text-slate-600 leading-relaxed mb-3">Access your dedicated cloud sandboxes, recorded sessions, and study materials.</p>
-            <span class="text-xs font-semibold text-accent flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span> Active Students Only</span>
+            <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span> Active Students Only</span>
           </div>
         </a>
 
@@ -219,7 +233,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
 <div id="mobile-drawer-overlay" class="fixed inset-0 bg-white/80 backdrop-blur-sm z-[55] hidden opacity-0 transition-opacity duration-300"></div>
 <div id="mobile-drawer" class="fixed top-0 right-0 h-full w-[300px] sm:w-[350px] bg-white border-l border-slate-200 z-[55] transform translate-x-full transition-transform duration-300 overflow-y-auto flex flex-col">
 <div class="p-5 border-b border-slate-200 flex-shrink-0 mt-14">
-  <button id="mobile-search-btn" class="w-full flex items-center justify-between p-3 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-primary/50 transition-colors">
+  <button id="mobile-search-btn" class="w-full flex items-center justify-between p-3 bg-slate-100 rounded-lg border border-slate-200 text-slate-600 hover:text-slate-900 hover:border-emerald-600/50 transition-colors">
     <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg> Search Courses</span>
   </button>
 </div>
@@ -237,7 +251,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
           <svg class="w-4 h-4 text-slate-500 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </summary>
         <div class="px-3 pb-3 pt-1 space-y-1 bg-slate-100/20">
-          <a href={`/courses/${cat.id}`} class="mobile-link block py-2 px-3 text-xs text-accent hover:text-accent-light bg-accent/10 rounded font-medium transition-colors">
+          <a href={`/courses/${cat.id}`} class="mobile-link block py-2 px-3 text-xs text-emerald-600 hover:text-emerald-500 bg-emerald-600/10 rounded font-medium transition-colors">
             View All {cat.name} →
           </a>
           {(coursesByCategory[cat.id] || []).map((course: any) => (
@@ -249,7 +263,7 @@ const coursesByCategory = categories.reduce((acc, cat) => {
       </details>
     ))}
     <div class="pt-2">
-      <a href="/courses" class="mobile-link flex items-center justify-between p-3 rounded-lg text-primary font-medium hover:bg-white/5 transition-colors">
+      <a href="/courses" class="mobile-link flex items-center justify-between p-3 rounded-lg text-emerald-600 font-medium hover:bg-white/5 transition-colors">
         View Entire Course Catalog
         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
       </a>
@@ -258,8 +272,8 @@ const coursesByCategory = categories.reduce((acc, cat) => {
 
   <h3 class="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-4">Company</h3>
   <ul class="space-y-1">
-    <li><a href="/about-us" class="mobile-link block p-3 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white/5 transition-colors">About Us</a></li>
-    <li><a href="/contact-us" class="mobile-link block p-3 rounded-lg text-slate-600 hover:text-slate-900 hover:bg-white/5 transition-colors">Contact Us</a></li>
+    <li><a href="/about-us" class={`mobile-link block p-3 rounded-lg transition-colors ${isAboutActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-white/5'}`} aria-current={isAboutActive ? 'page' : undefined}>About Us</a></li>
+    <li><a href="/contact-us" class={`mobile-link block p-3 rounded-lg transition-colors ${isContactActive ? 'text-emerald-600 bg-emerald-600/10 font-semibold' : 'text-slate-600 hover:text-slate-900 hover:bg-white/5'}`} aria-current={isContactActive ? 'page' : undefined}>Contact Us</a></li>
   </ul>
 </div>
 
@@ -283,7 +297,7 @@ const setActiveCategory = (targetId: string) => {
   categoryTabs.forEach(tab => {
     if (tab.getAttribute('data-category-target') === targetId) {
       tab.setAttribute('data-is-active', 'true');
-      tab.className = 'category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between bg-primary/20 text-white font-bold border-l-2 border-primary';
+      tab.className = 'category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between bg-emerald-600/20 text-white font-bold border-l-2 border-emerald-600';
     } else {
       tab.setAttribute('data-is-active', 'false');
       tab.className = 'category-tab-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs tracking-wide transition-all flex items-center justify-between text-slate-600 font-semibold hover:text-white hover:bg-white/5 border-l-2 border-transparent';
