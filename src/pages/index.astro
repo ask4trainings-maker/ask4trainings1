@@ -81,7 +81,7 @@ function cleanTitle(title: string): string {
         </p>
 
         <!-- Metric Counter Strip -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 border-y border-slate-200 py-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 border-y border-slate-200 py-6">
           {homeData.metrics.map((metric: any) => (
             <div>
               <div class="text-slate-900 font-bold text-2xl lg:text-3xl mb-1">{metric.value}</div>
@@ -90,13 +90,27 @@ function cleanTitle(title: string): string {
           ))}
         </div>
 
+        <!-- Enterprise Hiring Partner Trust Bar -->
+        <div class="mb-10">
+          <div class="text-[11px] font-semibold tracking-wider uppercase text-slate-400 mb-3">
+            Alumni Working At Top Global Enterprises
+          </div>
+          <div class="flex flex-wrap items-center gap-6 md:gap-10 text-slate-400 font-semibold text-xs tracking-wider uppercase">
+            <span class="opacity-70 hover:opacity-100 transition-opacity">Accenture</span>
+            <span class="opacity-70 hover:opacity-100 transition-opacity">Deloitte</span>
+            <span class="opacity-70 hover:opacity-100 transition-opacity">Capgemini</span>
+            <span class="opacity-70 hover:opacity-100 transition-opacity">Cognizant</span>
+            <span class="opacity-70 hover:opacity-100 transition-opacity">PwC</span>
+          </div>
+        </div>
+
         <!-- Dual CTAs -->
         <div class="flex flex-col sm:flex-row gap-4">
           <a href="#course-catalog" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 text-white font-semibold transition-all duration-200 hover:bg-emerald-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-emerald-600/25 active:translate-y-0 group text-sm md:text-base">
             {homeData.hero.primaryCta}
             <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
           </a>
-          <a href="#enquiry-section" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold transition-all duration-200 hover:border-emerald-500 hover:text-emerald-600 hover:bg-emerald-50/40 hover:-translate-y-0.5 text-sm md:text-base">
+          <a href="#enquiry-section" class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl border border-slate-300 bg-white text-slate-800 font-semibold hover:border-emerald-600 hover:text-emerald-600 hover:bg-emerald-50/50 transition-colors shadow-sm text-sm md:text-base hover:-translate-y-0.5">
             {homeData.hero.secondaryCta}
           </a>
         </div>
@@ -107,14 +121,14 @@ function cleanTitle(title: string): string {
         <!-- Image Container with Floating Elements -->
         <div class="relative w-full max-w-sm sm:max-w-md">
           <!-- Ambient Glow behind Image -->
-          <div class="absolute -inset-2 sm:-inset-4 bg-gradient-to-tr from-emerald-200/40 via-teal-100/30 to-emerald-50/50 rounded-3xl blur-2xl -z-10"></div>
+          <div class="absolute -inset-4 bg-gradient-to-tr from-emerald-500/15 to-teal-500/10 rounded-3xl blur-2xl -z-10 pointer-events-none" aria-hidden="true"></div>
 
-          <!-- Rounded Image Card -->
+          <!-- Rounded Image Card with Fade Mask -->
           <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-emerald-950/10 border border-slate-100/80 bg-slate-50">
             <img
               src="/assets/student_image.jpg"
               alt="Ask 4 Trainings student preparing for enterprise IT careers"
-              class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500 ease-out"
+              class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500 ease-out [mask-image:linear-gradient(to_bottom,black_85%,transparent_100%)]"
               width="417"
               height="626"
               loading="eager"
@@ -123,13 +137,13 @@ function cleanTitle(title: string): string {
           </div>
 
           <!-- Floating Badges -->
-          <div class="absolute -bottom-3 -left-3 sm:-left-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800 z-10">
-            <svg class="w-5 h-5 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <span class="font-medium">100% Practical Labs</span>
+          <div class="absolute -bottom-3 -left-3 sm:-left-5 bg-white/95 backdrop-blur-sm border border-slate-200/80 shadow-lg text-slate-700 text-xs font-semibold px-3.5 py-2 rounded-xl flex items-center gap-2.5 z-10">
+            <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span>100% Practical Labs</span>
           </div>
-          <div class="absolute top-6 -right-2 sm:-right-4 bg-white/95 backdrop-blur-md border border-emerald-100 shadow-xl rounded-xl p-3 flex items-center gap-2.5 text-xs text-slate-800 z-10">
-            <svg class="w-5 h-5 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
-            <span class="font-medium">Industry Mentors</span>
+          <div class="absolute top-6 -right-2 sm:-right-4 bg-white/95 backdrop-blur-sm border border-slate-200/80 shadow-lg text-slate-700 text-xs font-semibold px-3.5 py-2 rounded-xl flex items-center gap-2.5 z-10">
+            <svg class="w-4 h-4 text-teal-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+            <span>Industry Mentors</span>
           </div>
         </div>
       </div>
