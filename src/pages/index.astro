@@ -171,9 +171,9 @@ function cleanTitle(title: string): string {
 
       <!-- 3-Column Course Grid (all courses, progressive disclosure) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="course-grid">
-        {sortedCourses.map((course) => (
+        {sortedCourses.map((course, idx) => (
           <div
-            class="course-item transition-all duration-300"
+            class={`course-item transition-all duration-300 ${idx >= 6 ? 'hidden' : ''}`}
             data-category={course.data.category}
           >
             <CourseCard 
@@ -318,6 +318,23 @@ function cleanTitle(title: string): string {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const courseItems = document.querySelectorAll('.course-item');
 
+    function applyFilter(filterVal) {
+      let count = 0;
+      courseItems.forEach(item => {
+        item.classList.remove('hidden'); // Remove initial SSR hidden class
+        if (filterVal === 'all' || item.getAttribute('data-category') === filterVal) {
+          if (count < 6) {
+            item.style.display = 'block';
+            count++;
+          } else {
+            item.style.display = 'none';
+          }
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {
         // Reset all buttons to inactive state
@@ -328,18 +345,7 @@ function cleanTitle(title: string): string {
         btn.className = "filter-btn shrink-0 bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap shadow-sm transition-all";
 
         const filterVal = btn.getAttribute('data-filter');
-
-        courseItems.forEach(item => {
-          if (filterVal === 'all') {
-            item.style.display = 'block';
-          } else {
-            if (item.getAttribute('data-category') === filterVal) {
-              item.style.display = 'block';
-            } else {
-              item.style.display = 'none';
-            }
-          }
-        });
+        applyFilter(filterVal);
       });
     });
   });
