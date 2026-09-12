@@ -155,19 +155,7 @@ function cleanTitle(title: string): string {
         <p class="text-slate-500 max-w-2xl mx-auto">Filter by specialized domains to find your targeted career track.</p>
       </div>
 
-      <!-- Sticky Category Bar -->
-      <div id="sticky-category-bar" class="relative w-full border-b border-slate-200 bg-white transition-all duration-300 mb-8">
-        <div class="max-w-7xl mx-auto px-4 flex items-center gap-2 overflow-x-auto scrollbar-hide py-3 justify-start sm:justify-center">
-          <button class="filter-btn shrink-0 bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap shadow-sm transition-all" data-filter="all">
-            All Courses
-          </button>
-          {categories.map(cat => (
-            <button class="filter-btn shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap transition-colors" data-filter={cat.slug}>
-              {cat.label}
-            </button>
-          ))}
-        </div>
-      </div>
+
 
       <!-- 3-Column Course Grid (all courses, progressive disclosure) -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="course-grid">
@@ -189,9 +177,11 @@ function cleanTitle(title: string): string {
 
       <!-- Progressive Disclosure Controls -->
       <div class="mt-10 text-center flex items-center justify-center">
-        <a href="/courses" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-400 text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-all">
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          Show All Courses
+        <a href="/courses/" class="group inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-slate-100 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-400 text-sm font-semibold text-slate-700 hover:text-emerald-700 transition-all">
+          <span>View All Courses</span>
+          <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
         </a>
       </div>
     </div>
@@ -289,64 +279,3 @@ function cleanTitle(title: string): string {
 
 </BaseLayout>
 
-<script is:inline>
-  document.addEventListener('DOMContentLoaded', () => {
-    // 1. Sticky Category Bar Logic
-    const mainHeader = document.querySelector('header');
-    const categoryBar = document.getElementById('sticky-category-bar');
-    const catalogSection = document.getElementById('course-catalog');
-
-    if (categoryBar && mainHeader && catalogSection) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
-            // Scrolled past catalog top: Hide main header, pin category bar
-            mainHeader.classList.add('-translate-y-full');
-            categoryBar.classList.add('fixed', 'top-0', 'left-0', 'w-full', 'z-40', 'shadow-md', 'bg-white/95', 'backdrop-blur-md');
-          } else {
-            // Scrolled above catalog: Restore main header, unpin category bar
-            mainHeader.classList.remove('-translate-y-full');
-            categoryBar.classList.remove('fixed', 'top-0', 'left-0', 'w-full', 'z-40', 'shadow-md', 'bg-white/95', 'backdrop-blur-md');
-          }
-        });
-      }, { threshold: [0], rootMargin: "-80px 0px 0px 0px" });
-
-      observer.observe(catalogSection);
-    }
-
-    // 2. Client-Side Instant Category Filtering
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const courseItems = document.querySelectorAll('.course-item');
-
-    function applyFilter(filterVal) {
-      let count = 0;
-      courseItems.forEach(item => {
-        item.classList.remove('hidden'); // Remove initial SSR hidden class
-        if (filterVal === 'all' || item.getAttribute('data-category') === filterVal) {
-          if (count < 6) {
-            item.style.display = 'block';
-            count++;
-          } else {
-            item.style.display = 'none';
-          }
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    }
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        // Reset all buttons to inactive state
-        filterBtns.forEach(b => {
-          b.className = "filter-btn shrink-0 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap transition-colors";
-        });
-        // Set clicked button to active state
-        btn.className = "filter-btn shrink-0 bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap shadow-sm transition-all";
-
-        const filterVal = btn.getAttribute('data-filter');
-        applyFilter(filterVal);
-      });
-    });
-  });
-</script>
