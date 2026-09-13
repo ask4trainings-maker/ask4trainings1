@@ -63,19 +63,25 @@ function cleanTitle(title: string): string {
   </div>
 
   <!-- Content Section -->
-  <div class="bg-slate-50">
-    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-16">
-      
-      <!-- Category Filter Pills -->
-      <div class="flex flex-wrap gap-3 justify-center mb-12">
-        <a href="/courses" class="bg-emerald-600 text-slate-900 px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_0_15px_rgba(13,110,79,0.3)] transition-transform hover:-translate-y-0.5">All Courses</a>
-        {categories.map(cat => (
-          <a href={`/courses/${cat.key}`} class="bg-slate-100/60 hover:bg-slate-700/60 text-slate-600 border border-slate-200 hover:border-white/20 px-5 py-2.5 rounded-full text-sm font-medium transition-all hover:-translate-y-0.5">{cat.label}</a>
-        ))}
+  <div class="bg-slate-50 relative">
+    <!-- Observer target -->
+    <div id="catalog-grid-top" class="absolute top-0 left-0 w-full h-1 invisible"></div>
+    
+    <!-- Sticky Ribbon -->
+    <div id="sticky-course-ribbon" class="sticky top-0 z-40 w-full bg-slate-50/95 backdrop-blur-md border-b border-transparent transition-all duration-300">
+      <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto">
+        <div class="flex items-center gap-2 overflow-x-auto scrollbar-none py-3 px-4 sm:justify-center">
+          <button data-category="all" class="category-btn bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl shadow-sm whitespace-nowrap transition-colors">All Courses</button>
+          {categories.map(cat => (
+            <button data-category={cat.key} class="category-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap transition-colors">{cat.label}</button>
+          ))}
+        </div>
       </div>
+    </div>
 
+    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-12">
       <!-- Course Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div id="course-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {allCourses.map(course => (
           <CourseCard 
             title={cleanTitle(course.data.title)}
@@ -87,11 +93,15 @@ function cleanTitle(title: string): string {
         ))}
       </div>
       
-      {allCourses.length === 0 && (
-        <div class="text-center py-12 text-slate-500">
-          <p class="text-lg">No courses found. Check back later!</p>
-        </div>
-      )}
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden text-center py-20 text-slate-500">
+        <svg class="w-16 h-16 mx-auto text-slate-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <h3 class="text-xl font-semibold text-slate-700 mb-2">No courses found</h3>
+        <p class="text-slate-500 max-w-md mx-auto mb-6">We couldn't find any courses matching your selected criteria. Try adjusting your filters.</p>
+        <button id="clear-filters-btn" class="text-emerald-600 hover:text-emerald-700 font-medium hover:underline">Clear all filters</button>
+      </div>
     </div>
   </div>
 
@@ -108,5 +118,118 @@ function cleanTitle(title: string): string {
         input.focus();
       }
     });
+
+    // Filtering State
+    let activeCategory = 'all';
+
+    const grid = document.getElementById('course-grid');
+    const emptyState = document.getElementById('empty-state');
+    const cards = Array.from(document.querySelectorAll('.course-card')) as HTMLElement[];
+    const buttons = document.querySelectorAll('.category-btn');
+
+    const updateButtonStyles = () => {
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-category') === activeCategory) {
+          btn.className = 'category-btn bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl shadow-sm whitespace-nowrap transition-colors';
+        } else {
+          btn.className = 'category-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap transition-colors';
+        }
+      });
+    };
+
+    const applyFilters = () => {
+      let visibleCount = 0;
+      
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const matchCategory = activeCategory === 'all' || cat === activeCategory;
+        
+        if (matchCategory) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        grid?.classList.add('hidden');
+        emptyState?.classList.remove('hidden');
+      } else {
+        grid?.classList.remove('hidden');
+        emptyState?.classList.add('hidden');
+      }
+    };
+
+    const setCategory = (cat: string) => {
+      activeCategory = cat;
+      updateButtonStyles();
+      applyFilters();
+      
+      // Update URL
+      const url = new URL(window.location.href);
+      if (cat === 'all') {
+        url.searchParams.delete('category');
+      } else {
+        url.searchParams.set('category', cat);
+      }
+      window.history.replaceState(null, '', url.toString());
+    };
+
+    // Button Listeners
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-category');
+        if (cat) setCategory(cat);
+      });
+    });
+
+    document.getElementById('clear-filters-btn')?.addEventListener('click', () => {
+      setCategory('all');
+    });
+
+    // Hydration
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const catParam = urlParams.get('category');
+      
+      // Check if param matches a valid button, else default 'all'
+      const isValidCat = Array.from(buttons).some(b => b.getAttribute('data-category') === catParam);
+      if (catParam && isValidCat) {
+        activeCategory = catParam;
+      }
+      
+      updateButtonStyles();
+      applyFilters();
+    });
+
+    // Intersection Observer for Sticky Header sync
+    const header = document.getElementById('main-header');
+    const ribbon = document.getElementById('sticky-course-ribbon');
+    const observerTarget = document.getElementById('catalog-grid-top');
+
+    if (header && observerTarget) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting && entry.boundingClientRect.top <= 0) {
+            // Scrolled past
+            header.classList.add('-translate-y-full');
+            if (ribbon) {
+              ribbon.classList.remove('bg-slate-50/95', 'border-transparent');
+              ribbon.classList.add('bg-white/95', 'border-slate-200', 'shadow-sm');
+            }
+          } else {
+            // Scrolled back up
+            header.classList.remove('-translate-y-full');
+            if (ribbon) {
+              ribbon.classList.remove('bg-white/95', 'border-slate-200', 'shadow-sm');
+              ribbon.classList.add('bg-slate-50/95', 'border-transparent');
+            }
+          }
+        },
+        { threshold: 1.0, rootMargin: "-80px 0px 0px 0px" } 
+      );
+      observer.observe(observerTarget);
+    }
   </script>
 </BaseLayout>

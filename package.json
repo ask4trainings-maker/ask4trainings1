@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs",
-    "build:quick": "astro build && node scripts/audit-internal-links.mjs",
+    "build": "astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs",
+    "build:quick": "astro build && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs",
     "audit:links": "node scripts/audit-internal-links.mjs",
+    "audit:slashes": "node scripts/audit-trailing-slashes.mjs",
     "audit:content": "node scripts/cleanup-courses.mjs --dry-run",
     "preview": "astro preview",
     "astro": "astro"

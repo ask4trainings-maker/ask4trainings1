@@ -1,10 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 const allCourses = await getCollection('courses');
-const coursesData = allCourses.map(c => ({
-  title: c.data.title,
-  url: `/${c.id}`
-}));
+const coursesData = allCourses.map(c => {
+  const slug = c.id.replace(/\.mdx?$/, '');
+  return {
+    title: c.data.title,
+    url: `/${slug}`
+  };
+});
 ---
 <div id="search-modal" class="fixed inset-0 z-50 bg-white/80 hidden opacity-0 transition-opacity duration-200 flex items-start justify-center pt-24 px-4 backdrop-blur-sm">
   <div class="bg-slate-100 border border-slate-200 w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden transform -translate-y-4 transition-transform duration-200" id="search-container">
@@ -24,15 +27,6 @@ const coursesData = allCourses.map(c => ({
     
     <!-- Dev Fallback UI (Hidden by default) -->
     <div id="dev-search-fallback" class="hidden p-4 min-h-[300px]">
-      <div class="mb-4 p-3 rounded-lg bg-emerald-600/10 border border-emerald-600/20 text-emerald-600 text-sm font-medium flex items-start gap-3">
-        <svg class="w-5 h-5 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        <div>
-          <p>Search index is generated during build.</p>
-          <p class="opacity-80 font-normal mt-0.5">Run <code>npm run build && npm run preview</code> to test full search. Using lightweight local fallback for dev.</p>
-        </div>
-      </div>
       <input type="text" id="dev-search-input" placeholder="Filter courses..." class="w-full bg-white border border-slate-200 rounded-lg px-4 py-3 text-slate-900 focus:outline-none focus:border-emerald-500 focus:ring-0 mb-4 placeholder-slate-500" />
       <ul id="dev-search-results" class="space-y-1 max-h-[300px] overflow-y-auto">
         <!-- JS will populate this -->
@@ -90,7 +84,7 @@ const coursesData = allCourses.map(c => ({
             const q = query.toLowerCase();
             const filtered = coursesData.filter(c => c.title.toLowerCase().includes(q));
             devResults.innerHTML = filtered.slice(0, 10).map(c => 
-              `<li><a href="${c.url}" class="block p-3 hover:bg-white/5 rounded-lg text-slate-600 hover:text-emerald-600 transition-colors border border-transparent hover:border-slate-200">${c.title}</a></li>`
+              `<li><a href="${c.url}/" class="block p-3 hover:bg-white/5 rounded-lg text-slate-600 hover:text-emerald-600 transition-colors border border-transparent hover:border-slate-200">${c.title}</a></li>`
             ).join('');
           };
           render('');

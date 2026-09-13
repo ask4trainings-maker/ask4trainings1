@@ -180,3 +180,5 @@
 /salesforce-cpq-advanced-training /salesforce-revenue-cloud-advanced-training/ 301
 /salesforce-data-cloud-online-training/ /salesforce-online-training/ 301
 /salesforce-data-cloud-online-training /salesforce-online-training/ 301
+/courses/:slug/ /courses/?category=:slug 301
+/courses/:slug /courses/?category=:slug 301
