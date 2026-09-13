@@ -5,6 +5,7 @@ const courses = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/courses" }),
   schema: z.object({
     title: z.string(),
+    menuTitle: z.string().optional(),
     slug: z.string(), // preserves root-flat legacy slug exactly
     category: z.enum([
       'guidewire', 'siemens', 'new-courses', 'cloud-computing',

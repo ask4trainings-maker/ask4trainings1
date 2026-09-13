@@ -2,9 +2,51 @@
   "categories": [
     {
       "id": "guidewire",
-      "title": "Guidewire Suite",
+      "title": "Guidewire",
       "description": "Master PolicyCenter, ClaimCenter & BillingCenter — the P&C insurance platform powering global carriers.",
       "icon": "shield"
+    },
+    {
+      "id": "siemens",
+      "title": "Siemens",
+      "description": "Teamcenter, Polarion, PTC Windchill and enterprise PLM toolchains for manufacturing and engineering.",
+      "icon": "cpu"
+    },
+    {
+      "id": "new-courses",
+      "title": "New Courses",
+      "description": "Emerging tech: Generative AI, Cybersecurity, Playwright automation, Appian, Mendix and more.",
+      "icon": "sparkles"
+    },
+    {
+      "id": "cloud-computing",
+      "title": "Cloud Computing",
+      "description": "AWS, Azure, GCP, OCI, Snowflake — gain cloud certifications and hands-on deployment experience.",
+      "icon": "cloud"
+    },
+    {
+      "id": "oracle",
+      "title": "Oracle",
+      "description": "Oracle Fusion Financials, HCM, SCM, Technical, APEX, FlexCube, OIC, PeopleSoft, OTM and OCI.",
+      "icon": "database"
+    },
+    {
+      "id": "devops",
+      "title": "DevOps",
+      "description": "CI/CD pipelines, Docker, Kubernetes, Terraform, Azure DevOps and site reliability engineering.",
+      "icon": "git-branch"
+    },
+    {
+      "id": "development",
+      "title": "Development",
+      "description": "Full-stack Java, Python, MERN, .NET, React and data analytics with real-time project experience.",
+      "icon": "code"
+    },
+    {
+      "id": "ms-d365",
+      "title": "MS D365",
+      "description": "Microsoft Dynamics 365 Finance, Operations, CRM — AX Technical and functional training tracks.",
+      "icon": "microsoft"
     },
     {
       "id": "sap",
@@ -14,51 +56,9 @@
     },
     {
       "id": "trending-courses",
-      "title": "Trending Courses",
+      "title": "Trending Course",
       "description": "High-demand enterprise platforms: Salesforce, ServiceNow, Workday, Duck Creek, Coupa, SailPoint and more.",
       "icon": "trending-up"
-    },
-    {
-      "id": "oracle",
-      "title": "Oracle",
-      "description": "Oracle Fusion Financials, HCM, SCM, Technical, APEX, FlexCube, OIC, PeopleSoft, OTM and OCI.",
-      "icon": "database"
-    },
-    {
-      "id": "siemens",
-      "title": "Siemens / PLM",
-      "description": "Teamcenter, Polarion, PTC Windchill and enterprise PLM toolchains for manufacturing and engineering.",
-      "icon": "cpu"
-    },
-    {
-      "id": "cloud-computing",
-      "title": "Cloud Computing",
-      "description": "AWS, Azure, GCP, OCI, Snowflake — gain cloud certifications and hands-on deployment experience.",
-      "icon": "cloud"
-    },
-    {
-      "id": "devops",
-      "title": "DevOps",
-      "description": "CI/CD pipelines, Docker, Kubernetes, Terraform, Azure DevOps and site reliability engineering.",
-      "icon": "git-branch"
-    },
-    {
-      "id": "ms-d365",
-      "title": "Microsoft D365",
-      "description": "Microsoft Dynamics 365 Finance, Operations, CRM — AX Technical and functional training tracks.",
-      "icon": "microsoft"
-    },
-    {
-      "id": "development",
-      "title": "Development",
-      "description": "Full-stack Java, Python, MERN, .NET, React and data analytics with real-time project experience.",
-      "icon": "code"
-    },
-    {
-      "id": "new-courses",
-      "title": "New Courses",
-      "description": "Emerging tech: Generative AI, Cybersecurity, Playwright automation, Appian, Mendix and more.",
-      "icon": "sparkles"
     },
     {
       "id": "other-tools",

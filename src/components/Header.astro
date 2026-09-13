@@ -166,7 +166,7 @@ const isContactActive = checkActive('/contact-us');
                               class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
                             >
                               <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors">
-                                {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
+                                {cleanMegaTitle(course.data.menuTitle || course.data.title || course.data.h1 || course.id)}
                               </span>
                               <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
                                 <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
@@ -274,7 +274,7 @@ const isContactActive = checkActive('/contact-us');
           </a>
           {(coursesByCategory[cat.id] || []).map((course: any) => (
             <a href={getCourseUrl(course)} class="mobile-link block py-2 px-3 text-xs text-slate-500 hover:text-slate-900 hover:bg-slate-200/50 rounded transition-colors line-clamp-1">
-              {cleanMegaTitle(course.data.title || course.data.h1 || course.id)}
+              {cleanMegaTitle(course.data.menuTitle || course.data.title || course.data.h1 || course.id)}
             </a>
           ))}
         </div>

@@ -25,7 +25,7 @@ collections:
       - label: "Category"
         name: "category"
         widget: "select"
-        options: ["guidewire", "siemens", "sap", "oracle", "cloud-computing", "devops", "ms-d365", "development", "trending-courses", "new-courses", "other-tools"]
+        options: ["guidewire", "siemens", "new-courses", "cloud-computing", "oracle", "devops", "development", "ms-d365", "sap", "trending-courses", "other-tools"]
       - { label: "Value Proposition", name: "valueProp", widget: "text" }
       
       - label: "Highlights"

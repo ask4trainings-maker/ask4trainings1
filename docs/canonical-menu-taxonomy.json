@@ -1,0 +1,298 @@
+{
+  "guidewire": {
+    "name": "Guidewire",
+    "slug": "guidewire",
+    "courses": [
+      {
+        "title": "Guidewire Development",
+        "url": "#",
+        "slug": "#"
+      },
+      {
+        "title": "Guidewire BA",
+        "url": "https://ask4trainings.com/guidewire-business-analyst-training-in-hyderabad/",
+        "slug": "guidewire-business-analyst-training-in-hyderabad"
+      },
+      {
+        "title": "Guidewire Testing",
+        "url": "https://ask4trainings.com/guidewire-testing-training/",
+        "slug": "guidewire-testing-training"
+      },
+      {
+        "title": "Guidewire Automation",
+        "url": "https://ask4trainings.com/guidewire-automation-testing-on-gt-frameworks/",
+        "slug": "guidewire-automation-testing-on-gt-frameworks"
+      },
+      {
+        "title": "Guidewire Rating",
+        "url": "https://ask4trainings.com/guidewire-rating-online-training/",
+        "slug": "guidewire-rating-online-training"
+      }
+    ]
+  },
+  "siemens": {
+    "name": "Siemens",
+    "slug": "siemens",
+    "courses": [
+      {
+        "title": "Mendix",
+        "url": "https://ask4trainings.com/mendix-training-in-hyderabad/",
+        "slug": "mendix-training-in-hyderabad"
+      },
+      {
+        "title": "Polarion",
+        "url": "https://ask4trainings.com/polarion-online-training/",
+        "slug": "polarion-online-training"
+      },
+      {
+        "title": "Teamcenter",
+        "url": "https://ask4trainings.com/teamcenter-plm-training/",
+        "slug": "teamcenter-plm-training"
+      },
+      {
+        "title": "Teamcenter High-Level",
+        "url": "https://ask4trainings.com/teamcenter-high-level-training-in-hyderabad/",
+        "slug": "teamcenter-high-level-training-in-hyderabad"
+      },
+      {
+        "title": "Teamcenter AWC",
+        "url": "https://ask4trainings.com/teamcenter-awc-online-training/",
+        "slug": "teamcenter-awc-online-training"
+      }
+    ]
+  },
+  "new-courses": {
+    "name": "New Courses",
+    "slug": "new-courses",
+    "courses": [
+      {
+        "title": "Coupa",
+        "url": "https://ask4trainings.com/coupa-online-training/",
+        "slug": "coupa-online-training"
+      },
+      {
+        "title": "Duck Creek",
+        "url": "https://ask4trainings.com/duck-creek-online-training/",
+        "slug": "duck-creek-online-training"
+      },
+      {
+        "title": "Kinaxis",
+        "url": "https://ask4trainings.com/kinaxis-online-training-in-hyderabad/",
+        "slug": "kinaxis-online-training-in-hyderabad"
+      },
+      {
+        "title": "Digital Marketing",
+        "url": "https://ask4trainings.com/digital-marketing-training-in-hyderabad/",
+        "slug": "digital-marketing-training-in-hyderabad"
+      }
+    ]
+  },
+  "cloud-computing": {
+    "name": "Cloud Computing",
+    "slug": "cloud-computing",
+    "courses": [
+      {
+        "title": "Mulesoft",
+        "url": "https://ask4trainings.com/mulesoft-training-in-hyderabad/",
+        "slug": "mulesoft-training-in-hyderabad"
+      },
+      {
+        "title": "Snowflake",
+        "url": "https://ask4trainings.com/snowflake-online-training/",
+        "slug": "snowflake-online-training"
+      },
+      {
+        "title": "Salesforce",
+        "url": "https://ask4trainings.com/salesforce-online-training/",
+        "slug": "salesforce-online-training"
+      },
+      {
+        "title": "Salesforce Revenue Cloud",
+        "url": "https://ask4trainings.com/salesforce-revenue-cloud-advanced-training/",
+        "slug": "salesforce-revenue-cloud-advanced-training"
+      }
+    ]
+  },
+  "oracle": {
+    "name": "Oracle",
+    "slug": "oracle",
+    "courses": [
+      {
+        "title": "Oracle Flexcube",
+        "url": "https://ask4trainings.com/oracle-flexcube-online-training/",
+        "slug": "oracle-flexcube-online-training"
+      },
+      {
+        "title": "Oracle Fusion HCM",
+        "url": "https://ask4trainings.com/oracle-fusion-hcm-online-training/",
+        "slug": "oracle-fusion-hcm-online-training"
+      },
+      {
+        "title": "Oracle Fusion Financials",
+        "url": "https://ask4trainings.com/oracle-fusion-financials-online-training/",
+        "slug": "oracle-fusion-financials-online-training"
+      }
+    ]
+  },
+  "devops": {
+    "name": "DevOps",
+    "slug": "devops",
+    "courses": [
+      {
+        "title": "DevOps",
+        "url": "https://ask4trainings.com/devops-training-in-hyderabad/",
+        "slug": "devops-training-in-hyderabad"
+      },
+      {
+        "title": "AWS DevOps",
+        "url": "https://ask4trainings.com/devops-with-aws-online-training/",
+        "slug": "devops-with-aws-online-training"
+      },
+      {
+        "title": "Azure DevOps",
+        "url": "https://ask4trainings.com/azure-with-devops-online-training/",
+        "slug": "azure-with-devops-online-training"
+      }
+    ]
+  },
+  "development": {
+    "name": "Development",
+    "slug": "development",
+    "courses": [
+      {
+        "title": "Java Full Stack",
+        "url": "https://ask4trainings.com/java-full-stack-training-in-hyderabad/",
+        "slug": "java-full-stack-training-in-hyderabad"
+      },
+      {
+        "title": "Python Full Stack",
+        "url": "https://ask4trainings.com/python-full-stack-training-in-hyderabad/",
+        "slug": "python-full-stack-training-in-hyderabad"
+      },
+      {
+        "title": "Dotnet Full Stack",
+        "url": "https://ask4trainings.com/dotnet-full-stack-training-in-hyderabad/",
+        "slug": "dotnet-full-stack-training-in-hyderabad"
+      }
+    ]
+  },
+  "ms-d365": {
+    "name": "MS D365",
+    "slug": "ms-d365",
+    "courses": [
+      {
+        "title": "MS D365 AX",
+        "url": "https://ask4trainings.com/dynamics-365-ax-technical-training/",
+        "slug": "dynamics-365-ax-technical-training"
+      },
+      {
+        "title": "MS D365 CRM",
+        "url": "https://ask4trainings.com/microsoft-dynamics-365-crm-online-training/",
+        "slug": "microsoft-dynamics-365-crm-online-training"
+      },
+      {
+        "title": "MS D365 F&O",
+        "url": "https://ask4trainings.com/microsoft-dynamics-365-finance-and-operations/",
+        "slug": "microsoft-dynamics-365-finance-and-operations"
+      }
+    ]
+  },
+  "sap": {
+    "name": "SAP",
+    "slug": "sap",
+    "courses": [
+      {
+        "title": "SAP S/4 Hana Fico",
+        "url": "https://ask4trainings.com/sap-s-4-hana-fico-online-training/",
+        "slug": "sap-s-4-hana-fico-online-training"
+      },
+      {
+        "title": "SAP SD",
+        "url": "https://ask4trainings.com/sap-sd-course-in-hyderabad/",
+        "slug": "sap-sd-course-in-hyderabad"
+      },
+      {
+        "title": "SAP MM",
+        "url": "https://ask4trainings.com/sap-mm-course-in-hyderabad/",
+        "slug": "sap-mm-course-in-hyderabad"
+      }
+    ]
+  },
+  "trending-courses": {
+    "name": "Trending Course",
+    "slug": "trending-courses",
+    "courses": [
+      {
+        "title": "IT Business Analyst",
+        "url": "https://ask4trainings.com/business-analyst-online-training/",
+        "slug": "business-analyst-online-training"
+      },
+      {
+        "title": "Cyber Security",
+        "url": "https://ask4trainings.com/cyber-security-online-course/",
+        "slug": "cyber-security-online-course"
+      },
+      {
+        "title": "Data Science",
+        "url": "https://ask4trainings.com/data-science-online-training/",
+        "slug": "data-science-online-training"
+      },
+      {
+        "title": "Generative AI",
+        "url": "https://ask4trainings.com/generative-ai-online-training/",
+        "slug": "generative-ai-online-training"
+      },
+      {
+        "title": "Data Analytics",
+        "url": "https://ask4trainings.com/data-analytics-online-training/",
+        "slug": "data-analytics-online-training"
+      },
+      {
+        "title": "Servicenow",
+        "url": "https://ask4trainings.com/servicenow-online-training/",
+        "slug": "servicenow-online-training"
+      },
+      {
+        "title": "Palantir Foundry",
+        "url": "https://ask4trainings.com/palantir-foundry-online-training/",
+        "slug": "palantir-foundry-online-training"
+      },
+      {
+        "title": "Qlik Sense",
+        "url": "https://ask4trainings.com/qlik-sense-course-in-hyderabad/",
+        "slug": "qlik-sense-course-in-hyderabad"
+      }
+    ]
+  },
+  "other-tools": {
+    "name": "Other Tools",
+    "slug": "other-tools",
+    "courses": [
+      {
+        "title": "Appian",
+        "url": "https://ask4trainings.com/appian-training-in-hyderabad/",
+        "slug": "appian-training-in-hyderabad"
+      },
+      {
+        "title": "Jira Confluence",
+        "url": "https://ask4trainings.com/jira-confluence-online-training/",
+        "slug": "jira-confluence-online-training"
+      },
+      {
+        "title": "PEGA",
+        "url": "https://ask4trainings.com/pega-training-in-hyderabad/",
+        "slug": "pega-training-in-hyderabad"
+      },
+      {
+        "title": "Playwright Automation",
+        "url": "https://ask4trainings.com/playwright-automation-testing-with-ai-course/",
+        "slug": "playwright-automation-testing-with-ai-course"
+      },
+      {
+        "title": "Talend",
+        "url": "https://ask4trainings.com/talend-online-training/",
+        "slug": "talend-online-training"
+      }
+    ]
+  }
+}
