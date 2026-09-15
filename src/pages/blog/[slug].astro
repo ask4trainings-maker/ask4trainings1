@@ -1,22 +1,93 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BlogLayout from '../../layouts/BlogLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(post => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+  const allBlogPosts = await getCollection('blog');
+  return allBlogPosts.map(entry => {
+    const slug = entry.id.replace(/\.mdx?$/, '');
+    return {
+      params: { slug },
+      props: { entry },
+    };
+  });
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+
+const formattedDate = new Date(entry.data.publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
 ---
-<BlogLayout 
-  title={post.data.title}
-  publishDate={post.data.publishDate}
-  category={post.data.category}
->
-  <Content />
-</BlogLayout>
+
+<BaseLayout title={`${entry.data.title} | Ask 4 Trainings Blog`} description={entry.data.description}>
+  
+  <article class="pt-24 pb-20">
+    <div class="max-w-4xl mx-auto px-6 sm:px-10 xl:px-0">
+      
+      <!-- Breadcrumbs -->
+      <nav class="flex text-sm text-slate-500 mb-8" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a href="/" class="hover:text-emerald-600 transition-colors">Home</a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg class="w-3 h-3 text-slate-400 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <a href="/blog/" class="hover:text-emerald-600 transition-colors">Blog</a>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <svg class="w-3 h-3 text-slate-400 mx-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <span class="text-slate-700 font-medium line-clamp-1">{entry.data.title}</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Header -->
+      <header class="mb-12 border-b border-slate-200 pb-10 text-center">
+        <span class="inline-block bg-emerald-50 text-emerald-700 text-sm font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-6">
+          {entry.data.category}
+        </span>
+        <h1 class="text-3xl md:text-5xl font-heading font-extrabold text-slate-900 mb-6 leading-tight">
+          {entry.data.title}
+        </h1>
+        <div class="flex items-center justify-center gap-4 text-slate-500 font-medium">
+          <span>{entry.data.author}</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-slate-300"></span>
+          <time datetime={new Date(entry.data.publishDate).toISOString()}>{formattedDate}</time>
+        </div>
+      </header>
+
+      <!-- Featured Image -->
+      {entry.data.image && (
+        <div class="mb-12 aspect-[21/9] overflow-hidden rounded-2xl shadow-lg border border-slate-200">
+          <img src={entry.data.image} alt={entry.data.title} class="w-full h-full object-cover" loading="lazy" />
+        </div>
+      )}
+
+      <!-- Content -->
+      <div class="prose prose-slate prose-emerald max-w-none prose-headings:font-heading prose-headings:font-bold prose-a:text-emerald-600 prose-img:rounded-xl">
+        <Content />
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Bottom Navigation / CTA -->
+  <section class="bg-slate-50 py-16 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-2xl font-bold text-slate-900 mb-4">Ready to accelerate your career?</h2>
+      <p class="text-slate-600 mb-8 max-w-xl mx-auto">Discover our hands-on, expert-led training programs designed for Enterprise IT professionals.</p>
+      <a href="/courses/" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition-all shadow-md hover:-translate-y-0.5">
+        Explore Related Enterprise Courses <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

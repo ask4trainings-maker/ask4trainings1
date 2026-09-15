@@ -9,6 +9,25 @@ media_folder: "public/assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../public/images/blog"
+    public_folder: "/images/blog"
+    fields:
+      - { label: "Article Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Author", name: "author", widget: "string", default: "Ask4Trainings Editorial" }
+      - { label: "Category", name: "category", widget: "select", options: ["Guidewire", "SAP", "Cloud & DevOps", "Enterprise IT", "Career Guides"] }
+      - { label: "Introduction / Excerpt", name: "description", widget: "text", hint: "Short summary shown on blog cards and Google search results" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Article Content", name: "body", widget: "markdown" }
+      - { label: "Featured Article", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+
+
   # 1. COURSES COLLECTION
   - name: "courses"
     label: "Courses"

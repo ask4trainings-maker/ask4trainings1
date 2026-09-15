@@ -182,3 +182,15 @@
 /salesforce-data-cloud-online-training /salesforce-online-training/ 301
 /courses/:slug/ /courses/?category=:slug 301
 /courses/:slug /courses/?category=:slug 301
+
+# Blog Migration Redirects
+/microsoft-dynamics-365-crm-online-training/ /blog/microsoft-dynamics-365-crm-online-training/ 301
+/best-ms-dynamics-365-fo-online-course/ /blog/best-ms-dynamics-365-fo-online-course/ 301
+/salesforce-revenue-cloud-online-course/ /blog/salesforce-revenue-cloud-online-course/ 301
+/sap-mm-online-training-in-hyderabad/ /blog/sap-mm-online-training-in-hyderabad/ 301
+/best-mendix-online-training/ /blog/best-mendix-online-training/ 301
+/best-guidewire-automation-testing-online-course/ /blog/best-guidewire-automation-testing-online-course/ 301
+/cybersecurity-training-in-hyderabad/ /blog/cybersecurity-training-in-hyderabad/ 301
+/best-coupa-online-course-in-hyderabad/ /blog/best-coupa-online-course-in-hyderabad/ 301
+/best-digital-marketing-online-course/ /blog/best-digital-marketing-online-course/ 301
+/best-guidewire-rating-online-training/ /blog/best-guidewire-rating-online-training/ 301

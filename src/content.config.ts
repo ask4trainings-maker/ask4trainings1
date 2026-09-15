@@ -44,18 +44,16 @@ const courses = defineCollection({
 });
 
 const blog = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
-    publishDate: z.date(),
-    category: z.string(),
-    heroImage: z.string().optional(),
-    relatedCourseSlug: z.string().optional(),
-    ctaHubSlug: z.string().optional(),
-    seo: z.object({
-      metaTitle: z.string().max(60),
-      metaDescription: z.string().max(160),
-    }),
+    publishDate: z.coerce.date(),
+    author: z.string().default('Ask4Trainings Team'),
+    category: z.string().default('General'),
+    description: z.string(),
+    image: z.string().optional(),
+    featured: z.boolean().default(false),
+    draft: z.boolean().default(false),
   }),
 });
 
