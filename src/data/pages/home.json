@@ -1,11 +1,11 @@
 {
   "hero": {
     "badge": "Next Enterprise Batches Starting This Weekend",
-    "headline": "Master Enterprise IT.<br />",
-    "headlineGradient": "Secure High-Impact Roles.",
-    "subheadline": "Industry-led training in Guidewire, Siemens Teamcenter PLM, SAP S/4HANA, Cloud DevOps, and ServiceNow with real-time sandbox labs.",
+    "headline": "Practical Industry Skills.<br />",
+    "headlineGradient": "Accelerate Your Enterprise Career.",
+    "subheadline": "Gain job-ready mastery across Guidewire, Siemens Teamcenter PLM, SAP S/4HANA, and Cloud DevOps. Learn from practicing architects with 24/7 sandbox lab access and dedicated placement support.",
     "primaryCta": "Explore Courses",
-    "secondaryCta": "Book Live Demo"
+    "secondaryCta": "Book Live Demo"  
   },
   "metrics": [
     { "value": "15+", "label": "Years Exp" },
