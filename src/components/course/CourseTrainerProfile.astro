@@ -3,7 +3,7 @@ export interface Props {
   trainerProfile?: {
     heading: string;
     description: string;
-    highlights: string[];
+    highlights: (string | Record<string, any>)[];
   };
 }
 
@@ -13,7 +13,7 @@ if (!trainerProfile || !trainerProfile.heading) {
   return null;
 }
 ---
-<section class="py-16 bg-white border-b border-slate-100">
+<section id="trainer-profile" class="py-16 bg-white border-b border-slate-100 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <!-- Image / Graphic -->
@@ -43,7 +43,7 @@ if (!trainerProfile || !trainerProfile.heading) {
                 <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
                   <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                 </div>
-                <span class="text-slate-700 text-lg">{highlight}</span>
+                <span class="text-slate-700 text-lg">{typeof highlight === 'string' ? highlight : (highlight.text || highlight.title || highlight.highlight || JSON.stringify(highlight))}</span>
               </li>
             ))}
           </ul>

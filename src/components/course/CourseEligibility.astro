@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  eligibility?: string[];
+  eligibility?: (string | Record<string, any>)[];
 }
 
 const { eligibility = [] } = Astro.props;
@@ -9,7 +9,7 @@ if (!eligibility || eligibility.length === 0) {
   return null;
 }
 ---
-<section class="py-16 bg-slate-50 border-b border-slate-100">
+<section id="eligibility" class="py-16 bg-slate-50 border-b border-slate-100 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4">
     <div class="mb-10 text-center max-w-2xl mx-auto">
       <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Who Should Enroll?</h2>
@@ -19,7 +19,7 @@ if (!eligibility || eligibility.length === 0) {
     <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
       {eligibility.map(item => (
         <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-full font-medium shadow-sm hover:border-emerald-300 hover:bg-emerald-50 transition-colors">
-          {item}
+          {typeof item === 'string' ? item : (item.text || item.title || item.point || item.criteria || JSON.stringify(item))}
         </span>
       ))}
     </div>

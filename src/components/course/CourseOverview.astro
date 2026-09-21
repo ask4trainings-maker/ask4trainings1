@@ -1,15 +1,17 @@
 ---
 export interface Props {
+  title?: string;
   overview?: string;
 }
 
-const { overview } = Astro.props;
+const { title, overview } = Astro.props;
 
 if (!overview && !Astro.slots.has('default')) {
   return null;
 }
 ---
 <div class="prose prose-slate prose-emerald max-w-none text-slate-600">
+  {title && <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-0">Overview of {title}</h2>}
   {overview && <p class="text-lg leading-relaxed mb-6">{overview}</p>}
   <slot />
 </div>

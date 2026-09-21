@@ -87,12 +87,13 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
 
     <div>
       <label for={`${formId}-email`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
-        Email <span class="text-slate-500 font-normal normal-case">(optional)</span>
+        Email Address <span class="text-error">*</span>
       </label>
       <input
         id={`${formId}-email`}
         name="email"
         type="email"
+        required
         placeholder="you@email.com"
         class="w-full rounded-lg border border-slate-200 bg-slate-100/50 px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:border-emerald-500 focus:ring-0 placeholder:text-slate-500"
       />
@@ -121,7 +122,7 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
       type="submit"
       class="submit-btn mt-2 w-full rounded-lg bg-emerald-600 hover:bg-emerald-700 px-6 py-3.5 text-center text-base font-semibold text-white shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/40 active:scale-[0.99] transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed border border-emerald-200/20"
     >
-      <span class="submit-text">Enquire Now — Free</span>
+      <span class="submit-text">Register Now</span>
       <svg class="loading-spinner hidden animate-spin w-5 h-5 text-white" fill="none" viewBox="0 0 24 24">
         <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
         <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>

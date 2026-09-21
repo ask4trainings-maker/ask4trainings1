@@ -3,7 +3,7 @@ export interface Props {
   certifications?: {
     title: string;
     description: string;
-    badges: string[];
+    badges: (string | Record<string, any>)[];
   };
 }
 
@@ -13,7 +13,7 @@ if (!certifications || !certifications.title) {
   return null;
 }
 ---
-<section class="py-16 bg-white border-b border-slate-100">
+<section id="certifications" class="py-16 bg-white border-b border-slate-100 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4">
     <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl overflow-hidden shadow-2xl relative">
       <!-- Decorative background -->
@@ -42,7 +42,7 @@ if (!certifications || !certifications.title) {
                 {certifications.badges.map(badge => (
                   <span class="px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white font-medium backdrop-blur-sm shadow-sm flex items-center gap-2">
                     <div class="w-2 h-2 rounded-full bg-emerald-400"></div>
-                    {badge}
+                    {typeof badge === 'string' ? badge : (badge.text || badge.title || badge.badge || JSON.stringify(badge))}
                   </span>
                 ))}
               </div>

@@ -1,5 +1,5 @@
 ---
-import WhatsAppCTA from '../WhatsAppCTA.astro';
+
 import EnquiryForm from '../EnquiryForm.astro';
 
 export interface Props {
@@ -8,54 +8,15 @@ export interface Props {
   format: string;
 }
 
-const { courseName, duration, format } = Astro.props;
+const { courseName } = Astro.props;
 ---
 <div class="sticky top-28 space-y-6">
-  <!-- Batch Info Card -->
-  <div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-md hover:border-emerald-500/40 transition-colors">
-    <h3 class="text-lg font-heading font-bold text-slate-900 mb-4 flex items-center gap-2">
-      <svg class="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-      </svg>
-      Batch Quick Facts
-    </h3>
-    <dl class="space-y-3 text-sm">
-      <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-        <dt class="text-slate-500 font-medium">Duration</dt>
-        <dd class="text-slate-900 font-semibold">{duration}</dd>
-      </div>
-      <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-        <dt class="text-slate-500 font-medium">Mode</dt>
-        <dd class="text-slate-900 font-semibold">{format}</dd>
-      </div>
-      <div class="flex justify-between items-center border-b border-slate-100 pb-2">
-        <dt class="text-slate-500 font-medium">Next Batch</dt>
-        <dd class="text-emerald-600 font-semibold flex items-center gap-1">
-          <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse inline-block"></span>
-          Flexible Start
-        </dd>
-      </div>
-      <div class="flex justify-between items-center">
-        <dt class="text-slate-500 font-medium">Schedule</dt>
-        <dd class="text-slate-900 font-semibold text-right">Weekday & Weekend</dd>
-      </div>
-    </dl>
-    
-    <div class="mt-6 flex flex-col gap-3">
 
-      <a href="#enquiry-form" class="w-full bg-slate-50 border border-slate-200 hover:bg-emerald-50 hover:border-emerald-200 text-slate-700 font-medium px-4 py-2.5 rounded-lg text-center text-sm transition-colors flex justify-center items-center gap-2">
-        <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
-        </svg>
-        Download Syllabus
-      </a>
-    </div>
-  </div>
 
   <!-- Enquiry Form Container -->
   <div id="enquiry-form" class="scroll-mt-32">
     <EnquiryForm 
-      title="Request a Callback" 
+      title="Register Now" 
       subtitle="Fill out the form below and we will contact you shortly."
       courseName={courseName} 
     />

@@ -22,7 +22,7 @@ const faqSchema = {
   }))
 };
 ---
-<section class="py-16 bg-white border-b border-slate-100">
+<section id="faqs" class="py-16 bg-white border-b border-slate-100 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4">
     <div class="mb-10 text-center max-w-2xl mx-auto">
       <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
@@ -46,7 +46,7 @@ const faqSchema = {
     </div>
   </div>
 
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </section>
 
 <style>
