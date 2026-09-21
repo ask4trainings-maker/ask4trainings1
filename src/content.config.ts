@@ -18,7 +18,7 @@ const courses = defineCollection({
     mode: z.string().default('Online Live Interactive'),
     rating: z.string().default('4.9/5 (1,200+ Reviews)'),
     videoUrl: z.string().optional(), // YouTube embed link / video ID
-    heroImage: z.string().optional(), // Media preview placeholder
+    courseImage: z.string().optional(), // Media preview placeholder
 
     // Section 2: Overview & Brochure
     overview: z.string().default(''),

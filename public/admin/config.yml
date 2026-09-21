@@ -49,8 +49,8 @@ collections:
       - { label: "Course Duration", name: "duration", widget: "string", default: "45-60 Hrs" }
       - { label: "Training Mode", name: "mode", widget: "string", default: "Online Live Interactive" }
       - { label: "Ratings & Reviews", name: "rating", widget: "string", default: "4.9/5 (1,200+ Reviews)" }
-      - { label: "YouTube Video URL", name: "videoUrl", widget: "string", required: false }
-      - { label: "Hero Preview Image", name: "heroImage", widget: "image", required: false }
+      - { label: "YouTube Video URL", name: "videoUrl", widget: "string", required: false, hint: "YouTube watch or embed URL" }
+      - { label: "Course Featured Image", name: "courseImage", widget: "image", required: false, hint: "Preview banner or platform architecture graphic" }
 
       # 2. Overview & Brochure
       - { label: "Course Overview", name: "overview", widget: "text", default: "" }
