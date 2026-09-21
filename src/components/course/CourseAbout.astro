@@ -1,20 +1,77 @@
 ---
 export interface Props {
   aboutCourse?: string;
+  courseTitle?: string;
 }
 
-const { aboutCourse } = Astro.props;
+const { aboutCourse, courseTitle = "the Course" } = Astro.props;
 
 if (!aboutCourse) {
   return null;
 }
 ---
-<section class="py-16 bg-slate-50 border-b border-slate-100">
+<section id="about" class="bg-slate-50/70 py-16 border-y border-slate-200/60 scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="max-w-4xl">
-      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-6">About the Course</h2>
-      <div class="prose prose-slate prose-lg max-w-none text-slate-600 leading-relaxed">
-        <p>{aboutCourse}</p>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Column (60%) -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-semibold rounded-full border border-emerald-100">
+          Course Deep Dive
+        </div>
+        <h2 class="text-3xl font-heading font-bold text-slate-900">Why Master {courseTitle}?</h2>
+        <div class="prose prose-slate prose-emerald max-w-none text-slate-600 leading-relaxed text-lg">
+          <p>{aboutCourse}</p>
+        </div>
+      </div>
+      
+      <!-- Right Column (40%) -->
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+          <!-- Enterprise SVG Graphic -->
+          <div class="w-full aspect-[4/3] bg-slate-50 rounded-xl mb-6 flex items-center justify-center border border-slate-100 p-4">
+            <svg class="w-full h-full max-w-[200px]" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Network Nodes -->
+              <circle cx="100" cy="75" r="25" fill="#10B981" fill-opacity="0.1" stroke="#10B981" stroke-width="2"/>
+              <circle cx="100" cy="75" r="15" fill="#10B981"/>
+              
+              <circle cx="40" cy="40" r="12" fill="#94A3B8"/>
+              <circle cx="40" cy="110" r="12" fill="#94A3B8"/>
+              <circle cx="160" cy="40" r="12" fill="#94A3B8"/>
+              <circle cx="160" cy="110" r="12" fill="#94A3B8"/>
+              
+              <!-- Connections -->
+              <path d="M50 45 L85 65" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M50 105 L85 85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M150 45 L115 65" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+              <path d="M150 105 L115 85" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+            </svg>
+          </div>
+          
+          <!-- Micro Cards -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="text-xl leading-none">⚡</span>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Real-time Implementation</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Industry-grade workflows.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-xl leading-none">🛡️</span>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Enterprise Security & Governance</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Production deployment best practices.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="text-xl leading-none">📈</span>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Market Demand</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Specialized platform skill shortage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

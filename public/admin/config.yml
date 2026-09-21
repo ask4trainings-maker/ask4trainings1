@@ -104,7 +104,15 @@ collections:
           - { label: "Recognized Badges / Exams", name: "badges", widget: "list", field: { label: "Badge", name: "badge", widget: "string" }, required: false }
 
       # 10. Job Roles
-      - { label: "Target Job Roles", name: "jobRoles", widget: "list", field: { label: "Role Title", name: "role", widget: "string" }, required: false }
+      - label: "Target Job Roles"
+        name: "jobRoles"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Role Title", name: "role", widget: "string" }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Skills", name: "skills", widget: "list", required: false, field: { label: "Skill", name: "skill", widget: "string" } }
+          - { label: "Salary Estimate", name: "salaryEstimate", widget: "string", required: false }
 
       # 11. Trainer Profile Standards
       - label: "Trainer Excellence Standards"

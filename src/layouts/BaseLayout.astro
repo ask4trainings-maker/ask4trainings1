@@ -40,6 +40,14 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
 
     <slot name="head" />
     <style is:global>
+      html {
+        scroll-behavior: smooth;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
       body {
         text-rendering: optimizeLegibility;
         -webkit-font-smoothing: antialiased;

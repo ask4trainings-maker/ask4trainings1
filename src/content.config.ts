@@ -65,7 +65,17 @@ const courses = defineCollection({
     }).default({ title: 'Industry-Recognized Certification', description: 'Earn verified credentials upon capstone project evaluation.', badges: [] }),
 
     // Section 10: Career Opportunities / Job Roles
-    jobRoles: z.array(z.string()).default([]),
+    jobRoles: z.array(
+      z.union([
+        z.string(),
+        z.object({
+          role: z.string(),
+          description: z.string(),
+          skills: z.array(z.string()).optional(),
+          salaryEstimate: z.string().optional(),
+        }),
+      ])
+    ).default([]),
 
     // Section 11: Trainer Standards & Highlights (Company Standard)
     trainerProfile: z.object({

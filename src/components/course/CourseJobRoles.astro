@@ -8,23 +8,174 @@ const { jobRoles = [] } = Astro.props;
 if (!jobRoles || jobRoles.length === 0) {
   return null;
 }
+
+// Normalize job roles data
+const normalizedRoles = jobRoles.map((role, index) => {
+  if (typeof role === 'string') {
+    return {
+      id: `role-${index}`,
+      title: role,
+      description: 'Master this high-demand role with the skills and workflows covered in this course.',
+      skills: ['Industry Best Practices', 'Tool Mastery'],
+      salaryEstimate: ''
+    };
+  }
+  return {
+    id: `role-${index}`,
+    title: role.role || role.title || role.text || 'Job Role',
+    description: role.description || 'Master this high-demand role with the skills and workflows covered in this course.',
+    skills: role.skills || [],
+    salaryEstimate: role.salaryEstimate || ''
+  };
+});
 ---
-<section id="job-roles" class="py-16 bg-slate-50 border-b border-slate-100 scroll-mt-24">
+<section id="job-roles" class="py-16 bg-white scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
     <div class="mb-10 text-center max-w-2xl mx-auto">
       <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Target Job Roles</h2>
       <p class="text-slate-600">Prepare for these high-demand positions in the industry.</p>
     </div>
     
-    <div class="flex flex-wrap justify-center gap-4 max-w-5xl mx-auto">
-      {jobRoles.map(role => (
-        <div class="flex items-center gap-3 px-6 py-4 bg-white border border-slate-200 rounded-xl shadow-sm hover:shadow-md hover:border-emerald-400 transition-all group cursor-default">
-          <div class="w-10 h-10 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center group-hover:bg-emerald-100 transition-colors">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <span class="font-bold text-slate-700 group-hover:text-emerald-700 transition-colors">{typeof role === 'string' ? role : (role.text || role.title || role.role || JSON.stringify(role))}</span>
+    <!-- Desktop Layout (Hidden on Mobile) -->
+    <div class="hidden md:grid grid-cols-1 md:grid-cols-12 gap-8 items-start job-roles-container">
+      <!-- Left Column: Role List -->
+      <div class="md:col-span-4 flex flex-col gap-2">
+        {normalizedRoles.map((role, index) => (
+          <button 
+            data-target={role.id}
+            class={`role-tab w-full text-left flex items-center justify-between px-5 py-4 rounded-xl border transition-all ${index === 0 ? 'bg-emerald-600 text-white border-emerald-600 shadow-md' : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'}`}
+          >
+            <span class="font-bold">{role.title}</span>
+            <svg class={`w-5 h-5 transition-transform ${index === 0 ? 'text-white' : 'text-slate-400'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        ))}
+      </div>
+      
+      <!-- Right Column: Detail Card -->
+      <div class="md:col-span-8">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-8 min-h-[300px] relative overflow-hidden">
+          {normalizedRoles.map((role, index) => (
+            <div id={role.id} class={`role-panel transition-opacity duration-300 ${index === 0 ? 'block opacity-100 relative' : 'hidden opacity-0 absolute inset-0 p-8'}`}>
+              <div class="flex items-start gap-4 mb-6">
+                <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-2xl font-bold text-slate-900">{role.title}</h3>
+                  {role.salaryEstimate && (
+                    <span class="inline-block mt-2 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full border border-emerald-100">
+                      Est. Salary: {role.salaryEstimate}
+                    </span>
+                  )}
+                </div>
+              </div>
+              
+              <div class="prose prose-slate max-w-none text-slate-600 mb-8">
+                <p>{role.description}</p>
+              </div>
+              
+              {role.skills && role.skills.length > 0 && (
+                <div>
+                  <h4 class="text-sm font-bold text-slate-900 uppercase tracking-wider mb-4">Required Competencies</h4>
+                  <div class="flex flex-wrap gap-2">
+                    {role.skills.map((skill: string) => (
+                      <span class="px-3 py-1.5 bg-slate-100 border border-slate-200 text-slate-700 text-sm rounded-lg font-medium">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
+      </div>
+    </div>
+
+    <!-- Mobile Layout (Accordion) -->
+    <div class="md:hidden space-y-3">
+      {normalizedRoles.map((role, index) => (
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open={index === 0}>
+          <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-slate-50 group-open:bg-emerald-600 group-open:text-white text-slate-800 transition-colors">
+            <span class="font-bold">{role.title}</span>
+            <span class="transition group-open:rotate-180">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </summary>
+          <div class="p-5 bg-white text-slate-900">
+            {role.salaryEstimate && (
+              <span class="inline-block mb-4 px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full border border-emerald-100">
+                Est. Salary: {role.salaryEstimate}
+              </span>
+            )}
+            <p class="text-slate-600 text-sm mb-5 leading-relaxed">{role.description}</p>
+            {role.skills && role.skills.length > 0 && (
+              <div class="flex flex-wrap gap-2">
+                {role.skills.map((skill: string) => (
+                  <span class="px-2.5 py-1 bg-slate-100 border border-slate-200 text-slate-600 text-xs rounded-lg font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
+        </details>
       ))}
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const containers = document.querySelectorAll('.job-roles-container');
+    
+    containers.forEach(container => {
+      const tabs = container.querySelectorAll('.role-tab');
+      const panels = container.querySelectorAll('.role-panel');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const targetId = tab.getAttribute('data-target');
+          
+          // Reset all tabs
+          tabs.forEach(t => {
+            t.classList.remove('bg-emerald-600', 'text-white', 'border-emerald-600', 'shadow-md');
+            t.classList.add('bg-slate-50', 'text-slate-700', 'border-slate-200', 'hover:bg-slate-100');
+            const icon = t.querySelector('svg');
+            if (icon) {
+              icon.classList.remove('text-white');
+              icon.classList.add('text-slate-400');
+            }
+          });
+          
+          // Set active tab
+          tab.classList.add('bg-emerald-600', 'text-white', 'border-emerald-600', 'shadow-md');
+          tab.classList.remove('bg-slate-50', 'text-slate-700', 'border-slate-200', 'hover:bg-slate-100');
+          const activeIcon = tab.querySelector('svg');
+          if (activeIcon) {
+            activeIcon.classList.add('text-white');
+            activeIcon.classList.remove('text-slate-400');
+          }
+          
+          // Update panels
+          panels.forEach(panel => {
+            if (panel.id === targetId) {
+              panel.classList.remove('hidden', 'absolute', 'inset-0', 'p-8');
+              panel.classList.add('block', 'relative');
+              setTimeout(() => panel.classList.replace('opacity-0', 'opacity-100'), 10);
+            } else {
+              panel.classList.add('hidden', 'absolute', 'inset-0', 'p-8', 'opacity-0');
+              panel.classList.remove('block', 'relative', 'opacity-100');
+            }
+          });
+        });
+      });
+    });
+  });
+</script>
