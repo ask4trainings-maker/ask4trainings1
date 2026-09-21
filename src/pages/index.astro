@@ -3,7 +3,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Ask 4 Trainings",
-  "url": "https://ask4trainings.com",
+  "url": "https://ask4trainings.pages.dev",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ameerpet",
@@ -69,14 +69,6 @@ function cleanTitle(title: string): string {
       
       <!-- Left: Scaler Value Prop (7 cols) -->
       <div class="lg:col-span-7 xl:col-span-7 animate-fade-in-up">
-        <!-- Live Batch Pill -->
-        <div class="bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold px-3.5 py-1.5 rounded-full inline-flex items-center gap-2 mb-8">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          {homeData.hero.badge}
-        </div>
         
         <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-slate-900 mb-6 leading-[1.1] tracking-tight">
           <Fragment set:html={homeData.hero.headline} />

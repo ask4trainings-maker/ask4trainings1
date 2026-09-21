@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with Playwright Automation Testing with AI Course. Learn
     AI-driven automation, testing frameworks and certification support.
-legacyUrl: 'https://ask4trainings.com/playwright-automation-testing-with-ai-course/'
+legacyUrl: 'https://ask4trainings.pages.dev/playwright-automation-testing-with-ai-course/'
 legacyImpressions: 2410
 menuTitle: Playwright Automation
 ---

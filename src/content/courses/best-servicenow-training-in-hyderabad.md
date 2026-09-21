@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Servicenow Training in Hyderabad | #1"
   metaDescription: "join the Best ServiceNow Training in Hyderabad with live classes, real-time projects, certification, placement support, and expert trainers."
-legacyUrl: "https://ask4trainings.com/best-servicenow-training-in-hyderabad/"
+legacyUrl: "https://ask4trainings.pages.dev/best-servicenow-training-in-hyderabad/"
 legacyImpressions: 1813
 ---
 

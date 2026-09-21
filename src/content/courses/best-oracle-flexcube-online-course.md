@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Oracle Flexcube Online Course | #1"
   metaDescription: "Join the Best Oracle Flexcube Online Course and gain hands-on experience, real-time projects, certification."
-legacyUrl: "https://ask4trainings.com/best-oracle-flexcube-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/best-oracle-flexcube-online-course/"
 legacyImpressions: 2045
 ---
 

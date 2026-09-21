@@ -62,7 +62,7 @@ seo:
   metaDescription: >-
     Learn Guidewire Automation Testing on GT Frameworks with real-time projects
     and placement support to build a strong QA career.
-legacyUrl: 'https://ask4trainings.com/guidewire-automation-testing-on-gt-frameworks/'
+legacyUrl: 'https://ask4trainings.pages.dev/guidewire-automation-testing-on-gt-frameworks/'
 legacyImpressions: 2902
 menuTitle: Guidewire Automation
 ---

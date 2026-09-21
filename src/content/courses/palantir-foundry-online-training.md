@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Palantir Foundry Online Training with live instructor-led classes,
     real-time projects, certification guidance, and placement support .
-legacyUrl: 'https://ask4trainings.com/palantir-foundry-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/palantir-foundry-online-training/'
 legacyImpressions: 345
 menuTitle: Palantir Foundry
 ---

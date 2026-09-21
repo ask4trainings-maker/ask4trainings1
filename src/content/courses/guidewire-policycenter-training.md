@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire PolicyCenter Training |No.1 Placement"
   metaDescription: "Enroll in the best Guidewire PolicyCenter Training. Get hands-on experience with real-time projects, certification support, and placement assistance."
-legacyUrl: "https://ask4trainings.com/guidewire-policycenter-training/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-policycenter-training/"
 legacyImpressions: 20
 ---
 

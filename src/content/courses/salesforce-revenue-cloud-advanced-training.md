@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with Salesforce Revenue Cloud Advanced Training. Learn
     CPQ, billing, pricing, contracts, and real-time project skills today.
-legacyUrl: 'https://ask4trainings.com/salesforce-revenue-cloud-advanced-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/salesforce-revenue-cloud-advanced-training/'
 legacyImpressions: 299
 menuTitle: Salesforce Revenue Cloud
 ---

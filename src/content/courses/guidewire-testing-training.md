@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Hands-on Guidewire Testing Training with practical assignments and placement
     assistance to help you succeed. Free Demo 919951609609.
-legacyUrl: 'https://ask4trainings.com/guidewire-testing-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/guidewire-testing-training/'
 legacyImpressions: 0
 menuTitle: Guidewire Testing
 ---

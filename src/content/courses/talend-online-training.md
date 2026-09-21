@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Talend Online Training with real-time projects, expert trainers, and
     hands-on learning to master data integration, ETL and cloud solutions.
-legacyUrl: 'https://ask4trainings.com/talend-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/talend-online-training/'
 legacyImpressions: 2112
 menuTitle: Talend
 ---

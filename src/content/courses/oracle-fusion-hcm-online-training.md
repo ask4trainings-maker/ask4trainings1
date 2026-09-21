@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Learn Oracle Fusion HCM Online Training with real-time projects, expert
     trainers, and job support. Enroll now to boost your HR tech career.
-legacyUrl: 'https://ask4trainings.com/oracle-fusion-hcm-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/oracle-fusion-hcm-online-training/'
 legacyImpressions: 159
 menuTitle: Oracle Fusion HCM
 ---

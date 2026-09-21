@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best SAP Courses | #1 SAP Trending Training with Placement"
   metaDescription: "SAP Courses with practical training, real-time projects, certification support, expert guidance, and placement assistance for career success."
-legacyUrl: "https://ask4trainings.com/sap-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/sap-courses/"
 legacyImpressions: 28
 ---
 

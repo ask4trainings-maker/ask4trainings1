@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Testing Online Training | NO.1 Certification"
   metaDescription: "Advance your career with Guidewire Testing Online Training . Learn QA skills, real-time projects, and certified with job-oriented Course."
-legacyUrl: "https://ask4trainings.com/guidewire-testing/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-testing/"
 legacyImpressions: 1700
 ---
 

@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Teamcenter PLM Online Training | NO.1 Certification"
   metaDescription: "Master product lifecycle skills with Teamcenter PLM Online Training. Learn real-time PLM concepts, workflows, and industry-based project practices."
-legacyUrl: "https://ask4trainings.com/teamcenter-plm-training-online/"
+legacyUrl: "https://ask4trainings.pages.dev/teamcenter-plm-training-online/"
 legacyImpressions: 531
 ---
 

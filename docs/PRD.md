@@ -11,7 +11,7 @@
 
 ## 1. Executive Summary
 
-Ask 4 Trainings' current website (`https://ask4trainings.com`) runs on WordPress + Elementor on a shared server hosting 10+ other client sites, causing CPU/RAM contention, high Time to First Byte, and gateway timeouts under load. Page weight exceeds 2MB per page (worse than the Hope InfoTech baseline of 1.5MB+), Core Web Vitals are poor, and broken/off-domain lead redirects are actively costing the business qualified enquiries.
+Ask 4 Trainings' current website (`https://ask4trainings.pages.dev`) runs on WordPress + Elementor on a shared server hosting 10+ other client sites, causing CPU/RAM contention, high Time to First Byte, and gateway timeouts under load. Page weight exceeds 2MB per page (worse than the Hope InfoTech baseline of 1.5MB+), Core Web Vitals are poor, and broken/off-domain lead redirects are actively costing the business qualified enquiries.
 
 This project rebuilds the site as a static, edge-hosted Astro application with two independently editable content systems suited to a 100% non-technical client team, while preserving the SEO equity accumulated across 114 audited URLs (Google Search Console + Screaming Frog crawl).
 
@@ -174,7 +174,7 @@ Client is NOT required to understand git, Markdown syntax, or deployments. One o
 **Phase 3 — Production Cutover**
 - Manual QA of every redirect (all 114 audited URLs) against the crawl inventory
 - Sitemap generated and validated; `EducationalOrganization`, `Course`, `FAQPage`, `BreadcrumbList` JSON-LD verified on representative pages
-- DNS cutover to `ask4trainings.com`
+- DNS cutover to `ask4trainings.pages.dev`
 - New sitemap submitted to Google Search Console; Coverage/Performance monitored weekly for 4 weeks post-launch
 
 **Phase 4 — Phase 2 LMS Roadmap (future scope, not built in this engagement)**

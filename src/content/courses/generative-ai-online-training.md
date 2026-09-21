@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join our Generative AI Online Training to master AI tools, build real-world
     projects, and gain industry-ready skills with expert guidance.
-legacyUrl: 'https://ask4trainings.com/generative-ai-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/generative-ai-online-training/'
 legacyImpressions: 2584
 menuTitle: Generative AI
 ---

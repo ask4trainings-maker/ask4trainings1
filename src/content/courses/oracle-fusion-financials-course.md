@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Oracle Fusion Financials Course | #No.1 with Placement"
   metaDescription: "Oracle Fusion Financials Course: Master cloud-based finance, reporting, AP, AR, GL, and assets management with hands-on training and certification support."
-legacyUrl: "https://ask4trainings.com/oracle-fusion-financials-course/"
+legacyUrl: "https://ask4trainings.pages.dev/oracle-fusion-financials-course/"
 legacyImpressions: 2031
 ---
 

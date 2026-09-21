@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Business Analyst Course | No.1 Training"
   metaDescription: "Guidewire Business Analyst Course is a specialized program designed to equip learners with the skills required to work on Guidewire applications within the"
-legacyUrl: "https://ask4trainings.com/guidewire-business-analyst-course/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-business-analyst-course/"
 legacyImpressions: 1926
 ---
 

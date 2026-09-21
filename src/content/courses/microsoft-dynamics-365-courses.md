@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Microsoft Dynamics 365 Courses | #1 Placement"
   metaDescription: "Microsoft Dynamics 365 Courses with hands-on training, real-time projects, certification support, expert trainers, and placement assistance."
-legacyUrl: "https://ask4trainings.com/microsoft-dynamics-365-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/microsoft-dynamics-365-courses/"
 legacyImpressions: 38
 ---
 

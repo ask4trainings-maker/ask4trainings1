@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master SAP S/4 HANA FICO Online Training with real-time projects, finance
     modules, expert trainers, certification, and placement support.
-legacyUrl: 'https://ask4trainings.com/sap-s-4-hana-fico-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/sap-s-4-hana-fico-online-training/'
 legacyImpressions: 2441
 menuTitle: SAP S/4 Hana Fico
 ---

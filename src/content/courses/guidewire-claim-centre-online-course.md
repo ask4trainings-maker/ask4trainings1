@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Claim Centre Online Course | No.1 Training"
   metaDescription: "Join Hope Infotech’s Guidewire Claim Centre Online Course to master configuration and integration. Learn from experts in real time.919951609609"
-legacyUrl: "https://ask4trainings.com/guidewire-claim-centre-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-claim-centre-online-course/"
 legacyImpressions: 1597
 ---
 

@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best DevOps Courses | #1 DevOps Training with Certification"
   metaDescription: "DevOps Courses with hands-on training, AWS DevOps, Azure DevOps, real-time projects, certification support, and placement assistance."
-legacyUrl: "https://ask4trainings.com/devops-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/devops-courses/"
 legacyImpressions: 32
 ---
 

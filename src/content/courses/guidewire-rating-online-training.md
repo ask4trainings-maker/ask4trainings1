@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Guidewire Rating Online Training to learn rating configuration, pricing
     rules, real-time projects, certification, and placement support.
-legacyUrl: 'https://ask4trainings.com/guidewire-rating-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/guidewire-rating-online-training/'
 legacyImpressions: 2207
 menuTitle: Guidewire Rating
 ---

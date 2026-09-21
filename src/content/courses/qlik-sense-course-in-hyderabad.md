@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join the best Qlik Sense Course in Hyderabad with practical training,
     real-time projects, expert guidance, certification support and placement.
-legacyUrl: 'https://ask4trainings.com/qlik-sense-course-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/qlik-sense-course-in-hyderabad/'
 legacyImpressions: 2360
 menuTitle: Qlik Sense
 ---

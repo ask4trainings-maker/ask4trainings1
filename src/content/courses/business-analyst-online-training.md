@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Upgrade your career with Business Analyst Online Training. Learn data
     analysis, tools, and real-world skills to land high-paying BA jobs fast.
-legacyUrl: 'https://ask4trainings.com/business-analyst-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/business-analyst-online-training/'
 legacyImpressions: 2515
 menuTitle: IT Business Analyst
 ---

@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with Dotnet Full Stack Training in Hyderabad. Learn
     .NET, frontend, backend, APIs, and real-time projects with expert guidance.
-legacyUrl: 'https://ask4trainings.com/dotnet-full-stack-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/dotnet-full-stack-training-in-hyderabad/'
 legacyImpressions: 2284
 menuTitle: Dotnet Full Stack
 ---

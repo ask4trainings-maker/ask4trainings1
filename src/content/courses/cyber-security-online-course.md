@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with Cyber Security Online Course. Learn ethical
     hacking, network security & real-time skills from industry experts online.
-legacyUrl: 'https://ask4trainings.com/cyber-security-online-course/'
+legacyUrl: 'https://ask4trainings.pages.dev/cyber-security-online-course/'
 legacyImpressions: 2586
 menuTitle: Cyber Security
 ---

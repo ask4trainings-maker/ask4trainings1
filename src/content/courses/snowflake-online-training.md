@@ -61,7 +61,7 @@ seo:
     Boost your career with Snowflake Online Training in Hyderabad. Get
     certification, real-time projects, placement support and job-oriented skills
     .
-legacyUrl: 'https://ask4trainings.com/snowflake-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/snowflake-online-training/'
 legacyImpressions: 591
 menuTitle: Snowflake
 ---

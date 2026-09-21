@@ -87,7 +87,7 @@ for (const row of frogRows) {
   if (STATIC_SLUGS.has(slug)) continue;
   if (ARCHIVE_PREFIXES.some(p => slug.startsWith(p))) continue;
 
-  const canonicalUrl = `https://ask4trainings.com/${slug}/`;
+  const canonicalUrl = `https://ask4trainings.pages.dev/${slug}/`;
   liveUrlMap.set(slug, canonicalUrl);
 }
 

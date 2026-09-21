@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master Oracle Fusion Financials Online Training with expert-led online
     training. Learn GL, AP, AR & reporting. Enroll now to boost your career!
-legacyUrl: 'https://ask4trainings.com/oracle-fusion-financials-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/oracle-fusion-financials-online-training/'
 legacyImpressions: 416
 menuTitle: Oracle Fusion Financials
 ---

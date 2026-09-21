@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Snowflake Online Course| No.1 Cloud Data Careers"
   metaDescription: "Boost your career with Snowflake Online Course and gain hands-on experience in cloud data warehousing, data integration and analytics."
-legacyUrl: "https://ask4trainings.com/snowflake-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/snowflake-online-course/"
 legacyImpressions: 1853
 ---
 

@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with Duck Creek Online Training . Learn insurance
     software, real-time projects & placement support from experts.
-legacyUrl: 'https://ask4trainings.com/duck-creek-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/duck-creek-online-training/'
 legacyImpressions: 253
 menuTitle: Duck Creek
 ---

@@ -21,7 +21,7 @@ export interface Props {
 }
 
 const { title, slug, category, duration, format, valueProp, highlights = [], syllabus, faqs = [], seo } = Astro.props;
-const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.com/';
+const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.pages.dev/';
 const metaDesc = seo?.metaDescription || valueProp;
 
 // SEO Metadata (JSON-LD)

@@ -62,7 +62,7 @@ seo:
   metaDescription: >-
     Microsoft Dynamics 365 Finance and Operations helps manage finance, supply
     chain, and operations with automation and scalable performance.
-legacyUrl: 'https://ask4trainings.com/microsoft-dynamics-365-finance-and-operations/'
+legacyUrl: 'https://ask4trainings.pages.dev/microsoft-dynamics-365-finance-and-operations/'
 legacyImpressions: 1790
 menuTitle: MS D365 F&O
 ---

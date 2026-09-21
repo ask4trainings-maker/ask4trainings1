@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join the best Coupa Online Training to master procurement, invoicing,
     sourcing, and spend management with real-time projects and certification.
-legacyUrl: 'https://ask4trainings.com/coupa-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/coupa-online-training/'
 legacyImpressions: 1235
 menuTitle: Coupa
 ---

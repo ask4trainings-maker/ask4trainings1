@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Polarion Online Training to master ALM, requirement management and
     traceability with real-time projects, certification and job support.
-legacyUrl: 'https://ask4trainings.com/polarion-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/polarion-online-training/'
 legacyImpressions: 315
 menuTitle: Polarion
 ---

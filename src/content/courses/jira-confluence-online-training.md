@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Jira Confluence Online Training to master project tracking, workflow
     management and reporting with hands-on projects. Enroll now!
-legacyUrl: 'https://ask4trainings.com/jira-confluence-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/jira-confluence-online-training/'
 legacyImpressions: 2336
 menuTitle: Jira Confluence
 ---

@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Siemens Courses | #1 Siemens Training with Placement"
   metaDescription: "Siemens Courses with hands-on training, real-time projects, certification support, expert trainers, and placement assistance for career growth."
-legacyUrl: "https://ask4trainings.com/siemens-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/siemens-courses/"
 legacyImpressions: 30
 ---
 

@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master SAP MM Course in Hyderabad with real-time projects, expert trainers,
     placement support, and hands-on learning.
-legacyUrl: 'https://ask4trainings.com/sap-mm-course-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/sap-mm-course-in-hyderabad/'
 legacyImpressions: 2511
 menuTitle: SAP MM
 ---

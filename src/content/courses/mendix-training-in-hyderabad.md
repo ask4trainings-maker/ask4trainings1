@@ -61,7 +61,7 @@ seo:
     Build a successful low-code career with Mendix Training in Hyderabad
     designed for beginners and professionals. Our Mendix Online Training helps
     you master app
-legacyUrl: 'https://ask4trainings.com/mendix-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/mendix-training-in-hyderabad/'
 legacyImpressions: 2105
 menuTitle: Mendix
 ---

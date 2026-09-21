@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Billing Center Course No.1 Placement"
   metaDescription: "Boost your insurance IT career with Guidewire Billing Center Course . Learn billing, payments, invoicing & real-time projects online"
-legacyUrl: "https://ask4trainings.com/guidewire-billing-center-course/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-billing-center-course/"
 legacyImpressions: 1912
 ---
 

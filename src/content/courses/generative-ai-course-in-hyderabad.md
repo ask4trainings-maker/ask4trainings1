@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Generative AI Course in Hyderabad | #1"
   metaDescription: "Join the Generative AI Course in Hyderabad with live projects, expert trainers, certification, placement support."
-legacyUrl: "https://ask4trainings.com/generative-ai-course-in-hyderabad/"
+legacyUrl: "https://ask4trainings.pages.dev/generative-ai-course-in-hyderabad/"
 legacyImpressions: 1951
 ---
 

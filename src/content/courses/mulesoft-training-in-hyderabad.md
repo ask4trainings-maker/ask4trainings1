@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Start your IT journey with MuleSoft Training in Hyderabad. Gain practical
     knowledge in Mule ESB, API management and live projects.
-legacyUrl: 'https://ask4trainings.com/mulesoft-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/mulesoft-training-in-hyderabad/'
 legacyImpressions: 2242
 menuTitle: Mulesoft
 ---

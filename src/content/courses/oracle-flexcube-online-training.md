@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master Oracle Flexcube Online Training with expert guidance, real-time
     projects, and placement support. Enroll now to boost your banking career.
-legacyUrl: 'https://ask4trainings.com/oracle-flexcube-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/oracle-flexcube-online-training/'
 legacyImpressions: 338
 menuTitle: Oracle Flexcube
 ---

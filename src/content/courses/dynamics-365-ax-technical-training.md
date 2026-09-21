@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master Dynamics 365 AX Technical Training with real-time projects, X++,
     SSRS, integrations, and expert-led online sessions for career growth.
-legacyUrl: 'https://ask4trainings.com/dynamics-365-ax-technical-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/dynamics-365-ax-technical-training/'
 legacyImpressions: 2506
 menuTitle: MS D365 AX
 ---

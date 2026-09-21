@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Courses | #1 Guidewire Training"
   metaDescription: "Guidewire Courses with real-time projects, expert trainers, certification support, and placement assistance for Developer, QA, and BA roles."
-legacyUrl: "https://ask4trainings.com/guidewire-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-courses/"
 legacyImpressions: 42
 ---
 

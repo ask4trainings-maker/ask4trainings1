@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Data Analytics Course | NO.1 Training and Certification"
   metaDescription: "Master Data Analytics Course with real-time projects, visualization tools, SQL, Python, and business insights for high-paying careers."
-legacyUrl: "https://ask4trainings.com/data-analytics-course/"
+legacyUrl: "https://ask4trainings.pages.dev/data-analytics-course/"
 legacyImpressions: 1885
 ---
 

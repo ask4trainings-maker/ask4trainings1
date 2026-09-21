@@ -2,7 +2,7 @@ backend:
   name: github
   repo: rahulabhishek5/ask4trainings
   branch: main
-  base_url: https://ask4trainings.com
+  base_url: https://ask4trainings.pages.dev
   auth_endpoint: /oauth/auth
 
 media_folder: "public/assets/uploads"

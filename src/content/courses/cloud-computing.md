@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Cloud Computing Courses | #1 Cloud Computing Training"
   metaDescription: "Cloud Computing Courses with hands-on training, AWS, Azure & GCP, real-time projects, certification support, and placement assistance."
-legacyUrl: "https://ask4trainings.com/cloud-computing/"
+legacyUrl: "https://ask4trainings.pages.dev/cloud-computing/"
 legacyImpressions: 33
 ---
 

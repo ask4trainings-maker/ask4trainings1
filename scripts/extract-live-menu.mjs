@@ -3,8 +3,8 @@ import path from 'path';
 import * as cheerio from 'cheerio';
 
 async function extractMenu() {
-  console.log('Fetching https://ask4trainings.com/...');
-  const response = await fetch('https://ask4trainings.com/');
+  console.log('Fetching https://ask4trainings.pages.dev/...');
+  const response = await fetch('https://ask4trainings.pages.dev/');
   const html = await response.text();
   
   const $ = cheerio.load(html);

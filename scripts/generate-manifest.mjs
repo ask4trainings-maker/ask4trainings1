@@ -129,7 +129,7 @@ for (const rawUrl of allUrls) {
   const mRow = mapIndex[rawUrl] || {};
 
   const type = classifyType(slug);
-  const legacyUrl = `https://ask4trainings.com/${slug}/`;
+  const legacyUrl = `https://ask4trainings.pages.dev/${slug}/`;
 
   const rawTitle = (fRow['Title 1'] || '').trim();
   const rawH1 = (fRow['H1-1'] || '').trim();

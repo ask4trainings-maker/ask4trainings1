@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best DevOps Online Training | NO.1 Course and Certification"
   metaDescription: "DevOps Online Training – Learn CI/CD, Docker, Kubernetes, Jenkins, AWS, Git & Linux with real-time project, certification & placement."
-legacyUrl: "https://ask4trainings.com/devops-online-training/"
+legacyUrl: "https://ask4trainings.pages.dev/devops-online-training/"
 legacyImpressions: 9
 ---
 

@@ -61,7 +61,7 @@ seo:
     Advance your career with Appian Training in Hyderabad. Learn low-code
     development, workflows and integrations through hands-on projects and expert
     guidance.
-legacyUrl: 'https://ask4trainings.com/appian-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/appian-training-in-hyderabad/'
 legacyImpressions: 2320
 menuTitle: Appian
 ---

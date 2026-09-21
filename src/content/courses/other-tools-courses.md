@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Other Tools Courses | #1 Other Tools Training"
   metaDescription: "Other Tools Courses covering Talend, Coupa, ServiceNow, Salesforce, Guidewire, and more with real-time projects and placement support."
-legacyUrl: "https://ask4trainings.com/other-tools-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/other-tools-courses/"
 legacyImpressions: 35
 ---
 

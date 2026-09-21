@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Python Full Stack Training in Hyderabad to learn front-end, back-end,
     databases, and real-time projects with certification and placement.
-legacyUrl: 'https://ask4trainings.com/python-full-stack-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/python-full-stack-training-in-hyderabad/'
 legacyImpressions: 2193
 menuTitle: Python Full Stack
 ---

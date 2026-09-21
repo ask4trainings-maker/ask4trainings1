@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Talend Online Course | #1 Certification Course"
   metaDescription: "Master Talend with live projects, certification, and placement support. Join our Talend Online Course become a skilled ETL Developer."
-legacyUrl: "https://ask4trainings.com/best-talend-online-course-with-certification/"
+legacyUrl: "https://ask4trainings.pages.dev/best-talend-online-course-with-certification/"
 legacyImpressions: 2047
 ---
 

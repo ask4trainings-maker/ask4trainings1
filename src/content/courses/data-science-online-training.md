@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Data Science Online Training with certification, real-time projects,
     placement support & expert mentors. Enroll now to boost your career!
-legacyUrl: 'https://ask4trainings.com/data-science-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/data-science-online-training/'
 legacyImpressions: 2542
 menuTitle: Data Science
 ---

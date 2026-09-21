@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join the best Digital Marketing Training in Hyderabad with live projects,
     expert trainers, certification, and placement support. Enroll today!
-legacyUrl: 'https://ask4trainings.com/digital-marketing-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/digital-marketing-training-in-hyderabad/'
 legacyImpressions: 2438
 menuTitle: Digital Marketing
 ---

@@ -61,7 +61,7 @@ seo:
     Learn Big Data Analytics online training with real-time projects, expert
     guidance, and certification. Boost your career with in-demand data skills
     today.
-legacyUrl: 'https://ask4trainings.com/data-analytics-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/data-analytics-online-training/'
 legacyImpressions: 2564
 menuTitle: Data Analytics
 ---

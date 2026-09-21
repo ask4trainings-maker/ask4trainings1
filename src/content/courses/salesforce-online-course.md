@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with the Best Salesforce Online Course. Join the No.1
     Course with Placement support, expert trainers and certification .
-legacyUrl: 'https://ask4trainings.com/salesforce-online-course/'
+legacyUrl: 'https://ask4trainings.pages.dev/salesforce-online-course/'
 legacyImpressions: 2018
 ---
 

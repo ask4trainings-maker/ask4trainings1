@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Advance your career with PEGA Training in Hyderabad. Learn BPM, case
     management, workflows, and automation with hands-on projects.
-legacyUrl: 'https://ask4trainings.com/pega-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/pega-training-in-hyderabad/'
 legacyImpressions: 2172
 menuTitle: PEGA
 ---

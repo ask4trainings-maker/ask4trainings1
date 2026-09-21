@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     MuleSoft Online Training helps you master API development, integration,
     Anypoint Platform and real-time projects with certification support.
-legacyUrl: 'https://ask4trainings.com/mulesoft-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/mulesoft-online-training/'
 legacyImpressions: 1801
 ---
 

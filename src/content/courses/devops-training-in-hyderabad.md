@@ -61,7 +61,7 @@ seo:
     DevOps Training in Hyderabad with real-time projects, expert mentors,
     certification support and placement assistance for IT careers. Enroll today
     !!!
-legacyUrl: 'https://ask4trainings.com/devops-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/devops-training-in-hyderabad/'
 legacyImpressions: 2220
 menuTitle: DevOps
 ---

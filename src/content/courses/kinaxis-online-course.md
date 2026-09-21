@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Kinaxis Online Course | No.1 Training and Certification"
   metaDescription: "Join the best Kinaxis online Course. Master supply chain planning, analytics, and RapidResponse with certification."
-legacyUrl: "https://ask4trainings.com/kinaxis-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/kinaxis-online-course/"
 legacyImpressions: 1685
 ---
 

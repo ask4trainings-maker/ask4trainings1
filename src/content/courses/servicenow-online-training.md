@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     ServiceNow online training with real-time projects, certification, expert
     trainers, flexible schedules and career-focused learning for IT success.
-legacyUrl: 'https://ask4trainings.com/servicenow-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/servicenow-online-training/'
 legacyImpressions: 126
 menuTitle: Servicenow
 ---

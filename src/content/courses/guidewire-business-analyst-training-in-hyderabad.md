@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Guidewire business analyst training in Hyderabad at Hopeinfotech helps you
     Master in Guidewire Insurance suite, Modules like PC, CC, BC
-legacyUrl: 'https://ask4trainings.com/guidewire-business-analyst-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/guidewire-business-analyst-training-in-hyderabad/'
 legacyImpressions: 86
 menuTitle: Guidewire BA
 ---

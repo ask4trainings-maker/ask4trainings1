@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Oracle Courses | #1 Oracle Training with Placement"
   metaDescription: "Oracle Courses with expert training in Oracle DBA, SQL, PL/SQL, Fusion, and Cloud technologies, including projects and placement support."
-legacyUrl: "https://ask4trainings.com/oracle-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/oracle-courses/"
 legacyImpressions: 36
 ---
 

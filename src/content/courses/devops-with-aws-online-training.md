@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     DevOps with AWS Online Training – Learn CI/CD, Docker, Kubernetes, AWS
     Cloud, automation, and deployment with real-time projects .
-legacyUrl: 'https://ask4trainings.com/devops-with-aws-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/devops-with-aws-online-training/'
 legacyImpressions: 2316
 menuTitle: AWS DevOps
 ---

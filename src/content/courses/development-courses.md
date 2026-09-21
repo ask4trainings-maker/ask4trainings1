@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Development Courses | #1 Development Training"
   metaDescription: "Development Courses covering Java, Python, .NET, Full Stack and Web Development with real-time projects, certification, and placement support."
-legacyUrl: "https://ask4trainings.com/development-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/development-courses/"
 legacyImpressions: 36
 ---
 

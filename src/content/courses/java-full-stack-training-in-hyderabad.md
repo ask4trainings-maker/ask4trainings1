@@ -61,7 +61,7 @@ seo:
     Join Java Full Stack Training in Hyderabad with live projects,
     certification, expert trainers, placement support, and hands-on web
     development skills.
-legacyUrl: 'https://ask4trainings.com/java-full-stack-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/java-full-stack-training-in-hyderabad/'
 legacyImpressions: 2283
 menuTitle: Java Full Stack
 ---

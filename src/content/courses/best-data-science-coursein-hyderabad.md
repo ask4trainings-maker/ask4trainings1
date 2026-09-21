@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Data Science Course in Hyderabad | Placement Support."
   metaDescription: "Join the Best Data Science Course in Hyderabad with live projects, expert mentors, certification, and Comprehensive Placement Assistance. Enroll today!"
-legacyUrl: "https://ask4trainings.com/best-data-science-coursein-hyderabad/"
+legacyUrl: "https://ask4trainings.pages.dev/best-data-science-coursein-hyderabad/"
 legacyImpressions: 3
 ---
 

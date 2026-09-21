@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Online Testing On GT Frameworks | No.1 Course"
   metaDescription: "Learn Guidewire Online Testing on GT Frameworks with real-time projects and placement support to build a strong QA career."
-legacyUrl: "https://ask4trainings.com/guidewire-online-testing-on-gt-frameworks/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-online-testing-on-gt-frameworks/"
 legacyImpressions: 1545
 ---
 

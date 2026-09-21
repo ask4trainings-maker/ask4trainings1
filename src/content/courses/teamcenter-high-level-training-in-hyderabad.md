@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join the best Teamcenter High-Level Training in Hyderabad with real-time
     projects, trainers, certification and placement assistance for careers.
-legacyUrl: 'https://ask4trainings.com/teamcenter-high-level-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/teamcenter-high-level-training-in-hyderabad/'
 legacyImpressions: 2
 menuTitle: Teamcenter High-Level
 ---

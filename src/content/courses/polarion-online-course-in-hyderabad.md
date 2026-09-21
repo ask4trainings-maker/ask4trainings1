@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Polarion Online Course | NO.1 Training & Certification"
   metaDescription: "Join Polarion Online Course to master ALM, requirement management, traceability , workflows with real-time projects, certification and job support."
-legacyUrl: "https://ask4trainings.com/polarion-online-course-in-hyderabad/"
+legacyUrl: "https://ask4trainings.pages.dev/polarion-online-course-in-hyderabad/"
 legacyImpressions: 1989
 ---
 

@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Trending Courses | #1 Trending Courses with Placement"
   metaDescription: "Trending Courses in AI, Cloud, DevOps, SAP, Data Science, and Full Stack with real-time projects, certification, and placement support."
-legacyUrl: "https://ask4trainings.com/trending-courses/"
+legacyUrl: "https://ask4trainings.pages.dev/trending-courses/"
 legacyImpressions: 38
 ---
 

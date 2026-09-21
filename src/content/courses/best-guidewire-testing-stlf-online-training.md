@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Testing STLF Online Training |#1"
   metaDescription: "Master STLC with the Best Guidewire Testing STLF Online Training. Learn real-time projects, manual testing, certification."
-legacyUrl: "https://ask4trainings.com/best-guidewire-testing-stlf-online-training/"
+legacyUrl: "https://ask4trainings.pages.dev/best-guidewire-testing-stlf-online-training/"
 legacyImpressions: 1961
 ---
 

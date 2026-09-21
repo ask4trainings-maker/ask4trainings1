@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Enroll in Teamcenter AWC Online Training with hands-on projects, expert
     guidance, certification and placement assistance to build PLM skills.
-legacyUrl: 'https://ask4trainings.com/teamcenter-awc-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/teamcenter-awc-online-training/'
 legacyImpressions: 0
 menuTitle: Teamcenter AWC
 ---

@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join Azure with DevOps Online Training with certification, live projects,
     placement support, and real-time learning through advanced Azure DevOps .
-legacyUrl: 'https://ask4trainings.com/azure-with-devops-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/azure-with-devops-online-training/'
 legacyImpressions: 2220
 menuTitle: Azure DevOps
 ---

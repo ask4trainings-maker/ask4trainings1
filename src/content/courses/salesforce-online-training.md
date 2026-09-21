@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master Salesforce Online Training and gain hands-on experience in CRM tools,
     workflows, and app building to secure high-demand tech jobs.
-legacyUrl: 'https://ask4trainings.com/salesforce-online-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/salesforce-online-training/'
 legacyImpressions: 2461
 menuTitle: Salesforce
 ---

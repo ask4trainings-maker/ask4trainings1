@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Best Guidewire Policy Centre Online Course | No.1 Training"
   metaDescription: "Master the Guidewire Policy Centre Online Course with our experts. Learn Policy Center, Billing Centre, Claim Centre. Enroll today 919951609609"
-legacyUrl: "https://ask4trainings.com/guidewire-policycenter-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/guidewire-policycenter-online-course/"
 legacyImpressions: 1595
 ---
 

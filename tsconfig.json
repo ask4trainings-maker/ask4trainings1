@@ -1,6 +1,19 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "strict": true,
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
@@ -9,5 +22,6 @@
       "@content/*": ["src/content/*"]
     }
   },
-  "exclude": ["hopeinfotech", "node_modules", "dist", ".fallow"]
+  "exclude": ["hopeinfotech", "node_modules", "dist", ".fallow"],
+  "include": [".astro/types.d.ts", "**/*"]
 }

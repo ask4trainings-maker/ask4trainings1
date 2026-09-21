@@ -22,21 +22,21 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <meta name="description" content={description} />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.com').href} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.pages.dev').href} />
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="Ask 4 Trainings" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.com').href} />
-    <meta property="og:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.pages.dev').href} />
+    <meta property="og:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.pages.dev').href} />
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
+    <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.pages.dev').href} />
 
     <slot name="head" />
     <style is:global>

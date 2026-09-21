@@ -44,7 +44,7 @@ faqs:
 seo:
   metaTitle: "Oracle Fusion HCM Online Course for Career Growth | #1"
   metaDescription: "Oracle Fusion HCM Online Course with real-time projects, expert guidance, certification support, and job-oriented skills ."
-legacyUrl: "https://ask4trainings.com/oracle-fusion-hcm-online-course/"
+legacyUrl: "https://ask4trainings.pages.dev/oracle-fusion-hcm-online-course/"
 legacyImpressions: 2128
 ---
 

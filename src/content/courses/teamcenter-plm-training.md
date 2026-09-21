@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master product lifecycle skills with Teamcenter PLM Training. Learn
     real-time PLM concepts, workflows, and industry-based project practices.
-legacyUrl: 'https://ask4trainings.com/teamcenter-plm-training/'
+legacyUrl: 'https://ask4trainings.pages.dev/teamcenter-plm-training/'
 legacyImpressions: 252
 menuTitle: Teamcenter
 ---

@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Master Kinaxis online Training Rapid Response with expert-led, hands-on
     project and certification support to boost your career.
-legacyUrl: 'https://ask4trainings.com/kinaxis-online-training-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/kinaxis-online-training-in-hyderabad/'
 legacyImpressions: 192
 menuTitle: Kinaxis
 ---

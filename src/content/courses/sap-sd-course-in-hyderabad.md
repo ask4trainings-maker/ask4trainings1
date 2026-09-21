@@ -60,7 +60,7 @@ seo:
   metaDescription: >-
     Join SAP SD Course in Hyderabad for hands-on learning, certification, expert
     trainers, and placement support to build a successful career.
-legacyUrl: 'https://ask4trainings.com/sap-sd-course-in-hyderabad/'
+legacyUrl: 'https://ask4trainings.pages.dev/sap-sd-course-in-hyderabad/'
 legacyImpressions: 3
 menuTitle: SAP SD
 ---
