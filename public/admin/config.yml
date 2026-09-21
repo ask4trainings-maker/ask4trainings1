@@ -41,48 +41,83 @@ collections:
     fields:
       - { label: "Course Title", name: "title", widget: "string" }
       - { label: "Slug", name: "slug", widget: "string", hint: "Lower case, no spaces, hyphens only" }
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options: ["guidewire", "siemens", "new-courses", "cloud-computing", "oracle", "devops", "development", "ms-d365", "sap", "trending-courses", "other-tools"]
-      - { label: "Value Proposition", name: "valueProp", widget: "text" }
+      - { label: "Category", name: "category", widget: "select", options: ["guidewire", "siemens", "new-courses", "cloud-computing", "oracle", "devops", "development", "ms-d365", "sap", "trending-courses", "other-tools"] }
+      - { label: "Menu Short Title", name: "menuTitle", widget: "string", required: false }
+      - { label: "Value Proposition", name: "valueProp", widget: "text", required: false }
       
-      - label: "Highlights"
-        name: "highlights"
-        widget: "list"
-        fields:
-          - { label: "Icon SVG/Name", name: "icon", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          
-      - label: "Batch Info"
-        name: "batchInfo"
-        widget: "object"
-        fields:
-          - label: "Format"
-            name: "format"
-            widget: "select"
-            options: ["Online", "Classroom", "Hybrid"]
-          - { label: "Duration", name: "duration", widget: "string" }
-          - { label: "Start Date", name: "startDate", widget: "string", required: false }
-          - { label: "Timings", name: "timings", widget: "string", required: false }
-          
-      - label: "Syllabus Modules"
+      # 1. Hero Meta
+      - { label: "Course Duration", name: "duration", widget: "string", default: "45-60 Hrs" }
+      - { label: "Training Mode", name: "mode", widget: "string", default: "Online Live Interactive" }
+      - { label: "Ratings & Reviews", name: "rating", widget: "string", default: "4.9/5 (1,200+ Reviews)" }
+      - { label: "YouTube Video URL", name: "videoUrl", widget: "string", required: false }
+      - { label: "Hero Preview Image", name: "heroImage", widget: "image", required: false }
+
+      # 2. Overview & Brochure
+      - { label: "Course Overview", name: "overview", widget: "text", default: "" }
+      - { label: "Brochure Google Drive Link", name: "brochureUrl", widget: "string", default: "[https://drive.google.com/](https://drive.google.com/)" }
+
+      # 3. Syllabus Modules
+      - label: "Course Syllabus"
         name: "syllabus"
         widget: "list"
         fields:
-          - { label: "Module Title", name: "module", widget: "string" }
-          - label: "Topics"
-            name: "topics"
-            widget: "list"
-            field: { label: "Topic", name: "topic", widget: "string" }
-            
-      - label: "Prerequisites"
-        name: "prerequisites"
+          - { label: "Module Title", name: "moduleTitle", widget: "string", required: false }
+          - { label: "Legacy Module Title", name: "module", widget: "string", required: false }
+          - { label: "Topics", name: "topics", widget: "list", field: { label: "Topic", name: "topic", widget: "string" } }
+
+      # 4. About Course
+      - { label: "About The Course", name: "aboutCourse", widget: "markdown", default: "", required: false }
+
+      # 5. Objectives
+      - { label: "Course Objectives", name: "objectives", widget: "list", field: { label: "Objective", name: "objective", widget: "string" }, required: false }
+
+      # 6. Benefits (3 Containers)
+      - label: "Course Benefits"
+        name: "benefits"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Basic Knowledge Acquired", name: "basicKnowledge", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
+          - { label: "Technical Skills Gained", name: "techSkills", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
+          - { label: "Career & Industry Opportunities", name: "careerInterests", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
+
+      # 7. Why Choose
+      - label: "Why Choose Ask4Trainings"
+        name: "whyChoose"
         widget: "list"
         required: false
-        field: { label: "Prerequisite", name: "prereq", widget: "string" }
-        
-      - label: "FAQs"
+        fields:
+          - { label: "Feature Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "string" }
+
+      # 8. Eligibility
+      - { label: "Eligibility Criteria", name: "eligibility", widget: "list", field: { label: "Criteria", name: "criteria", widget: "string" }, required: false }
+
+      # 9. Certifications
+      - label: "Certification Details"
+        name: "certifications"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Industry-Recognized Certification" }
+          - { label: "Description", name: "description", widget: "text", default: "Earn verified credentials upon capstone project evaluation and practical lab assessments." }
+          - { label: "Recognized Badges / Exams", name: "badges", widget: "list", field: { label: "Badge", name: "badge", widget: "string" }, required: false }
+
+      # 10. Job Roles
+      - { label: "Target Job Roles", name: "jobRoles", widget: "list", field: { label: "Role Title", name: "role", widget: "string" }, required: false }
+
+      # 11. Trainer Profile Standards
+      - label: "Trainer Excellence Standards"
+        name: "trainerProfile"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Heading", name: "heading", widget: "string", default: "Learn from Practicing Enterprise Architects" }
+          - { label: "Description", name: "description", widget: "text", default: "Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience." }
+          - { label: "Key Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" }, required: false }
+
+      # 12. FAQs
+      - label: "Frequently Asked Questions"
         name: "faqs"
         widget: "list"
         required: false
@@ -90,18 +125,42 @@ collections:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
           
+      # Legacy fields (hidden or optional in editor but kept for schema)
       - { label: "Related Guide Slug", name: "relatedGuideSlug", widget: "string", required: false }
-      
       - label: "SEO Metadata"
         name: "seo"
         widget: "object"
+        required: false
         fields:
-          - { label: "Meta Title", name: "metaTitle", widget: "string" }
-          - { label: "Meta Description", name: "metaDescription", widget: "text" }
-          
-      # Legacy fields (hidden or optional in editor but kept for schema)
+          - { label: "Meta Title", name: "metaTitle", widget: "string", required: false }
+          - { label: "Meta Description", name: "metaDescription", widget: "text", required: false }
       - { label: "Legacy URL", name: "legacyUrl", widget: "string", required: false }
       - { label: "Legacy Impressions", name: "legacyImpressions", widget: "number", required: false }
+      - label: "Legacy Highlights"
+        name: "highlights"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Icon SVG/Name", name: "icon", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
+      - label: "Legacy Batch Info"
+        name: "batchInfo"
+        widget: "object"
+        required: false
+        fields:
+          - label: "Format"
+            name: "format"
+            widget: "select"
+            options: ["Online", "Classroom", "Hybrid"]
+            required: false
+          - { label: "Duration", name: "duration", widget: "string", required: false }
+          - { label: "Start Date", name: "startDate", widget: "string", required: false }
+          - { label: "Timings", name: "timings", widget: "string", required: false }
+      - label: "Prerequisites"
+        name: "prerequisites"
+        widget: "list"
+        required: false
+        field: { label: "Prerequisite", name: "prereq", widget: "string" }
 
   # 2. CATEGORIES HUB
   - name: "categories_collection"

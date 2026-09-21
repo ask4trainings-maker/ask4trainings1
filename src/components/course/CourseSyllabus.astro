@@ -1,49 +1,66 @@
 ---
 export interface Props {
-  syllabus: { module: string; topics: string[] }[];
+  syllabus: { moduleTitle?: string; module?: string; topics: string[] }[];
+  brochureUrl?: string;
 }
 
-const { syllabus = [] } = Astro.props;
+const { syllabus = [], brochureUrl } = Astro.props;
+
+if (!syllabus || syllabus.length === 0) {
+  return null;
+}
 ---
-<div class="mb-12">
-  <h2 class="text-2xl font-heading font-bold text-slate-900 mb-6">Course Syllabus</h2>
-  
-  <div class="space-y-3">
-    {syllabus.map((mod, i) => (
-      <details class="syllabus-item group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-colors shadow-sm">
-        <summary class="flex items-center justify-between px-5 py-4 cursor-pointer list-none select-none font-semibold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
-          <span class="flex items-center gap-4">
-            <span class="flex-shrink-0 w-8 h-8 bg-emerald-600/20 border border-emerald-600/30 text-emerald-600 text-sm font-bold rounded-full flex items-center justify-center">
-              {i + 1}
+<section class="py-16 bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div>
+        <h2 class="text-3xl font-heading font-bold text-slate-900 mb-2">Course Curriculum</h2>
+        <p class="text-slate-600">Comprehensive syllabus covering fundamental to advanced topics.</p>
+      </div>
+      {brochureUrl && (
+        <a href={brochureUrl} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-900 hover:bg-emerald-600 text-white font-medium px-5 py-2.5 rounded-lg transition-colors shadow-sm whitespace-nowrap">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Download Detailed Curriculum (PDF)
+        </a>
+      )}
+    </div>
+    
+    <div class="space-y-3">
+      {syllabus.map((mod, i) => (
+        <details class="syllabus-item group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-colors shadow-sm">
+          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none select-none font-semibold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
+            <span class="flex items-center gap-5">
+              <span class="flex-shrink-0 w-10 h-10 bg-emerald-50 text-emerald-700 text-sm font-bold rounded-full flex items-center justify-center border border-emerald-100">
+                {i + 1}
+              </span>
+              <span class="text-lg leading-tight">{mod.moduleTitle || mod.module}</span>
             </span>
-            <span class="leading-tight">{mod.module}</span>
-          </span>
-          <span class="flex items-center gap-3">
-            <span class="hidden sm:inline-block text-xs font-medium text-slate-500 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-md">
-              {mod.topics.length} topics
-            </span>
-            <svg class="w-5 h-5 text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </span>
-        </summary>
-        <ul class="px-5 pb-5 pt-3 space-y-3 border-t border-slate-100 bg-white">
-          {mod.topics.map(topic => (
-            <li class="flex items-start gap-3 text-slate-600 text-sm sm:text-base">
-              <svg class="w-4 h-4 mt-0.5 text-emerald-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+            <span class="flex items-center gap-4">
+              <span class="hidden sm:inline-block text-xs font-medium text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1 rounded-md">
+                {mod.topics.length} topics
+              </span>
+              <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
               </svg>
-              <span class="leading-relaxed">{topic}</span>
-            </li>
-          ))}
-        </ul>
-      </details>
-    ))}
+            </span>
+          </summary>
+          <ul class="px-6 pb-6 pt-2 space-y-3 border-t border-slate-100 bg-slate-50/50">
+            {mod.topics.map(topic => (
+              <li class="flex items-start gap-3 text-slate-600 text-sm sm:text-base">
+                <svg class="w-5 h-5 mt-0.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                </svg>
+                <span class="leading-relaxed">{topic}</span>
+              </li>
+            ))}
+          </ul>
+        </details>
+      ))}
+    </div>
   </div>
-</div>
+</section>
 
 <style>
-  /* Custom summary marker hide — cross-browser */
   details > summary::-webkit-details-marker { display: none; }
   details > summary::marker { display: none; }
 </style>

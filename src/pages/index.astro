@@ -159,8 +159,8 @@ function cleanTitle(title: string): string {
             <CourseCard 
               title={cleanTitle(course.data.title)}
               category={course.data.category}
-              duration={course.data.batchInfo.duration}
-              format={course.data.batchInfo.format}
+              duration={course.data.duration}
+              mode={course.data.mode}
               slug={course.data.slug}
             />
           </div>

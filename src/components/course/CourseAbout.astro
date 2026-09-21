@@ -1,0 +1,21 @@
+---
+export interface Props {
+  aboutCourse?: string;
+}
+
+const { aboutCourse } = Astro.props;
+
+if (!aboutCourse) {
+  return null;
+}
+---
+<section class="py-16 bg-slate-50 border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-4xl">
+      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-6">About the Course</h2>
+      <div class="prose prose-slate prose-lg max-w-none text-slate-600 leading-relaxed">
+        <p>{aboutCourse}</p>
+      </div>
+    </div>
+  </div>
+</section>

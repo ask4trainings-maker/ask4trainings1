@@ -1,103 +1,112 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import CourseHero from '../components/course/CourseHero.astro';
-import CourseHighlights from '../components/course/CourseHighlights.astro';
-import CourseSyllabus from '../components/course/CourseSyllabus.astro';
-import CourseProjects from '../components/course/CourseProjects.astro';
-import CourseFAQ from '../components/course/CourseFAQ.astro';
 import CourseSidebar from '../components/course/CourseSidebar.astro';
+import CourseOverview from '../components/course/CourseOverview.astro';
+import CourseSyllabus from '../components/course/CourseSyllabus.astro';
+import CourseAbout from '../components/course/CourseAbout.astro';
+import CourseObjectives from '../components/course/CourseObjectives.astro';
+import CourseBenefits from '../components/course/CourseBenefits.astro';
+import CourseWhyChoose from '../components/course/CourseWhyChoose.astro';
+import CourseEligibility from '../components/course/CourseEligibility.astro';
+import CourseCertifications from '../components/course/CourseCertifications.astro';
+import CourseJobRoles from '../components/course/CourseJobRoles.astro';
+import CourseTrainerProfile from '../components/course/CourseTrainerProfile.astro';
+import CourseFAQ from '../components/course/CourseFAQ.astro';
+import RelatedCourses from '../components/course/RelatedCourses.astro';
 
 export interface Props {
-  title: string;
-  slug: string;
-  category: string;
-  duration: string;
-  format: string;
-  valueProp: string;
-  highlights?: { icon: string; text: string }[];
-  syllabus: { module: string; topics: string[] }[];
-  faqs?: { question: string; answer: string }[];
-  seo?: { metaTitle?: string; metaDescription?: string };
+  course: any;
 }
 
-const { title, slug, category, duration, format, valueProp, highlights = [], syllabus, faqs = [], seo } = Astro.props;
+const { course } = Astro.props;
+const data = course.data;
+
 const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.pages.dev/';
-const metaDesc = seo?.metaDescription || valueProp;
+const metaDesc = data.seo?.metaDescription || data.valueProp || data.overview;
 
 // SEO Metadata (JSON-LD)
 const courseSchema = {
   '@type': 'Course',
-  name: title, 
-  description: valueProp,
+  name: data.title, 
+  description: metaDesc,
   provider: { '@type': 'EducationalOrganization', name: 'Ask 4 Trainings', sameAs: siteUrl },
   hasCourseInstance: {
     '@type': 'CourseInstance',
-    courseMode: format === 'Online' ? 'online' : format === 'Classroom' ? 'onsite' : 'blended'
+    courseMode: data.mode?.toLowerCase().includes('online') ? 'online' : 'blended'
   }
 };
 const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-    { '@type': 'ListItem', position: 2, name: category.replace(/-/g, ' '), item: `${siteUrl}courses/${category}` },
-    { '@type': 'ListItem', position: 3, name: title },
+    { '@type': 'ListItem', position: 2, name: data.category?.replace(/-/g, ' ') || 'Courses', item: `${siteUrl}courses/${data.category}` },
+    { '@type': 'ListItem', position: 3, name: data.title },
   ],
 };
-const faqSchema = faqs.length > 0 ? {
-  '@type': 'FAQPage',
-  mainEntity: faqs.map(faq => ({ 
-    '@type': 'Question', 
-    name: faq.question, 
-    acceptedAnswer: { '@type': 'Answer', text: faq.answer } 
-  }))
-} : null;
 
 const schemaGraph = {
   '@context': 'https://schema.org',
-  '@graph': [courseSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]
+  '@graph': [courseSchema, breadcrumbSchema]
 };
 ---
 
-<BaseLayout title={seo?.metaTitle || `${title} | Ask 4 Trainings`} description={metaDesc} courseName={title}>
+<BaseLayout title={data.seo?.metaTitle || `${data.title} | Ask 4 Trainings`} description={metaDesc} courseName={data.title}>
   <Fragment slot="head">
-    {slug && <link rel="canonical" href={`${siteUrl}${slug}/`} />}
+    {data.slug && <link rel="canonical" href={`${siteUrl}${data.slug}/`} />}
     <script is:inline type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
   </Fragment>
 
-  <!-- Modular Hero Component -->
+  <!-- Section 1: Hero / Main Section -->
   <CourseHero 
-    title={title}
-    category={category}
-    duration={duration}
-    format={format}
-    valueProp={valueProp}
+    title={data.title}
+    category={data.category}
+    duration={data.duration}
+    mode={data.mode}
+    rating={data.rating}
+    valueProp={data.valueProp}
+    videoUrl={data.videoUrl}
+    heroImage={data.heroImage}
+    brochureUrl={data.brochureUrl}
   />
 
-  <!-- Main Content: Two-Column Scaler x Codecrafters Layout -->
-  <div class="bg-slate-50">
-    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full py-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12">
+  <!-- Section 2: Course Overview & Registration Form (2-Column Grid) -->
+  <div class="bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 w-full py-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16">
         
-        <!-- Left Column: Syllabus & Curriculum Depth (8 Cols) -->
+        <!-- Left Column: Overview -->
         <div class="lg:col-span-8">
-          <slot />
-          
-          <CourseHighlights highlights={highlights} />
-          <CourseSyllabus syllabus={syllabus} />
-          <CourseProjects courseName={title} />
-          <CourseFAQ faqs={faqs} />
+          <CourseOverview overview={data.overview}>
+            <slot />
+          </CourseOverview>
         </div>
 
-        <!-- Right Column: Sticky Conversion Workbench (4 Cols) -->
-        <div class="lg:col-span-4 mt-8 lg:mt-0">
+        <!-- Right Column: Sticky Conversion Workbench -->
+        <div class="lg:col-span-4 mt-8 lg:mt-0 relative">
           <CourseSidebar 
-            courseName={title}
-            duration={duration}
-            format={format}
+            courseName={data.title}
+            duration={data.duration}
+            format={data.mode}
           />
         </div>
 
       </div>
     </div>
   </div>
+
+  <!-- Sections 3-12: Full-width semantic sections -->
+  <CourseSyllabus syllabus={data.syllabus} brochureUrl={data.brochureUrl} />
+  <CourseAbout aboutCourse={data.aboutCourse} />
+  <CourseObjectives objectives={data.objectives} />
+  <CourseBenefits benefits={data.benefits} />
+  <CourseWhyChoose whyChoose={data.whyChoose} />
+  <CourseEligibility eligibility={data.eligibility} />
+  <CourseCertifications certifications={data.certifications} />
+  <CourseJobRoles jobRoles={data.jobRoles} />
+  <CourseTrainerProfile trainerProfile={data.trainerProfile} />
+  <CourseFAQ faqs={data.faqs} />
+  
+  <!-- Section 13: Related Courses -->
+  <RelatedCourses currentCourseId={course.id} category={data.category} />
 </BaseLayout>

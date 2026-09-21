@@ -13,18 +13,7 @@ export async function getStaticPaths() {
 const { course } = Astro.props;
 const { Content } = await render(course);
 ---
-<CourseLayout
-  title={course.data.title}
-  slug={course.data.slug}
-  category={course.data.category}
-  duration={course.data.batchInfo.duration}
-  format={course.data.batchInfo.format}
-  valueProp={course.data.valueProp}
-  highlights={course.data.highlights}
-  syllabus={course.data.syllabus}
-  faqs={course.data.faqs}
-  seo={course.data.seo}
->
+<CourseLayout course={course}>
   <Content />
 </CourseLayout>
 

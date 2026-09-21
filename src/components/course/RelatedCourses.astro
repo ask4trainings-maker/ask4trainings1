@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+
+export interface Props {
+  currentCourseId: string;
+  category: string;
+}
+
+const { currentCourseId, category } = Astro.props;
+
+// Fetch related courses in the same category
+const allCourses = await getCollection('courses');
+const relatedCourses = allCourses
+  .filter(course => course.data.category === category && course.id !== currentCourseId)
+  .slice(0, 3); // Max 3 related courses
+
+if (relatedCourses.length === 0) {
+  return null;
+}
+---
+<section class="py-16 bg-slate-50 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10 flex flex-col md:flex-row md:items-end justify-between gap-4">
+      <div>
+        <h2 class="text-3xl font-heading font-bold text-slate-900 mb-2">Related Courses</h2>
+        <p class="text-slate-600">Explore other programs in this learning path.</p>
+      </div>
+      <a href={`/courses/?category=${category}`} class="text-emerald-600 font-semibold hover:text-emerald-700 flex items-center gap-1 transition-colors">
+        View All 
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {relatedCourses.map(course => (
+        <a href={`/${course.id.replace(/\.mdx?$/, '')}/`} class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl hover:border-emerald-200 transition-all flex flex-col h-full">
+          <div class="p-6 flex-grow">
+            <span class="inline-block px-2.5 py-1 bg-slate-100 text-slate-600 text-xs font-semibold rounded-md mb-4 uppercase tracking-wide">
+              {course.data.category.replace(/-/g, ' ')}
+            </span>
+            <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
+              {course.data.title}
+            </h3>
+            <p class="text-slate-500 text-sm line-clamp-3">
+              {course.data.valueProp || course.data.overview || 'Explore our comprehensive curriculum and industry-standard training methodology.'}
+            </p>
+          </div>
+          <div class="px-6 py-4 border-t border-slate-100 bg-slate-50/50 flex items-center justify-between mt-auto">
+             <span class="text-sm font-medium text-slate-600 flex items-center gap-1.5">
+               <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+               {course.data.duration || course.data.batchInfo?.duration || 'Flexible'}
+             </span>
+             <span class="text-emerald-600 font-medium text-sm group-hover:underline">View Course &rarr;</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

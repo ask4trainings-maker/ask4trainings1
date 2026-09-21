@@ -1,0 +1,31 @@
+---
+export interface Props {
+  whyChoose?: { title: string; description: string }[];
+}
+
+const { whyChoose = [] } = Astro.props;
+
+if (!whyChoose || whyChoose.length === 0) {
+  return null;
+}
+---
+<section class="py-16 bg-white border-b border-slate-100">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="mb-10 text-center max-w-2xl mx-auto">
+      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Why Choose Ask4Trainings</h2>
+      <p class="text-slate-600">Our unique advantages that ensure your success.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {whyChoose.map((item, index) => (
+        <div class="group p-6 rounded-2xl bg-white border border-slate-200 hover:border-emerald-500/50 hover:shadow-lg transition-all text-center">
+          <div class="w-14 h-14 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-5 group-hover:-translate-y-1 transition-transform">
+            <span class="text-xl font-bold">{index + 1}</span>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">{item.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

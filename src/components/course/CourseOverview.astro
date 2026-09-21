@@ -1,0 +1,15 @@
+---
+export interface Props {
+  overview?: string;
+}
+
+const { overview } = Astro.props;
+
+if (!overview && !Astro.slots.has('default')) {
+  return null;
+}
+---
+<div class="prose prose-slate prose-emerald max-w-none text-slate-600">
+  {overview && <p class="text-lg leading-relaxed mb-6">{overview}</p>}
+  <slot />
+</div>
