@@ -27,40 +27,43 @@ if (!syllabus || syllabus.length === 0) {
     
     <div class="space-y-3">
       {syllabus.map((mod, i) => (
-        <details class="syllabus-item group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-colors shadow-sm">
-          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none select-none font-semibold text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
-            <span class="flex items-center gap-5">
-              <span class="flex-shrink-0 w-10 h-10 bg-emerald-50 text-emerald-700 text-sm font-bold rounded-full flex items-center justify-center border border-emerald-100">
+        <div class="module-accordion group rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-300 hover:border-emerald-500 hover:shadow-md">
+          <!-- Module Header -->
+          <div class="flex items-center justify-between cursor-pointer select-none" onclick="this.parentElement.classList.toggle('is-open')">
+            <div class="flex items-center gap-4">
+              <span class="w-9 h-9 shrink-0 rounded-xl bg-emerald-50 text-emerald-700 font-bold flex items-center justify-center text-sm group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
                 {i + 1}
               </span>
-              <span class="text-lg leading-tight">{mod.moduleTitle || mod.module}</span>
-            </span>
-            <span class="flex items-center gap-4">
-              <span class="hidden sm:inline-block text-xs font-medium text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1 rounded-md">
-                {mod.topics.length} topics
-              </span>
-              <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              <h3 class="font-semibold text-slate-900 text-base md:text-lg group-hover:text-emerald-700 transition-colors">
+                {mod.moduleTitle || mod.module}
+              </h3>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="hidden sm:inline-block text-xs text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">{mod.topics.length} topics</span>
+              <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-hover:rotate-180 group-[.is-open]:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
-            </span>
-          </summary>
-          <ul class="px-6 pb-6 pt-2 space-y-3 border-t border-slate-100 bg-slate-50/50">
-            {mod.topics.map(topic => (
-              <li class="flex items-start gap-3 text-slate-600 text-sm sm:text-base">
-                <svg class="w-5 h-5 mt-0.5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                </svg>
-                <span class="leading-relaxed">{topic}</span>
-              </li>
-            ))}
-          </ul>
-        </details>
+            </div>
+          </div>
+
+          <!-- Smooth Animated Drawer -->
+          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr] group-[.is-open]:grid-rows-[1fr]">
+            <div class="overflow-hidden">
+              <ul class="pt-4 mt-3 border-t border-slate-100 space-y-2.5">
+                {mod.topics.map((topic) => (
+                  <li class="flex items-start gap-2.5 text-sm text-slate-600">
+                    <svg class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span>{topic}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   </div>
 </section>
 
-<style>
-  details > summary::-webkit-details-marker { display: none; }
-  details > summary::marker { display: none; }
-</style>

@@ -23,7 +23,7 @@ import homeData from '../data/pages/home.json';
 import { getCollection } from 'astro:content';
 import CourseCard from '../components/CourseCard.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
-import Ecosystem from '../components/Ecosystem.astro';
+import CourseWhyChoose from '../components/course/CourseWhyChoose.astro';
 
 const allCourses = await getCollection('courses');
 // Sort alphabetically by title for consistent ordering
@@ -90,16 +90,6 @@ function cleanTitle(title: string): string {
           </a>
         </div>
 
-        <!-- Metric Counter Strip -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8 pt-8 border-t border-slate-200">
-          {homeData.metrics.map((metric: any) => (
-            <div>
-              <div class="text-slate-900 font-bold text-2xl lg:text-3xl mb-1">{metric.value}</div>
-              <div class="text-slate-500 text-xs font-semibold uppercase tracking-wider">{metric.label}</div>
-            </div>
-          ))}
-        </div>
-
       </div>
 
       <!-- Right: Hero Student Image (5 cols) -->
@@ -139,8 +129,22 @@ function cleanTitle(title: string): string {
     </div>
   </section>
 
+  <!-- Key Metrics / Stats Bar -->
+  <section class="bg-slate-50 border-y border-slate-200/60 py-8">
+    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+        {homeData.metrics.map((metric: any) => (
+          <div>
+            <div class="text-slate-900 font-bold text-2xl lg:text-3xl mb-1">{metric.value}</div>
+            <div class="text-slate-500 text-xs font-semibold uppercase tracking-wider">{metric.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
   <!-- Interactive Category Filter & Course Catalog -->
-  <section id="course-catalog" class="py-20 relative">
+  <section id="course-catalog" class="bg-white py-16 relative">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Enterprise Course Catalog</h2>
@@ -179,10 +183,10 @@ function cleanTitle(title: string): string {
     </div>
   </section>
 
-  <Ecosystem />
+  <CourseWhyChoose whyChoose={homeData.bento} />
 
-  <!-- Career Transition Roadmap -->
-  <section class="py-24 relative">
+  <!-- Career Transition Roadmap / Testimonials -->
+  <section class="bg-slate-50/70 py-16 border-y border-slate-200/60 relative">
     <!-- Ambient Glow -->
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-accent/5 via-transparent to-transparent opacity-50 pointer-events-none"></div>
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
@@ -238,7 +242,7 @@ function cleanTitle(title: string): string {
   </section>
 
   <!-- Conversion Bottom Section -->
-  <section id="enquiry-section" class="py-24 relative overflow-hidden">
+  <section id="enquiry-section" class="bg-white py-16 border-y border-slate-200/60 relative overflow-hidden">
     <!-- Glows -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-600/10 rounded-full blur-[150px] pointer-events-none"></div>
 
@@ -269,5 +273,65 @@ function cleanTitle(title: string): string {
     </div>
   </section>
 
-</BaseLayout>
+  <!-- Latest Insights & Career Guides -->
+  <section class="bg-white py-16 relative border-t border-slate-200">
+    <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Latest Insights & Career Guides</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">Expert advice, industry trends, and deep dives into enterprise technologies.</p>
+      </div>
 
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {(await getCollection('blog'))
+          .filter((post) => !post.data.draft)
+          .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+          .slice(0, 3)
+          .map((post) => (
+            <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-emerald-200 transition-all duration-300 flex flex-col group relative">
+              {post.data.image && (
+                <div class="aspect-video w-full overflow-hidden bg-slate-100">
+                  <img src={post.data.image} alt={post.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+              )}
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    {post.data.category}
+                  </span>
+                  <time class="text-sm text-slate-500 font-medium" datetime={new Date(post.data.publishDate).toISOString()}>
+                    {new Date(post.data.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                  </time>
+                </div>
+                <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
+                  <a href={`/blog/${post.id.replace(/\.mdx?$/, '')}/`} class="focus:outline-none before:absolute before:inset-0">
+                    {post.data.title}
+                  </a>
+                </h3>
+                <p class="text-slate-600 mb-6 line-clamp-3 text-sm flex-grow">
+                  {post.data.description}
+                </p>
+                <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span class="text-emerald-600 font-semibold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                    Read More <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                  </span>
+                </div>
+              </div>
+            </article>
+          ))}
+      </div>
+
+      <div class="mt-12 text-center">
+        <a 
+          href="/blog/" 
+          class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-semibold text-sm shadow-sm transition-colors duration-200"
+        >
+          <span>View More Articles</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

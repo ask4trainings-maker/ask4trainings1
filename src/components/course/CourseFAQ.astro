@@ -31,17 +31,23 @@ const faqSchema = {
     
     <div class="space-y-4 max-w-4xl mx-auto">
       {faqs.map(faq => (
-        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm">
-          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer list-none select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600">
+        <div class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm">
+          <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600" onclick="this.parentElement.classList.toggle('is-open')">
             <span class="pr-6 text-lg">{faq.question}</span>
-            <svg class="w-5 h-5 text-slate-500 shrink-0 transition-transform duration-300 group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <svg class="w-5 h-5 text-slate-500 shrink-0 transition-transform duration-300 group-hover:rotate-180 group-[.is-open]:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
-          </summary>
-          <div class="px-6 pb-6 pt-2 text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
-            {faq.answer}
           </div>
-        </details>
+          
+          <!-- Smooth Animated Drawer -->
+          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-hover:grid-rows-[1fr] group-[.is-open]:grid-rows-[1fr]">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 pt-2 text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
+                {faq.answer}
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   </div>
@@ -49,8 +55,3 @@ const faqSchema = {
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 </section>
 
-<style>
-  /* Custom summary marker hide — cross-browser */
-  details > summary::-webkit-details-marker { display: none; }
-  details > summary::marker { display: none; }
-</style>

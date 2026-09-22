@@ -63,14 +63,13 @@ function cleanTitle(title: string): string {
   </div>
 
   <!-- Content Section -->
-  <div class="bg-slate-50 relative">
-    <!-- Observer target -->
-    <div id="catalog-grid-top" class="absolute top-0 left-0 w-full h-1 invisible"></div>
+  <section class="bg-slate-50/80 border-t border-slate-200 py-12 min-h-screen relative">
     
-    <!-- Sticky Ribbon -->
-    <div id="sticky-course-ribbon" class="sticky top-0 z-40 w-full bg-slate-50/95 backdrop-blur-md border-b border-transparent transition-all duration-300">
-      <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto">
-        <div class="flex items-center gap-2 overflow-x-auto scrollbar-none py-3 px-4 sm:justify-center">
+    <!-- Ribbon Nav Height Preserver -->
+    <div id="catalog-ribbon-anchor" class="relative w-full">
+      <div id="ribbon-placeholder" class="hidden"></div>
+      <div id="catalog-ribbon-wrapper" class="w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-40 transition-all duration-200">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 overflow-x-auto scrollbar-none no-scrollbar touch-pan-x sm:justify-center" style="-webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;">
           <button data-category="all" class="category-btn bg-slate-900 text-white font-semibold text-xs md:text-sm px-4 py-2 rounded-xl shadow-sm whitespace-nowrap transition-colors">All Courses</button>
           {categories.map(cat => (
             <button data-category={cat.key} class="category-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs md:text-sm px-4 py-2 rounded-xl whitespace-nowrap transition-colors">{cat.label}</button>
@@ -103,7 +102,7 @@ function cleanTitle(title: string): string {
         <button id="clear-filters-btn" class="text-emerald-600 hover:text-emerald-700 font-medium hover:underline">Clear all filters</button>
       </div>
     </div>
-  </div>
+  </section>
 
   <SearchModal />
 
@@ -189,11 +188,23 @@ function cleanTitle(title: string): string {
     });
 
     // Hydration
-    document.addEventListener('DOMContentLoaded', () => {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const catParam = urlParams.get('category');
+        
+        const isValidCat = Array.from(buttons).some(b => b.getAttribute('data-category') === catParam);
+        if (catParam && isValidCat) {
+          activeCategory = catParam;
+        }
+        
+        updateButtonStyles();
+        applyFilters();
+      });
+    } else {
       const urlParams = new URLSearchParams(window.location.search);
       const catParam = urlParams.get('category');
       
-      // Check if param matches a valid button, else default 'all'
       const isValidCat = Array.from(buttons).some(b => b.getAttribute('data-category') === catParam);
       if (catParam && isValidCat) {
         activeCategory = catParam;
@@ -201,35 +212,62 @@ function cleanTitle(title: string): string {
       
       updateButtonStyles();
       applyFilters();
-    });
+    }
+  </script>
 
-    // Intersection Observer for Sticky Header sync
-    const header = document.getElementById('main-header');
-    const ribbon = document.getElementById('sticky-course-ribbon');
-    const observerTarget = document.getElementById('catalog-grid-top');
+  <script is:inline>
+    function initStickyCatalogRibbon() {
+      const mainHeader = document.getElementById('main-site-header') || document.querySelector('header');
+      const ribbonWrapper = document.getElementById('catalog-ribbon-wrapper');
+      const ribbonAnchor = document.getElementById('catalog-ribbon-anchor');
+      const ribbonPlaceholder = document.getElementById('ribbon-placeholder');
 
-    if (header && observerTarget) {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (!entry.isIntersecting && entry.boundingClientRect.top <= 0) {
-            // Scrolled past
-            header.classList.add('-translate-y-full');
-            if (ribbon) {
-              ribbon.classList.remove('bg-slate-50/95', 'border-transparent');
-              ribbon.classList.add('bg-white/95', 'border-slate-200', 'shadow-sm');
-            }
-          } else {
-            // Scrolled back up
-            header.classList.remove('-translate-y-full');
-            if (ribbon) {
-              ribbon.classList.remove('bg-white/95', 'border-slate-200', 'shadow-sm');
-              ribbon.classList.add('bg-slate-50/95', 'border-transparent');
-            }
+      if (!ribbonWrapper || !ribbonAnchor || !mainHeader) return;
+
+      let isPinned = false;
+
+      function handleScroll() {
+        const anchorRect = ribbonAnchor.getBoundingClientRect();
+        // Pin when the ribbon anchor scrolls past the top of the viewport
+        const shouldPin = anchorRect.top <= 0;
+
+        if (shouldPin && !isPinned) {
+          isPinned = true;
+          // 1. Slide main header out of view
+          mainHeader.classList.add('-translate-y-full');
+          
+          // 2. Set height placeholder to prevent content jump
+          if (ribbonPlaceholder) {
+            ribbonPlaceholder.style.height = `${ribbonWrapper.offsetHeight}px`;
+            ribbonPlaceholder.classList.remove('hidden');
           }
-        },
-        { threshold: 1.0, rootMargin: "-80px 0px 0px 0px" } 
-      );
-      observer.observe(observerTarget);
+
+          // 3. Pin ribbon to viewport top
+          ribbonWrapper.classList.add('fixed', 'top-0', 'left-0', 'shadow-md');
+        } else if (!shouldPin && isPinned) {
+          isPinned = false;
+          // 1. Restore main header
+          mainHeader.classList.remove('-translate-y-full');
+
+          // 2. Unpin ribbon
+          ribbonWrapper.classList.remove('fixed', 'top-0', 'left-0', 'shadow-md');
+
+          // 3. Remove height placeholder
+          if (ribbonPlaceholder) {
+            ribbonPlaceholder.classList.add('hidden');
+            ribbonPlaceholder.style.height = '0px';
+          }
+        }
+      }
+
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll(); // Initial check on load
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initStickyCatalogRibbon);
+    } else {
+      initStickyCatalogRibbon();
     }
   </script>
 </BaseLayout>
