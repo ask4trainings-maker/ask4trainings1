@@ -3,7 +3,7 @@ backend:
   repo: rahulabhishek5/ask4trainings
   branch: main
   base_url: https://ask4trainings.pages.dev
-  auth_endpoint: /oauth/auth
+  auth_endpoint: /api/auth
 
 media_folder: "public/assets/uploads"
 public_folder: "/assets/uploads"
