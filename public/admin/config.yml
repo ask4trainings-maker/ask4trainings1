@@ -21,7 +21,7 @@ collections:
     extension: "md"
     slug: "{{slug}}"
     summary: "{{title}} ({{category}})"
-    sortable_fields: ["title", "category", "date"]
+    sortable_fields: ["title", "category"]
     fields:
       # --- Section 1: Navigation & Metadata ---
       - label: "📍 Live Navigation Breadcrumb"
