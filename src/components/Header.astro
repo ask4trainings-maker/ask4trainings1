@@ -97,7 +97,7 @@ const isContactActive = checkActive('/contact-us');
   </div>
 
   <!-- Main Navigation -->
-  <nav class="bg-white/80 hover:bg-white backdrop-blur-md border-b border-slate-200 transition-colors duration-300 group/nav" aria-label="Main Navigation">
+  <nav id="main-nav" class="bg-white/80 hover:bg-white backdrop-blur-md border-b border-slate-200 transition-colors duration-300 relative" aria-label="Main Navigation">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 h-16 flex justify-between items-center w-full">
       <!-- Logo -->
       <a href="/" class="flex-shrink-0 flex items-center">
@@ -107,94 +107,19 @@ const isContactActive = checkActive('/contact-us');
       <!-- Desktop Nav -->
       <div class="hidden lg:flex flex-1 justify-center">
         <ul class="flex items-center gap-8 font-medium text-sm text-slate-600">
-          <!-- Mega Menu Dropdown -->
-          <li class="group/menu relative">
-            <button class={`mega-menu-trigger transition-colors py-5 flex items-center gap-1.5 focus:outline-none relative ${isCoursesActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`} aria-current={isCoursesActive ? 'page' : undefined}>
+          <!-- Mega Menu Trigger (panel is anchored to nav, not this li) -->
+          <li id="mega-menu-trigger-li">
+            <button
+              id="mega-menu-trigger-btn"
+              class={`transition-colors py-5 flex items-center gap-1.5 focus:outline-none relative ${isCoursesActive ? 'text-emerald-600' : 'text-slate-600 hover:text-slate-900'}`}
+              aria-expanded="false"
+              aria-controls="mega-menu-panel"
+              aria-current={isCoursesActive ? 'page' : undefined}
+            >
               All Courses
-              <svg class="w-4 h-4 transition-transform group-hover/menu:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-              <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isCoursesActive ? 'w-full' : 'w-0 group-hover/menu:w-full'}`}></span>
+              <svg id="mega-menu-chevron" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              <span class={`absolute bottom-0 left-0 h-0.5 bg-emerald-600 rounded-t-full transition-all duration-300 ${isCoursesActive ? 'w-full' : 'w-0'}`} id="mega-menu-underline"></span>
             </button>
-            
-            <!-- Hover Bridge to prevent menu closing -->
-            <div class="absolute top-full left-0 w-full h-4 opacity-0 pointer-events-auto z-40"></div>
-            
-            <!-- Mega Menu Panel -->
-            <div class="mega-menu-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-3 bg-white border border-slate-200 rounded-2xl shadow-2xl p-4 overflow-hidden w-[850px] xl:w-[960px] max-w-[min(92vw,72rem)] max-h-[calc(100vh-5rem)] opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200 z-50">
-              <div class="grid grid-cols-12 gap-4 min-h-[380px]">
-                
-                <!-- Left Category Rail (4 Cols) -->
-                <div class="col-span-4 border-r border-slate-200 pr-2 space-y-1 overflow-y-auto max-h-[420px] custom-scrollbar">
-                  {categories.map((cat, idx) => (
-                    <button
-                      type="button"
-                      class={`category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between ${idx === 0 ? 'bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600' : 'text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent'}`}
-                      data-category-target={cat.id}
-                      data-is-active={idx === 0 ? "true" : "false"}
-                    >
-                      <span>{cat.name}</span>
-                      <span class="text-[11px] text-slate-500 font-medium tabular-nums">({(coursesByCategory[cat.id] || []).length})</span>
-                    </button>
-                  ))}
-                </div>
-
-                <!-- Right Sub-Courses Detail Panel (8 Cols) -->
-                <div class="col-span-8 pl-3 flex flex-col justify-between">
-                  {categories.map((cat, idx) => (
-                    <div
-                      class="subcourse-panel flex-col justify-between h-full"
-                      data-category-panel={cat.id}
-                      style={idx === 0 ? "display: flex;" : "display: none;"}
-                    >
-                      <div>
-                        <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-200">
-                          <div>
-                            <h4 class="text-slate-900 font-semibold text-sm">{cat.name} Courses</h4>
-                            <p class="text-xs text-slate-500 line-clamp-1">{cat.description}</p>
-                          </div>
-                          <a
-                            href={`/courses/?category=${cat.id}`}
-                            class="text-xs text-emerald-600 hover:text-amber-400 font-medium flex items-center gap-1 shrink-0"
-                          >
-                            View Category Hub ↗
-                          </a>
-                        </div>
-
-                        <!-- Sub-course Grid -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 max-h-[440px] overflow-y-auto overscroll-contain scrollbar-thin pr-2 custom-scrollbar">
-                          {(coursesByCategory[cat.id] || []).map((course: any) => (
-                            <a
-                              href={getCourseUrl(course)}
-                              class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1"
-                            >
-                              <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors">
-                                {cleanMegaTitle(course.data.menuTitle || course.data.title || course.data.h1 || course.id)}
-                              </span>
-                              <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
-                                <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
-                                <span>•</span>
-                                <span class="text-emerald-600">{course.data.batchInfo?.format || 'Live Online'}</span>
-                              </span>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-
-                      <!-- Bottom Panel Strip -->
-                      <div class="pt-3 mt-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
-                        <span class="flex items-center gap-1.5">
-                          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                          24/7 Sandbox Lab Access Included
-                        </span>
-                        <a href="/courses/" class="text-slate-600 hover:text-emerald-600 font-medium">
-                          Explore All {totalCourseCount} Courses →
-                        </a>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-              </div>
-            </div>
           </li>
           
           <li>
@@ -248,6 +173,98 @@ const isContactActive = checkActive('/contact-us');
       <svg id="hamburger-icon" class="w-6 h-6 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
       <svg id="close-icon" class="w-6 h-6 hidden transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
     </button>
+  </div>
+
+  <!-- ============================================================
+       MEGA MENU PANEL — Anchored to <nav>, NOT to <li>
+       Uses inset-x safe coordinates: never clips left or right edge.
+       Flex-column layout: header strip | dual-pane scroll | pinned footer.
+  ============================================================ -->
+  <div
+    id="mega-menu-panel"
+    role="region"
+    aria-label="Course categories"
+    class="hidden lg:block absolute left-4 right-4 top-full mt-1 z-50 pointer-events-none opacity-0 translate-y-1 transition-all duration-200 ease-out"
+    style="max-width: min(calc(100% - 2rem), 72rem); left: max(1rem, calc(50% - 36rem));"
+  >
+    <div class="bg-white border border-slate-200 rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[calc(100vh-5.5rem)] pointer-events-auto">
+
+      <!-- ── DUAL-PANE ROW (fills remaining height) ── -->
+      <div class="flex flex-1 overflow-hidden">
+
+        <!-- Left: Category Sidebar — fixed width, independent scroll -->
+        <div class="flex-shrink-0 w-52 xl:w-60 border-r border-slate-200 overflow-y-auto overscroll-contain py-3 px-2 space-y-0.5 custom-scrollbar">
+          {categories.map((cat, idx) => (
+            <button
+              type="button"
+              class={`category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between ${idx === 0 ? 'bg-emerald-50 text-emerald-700 font-bold border-l-2 border-emerald-600' : 'text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent'}`}
+              data-category-target={cat.id}
+              data-is-active={idx === 0 ? "true" : "false"}
+            >
+              <span class="min-w-0 truncate">{cat.name}</span>
+              <span class="text-[11px] text-slate-500 font-medium tabular-nums flex-shrink-0 ml-1">({(coursesByCategory[cat.id] || []).length})</span>
+            </button>
+          ))}
+        </div>
+
+        <!-- Right: Course Display — flex-col, header + scrolling grid + pinned footer -->
+        <div class="flex-1 min-w-0 flex flex-col overflow-hidden">
+          {categories.map((cat, idx) => (
+            <div
+              class="subcourse-panel flex-col overflow-hidden flex-1"
+              data-category-panel={cat.id}
+              style={idx === 0 ? "display: flex;" : "display: none;"}
+            >
+              <!-- Sub-header row (always visible) -->
+              <div class="flex items-center justify-between px-4 pt-4 pb-3 border-b border-slate-200 flex-shrink-0">
+                <div class="min-w-0">
+                  <h4 class="text-slate-900 font-semibold text-sm truncate">{cat.name} Courses</h4>
+                  <p class="text-xs text-slate-500 line-clamp-1">{cat.description}</p>
+                </div>
+                <a
+                  href={`/courses/?category=${cat.id}`}
+                  class="text-xs text-emerald-600 hover:text-amber-400 font-medium flex items-center gap-1 shrink-0 ml-3"
+                >
+                  View Category Hub ↗
+                </a>
+              </div>
+
+              <!-- Scrollable course grid (isolated scroll — does NOT move sidebar) -->
+              <div class="flex-1 overflow-y-auto overscroll-contain p-4 custom-scrollbar">
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-2">
+                  {(coursesByCategory[cat.id] || []).map((course: any) => (
+                    <a
+                      href={getCourseUrl(course)}
+                      class="group p-2.5 rounded-lg bg-slate-100/50 hover:bg-emerald-50 border border-slate-100 hover:border-emerald-600/40 transition-all flex flex-col gap-1 min-w-0"
+                    >
+                      <span class="text-[13px] font-semibold text-slate-900 group-hover:text-emerald-700 leading-snug line-clamp-2 tracking-normal transition-colors break-words">
+                        {cleanMegaTitle(course.data.menuTitle || course.data.title || course.data.h1 || course.id)}
+                      </span>
+                      <span class="text-[11px] font-medium text-slate-500 flex items-center gap-1.5 tabular-nums">
+                        <span>{course.data.batchInfo?.duration || '45-60 Hrs'}</span>
+                        <span>•</span>
+                        <span class="text-emerald-600">{course.data.batchInfo?.format || 'Live Online'}</span>
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+              <!-- Pinned footer strip (OUTSIDE scroll container — always visible) -->
+              <div class="flex-shrink-0 px-4 py-3 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500 bg-slate-50/60">
+                <span class="flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  24/7 Sandbox Lab Access Included
+                </span>
+                <a href="/courses/" class="text-slate-600 hover:text-emerald-600 font-medium">
+                  Explore All {totalCourseCount} Courses →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -315,7 +332,7 @@ const isContactActive = checkActive('/contact-us');
 </div>
 
 <script>
-// Desktop Mega Menu Logic
+// ── MEGA MENU: Category Tab Logic ───────────────────────────────────────────
 const categoryTabs = document.querySelectorAll('.category-tab-btn');
 const categoryPanels = document.querySelectorAll('.subcourse-panel');
 
@@ -329,31 +346,100 @@ const setActiveCategory = (targetId: string) => {
       tab.className = 'category-tab-btn w-full text-left px-3 py-2 rounded-lg text-xs tracking-normal transition-all flex items-center justify-between text-slate-600 font-semibold hover:text-emerald-700 hover:bg-emerald-50/50 border-l-2 border-transparent';
     }
   });
-
   categoryPanels.forEach(panel => {
-    if (panel.getAttribute('data-category-panel') === targetId) {
-      (panel as HTMLElement).style.display = 'flex';
-    } else {
-      (panel as HTMLElement).style.display = 'none';
-    }
+    (panel as HTMLElement).style.display =
+      panel.getAttribute('data-category-panel') === targetId ? 'flex' : 'none';
   });
 };
 
 categoryTabs.forEach(tab => {
-  tab.addEventListener('mouseenter', (e) => {
+  tab.addEventListener('mouseenter', e => {
     const target = (e.currentTarget as HTMLElement).getAttribute('data-category-target');
     if (target) setActiveCategory(target);
   });
-  tab.addEventListener('focus', (e) => {
+  tab.addEventListener('focus', e => {
     const target = (e.currentTarget as HTMLElement).getAttribute('data-category-target');
     if (target) setActiveCategory(target);
   });
 });
 
-// Keyboard accessibility for dropdown
+// ── MEGA MENU: Show / Hide via JS (decoupled from <li> position) ─────────────
+const megaTriggerLi  = document.getElementById('mega-menu-trigger-li');
+const megaTriggerBtn = document.getElementById('mega-menu-trigger-btn');
+const megaPanel      = document.getElementById('mega-menu-panel');
+const megaChevron    = document.getElementById('mega-menu-chevron');
+const megaUnderline  = document.getElementById('mega-menu-underline');
+let   megaCloseTimer: ReturnType<typeof setTimeout> | null = null;
+
+function openMegaMenu() {
+  if (!megaPanel) return;
+  if (megaCloseTimer) { clearTimeout(megaCloseTimer); megaCloseTimer = null; }
+  megaPanel.classList.remove('opacity-0', 'translate-y-1', 'pointer-events-none');
+  megaPanel.classList.add('opacity-100', 'translate-y-0');
+  megaTriggerBtn?.setAttribute('aria-expanded', 'true');
+  megaChevron?.classList.add('rotate-180');
+  megaUnderline?.classList.add('w-full');
+  megaUnderline?.classList.remove('w-0');
+  // Defensive boundary guard: clamp left edge inside viewport
+  requestAnimationFrame(() => {
+    if (!megaPanel) return;
+    const rect = megaPanel.getBoundingClientRect();
+    const safeMargin = 16;
+    if (rect.left < safeMargin) {
+      megaPanel.style.left = safeMargin + 'px';
+      megaPanel.style.transform = 'none';
+    }
+    if (rect.right > window.innerWidth - safeMargin) {
+      const overflow = rect.right - (window.innerWidth - safeMargin);
+      const currentLeft = parseFloat(megaPanel.style.left) || rect.left;
+      megaPanel.style.left = Math.max(safeMargin, currentLeft - overflow) + 'px';
+      megaPanel.style.transform = 'none';
+    }
+  });
+}
+
+function scheduleMegaClose() {
+  megaCloseTimer = setTimeout(closeMegaMenu, 120);
+}
+
+function closeMegaMenu() {
+  if (!megaPanel) return;
+  megaPanel.classList.add('opacity-0', 'translate-y-1', 'pointer-events-none');
+  megaPanel.classList.remove('opacity-100', 'translate-y-0');
+  megaTriggerBtn?.setAttribute('aria-expanded', 'false');
+  megaChevron?.classList.remove('rotate-180');
+  megaUnderline?.classList.remove('w-full');
+  megaUnderline?.classList.add('w-0');
+}
+
+// Trigger li: open on mouseenter, schedule close on mouseleave
+megaTriggerLi?.addEventListener('mouseenter', openMegaMenu);
+megaTriggerLi?.addEventListener('mouseleave', scheduleMegaClose);
+
+// Panel itself: cancel close when re-entering, schedule close on leave
+megaPanel?.addEventListener('mouseenter', () => {
+  if (megaCloseTimer) { clearTimeout(megaCloseTimer); megaCloseTimer = null; }
+});
+megaPanel?.addEventListener('mouseleave', scheduleMegaClose);
+
+// Keyboard: toggle on Enter/Space, close on Escape
+megaTriggerBtn?.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    megaPanel?.classList.contains('opacity-100') ? closeMegaMenu() : openMegaMenu();
+  }
+});
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
+    closeMegaMenu();
     (document.activeElement as HTMLElement)?.blur();
+  }
+});
+
+// Click outside to close
+document.addEventListener('click', (e) => {
+  if (!megaTriggerLi?.contains(e.target as Node) && !megaPanel?.contains(e.target as Node)) {
+    closeMegaMenu();
   }
 });
 
