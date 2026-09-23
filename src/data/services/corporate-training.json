@@ -1,0 +1,28 @@
+{
+  "livePath": "Navigation Bar > Services > Corporate Training",
+  "metaTitle": "Corporate IT Training | Ask4Trainings Hyderabad",
+  "metaDescription": "Customized on-site and live-online corporate training in Guidewire, SAP S/4HANA, Cloud, and DevOps for enterprise teams.",
+  "badge": "Enterprise Enablement",
+  "heroTitle": "Corporate Training for Enterprise Teams",
+  "heroSubtitle": "We design instructor-led programs around your tech stack, delivery timeline, and project outcomes — on-site in Hyderabad or live online worldwide.",
+  "primaryCtaLabel": "Request a Proposal",
+  "primaryCtaUrl": "#support-form",
+  "whatsappCtaLabel": "WhatsApp Corporate Desk",
+  "introTitle": "How We Train Your Teams",
+  "introBody": "We provide customized, on-site, and online corporate training programs tailored to your organization's tech stack and project needs. Batches can be structured around sprint cycles or project milestones.",
+  "technologies": [
+    { "title": "Guidewire Suite", "desc": "PolicyCenter, BillingCenter, ClaimCenter configuration and integration for insurance programmes." },
+    { "title": "SAP S/4HANA", "desc": "FICO, MM, SD, ABAP, BW/4HANA functional and technical training for enterprise rollouts." },
+    { "title": "Cloud & DevOps", "desc": "AWS, Azure, GCP, Docker, Kubernetes — cloud migration and DevOps transformation tracks." },
+    { "title": "Oracle & Microsoft D365", "desc": "Oracle Fusion, HCM, SCM and Microsoft Dynamics 365 Finance & Operations." }
+  ],
+  "processTitle": "Engagement Model",
+  "processSteps": [
+    { "step": "1", "title": "Skill-Gap Discovery", "desc": "We map current team capability against your target architecture and delivery plan." },
+    { "step": "2", "title": "Custom Curriculum Design", "desc": "A tailored curriculum is designed around your project stack, timeline, and learning objectives." },
+    { "step": "3", "title": "Instructor-Led Delivery", "desc": "On-site or live-online instructor sessions with lab access and real-world case studies." },
+    { "step": "4", "title": "Assessment & Certification", "desc": "Post-training assessment with certificates issued to all participants who pass." }
+  ],
+  "formTitle": "Request Corporate Training",
+  "formSubtitle": "Share your team size, technology, and preferred dates. We respond within one business day."
+}

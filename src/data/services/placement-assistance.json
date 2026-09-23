@@ -1,0 +1,28 @@
+{
+  "livePath": "Navigation Bar > Services > Placement Assistance",
+  "metaTitle": "Placement Assistance | IT Job Readiness — Ask4Trainings Hyderabad",
+  "metaDescription": "Resume review, mock interviews, and hiring-partner referrals for students targeting Guidewire, SAP, Cloud, DevOps, and full-stack roles.",
+  "badge": "Career Outcomes",
+  "heroTitle": "Dedicated Placement Assistance",
+  "heroSubtitle": "From resume polish to mock interviews and hiring-partner referrals — our placement cell helps you convert training into a job-ready profile.",
+  "primaryCtaLabel": "Talk to Placement Cell",
+  "primaryCtaUrl": "#support-form",
+  "whatsappCtaLabel": "WhatsApp Placement Team",
+  "introTitle": "What Our Placement Cell Covers",
+  "introBody": "Placement support is included with our job-oriented programmes. We focus on interview readiness for enterprise roles in Hyderabad and remote/global hiring pipelines.",
+  "technologies": [
+    { "title": "Resume & LinkedIn", "desc": "Role-specific resume rewrite and LinkedIn positioning aligned to target designations in Guidewire, SAP, and Cloud domains." },
+    { "title": "Technical Mocks", "desc": "Domain-specific mock interviews conducted by practicing professionals. Guidewire, SAP, DevOps, Oracle rounds covered." },
+    { "title": "Hiring Partner Referrals", "desc": "Direct referrals to our network of hiring partners — service companies, product firms, and insurance carriers." },
+    { "title": "Soft Skills & Interview Coaching", "desc": "Communication coaching, HR round preparation, salary negotiation tips, and offer acceptance guidance." }
+  ],
+  "processTitle": "How Placement Support Works",
+  "processSteps": [
+    { "step": "1", "title": "Profile Audit", "desc": "We review your resume, experience, and target role after core modules are complete." },
+    { "step": "2", "title": "Resume & LinkedIn Revamp", "desc": "Our placement team rewrites your resume and optimizes your LinkedIn for ATS and recruiter discoverability." },
+    { "step": "3", "title": "Mock Interview Rounds", "desc": "2–3 rounds of technical mock interviews with industry experts. Detailed feedback after each round." },
+    { "step": "4", "title": "Referral & Follow-Up", "desc": "We connect you with hiring partners and follow up until you receive and accept an offer." }
+  ],
+  "formTitle": "Connect with Placement Cell",
+  "formSubtitle": "Share your course, experience level, and target role. A counsellor will call you back within 2 hours."
+}

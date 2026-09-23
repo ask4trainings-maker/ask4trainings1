@@ -1,0 +1,28 @@
+{
+  "livePath": "Navigation Bar > Services > Work Support (On-Job Support) → /work-support/",
+  "metaTitle": "IT Job Support & Project Assistance | Ask4Trainings Hyderabad",
+  "metaDescription": "Expert on-job IT work support in Guidewire, SAP, DevOps, Cloud, and Salesforce. Daily 1-on-1 sessions with senior consultants. 100% confidential.",
+  "badge": "100% Confidential & Real-Time Support",
+  "heroTitle": "Reliable On-Job IT Work Support",
+  "heroSubtitle": "Stuck with complex project deliverables, bugs, or architectural tasks? Get 1-on-1 daily technical assistance from veteran implementation consultants.",
+  "primaryCtaLabel": "Request Support Now",
+  "primaryCtaUrl": "#support-form",
+  "whatsappCtaLabel": "Instant WhatsApp Query",
+  "introTitle": "Technologies We Support",
+  "introBody": "We provide dedicated, secure, and practical job support across all leading enterprise technologies. Our consultants are active working professionals with 8+ years of live client implementation experience.",
+  "technologies": [
+    { "title": "Guidewire Suite", "desc": "PolicyCenter, BillingCenter, ClaimCenter, ContactManager, Gosu, PCF & Rating" },
+    { "title": "SAP Systems", "desc": "FICO, MM, SD, ABAP, BW/4HANA, SuccessFactors, S/4HANA" },
+    { "title": "Cloud & DevOps", "desc": "AWS, Azure, GCP, Docker, Kubernetes, Terraform, CI/CD" },
+    { "title": "Oracle & ERP", "desc": "Oracle Fusion, HCM, SCM, APEX, FlexCube, OIC" }
+  ],
+  "processTitle": "How Our Job Support Works",
+  "processSteps": [
+    { "step": "1", "title": "Share Your Tech Stack & Tasks", "desc": "Fill in the enquiry form or ping us on WhatsApp with your technology, timezone, and project requirements." },
+    { "step": "2", "title": "Get Matched with a Consultant", "desc": "We match you with a subject-matter expert with hands-on production experience in your specific technology." },
+    { "step": "3", "title": "Daily 1-on-1 Sessions", "desc": "Attend daily sessions (1–2 hours) to work through your deliverables, debugging challenges, or architecture questions." },
+    { "step": "4", "title": "Ongoing Support Until Delivered", "desc": "We stay engaged until your task is complete — no session caps for active engagements." }
+  ],
+  "formTitle": "Get Job Support Consultation",
+  "formSubtitle": "100% confidential. Tell us your technology and get matched with a consultant today."
+}
