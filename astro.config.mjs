@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://ask4trainings.pages.dev',
   output: 'static',
-  trailingSlash: 'always',
+  trailingSlash: 'ignore',
 
   vite: {
     tsconfig: './tsconfig.json',
