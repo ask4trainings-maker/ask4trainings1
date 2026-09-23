@@ -12,6 +12,10 @@ const courses = defineCollection({
     menuTitle: z.string().optional(),
     slug: z.string(), // preserves root-flat legacy slug exactly
     valueProp: z.string().optional(),
+    navigationPath: z.string().optional(),
+    priorityTier: z.string().optional(),
+    badge: z.string().optional(),
+    body: z.string().optional(),
 
     // Section 1: Main / Hero Meta Chips
     duration: z.string().default('45-60 Hrs'),
@@ -19,6 +23,7 @@ const courses = defineCollection({
     rating: z.string().default('4.9/5 (1,200+ Reviews)'),
     videoUrl: z.string().optional(), // YouTube embed link / video ID
     courseImage: z.string().optional(), // Media preview placeholder
+    heroImage: z.string().optional(),
 
     // Section 2: Overview & Brochure
     overview: z.string().default(''),
@@ -29,6 +34,7 @@ const courses = defineCollection({
       z.object({
         moduleTitle: z.string().optional(),
         module: z.string().optional(), // Legacy compatibility
+        moduleMeta: z.string().optional(),
         topics: z.array(z.string()),
       })
     ).default([]),
@@ -107,11 +113,18 @@ const courses = defineCollection({
     ).default([]),
 
     // Legacy fields (optional)
-    highlights: z.array(z.object({
-      icon: z.string(),
-      text: z.string(),
-    })).optional(),
+    highlights: z.union([
+      z.array(z.object({
+        icon: z.string(),
+        text: z.string(),
+      })),
+      z.array(z.object({
+        item: z.string(),
+      })),
+    ]).optional(),
     batchInfo: z.object({
+      type: z.string().optional(),
+      mode: z.string().optional(),
       format: z.string().optional(),
       startDate: z.string().optional(),
       duration: z.string().optional(),

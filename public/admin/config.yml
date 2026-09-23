@@ -5,251 +5,154 @@ backend:
   base_url: https://ask4trainings.pages.dev
   auth_endpoint: /api/auth
 
-media_folder: "public/assets/uploads"
-public_folder: "/assets/uploads"
+publish_mode: editorial_workflow
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "src/content/blog"
-    create: true
-    slug: "{{slug}}"
-    media_folder: "../../public/images/blog"
-    public_folder: "/images/blog"
-    fields:
-      - { label: "Article Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD" }
-      - { label: "Author", name: "author", widget: "string", default: "Ask4Trainings Editorial" }
-      - { label: "Category", name: "category", widget: "select", options: ["Guidewire", "SAP", "Cloud & DevOps", "Enterprise IT", "Career Guides"] }
-      - { label: "Introduction / Excerpt", name: "description", widget: "text", hint: "Short summary shown on blog cards and Google search results" }
-      - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Article Content", name: "body", widget: "markdown" }
-      - { label: "Featured Article", name: "featured", widget: "boolean", default: false, required: false }
-      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
-
-
-  # 1. COURSES COLLECTION
+  # 1. COURSE CATALOG
   - name: "courses"
-    label: "Courses"
+    label: "Course Catalog"
+    label_singular: "Course"
     folder: "src/content/courses"
     create: true
-    slug: "{{slug}}"
-    format: "frontmatter"
+    format: "yaml-frontmatter"
     extension: "md"
-    editor:
-      preview: false
+    slug: "{{slug}}"
+    summary: "{{title}} ({{category}})"
+    sortable_fields: ["title", "category", "date"]
     fields:
-      - { label: "Course Title", name: "title", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string", hint: "Lower case, no spaces, hyphens only" }
-      - { label: "Category", name: "category", widget: "select", options: ["guidewire", "siemens", "new-courses", "cloud-computing", "oracle", "devops", "development", "ms-d365", "sap", "trending-courses", "other-tools"] }
-      - { label: "Menu Short Title", name: "menuTitle", widget: "string", required: false }
-      - { label: "Value Proposition", name: "valueProp", widget: "text", required: false }
-      
-      # 1. Hero Meta
-      - { label: "Course Duration", name: "duration", widget: "string", default: "45-60 Hrs" }
-      - { label: "Training Mode", name: "mode", widget: "string", default: "Online Live Interactive" }
-      - { label: "Ratings & Reviews", name: "rating", widget: "string", default: "4.9/5 (1,200+ Reviews)" }
-      - { label: "YouTube Video URL", name: "videoUrl", widget: "string", required: false, hint: "YouTube watch or embed URL" }
-      - { label: "Course Featured Image", name: "courseImage", widget: "image", required: false, hint: "Preview banner or platform architecture graphic" }
-
-      # 2. Overview & Brochure
-      - { label: "Course Overview", name: "overview", widget: "text", default: "" }
-      - { label: "Brochure Google Drive Link", name: "brochureUrl", widget: "string", default: "[https://drive.google.com/](https://drive.google.com/)" }
-
-      # 3. Syllabus Modules
-      - label: "Course Syllabus"
-        name: "syllabus"
-        widget: "list"
-        fields:
-          - { label: "Module Title", name: "moduleTitle", widget: "string", required: false }
-          - { label: "Legacy Module Title", name: "module", widget: "string", required: false }
-          - { label: "Topics", name: "topics", widget: "list", field: { label: "Topic", name: "topic", widget: "string" } }
-
-      # 4. About Course
-      - { label: "About The Course", name: "aboutCourse", widget: "markdown", default: "", required: false }
-
-      # 5. Objectives
-      - { label: "Course Objectives", name: "objectives", widget: "list", field: { label: "Objective", name: "objective", widget: "string" }, required: false }
-
-      # 6. Benefits (3 Containers)
-      - label: "Course Benefits"
-        name: "benefits"
-        widget: "object"
+      # --- Section 1: Navigation & Metadata ---
+      - label: "📍 Live Navigation Breadcrumb"
+        name: "navigationPath"
+        widget: "string"
         required: false
-        fields:
-          - { label: "Basic Knowledge Acquired", name: "basicKnowledge", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
-          - { label: "Technical Skills Gained", name: "techSkills", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
-          - { label: "Career & Industry Opportunities", name: "careerInterests", widget: "list", field: { label: "Point", name: "point", widget: "string" }, required: false }
+        hint: "Shows where this page lives in navigation (e.g., 'Navigation Bar > All Courses > Guidewire > PolicyCenter Dev')."
 
-      # 7. Why Choose
-      - label: "Why Choose Ask4Trainings"
-        name: "whyChoose"
-        widget: "list"
+      - label: "⭐ Course Priority Tier"
+        name: "priorityTier"
+        widget: "select"
         required: false
-        fields:
-          - { label: "Feature Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
+        options:
+          - { label: "⭐ Tier 1: High-Priority Flagship", value: "tier-1" }
+          - { label: "📈 Tier 2: Growth Program", value: "tier-2" }
+          - { label: "🟦 Tier 3: Supporting Course", value: "tier-3" }
+        default: "tier-2"
+        hint: "Tier 1 courses appear first in Mega Menu and featured catalog carousels."
 
-      # 8. Eligibility
-      - { label: "Eligibility Criteria", name: "eligibility", widget: "list", field: { label: "Criteria", name: "criteria", widget: "string" }, required: false }
+      - label: "Course Title (H1) *"
+        name: "title"
+        widget: "string"
+        required: true
+        hint: "Example: 'Guidewire PolicyCenter 10.x Live Online Training' — Displayed as the primary H1 headline at the top of the course page."
 
-      # 9. Certifications
-      - label: "Certification Details"
-        name: "certifications"
-        widget: "object"
+      - label: "Course Badge / Short Code"
+        name: "badge"
+        widget: "string"
         required: false
-        fields:
-          - { label: "Title", name: "title", widget: "string", default: "Industry-Recognized Certification" }
-          - { label: "Description", name: "description", widget: "text", default: "Earn verified credentials upon capstone project evaluation and practical lab assessments." }
-          - { label: "Recognized Badges / Exams", name: "badges", widget: "list", field: { label: "Badge", name: "badge", widget: "string" }, required: false }
+        hint: "Example: 'GW PC' or 'SAP MM' — Rendered as a compact pill above the course title."
 
-      # 10. Job Roles
-      - label: "Target Job Roles"
-        name: "jobRoles"
-        widget: "list"
-        required: false
-        fields:
-          - { label: "Role Title", name: "role", widget: "string" }
-          - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Skills", name: "skills", widget: "list", required: false, field: { label: "Skill", name: "skill", widget: "string" } }
-          - { label: "Salary Estimate", name: "salaryEstimate", widget: "string", required: false }
+      - label: "Domain Category *"
+        name: "category"
+        widget: "select"
+        required: true
+        options:
+          - { label: "Guidewire Suite", value: "guidewire" }
+          - { label: "SAP Solutions", value: "sap" }
+          - { label: "Siemens Teamcenter / PLM", value: "siemens" }
+          - { label: "Cloud & DevOps", value: "devops" }
+          - { label: "Microsoft Dynamics 365", value: "microsoft-dynamics-365" }
+          - { label: "Oracle Cloud", value: "oracle" }
+          - { label: "Software Development", value: "development" }
+          - { label: "Trending Technologies", value: "trending-courses" }
+          - { label: "Other Specialized Tools", value: "other-tools" }
+        hint: "Assigns the course to its parent domain in Mega Menu dropdowns and category filters."
 
-      # 11. Trainer Profile Standards
-      - label: "Trainer Excellence Standards"
-        name: "trainerProfile"
-        widget: "object"
+      - label: "Course Hero / Thumbnail Image"
+        name: "heroImage"
+        widget: "image"
         required: false
-        fields:
-          - { label: "Heading", name: "heading", widget: "string", default: "Learn from Practicing Enterprise Architects" }
-          - { label: "Description", name: "description", widget: "text", default: "Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience." }
-          - { label: "Key Highlights", name: "highlights", widget: "list", field: { label: "Highlight", name: "highlight", widget: "string" }, required: false }
+        hint: "Recommended: 1200x630px WebP or PNG. Used for course card previews and social share cards."
 
-      # 12. FAQs
-      - label: "Frequently Asked Questions"
-        name: "faqs"
-        widget: "list"
+      # --- Section 2: Course Overview & Value Proposition ---
+      - label: "Value Proposition / Subheading"
+        name: "valueProp"
+        widget: "text"
         required: false
-        fields:
-          - { label: "Question", name: "question", widget: "string" }
-          - { label: "Answer", name: "answer", widget: "text" }
-          
-      # Legacy fields (hidden or optional in editor but kept for schema)
-      - { label: "Related Guide Slug", name: "relatedGuideSlug", widget: "string", required: false }
-      - label: "SEO Metadata"
-        name: "seo"
-        widget: "object"
+        hint: "Example: 'Master Guidewire PolicyCenter architecture, rating engines, and underwriting workflows with hands-on enterprise sandbox labs.' — Appears directly below the H1."
+
+      - label: "Course Overview (Full Description)"
+        name: "body"
+        widget: "markdown"
         required: false
-        fields:
-          - { label: "Meta Title", name: "metaTitle", widget: "string", required: false }
-          - { label: "Meta Description", name: "metaDescription", widget: "text", required: false }
-      - { label: "Legacy URL", name: "legacyUrl", widget: "string", required: false }
-      - { label: "Legacy Impressions", name: "legacyImpressions", widget: "number", required: false }
-      - label: "Legacy Highlights"
+        hint: "The main body content introducing the course, prerequisites, and learning objectives."
+
+      # --- Section 3: Course Highlights & Key Features ---
+      - label: "Key Highlights"
         name: "highlights"
         widget: "list"
         required: false
+        hint: "Bulleted takeaway cards (e.g., '60+ Hours Live Interactive Sessions', 'Real-World MNC Project Implementation', '1-on-1 Interview Preparation')."
+        field: { label: "Highlight Item", name: "item", widget: "string" }
+
+      # --- Section 4: Syllabus & Curriculum Breakdown ---
+      - label: "Curriculum Modules"
+        name: "syllabus"
+        widget: "list"
+        required: false
+        hint: "Interactive accordion modules shown in the 'Course Curriculum' section on the page."
         fields:
-          - { label: "Icon SVG/Name", name: "icon", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-      - label: "Legacy Batch Info"
+          - { label: "Module Title", name: "moduleTitle", widget: "string", hint: "Example: 'Module 1: PolicyCenter Architecture & Data Model'" }
+          - { label: "Module Duration / Lessons Count", name: "moduleMeta", widget: "string", required: false, hint: "Example: '4 Hours · 6 Lessons'" }
+          - label: "Topics Covered"
+            name: "topics"
+            widget: "list"
+            field: { label: "Topic", name: "topic", widget: "string", hint: "Example: 'Product Designer Configuration and Rule Sets'" }
+
+      # --- Section 5: Batch Schedule & Format ---
+      - label: "Upcoming Batch Information"
         name: "batchInfo"
         widget: "object"
         required: false
         fields:
-          - label: "Format"
-            name: "format"
-            widget: "select"
-            options: ["Online", "Classroom", "Hybrid"]
-            required: false
-          - { label: "Duration", name: "duration", widget: "string", required: false }
-          - { label: "Start Date", name: "startDate", widget: "string", required: false }
-          - { label: "Timings", name: "timings", widget: "string", required: false }
-      - label: "Prerequisites"
-        name: "prerequisites"
+          - { label: "Batch Type", name: "type", widget: "select", options: ["Weekend Batch", "Weekday Batch", "Self-Paced / Fast-Track"], default: "Weekend Batch" }
+          - { label: "Duration", name: "duration", widget: "string", default: "45-60 Hrs", hint: "Example: '45-60 Hrs' or '8 Weeks'" }
+          - { label: "Mode", name: "mode", widget: "string", default: "Live Online + Lab Access" }
+          - { label: "Next Batch Date", name: "startDate", widget: "string", hint: "Example: 'Starting This Saturday'" }
+
+      # --- Section 6: Frequently Asked Questions ---
+      - label: "Frequently Asked Questions (FAQs)"
+        name: "faqs"
         widget: "list"
         required: false
-        field: { label: "Prerequisite", name: "prereq", widget: "string" }
-
-  # 2. CATEGORIES HUB
-  - name: "categories_collection"
-    label: "Categories Hub"
-    editor:
-      preview: false
-    files:
-      - label: "Master Categories"
-        name: "categories"
-        file: "src/data/categories.json"
-        format: "json"
+        hint: "Displays inside the FAQ accordion at the bottom of the course page."
         fields:
-          - label: "Categories List"
-            name: "categories"
-            widget: "list"
-            fields:
-              - { label: "ID/Key", name: "id", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Icon", name: "icon", widget: "string", required: false }
-              - { label: "Description", name: "description", widget: "text" }
+          - { label: "Question", name: "question", widget: "string" }
+          - { label: "Answer", name: "answer", widget: "text" }
 
-  # 3. GLOBAL SITE SETTINGS
-  - name: "global_settings"
-    label: "Global Settings"
-    editor:
-      preview: false
-    files:
-      - label: "Site Settings"
-        name: "settings"
-        file: "src/data/settings.json"
-        format: "json"
-        fields:
-          - label: "Contact Information"
-            name: "contact"
-            widget: "object"
-            fields:
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "Phone Primary", name: "phone1", widget: "string" }
-              - { label: "Phone Secondary", name: "phone2", widget: "string", required: false }
-              - { label: "Address", name: "address", widget: "text" }
-              - { label: "Google Maps URL", name: "mapsUrl", widget: "string", required: false }
-              - { label: "Operating Hours", name: "hours", widget: "string", required: false }
-          - label: "Social Links"
-            name: "socials"
-            widget: "object"
-            fields:
-              - { label: "Facebook", name: "facebook", widget: "string", required: false }
-              - { label: "X / Twitter", name: "twitter", widget: "string", required: false }
-              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
-              - { label: "YouTube", name: "youtube", widget: "string", required: false }
-              - { label: "Instagram", name: "instagram", widget: "string", required: false }
-          - label: "Top Banner"
-            name: "topBanner"
-            widget: "object"
-            required: false
-            fields:
-              - { label: "Text", name: "text", widget: "string" }
-              - { label: "Link URL", name: "url", widget: "string", required: false }
+      # --- Section 7: SEO, Redirects & Canonical Parity ---
+      - label: "SEO Meta Title"
+        name: "metaTitle"
+        widget: "string"
+        required: false
+        hint: "Example: 'Guidewire PolicyCenter Training | Live Project Course' — Target: 50-60 characters."
 
-      - label: "Navigation"
-        name: "navigation"
-        file: "src/data/navigation.json"
-        format: "json"
-        fields:
-          - label: "Main Navigation"
-            name: "mainNav"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "href", widget: "string" }
-          - label: "Footer Quick Links"
-            name: "footerLinks"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "href", widget: "string" }
-          - { label: "LMS Portal Button Text", name: "lmsButtonText", widget: "string", default: "Student Portal" }
+      - label: "SEO Meta Description"
+        name: "metaDescription"
+        widget: "text"
+        required: false
+        hint: "Target: 140-160 characters. Displayed in Google Search results snippets."
 
-  # 4. STATIC PAGES
+      - label: "Legacy WordPress URL"
+        name: "legacyUrl"
+        widget: "string"
+        required: false
+        hint: "Original URL on ask4trainings.com used for 1:1 SEO redirect preservation."
+
+  # 2. CORE SITE PAGES
   - name: "pages"
-    label: "Static Pages"
+    label: "Core Site Pages"
     editor:
       preview: false
     files:
@@ -323,3 +226,137 @@ collections:
           - { label: "Support Guidelines", name: "guidelines", widget: "text" }
           - { label: "Form Header", name: "formHeader", widget: "string" }
           - { label: "Form Subtext", name: "formSubtext", widget: "string" }
+
+      - label: "Student Registration"
+        name: "registration"
+        file: "src/data/pages/registration.json"
+        format: "json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+
+  # 3. SERVICES & PROGRAMS
+  - name: "services"
+    label: "Services & Programs"
+    editor:
+      preview: false
+    files:
+      - label: "On-Job Support"
+        name: "on_job_support"
+        file: "src/data/services/on-job-support.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "On-Job Support" }
+          - { label: "Content", name: "content", widget: "text" }
+      - label: "Corporate Training"
+        name: "corporate_training"
+        file: "src/data/services/corporate-training.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Corporate Training" }
+          - { label: "Content", name: "content", widget: "text" }
+      - label: "Placement Assistance"
+        name: "placement_assistance"
+        file: "src/data/services/placement-assistance.json"
+        format: "json"
+        fields:
+          - { label: "Title", name: "title", widget: "string", default: "Placement Assistance" }
+          - { label: "Content", name: "content", widget: "text" }
+
+  # 4. GLOBAL SETTINGS & FOOTER
+  - name: "global_settings"
+    label: "Global Settings & Footer"
+    editor:
+      preview: false
+    files:
+      - label: "Announcement Top Banner"
+        name: "top_banner"
+        file: "src/data/settings/top_banner.json"
+        format: "json"
+        fields:
+          - label: "Top Banner"
+            name: "topBanner"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Text", name: "text", widget: "string" }
+              - { label: "Link URL", name: "url", widget: "string", required: false }
+          - label: "Contact Information"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone Primary", name: "phone1", widget: "string" }
+              - { label: "Phone Secondary", name: "phone2", widget: "string", required: false }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Google Maps URL", name: "mapsUrl", widget: "string", required: false }
+              - { label: "Operating Hours", name: "hours", widget: "string", required: false }
+          - label: "Social Links"
+            name: "socials"
+            widget: "object"
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "X / Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+              - { label: "YouTube", name: "youtube", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+
+      - label: "Header & Mega Menu Navigation"
+        name: "navigation"
+        file: "src/data/settings/navigation.json"
+        format: "json"
+        fields:
+          - label: "Main Navigation"
+            name: "mainNav"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Footer Quick Links"
+            name: "footerLinks"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - { label: "LMS Portal Button Text", name: "lmsButtonText", widget: "string", default: "Student Portal" }
+
+      - label: "Course Category taxonomy"
+        name: "categories"
+        file: "src/data/settings/categories.json"
+        format: "json"
+        fields:
+          - label: "Categories List"
+            name: "categories"
+            widget: "list"
+            fields:
+              - { label: "ID/Key", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Icon", name: "icon", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text" }
+
+      - label: "Global Enquiry Form settings"
+        name: "enquiry_form"
+        file: "src/data/settings/enquiry_form.json"
+        format: "json"
+        fields:
+          - { label: "Form Title", name: "title", widget: "string", default: "Enquire Now" }
+          - { label: "Success Message", name: "success_message", widget: "string", default: "Thank you for your enquiry!" }
+
+  # 5. BLOG POSTS (Legacy)
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    media_folder: "../../public/images/blog"
+    public_folder: "/images/blog"
+    fields:
+      - { label: "Article Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "publishDate", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Author", name: "author", widget: "string", default: "Ask4Trainings Editorial" }
+      - { label: "Category", name: "category", widget: "select", options: ["Guidewire", "SAP", "Cloud & DevOps", "Enterprise IT", "Career Guides"] }
+      - { label: "Introduction / Excerpt", name: "description", widget: "text", hint: "Short summary shown on blog cards and Google search results" }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Article Content", name: "body", widget: "markdown" }
+      - { label: "Featured Article", name: "featured", widget: "boolean", default: false, required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
