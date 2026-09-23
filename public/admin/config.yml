@@ -28,7 +28,7 @@ collections:
         name: "navigationPath"
         widget: "string"
         required: false
-        hint: "Shows where this page lives in navigation (e.g., 'Navigation Bar > All Courses > Guidewire > PolicyCenter Dev')."
+        hint: "Shows where this page lives in navigation (e.g., 'Navigation Bar > All Courses > GUIDEWIRE > GW Business Analyst')."
 
       - label: "⭐ Course Priority Tier"
         name: "priorityTier"
@@ -46,6 +46,13 @@ collections:
         widget: "string"
         required: true
         hint: "Example: 'Guidewire PolicyCenter 10.x Live Online Training' — Displayed as the primary H1 headline at the top of the course page."
+
+      - label: "URL Slug"
+        name: "slug"
+        widget: "string"
+        required: false
+        hint: "The URL path for the course page (e.g., 'guidewire-business-analyst-course'). Leave blank to auto-generate."
+
 
       - label: "Course Badge / Short Code"
         name: "badge"
