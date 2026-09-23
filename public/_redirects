@@ -1,3 +1,5 @@
+/admin    /admin/    301
+
 # Ask 4 Trainings - 301 Redirect Rules
 # Generated and verified for 1:1 legacy URL parity and canonical redirection
 
@@ -188,4 +190,3 @@
 /best-coupa-online-course-in-hyderabad/ /blog/best-coupa-online-course-in-hyderabad/ 301
 /best-digital-marketing-online-course/ /blog/best-digital-marketing-online-course/ 301
 /best-guidewire-rating-online-training/ /blog/best-guidewire-rating-online-training/ 301
-/admin /admin/ 301
