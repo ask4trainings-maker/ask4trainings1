@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Inner Lime-Green Sail -->
+  <path d="M38 14 L18 37 C26 36 33 34 40 33 Z" fill="#8ec63f" />
+
+  <!-- Diagonal Wing -->
+  <path d="M38 7 C35 10 21 28 11 41 C15 40 21 39 25 38 C33 28 40 16 41 9 Z" fill="#2b2d30" />
+
+  <!-- Dynamic Arching Swoop -->
+  <path d="M11 41 C27 37 42 34 52 34 C58 34 62 37 64 41 C59 36 53 31 46 31 C35 31 23 36 11 41 Z" fill="#2b2d30" />
+
+  <!-- Vertical Needle Spine -->
+  <path d="M38 6 C42 12 45 22 45 33 C45 40 44 51 43 58 C44 53 47 43 47 34 C47 23 44 12 38 6 Z" fill="#2b2d30" />
+</svg>
