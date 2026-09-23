@@ -125,15 +125,22 @@ const schemaGraph = {
   document.addEventListener('DOMContentLoaded', () => {
     const backToTopBtn = document.getElementById('back-to-top');
     if (backToTopBtn) {
+      let _rafScrollTicking = false;
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 350) {
-          backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
-          backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
-        } else {
-          backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
-          backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+        if (!_rafScrollTicking) {
+          window.requestAnimationFrame(() => {
+            if (window.scrollY > 350) {
+              backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+              backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+            } else {
+              backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+              backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+            }
+            _rafScrollTicking = false;
+          });
+          _rafScrollTicking = true;
         }
-      });
+      }, { passive: true });
       backToTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
