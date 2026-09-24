@@ -66,7 +66,7 @@ const courses = defineCollection({
     trainingMode: z.string().optional(),
 
     // scheduleInfo — structured batch object from reference CMS
-    scheduleInfo: z.record(z.string(), z.any()).optional(),
+    scheduleInfo: z.any().optional(),
 
     // ─── Section 3: Course Syllabus Modules ─────────────────────────────────
     syllabus: z.array(
@@ -163,11 +163,11 @@ const courses = defineCollection({
     ).default([]),
 
     // careerInsights — CMS-aligned career data object
-    careerInsights: z.record(z.string(), z.any()).optional(),
+    careerInsights: z.any().optional(),
 
     // ─── Section 11: Trainer Profile ────────────────────────────────────────
     // Legacy shape (company standard) + CMS shape (per-course trainer). Accept both.
-    trainerProfile: z.record(z.string(), z.any()).optional(),
+    trainerProfile: z.any().optional(),
 
     // ─── Section 12: FAQs ───────────────────────────────────────────────────
     faqs: z.array(
@@ -208,7 +208,7 @@ const courses = defineCollection({
     updatedDate: z.coerce.date().optional(),
 
     // ─── Legacy Media ────────────────────────────────────────────────────────
-    media: z.record(z.string(), z.any()).optional(),
+    media: z.any().optional(),
 
     // ─── Related Courses ──────────────────────────────────────────────────────
     relatedCourseSlugs: z.array(z.string()).optional(),
@@ -216,7 +216,7 @@ const courses = defineCollection({
 
     // ─── Batch Info ──────────────────────────────────────────────────────────
     // batchInfo is kept as the object shape — components access .duration/.format
-    batchInfo: z.record(z.string(), z.any()).optional(),
+    batchInfo: z.any().optional(),
     // batchInfoText — CMS free-form string (new courses from CMS use this instead)
     batchInfoText: z.string().optional(),
 
