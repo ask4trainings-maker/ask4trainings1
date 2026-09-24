@@ -90,14 +90,7 @@ function cleanFooterTitle(title: string): string {
             {settingsData?.contact?.phone1 ?? '+91 000 000 0000'}
           </a>
         </li>
-        {settingsData?.contact?.phone2 && (
-          <li>
-            <a href={`tel:${settingsData.contact.phone2}`} class="flex items-center gap-3 text-[13px] text-slate-400 tabular-nums leading-relaxed hover:text-emerald-400 transition-colors">
-              <span class="w-4 h-4"></span>
-              {settingsData.contact.phone2}
-            </a>
-          </li>
-        )}
+
         <li>
           <a href={`mailto:${settingsData?.contact?.email ?? ''}`} class="flex items-center gap-3 text-[13px] text-slate-400 tabular-nums leading-relaxed hover:text-emerald-400 transition-colors">
             <svg class="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

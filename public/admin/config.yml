@@ -53,7 +53,7 @@ collections:
           - label: ☎️ Primary Contact Details
             name: phonePrimary
             widget: string
-            hint: 'Example: ''+91 9182909609'' — Primary phone shown in header and footer contact sections.'
+            hint: 'Example: ''+91 8099949888'' — Primary phone shown in header and footer contact sections.'
           - label: ☎️ Secondary Contact Number
             name: phoneSecondary
             widget: string
@@ -61,7 +61,7 @@ collections:
           - label: 📱 WhatsApp Number (Digits Only)
             name: whatsappNumber
             widget: string
-            hint: 'Example: ''919182909609'' — Country code + 10 digits, no spaces, dashes, or ''+'' symbol. Used to construct wa.me/ chat links.'
+            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces, dashes, or ''+'' symbol. Used to construct wa.me/ chat links.'
           - label: 📧 Support Email Address
             name: email
             widget: string
@@ -146,7 +146,7 @@ collections:
                   - label: Primary WhatsApp Hotline (Digits Only)
                     name: whatsappHotline
                     widget: string
-                    hint: 'Example: ''919182909609'' — Country code + 10 digits, no spaces or symbols. Used for wa.me/ links.'
+                    hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or symbols. Used for wa.me/ links.'
                   - label: Calling Numbers
                     name: callingNumbers
                     widget: list
@@ -160,7 +160,7 @@ collections:
                       - label: Phone Number
                         name: number
                         widget: string
-                        hint: 'Example: ''+91 9182909609'' — Include country code with + for tel: links to work correctly.'
+                        hint: 'Example: ''+91 8099949888'' — Include country code with + for tel: links to work correctly.'
                   - label: Support Email
                     name: supportEmail
                     widget: string
@@ -213,7 +213,7 @@ collections:
               - label: Primary Phone (Display)
                 name: phonePrimary
                 widget: string
-                hint: 'Example: ''+91 9182909609'' — Displayed with a call icon in the top bar.'
+                hint: 'Example: ''+91 8099949888'' — Displayed with a call icon in the top bar.'
               - label: Secondary Phone (Display)
                 name: phoneSecondary
                 widget: string
@@ -667,7 +667,7 @@ collections:
           - label: Helpline Numbers (Display)
             name: helplineNumbers
             widget: string
-            hint: 'Example: ''+91 9182909609, +91 9951609609'' — Comma-separated list for display in the contact info block.'
+            hint: 'Example: ''+91 8099949888, +91 9951609609'' — Comma-separated list for display in the contact info block.'
           - label: Support Email
             name: supportEmail
             widget: string
@@ -675,7 +675,7 @@ collections:
           - label: WhatsApp Number (Digits Only)
             name: whatsappNumber
             widget: string
-            hint: 'Example: ''919182909609'' — Country code + 10 digits, no spaces or symbols. Used to build the wa.me/ chat link.'
+            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or symbols. Used to build the wa.me/ chat link.'
       - label: 📝 Student Registration (/student-registration)
         name: student_registration
         file: src/data/pages/student-registration.json
