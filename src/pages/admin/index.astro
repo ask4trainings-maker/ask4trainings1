@@ -1,15 +1,29 @@
 ---
-layout: false;
+// Standalone admin shell - bypass all layouts and global styling
+export const prerender = true;
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <title>Content Manager | Ask4Trainings</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- Explicit CMS Configuration Binding -->
+    <link rel="cms-config-url" type="text/yaml" href="/admin/config.yml" />
+    <style is:inline>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #0f172a;
+      }
+    </style>
   </head>
   <body>
-    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+    <!-- Use is:inline so Vite does not hoist, bundle, or delay Sveltia CMS -->
+    <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
   </body>
 </html>

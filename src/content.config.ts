@@ -40,7 +40,7 @@ const courses = defineCollection({
     // ─── Section 1: Main / Hero Meta Chips ─────────────────────────────────
     duration: z.string().default('45-60 Hrs'),
     mode: z.string().default('Online Live Interactive'),
-    rating: z.string().default('4.9/5 (1,200+ Reviews)'),
+    rating: z.union([z.string(), z.number()]).transform(val => String(val)).optional(),
     videoUrl: z.string().optional(),          // YouTube embed link / video ID
     courseImage: z.string().optional(),       // Media preview placeholder
     heroImage: z.string().optional(),
@@ -66,11 +66,7 @@ const courses = defineCollection({
     trainingMode: z.string().optional(),
 
     // scheduleInfo — structured batch object from reference CMS
-    scheduleInfo: z.object({
-      duration: z.string().optional(),
-      upcomingBatch: z.string().optional(),
-      modes: z.string().optional(),
-    }).optional(),
+    scheduleInfo: z.record(z.string(), z.any()).optional(),
 
     // ─── Section 3: Course Syllabus Modules ─────────────────────────────────
     syllabus: z.array(
@@ -120,12 +116,7 @@ const courses = defineCollection({
     ).default([]),
 
     // whyChooseUs — CMS-aligned name (harmonization alias)
-    whyChooseUs: z.array(
-      z.object({
-        title: z.string().optional(),
-        description: z.string().optional(),
-      })
-    ).optional(),
+    whyChooseUs: z.array(z.any()).optional(),
 
     // ─── Section 8: Eligibility Criteria ────────────────────────────────────
     // Legacy: array of strings. CMS: array of Q&A objects. Accept both.
@@ -172,37 +163,11 @@ const courses = defineCollection({
     ).default([]),
 
     // careerInsights — CMS-aligned career data object
-    careerInsights: z.object({
-      avgSalary: z.string().optional(),
-      jobRoles: z.array(
-        z.union([z.string(), z.object({ role: z.string() })])
-      ).optional(),
-      hiringIndustries: z.string().optional(),
-    }).optional(),
+    careerInsights: z.record(z.string(), z.any()).optional(),
 
     // ─── Section 11: Trainer Profile ────────────────────────────────────────
     // Legacy shape (company standard) + CMS shape (per-course trainer). Accept both.
-    trainerProfile: z.union([
-      // Legacy company-standard shape
-      z.object({
-        heading: z.string().optional(),
-        description: z.string().optional(),
-        highlights: z.array(z.string()).optional(),
-      }),
-      // CMS per-course shape
-      z.object({
-        name: z.string().optional(),
-        role: z.string().optional(),
-        experience: z.string().optional(),
-        title: z.string().optional(),
-        bio: z.string().optional(),
-        highlights: z.array(
-          z.union([z.string(), z.object({ highlight: z.string() })])
-        ).optional(),
-        avatarImage: z.string().optional(),
-        avatarImageAlt: z.string().optional(),
-      }),
-    ]).optional(),
+    trainerProfile: z.record(z.string(), z.any()).optional(),
 
     // ─── Section 12: FAQs ───────────────────────────────────────────────────
     faqs: z.array(
@@ -214,51 +179,16 @@ const courses = defineCollection({
 
     // ─── Pricing ────────────────────────────────────────────────────────────
     // pricingTiers — new CMS pricing format
-    pricingTiers: z.array(
-      z.object({
-        planName: z.string().optional(),
-        price: z.string().optional(),
-        features: z.array(
-          z.union([z.string(), z.object({ feature: z.string().optional() })])
-        ).optional(),
-      })
-    ).optional(),
+    pricingTiers: z.array(z.any()).optional(),
 
     // pricingPlans — legacy pricing format
-    pricingPlans: z.array(
-      z.object({
-        planName: z.string().optional(),
-        tagline: z.string().optional(),
-        isFeatured: z.boolean().optional(),
-        ctaText: z.string().optional(),
-        features: z.array(
-          z.object({
-            text: z.string().optional(),
-            included: z.boolean().optional(),
-          })
-        ).optional(),
-      })
-    ).optional(),
+    pricingPlans: z.array(z.any()).optional(),
 
     // ─── Testimonials ────────────────────────────────────────────────────────
-    testimonials: z.array(
-      z.object({
-        studentName: z.string().optional(),
-        placedCompany: z.string().optional(),
-        quote: z.string().optional(),
-        rating: z.number().optional(),
-        videoUrl: z.string().optional(),
-      })
-    ).optional(),
+    testimonials: z.array(z.any()).optional(),
 
     // ─── Key Features ────────────────────────────────────────────────────────
-    keyFeatures: z.array(
-      z.object({
-        iconName: z.string().optional(),
-        title: z.string().optional(),
-        description: z.string().optional(),
-      })
-    ).optional(),
+    keyFeatures: z.array(z.any()).optional(),
 
     // ─── Highlights ─────────────────────────────────────────────────────────
     // Accept string list (CMS), icon+text objects (legacy), or item objects (legacy alt)
@@ -278,10 +208,7 @@ const courses = defineCollection({
     updatedDate: z.coerce.date().optional(),
 
     // ─── Legacy Media ────────────────────────────────────────────────────────
-    media: z.object({
-      heroImage: z.string().optional(),
-      youtubeVideoId: z.string().optional(),
-    }).optional(),
+    media: z.record(z.string(), z.any()).optional(),
 
     // ─── Related Courses ──────────────────────────────────────────────────────
     relatedCourseSlugs: z.array(z.string()).optional(),
@@ -289,14 +216,7 @@ const courses = defineCollection({
 
     // ─── Batch Info ──────────────────────────────────────────────────────────
     // batchInfo is kept as the object shape — components access .duration/.format
-    batchInfo: z.object({
-      type: z.string().optional(),
-      mode: z.string().optional(),
-      format: z.string().optional(),
-      startDate: z.string().optional(),
-      duration: z.string().optional(),
-      timings: z.string().optional(),
-    }).optional(),
+    batchInfo: z.record(z.string(), z.any()).optional(),
     // batchInfoText — CMS free-form string (new courses from CMS use this instead)
     batchInfoText: z.string().optional(),
 

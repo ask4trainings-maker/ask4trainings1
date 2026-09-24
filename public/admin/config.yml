@@ -6,7 +6,7 @@ backend:
   auth_endpoint: /api/auth
 
 publish_mode: editorial_workflow
-local_backend: true # Set to true for local testing with 'npm run cms:proxy'.
+local_backend: false # Set to true for local testing with 'npm run cms:proxy'.
 logo_url: /logo.svg
 
 media_folder: "public/images/uploads"
