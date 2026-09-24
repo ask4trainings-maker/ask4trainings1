@@ -8,6 +8,7 @@ const coursesData = allCourses.map(c => {
     url: `/${slug}`
   };
 });
+const isDev = import.meta.env.DEV;
 ---
 <div id="search-modal" class="fixed inset-0 z-50 bg-white/80 hidden opacity-0 transition-opacity duration-200 flex items-start justify-center pt-24 px-4 backdrop-blur-sm">
   <div class="bg-slate-100 border border-slate-200 w-full max-w-2xl rounded-xl shadow-2xl overflow-hidden transform -translate-y-4 transition-transform duration-200" id="search-container">
@@ -40,7 +41,7 @@ const coursesData = allCourses.map(c => {
   </div>
 </div>
 
-<script define:vars={{ coursesData }}>
+<script define:vars={{ coursesData, isDev }}>
   const trigger = document.getElementById('search-trigger');
   const modal = document.getElementById('search-modal');
   const container = document.getElementById('search-container');
@@ -50,6 +51,26 @@ const coursesData = allCourses.map(c => {
   const devInput = document.getElementById('dev-search-input');
   const devResults = document.getElementById('dev-search-results');
   let loaded = false;
+
+  const initFallback = () => {
+    if (prodWrapper) prodWrapper.classList.add('hidden');
+    if (devFallback) devFallback.classList.remove('hidden');
+    
+    // Init fallback logic
+    if (devInput && devResults) {
+      const render = (query) => {
+        const q = query.toLowerCase();
+        const filtered = coursesData.filter(c => c.title.toLowerCase().includes(q));
+        devResults.innerHTML = filtered.slice(0, 10).map(c => 
+          `<li><a href="${c.url}/" class="block p-3 hover:bg-white/5 rounded-lg text-slate-600 hover:text-emerald-600 transition-colors border border-transparent hover:border-slate-200">${c.title}</a></li>`
+        ).join('');
+      };
+      render('');
+      devInput.addEventListener('input', (e) => render(e.target.value));
+      devInput.focus();
+    }
+    loaded = true; // Mark loaded so we don't try again
+  };
 
   const openModal = async () => {
     if (!modal) return;
@@ -61,37 +82,25 @@ const coursesData = allCourses.map(c => {
     });
 
     if (!loaded) {
-      try {
-        // Create CSS link dynamically
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = '/pagefind/pagefind-ui.css';
-        document.head.appendChild(link);
-        
-        // Build URL for dynamic import
-        const pagefindUrl = '/pagefind/pagefind-ui.js';
-        const { PagefindUI } = await import(/* @vite-ignore */ pagefindUrl);
-        new PagefindUI({ element: "#search-ui", showSubResults: true, showImages: false });
-        loaded = true;
-      } catch (e) {
-        console.warn('Pagefind not found (expected in dev mode). Falling back to local filter.');
-        if (prodWrapper) prodWrapper.classList.add('hidden');
-        if (devFallback) devFallback.classList.remove('hidden');
-        
-        // Init fallback logic
-        if (devInput && devResults) {
-          const render = (query) => {
-            const q = query.toLowerCase();
-            const filtered = coursesData.filter(c => c.title.toLowerCase().includes(q));
-            devResults.innerHTML = filtered.slice(0, 10).map(c => 
-              `<li><a href="${c.url}/" class="block p-3 hover:bg-white/5 rounded-lg text-slate-600 hover:text-emerald-600 transition-colors border border-transparent hover:border-slate-200">${c.title}</a></li>`
-            ).join('');
-          };
-          render('');
-          devInput.addEventListener('input', (e) => render(e.target.value));
-          devInput.focus();
+      if (isDev) {
+        initFallback();
+      } else {
+        try {
+          // Create CSS link dynamically
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = '/pagefind/pagefind-ui.css';
+          document.head.appendChild(link);
+          
+          // Build URL for dynamic import
+          const pagefindUrl = '/pagefind/pagefind-ui.js';
+          const { PagefindUI } = await import(/* @vite-ignore */ pagefindUrl);
+          new PagefindUI({ element: "#search-ui", showSubResults: true, showImages: false });
+          loaded = true;
+        } catch (e) {
+          console.warn('Pagefind not found (expected in dev mode). Falling back to local filter.');
+          initFallback();
         }
-        loaded = true; // Mark loaded so we don't try again
       }
     } else {
       // Focus the input if already loaded

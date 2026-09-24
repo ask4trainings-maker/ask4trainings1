@@ -1,4 +1,5 @@
 ---
+import TrainerIllustration from '../TrainerIllustration.astro';
 export interface Props {
   courseTitle?: string;
   trainerProfile?: {
@@ -31,13 +32,17 @@ if (!trainerProfile) {
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mt-8 sm:mt-10">
       
       <!-- Left Column -->
-      <div class="md:col-span-5 lg:col-span-4 flex justify-center">
-        <img 
-          src={trainerProfile.image || '/images/trainer-illustration.webp'} 
-          alt={`${courseTitle} Expert Trainer`}
-          class="w-full h-auto max-w-[220px] sm:max-w-[280px] mx-auto drop-shadow-xl"
-          loading="lazy"
-        />
+      <div class="md:col-span-5 lg:col-span-4 flex justify-center items-center">
+        {trainerProfile.image ? (
+          <img 
+            src={trainerProfile.image} 
+            alt={`${courseTitle} Expert Trainer`}
+            class="w-full h-auto max-w-[220px] sm:max-w-[280px] mx-auto drop-shadow-xl rounded-2xl object-cover border border-slate-200"
+            loading="lazy"
+          />
+        ) : (
+          <TrainerIllustration />
+        )}
       </div>
       
       <!-- Right Column -->
