@@ -1,5 +1,5 @@
 ---
-title: Generative AI Course in Hyderabad
+title: "Generative AI Course in Hyderabad"
 slug: generative-ai-course-in-hyderabad
 category: other-tools
 valueProp: >-
