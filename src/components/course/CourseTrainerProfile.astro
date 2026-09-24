@@ -1,52 +1,77 @@
 ---
 export interface Props {
+  courseTitle?: string;
   trainerProfile?: {
-    heading: string;
-    description: string;
-    highlights: (string | Record<string, any>)[];
+    heading?: string;
+    title?: string;
+    image?: string;
+    description?: string;
+    highlights?: (string | Record<string, any>)[];
   };
 }
 
-const { trainerProfile } = Astro.props;
+const { courseTitle = 'Course', trainerProfile } = Astro.props;
 
-if (!trainerProfile || !trainerProfile.heading) {
+if (!trainerProfile) {
   return null;
 }
 ---
 <section id="trainer-profile" class="bg-emerald-50/40 py-16 border-y border-emerald-100 scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <!-- Image / Graphic -->
-      <div class="lg:col-span-5 flex justify-center">
-        <div class="relative w-full max-w-sm aspect-square bg-slate-50 rounded-full border border-slate-200 flex items-center justify-center overflow-hidden">
-          <div class="absolute inset-0 bg-emerald-600/5 rounded-full border-[10px] border-white"></div>
-          <svg class="w-32 h-32 text-slate-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-        </div>
+    
+    <!-- Section Header -->
+    <div class="mb-10 flex flex-col items-center sm:items-start text-center sm:text-left max-w-2xl mx-auto sm:mx-0">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-2">
+        {courseTitle} Trainer
+      </h2>
+      <div class="h-1 w-16 bg-amber-400 mt-2 rounded-full mx-auto sm:mx-0"></div>
+    </div>
+
+    <!-- Responsive Two-Column Split Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center mt-8 sm:mt-10">
+      
+      <!-- Left Column -->
+      <div class="md:col-span-5 lg:col-span-4 flex justify-center">
+        <img 
+          src={trainerProfile.image || '/images/trainer-illustration.webp'} 
+          alt={`${courseTitle} Expert Trainer`}
+          class="w-full h-auto max-w-[220px] sm:max-w-[280px] mx-auto drop-shadow-xl"
+          loading="lazy"
+        />
       </div>
       
-      <!-- Content -->
-      <div class="lg:col-span-7">
-        <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-semibold rounded-full mb-4">
+      <!-- Right Column -->
+      <div class="md:col-span-7 lg:col-span-8 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-full mb-4">
           Trainer Excellence
         </div>
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-6 leading-tight">
-          {trainerProfile.heading}
-        </h2>
-        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
-          {trainerProfile.description}
+        
+        <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2">
+          {trainerProfile.title || trainerProfile.heading || `Expert Led ${courseTitle} Trainer`}
+        </h3>
+        
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+          {trainerProfile.description || 'Practical training, mentoring, and enterprise architecture overview.'}
         </p>
         
         {trainerProfile.highlights && trainerProfile.highlights.length > 0 && (
-          <ul class="space-y-4">
-            {trainerProfile.highlights.map(highlight => (
-              <li class="flex items-start gap-4">
-                <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                </div>
-                <span class="text-slate-700 text-lg">{typeof highlight === 'string' ? highlight : (highlight.text || highlight.title || highlight.highlight || JSON.stringify(highlight))}</span>
-              </li>
-            ))}
-          </ul>
+          <div class="mt-6">
+            <h4 class="text-sm sm:text-base font-bold text-slate-900 mt-4 mb-3">Highlights</h4>
+            <ul class="space-y-1.5">
+              {trainerProfile.highlights.map((highlight: any) => (
+                <li class="flex items-start gap-2.5">
+                  <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                    </svg>
+                  </div>
+                  <span class="text-xs sm:text-sm text-slate-600 leading-normal">
+                    {typeof highlight === 'string' ? highlight : (highlight.item || highlight.text || highlight.title || highlight.highlight || JSON.stringify(highlight))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         )}
       </div>
     </div>

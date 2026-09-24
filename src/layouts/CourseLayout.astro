@@ -106,7 +106,7 @@ const schemaGraph = {
   <CourseEligibility eligibility={data.eligibility} />
   <CourseCertifications certifications={data.certifications} />
   <CourseJobRoles jobRoles={data.jobRoles} />
-  <CourseTrainerProfile trainerProfile={data.trainerProfile} />
+  <CourseTrainerProfile courseTitle={data.title} trainerProfile={data.trainer || data.trainerProfile} />
   <CourseFAQ faqs={data.faqs} />
   
   <!-- Section 13: Related Courses -->

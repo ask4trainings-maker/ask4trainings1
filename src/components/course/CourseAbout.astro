@@ -26,8 +26,8 @@ if (!aboutCourse) {
         <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-semibold rounded-full border border-emerald-100">
           Course Deep Dive
         </div>
-        <h2 class="text-3xl font-heading font-bold text-slate-900 break-words min-w-0">Why Master {courseTitle}?</h2>
-        <div class="prose prose-slate prose-emerald max-w-none text-slate-600 leading-relaxed text-lg">
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 break-words min-w-0">Why Master {courseTitle}?</h2>
+        <div class="prose prose-slate prose-emerald max-w-none text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-lg">
           <p>{aboutCourse}</p>
         </div>
       </div>
@@ -36,13 +36,15 @@ if (!aboutCourse) {
       <div class="lg:col-span-5 w-full">
         <div class="bg-slate-900 text-white rounded-2xl border border-slate-800 p-6 sm:p-8 shadow-md">
           <!-- Enterprise SVG Graphic -->
-          <div class="w-full aspect-[4/3] bg-slate-900 rounded-xl mb-6 flex items-center justify-center p-4">
-            {category === 'guidewire' ? <GuidewireInfographic /> :
-             category === 'sap' ? <SAPInfographic /> :
-             ['cloud-computing', 'devops'].includes(category || '') ? <CloudDevOpsInfographic /> :
-             category === 'trending-courses' ? <DataAIInfographic /> :
-             category === 'siemens' ? <SiemensPLMInfographic /> :
-             <DefaultEnterpriseInfographic />}
+          <div class="w-full overflow-x-auto no-scrollbar sm:overflow-visible my-6">
+            <div class="min-w-[340px] sm:min-w-0 flex justify-center aspect-[4/3] bg-slate-900 rounded-xl mb-6 p-4">
+              {category === 'guidewire' ? <GuidewireInfographic /> :
+               category === 'sap' ? <SAPInfographic /> :
+               ['cloud-computing', 'devops'].includes(category || '') ? <CloudDevOpsInfographic /> :
+               category === 'trending-courses' ? <DataAIInfographic /> :
+               category === 'siemens' ? <SiemensPLMInfographic /> :
+               <DefaultEnterpriseInfographic />}
+            </div>
           </div>
           
           <!-- Micro Cards -->

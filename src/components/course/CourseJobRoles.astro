@@ -31,9 +31,9 @@ const normalizedRoles = jobRoles.map((role, index) => {
 ---
 <section id="job-roles" class="bg-slate-50/60 py-16 border-y border-slate-200/60 scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="mb-10 text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Target Job Roles</h2>
-      <p class="text-slate-600">Prepare for these high-demand positions in the industry.</p>
+    <div class="mb-10 flex flex-col items-center sm:items-start text-center sm:text-left max-w-2xl mx-auto sm:mx-0">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-4">Target Job Roles</h2>
+      <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">Prepare for these high-demand positions in the industry.</p>
     </div>
     
     <!-- Desktop Layout (Hidden on Mobile) -->
@@ -99,7 +99,7 @@ const normalizedRoles = jobRoles.map((role, index) => {
     <!-- Mobile Layout (Accordion) -->
     <div class="md:hidden space-y-3">
       {normalizedRoles.map((role, index) => (
-        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open={index === 0}>
+        <details name="job-roles-accordion" class="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden" open={index === 0}>
           <summary class="flex items-center justify-between px-5 py-4 cursor-pointer bg-slate-50 group-open:bg-emerald-600 group-open:text-white text-slate-800 transition-colors">
             <span class="font-bold">{role.title}</span>
             <span class="transition group-open:rotate-180">

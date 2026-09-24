@@ -24,16 +24,16 @@ const faqSchema = {
 ---
 <section id="faqs" class="py-16 bg-white scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="mb-10 text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
-      <p class="text-slate-600">Got questions? We have got answers.</p>
+    <div class="mb-10 flex flex-col items-center sm:items-start text-center sm:text-left max-w-2xl mx-auto sm:mx-0">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-4">Frequently Asked Questions</h2>
+      <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">Got questions? We have got answers.</p>
     </div>
     
     <div class="space-y-4 max-w-4xl mx-auto">
       {faqs.map(faq => (
         <div class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm">
-          <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600" onclick="this.parentElement.classList.toggle('is-open')">
-            <span class="pr-6 text-lg">{faq.question}</span>
+          <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600" onclick="const p=this.parentElement;const g=p.parentElement;Array.from(g.children).forEach(c=>{if(c!==p)c.classList.remove('is-open')});p.classList.toggle('is-open')">
+            <span class="pr-6 text-sm sm:text-base font-semibold text-slate-800">{faq.question}</span>
             <svg class="w-5 h-5 text-slate-500 shrink-0 transition-transform duration-300 group-hover:rotate-180 group-[.is-open]:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>

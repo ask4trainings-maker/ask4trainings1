@@ -47,9 +47,9 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
       
       <!-- Left Column: Content -->
-      <div class="lg:col-span-7 xl:col-span-8">
+      <div class="lg:col-span-7 xl:col-span-8 flex flex-col items-center sm:items-start text-center sm:text-left mx-auto sm:mx-0">
         <!-- Breadcrumb -->
-        <nav class="flex flex-wrap items-center gap-2 text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
+        <nav class="flex flex-wrap items-center justify-center sm:justify-start gap-2 text-sm text-slate-500 mb-6" aria-label="Breadcrumb">
           <a href="/" class="hover:text-emerald-500 transition-colors">Home</a>
           <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
           <a href={`/courses/?category=${category}`} class="hover:text-emerald-500 transition-colors">{categoryLabel}</a>
@@ -65,7 +65,7 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
         </div>
 
         <!-- Title & Value Prop -->
-        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-snug lg:leading-tight mb-4 max-w-4xl break-words min-w-0">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-4 max-w-4xl break-words min-w-0 text-slate-900">
           {title}
         </h1>
         {valueProp && (
@@ -75,7 +75,7 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
         )}
 
         <!-- 3-Chip Metadata Row -->
-        <div class="flex flex-wrap items-center gap-3 mb-8">
+        <div class="flex flex-wrap items-center justify-center sm:justify-start gap-3 mb-8">
           <div class="flex items-center gap-2 text-sm font-medium text-slate-700 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-lg shadow-sm">
             <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
             {duration}

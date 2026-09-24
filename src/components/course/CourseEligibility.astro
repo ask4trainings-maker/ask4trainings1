@@ -11,16 +11,16 @@ if (!eligibility || eligibility.length === 0) {
 ---
 <section id="eligibility" class="bg-slate-50/60 py-16 border-y border-slate-200/60 scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
-    <div class="mb-10 text-center max-w-2xl mx-auto">
-      <h2 class="text-3xl font-heading font-bold text-slate-900 mb-4">Who Should Enroll?</h2>
-      <p class="text-slate-600">This program is perfectly suited for the following profiles.</p>
+    <div class="mb-10 flex flex-col items-center sm:items-start text-center sm:text-left max-w-2xl mx-auto sm:mx-0">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 mb-4">Who Should Enroll?</h2>
+      <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">This program is perfectly suited for the following profiles.</p>
     </div>
     
     <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
       {eligibility.map(item => (
-        <span class="px-5 py-2.5 bg-white border border-slate-200 text-slate-700 rounded-full font-medium shadow-sm hover:border-emerald-300 hover:bg-emerald-50 transition-colors">
+        <div class="bg-white text-slate-700 rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs hover:border-emerald-500/50 transition-all font-medium">
           {typeof item === 'string' ? item : (item.text || item.title || item.point || item.criteria || JSON.stringify(item))}
-        </span>
+        </div>
       ))}
     </div>
   </div>

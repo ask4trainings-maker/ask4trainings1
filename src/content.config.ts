@@ -168,6 +168,7 @@ const courses = defineCollection({
     // ─── Section 11: Trainer Profile ────────────────────────────────────────
     // Legacy shape (company standard) + CMS shape (per-course trainer). Accept both.
     trainerProfile: z.any().optional(),
+    trainer: z.any().optional(),
 
     // ─── Section 12: FAQs ───────────────────────────────────────────────────
     faqs: z.array(

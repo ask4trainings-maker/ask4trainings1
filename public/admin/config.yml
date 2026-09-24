@@ -1088,57 +1088,28 @@ collections:
         widget: string
         required: false
         hint: 'Example: ''Guidewire Certified Associate (GCA) — PolicyCenter'' — Official credential students can pursue after this course.'
-      - label: 👨‍🏫 Trainer Profile
+      - label: "Trainer Section"
+        name: "trainer"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Trainer Section Title", name: "title", widget: "string", required: false, hint: "Example: 'Expert Led Guidewire Trainer'" }
+          - { label: "Trainer Image / Illustration", name: "image", widget: "image", required: false }
+          - { label: "Trainer Description", name: "description", widget: "text", required: false, hint: "Summary of hands-on mentoring and enterprise expertise." }
+          - label: "Trainer Highlights"
+            name: "highlights"
+            widget: "list"
+            required: false
+            field: { label: "Highlight", name: "item", widget: "string", hint: "Example: 'Real-time Project Mentoring & Job Support'" }
+      - label: 👨‍🏫 Trainer Profile (Legacy)
         name: trainerProfile
         widget: object
         required: false
-        hint: The lead instructor's profile shown in the course page trainer section.
+        hint: Legacy field for older courses.
         fields:
-          - label: Trainer Name
-            name: name
-            widget: string
-            hint: 'Example: ''Mr. Rajesh Kumar'''
-          - label: Trainer Title / Role
-            name: role
-            widget: string
-            required: false
-            hint: 'Example: ''Senior Guidewire Implementation Consultant'''
-          - label: Experience Summary
-            name: experience
-            widget: text
-            required: false
-            hint: '12+ years of implementation experience — 2–3 sentences.'
-          - label: Legacy Title Field
-            name: title
-            widget: string
-            required: false
-            hint: Legacy field — use 'Trainer Title / Role' above for new entries.
-          - label: Legacy Bio Field
-            name: bio
-            widget: text
-            required: false
-            hint: Legacy field — use 'Experience Summary' above for new entries.
-          - label: Trainer Highlights
-            name: highlights
-            widget: list
-            required: false
-            hint: 'Bullet-point credentials. Example: ''12 years Guidewire implementation experience'' or ''Worked with top US insurance carriers''.'
-            field:
-              label: Highlight
-              name: highlight
-              widget: string
-              required: false
-              hint: Provide a value for Highlight.
-          - label: Trainer Avatar Image
-            name: avatarImage
-            widget: image
-            required: false
-            hint: 'Professional headshot photo. Recommended: 400×400px square, JPG/PNG.'
-          - label: Avatar Image Alt Text
-            name: avatarImageAlt
-            widget: string
-            required: false
-            hint: 'Example: ''Rajesh Kumar — Senior Guidewire Trainer at Ask4Trainings'' — Descriptive text for screen readers.'
+          - { label: "Heading", name: "heading", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Highlights", name: "highlights", widget: "list", required: false, field: {name: highlight, widget: string} }
       - label: ❓ FAQs
         name: faqs
         widget: list
