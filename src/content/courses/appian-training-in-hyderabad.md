@@ -1,5 +1,5 @@
 ---
-title: Appian Training in Hyderabad
+title: Best Appian Training in Hyderabad
 slug: appian-training-in-hyderabad
 category: other-tools
 valueProp: >-

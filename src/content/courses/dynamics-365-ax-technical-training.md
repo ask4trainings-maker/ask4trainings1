@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 AX Technical Training
+title: Best Dynamics 365 AX Technical Training
 slug: dynamics-365-ax-technical-training
 category: ms-d365
 valueProp: >-

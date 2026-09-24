@@ -1,5 +1,5 @@
 ---
-title: Generative AI Online Training
+title: Best Generative AI Online Training with Certification
 slug: generative-ai-online-training
 category: trending-courses
 valueProp: >-

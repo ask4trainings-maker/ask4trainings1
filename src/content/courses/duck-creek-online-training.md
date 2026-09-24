@@ -1,5 +1,5 @@
 ---
-title: Duck Creek Training
+title: Best Duck Creek Online Training
 slug: duck-creek-online-training
 category: new-courses
 valueProp: >-

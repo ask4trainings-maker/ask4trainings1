@@ -1,5 +1,5 @@
 ---
-title: Qlik Sense Course in Hyderabad
+title: Best Qlik Sense Course in Hyderabad
 slug: qlik-sense-course-in-hyderabad
 category: trending-courses
 valueProp: >-

@@ -1,5 +1,5 @@
 ---
-title: Jira Confluence Online Training
+title: Best Jira Confluence Online Training
 slug: jira-confluence-online-training
 category: other-tools
 valueProp: >-

@@ -1,5 +1,5 @@
 ---
-title: Azure with DevOps Online Training
+title: Best Azure with DevOps Online Training
 slug: azure-with-devops-online-training
 category: devops
 valueProp: >-

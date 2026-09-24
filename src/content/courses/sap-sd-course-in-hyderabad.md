@@ -1,5 +1,5 @@
 ---
-title: Sap Sd Course Training
+title: Best SAP SD Course in Hyderabad
 slug: sap-sd-course-in-hyderabad
 category: sap
 valueProp: >-

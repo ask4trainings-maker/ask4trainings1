@@ -1,5 +1,5 @@
 ---
-title: Salesforce Online Training
+title: Best Salesforce Online Training with Certification
 slug: salesforce-online-training
 category: cloud-computing
 valueProp: >-

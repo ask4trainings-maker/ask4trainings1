@@ -1,5 +1,5 @@
 ---
-title: Talend Online Training
+title: Best Talend Online Training
 slug: talend-online-training
 category: other-tools
 valueProp: >-

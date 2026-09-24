@@ -1,5 +1,5 @@
 ---
-title: Data Science Online Training
+title: Best Data Science Online Training with Certification
 slug: data-science-online-training
 category: trending-courses
 valueProp: >-

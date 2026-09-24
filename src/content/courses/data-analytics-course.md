@@ -1,5 +1,5 @@
 ---
-title: Data Analytics Course
+title: Best Data Analytics Online Training with Certification
 slug: data-analytics-course
 category: other-tools
 valueProp: >-

@@ -1,5 +1,5 @@
 ---
-title: Polarion Training
+title: Best Polarion Online Training with Certification
 slug: polarion-online-training
 category: siemens
 valueProp: >-

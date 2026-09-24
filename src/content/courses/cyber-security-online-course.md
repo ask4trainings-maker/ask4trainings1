@@ -1,5 +1,5 @@
 ---
-title: Cyber Security Online Course
+title: Best Cyber Security Online Training with Certification
 slug: cyber-security-online-course
 category: trending-courses
 valueProp: >-

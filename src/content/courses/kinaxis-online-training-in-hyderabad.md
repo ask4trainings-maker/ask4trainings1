@@ -1,5 +1,5 @@
 ---
-title: Kinaxis Training
+title: Best Kinaxis Online Training with Certification
 slug: kinaxis-online-training-in-hyderabad
 category: new-courses
 valueProp: >-

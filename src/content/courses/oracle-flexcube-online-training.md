@@ -1,5 +1,5 @@
 ---
-title: Oracle Flexcube Training
+title: Best Oracle Flexcube Online Training
 slug: oracle-flexcube-online-training
 category: oracle
 valueProp: >-

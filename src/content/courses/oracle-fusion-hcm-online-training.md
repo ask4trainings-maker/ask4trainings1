@@ -1,5 +1,5 @@
 ---
-title: Oracle Fusion Hcm Training
+title: Best Oracle Fusion HCM Online Training
 slug: oracle-fusion-hcm-online-training
 category: oracle
 valueProp: >-

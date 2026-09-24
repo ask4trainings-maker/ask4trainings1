@@ -1,5 +1,5 @@
 ---
-title: Palantir Foundry Training
+title: Best Palantir Foundry Online Training
 slug: palantir-foundry-online-training
 category: trending-courses
 valueProp: >-

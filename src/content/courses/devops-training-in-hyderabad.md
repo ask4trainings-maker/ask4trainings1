@@ -1,5 +1,5 @@
 ---
-title: DevOps Training in Hyderabad
+title: Best DevOps Training in Hyderabad
 slug: devops-training-in-hyderabad
 category: devops
 valueProp: >-

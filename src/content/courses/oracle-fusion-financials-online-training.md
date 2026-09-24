@@ -1,5 +1,5 @@
 ---
-title: Oracle Fusion Financials Training
+title: Best Oracle Fusion Financials Online Training
 slug: oracle-fusion-financials-online-training
 category: oracle
 valueProp: >-

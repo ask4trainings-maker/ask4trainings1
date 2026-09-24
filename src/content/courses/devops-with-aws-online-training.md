@@ -1,5 +1,5 @@
 ---
-title: DevOps with AWS Online Training
+title: Best DevOps with AWS Online Training
 slug: devops-with-aws-online-training
 category: devops
 valueProp: >-
