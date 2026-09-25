@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Qlik Sense Course in
+  Hyderabad
 ---
 
 This is the canonical course page for Qlik Sense Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

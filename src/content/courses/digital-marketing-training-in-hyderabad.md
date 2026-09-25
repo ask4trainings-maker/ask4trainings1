@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > New Courses > Digital Marketing Training in
+  Hyderabad
 ---
 
 This is the canonical course page for Digital Marketing Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

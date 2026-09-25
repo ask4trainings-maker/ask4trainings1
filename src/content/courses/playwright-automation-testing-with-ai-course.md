@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Other Tools > Playwright Automation Testing
+  with AI Course
 ---
 
 This is the canonical course page for Playwright Automation Testing with AI Course. Start your learning journey today with Ask 4 Trainings.

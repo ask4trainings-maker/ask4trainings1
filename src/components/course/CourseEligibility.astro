@@ -8,6 +8,24 @@ const { eligibility = [] } = Astro.props;
 if (!eligibility || eligibility.length === 0) {
   return null;
 }
+
+const normalizedItems = eligibility.map((item) => {
+  if (typeof item === 'string') {
+    try {
+      const parsed = JSON.parse(item);
+      return {
+        title: parsed.title || parsed.question || parsed.role || 'Target Profile',
+        description: parsed.description || parsed.answer || parsed.detail || item
+      };
+    } catch {
+      return { title: 'Eligible Candidate', description: item };
+    }
+  }
+  return {
+    title: item.title || item.question || item.role || 'Target Profile',
+    description: item.description || item.answer || item.detail || ''
+  };
+});
 ---
 <section id="eligibility" class="bg-slate-50/60 py-16 border-y border-slate-200/60 scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
@@ -16,10 +34,16 @@ if (!eligibility || eligibility.length === 0) {
       <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">This program is perfectly suited for the following profiles.</p>
     </div>
     
-    <div class="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-      {eligibility.map(item => (
-        <div class="bg-white text-slate-700 rounded-2xl border border-slate-200 p-4 sm:p-5 shadow-xs hover:border-emerald-500/50 transition-all font-medium">
-          {typeof item === 'string' ? item : (item.text || item.title || item.point || item.criteria || JSON.stringify(item))}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+      {normalizedItems.map(item => (
+        <div class="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs hover:border-emerald-500/50 transition-all">
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 tracking-tight flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
+            {item.title}
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+            {item.description}
+          </p>
         </div>
       ))}
     </div>

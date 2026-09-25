@@ -173,6 +173,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Data Analytics Online
+  Training with Certification
 ---
 
 This is the canonical course page for Data Analytics Online Training. Start your learning journey today with Ask 4 Trainings.

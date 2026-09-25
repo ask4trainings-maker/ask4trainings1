@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Generative AI Online
+  Training with Certification
 ---
 
 This is the canonical course page for Generative AI Online Training. Start your learning journey today with Ask 4 Trainings.

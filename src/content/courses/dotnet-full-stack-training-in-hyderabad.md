@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Development > Dotnet Full Stack Training in
+  Hyderabad
 ---
 
 This is the canonical course page for Dotnet Full Stack Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > New Courses > Best Duck Creek Online Training
 ---
 
 This is the canonical course page for Duck Creek Training. Start your learning journey today with Ask 4 Trainings.

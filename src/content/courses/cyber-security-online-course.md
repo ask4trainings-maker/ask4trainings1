@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Cyber Security Online
+  Training with Certification
 ---
 
 This is the canonical course page for Cyber Security Online Course. Start your learning journey today with Ask 4 Trainings.

@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > SAP > SAP S/4 Hana Fico Online Training
 ---
 
 This is the canonical course page for SAP S/4 Hana Fico Online Training. Start your learning journey today with Ask 4 Trainings.

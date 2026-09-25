@@ -789,7 +789,7 @@ collections:
         name: navigationLocation
         widget: string
         required: false
-        hint: Shows where this page appears in the live site (e.g., 'Navigation Bar > All Courses > Guidewire > Policy Center Dev').
+        hint: "Breadcrumb path showing where this course lives on the live site (e.g., 'Navigation Bar > All Courses > Guidewire Suite > Guidewire PolicyCenter Training')."
       - label: ⭐ Course Priority Tier
         name: priorityTier
         widget: select

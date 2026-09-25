@@ -173,6 +173,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Siemens > Mendix Training in Hyderabad
 ---
 
 This is the canonical course page for Mendix Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

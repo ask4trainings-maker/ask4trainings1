@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Siemens > Best Teamcenter AWC Online Training
 ---
 
 This is the canonical course page for Teamcenter Awc Training. Start your learning journey today with Ask 4 Trainings.

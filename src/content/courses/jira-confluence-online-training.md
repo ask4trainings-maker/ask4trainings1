@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Other Tools > Best Jira Confluence Online
+  Training
 ---
 
 This is the canonical course page for Jira Confluence Online Training. Start your learning journey today with Ask 4 Trainings.

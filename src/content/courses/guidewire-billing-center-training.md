@@ -173,6 +173,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Guidewire Suite > Top Guidewire billing center
+  training in Hyderabad 2026
 ---
 
 This is the canonical course page for Top Guidewire billing center training in Hyderabad 2026. Start your learning journey today with Ask 4 Trainings.

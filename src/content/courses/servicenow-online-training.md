@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Servicenow Online
+  Training with Certification
 ---
 
 This is the canonical course page for Servicenow Training. Start your learning journey today with Ask 4 Trainings.

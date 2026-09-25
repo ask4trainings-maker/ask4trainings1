@@ -128,6 +128,9 @@ const courses = defineCollection({
       })),
     ]).default([]),
 
+    // whoShouldEnroll — CMS alias/variant for eligibility
+    whoShouldEnroll: z.array(z.union([z.string(), z.record(z.string(), z.any())])).optional().default([]),
+
     // targetAudience — CMS-aligned audience field
     targetAudience: z.array(
       z.union([

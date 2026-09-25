@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Oracle > Best Oracle Fusion HCM Online Training
 ---
 
 This is the canonical course page for Oracle Fusion Hcm Training. Start your learning journey today with Ask 4 Trainings.

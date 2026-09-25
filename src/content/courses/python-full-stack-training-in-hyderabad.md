@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Development > Python Full Stack Training in
+  Hyderabad
 ---
 
 This is the canonical course page for Python Full Stack Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

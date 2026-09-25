@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Other Tools > Best Talend Online Training
 ---
 
 This is the canonical course page for Talend Online Training. Start your learning journey today with Ask 4 Trainings.

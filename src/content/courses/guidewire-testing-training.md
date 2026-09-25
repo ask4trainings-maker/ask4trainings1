@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Guidewire Testing Training
 ---
 
 This is the canonical course page for Guidewire Testing Training. Start your learning journey today with Ask 4 Trainings.

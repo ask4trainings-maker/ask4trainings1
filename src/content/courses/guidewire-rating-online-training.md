@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Guidewire Suite > Guidewire Rating Online
+  Training
 ---
 
 This is the canonical course page for Guidewire Rating Online Training. Start your learning journey today with Ask 4 Trainings.

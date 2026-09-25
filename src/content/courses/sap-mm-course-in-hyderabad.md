@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > SAP > SAP MM Course in Hyderabad
 ---
 
 This is the canonical course page for SAP MM Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

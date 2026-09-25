@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Trending Course > Best Data Science Online
+  Training with Certification
 ---
 
 This is the canonical course page for Data Science Online Training. Start your learning journey today with Ask 4 Trainings.

@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Microsoft Dynamics 365 > Best Dynamics 365 AX
+  Technical Training
 ---
 
 This is the canonical course page for Dynamics 365 AX Technical Training. Start your learning journey today with Ask 4 Trainings.

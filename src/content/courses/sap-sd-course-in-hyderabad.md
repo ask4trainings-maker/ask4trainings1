@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > SAP > Best SAP SD Course in Hyderabad
 ---
 
 This is the canonical course page for Sap Sd Course Training. Start your learning journey today with Ask 4 Trainings.

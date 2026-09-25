@@ -173,6 +173,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Cloud Computing > Snowflake Training
 ---
 
 This is the canonical course page for Snowflake Training. Start your learning journey today with Ask 4 Trainings.

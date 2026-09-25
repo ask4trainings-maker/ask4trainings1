@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Cloud & DevOps > Best Azure with DevOps Online
+  Training
 ---
 
 This is the canonical course page for Azure with DevOps Online Training. Start your learning journey today with Ask 4 Trainings.

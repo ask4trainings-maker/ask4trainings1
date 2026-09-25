@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Other Tools > PEGA Training in Hyderabad
 ---
 
 This is the canonical course page for PEGA Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

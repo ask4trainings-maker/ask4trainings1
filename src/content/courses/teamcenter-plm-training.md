@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Siemens > Best Teamcenter PLM Training &
+  Certification
 ---
 
 This is the canonical course page for Teamcenter Plm Training. Start your learning journey today with Ask 4 Trainings.

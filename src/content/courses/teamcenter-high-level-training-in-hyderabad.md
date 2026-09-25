@@ -172,6 +172,7 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: Navigation Bar > All Courses > Siemens > Teamcenter High Level Training
 ---
 
 This is the canonical course page for Teamcenter High Level Training. Start your learning journey today with Ask 4 Trainings.

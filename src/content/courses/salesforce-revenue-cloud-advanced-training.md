@@ -172,6 +172,9 @@ certifications:
   badges:
     - Core Configuration Specialist
     - Implementation Expert Badge
+navigationLocation: >-
+  Navigation Bar > All Courses > Cloud Computing > Salesforce Revenue Cloud
+  Advanced Training
 ---
 
 This is the canonical course page for Salesforce Revenue Cloud Advanced Training. Start your learning journey today with Ask 4 Trainings.
