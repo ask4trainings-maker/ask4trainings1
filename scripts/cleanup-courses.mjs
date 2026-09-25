@@ -53,7 +53,7 @@ const COURSES_DIR = path.join(ROOT, 'src', 'content', 'courses');
 
 // Pages that are static routes (not courses), never delete if present
 const STATIC_SLUGS = new Set([
-  'about-us', 'contact-us', 'student-registration', 'course-list',
+  'about-us', 'contact-us', 'course-list',
   'new-courses', 'courses', 'privacy-policy', 'terms-of-service',
 ]);
 // Archive/taxonomy prefix patterns — not courses

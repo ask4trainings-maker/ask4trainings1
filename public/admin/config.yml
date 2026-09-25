@@ -761,59 +761,7 @@ collections:
             widget: string
             hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or
               symbols. Used to build the wa.me/ chat link.'
-      - label: 📝 Student Registration (/student-registration)
-        name: student_registration
-        file: src/data/pages/student-registration.json
-        format: json
-        fields:
-          - label: 📍 Live Location
-            name: livePath
-            widget: string
-            default: Navigation Bar > Student Registration → /student-registration/
-            hint: READ-ONLY context marker. All edits here appear on
-              ask4trainings.com/student-registration/
-          - label: SEO Meta Title
-            name: metaTitle
-            widget: string
-            required: false
-            hint: 'Example: ''Student Registration | Enrol in IT Training — Ask4Trainings
-              Hyderabad'''
-          - label: SEO Meta Description
-            name: metaDescription
-            widget: text
-            required: false
-            hint: 'Example: ''Register as a student at Ask4Trainings. Fill the form to enrol
-              in Guidewire, SAP, DevOps, or Cloud courses. Our team calls back
-              within 2 hours to confirm your batch.'''
-          - label: Page Hero Headline
-            name: heroTitle
-            widget: string
-            hint: 'Example: ''Student Registration'''
-          - label: Hero Subtitle
-            name: heroSubtitle
-            widget: text
-            hint: 'Example: ''Fill in the form below and our team will contact you within 2
-              hours to confirm your batch, discuss the schedule, and answer any
-              questions.'''
-          - label: Next Steps Section Title
-            name: nextStepsTitle
-            widget: string
-            hint: 'Example: ''What Happens After You Register?'''
-          - label: Next Steps List
-            name: nextSteps
-            widget: list
-            hint: Numbered steps shown after the registration form explaining the onboarding
-              process.
-            summary: 'Step {{fields.step}}: {{fields.text}}'
-            fields:
-              - label: Step Number
-                name: step
-                widget: string
-                hint: 'Example: ''1'' or ''2'''
-              - label: Step Description
-                name: text
-                widget: string
-                hint: 'Example: ''Our counsellor calls or WhatsApps you within 2 hours.'''
+
   - name: courses
     label: 🎓 Course Catalog
     folder: src/content/courses
