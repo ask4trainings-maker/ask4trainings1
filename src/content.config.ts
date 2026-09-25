@@ -202,15 +202,6 @@ const courses = defineCollection({
     // ─── Key Features ────────────────────────────────────────────────────────
     keyFeatures: z.array(z.any()).optional(),
 
-    // ─── Highlights ─────────────────────────────────────────────────────────
-    // Accept string list (CMS), icon+text objects (legacy), or item objects (legacy alt)
-    highlights: z.union([
-      z.array(z.string()),
-      z.array(z.object({ icon: z.string(), text: z.string() })),
-      z.array(z.object({ item: z.string() })),
-      z.array(z.object({ highlight: z.string() })),
-    ]).optional(),
-
     // ─── SEO & Dates ─────────────────────────────────────────────────────────
     keywords: z.array(
       z.union([z.string(), z.object({ keyword: z.string() })])

@@ -19,11 +19,6 @@ batchInfo:
   duration: 45-60 Hrs
   mode: Live Interactive Online + Lab Sandbox
   startDate: Starting This Weekend
-highlights:
-  - Hands-on Architecture & Configuration Labs
-  - Real-world Enterprise Implementation Scenarios
-  - Dataverse, Power Automate & Azure Integration
-  - Certification & Interview Preparation Support
 syllabus:
   - moduleTitle: 'Module 1: Introduction to Dynamics 365 & Architecture'
     module: 'Module 1: Introduction to Dynamics 365 & Architecture'
@@ -230,14 +225,8 @@ whoShouldEnroll:
   - Business analysts seeking functional expertise in Dynamics 365 Sales or Customer Service
   - Fresh graduates with a background in Computer Science, Information Technology, or Business Management
   - Microsoft 365 administrators wanting to extend their skills into Dynamics 365 CRM
-courseHighlights:
-  - Hands-on Architecture & Configuration Labs
-  - Real-world Enterprise Implementation Scenarios
-  - Dataverse, Power Automate & Azure Integration
-  - Certification & Interview Preparation Support
 trainer:
   title: Learn from Practising Dynamics 365 Architects
-  image: ''
   description: Our instructors are active Microsoft Dynamics 365 practitioners and certified consultants with a minimum of 10 years of enterprise project experience across global implementations.
   highlights:
     - 10+ Years of Dynamics 365 Enterprise Implementation Experience

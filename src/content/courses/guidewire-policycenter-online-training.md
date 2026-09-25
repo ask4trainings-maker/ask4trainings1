@@ -19,10 +19,6 @@ duration: 20 - 25 Hrs
 trainingMode: Live Online
 brochureDriveUrl: ''
 description: Start your career with Guidewire Policy Center Online Training, designed to make you a skilled Guidewire Developer. This Guidewire Development Training covers real-time scenarios, Guidewire Configuration, and GOSU Training, helping you master insurance domain skills and become job-ready with Guidewire Certification Training.
-highlights:
-  - Highlisght 1
-  - Highlight 2
-  - Highlight 3
 targetAudience:
   - Students - Target Audenice
   - Teacher Target audience
@@ -295,13 +291,8 @@ whoShouldEnroll:
     answer: This course is perfect for individuals seeking  Guidewire Training for Working Professionals with flexible schedules. Through Guidewire Policy Center Online Training and Guidewire Developer Online Classes, learners can balance work and study while gaining hands-on experience in Guidewire Real-Time Project Training and industry-focused modules.
   - question: Graduates
     answer: Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-courseHighlights:
-  - Highlisght 1
-  - Highlight 2
-  - Highlight 3
 trainer:
   title: Trainer Title here
-  image: ''
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
   highlights:
     - 10+ Years of Enterprise Production Experience

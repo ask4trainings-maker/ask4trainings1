@@ -26,7 +26,6 @@ whoShouldEnroll:
     answer: Anyone who needs to test content changes safely.
 trainer:
   title: Test Instructor
-  image: ''
   description: A placeholder instructor for testing purposes.
   highlights: []
 batches:
@@ -46,8 +45,6 @@ syllabus:
 eligibility:
   - title: CMS Editors
     answer: Anyone who needs to test content changes safely.
-highlights: []
-courseHighlights: []
 trainerProfile:
   title: Test Instructor
   description: A placeholder instructor for testing purposes.
