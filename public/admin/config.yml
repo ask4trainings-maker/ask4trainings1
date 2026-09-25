@@ -203,7 +203,7 @@ collections:
               - label: CTA Headline (HTML)
                 name: headline
                 widget: string
-                hint: "Supports HTML. e.g., 'Ready to Upgrade Your <br/><span class="text-primary-light">Career Trajectory?</span>'"
+                hint: 'Supports HTML. e.g., "Ready to Upgrade Your <br/><span class="text-primary-light">Career Trajectory?</span>"'
               - label: CTA Sub-text
                 name: subtext
                 widget: text
