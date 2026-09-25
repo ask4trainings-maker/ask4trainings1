@@ -139,14 +139,6 @@ const courses = defineCollection({
     // whoShouldEnroll — CMS alias/variant for eligibility
     whoShouldEnroll: z.array(z.union([z.string(), z.record(z.string(), z.any())])).optional().default([]),
 
-    // targetAudience — CMS-aligned audience field
-    targetAudience: z.array(
-      z.union([
-        z.string(),
-        z.object({ audience: z.string() }),
-      ])
-    ).optional(),
-
     // prerequisites — extended to accept both string arrays (legacy) and object arrays (CMS)
     prerequisites: z.array(z.string()).optional(),
 
@@ -176,9 +168,7 @@ const courses = defineCollection({
     // careerInsights — CMS-aligned career data object
     careerInsights: z.any().optional(),
 
-    // ─── Section 11: Trainer Profile ────────────────────────────────────────
-    // Legacy shape (company standard) + CMS shape (per-course trainer). Accept both.
-    trainerProfile: z.any().optional(),
+
     trainer: z.any().optional(),
 
     // ─── Section 12: FAQs ───────────────────────────────────────────────────
@@ -190,11 +180,6 @@ const courses = defineCollection({
     ).default([]),
 
     // ─── Pricing ────────────────────────────────────────────────────────────
-    // pricingTiers — new CMS pricing format
-    pricingTiers: z.array(z.any()).optional(),
-
-    // pricingPlans — legacy pricing format
-    pricingPlans: z.array(z.any()).optional(),
 
     // ─── Testimonials ────────────────────────────────────────────────────────
     testimonials: z.array(z.any()).optional(),
@@ -210,8 +195,7 @@ const courses = defineCollection({
     publishDate: z.coerce.date().optional(),
     updatedDate: z.coerce.date().optional(),
 
-    // ─── Legacy Media ────────────────────────────────────────────────────────
-    media: z.any().optional(),
+
 
     // ─── Related Courses ──────────────────────────────────────────────────────
     relatedCourseSlugs: z.array(z.string()).optional(),
@@ -229,9 +213,7 @@ const courses = defineCollection({
       metaDescription: z.string().optional(),
     }).optional(),
 
-    // ─── Other Legacy Fields ─────────────────────────────────────────────────
-    legacyUrl: z.string().optional(),         // relaxed from .url() to allow non-http legacy paths
-    legacyImpressions: z.number().optional(),
+
   }),
 });
 

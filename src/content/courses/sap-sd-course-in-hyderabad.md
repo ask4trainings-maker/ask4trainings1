@@ -45,8 +45,6 @@ faqs:
 seo:
   metaTitle: 'Best SAP SD Course in Hyderabad | #1 Training, Certification'
   metaDescription: Join SAP SD Course in Hyderabad for hands-on learning, certification, expert trainers, and placement support to build a successful career.
-legacyUrl: https://ask4trainings.pages.dev/sap-sd-course-in-hyderabad/
-legacyImpressions: 3
 menuTitle: SAP SD
 duration: 45-60 Hrs
 mode: Online Live Interactive
@@ -65,14 +63,6 @@ benefits:
     - Accelerate your path to becoming an Enterprise Consultant.
     - Unlock opportunities in high-demand Architect tracks.
     - Enhance your marketability with specialized, industry-recognized skills.
-trainerProfile:
-  heading: Learn from Practicing Enterprise Architects
-  description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
-  highlights:
-    - 10+ Years of Enterprise Production Experience
-    - Certified Subject Matter Experts in Consulting Roles
-    - Direct 1-on-1 Sandbox Debugging and Mentorship
-    - Real-world Case Studies & Architecture Reviews
 eligibility:
   - Software Developers and Engineers looking to upskill.
   - System Administrators transitioning to enterprise platforms.

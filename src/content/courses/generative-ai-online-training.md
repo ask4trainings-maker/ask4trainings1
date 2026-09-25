@@ -45,8 +45,6 @@ faqs:
 seo:
   metaTitle: 'Best Generative AI Online Training | #1 Course & Placement'
   metaDescription: Join our Generative AI Online Training to master AI tools, build real-world projects, and gain industry-ready skills with expert guidance.
-legacyUrl: https://ask4trainings.pages.dev/generative-ai-online-training/
-legacyImpressions: 2584
 menuTitle: Generative AI
 duration: 45-60 Hrs
 mode: Online Live Interactive
@@ -65,14 +63,6 @@ benefits:
     - Accelerate your path to becoming an Enterprise Consultant.
     - Unlock opportunities in high-demand Architect tracks.
     - Enhance your marketability with specialized, industry-recognized skills.
-trainerProfile:
-  heading: Learn from Practicing Enterprise Architects
-  description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
-  highlights:
-    - 10+ Years of Enterprise Production Experience
-    - Certified Subject Matter Experts in Consulting Roles
-    - Direct 1-on-1 Sandbox Debugging and Mentorship
-    - Real-world Case Studies & Architecture Reviews
 eligibility:
   - Software Developers and Engineers looking to upskill.
   - System Administrators transitioning to enterprise platforms.

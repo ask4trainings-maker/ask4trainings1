@@ -45,9 +45,6 @@ syllabus:
 eligibility:
   - title: CMS Editors
     answer: Anyone who needs to test content changes safely.
-trainerProfile:
-  title: Test Instructor
-  description: A placeholder instructor for testing purposes.
 metaTitle: ''
 batchInfo:
   type: ''

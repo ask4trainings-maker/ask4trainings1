@@ -7,7 +7,6 @@ badge: D365 CRM
 priorityTier: tier-1
 navigationLocation: Navigation Bar > All Courses > Microsoft Dynamics 365 > Microsoft Dynamics 365 CRM Online Training
 valueProp: Master Microsoft Dynamics 365 Customer Engagement (Sales, Marketing, Customer Service), Power Platform integration, and custom plugin development with hands-on enterprise sandbox labs.
-legacyUrl: https://ask4trainings.com/microsoft-dynamics-365-crm-online-training/
 metaTitle: Microsoft Dynamics 365 CRM Online Training | Live Project Training
 metaDescription: Master Microsoft Dynamics 365 CRM with hands-on sandbox labs. Learn Sales, Customer Service, Power Apps, Dataverse, and plugin customization with dedicated placement support.
 duration: 45-60 Hrs
@@ -147,18 +146,10 @@ certifications:
     - 'MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
     - 'MB-210: Microsoft Dynamics 365 Sales Functional Consultant Associate'
     - 'MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant Associate'
-trainerProfile:
-  heading: Learn from Practising Dynamics 365 Architects
-  description: Our instructors are active Microsoft Dynamics 365 practitioners and certified consultants with a minimum of 10 years of enterprise project experience across global implementations.
-  highlights:
-    - 10+ Years of Dynamics 365 Enterprise Implementation Experience
-    - 'Microsoft Certified: Dynamics 365 Sales / Customer Service Associate'
-    - Hands-on experience with Fortune 500 CRM rollouts
 relatedCourseSlugs:
   - dynamics-365-ax-technical-training
   - microsoft-dynamics-365-finance-and-operations
   - microsoft-dynamics-365-courses
-legacyImpressions: 0
 publishDate: '2026-09-24T00:00:00.000Z'
 shortCode: D365 CRM
 modules:

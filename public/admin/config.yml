@@ -825,604 +825,122 @@ collections:
         field: category
         pattern: other-tools
     fields:
-      - label: 📍 Live Navigation Location
-        name: navigationLocation
-        widget: string
+      - label: "📍 Live Navigation Location"
+        name: "navigationLocation"
+        widget: "string"
+        readonly: true
         required: false
-        hint: "Follow format: 'Navigation Bar > All Courses > Guidewire Suite >
-          Guidewire PolicyCenter Training'"
-      - label: 🌟 Course Promotion Tier
-        name: priorityTier
-        widget: select
-        default: tier-2
-        hint: 'Controls where this course ranks on the homepage and catalog search.'
+        hint: "System breadcrumb showing where this course appears in the live navigation. (Read-only)."
+      - label: "🌟 Course Promotion Tier"
+        name: "priorityTier"
+        widget: "select"
         options:
-          - label: "🌟 Tier 1: Flagship Program (Top Priority Placement)"
-            value: tier-1
-          - label: "📈 Tier 2: Core Growth Course"
-            value: tier-2
-          - label: "📘 Tier 3: Specialized / Supporting Course"
-            value: tier-3
-      - label: Course Title
-        name: title
-        widget: string
-        hint: 'Example: ''Guidewire PolicyCenter 10.x Live Online Training in
-          Hyderabad'' — The main H1 displayed at the top of the course page.'
-      - label: Course Badge / Short Code
-        name: shortCode
-        widget: string
+          - { label: "🌟 Tier 1: Flagship Program (Top Priority Placement)", value: "tier-1" }
+          - { label: "📈 Tier 2: Core Growth Course", value: "tier-2" }
+          - { label: "📘 Tier 3: Specialized / Supporting Tool", value: "tier-3" }
+        default: "tier-2"
+        hint: "Select ranking priority on the catalog and homepage."
+      - label: "Course Title"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Course Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+      - label: "Last Updated Date"
+        name: "updatedDate"
+        widget: "datetime"
         required: false
-        hint: 'Example: ''GW PC'' or ''SAP FICO'' — Abbreviation shown as a compact
-          badge.'
-      - label: Domain Category
-        name: category
-        widget: select
+      - label: "Course Badge / Short Code"
+        name: "badge"
+        widget: "string"
+      - label: "Domain Category"
+        name: "category"
+        widget: "select"
         options:
-          - label: 🛡️ Guidewire Suite
-            value: guidewire
-          - label: ⚙️ Siemens Teamcenter / PLM
-            value: siemens
-          - label: 🔷 SAP Solutions
-            value: sap
-          - label: ☁️ Cloud Computing
-            value: cloud-computing
-          - label: 🔧 DevOps
-            value: devops
-          - label: 💻 Software Development
-            value: development
-          - label: 🌐 Microsoft Dynamics 365
-            value: ms-d365
-          - label: 🔶 Oracle Cloud
-            value: oracle
-          - label: 🚀 Trending Technologies
-            value: trending-courses
-          - label: ✨ New Courses
-            value: new-courses
-          - label: 🧰 Other Specialized Tools
-            value: other-tools
-        hint: 'Assign this course to its domain. Must match the ''Category Filter Key''
-          in the Mega Menu & Category Pages. Example: ''guidewire'' for all
-          Guidewire suite courses.'
-      - label: Value Proposition
-        name: valueProp
-        widget: string
+          - label: "🛡️ Guidewire Suite"
+            value: "guidewire"
+          - label: "⚙️ Siemens Teamcenter / PLM"
+            value: "siemens"
+          - label: "🔷 SAP Solutions"
+            value: "sap"
+          - label: "☁️ Cloud Computing"
+            value: "cloud-computing"
+          - label: "🔧 DevOps"
+            value: "devops"
+          - label: "💻 Software Development"
+            value: "development"
+          - label: "🌐 Microsoft Dynamics 365"
+            value: "ms-d365"
+          - label: "🔶 Oracle Cloud"
+            value: "oracle"
+          - label: "🚀 Trending Technologies"
+            value: "trending-courses"
+          - label: "✨ New Courses"
+            value: "new-courses"
+          - label: "🧰 Other Specialized Tools"
+            value: "other-tools"
+      - label: "Rating"
+        name: "rating"
+        widget: "string"
+        default: "4.9"
+      - label: "Course Description Main"
+        name: "valueProp"
+        widget: "text"
         required: false
-        hint: Main hero subtitle/value proposition.
+        hint: "Main lead description displayed under the H1 in the hero section."
       - label: "Batch & Schedule Information"
         name: "batchInfo"
         widget: "object"
         required: false
         fields:
-          - { label: "Batch Type", name: "type", widget: "string", required: false }
-          - { label: "Duration", name: "duration", widget: "string", required: false }
-          - { label: "Training Mode", name: "mode", widget: "string", required: false }
-          - { label: "Start Date", name: "startDate", widget: "string", required: false }
-      - label: Student Rating (out of 5.0)
-        name: rating
-        widget: number
-        value_type: float
-        required: false
-        hint: 'Example: ''4.8'' — Average student rating shown on the course card and
-          hero.'
-      - label: 📚 Curriculum Modules
-        name: modules
-        widget: list
-        required: false
-        summary: 'Module: {{fields.title}} ({{fields.duration}})'
-        hint: Drag-and-drop re-orderable curriculum modules. Each module has a title and
-          a list of topics/lessons.
+          - { label: "Batch Type", name: "type", widget: "string", hint: "e.g., 'Weekday / Weekend Batches'" }
+          - { label: "Duration", name: "duration", widget: "string", hint: "e.g., '45-60 Hours'" }
+          - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Interactive Online'" }
+          - { label: "Next Cohort Start Date", name: "startDate", widget: "string", hint: "e.g., 'Upcoming Monday'" }
+      - label: "📚 Course Curriculum Modules"
+        name: "modules"
+        widget: "list"
+        summary: "Module: {{fields.title}} ({{fields.duration}})"
         fields:
-          - label: Module Title
-            name: title
-            widget: string
-            hint: 'Example: ''Module 1: Guidewire Architecture & Installation Overview'''
-          - label: Duration
-            name: duration
-            widget: string
-            required: false
-          - label: Topics in This Module
-            name: topics
-            widget: list
-            required: false
-            hint: Individual topics or lessons within this module.
-            field:
-              label: Topic
-              name: topic
-              widget: string
-              required: false
-              hint: Provide a value for Topic.
-      - label: "Trainer Section"
+          - { label: "Module Title", name: "title", widget: "string", required: true }
+          - { label: "Duration / Topic Count", name: "duration", widget: "string", hint: "e.g., '6 Topics' or '8 Hours'" }
+          - label: "Lessons & Topics"
+            name: "topics"
+            widget: "list"
+            field: { label: "Topic Description", name: "topic", widget: "string" }
+      - label: "🎯 Who Should Enroll?"
+        name: "whoShouldEnroll"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "Profile Title", name: "title", widget: "string", hint: "e.g., 'IT Professionals' or 'Fresh Graduates'" }
+          - { label: "Profile Description", name: "description", widget: "text" }
+      - label: "👨‍🏫 Trainer Section"
         name: "trainer"
         widget: "object"
         required: false
         fields:
-          - {
-              label: "Trainer Section Title",
-              name: "title",
-              widget: "string",
-              required: false,
-              hint: "Example: 'Expert Led Guidewire Trainer'"
-            }
-          - {
-              label: "Trainer Description",
-              name: "description",
-              widget: "text",
-              required: false,
-              hint: "Summary of hands-on mentoring and enterprise expertise."
-            }
+          - { label: "Trainer Headline", name: "title", widget: "string", hint: "e.g., 'Expert Led Guidewire Trainer'" }
+          - { label: "Trainer Description", name: "description", widget: "text", hint: "Summary of hands-on enterprise mentoring and experience." }
           - label: "Trainer Highlights"
             name: "highlights"
             widget: "list"
-            required: false
-            field:
-              {
-                label: "Highlight",
-                name: "item",
-                widget: "string",
-                hint: "Example: 'Real-time Project Mentoring & Job Support'"
-              }
-      - label: Eligibility Criteria
-        name: whoShouldEnroll
-        widget: list
-        required: false
-        summary: '{{fields.title}}'
-        hint: Q&A pairs about who can enrol in this course.
+            field: { label: "Highlight Item", name: "item", widget: "string", hint: "e.g., '10+ Years of Enterprise Production Experience'" }
+      - label: "❓ Frequently Asked Questions"
+        name: "faqs"
+        widget: "list"
+        summary: "Q: {{fields.question}}"
         fields:
-          - label: Question
-            name: title
-            widget: string
-            hint: 'Example: ''Is this course suitable for fresh graduates?'''
-          - label: Answer
-            name: answer
-            widget: text
-            hint: 'Example: ''Yes, fresh graduates with a BE/BTech background in CS or IT
-              can directly enrol.'''
-      - label: ❓ FAQs
-        name: faqs
-        widget: list
-        required: false
-        summary: 'Q: {{fields.question}}'
-        hint: Frequently asked questions about this course. These appear in an accordion
-          on the course page.
+          - { label: "Question", name: "question", widget: "string", required: true }
+          - { label: "Answer", name: "answer", widget: "text", required: true }
+      - label: "🔍 Search Engine Optimization (SEO)"
+        name: "seo"
+        widget: "object"
         fields:
-          - label: Question
-            name: question
-            widget: string
-            hint: 'Example: ''Do I need prior Guidewire experience to join this course?'''
-          - label: Answer
-            name: answer
-            widget: text
-            hint: 'Example: ''No prior Guidewire experience is required. Basic Java
-              programming knowledge is sufficient. We cover all Guidewire
-              fundamentals from scratch.'''
-      - label: SEO Meta Title
-        name: metaTitle
-        widget: string
-        required: false
-        hint: 'Example: ''Guidewire PolicyCenter Training in Hyderabad | Ask4Trainings''
-          — Target 55–60 characters for SERP display.'
-      - label: SEO Meta Description
-        name: metaDescription
-        widget: text
-        required: false
-        hint: 'Google search snippet text. Aim for 140–160 characters describing the
-          course value.'
-      - label: Course Hero / Thumbnail Image (16:9, max 500KB)
-        name: thumbnail
-        widget: image
-        required: false
-        hint: 'Upload a clean, high-resolution hero image. Will be automatically
-          optimized on build.'
-      - label: Thumbnail Image Alt Text
-        name: thumbnailAlt
-        widget: string
-        required: false
-        hint: 'Example: ''Students attending a live Guidewire PolicyCenter lab session''
-          — Descriptive text for SEO and screen readers.'
-      - label: URL Slug
-        name: slug
-        widget: string
-        hint: 'Example: ''guidewire-policycenter-training'' — Forms the final URL.
-          Lowercase letters, digits, and hyphens only. No spaces.'
-      - label: Custom Permalink (Override URL)
-        name: permalink
-        widget: string
-        required: false
-        hint: 'Example: ''/guidewire-policycenter-training/'' — Use only to set a custom
-          root-level URL. Must start and end with /.'
-      - label: Review Count
-        name: reviewCount
-        widget: number
-        required: false
-        hint: 'Example: ''247'' — Total number of student reviews.'
-      - label: 🗓️ Upcoming Live Batch Details
-        name: batches
-        widget: list
-        required: false
-        hint: Upcoming batch info displayed in the course hero. Update before each new
-          batch cycle.
-        fields:
-          - label: Type
-            name: type
-            widget: string
-          - label: Batch Start Date
-            name: startDate
-            widget: string
-            required: false
-            hint: 'Example: ''Starting This Monday @ 7:30 AM IST (Classroom & Online)'' or
-              ''15th September 2026'''
-          - label: Class Timings
-            name: timing
-            widget: string
-            required: false
-            hint: 'Example: ''7:30 AM - 9:00 AM IST (Mon, Wed, Fri)'''
-          - label: Seat Availability Tag
-            name: seatsLeft
-            widget: string
-            required: false
-            hint: 'Example: ''Limited to 15 Seats'' or ''Filling Fast — 4 Seats Remaining'''
-        summary: "{{fields.type}} · {{fields.startDate}}"
-      - label: 🎬 Demo Class Video URL
-        name: demoVideoUrl
-        widget: string
-        required: false
-        hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube
-          link (watch?v= or youtu.be/ format). The system extracts the video ID
-          automatically.'
-      - label: Course Duration
-        name: duration
-        widget: string
-        required: false
-        hint: 'Example: ''45-60 Hrs'' or ''6 Weeks (Weekend Batches)'''
-      - label: Training Mode
-        name: trainingMode
-        widget: select
-        required: false
-        options:
-          - Live Online
-          - Classroom (Ameerpet)
-          - Weekend Fast-Track
-          - Self-Paced
-        hint: Primary format of course delivery.
-      - label: Curriculum Brochure (Google Drive URL)
-        name: brochureDriveUrl
-        widget: string
-        required: false
-        hint: 'Example: ''https://drive.google.com/file/d/1abc123/view?usp=sharing'' —
-          Full Google Drive or cloud PDF shareable link to course syllabus.'
-      - label: Short Hero Summary / Course Description
-        name: description
-        widget: text
-        hint: 'Example: ''Comprehensive Guidewire PolicyCenter training covering product
-          configuration, Gosu scripting, PCF UI, Rating, and integration. Taught
-          by working implementation consultants.'' — 2–3 sentences shown in hero
-          and course cards.'
-      - label: In-Depth Course Overview (Markdown Body)
-        name: body
-        widget: markdown
-        hint: Full detailed article-style overview. Include what students will learn,
-          lab structure, and real-world project scope. This is the main
-          long-form content area.
-      - label: Target Audience
-        name: targetAudience
-        widget: list
-        required: false
-        hint: 'Who should enrol. Example: ''Java developers transitioning to Guidewire''
-          or ''IT graduates targeting insurance technology roles''.'
-        field:
-          label: Audience Segment
-          name: audience
-          widget: string
-          required: false
-          hint: Provide a value for Audience Segment.
-      - label: Prerequisites
-        name: prerequisites
-        widget: list
-        required: false
-        hint: 'Recommended background. Example: ''Basic Java programming knowledge'' or
-          ''Familiarity with XML and object-oriented concepts''.'
-        field:
-          label: Prerequisite
-          name: prerequisite
-          widget: string
-          required: false
-          hint: Provide a value for Prerequisite.
-      - label: 💰 Pricing Tiers
-        name: pricingTiers
-        widget: list
-        required: false
-        summary: '{{fields.planName}} — {{fields.price}}'
-        hint: 'Training plans with pricing and feature lists. Example plans: ''Live
-          Online Batch'' at ''₹24,999'' or ''Classroom (Ameerpet)'' at
-          ''₹28,999''.'
-        fields:
-          - label: Plan Name
-            name: planName
-            widget: string
-            hint: 'Example: ''Live Online Batch'' or ''Weekend Fast-Track (Ameerpet)'''
-          - label: Price / Fee
-            name: price
-            widget: string
-            hint: 'Example: ''₹24,999'' or ''Contact for Pricing'''
-          - label: Plan Features
-            name: features
-            widget: list
-            required: false
-            field:
-              label: Feature
-              name: feature
-              widget: string
-              required: false
-              hint: Provide a value for Feature.
-            hint: Provide a value for Plan Features.
-      - label: 💼 Career & Salary Insights
-        name: careerInsights
-        widget: object
-        required: false
-        hint: Salary range and career outcome data shown in the course page's career
-          section.
-        fields:
-          - label: Average Salary Range
-            name: avgSalary
-            widget: string
-            required: false
-            hint: 'Example: ''₹8.5 LPA - ₹22 LPA (India) / $90K - $130K (USA)'' — Include
-              both domestic and international ranges where available.'
-          - label: Target Job Roles
-            name: jobRoles
-            widget: list
-            required: false
-            hint: 'Example roles: ''Guidewire PolicyCenter Developer'', ''Insurance
-              Technology Analyst'', ''Guidewire Configuration Consultant''.'
-            field:
-              label: Job Role Title
-              name: role
-              widget: string
-              required: false
-              hint: Provide a value for Job Role Title.
-          - label: Hiring Industries / Companies
-            name: hiringIndustries
-            widget: string
-            required: false
-            hint: 'Example: ''Sapient, Capgemini, NIIT Technologies, EXL Service, and
-              leading global insurance carriers'''
-      - label: ⭐ Student Testimonials
-        name: testimonials
-        widget: list
-        summary: '{{fields.studentName}} — {{fields.placedCompany}}'
-        required: false
-        hint: Student success stories. Include name, where they were placed, their
-          quote, and an optional video testimonial.
-        fields:
-          - label: Student Name
-            name: studentName
-            widget: string
-            hint: 'Example: ''Priya Sharma'''
-          - label: Role / Company Placed
-            name: placedCompany
-            widget: string
-            required: false
-            hint: 'Example: ''Guidewire Developer at Sapient India'''
-          - label: Testimonial Quote
-            name: quote
-            widget: text
-            hint: 'Example: ''The Guidewire PolicyCenter training at Ask4Trainings was
-              exceptional — real-world labs and a mentor who had actually worked
-              on live implementations.'''
-          - label: Rating (out of 5.0)
-            name: rating
-            widget: number
-            value_type: float
-            default: 5
-            required: false
-            hint: Provide a value for Rating (out of 5.0).
-          - label: Video Testimonial URL
-            name: videoUrl
-            widget: string
-            required: false
-            hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube
-              URL of the student''s video testimonial.'
-      - label: SEO Keywords
-        name: keywords
-        widget: list
-        required: false
-        hint: 'Example keywords: ''guidewire policycenter training hyderabad'',
-          ''guidewire online course india''. These inform on-page SEO.'
-        field:
-          label: Keyword
-          name: keyword
-          widget: string
-          required: false
-          hint: Provide a value for Keyword.
-      - label: Certification Name
-        name: certification
-        widget: string
-        required: false
-        hint: 'Example: ''Guidewire Certified Associate (GCA) — PolicyCenter'' —
-          Official credential students can pursue after this course.'
-      - label: 👨‍🏫 Trainer Profile (Legacy)
-        name: trainerProfile
-        widget: object
-        required: false
-        hint: Legacy field for older courses.
-        fields:
-          - { label: "Heading", name: "heading", widget: "string", required: false }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: false
-            }
-          - {
-              label: "Highlights",
-              name: "highlights",
-              widget: "list",
-              required: false,
-              field: { name: highlight, widget: string }
-            }
-      - label: Key Features
-        name: keyFeatures
-        widget: list
-        required: false
-        summary: '{{fields.title}}'
-        hint: 'Highlighted feature cards shown on the course page. Example: { title:
-          ''Live Project Labs'', description: ''Hands-on coding with actual
-          server environments'' }.'
-        fields:
-          - label: Icon Name
-            name: iconName
-            widget: string
-            required: false
-            hint: 'Example: ''laptop'' or ''certificate'' — Maps to an icon in the component
-              library.'
-          - label: Feature Title
-            name: title
-            widget: string
-            hint: 'Example: ''Live Project Labs'' or ''Placement Assistance Included'''
-          - label: Feature Description
-            name: description
-            widget: text
-            hint: 'Example: ''Hands-on coding sessions using real server environments with
-              live policy objects and rating tables.'''
-      - label: Why Choose This Course
-        name: whyChooseUs
-        widget: list
-        required: false
-        summary: '{{fields.title}}'
-        hint: 'Reasons specific to this course. Example: ''Trainer is a working
-          Guidewire consultant with 12+ years experience''.'
-        fields:
-          - label: Title
-            name: title
-            widget: string
-            hint: 'Example: ''Active Industry Practitioner as Trainer'''
-          - label: Description
-            name: description
-            widget: text
-            hint: 'Example: ''Our Guidewire trainer is currently engaged on a live Guidewire
-              PolicyCenter implementation project, ensuring all examples are
-              current and real-world.'' '
-      - label: Course Objectives
-        name: objectives
-        widget: list
-        required: false
-        hint: 'Main learning objectives. Example: ''Configure PolicyCenter product model
-          from scratch using Guidewire Studio''.'
-        field:
-          label: Objective
-          name: objective
-          widget: string
-          required: false
-          hint: Provide a value for Objective.
-      - label: Related Course Slugs
-        name: relatedCourseSlugs
-        widget: list
-        required: false
-        hint: 'Slugs of related courses to recommend at the bottom of this page.
-          Example: ''guidewire-claimcenter-training''.'
-        field:
-          label: Course Slug
-          name: slug
-          widget: string
-          required: false
-          hint: Provide a value for Course Slug.
-      - label: Publish Date
-        name: publishDate
-        widget: datetime
-        required: false
-        hint: Date this course page was first published.
-      - label: Last Updated Date
-        name: updatedDate
-        widget: datetime
-        required: false
-        hint: Date the course content was last significantly updated.
-      - label: Legacy Media (Fallback Only)
-        name: media
-        widget: object
-        required: false
-        hint: Legacy media fields for older course entries. For new courses, use 'Course
-          Hero Image' and 'Demo Class Video URL' above.
-        fields:
-          - label: Legacy Hero Image
-            name: heroImage
-            widget: image
-            required: false
-            hint: Provide a value for Legacy Hero Image.
-          - label: Legacy YouTube Video ID
-            name: youtubeVideoId
-            widget: string
-            required: false
-            hint: 'Example: ''dQw4w9WgXcQ'' — 11-character YouTube video ID only (not the
-              full URL). For new courses, use ''Demo Class Video URL''.'
-      - label: Legacy About Course (Markdown)
-        name: aboutCourse
-        widget: markdown
-        required: false
-        hint: Legacy long-form description. For new courses, use 'In-Depth Course
-          Overview' above.
-      - label: Legacy Pricing Plans
-        name: pricingPlans
-        widget: list
-        required: false
-        hint: Legacy pricing format. For new courses, use 'Pricing Tiers' above.
-        fields:
-          - label: Plan Name
-            name: planName
-            widget: string
-            hint: Provide a value for Plan Name.
-          - label: Tagline
-            name: tagline
-            widget: string
-            required: false
-            hint: Provide a value for Tagline.
-          - label: Is Featured?
-            name: isFeatured
-            widget: boolean
-            default: false
-            hint: Provide a value for Is Featured?.
-          - label: CTA Button Text
-            name: ctaText
-            widget: string
-            default: GET STARTED NOW
-            hint: Provide a value for CTA Button Text.
-          - label: Features
-            name: features
-            widget: list
-            fields:
-              - label: Feature Text
-                name: text
-                widget: string
-                hint: Provide a value for Feature Text.
-              - label: Included?
-                name: included
-                widget: boolean
-                default: true
-                hint: Provide a value for Included?.
-            hint: Provide a value for Features.
-      - label: Legacy Syllabus
-        name: syllabus
-        widget: list
-        required: false
-        hint: Legacy syllabus format. For new courses, use 'Curriculum Modules' above.
-        fields:
-          - label: Module Name
-            name: module
-            widget: string
-            hint: Provide a value for Module Name.
-          - label: Topics
-            name: topics
-            widget: list
-            field:
-              label: Topic
-              name: topic
-              widget: string
-              hint: Provide a value for Topic.
-            hint: Provide a value for Topics.
-      - label: Legacy URL (Pre-Migration)
-        name: legacyUrl
-        widget: string
-        required: false
-        hint: Original URL before the site migration. Preserved for redirect mapping.
+          - { label: "Meta Title Tag", name: "metaTitle", widget: "string", hint: "Page title for Google search results." }
+          - { label: "Meta Description Tag", name: "metaDescription", widget: "text", hint: "150-160 characters search snippet summary." }
   - name: services
     label: 💼 Services & Programs
     editor:

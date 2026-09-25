@@ -15,7 +15,7 @@ const categories = categoriesData?.categories ?? [];
 // Popular Courses: top 8 by GSC impressions from live collection
 const allCourses = (await getCollection('courses')).filter(c => !c.data.draft);
 const popularCourses = [...allCourses]
-  .sort((a, b) => (b.data.legacyImpressions ?? 0) - (a.data.legacyImpressions ?? 0))
+  .sort((a, b) => (b.data.reviewCount ?? 0) - (a.data.reviewCount ?? 0))
   .slice(0, 8);
 
 function cleanFooterTitle(title: string): string {
