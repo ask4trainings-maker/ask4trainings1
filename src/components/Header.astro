@@ -5,7 +5,7 @@ import navigationData from '../data/navigation.json';
 import settingsData from '../data/settings.json';
 import SearchModal from './SearchModal.astro';
 
-const allCourses = await getCollection('courses');
+const allCourses = (await getCollection('courses')).filter(c => !c.data.draft);
 
 // Clean legacy title prefixes for display in micro-cards
 function cleanMegaTitle(title: string): string {

@@ -11,6 +11,7 @@ const courses = defineCollection({
     category: z.string().default('other-tools'),
     menuTitle: z.string().optional(),
     slug: z.string(), // preserves root-flat legacy slug exactly
+    draft: z.boolean().default(false),
     valueProp: z.string().optional(),
     navigationPath: z.string().optional(),
     priorityTier: z.string().optional(),
@@ -90,6 +91,12 @@ const courses = defineCollection({
         ).optional(),
       })
     ).optional(),
+
+    // modules — CMS alias for curriculum
+    modules: z.array(z.record(z.string(), z.any())).optional().default([]),
+
+    // batches — CMS alias for upcomingBatch / schedule
+    batches: z.array(z.record(z.string(), z.any())).optional().default([]),
 
     // ─── Section 4: About the Course ────────────────────────────────────────
     aboutCourse: z.string().default(''),

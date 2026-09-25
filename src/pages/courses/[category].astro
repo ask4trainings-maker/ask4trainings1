@@ -15,7 +15,7 @@ export async function getStaticPaths() {
 const { category } = Astro.params;
 const { data } = Astro.props;
 
-const allCourses = await getCollection('courses');
+const allCourses = (await getCollection('courses')).filter(c => !c.data.draft);
 const categoryCourses = allCourses.filter(course => course.data.category === category);
 ---
 <HubLayout 

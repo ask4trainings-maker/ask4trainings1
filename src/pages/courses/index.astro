@@ -6,7 +6,7 @@ import categoriesData from '../../content/categories.json';
 import categoriesMeta from '../../data/categories.json';
 import { getCollection } from 'astro:content';
 
-const allCoursesRaw = await getCollection('courses');
+const allCoursesRaw = (await getCollection('courses')).filter(c => !c.data.draft);
 
 // Sort alphabetically by title
 const allCourses = [...allCoursesRaw].sort((a, b) => a.data.title.localeCompare(b.data.title));

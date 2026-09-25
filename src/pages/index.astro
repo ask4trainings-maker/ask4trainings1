@@ -25,7 +25,7 @@ import CourseCard from '../components/CourseCard.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
 import CourseWhyChoose from '../components/course/CourseWhyChoose.astro';
 
-const allCourses = await getCollection('courses');
+const allCourses = (await getCollection('courses')).filter(c => !c.data.draft);
 // Sort alphabetically by title for consistent ordering
 const sortedCourses = [...allCourses].sort((a, b) => a.data.title.localeCompare(b.data.title));
 const totalCourses = sortedCourses.length;

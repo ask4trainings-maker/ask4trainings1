@@ -9,7 +9,7 @@ export interface Props {
 const { currentCourseId, category } = Astro.props;
 
 // Fetch related courses in the same category
-const allCourses = await getCollection('courses');
+const allCourses = (await getCollection('courses')).filter(c => !c.data.draft);
 const relatedCourses = allCourses
   .filter(course => course.data.category === category && course.id !== currentCourseId)
   .slice(0, 3); // Max 3 related courses

@@ -27,7 +27,8 @@ collections:
             name: livePath
             widget: string
             default: Sitewide — Top Banner Bar (all pages)
-            hint: READ-ONLY context marker. Do not change. Tells you where this content appears on the live website.
+            hint: READ-ONLY context marker. Do not change. Tells you where this content
+              appears on the live website.
           - label: 📢 Announcement Banner Settings
             name: announcement
             widget: object
@@ -37,11 +38,13 @@ collections:
                 name: enabled
                 widget: boolean
                 default: false
-                hint: Toggle ON to display the banner to all visitors. Toggle OFF to hide it entirely.
+                hint: Toggle ON to display the banner to all visitors. Toggle OFF to hide it
+                  entirely.
               - label: Banner Text
                 name: text
                 widget: string
-                hint: 'Example: ''New Guidewire PolicyCenter 10.x batch starting this Monday — limited classroom & online seats available.'''
+                hint: 'Example: ''New Guidewire PolicyCenter 10.x batch starting this Monday —
+                  limited classroom & online seats available.'''
               - label: CTA Button Label
                 name: ctaLabel
                 widget: string
@@ -49,27 +52,33 @@ collections:
               - label: CTA Button URL
                 name: ctaUrl
                 widget: string
-                hint: 'Example: ''/student-registration/'' — use a relative path starting with /'
+                hint: 'Example: ''/student-registration/'' — use a relative path starting with
+                  /'
           - label: ☎️ Primary Contact Details
             name: phonePrimary
             widget: string
-            hint: 'Example: ''+91 8099949888'' — Primary phone shown in header and footer contact sections.'
+            hint: 'Example: ''+91 8099949888'' — Primary phone shown in header and footer
+              contact sections.'
           - label: ☎️ Secondary Contact Number
             name: phoneSecondary
             widget: string
-            hint: 'Example: ''+91 9951609609'' — Secondary helpline for call-only enquiries.'
+            hint: 'Example: ''+91 9951609609'' — Secondary helpline for call-only
+              enquiries.'
           - label: 📱 WhatsApp Number (Digits Only)
             name: whatsappNumber
             widget: string
-            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces, dashes, or ''+'' symbol. Used to construct wa.me/ chat links.'
+            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces, dashes,
+              or ''+'' symbol. Used to construct wa.me/ chat links.'
           - label: 📧 Support Email Address
             name: email
             widget: string
-            hint: 'Example: ''info@ask4trainings.com'' — Public-facing contact email for student enquiries.'
+            hint: 'Example: ''info@ask4trainings.com'' — Public-facing contact email for
+              student enquiries.'
           - label: 🔗 Social Media Links
             name: socials
             widget: object
-            hint: Full URLs to all official Ask4Trainings social profiles. Leave blank to hide that platform icon in the footer.
+            hint: Full URLs to all official Ask4Trainings social profiles. Leave blank to
+              hide that platform icon in the footer.
             fields:
               - label: LinkedIn URL
                 name: linkedin
@@ -99,12 +108,14 @@ collections:
           - label: 🦶 Footer Configuration
             name: footer
             widget: object
-            hint: Manages all 4 columns of the website footer, the SEO tag cloud, copyright, and about blurb.
+            hint: Manages all 4 columns of the website footer, the SEO tag cloud, copyright,
+              and about blurb.
             fields:
               - label: Footer Link Columns (Columns 1–3)
                 name: columns
                 widget: list
-                hint: The first 3 footer columns. Each column has a heading and a list of links. Column 4 (Office Info) is configured separately below.
+                hint: The first 3 footer columns. Each column has a heading and a list of links.
+                  Column 4 (Office Info) is configured separately below.
                 summary: 'Column: {{fields.title}}'
                 fields:
                   - label: Column Heading
@@ -124,11 +135,13 @@ collections:
                       - label: URL Path
                         name: url
                         widget: string
-                        hint: 'Example: ''/guidewire-courses/'' — must start with / for internal links. Use https:// for external links.'
+                        hint: 'Example: ''/guidewire-courses/'' — must start with / for internal links.
+                          Use https:// for external links.'
               - label: 'Column 4: Office Information & Location'
                 name: office
                 widget: object
-                hint: The 4th footer column showing physical office details, contact numbers, hours, and map link.
+                hint: The 4th footer column showing physical office details, contact numbers,
+                  hours, and map link.
                 fields:
                   - label: Column Heading
                     name: title
@@ -142,15 +155,18 @@ collections:
                   - label: Address
                     name: address
                     widget: text
-                    hint: 'Example: ''Flat No. 403, 4th Floor, Naga Sai Nivas, Prime Hospital Lane, Ameerpet, Hyderabad, Telangana 500016.'''
+                    hint: 'Example: ''Flat No. 403, 4th Floor, Naga Sai Nivas, Prime Hospital Lane,
+                      Ameerpet, Hyderabad, Telangana 500016.'''
                   - label: Primary WhatsApp Hotline (Digits Only)
                     name: whatsappHotline
                     widget: string
-                    hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or symbols. Used for wa.me/ links.'
+                    hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or
+                      symbols. Used for wa.me/ links.'
                   - label: Calling Numbers
                     name: callingNumbers
                     widget: list
-                    hint: All telephone numbers shown in the footer. Each entry has a label and a number.
+                    hint: All telephone numbers shown in the footer. Each entry has a label and a
+                      number.
                     summary: '{{fields.label}}: {{fields.number}}'
                     fields:
                       - label: Number Label
@@ -160,7 +176,8 @@ collections:
                       - label: Phone Number
                         name: number
                         widget: string
-                        hint: 'Example: ''+91 8099949888'' — Include country code with + for tel: links to work correctly.'
+                        hint: 'Example: ''+91 8099949888'' — Include country code with + for tel: links
+                          to work correctly.'
                   - label: Support Email
                     name: supportEmail
                     widget: string
@@ -168,21 +185,25 @@ collections:
                   - label: Branch Timings
                     name: branchTimings
                     widget: string
-                    hint: 'Example: ''Mon–Sat: 7:00 AM – 9:00 PM IST · Sunday: 9:00 AM – 6:00 PM IST'''
+                    hint: 'Example: ''Mon–Sat: 7:00 AM – 9:00 PM IST · Sunday: 9:00 AM – 6:00 PM
+                      IST'''
                   - label: Google Maps URL (for link)
                     name: googleMapsEmbedUrl
                     widget: string
-                    hint: 'Example: ''https://maps.google.com/?q=Ask4Trainings+Ameerpet'' — Paste the Google Maps share URL.'
+                    hint: 'Example: ''https://maps.google.com/?q=Ask4Trainings+Ameerpet'' — Paste
+                      the Google Maps share URL.'
               - label: SEO Keyword Tag Cloud
                 name: seoTagCloud
                 widget: list
-                hint: Keyword links shown in the footer's SEO authority section. Include relevant long-tail keywords for search ranking.
+                hint: Keyword links shown in the footer's SEO authority section. Include
+                  relevant long-tail keywords for search ranking.
                 summary: '{{fields.label}}'
                 fields:
                   - label: Tag Label
                     name: label
                     widget: string
-                    hint: 'Example: ''Best IT Institute in Hyderabad'' or ''Guidewire Training Ameerpet'''
+                    hint: 'Example: ''Best IT Institute in Hyderabad'' or ''Guidewire Training
+                      Ameerpet'''
                   - label: Target URL
                     name: url
                     widget: string
@@ -190,11 +211,13 @@ collections:
               - label: Copyright Text
                 name: copyright
                 widget: string
-                hint: 'Example: ''© 2012 Ask4Trainings. All rights reserved.'' — Appears in the footer bottom bar.'
+                hint: 'Example: ''© 2012 Ask4Trainings. All rights reserved.'' — Appears in the
+                  footer bottom bar.'
               - label: Footer About Blurb
                 name: aboutBlurb
                 widget: text
-                hint: '2–3 sentence paragraph describing Ask4Trainings shown in the footer''s SEO section.'
+                hint: '2–3 sentence paragraph describing Ask4Trainings shown in the footer''s
+                  SEO section.'
       - label: 🧭 Header & Mega Menu Navigation
         name: navigation
         file: src/data/navigation.json
@@ -204,11 +227,13 @@ collections:
             name: livePath
             widget: string
             default: Sitewide — Top Navigation Bar, Mega Menu, and header contact strip
-            hint: READ-ONLY context marker. Tells you where this content appears on the live website.
+            hint: READ-ONLY context marker. Tells you where this content appears on the live
+              website.
           - label: 📞 Header Contact Strip
             name: topBar
             widget: object
-            hint: The contact info row shown at the very top of every page (above the main nav).
+            hint: The contact info row shown at the very top of every page (above the main
+              nav).
             fields:
               - label: Primary Phone (Display)
                 name: phonePrimary
@@ -227,7 +252,8 @@ collections:
                 name: reviewUrl
                 widget: string
                 required: false
-                hint: 'Example: ''https://g.page/r/ask4trainings/review'' — Paste the Google Business review link.'
+                hint: 'Example: ''https://g.page/r/ask4trainings/review'' — Paste the Google
+                  Business review link.'
               - label: Social Links
                 name: socials
                 widget: object
@@ -262,7 +288,8 @@ collections:
           - label: 🔗 Main Navigation Links
             name: mainNav
             widget: list
-            hint: Top-level navigation items shown in the header bar. Order determines left-to-right display.
+            hint: Top-level navigation items shown in the header bar. Order determines
+              left-to-right display.
             summary: '{{fields.label}} → {{fields.url}}'
             fields:
               - label: Nav Label
@@ -283,11 +310,13 @@ collections:
                 widget: boolean
                 default: false
                 required: false
-                hint: Enable to style this nav item as a blue CTA button (e.g., 'Student Registration').
+                hint: Enable to style this nav item as a blue CTA button (e.g., 'Student
+                  Registration').
           - label: 📚 Mega Menu Domain Categories
             name: megaMenu
             widget: list
-            hint: The domain groups listed in the Courses mega menu dropdown. Each entry maps to a category page and course filter key.
+            hint: The domain groups listed in the Courses mega menu dropdown. Each entry
+              maps to a category page and course filter key.
             summary: '{{fields.title}} ({{fields.categoryKey}})'
             fields:
               - label: Domain Label
@@ -297,11 +326,13 @@ collections:
               - label: Category Filter Key
                 name: categoryKey
                 widget: string
-                hint: 'Example: ''guidewire'' or ''sap'' — Must match the ''category'' field used in course markdown files.'
+                hint: 'Example: ''guidewire'' or ''sap'' — Must match the ''category'' field
+                  used in course markdown files.'
               - label: Domain Hub URL
                 name: url
                 widget: string
-                hint: 'Example: ''/guidewire-courses'' — The page that lists all courses in this domain.'
+                hint: 'Example: ''/guidewire-courses'' — The page that lists all courses in this
+                  domain.'
       - label: 🏷️ Course Category Pages
         name: categories
         file: src/data/categories.json
@@ -311,12 +342,14 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > Mega Menu domain hub pages (e.g., /guidewire-courses/)
-            hint: READ-ONLY context marker. These entries power the domain hub landing pages accessible from the Mega Menu.
+            hint: READ-ONLY context marker. These entries power the domain hub landing pages
+              accessible from the Mega Menu.
           - label: Category Hub Pages
             name: categories
             widget: list
             summary: '{{fields.name}} ({{fields.slug}})'
-            hint: Each entry generates a dedicated domain hub page (e.g., /guidewire-courses/). The SEO copy here appears on that hub page.
+            hint: Each entry generates a dedicated domain hub page (e.g.,
+              /guidewire-courses/). The SEO copy here appears on that hub page.
             fields:
               - label: Category Display Name
                 name: name
@@ -330,16 +363,19 @@ collections:
               - label: URL Slug (Hub Page)
                 name: slug
                 widget: string
-                hint: 'Example: ''guidewire-courses'' — Forms the URL /{slug}/. Must be lowercase with hyphens only.'
+                hint: 'Example: ''guidewire-courses'' — Forms the URL /{slug}/. Must be
+                  lowercase with hyphens only.'
               - label: Category Filter Key
                 name: categoryKey
                 widget: string
-                hint: 'Example: ''guidewire'' — Must exactly match the ''category'' field in course markdown frontmatter.'
+                hint: 'Example: ''guidewire'' — Must exactly match the ''category'' field in
+                  course markdown frontmatter.'
               - label: Icon Identifier
                 name: iconName
                 widget: string
                 required: false
-                hint: 'Example: ''guidewire'' or ''sap'' — Maps to an icon component in the codebase.'
+                hint: 'Example: ''guidewire'' or ''sap'' — Maps to an icon component in the
+                  codebase.'
               - label: Hub Page Intro Copy
                 name: intro
                 widget: text
@@ -351,11 +387,14 @@ collections:
               - label: SEO Meta Title
                 name: metaTitle
                 widget: string
-                hint: 'Example: ''Guidewire Training in Hyderabad | Ask4Trainings'' — Target 55–60 characters for SERP display.'
+                hint: 'Example: ''Guidewire Training in Hyderabad | Ask4Trainings'' — Target
+                  55–60 characters for SERP display.'
               - label: SEO Meta Description
                 name: metaDescription
                 widget: text
-                hint: 'Example: ''Expert-led Guidewire PolicyCenter, ClaimCenter, and BillingCenter training in Ameerpet, Hyderabad with 100% placement support.'' — Target 145–160 characters.'
+                hint: 'Example: ''Expert-led Guidewire PolicyCenter, ClaimCenter, and
+                  BillingCenter training in Ameerpet, Hyderabad with 100%
+                  placement support.'' — Target 145–160 characters.'
       - label: 📋 Enquiry Form Configuration
         name: forms
         file: src/data/forms.json
@@ -365,11 +404,14 @@ collections:
             name: livePath
             widget: string
             default: Student Registration form > Training Mode dropdown; all enquiry forms
-            hint: READ-ONLY context marker. These options populate the 'Training Mode' dropdown in all lead capture forms.
+            hint: READ-ONLY context marker. These options populate the 'Training Mode'
+              dropdown in all lead capture forms.
           - label: Training Mode Dropdown Options
             name: trainingModes
             widget: list
-            hint: 'Options shown in the ''Preferred Training Mode'' dropdown on all enquiry forms. Example values: ''Live Online'', ''Classroom (Ameerpet)'', ''Weekend Fast-Track'', ''Self-Paced''.'
+            hint: 'Options shown in the ''Preferred Training Mode'' dropdown on all enquiry
+              forms. Example values: ''Live Online'', ''Classroom (Ameerpet)'',
+              ''Weekend Fast-Track'', ''Self-Paced''.'
             field:
               label: Mode Label
               name: mode
@@ -389,29 +431,38 @@ collections:
             name: livePath
             widget: string
             default: Homepage → / (root URL)
-            hint: READ-ONLY context marker. All edits here appear on the website homepage at ask4trainings.com/
+            hint: READ-ONLY context marker. All edits here appear on the website homepage at
+              ask4trainings.com/
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''Ask4Trainings — IT Training Institute in Hyderabad | Guidewire, SAP, DevOps'' — Target 55–60 characters.'
+            hint: 'Example: ''Ask4Trainings — IT Training Institute in Hyderabad |
+              Guidewire, SAP, DevOps'' — Target 55–60 characters.'
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Ask4Trainings is a premier IT training institute in Ameerpet, Hyderabad. Expert-led courses in Guidewire, SAP, DevOps, Cloud, Oracle with 100% placement support.'' — Target 145–160 characters.'
+            hint: 'Example: ''Ask4Trainings is a premier IT training institute in Ameerpet,
+              Hyderabad. Expert-led courses in Guidewire, SAP, DevOps, Cloud,
+              Oracle with 100% placement support.'' — Target 145–160
+              characters.'
           - label: 🎯 Hero Badge
             name: heroBadge
             widget: string
-            hint: 'Example: ''Batch Starting Soon — Limited Seats'' — Small badge text above the hero headline.'
+            hint: 'Example: ''Batch Starting Soon — Limited Seats'' — Small badge text above
+              the hero headline.'
           - label: Hero Main Headline
             name: heroTitle
             widget: string
-            hint: 'Example: ''Master Enterprise IT Skills. Secure High-Paying Jobs.'' — The primary H1 of the homepage hero.'
+            hint: 'Example: ''Master Enterprise IT Skills. Secure High-Paying Jobs.'' — The
+              primary H1 of the homepage hero.'
           - label: Hero Subtitle / Supporting Copy
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''Real-world training by industry experts. Specializing in Guidewire, SAP, Siemens PLM, DevOps, Cloud, and Data Science.'' — 1–2 sentences below the headline.'
+            hint: 'Example: ''Real-world training by industry experts. Specializing in
+              Guidewire, SAP, Siemens PLM, DevOps, Cloud, and Data Science.'' —
+              1–2 sentences below the headline.'
           - label: Hero CTA Button Label
             name: heroCtaLabel
             widget: string
@@ -423,7 +474,8 @@ collections:
           - label: 📊 Statistics Counter Row — Students Trained
             name: statStudents
             widget: string
-            hint: 'Example: ''12,000+'' — Active students trained. Appears in the homepage stats bar.'
+            hint: 'Example: ''12,000+'' — Active students trained. Appears in the homepage
+              stats bar.'
           - label: Corporate Batches Delivered
             name: statBatches
             widget: string
@@ -441,7 +493,8 @@ collections:
             widget: list
             required: false
             summary: '{{fields.label}}: {{fields.value}}'
-            hint: 'Small credibility badges shown below the hero CTA. Example: { label: ''Industry Mentors'', value: ''10+ yrs'' }.'
+            hint: 'Small credibility badges shown below the hero CTA. Example: { label:
+              ''Industry Mentors'', value: ''10+ yrs'' }.'
             fields:
               - label: Badge Label
                 name: label
@@ -454,11 +507,13 @@ collections:
           - label: 🏢 About Section Eyebrow
             name: aboutEyebrow
             widget: string
-            hint: 'Example: ''About Ask4Trainings'' — Small uppercase eyebrow label above the about section headline.'
+            hint: 'Example: ''About Ask4Trainings'' — Small uppercase eyebrow label above
+              the about section headline.'
           - label: About Section Headline
             name: aboutTitle
             widget: string
-            hint: 'Example: ''Hyderabad''s Trusted Hub for Real-Time IT & Software Training'''
+            hint: 'Example: ''Hyderabad''s Trusted Hub for Real-Time IT & Software
+              Training'''
           - label: About Section Body Copy
             name: aboutBody
             widget: text
@@ -477,7 +532,8 @@ collections:
               - label: Pillar Description
                 name: description
                 widget: text
-                hint: 'Example: ''Hands-on learning with live enterprise use cases, sandbox environments, and real-world scenario practice.'''
+                hint: 'Example: ''Hands-on learning with live enterprise use cases, sandbox
+                  environments, and real-world scenario practice.'''
           - label: 👩‍🏫 Become an Instructor Badge
             name: instructorBadge
             widget: string
@@ -489,7 +545,8 @@ collections:
           - label: Instructor Section Body
             name: instructorText
             widget: text
-            hint: 'Example: ''Are you an experienced IT professional? Join our faculty team and share your expertise with the next generation of engineers.'''
+            hint: 'Example: ''Are you an experienced IT professional? Join our faculty team
+              and share your expertise with the next generation of engineers.'''
           - label: 📚 Trending Courses Eyebrow Label
             name: trendingEyebrow
             widget: string
@@ -509,7 +566,8 @@ collections:
           - label: Training Category Cards (Browse Section)
             name: trainingCategories
             widget: list
-            hint: The domain category cards shown in the 'Browse by Category' section of the homepage.
+            hint: The domain category cards shown in the 'Browse by Category' section of the
+              homepage.
             summary: '{{fields.name}} → {{fields.url}}'
             fields:
               - label: Category Name
@@ -523,11 +581,13 @@ collections:
               - label: Icon SVG Code
                 name: icon
                 widget: text
-                hint: 'Paste raw inline SVG markup here. Must be a valid <svg>...</svg> string. Recommended size: 24x24.'
+                hint: 'Paste raw inline SVG markup here. Must be a valid <svg>...</svg> string.
+                  Recommended size: 24x24.'
               - label: Card Description
                 name: desc
                 widget: string
-                hint: 'Example: ''Live online & classroom courses in PolicyCenter, BillingCenter, ClaimCenter.'' — 1 sentence, max 100 chars.'
+                hint: 'Example: ''Live online & classroom courses in PolicyCenter,
+                  BillingCenter, ClaimCenter.'' — 1 sentence, max 100 chars.'
       - label: 🏢 About Us (/about-us)
         name: about
         file: src/data/pages/about.json
@@ -537,17 +597,21 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > About Us → /about-us/
-            hint: READ-ONLY context marker. All edits here appear on ask4trainings.com/about-us/
+            hint: READ-ONLY context marker. All edits here appear on
+              ask4trainings.com/about-us/
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''About Ask4Trainings | Premier IT Training Institute in Hyderabad'' — Target 55–60 characters.'
+            hint: 'Example: ''About Ask4Trainings | Premier IT Training Institute in
+              Hyderabad'' — Target 55–60 characters.'
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Learn about Ask4Trainings, our state-of-the-art Ameerpet facility, and our mission to provide industry-leading Guidewire, SAP, and DevOps training.'' — Target 145–160 characters.'
+            hint: 'Example: ''Learn about Ask4Trainings, our state-of-the-art Ameerpet
+              facility, and our mission to provide industry-leading Guidewire,
+              SAP, and DevOps training.'' — Target 145–160 characters.'
           - label: Page Hero Headline
             name: heroTitle
             widget: string
@@ -555,7 +619,8 @@ collections:
           - label: Page Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''Empowering careers through high-quality, industry-aligned IT training in Hyderabad.'''
+            hint: 'Example: ''Empowering careers through high-quality, industry-aligned IT
+              training in Hyderabad.'''
           - label: Who We Are Section Title
             name: whoWeAreTitle
             widget: string
@@ -571,7 +636,9 @@ collections:
           - label: Mission / Vision Statement
             name: companyVision
             widget: text
-            hint: 'Example: ''To bridge the gap between academic education and enterprise industry expectations by providing world-class, practical IT training.'' — 1–2 sentences.'
+            hint: 'Example: ''To bridge the gap between academic education and enterprise
+              industry expectations by providing world-class, practical IT
+              training.'' — 1–2 sentences.'
           - label: Facility Section Title
             name: facilityTitle
             widget: string
@@ -579,7 +646,9 @@ collections:
           - label: Facility Details
             name: facilityDetails
             widget: text
-            hint: 'Example: ''Located in the heart of Ameerpet, Hyderabad, our training center features state-of-the-art labs, high-speed connectivity, and dedicated interview preparation zones.'''
+            hint: 'Example: ''Located in the heart of Ameerpet, Hyderabad, our training
+              center features state-of-the-art labs, high-speed connectivity,
+              and dedicated interview preparation zones.'''
           - label: Milestones Section Title
             name: milestonesTitle
             widget: string
@@ -587,7 +656,8 @@ collections:
           - label: Milestones Summary Text
             name: milestones
             widget: text
-            hint: 'Example: ''Founded in 2012. Trained over 12,000 students. Placed candidates in top Fortune 500 companies globally.'''
+            hint: 'Example: ''Founded in 2012. Trained over 12,000 students. Placed
+              candidates in top Fortune 500 companies globally.'''
           - label: Leadership Section Title
             name: leadershipTitle
             widget: string
@@ -595,7 +665,9 @@ collections:
           - label: Leadership Bios Summary
             name: leadershipBios
             widget: text
-            hint: 'Example: ''Our founders and senior trainers bring decades of collective experience from top-tier product and service-based IT organizations.'''
+            hint: 'Example: ''Our founders and senior trainers bring decades of collective
+              experience from top-tier product and service-based IT
+              organizations.'''
           - label: Why Choose Us Section Title
             name: whyChooseTitle
             widget: string
@@ -603,7 +675,8 @@ collections:
           - label: Why Choose Us Items
             name: whyChooseUs
             widget: list
-            hint: Checklist items shown in the 'Why Choose Us' section. Each item has a title and a short description.
+            hint: Checklist items shown in the 'Why Choose Us' section. Each item has a
+              title and a short description.
             summary: '{{fields.title}}'
             fields:
               - label: Item Title
@@ -613,7 +686,8 @@ collections:
               - label: Item Description
                 name: description
                 widget: text
-                hint: 'Example: ''Learn from industry professionals with years of real-world experience across Guidewire, SAP, and Cloud platforms.'''
+                hint: 'Example: ''Learn from industry professionals with years of real-world
+                  experience across Guidewire, SAP, and Cloud platforms.'''
       - label: 📞 Contact Us (/contact-us)
         name: contact
         file: src/data/pages/contact.json
@@ -623,17 +697,21 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > Contact Us → /contact-us/
-            hint: READ-ONLY context marker. All edits here appear on ask4trainings.com/contact-us/
+            hint: READ-ONLY context marker. All edits here appear on
+              ask4trainings.com/contact-us/
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''Contact Ask4Trainings | Ameerpet Campus & Online Enquiries'' — Target 55–60 characters.'
+            hint: 'Example: ''Contact Ask4Trainings | Ameerpet Campus & Online Enquiries'' —
+              Target 55–60 characters.'
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Get in touch with Ask4Trainings. Call us, WhatsApp us, or visit our Ameerpet campus for course enquiries and batch scheduling.'' — Target 145–160 characters.'
+            hint: 'Example: ''Get in touch with Ask4Trainings. Call us, WhatsApp us, or
+              visit our Ameerpet campus for course enquiries and batch
+              scheduling.'' — Target 145–160 characters.'
           - label: Page Hero Headline
             name: heroTitle
             widget: string
@@ -641,7 +719,9 @@ collections:
           - label: Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''Have a question about a course? Ready to enquire? We''ll respond within 2 hours on WhatsApp or call you back within the day.'''
+            hint: 'Example: ''Have a question about a course? Ready to enquire? We''ll
+              respond within 2 hours on WhatsApp or call you back within the
+              day.'''
           - label: Contact Section Heading
             name: sectionTitle
             widget: string
@@ -653,11 +733,14 @@ collections:
           - label: Full Office Address
             name: addressDetails
             widget: text
-            hint: 'Example: ''House No:403, 4th Floor, Naga Sai Nivas, near Prime Hospital Lane, Ameerpet, Hyderabad, Telangana 500016'''
+            hint: 'Example: ''House No:403, 4th Floor, Naga Sai Nivas, near Prime Hospital
+              Lane, Ameerpet, Hyderabad, Telangana 500016'''
           - label: Google Maps Embed URL
             name: googleMapsEmbedUrl
             widget: string
-            hint: 'Example: ''https://www.google.com/maps/embed?pb=...'' — Paste the full Google Maps embed src URL (from Google Maps > Share > Embed a map).'
+            hint: 'Example: ''https://www.google.com/maps/embed?pb=...'' — Paste the full
+              Google Maps embed src URL (from Google Maps > Share > Embed a
+              map).'
           - label: Branch Operating Hours
             name: batchHours
             widget: text
@@ -667,7 +750,8 @@ collections:
           - label: Helpline Numbers (Display)
             name: helplineNumbers
             widget: string
-            hint: 'Example: ''+91 8099949888, +91 9951609609'' — Comma-separated list for display in the contact info block.'
+            hint: 'Example: ''+91 8099949888, +91 9951609609'' — Comma-separated list for
+              display in the contact info block.'
           - label: Support Email
             name: supportEmail
             widget: string
@@ -675,7 +759,8 @@ collections:
           - label: WhatsApp Number (Digits Only)
             name: whatsappNumber
             widget: string
-            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or symbols. Used to build the wa.me/ chat link.'
+            hint: 'Example: ''918099949888'' — Country code + 10 digits, no spaces or
+              symbols. Used to build the wa.me/ chat link.'
       - label: 📝 Student Registration (/student-registration)
         name: student_registration
         file: src/data/pages/student-registration.json
@@ -685,17 +770,21 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > Student Registration → /student-registration/
-            hint: READ-ONLY context marker. All edits here appear on ask4trainings.com/student-registration/
+            hint: READ-ONLY context marker. All edits here appear on
+              ask4trainings.com/student-registration/
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''Student Registration | Enrol in IT Training — Ask4Trainings Hyderabad'''
+            hint: 'Example: ''Student Registration | Enrol in IT Training — Ask4Trainings
+              Hyderabad'''
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Register as a student at Ask4Trainings. Fill the form to enrol in Guidewire, SAP, DevOps, or Cloud courses. Our team calls back within 2 hours to confirm your batch.'''
+            hint: 'Example: ''Register as a student at Ask4Trainings. Fill the form to enrol
+              in Guidewire, SAP, DevOps, or Cloud courses. Our team calls back
+              within 2 hours to confirm your batch.'''
           - label: Page Hero Headline
             name: heroTitle
             widget: string
@@ -703,7 +792,9 @@ collections:
           - label: Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''Fill in the form below and our team will contact you within 2 hours to confirm your batch, discuss the schedule, and answer any questions.'''
+            hint: 'Example: ''Fill in the form below and our team will contact you within 2
+              hours to confirm your batch, discuss the schedule, and answer any
+              questions.'''
           - label: Next Steps Section Title
             name: nextStepsTitle
             widget: string
@@ -711,7 +802,8 @@ collections:
           - label: Next Steps List
             name: nextSteps
             widget: list
-            hint: Numbered steps shown after the registration form explaining the onboarding process.
+            hint: Numbered steps shown after the registration form explaining the onboarding
+              process.
             summary: 'Step {{fields.step}}: {{fields.text}}'
             fields:
               - label: Step Number
@@ -789,96 +881,247 @@ collections:
         name: navigationLocation
         widget: string
         required: false
-        hint: "Breadcrumb path showing where this course lives on the live site (e.g., 'Navigation Bar > All Courses > Guidewire Suite > Guidewire PolicyCenter Training')."
-      - label: ⭐ Course Priority Tier
+        hint: "Follow format: 'Navigation Bar > All Courses > Guidewire Suite >
+          Guidewire PolicyCenter Training'"
+      - label: 🌟 Course Promotion Tier
         name: priorityTier
         widget: select
-        default: tier1
-        hint: 'Tier 1 courses are pinned and promoted most prominently. Example: Guidewire PolicyCenter = Tier 1 (Flagship). A general automation testing course = Tier 3.'
+        default: tier-2
+        hint: 'Controls where this course ranks on the homepage and catalog search.'
         options:
-          - label: '⭐ Tier 1: High-Priority Flagship'
-            value: tier1
-          - label: '📈 Tier 2: Growth Program'
-            value: tier2
-          - label: '📘 Tier 3: Supporting Course'
-            value: tier3
+          - label: "🌟 Tier 1: Flagship Program (Top Priority Placement)"
+            value: tier-1
+          - label: "📈 Tier 2: Core Growth Course"
+            value: tier-2
+          - label: "📘 Tier 3: Specialized / Supporting Course"
+            value: tier-3
       - label: Course Title
         name: title
         widget: string
-        hint: 'Example: ''Guidewire PolicyCenter 10.x Live Online Training in Hyderabad'' — The main H1 displayed at the top of the course page.'
+        hint: 'Example: ''Guidewire PolicyCenter 10.x Live Online Training in
+          Hyderabad'' — The main H1 displayed at the top of the course page.'
       - label: Course Badge / Short Code
         name: shortCode
         widget: string
         required: false
-        hint: 'Example: ''GW PC'' or ''SAP FICO'' — Abbreviation shown as a compact badge.'
+        hint: 'Example: ''GW PC'' or ''SAP FICO'' — Abbreviation shown as a compact
+          badge.'
       - label: Domain Category
         name: category
         widget: select
         options:
-          - label: "Guidewire Suite"
-            value: "guidewire"
-          - label: "Siemens Teamcenter / PLM"
-            value: "siemens"
-          - label: "SAP Solutions"
-            value: "sap"
-          - label: "Cloud & DevOps"
-            value: "devops"
-          - label: "Cloud Computing"
-            value: "cloud-computing"
-          - label: "Software Development"
-            value: "development"
-          - label: "Microsoft Dynamics 365"
-            value: "ms-d365"
-          - label: "Oracle Cloud"
-            value: "oracle"
-          - label: "Trending Technologies"
-            value: "trending-courses"
-          - label: "New Courses"
-            value: "new-courses"
-          - label: "Other Specialized Tools"
-            value: "other-tools"
-        hint: 'Assign this course to its domain. Must match the ''Category Filter Key'' in the Mega Menu & Category Pages. Example: ''guidewire'' for all Guidewire suite courses.'
-      - label: Course Hero / Thumbnail Image
-        name: thumbnail
-        widget: image
-        required: false
-        hint: 'Upload a high-resolution 16:9 banner (JPG/PNG/WebP, max 500KB). Recommended: 1200×675px.'
-      - label: Thumbnail Image Alt Text
-        name: thumbnailAlt
+          - label: 🛡️ Guidewire Suite
+            value: guidewire
+          - label: ⚙️ Siemens Teamcenter / PLM
+            value: siemens
+          - label: 🔷 SAP Solutions
+            value: sap
+          - label: ☁️ Cloud Computing
+            value: cloud-computing
+          - label: 🔧 DevOps
+            value: devops
+          - label: 💻 Software Development
+            value: development
+          - label: 🌐 Microsoft Dynamics 365
+            value: ms-d365
+          - label: 🔶 Oracle Cloud
+            value: oracle
+          - label: 🚀 Trending Technologies
+            value: trending-courses
+          - label: ✨ New Courses
+            value: new-courses
+          - label: 🧰 Other Specialized Tools
+            value: other-tools
+        hint: 'Assign this course to its domain. Must match the ''Category Filter Key''
+          in the Mega Menu & Category Pages. Example: ''guidewire'' for all
+          Guidewire suite courses.'
+      - label: Value Proposition
+        name: valueProp
         widget: string
         required: false
-        hint: 'Example: ''Students attending a live Guidewire PolicyCenter lab session'' — Descriptive text for SEO and screen readers.'
-      - label: URL Slug
-        name: slug
-        widget: string
-        hint: 'Example: ''guidewire-policycenter-training'' — Forms the final URL. Lowercase letters, digits, and hyphens only. No spaces.'
-      - label: Custom Permalink (Override URL)
-        name: permalink
-        widget: string
+        hint: Main hero subtitle/value proposition.
+      - label: Batch Information (Free-form)
+        name: batchInfo
+        widget: text
         required: false
-        hint: 'Example: ''/guidewire-policycenter-training/'' — Use only to set a custom root-level URL. Must start and end with /.'
+        hint: 'Example: ''Next weekend batch starts 15th September. Weekday batch
+          (Mon/Wed/Fri 7:30–9:00 AM IST) available on-demand. Classes recorded
+          and shared within 12 hours.'''
       - label: Student Rating (out of 5.0)
         name: rating
         widget: number
         value_type: float
         required: false
-        hint: 'Example: ''4.8'' — Average student rating shown on the course card and hero.'
+        hint: 'Example: ''4.8'' — Average student rating shown on the course card and
+          hero.'
+      - label: Key Highlights
+        name: highlights
+        widget: list
+        required: false
+        hint: 'Short badge-style takeaway statements. Example: ''Live project labs with
+          real Guidewire Policy objects'' or ''Gosu scripting from fundamentals
+          to advanced''.'
+        field:
+          label: Highlight
+          name: highlight
+          widget: string
+          required: false
+          hint: Provide a value for Highlight.
+      - label: 📚 Curriculum Modules
+        name: modules
+        widget: list
+        required: false
+        summary: 'Module: {{fields.title}} ({{fields.duration}})'
+        hint: Drag-and-drop re-orderable curriculum modules. Each module has a title and
+          a list of topics/lessons.
+        fields:
+          - label: Module Title
+            name: title
+            widget: string
+            hint: 'Example: ''Module 1: Guidewire Architecture & Installation Overview'''
+          - label: Duration
+            name: duration
+            widget: string
+            required: false
+          - label: Topics in This Module
+            name: topics
+            widget: list
+            required: false
+            hint: Individual topics or lessons within this module.
+            field:
+              label: Topic
+              name: topic
+              widget: string
+              required: false
+              hint: Provide a value for Topic.
+      - label: "Trainer Section"
+        name: "trainer"
+        widget: "object"
+        required: false
+        fields:
+          - {
+              label: "Trainer Section Title",
+              name: "title",
+              widget: "string",
+              required: false,
+              hint: "Example: 'Expert Led Guidewire Trainer'"
+            }
+          - {
+              label: "Trainer Headshot (Square 1:1, min 400x400px)",
+              name: "image",
+              widget: "image",
+              required: false,
+              hint: "Upload a clean, high-resolution instructor portrait. Will be
+                automatically optimized on build."
+            }
+          - {
+              label: "Trainer Description",
+              name: "description",
+              widget: "text",
+              required: false,
+              hint: "Summary of hands-on mentoring and enterprise expertise."
+            }
+          - label: "Trainer Highlights"
+            name: "highlights"
+            widget: "list"
+            required: false
+            field:
+              {
+                label: "Highlight",
+                name: "item",
+                widget: "string",
+                hint: "Example: 'Real-time Project Mentoring & Job Support'"
+              }
+      - label: Eligibility Criteria
+        name: whoShouldEnroll
+        widget: list
+        required: false
+        summary: '{{fields.title}}'
+        hint: Q&A pairs about who can enrol in this course.
+        fields:
+          - label: Question
+            name: title
+            widget: string
+            hint: 'Example: ''Is this course suitable for fresh graduates?'''
+          - label: Answer
+            name: answer
+            widget: text
+            hint: 'Example: ''Yes, fresh graduates with a BE/BTech background in CS or IT
+              can directly enrol.'''
+      - label: ❓ FAQs
+        name: faqs
+        widget: list
+        required: false
+        summary: 'Q: {{fields.question}}'
+        hint: Frequently asked questions about this course. These appear in an accordion
+          on the course page.
+        fields:
+          - label: Question
+            name: question
+            widget: string
+            hint: 'Example: ''Do I need prior Guidewire experience to join this course?'''
+          - label: Answer
+            name: answer
+            widget: text
+            hint: 'Example: ''No prior Guidewire experience is required. Basic Java
+              programming knowledge is sufficient. We cover all Guidewire
+              fundamentals from scratch.'''
+      - label: SEO Meta Title
+        name: metaTitle
+        widget: string
+        required: false
+        hint: 'Example: ''Guidewire PolicyCenter Training in Hyderabad | Ask4Trainings''
+          — Target 55–60 characters for SERP display.'
+      - label: SEO Meta Description
+        name: metaDescription
+        widget: text
+        required: false
+        hint: 'Google search snippet text. Aim for 140–160 characters describing the
+          course value.'
+      - label: Course Hero / Thumbnail Image (16:9, max 500KB)
+        name: thumbnail
+        widget: image
+        required: false
+        hint: 'Upload a clean, high-resolution hero image. Will be automatically
+          optimized on build.'
+      - label: Thumbnail Image Alt Text
+        name: thumbnailAlt
+        widget: string
+        required: false
+        hint: 'Example: ''Students attending a live Guidewire PolicyCenter lab session''
+          — Descriptive text for SEO and screen readers.'
+      - label: URL Slug
+        name: slug
+        widget: string
+        hint: 'Example: ''guidewire-policycenter-training'' — Forms the final URL.
+          Lowercase letters, digits, and hyphens only. No spaces.'
+      - label: Custom Permalink (Override URL)
+        name: permalink
+        widget: string
+        required: false
+        hint: 'Example: ''/guidewire-policycenter-training/'' — Use only to set a custom
+          root-level URL. Must start and end with /.'
       - label: Review Count
         name: reviewCount
         widget: number
         required: false
         hint: 'Example: ''247'' — Total number of student reviews.'
       - label: 🗓️ Upcoming Live Batch Details
-        name: upcomingBatch
-        widget: object
+        name: batches
+        widget: list
         required: false
-        hint: Upcoming batch info displayed in the course hero. Update before each new batch cycle.
+        hint: Upcoming batch info displayed in the course hero. Update before each new
+          batch cycle.
         fields:
+          - label: Type
+            name: type
+            widget: string
           - label: Batch Start Date
             name: startDate
             widget: string
             required: false
-            hint: 'Example: ''Starting This Monday @ 7:30 AM IST (Classroom & Online)'' or ''15th September 2026'''
+            hint: 'Example: ''Starting This Monday @ 7:30 AM IST (Classroom & Online)'' or
+              ''15th September 2026'''
           - label: Class Timings
             name: timing
             widget: string
@@ -889,16 +1132,19 @@ collections:
             widget: string
             required: false
             hint: 'Example: ''Limited to 15 Seats'' or ''Filling Fast — 4 Seats Remaining'''
+        summary: "{{fields.type}} · {{fields.startDate}}"
       - label: 🎬 Demo Class Video URL
         name: demoVideoUrl
         widget: string
         required: false
-        hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube link (watch?v= or youtu.be/ format). The system extracts the video ID automatically.'
+        hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube
+          link (watch?v= or youtu.be/ format). The system extracts the video ID
+          automatically.'
       - label: Course Duration
         name: duration
         widget: string
         required: false
-        hint: 'Example: ''6 Weeks / 45 Hours'' or ''60 Days Intensive'''
+        hint: 'Example: ''45-60 Hrs'' or ''6 Weeks (Weekend Batches)'''
       - label: Training Mode
         name: trainingMode
         widget: select
@@ -913,31 +1159,27 @@ collections:
         name: brochureDriveUrl
         widget: string
         required: false
-        hint: 'Example: ''https://drive.google.com/file/d/1abc123/view?usp=sharing'' — Full Google Drive or cloud PDF shareable link to course syllabus.'
+        hint: 'Example: ''https://drive.google.com/file/d/1abc123/view?usp=sharing'' —
+          Full Google Drive or cloud PDF shareable link to course syllabus.'
       - label: Short Hero Summary / Course Description
         name: description
         widget: text
-        hint: 'Example: ''Comprehensive Guidewire PolicyCenter training covering product configuration, Gosu scripting, PCF UI, Rating, and integration. Taught by working implementation consultants.'' — 2–3 sentences shown in hero and course cards.'
+        hint: 'Example: ''Comprehensive Guidewire PolicyCenter training covering product
+          configuration, Gosu scripting, PCF UI, Rating, and integration. Taught
+          by working implementation consultants.'' — 2–3 sentences shown in hero
+          and course cards.'
       - label: In-Depth Course Overview (Markdown Body)
         name: body
         widget: markdown
-        hint: Full detailed article-style overview. Include what students will learn, lab structure, and real-world project scope. This is the main long-form content area.
-      - label: Key Highlights
-        name: highlights
-        widget: list
-        required: false
-        hint: 'Short badge-style takeaway statements. Example: ''Live project labs with real Guidewire Policy objects'' or ''Gosu scripting from fundamentals to advanced''.'
-        field:
-          label: Highlight
-          name: highlight
-          widget: string
-          required: false
-          hint: Provide a value for Highlight.
+        hint: Full detailed article-style overview. Include what students will learn,
+          lab structure, and real-world project scope. This is the main
+          long-form content area.
       - label: Target Audience
         name: targetAudience
         widget: list
         required: false
-        hint: 'Who should enrol. Example: ''Java developers transitioning to Guidewire'' or ''IT graduates targeting insurance technology roles''.'
+        hint: 'Who should enrol. Example: ''Java developers transitioning to Guidewire''
+          or ''IT graduates targeting insurance technology roles''.'
         field:
           label: Audience Segment
           name: audience
@@ -948,41 +1190,22 @@ collections:
         name: prerequisites
         widget: list
         required: false
-        hint: 'Recommended background. Example: ''Basic Java programming knowledge'' or ''Familiarity with XML and object-oriented concepts''.'
+        hint: 'Recommended background. Example: ''Basic Java programming knowledge'' or
+          ''Familiarity with XML and object-oriented concepts''.'
         field:
           label: Prerequisite
           name: prerequisite
           widget: string
           required: false
           hint: Provide a value for Prerequisite.
-      - label: 📚 Curriculum Modules
-        name: curriculum
-        widget: list
-        required: false
-        summary: '{{fields.moduleTitle}}'
-        hint: Drag-and-drop re-orderable curriculum modules. Each module has a title and a list of topics/lessons.
-        fields:
-          - label: Module Title
-            name: moduleTitle
-            widget: string
-            hint: 'Example: ''Module 1: Guidewire Architecture & Installation Overview'''
-          - label: Topics in This Module
-            name: topics
-            widget: list
-            required: false
-            hint: Individual topics or lessons within this module.
-            field:
-              label: Topic
-              name: topic
-              widget: string
-              required: false
-              hint: Provide a value for Topic.
       - label: 💰 Pricing Tiers
         name: pricingTiers
         widget: list
         required: false
         summary: '{{fields.planName}} — {{fields.price}}'
-        hint: 'Training plans with pricing and feature lists. Example plans: ''Live Online Batch'' at ''₹24,999'' or ''Classroom (Ameerpet)'' at ''₹28,999''.'
+        hint: 'Training plans with pricing and feature lists. Example plans: ''Live
+          Online Batch'' at ''₹24,999'' or ''Classroom (Ameerpet)'' at
+          ''₹28,999''.'
         fields:
           - label: Plan Name
             name: planName
@@ -1007,18 +1230,21 @@ collections:
         name: careerInsights
         widget: object
         required: false
-        hint: Salary range and career outcome data shown in the course page's career section.
+        hint: Salary range and career outcome data shown in the course page's career
+          section.
         fields:
           - label: Average Salary Range
             name: avgSalary
             widget: string
             required: false
-            hint: 'Example: ''₹8.5 LPA - ₹22 LPA (India) / $90K - $130K (USA)'' — Include both domestic and international ranges where available.'
+            hint: 'Example: ''₹8.5 LPA - ₹22 LPA (India) / $90K - $130K (USA)'' — Include
+              both domestic and international ranges where available.'
           - label: Target Job Roles
             name: jobRoles
             widget: list
             required: false
-            hint: 'Example roles: ''Guidewire PolicyCenter Developer'', ''Insurance Technology Analyst'', ''Guidewire Configuration Consultant''.'
+            hint: 'Example roles: ''Guidewire PolicyCenter Developer'', ''Insurance
+              Technology Analyst'', ''Guidewire Configuration Consultant''.'
             field:
               label: Job Role Title
               name: role
@@ -1029,13 +1255,15 @@ collections:
             name: hiringIndustries
             widget: string
             required: false
-            hint: 'Example: ''Sapient, Capgemini, NIIT Technologies, EXL Service, and leading global insurance carriers'''
+            hint: 'Example: ''Sapient, Capgemini, NIIT Technologies, EXL Service, and
+              leading global insurance carriers'''
       - label: ⭐ Student Testimonials
         name: testimonials
         widget: list
         summary: '{{fields.studentName}} — {{fields.placedCompany}}'
         required: false
-        hint: Student success stories. Include name, where they were placed, their quote, and an optional video testimonial.
+        hint: Student success stories. Include name, where they were placed, their
+          quote, and an optional video testimonial.
         fields:
           - label: Student Name
             name: studentName
@@ -1049,7 +1277,9 @@ collections:
           - label: Testimonial Quote
             name: quote
             widget: text
-            hint: 'Example: ''The Guidewire PolicyCenter training at Ask4Trainings was exceptional — real-world labs and a mentor who had actually worked on live implementations.'''
+            hint: 'Example: ''The Guidewire PolicyCenter training at Ask4Trainings was
+              exceptional — real-world labs and a mentor who had actually worked
+              on live implementations.'''
           - label: Rating (out of 5.0)
             name: rating
             widget: number
@@ -1061,22 +1291,14 @@ collections:
             name: videoUrl
             widget: string
             required: false
-            hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube URL of the student''s video testimonial.'
-      - label: SEO Meta Title
-        name: metaTitle
-        widget: string
-        required: false
-        hint: 'Example: ''Guidewire PolicyCenter Training in Hyderabad | Ask4Trainings'' — Target 55–60 characters for SERP display.'
-      - label: SEO Meta Description
-        name: metaDescription
-        widget: text
-        required: false
-        hint: 'Example: ''Expert-led Guidewire PolicyCenter 10.x training in Ameerpet, Hyderabad. Covers product model, Gosu, PCF, Rating, and integration with 100% placement support.'' — Target 145–160 characters.'
+            hint: 'Example: ''https://www.youtube.com/watch?v=dQw4w9WgXcQ'' — Full YouTube
+              URL of the student''s video testimonial.'
       - label: SEO Keywords
         name: keywords
         widget: list
         required: false
-        hint: 'Example keywords: ''guidewire policycenter training hyderabad'', ''guidewire online course india''. These inform on-page SEO.'
+        hint: 'Example keywords: ''guidewire policycenter training hyderabad'',
+          ''guidewire online course india''. These inform on-page SEO.'
         field:
           label: Keyword
           name: keyword
@@ -1087,20 +1309,8 @@ collections:
         name: certification
         widget: string
         required: false
-        hint: 'Example: ''Guidewire Certified Associate (GCA) — PolicyCenter'' — Official credential students can pursue after this course.'
-      - label: "Trainer Section"
-        name: "trainer"
-        widget: "object"
-        required: false
-        fields:
-          - { label: "Trainer Section Title", name: "title", widget: "string", required: false, hint: "Example: 'Expert Led Guidewire Trainer'" }
-          - { label: "Trainer Image / Illustration", name: "image", widget: "image", required: false }
-          - { label: "Trainer Description", name: "description", widget: "text", required: false, hint: "Summary of hands-on mentoring and enterprise expertise." }
-          - label: "Trainer Highlights"
-            name: "highlights"
-            widget: "list"
-            required: false
-            field: { label: "Highlight", name: "item", widget: "string", hint: "Example: 'Real-time Project Mentoring & Job Support'" }
+        hint: 'Example: ''Guidewire Certified Associate (GCA) — PolicyCenter'' —
+          Official credential students can pursue after this course.'
       - label: 👨‍🏫 Trainer Profile (Legacy)
         name: trainerProfile
         widget: object
@@ -1108,50 +1318,34 @@ collections:
         hint: Legacy field for older courses.
         fields:
           - { label: "Heading", name: "heading", widget: "string", required: false }
-          - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Highlights", name: "highlights", widget: "list", required: false, field: {name: highlight, widget: string} }
-      - label: ❓ FAQs
-        name: faqs
-        widget: list
-        required: false
-        summary: '{{fields.question}}'
-        hint: Frequently asked questions about this course. These appear in an accordion on the course page.
-        fields:
-          - label: Question
-            name: question
-            widget: string
-            hint: 'Example: ''Do I need prior Guidewire experience to join this course?'''
-          - label: Answer
-            name: answer
-            widget: text
-            hint: 'Example: ''No prior Guidewire experience is required. Basic Java programming knowledge is sufficient. We cover all Guidewire fundamentals from scratch.'''
-      - label: Eligibility Criteria
-        name: eligibility
-        widget: list
-        required: false
-        summary: '{{fields.question}}'
-        hint: Q&A pairs about who can enrol in this course.
-        fields:
-          - label: Question
-            name: question
-            widget: string
-            hint: 'Example: ''Is this course suitable for fresh graduates?'''
-          - label: Answer
-            name: answer
-            widget: text
-            hint: 'Example: ''Yes, fresh graduates with a BE/BTech background in CS or IT can directly enrol.'''
+          - {
+              label: "Description",
+              name: "description",
+              widget: "text",
+              required: false
+            }
+          - {
+              label: "Highlights",
+              name: "highlights",
+              widget: "list",
+              required: false,
+              field: { name: highlight, widget: string }
+            }
       - label: Key Features
         name: keyFeatures
         widget: list
         required: false
         summary: '{{fields.title}}'
-        hint: 'Highlighted feature cards shown on the course page. Example: { title: ''Live Project Labs'', description: ''Hands-on coding with actual server environments'' }.'
+        hint: 'Highlighted feature cards shown on the course page. Example: { title:
+          ''Live Project Labs'', description: ''Hands-on coding with actual
+          server environments'' }.'
         fields:
           - label: Icon Name
             name: iconName
             widget: string
             required: false
-            hint: 'Example: ''laptop'' or ''certificate'' — Maps to an icon in the component library.'
+            hint: 'Example: ''laptop'' or ''certificate'' — Maps to an icon in the component
+              library.'
           - label: Feature Title
             name: title
             widget: string
@@ -1159,13 +1353,15 @@ collections:
           - label: Feature Description
             name: description
             widget: text
-            hint: 'Example: ''Hands-on coding sessions using real server environments with live policy objects and rating tables.'''
+            hint: 'Example: ''Hands-on coding sessions using real server environments with
+              live policy objects and rating tables.'''
       - label: Why Choose This Course
         name: whyChooseUs
         widget: list
         required: false
         summary: '{{fields.title}}'
-        hint: 'Reasons specific to this course. Example: ''Trainer is a working Guidewire consultant with 12+ years experience''.'
+        hint: 'Reasons specific to this course. Example: ''Trainer is a working
+          Guidewire consultant with 12+ years experience''.'
         fields:
           - label: Title
             name: title
@@ -1174,28 +1370,27 @@ collections:
           - label: Description
             name: description
             widget: text
-            hint: 'Example: ''Our Guidewire trainer is currently engaged on a live Guidewire PolicyCenter implementation project, ensuring all examples are current and real-world.'' '
+            hint: 'Example: ''Our Guidewire trainer is currently engaged on a live Guidewire
+              PolicyCenter implementation project, ensuring all examples are
+              current and real-world.'' '
       - label: Course Objectives
         name: objectives
         widget: list
         required: false
-        hint: 'Main learning objectives. Example: ''Configure PolicyCenter product model from scratch using Guidewire Studio''.'
+        hint: 'Main learning objectives. Example: ''Configure PolicyCenter product model
+          from scratch using Guidewire Studio''.'
         field:
           label: Objective
           name: objective
           widget: string
           required: false
           hint: Provide a value for Objective.
-      - label: Batch Information (Free-form)
-        name: batchInfoText
-        widget: text
-        required: false
-        hint: 'Example: ''Next weekend batch starts 15th September. Weekday batch (Mon/Wed/Fri 7:30–9:00 AM IST) available on-demand. Classes recorded and shared within 12 hours.'''
       - label: Related Course Slugs
         name: relatedCourseSlugs
         widget: list
         required: false
-        hint: 'Slugs of related courses to recommend at the bottom of this page. Example: ''guidewire-claimcenter-training''.'
+        hint: 'Slugs of related courses to recommend at the bottom of this page.
+          Example: ''guidewire-claimcenter-training''.'
         field:
           label: Course Slug
           name: slug
@@ -1216,7 +1411,8 @@ collections:
         name: media
         widget: object
         required: false
-        hint: Legacy media fields for older course entries. For new courses, use 'Course Hero Image' and 'Demo Class Video URL' above.
+        hint: Legacy media fields for older course entries. For new courses, use 'Course
+          Hero Image' and 'Demo Class Video URL' above.
         fields:
           - label: Legacy Hero Image
             name: heroImage
@@ -1227,12 +1423,14 @@ collections:
             name: youtubeVideoId
             widget: string
             required: false
-            hint: 'Example: ''dQw4w9WgXcQ'' — 11-character YouTube video ID only (not the full URL). For new courses, use ''Demo Class Video URL''.'
+            hint: 'Example: ''dQw4w9WgXcQ'' — 11-character YouTube video ID only (not the
+              full URL). For new courses, use ''Demo Class Video URL''.'
       - label: Legacy About Course (Markdown)
         name: aboutCourse
         widget: markdown
         required: false
-        hint: Legacy long-form description. For new courses, use 'In-Depth Course Overview' above.
+        hint: Legacy long-form description. For new courses, use 'In-Depth Course
+          Overview' above.
       - label: Legacy Pricing Plans
         name: pricingPlans
         widget: list
@@ -1309,18 +1507,23 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
-            default: Navigation Bar > Services > Work Support (On-Job Support) → /work-support/
-            hint: READ-ONLY context marker. All edits here appear on ask4trainings.com/work-support/
+            default: Navigation Bar > Services > Work Support (On-Job Support) →
+              /work-support/
+            hint: READ-ONLY context marker. All edits here appear on
+              ask4trainings.com/work-support/
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''IT Job Support & Project Assistance | Ask4Trainings Hyderabad'''
+            hint: 'Example: ''IT Job Support & Project Assistance | Ask4Trainings
+              Hyderabad'''
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Expert on-job IT work support in Guidewire, SAP, DevOps, Cloud, and Salesforce. Daily 1-on-1 sessions with senior consultants. 100% confidential.'''
+            hint: 'Example: ''Expert on-job IT work support in Guidewire, SAP, DevOps,
+              Cloud, and Salesforce. Daily 1-on-1 sessions with senior
+              consultants. 100% confidential.'''
           - label: Hero Badge
             name: badge
             widget: string
@@ -1332,7 +1535,9 @@ collections:
           - label: Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''Stuck with complex project deliverables, bugs, or architectural tasks? Get 1-on-1 daily technical assistance from veteran implementation consultants.'''
+            hint: 'Example: ''Stuck with complex project deliverables, bugs, or
+              architectural tasks? Get 1-on-1 daily technical assistance from
+              veteran implementation consultants.'''
           - label: Primary CTA Label
             name: primaryCtaLabel
             widget: string
@@ -1352,7 +1557,8 @@ collections:
           - label: Technologies Section Intro
             name: introBody
             widget: text
-            hint: 'Example: ''We provide dedicated, secure, and practical job support across all leading enterprise technologies.'''
+            hint: 'Example: ''We provide dedicated, secure, and practical job support across
+              all leading enterprise technologies.'''
           - label: Supported Technologies List
             name: technologies
             widget: list
@@ -1366,7 +1572,8 @@ collections:
               - label: Scope Description
                 name: desc
                 widget: string
-                hint: 'Example: ''PolicyCenter, BillingCenter, ClaimCenter, ContactManager, Gosu, PCF & Rating'''
+                hint: 'Example: ''PolicyCenter, BillingCenter, ClaimCenter, ContactManager,
+                  Gosu, PCF & Rating'''
           - label: Process Section Title
             name: processTitle
             widget: string
@@ -1388,7 +1595,8 @@ collections:
               - label: Step Description
                 name: desc
                 widget: text
-                hint: 'Example: ''Fill in the enquiry form or ping us on WhatsApp with your technology, timezone, and project requirements.'''
+                hint: 'Example: ''Fill in the enquiry form or ping us on WhatsApp with your
+                  technology, timezone, and project requirements.'''
           - label: Contact Form Title
             name: formTitle
             widget: string
@@ -1396,7 +1604,8 @@ collections:
           - label: Contact Form Subtitle
             name: formSubtitle
             widget: text
-            hint: 'Example: ''100% confidential. Tell us your technology and get matched with a consultant today.'''
+            hint: 'Example: ''100% confidential. Tell us your technology and get matched
+              with a consultant today.'''
       - label: 🏢 Corporate Training
         name: corporate_training
         file: src/data/services/corporate-training.json
@@ -1406,7 +1615,8 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > Services > Corporate Training
-            hint: READ-ONLY context marker. All edits here appear on the Corporate Training page.
+            hint: READ-ONLY context marker. All edits here appear on the Corporate Training
+              page.
           - label: SEO Meta Title
             name: metaTitle
             widget: string
@@ -1416,7 +1626,8 @@ collections:
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Customized on-site and live-online corporate training in Guidewire, SAP S/4HANA, Cloud, and DevOps for enterprise teams.'''
+            hint: 'Example: ''Customized on-site and live-online corporate training in
+              Guidewire, SAP S/4HANA, Cloud, and DevOps for enterprise teams.'''
           - label: Hero Badge
             name: badge
             widget: string
@@ -1428,7 +1639,9 @@ collections:
           - label: Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''We design instructor-led programs around your tech stack, delivery timeline, and project outcomes — on-site in Hyderabad or live online worldwide.'''
+            hint: 'Example: ''We design instructor-led programs around your tech stack,
+              delivery timeline, and project outcomes — on-site in Hyderabad or
+              live online worldwide.'''
           - label: Primary CTA Label
             name: primaryCtaLabel
             widget: string
@@ -1448,7 +1661,9 @@ collections:
           - label: Intro Section Body
             name: introBody
             widget: text
-            hint: 'Example: ''We provide customized, on-site, and online corporate training programs tailored to your organization''s tech stack and project needs.'''
+            hint: 'Example: ''We provide customized, on-site, and online corporate training
+              programs tailored to your organization''s tech stack and project
+              needs.'''
           - label: Training Domains
             name: technologies
             widget: list
@@ -1462,7 +1677,8 @@ collections:
               - label: Domain Description
                 name: desc
                 widget: string
-                hint: 'Example: ''PolicyCenter, BillingCenter, ClaimCenter configuration and integration for insurance programmes.'''
+                hint: 'Example: ''PolicyCenter, BillingCenter, ClaimCenter configuration and
+                  integration for insurance programmes.'''
           - label: Process Section Title
             name: processTitle
             widget: string
@@ -1483,7 +1699,8 @@ collections:
               - label: Step Description
                 name: desc
                 widget: text
-                hint: 'Example: ''We map current team capability against your target architecture and delivery plan.'''
+                hint: 'Example: ''We map current team capability against your target
+                  architecture and delivery plan.'''
             hint: Provide a value for Engagement Process Steps.
           - label: Form Title
             name: formTitle
@@ -1492,7 +1709,8 @@ collections:
           - label: Form Subtitle
             name: formSubtitle
             widget: text
-            hint: 'Example: ''Share your team size, technology, and preferred dates. We respond within one business day.'''
+            hint: 'Example: ''Share your team size, technology, and preferred dates. We
+              respond within one business day.'''
       - label: 🎯 Placement Assistance
         name: placement_assistance
         file: src/data/services/placement-assistance.json
@@ -1502,17 +1720,21 @@ collections:
             name: livePath
             widget: string
             default: Navigation Bar > Services > Placement Assistance
-            hint: READ-ONLY context marker. All edits here appear on the Placement Assistance page.
+            hint: READ-ONLY context marker. All edits here appear on the Placement
+              Assistance page.
           - label: SEO Meta Title
             name: metaTitle
             widget: string
             required: false
-            hint: 'Example: ''Placement Assistance | IT Job Readiness — Ask4Trainings Hyderabad'''
+            hint: 'Example: ''Placement Assistance | IT Job Readiness — Ask4Trainings
+              Hyderabad'''
           - label: SEO Meta Description
             name: metaDescription
             widget: text
             required: false
-            hint: 'Example: ''Resume review, mock interviews, and hiring-partner referrals for students targeting Guidewire, SAP, Cloud, DevOps, and full-stack roles.'''
+            hint: 'Example: ''Resume review, mock interviews, and hiring-partner referrals
+              for students targeting Guidewire, SAP, Cloud, DevOps, and
+              full-stack roles.'''
           - label: Hero Badge
             name: badge
             widget: string
@@ -1524,7 +1746,9 @@ collections:
           - label: Hero Subtitle
             name: heroSubtitle
             widget: text
-            hint: 'Example: ''From resume polish to mock interviews and hiring-partner referrals — our placement cell helps you convert training into a job-ready profile.'''
+            hint: 'Example: ''From resume polish to mock interviews and hiring-partner
+              referrals — our placement cell helps you convert training into a
+              job-ready profile.'''
           - label: Primary CTA Label
             name: primaryCtaLabel
             widget: string
@@ -1544,7 +1768,9 @@ collections:
           - label: Services Section Intro
             name: introBody
             widget: text
-            hint: 'Example: ''Placement support is included with our job-oriented programmes. We focus on interview readiness for enterprise roles in Hyderabad and remote/global hiring pipelines.'''
+            hint: 'Example: ''Placement support is included with our job-oriented
+              programmes. We focus on interview readiness for enterprise roles
+              in Hyderabad and remote/global hiring pipelines.'''
           - label: Placement Services
             name: technologies
             widget: list
@@ -1558,7 +1784,9 @@ collections:
               - label: Service Description
                 name: desc
                 widget: string
-                hint: 'Example: ''Role-specific resume rewrite and LinkedIn positioning aligned to target designations in Guidewire, SAP, and Cloud domains.'''
+                hint: 'Example: ''Role-specific resume rewrite and LinkedIn positioning aligned
+                  to target designations in Guidewire, SAP, and Cloud
+                  domains.'''
           - label: Process Section Title
             name: processTitle
             widget: string
@@ -1579,7 +1807,8 @@ collections:
               - label: Step Description
                 name: desc
                 widget: text
-                hint: 'Example: ''We review your resume, experience, and target role after core modules are complete.'''
+                hint: 'Example: ''We review your resume, experience, and target role after core
+                  modules are complete.'''
             hint: Provide a value for Placement Process Steps.
           - label: Form Title
             name: formTitle
@@ -1588,7 +1817,8 @@ collections:
           - label: Form Subtitle
             name: formSubtitle
             widget: text
-            hint: 'Example: ''Share your course, experience level, and target role. A counsellor will call you back within 2 hours.'''
+            hint: 'Example: ''Share your course, experience level, and target role. A
+              counsellor will call you back within 2 hours.'''
   - name: blog
     label: 📝 Blog Posts
     folder: src/content/blog
