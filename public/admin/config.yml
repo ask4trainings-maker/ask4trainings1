@@ -6,7 +6,6 @@ backend:
   auth_endpoint: /api/auth
 
 publish_mode: editorial_workflow
-local_backend: false
 logo_url: /logo.svg
 
 media_folder: "public/images/uploads"
