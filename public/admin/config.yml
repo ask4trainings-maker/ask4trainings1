@@ -940,13 +940,15 @@ collections:
         widget: string
         required: false
         hint: Main hero subtitle/value proposition.
-      - label: Batch Information (Free-form)
-        name: batchInfo
-        widget: text
+      - label: "Batch & Schedule Information"
+        name: "batchInfo"
+        widget: "object"
         required: false
-        hint: 'Example: ''Next weekend batch starts 15th September. Weekday batch
-          (Mon/Wed/Fri 7:30–9:00 AM IST) available on-demand. Classes recorded
-          and shared within 12 hours.'''
+        fields:
+          - { label: "Batch Type", name: "type", widget: "string", required: false }
+          - { label: "Duration", name: "duration", widget: "string", required: false }
+          - { label: "Training Mode", name: "mode", widget: "string", required: false }
+          - { label: "Start Date", name: "startDate", widget: "string", required: false }
       - label: Student Rating (out of 5.0)
         name: rating
         widget: number

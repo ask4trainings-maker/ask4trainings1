@@ -130,8 +130,9 @@ const courses = defineCollection({
     eligibility: z.union([
       z.array(z.string()),
       z.array(z.object({
-        question: z.string(),
-        answer: z.string(),
+        question: z.string().optional(),
+        title: z.string().optional(),
+        answer: z.string().optional(),
       })),
     ]).default([]),
 
