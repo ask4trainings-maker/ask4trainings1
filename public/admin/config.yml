@@ -7,6 +7,7 @@ backend:
 
 publish_mode: editorial_workflow
 logo_url: /logo.svg
+local_backend: true
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
@@ -455,11 +456,10 @@ collections:
       - label: "📚 Course Curriculum Modules"
         name: "modules"
         widget: "list"
-        summary: "Module: {{fields.title}} ({{fields.duration}})"
+        summary: "Module: {{fields.title}}"
         hint: "Curriculum accordion on the course page. Each item is one collapsible module."
         fields:
           - { label: "Module Title", name: "title", widget: "string", required: true, hint: "e.g., 'Introduction to PolicyCenter Architecture'" }
-          - { label: "Topic Count / Duration", name: "duration", widget: "string", hint: "e.g., '6 Topics' or '8 Hours'" }
           - label: "Lessons & Topics"
             name: "topics"
             widget: "list"

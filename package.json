@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "cms:proxy": "npx decap-server",
+    "dev:cms": "concurrently \"npx decap-server\" \"astro dev\"",
     "build": "astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs",
     "build:quick": "astro build && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs",
     "audit:links": "node scripts/audit-internal-links.mjs",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.20",
     "cheerio": "^1.2.0",
+    "concurrently": "^10.0.5",
     "gray-matter": "^4.0.3"
   }
 }

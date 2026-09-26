@@ -92,8 +92,19 @@ const courses = defineCollection({
       })
     ).optional(),
 
-    // modules — CMS alias for curriculum
-    modules: z.array(z.record(z.string(), z.any())).optional().default([]),
+    // modules — CMS alias for curriculum (duration is optional, auto-computed in UI)
+    modules: z.array(
+      z.object({
+        title: z.string().optional(),
+        duration: z.string().optional(), // kept optional for backward-compat; not used in rendering
+        topics: z.array(
+          z.union([
+            z.string(),
+            z.object({ topic: z.string() }),
+          ])
+        ).optional().default([]),
+      }).catchall(z.any())
+    ).optional().default([]),
 
     // batches — CMS alias for upcomingBatch / schedule
     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
@@ -136,8 +147,14 @@ const courses = defineCollection({
       })),
     ]).default([]),
 
-    // whoShouldEnroll — CMS alias/variant for eligibility
-    whoShouldEnroll: z.array(z.union([z.string(), z.record(z.string(), z.any())])).optional().default([]),
+    // whoShouldEnroll — normalized CMS field (title + description objects)
+    // Accepts string arrays, or objects with any keys (title/description/answer/question)
+    whoShouldEnroll: z.array(
+      z.union([
+        z.record(z.string(), z.any()), // any object shape (title+description, title+answer, etc)
+        z.string(),
+      ])
+    ).optional().default([]),
 
     // prerequisites — extended to accept both string arrays (legacy) and object arrays (CMS)
     prerequisites: z.array(z.string()).optional(),

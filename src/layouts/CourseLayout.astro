@@ -103,7 +103,7 @@ const schemaGraph = {
   <CourseObjectives objectives={data.objectives} />
   <CourseBenefits benefits={data.benefits} />
   <CourseWhyChoose whyChoose={data.whyChoose} />
-  <CourseEligibility eligibility={data.eligibility} />
+  <CourseEligibility eligibility={data.whoShouldEnroll?.length ? data.whoShouldEnroll : data.eligibility} />
   <CourseCertifications certifications={data.certifications} />
   <CourseJobRoles jobRoles={data.jobRoles} />
   <CourseTrainerProfile courseTitle={data.title} trainerProfile={data.trainer || data.trainerProfile} />

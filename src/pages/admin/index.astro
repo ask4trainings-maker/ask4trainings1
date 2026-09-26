@@ -23,146 +23,63 @@ export const prerender = true;
     </style>
   </head>
   <body>
-    <!-- Robust Scroll & Focus Preservation for Sveltia CMS -->
+    <!-- Scroll Preservation for Sveltia CMS (scroll-only, no focus stealing) -->
     <script is:inline>
-      (function() {
-        const scrollState = new Map();
-        let lastActiveInput = null;
-        let isRestoring = false;
-        let scrollTimeout = null;
+      (function () {
+        // Map of URL hash → { el, top } for the currently scrolled editor pane
+        var scrollCache = {};
+        var saveTimer = null;
 
-        // 1. Track Scroll Position Continuously
-        window.addEventListener('scroll', (e) => {
-          if (isRestoring) return; // Ignore programmatic scrolls during restoration
-          
-          const target = e.composedPath ? e.composedPath()[0] : e.target;
-          
-          if (scrollTimeout) clearTimeout(scrollTimeout);
-          
-          scrollTimeout = setTimeout(() => {
-            const hash = window.location.hash;
-            if (!hash) return;
-            
-            let state = scrollState.get(hash);
-            if (!state) {
-                state = { windowScroll: 0, elements: [] };
-                scrollState.set(hash, state);
-            }
-            
-            if (target === document || target === window) {
-                state.windowScroll = window.scrollY;
-            } else if (target && target.nodeType === 1 && target.tagName !== 'INPUT' && target.tagName !== 'TEXTAREA') {
-                // Generate a reliable selector
-                let selector = target.tagName.toLowerCase();
-                if (target.id) {
-                    selector += '#' + target.id;
-                } else if (target.className && typeof target.className === 'string') {
-                    const safeClasses = target.className.trim().split(/\s+/).filter(c => /^[a-zA-Z0-9_-]+$/.test(c));
-                    if (safeClasses.length > 0) {
-                        selector += '.' + safeClasses.join('.');
-                    }
-                }
-                
-                let found = false;
-                for (let i = 0; i < state.elements.length; i++) {
-                    if (state.elements[i].selector === selector) {
-                        state.elements[i].scrollTop = target.scrollTop;
-                        found = true;
-                        break;
-                    }
-                }
-                if (!found && target.scrollTop > 0) {
-                    state.elements.push({
-                        selector: selector,
-                        scrollTop: target.scrollTop,
-                        tag: target.tagName.toLowerCase()
-                    });
-                }
-            }
-            
-            const active = document.activeElement;
-            if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) {
-                lastActiveInput = active;
-            } else {
-                lastActiveInput = null;
-            }
-          }, 150);
-        }, true); // Capture phase to catch all internal scrolling containers
+        // Save scroll position on any scroll event (capture phase)
+        document.addEventListener('scroll', function (e) {
+          var target = (e.composedPath && e.composedPath()[0]) || e.target;
+          // Ignore inputs and non-element nodes
+          if (!target || target.nodeType !== 1) return;
+          var tag = target.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA') return;
 
-        // 2. Active Enforcer on Re-entry
-        const restoreState = () => {
-           const hash = window.location.hash;
-           const state = scrollState.get(hash);
-           if (!state) return;
-           
-           isRestoring = true;
-           let attempts = 0;
-           let restoreInterval;
-           
-           const doRestore = () => {
-               attempts++;
-               // Aggressive enforcement for 2.5 seconds to outlast async rendering and data fetching
-               if (attempts > 50) {
-                   isRestoring = false;
-                   clearInterval(restoreInterval);
-                   return;
-               }
-               
-               if (state.windowScroll > 0) {
-                   window.scrollTo(0, state.windowScroll);
-               }
-               
-               for (const elData of state.elements) {
-                   try {
-                       // Try precise selector first
-                       let els = Array.from(document.querySelectorAll(elData.selector));
-                       if (els.length === 0) {
-                           // Fallback to tag name
-                           els = Array.from(document.querySelectorAll(elData.tag));
-                       }
-                       
-                       for (const el of els) {
-                           if (el.scrollHeight >= elData.scrollTop && el.clientHeight > 100) {
-                               el.scrollTop = elData.scrollTop;
-                           }
-                       }
-                   } catch(e) {}
-               }
-               
-               if (lastActiveInput && document.body.contains(lastActiveInput)) {
-                   if (document.activeElement !== lastActiveInput) {
-                       lastActiveInput.focus({ preventScroll: true });
-                   }
-               }
-           };
-           
-           restoreInterval = setInterval(doRestore, 50);
-           doRestore(); // Execute immediately once
-           
-           // If user interacts, abort the forceful restoration
-           const cancelRestore = () => {
-               isRestoring = false;
-               clearInterval(restoreInterval);
-               window.removeEventListener('wheel', cancelRestore, {capture: true});
-               window.removeEventListener('touchstart', cancelRestore, {capture: true});
-               window.removeEventListener('keydown', cancelRestore, {capture: true});
-               window.removeEventListener('mousedown', cancelRestore, {capture: true});
-           };
-           window.addEventListener('wheel', cancelRestore, {once:true, passive:true, capture: true});
-           window.addEventListener('touchstart', cancelRestore, {once:true, passive:true, capture: true});
-           window.addEventListener('keydown', cancelRestore, {once:true, passive:true, capture: true});
-           window.addEventListener('mousedown', cancelRestore, {once:true, passive:true, capture: true});
-        };
+          if (saveTimer) clearTimeout(saveTimer);
+          saveTimer = setTimeout(function () {
+            var hash = window.location.hash || '__root__';
+            scrollCache[hash] = { el: target, top: target.scrollTop };
+            // Also capture window scroll
+            scrollCache[hash + '_win'] = window.scrollY;
+          }, 100);
+        }, true); // capture phase
 
-        window.addEventListener('focus', restoreState);
-        document.addEventListener('visibilitychange', () => {
-           if (document.visibilityState === 'visible') {
-               restoreState();
-           }
+        // Clear cache on hash change (new entry opened)
+        window.addEventListener('hashchange', function () {
+          // Don't clear — each hash is its own key, so navigating back still restores
         });
+
+        // On tab re-focus: restore scroll without touching focus
+        function restoreScroll() {
+          var hash = window.location.hash || '__root__';
+          var cached = scrollCache[hash];
+          var winScroll = scrollCache[hash + '_win'];
+
+          // Two-pass restore: immediate + one rAF later to survive async re-renders
+          function apply() {
+            if (cached && cached.el && document.body.contains(cached.el)) {
+              cached.el.scrollTop = cached.top;
+            }
+            if (winScroll > 0) {
+              window.scrollTo(0, winScroll);
+            }
+          }
+
+          apply();
+          requestAnimationFrame(apply);
+        }
+
+        document.addEventListener('visibilitychange', function () {
+          if (document.visibilityState === 'visible') restoreScroll();
+        });
+        window.addEventListener('focus', restoreScroll);
       })();
     </script>
     
+
     <!-- Use is:inline so Vite does not hoist, bundle, or delay Sveltia CMS -->
     <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
   </body>
