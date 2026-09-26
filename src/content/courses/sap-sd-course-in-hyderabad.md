@@ -101,6 +101,26 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A SAP SD Functional Consultant configures sales and distribution processes, gathers business requirements, supports implementations, and improves operational efficiency. After completing SAP SD Course in Hyderabad, learners can manage pricing, billing, shipping, and customer master data with confidence. Knowledge gained through SAP SD Functional Consultant Training and SAP SD Certification with Placement Support helps professionals secure rewarding opportunities across industries.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A SAP SD Business Analyst evaluates business needs, documents functional requirements, and supports process optimization using SAP SD solutions. Completing SAP SD Course in Hyderabad develops analytical thinking, configuration skills, and business process understanding. With SAP SD Online Training and SAP SD Order to Cash Process Training, learners become capable of supporting enterprise implementations and business transformation projects effectively.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A SAP SD Administrator maintains master data, supports user activities, monitors system transactions, and ensures smooth sales operations across organizations. Through SAP SD Course in Hyderabad, learners understand configuration, document flow, and integration concepts. SAP SD Job Oriented Course and SAP SD Course with Placement provide practical skills, enabling candidates to manage enterprise SAP SD environments confidently.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A SAP SD Specialist manages sales order processing, pricing procedures, billing activities, and customer transactions within SAP environments. The SAP SD Course in Hyderabad provides practical exposure through real-time projects and business scenarios. Learners strengthen implementation expertise with SAP SD Training with Real-Time Projects and Advanced SAP SD Course, preparing for high-demand enterprise roles.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Master the core concepts of Sap Sd Course Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

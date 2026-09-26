@@ -102,12 +102,27 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A ServiceNow Consultant helps organizations implement and optimize ServiceNow solutions. With ServiceNow Training and Placement in Hyderabad and Professional ServiceNow Course Online, consultants understand business requirements and design effective workflows. They guide clients in adopting ITSM best practices and improving efficiency. This role requires strong communication and analytical skills, supported by ServiceNow Online Training for real-world implementation experience.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: ServiceNow Analyst
     description: A ServiceNow Analyst focuses on analyzing data, workflows, and system performance to improve business processes. With ServiceNow Course with Live Projects and Job Oriented ServiceNow Course, analysts gain practical knowledge of reporting and dashboards. They identify gaps, suggest improvements, and support decision-making. This role benefits from ServiceNow Online Training, enabling professionals to deliver insights that enhance operational efficiency.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A ServiceNow Administrator manages platform configuration, user roles, and system maintenance. With ServiceNow Online Training and ServiceNow Admin Training Course, professionals learn to handle incident, problem, and change management. This role ensures smooth IT operations, data security, and workflow optimization. Administrators also customize dashboards, manage access controls, and support business processes using the ServiceNow Cloud Platform Training Course for efficient enterprise performance.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A ServiceNow Engineer handles system integrations, automation, and technical configurations. Using ServiceNow Advanced Developer Online Training and ServiceNow ITSM Training Course, engineers work on complex deployments and performance optimization. They ensure seamless connectivity between systems and maintain platform stability. With ServiceNow Online Training, engineers gain hands-on skills to manage enterprise-level solutions and support digital transformation initiatives.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Upgrade your IT career with our ServiceNow Online Training designed for real-time industry needs. Our ServiceNow Online Classes with Real-Time Projects help you gain practical exposure and hands-on experience. Join the ServiceNow Training Institute in Hyderabad known as the Best ServiceNow Institute offering expert-led sessions, flexible schedules, and updated curriculum to match industry standards. This Job Oriented ServiceNow Course ensures you build in-demand skills and become job-ready with confidence.
 

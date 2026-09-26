@@ -106,8 +106,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: An analyst role with Kinaxis Online Training involves interpreting data and generating actionable insights for supply chain optimization. The Kinaxis Online Master Program combined with Advanced Kinaxis Online Training equips professionals with tools to analyze demand patterns and forecast trends. With Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, analysts gain hands-on experience in dashboards and reporting. This role enhances decision-making abilities and supports strategic planning in organizations.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: planner trained
     description: A planner trained in Kinaxis Online Training focuses on managing demand, supply, and inventory efficiently. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course provide deep knowledge of planning modules and execution strategies. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, planners learn to respond to real-time changes and ensure smooth operations. This role is critical for maintaining balance across supply chain processes and achieving business goals.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: An architect role through Kinaxis Online Training involves designing and implementing end-to-end supply chain solutions. The Kinaxis Online Master Program and Advanced Kinaxis Online Training help professionals master system architecture, integrations, and performance optimization. With Kinaxis Advanced Certification Course, Kinaxis Certification Training in Hyderabad, and Kinaxis Professional Training Hyderabad, architects ensure scalable and efficient solutions. This role requires deep technical expertise and strategic thinking to lead complex implementations.
     competencies:
       - Enterprise Standards
       - Industry Best Practices

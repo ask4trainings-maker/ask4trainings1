@@ -107,6 +107,16 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Mendix Analyst gathers business requirements, studies workflows, and supports application development processes using low-code platforms. Through Mendix Training with Real-Time Projects and Mendix Online Training India, analysts gain practical skills in process improvement, requirement analysis, and solution planning for enterprise application development.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Mendix Administrator manages application deployment, user access, platform maintenance, and system monitoring for enterprise environments. Professionals trained through Mendix Course with Placement Assistance and Mendix Low Code Platform Training can support organizations in maintaining secure, efficient, and scalable low-code application infrastructures.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Mendix Architect
     description: A Mendix Architect designs application structures, integrations, and scalable enterprise solutions for complex business environments. Learners completing Mendix Full Stack Developer Training and Mendix Online Certification Program can build expertise in system architecture, deployment planning, and advanced low-code implementation strategies for modern organizations.
     competencies:

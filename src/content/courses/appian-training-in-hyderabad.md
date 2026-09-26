@@ -96,31 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Consultant
     description: After completing Appian Developer Training Online and the Appian Online Course, professionals can work as Appian Developers responsible for designing, developing, and deploying enterprise applications. They create workflows, business rules, interfaces, and integrations while supporting digital transformation initiatives across organizations.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Learners who complete Appian Training in Hyderabad and the Appian Master Program Online can pursue Consultant roles. Consultants analyze business requirements, recommend Appian-based solutions, optimize processes, and assist organizations in implementing efficient low-code applications to achieve operational excellence.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: With knowledge gained through the Appian Online Learning Program and Appian Certification Course with Job Assistance, professionals can work as Business Analysts. They gather requirements, document workflows, identify automation opportunities, and collaborate with development teams to deliver effective Appian solutions.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Candidates completing Appian Training with Placement Support and Appian Developer Training Online can become Appian Administrators. They manage platform configurations, monitor application performance, handle security settings, and ensure smooth operation of enterprise applications within organizational environments.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Professionals who gain expertise through the Appian Training with Internship and Appian Master Program Online can advance to Solution Architect roles. Architects design scalable application frameworks, define implementation strategies, oversee integrations, and guide development teams in delivering enterprise-grade Appian solutions.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Appian Training in Hyderabad is designed to help learners build practical expertise in low-code application development, workflow automation, business process management, and integrations. The program combines theoretical knowledge with hands-on exercises, enabling participants to work on real-world scenarios. The Advanced Appian Online Course further strengthens technical capabilities with advanced development concepts and implementation techniques.
 

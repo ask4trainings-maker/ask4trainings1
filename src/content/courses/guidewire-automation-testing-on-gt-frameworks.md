@@ -112,6 +112,11 @@ jobRoles:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A Consultant provides expert guidance on implementing Guidewire automation frameworks and optimizing testing strategies. They help organizations adopt Guidewire GT framework, improve QA processes, and align testing with business goals. Consultants also train teams, recommend best practices, and ensure smooth project execution. Their expertise helps companies reduce testing time, improve quality, and achieve better ROI from automation investments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Developer in Guidewire automation testing
     description: A Developer in Guidewire automation testing builds and enhances automation scripts using tools like Selenium and programming languages such as Java. They design robust frameworks using the Guidewire GT framework, integrate automation with development pipelines, and ensure smooth execution. Developers also troubleshoot issues, maintain code quality, and support continuous testing processes, enabling faster delivery of high-quality insurance applications.
     competencies:

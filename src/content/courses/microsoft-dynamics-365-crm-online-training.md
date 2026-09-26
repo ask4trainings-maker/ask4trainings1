@@ -145,6 +145,11 @@ eligibility:
   - Fresh graduates with a background in Computer Science, Information Technology, or Business Management
   - Microsoft 365 administrators wanting to extend their skills into Dynamics 365 CRM
 jobRoles:
+  - role: Consultant
+    description: A Microsoft Dynamics D365 CRM Administrator manages system settings, users, and data security. With Microsoft Dynamics 365 CRM Online Training, administrators learn configuration, role management, and system maintenance. Skills gained from Microsoft Dynamics 365 CRM step by step for beginners help them ensure smooth system performance, data accuracy, and efficient CRM operations within organizations.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Microsoft Dynamics 365 CRM Consultant
     description: A Microsoft Dynamics 365 CRM Consultant plays a key role in analyzing business requirements and implementing CRM solutions. With Microsoft Dynamics 365 CRM Online Training, professionals gain expertise in modules like Sales and Customer Service. Using knowledge from Microsoft Dynamics 365 CRM functional training online, consultants configure systems, optimize workflows, and ensure organizations improve customer engagement and operational efficiency.
     competencies:

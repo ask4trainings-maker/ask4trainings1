@@ -101,12 +101,27 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Oracle Fusion Financials Consultant handles end-to-end financial implementation, configuration, and support across modules like GL, AP, AR, and Assets. They work closely with business teams to design efficient financial processes and reporting structures. In Oracle Fusion Financials Online Training, learners gain skills required to manage real-time business requirements and system configurations effectively for enterprise clients.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Oracle Fusion Financials Analyst
     description: An Oracle Fusion Financials Analyst focuses on financial data analysis, reporting, and reconciliation activities within cloud ERP systems. They ensure accuracy in financial statements and support decision-making processes. Through Oracle Fusion Financials Job Oriented Training, learners develop strong analytical skills and hands-on experience in handling real-time financial data, dashboards, and business insights for better performance tracking.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: An Oracle Financials Specialist manages specific modules such as Payables, Receivables, and General Ledger operations. They ensure smooth financial operations and compliance with business rules. With Oracle Fusion Financials Course with Internship, learners gain practical exposure to real-time scenarios and system handling, improving their operational and functional expertise.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Oracle Fusion Financials Functional Consultant configures and implements financial modules based on business requirements. They bridge the gap between technical teams and business users. In Oracle Fusion Financials Online Certification Training, learners gain expertise in workflows, setups, and configurations, enabling them to deliver efficient solutions in cloud-based financial environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Kickstart your career with Oracle Fusion Financials Online Training, designed to provide in-depth knowledge of modern cloud-based financial management systems. With Oracle Fusion Financials Training with Placement, learners gain not only technical expertise but also job-oriented skills through resume building, mock interviews, and hands-on projects. The course is ideal for aspiring Oracle Financials Consultant professionals who want to transition into high-demand cloud roles and stay competitive in today’s digital finance landscape.
 

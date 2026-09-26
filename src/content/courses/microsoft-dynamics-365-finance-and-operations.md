@@ -107,8 +107,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Business Analyst gathers requirements, analyzes workflows, and ensures ERP solutions align with organizational goals. With expertise from Microsoft Dynamics 365 Finance and Operations Online Training and Dynamics 365 F&O Job Oriented Training, analysts improve decision-making by providing insights, documentation, and system recommendations that enhance overall business performance and operational efficiency.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Architect
     description: An Architect designs the overall ERP system structure, ensuring scalability, security, and integration with other platforms. Leveraging knowledge from Dynamics 365 Finance and Operations Advanced Training and Microsoft Dynamics 365 F&O Online Learning Platform, architects create robust frameworks that support enterprise-level implementations and future business growth.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Tester ensures system quality by validating functionalities, identifying bugs, and ensuring smooth performance. With training from Dynamics 365 Finance and Operations Online Course and Dynamics 365 F&O Certification Online, testers play a crucial role in delivering error-free solutions, improving user experience, and ensuring successful ERP deployment in real-world environments.
     competencies:
       - Enterprise Standards
       - Industry Best Practices

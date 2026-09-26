@@ -112,6 +112,11 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Data Consultant helps businesses make strategic decisions using data insights. With Data Science Online Classes, you learn how to analyze trends and provide actionable recommendations. This role suits professionals completing a Data Science Certification Course who want to work closely with clients. With Data Science Course with Internship, you gain real-world exposure, improving your ability to solve business problems effectively.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Machine Learning Specialist
     description: A Machine Learning Specialist focuses on developing intelligent systems and automation models. With Data Science Online Training, you gain expertise in algorithms, model building, and deployment. This role is ideal for those completing a Data Science Online Course with advanced learning. Through Data Science Training with Real-Time Projects, you build practical skills and create AI-driven solutions, making you highly valuable in modern industries.
     competencies:

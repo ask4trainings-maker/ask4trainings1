@@ -115,6 +115,16 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Guidewire Testing Consultant provides expert guidance on testing strategies and implementation using Guidewire Testing Training methodologies. They handle Guidewire End-to-End Testing Training, UAT processes, and client-specific requirements. With strong domain knowledge and Guidewire Functional Testing Training, consultants ensure quality delivery and help organizations optimize testing processes. This role involves working closely with stakeholders to deliver reliable and scalable insurance solutions.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Guidewire QA Lead manages testing teams and oversees complete project execution using Guidewire Testing Job-Oriented Course skills. They coordinate Guidewire Integration Testing, monitor defect management, and ensure timely delivery of high-quality applications. With expertise in Guidewire Testing Certification concepts and real-time experience, leads guide team members, improve testing strategies, and maintain quality standards across all phases of the software development lifecycle.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   This Guidewire QA Training program provides complete knowledge of Guidewire Testing Training, covering Guidewire Functional Testing, Guidewire Integration Testing, and Guidewire Regression Testing Training with real-time scenarios. It includes practical exposure to Guidewire Testing Tools Training, hands-on labs, and business workflow understanding across insurance applications like PolicyCenter, BillingCenter, and ClaimCenter. Learners gain expertise through structured Guidewire Manual Testing Training and industry-based testing practices.
 

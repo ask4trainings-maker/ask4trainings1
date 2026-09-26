@@ -96,8 +96,23 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
+  - role: Consultant
+    description: An Engineer role after completing Azure with DevOps Online Training involves managing cloud infrastructure, automating deployments, monitoring systems, and supporting CI/CD implementation. Professionals work with cloud services, automation tools, and release pipelines to improve software delivery efficiency. Skills gained through Azure DevOps Certification Training help learners handle real-time DevOps environments and cloud operations.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Consultant helps organizations improve cloud adoption, DevOps implementation, and automation processes using practical technical expertise. Learners completing Azure with DevOps Online Training can guide teams in CI/CD practices, cloud deployment, and workflow optimization. The skills developed through Azure DevOps Professional Certification Training strengthen consulting capabilities in modern cloud environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Architect
     description: An Architect designs scalable cloud environments, automation frameworks, and deployment strategies for enterprise applications. Through Azure DevOps Online Training with Certification, professionals learn to build secure and efficient cloud solutions aligned with organizational requirements. Knowledge from Azure DevOps Course Online supports infrastructure planning, integration workflows, and DevOps transformation initiatives.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: An Administrator manages cloud resources, deployment environments, access controls, and operational monitoring activities. By completing Azure DevOps Online Training India, professionals gain practical experience in automation, configuration management, and release coordination. Expertise gained through Azure DevOps Training with Real-Time Projects supports efficient management of cloud and DevOps ecosystems.
     competencies:
       - Enterprise Standards
       - Industry Best Practices

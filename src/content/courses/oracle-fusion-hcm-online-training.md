@@ -113,6 +113,16 @@ jobRoles:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A Specialist is an expert in specific modules like payroll or talent management through Oracle Fusion HCM and Payroll Certification Course. Using knowledge from Oracle Fusion Cloud Online Certification Program and Oracle Fusion HCM Course with Internship, they provide deep functional expertise, troubleshoot issues, and support organizations in optimizing HR operations efficiently.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: An Administrator manages day-to-day operations of Oracle HCM systems after completing Oracle Fusion HCM Online Training and Oracle Fusion HCM Master Program. Their responsibilities include user management, security configuration, and system maintenance. With support from Oracle Fusion HCM Certification Online, they ensure system stability and smooth functioning of HR processes across organizations.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: Our Oracle Fusion HCM Functional Training focuses on HR processes like recruitment, payroll, and performance management, while Oracle Fusion HCM Technical Training covers integrations, reporting, and data migration. This balanced approach ensures learners gain both business and technical expertise. The training enables candidates to become job-ready professionals capable of implementing and managing Oracle HCM solutions effectively.
 aboutCourse: |-
   This Oracle Fusion Hcm Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.

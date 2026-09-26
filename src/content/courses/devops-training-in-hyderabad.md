@@ -101,8 +101,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A DevOps Consultant helps organizations improve software delivery, automation processes, and cloud infrastructure management. Through DevOps Online Training with Certification and DevOps Cloud Integration Online Course, professionals gain expertise in deployment strategies, collaboration tools, cloud services, and workflow optimization for business productivity.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: DevOps Architect
     description: A DevOps Architect designs scalable infrastructure, automation workflows, and cloud-based deployment strategies for enterprise applications. With AWS DevOps Training Online and Azure DevOps Certification Training, professionals learn cloud integration, security practices, configuration management, and infrastructure optimization required for large-scale business environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A DevOps Administrator manages servers, deployment environments, system monitoring, and configuration tools to maintain application stability. The Linux for DevOps Training and Jenkins DevOps Online Course help learners understand automation, scripting, server administration, CI/CD implementation, and performance monitoring in real-time projects.
     competencies:
       - Enterprise Standards
       - Industry Best Practices

@@ -102,6 +102,11 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Technical Consultant supports organizations in application planning, technology implementation, and system enhancement activities. By joining Dotnet Full Stack Professional Certification Training, learners gain knowledge of application workflows, frontend technologies, APIs, and deployment practices. The Dotnet Full Stack Online Certification Program helps participants build industry-relevant expertise and professional development skills.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Software Engineer
     description: A Software Engineer works on application architecture, coding standards, debugging, and system performance optimization. With Dotnet Full Stack Online Training, learners understand modern development practices, UI technologies, backend frameworks, and database connectivity. The Advanced Dotnet Full Stack Online Course prepares candidates to handle real-time development requirements across enterprise and business software environments.
     competencies:

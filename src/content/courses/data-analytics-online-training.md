@@ -112,6 +112,11 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Data Analytics Consultant helps businesses optimize performance using data-driven strategies. By completing a Data Analytics Online Training for Working Professionals, individuals can master business intelligence, data visualization tools, and strategic analysis. This role is perfect for those pursuing a Data Analytics Online Bootcamp or job-oriented online course. Consultants work closely with stakeholders to deliver insights, making this role ideal for professionals seeking career growth with data analytics certification online.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Data Visualization Specialist
     description: A Data Visualization Specialist focuses on presenting complex data in easy-to-understand formats using tools like Power BI, Tableau, and Excel dashboards. Through a Data Analytics and Visualization Online Course, learners gain expertise in storytelling with data. This role is in high demand for those completing a Data Analytics Online Course with Real-Time Projects and placement support. It’s ideal for freshers and professionals looking for a Data Analytics Online Training for Career Switch with creative and analytical skills.
     competencies:

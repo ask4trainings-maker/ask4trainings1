@@ -113,6 +113,16 @@ jobRoles:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A Test Engineer uses skills gained from Polarion Test Management Online Course to design, execute, and manage test cases efficiently. Through Polarion Online Training and Polarion Real-Time Projects Training, learners understand defect tracking, quality assurance, and reporting. This role ensures software quality by validating requirements and maintaining test coverage across the development lifecycle.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: An ALM Manager oversees project lifecycle, team coordination, and delivery using insights from Polarion Training with Placement Support and Advanced Polarion ALM Training. With Polarion Online Training, professionals gain the ability to monitor progress, ensure compliance, and maintain traceability. This role is crucial for managing end-to-end project execution and aligning business goals with development processes.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Our Polarion Online Training is designed to deliver in-depth knowledge of ALM concepts with practical exposure. This Advanced Polarion ALM Training helps learners master requirements management, testing, and traceability. With a Polarion Course with Real-Time Projects, you gain hands-on experience, while the Online Polarion Bootcamp ensures intensive, fast learning for career growth.Gain practical exposure with real-time industry use cases and learn advanced ALM tools and workflow management.
 

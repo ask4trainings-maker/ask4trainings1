@@ -102,12 +102,22 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Duck Creek Consultant helps organizations implement and optimize insurance platform solutions based on business requirements and operational goals. With our Duck Creek Online Certification Program, learners understand policy lifecycle management, business workflows, and cloud insurance concepts. This role involves requirement analysis, client communication, solution design, and implementation support. The Duck Creek Course with Real-Time Projects provides practical exposure that helps professionals improve consulting and technical skills for enterprise insurance environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Duck Creek Analyst
     description: A Duck Creek Analyst works closely with business teams and technical departments to understand insurance requirements and improve system processes. Through the Duck Creek Online Learning Program, learners gain knowledge in policy administration, claims workflows, billing systems, and reporting concepts. The role includes documentation, requirement gathering, process analysis, and implementation coordination. Our Duck Creek Professional Certification training helps learners build communication, analytical, and domain skills required for insurance technology projects.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A Duck Creek Administrator manages application configurations, user access, workflows, and system maintenance activities within insurance platforms. The Duck Creek Online Training program helps learners understand deployment processes, security settings, application monitoring, and system administration tasks. This role requires technical knowledge, troubleshooting abilities, and practical understanding of enterprise insurance systems. With our Duck Creek Course with Placement, students receive hands-on learning and career support to become skilled professionals in insurance technology administration.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Duck Creek Tester
     description: A Duck Creek Tester is responsible for validating insurance applications, identifying defects, and ensuring system performance through structured testing methods. Our Duck Creek Online Training provides practical knowledge in functional testing, integration testing, workflows, and business process validation. Learners gain hands-on project experience and understand real-time testing scenarios used in insurance software implementations. The Duck Creek Certification Course also helps students improve analytical abilities and prepare for quality assurance roles in enterprise projects.
     competencies:

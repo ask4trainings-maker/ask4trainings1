@@ -97,6 +97,11 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: An Administrator trained through Oracle Flexcube Online Training manages system configuration, user roles, and overall system performance. They ensure smooth operations, security, and data integrity within the banking platform. With knowledge from Advanced Oracle Flexcube Training, administrators monitor system activities, resolve technical issues, and maintain stability in core banking environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Oracle Flexcube Online Training with a strong focus on Oracle Flexcube Functional Training covers core banking operations, business workflows, and real-time transaction processing. You will learn key modules like deposits, loans, payments, and customer lifecycle management through practical case studies. This training enhances your domain knowledge, helping you understand banking processes in Flexcube and prepares you for functional consultant roles in the BFSI sector.
 

@@ -102,12 +102,27 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Coupa Consultant helps organizations streamline procurement operations, supplier communication, invoicing, and spend management using the Coupa platform. With practical exposure from Coupa Online Training, professionals gain expertise in configuring procurement workflows and supporting implementation projects. The industry-oriented Coupa Procurement Course enables consultants to analyze business requirements, improve sourcing strategies, and deliver effective procurement automation solutions for enterprises.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Coupa Analyst
     description: A Coupa Analyst is responsible for tracking procurement data, supplier performance, invoice approvals, and spend analysis to support business operations. Through professional Coupa Online Training, learners build strong analytical and reporting skills required for procurement optimization. The practical Coupa Certification Online program helps professionals understand sourcing workflows, purchasing automation, and procurement analytics for better business decision-making.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
+  - role: Consultant
+    description: A Coupa Administrator handles procurement configurations, supplier management, approval workflows, and user access within enterprise systems. By enrolling in Coupa Online Training, learners gain real-time implementation knowledge and practical experience in spend management processes. The career-focused Coupa Course with Placement strengthens technical skills in procurement operations, invoice processing, and workflow administration for enterprise business environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Coupa Specialist manages sourcing activities, supplier collaboration, procurement compliance, and spend optimization across organizations. Industry-based Coupa Online Training helps learners understand procurement lifecycle processes and automation strategies with practical assignments and live scenarios. The comprehensive Coupa Online Certification Program prepares professionals to manage invoicing workflows, procurement reporting, and supplier operations for improved business efficiency and performance.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: Take your career to the next level with professional Coupa Online Training designed for aspiring procurement specialists and working professionals. Our Advanced Coupa Course provides real-time project exposure and practical implementation of Coupa solutions. Join the comprehensive Coupa Certification Course to prepare for Coupa Professional Certification and develop in-demand skills through our advanced Coupa Procurement Course training program.
 aboutCourse: |-
   This Coupa Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.

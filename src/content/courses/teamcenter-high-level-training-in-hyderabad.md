@@ -96,31 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Consultant
     description: Work as a Teamcenter Developer by building custom solutions, enhancing workflows, and supporting integrations across enterprise systems. Teamcenter High-Level Training in Hyderabad develops practical knowledge for development roles through projects and technical exercises. Learn Teamcenter Customization and strengthen your understanding of APIs, data models, configurations, and programming concepts while creating scalable solutions that meet business requirements and improve PLM process.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Pursue a Teamcenter Consultant role by analyzing business requirements and translating them into effective PLM solutions. Teamcenter High-Level Training in Hyderabad provides practical exposure to workflows, product structures, and implementation scenarios. Build expertise in Teamcenter Implementation and PLM Consulting while learning to communicate with stakeholders, document requirements, configure solutions, support testing, and guide organizations toward efficient PLM for career.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Start as a Teamcenter Analyst by supporting product data, engineering processes, workflows, and reporting requirements. Teamcenter High-Level Training in Hyderabad helps candidates gain practical understanding of PLM operations and real project scenarios. Develop knowledge of Teamcenter Data Management and Engineering Data Management to analyze information, identify process gaps, support users, maintain accurate records, and improve engineering and product development. for career now
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Build a career as a Teamcenter Administrator by managing users, roles, access controls, product data, workflows, and system settings. Teamcenter High-Level Training in Hyderabad helps learners understand administration tasks through practical scenarios and guided projects. Develop skills in Teamcenter Administration and support enterprise PLM environments, troubleshoot user issues, maintain data security, and coordinate with functional and technical teams for smooth daily operations. now
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: Build a career in Teamcenter Support by resolving user issues, monitoring workflows, assisting with access requests, and maintaining reliable PLM operations. Teamcenter High-Level Training in Hyderabad prepares learners for support responsibilities through hands-on practice and troubleshooting scenarios. Gain skills in Teamcenter Troubleshooting and PLM Support while learning incident handling, issue analysis, documentation, communication, and coordination with administrators.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master the core concepts of Teamcenter High Level Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

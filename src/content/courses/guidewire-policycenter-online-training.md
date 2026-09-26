@@ -267,6 +267,11 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
+  - role: Consultant
+    description: A Consultant leverages Guidewire Insurance Domain Training and Guidewire Policy Center Online Training to guide organizations in implementing solutions. With strong understanding of Guidewire Policy Center Training, Guidewire Implementation Training, and Guidewire Professional Training, they analyze business needs and provide optimal configurations. Their role is crucial in bridging technical and functional aspects of insurance systems.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Business Analyst
     description: A Business Analyst in Guidewire uses Guidewire Policy Center Training and Guidewire Insurance Domain Training to gather requirements and improve processes. With exposure to Guidewire Job-Oriented Training and Guidewire Interview Preparation Training, analysts understand workflows, policy lifecycle, and system enhancements. They play a vital role in ensuring successful delivery of Guidewire Policy Center Online Training based implementations.
     competencies:

@@ -96,31 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Consultant
     description: A SAP S/4 HANA FICO Associate assists senior consultants and finance teams in handling accounting operations, documentation, testing, and project support activities. The SAP S/4 HANA FICO Course with Placement helps freshers and professionals develop practical ERP finance skills and implementation knowledge. Associates participate in live projects, understand business workflows, prepare reports, and contribute to successful SAP finance and controlling operations in organizations.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: A SAP S/4 HANA FICO Consultant works on financial accounting, controlling, reporting, and implementation activities for business organizations using SAP ERP solutions. Through SAP S/4 HANA FICO Online Training, professionals learn configuration, integration, and business process management required for real-time corporate projects. The role also involves client interaction, issue resolution, documentation, testing, and financial process optimization to improve organizational performance and operational efficiency.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: A SAP S/4 HANA FICO Analyst is responsible for analyzing financial data, preparing reports, monitoring accounting operations, and supporting ERP business workflows. With the help of SAP S/4 HANA FICO Certification Online, professionals gain practical knowledge in reporting tools, controlling modules, and business analysis processes. Analysts also coordinate with finance teams, improve reporting accuracy, and assist organizations in making better strategic financial decisions.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: A SAP S/4 HANA FICO Administrator manages user activities, system support, finance module coordination, and operational maintenance within SAP environments. By joining SAP S/4 HANA FICO Online Classes, learners understand financial structures, configuration support, and transaction management for enterprise systems. Administrators ensure smooth financial operations, maintain system performance, resolve user issues, and support day-to-day accounting and controlling functions effectively.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+  - role: Consultant
     description: A SAP S/4 HANA FICO Specialist focuses on finance implementation, integration support, business process improvement, and reporting management in enterprise environments. Through SAP S/4 HANA FICO Professional Certification Training, candidates gain expertise in asset accounting, profitability analysis, and cost center management. Specialists work closely with business teams to improve operational workflows, manage reporting activities, and support financial transformation projects successfully.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master the core concepts of SAP S/4 Hana Fico Online Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

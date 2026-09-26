@@ -102,6 +102,26 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Consultant helps organizations implement and optimize Jira and Confluence solutions according to business requirements. Learners from Jira Confluence Online Training develop skills in workflow automation, reporting, and process improvement. With knowledge gained through a Jira Confluence Project Management Course, consultants provide guidance for enterprise adoption and collaboration. Completing a Jira Confluence Professional Certification enhances credibility and opens opportunities in digital transformation and agile consulting projects.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: Business Analysts use Jira and Confluence to document requirements, track tasks, and coordinate with development teams. The Jira Confluence Online Training program helps analysts understand agile methodologies, reporting tools, and knowledge management practices. Expertise gained from Jira Confluence Online Classes supports effective communication and project execution. Completing a Jira Confluence Certification Online program strengthens analytical skills and prepares professionals for roles requiring process optimization and stakeholder collaboration.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: Professionals who complete Jira Confluence Online Training can work as Administrators responsible for managing projects, workflows, permissions, and dashboards. They configure systems, optimize processes, and support teams using agile practices. Through a Jira Confluence Certification Course and practical assignments, administrators gain expertise in issue tracking and collaboration. Organizations value professionals with experience from a Jira Confluence Course with Real-Time Projects for efficient project delivery and team productivity.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Coupa Specialist manages sourcing activities, supplier collaboration, procurement compliance, and spend optimization across organizations. Industry-based Coupa Online Training helps learners understand procurement lifecycle processes and automation strategies with practical assignments and live scenarios. The comprehensive Coupa Online Certification Program prepares professionals to manage invoicing workflows, procurement reporting, and supplier operations for improved business efficiency and performance.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
 overview: |-
   Our Jira Confluence Online Training is designed to help learners master project tracking, agile workflows, team collaboration, and knowledge management using industry-standard tools. Through practical exercises and real-world use cases, participants gain hands-on exposure to configuring projects, creating dashboards, managing documentation, and improving team productivity. This program is delivered by experts from a leading Jira Confluence Training Institute in Hyderabad.
 

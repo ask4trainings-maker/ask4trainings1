@@ -96,6 +96,26 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
+  - role: Consultant
+    description: A Revenue Cloud Developer uses Salesforce Revenue Cloud Advanced Training to build custom solutions, automate workflows, and integrate external applications. The role focuses on technical implementation, coding best practices, and advanced configurations. Learners also gain knowledge in Revenue Cloud Advanced Developer Course and Salesforce Revenue Cloud Integration to support complex business processes.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Revenue Cloud Consultant can leverage Salesforce Revenue Cloud Advanced Training to design and implement quote-to-cash solutions. Professionals learn pricing strategies, billing configurations, and subscription management while gaining expertise in Salesforce Revenue Cloud Consultant Certification and Revenue Cloud Advanced Implementation for enterprise business requirements and successful project delivery.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Revenue Cloud Analyst evaluates business requirements, revenue processes, and system performance to support organizational goals. The role involves process improvement, reporting, and solution recommendations. Learners develop expertise through Salesforce Revenue Cloud Advanced Training while gaining practical knowledge of Learn Salesforce Revenue Cloud Advanced concepts and Revenue Cloud Certification Program standards.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Revenue Cloud Administrator manages configurations, products, pricing rules, and user access across Revenue Cloud environments. Through Salesforce Revenue Cloud Advanced Training, professionals learn administration techniques and system optimization. The role benefits from Salesforce RCA Admin Training and Salesforce RCA Certification to improve operational efficiency and platform management expertise.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Revenue Cloud Architect
     description: A Revenue Cloud Architect designs scalable revenue management solutions that align with business objectives. The role requires deep knowledge of integrations, automation, and enterprise architecture. With Salesforce Revenue Cloud Advanced Training, professionals gain skills in Revenue Cloud Advanced Implementation and Salesforce Revenue Cloud Pricing Solutions to create robust and efficient business systems.
     competencies:

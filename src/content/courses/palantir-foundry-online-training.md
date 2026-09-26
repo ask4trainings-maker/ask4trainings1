@@ -102,6 +102,16 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Foundry Consultant helps organizations implement enterprise data solutions, optimize workflows, and improve operational performance. The Palantir Foundry Course with Placement provides hands-on experience with real-world projects and implementation practices. Learners completing the Palantir Foundry Online Certification Program are prepared to support enterprise deployments and guide clients through digital transformation initiatives.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Business Analyst uses Foundry to transform enterprise data into meaningful insights for strategic decisions. The Palantir Foundry Certification Course develops skills in analytics, reporting, and visualization through practical learning. Completing the Palantir Foundry Job Oriented Course enables professionals to collaborate with stakeholders, improve operational efficiency, and deliver valuable business intelligence solutions.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Data Engineer
     description: A Data Engineer works with enterprise datasets by creating reliable pipelines, integrating multiple data sources, and ensuring data quality. Through Palantir Foundry Online Training, learners gain practical expertise in workflow automation and data integration. The Advanced Palantir Foundry Course equips professionals with technical knowledge to manage complex enterprise data environments and support business decision-making.
     competencies:

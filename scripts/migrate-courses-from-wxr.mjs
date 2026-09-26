@@ -95,12 +95,14 @@ for (const file of courseFiles) {
   let currentProfile = null;
   
   let jobRoles = [];
-  let roleTokens = [];
   let currentJobRole = null;
-  
-  let certification = null;
+  let jobRoleTokens = [];
+  let jobRoleIndex = 0;
   
   let faqs = [];
+  let currentFaq = null;
+  
+  let certification = null;
   
   for (let i = 0; i < elements.length; i++) {
     const el = elements[i];
@@ -110,8 +112,12 @@ for (const file of courseFiles) {
     
     // Header detection for sections
     if (/^h[1-6]$/.test(tagName)) {
-      if (/(guidewire trainer|trainer|highlights|need demo session\? let's connect)/i.test(text)) {
+      if (/(guidewire trainer|trainer|highlights)/i.test(text)) {
         break; // Hard Stop Boundary
+      }
+      if (/(frequently asked questions|faq)/i.test(text)) {
+        currentSection = 'faq';
+        continue;
       }
       if (/(certification preparation|certification program|career-focused.*?certification)/i.test(text)) {
         currentSection = 'certification';
@@ -121,8 +127,6 @@ for (const file of courseFiles) {
         currentSection = 'jobRoles';
         continue;
       }
-      
-
       
       if (/(register now|your name|your email)/i.test(text)) {
         currentSection = 'register';
@@ -196,7 +200,14 @@ for (const file of courseFiles) {
           keyFeatures.push(currentPillar);
         }
       } else if (currentSection === 'jobRoles') {
-        // jobRoles are extracted from <p> tags, not headers
+        // jobRoles are extracted from <p> tags, not headers, unless they are short tokens
+        if (text.length < 40) {
+            jobRoleTokens.push(text);
+        }
+      } else if (currentSection === 'faq') {
+         currentFaq = { question: text, answer: '' };
+         faqs.push(currentFaq);
+         continue;
       } else if (currentSection === 'benefits') {
         currentBenefit = { title: text, description: '' };
         benefits.push(currentBenefit);
@@ -228,38 +239,40 @@ for (const file of courseFiles) {
       } else if (currentSection === 'eligibility' && currentProfile) {
         currentProfile.description += text + '\n\n';
       } else if (currentSection === 'jobRoles') {
-        if (text.length < 40) {
-          // It's likely the list of role tokens (WordPress buttons)
-          roleTokens.push(text);
-        } else {
-          // Clean Russian translation leakages or stray text
-          const cleanedText = text.replace(/востребован/gi, "in-demand");
+        if (text.length >= 40) {
+          let cleanDesc = text.replace(/востребован/gi, "in-demand");
           
           let extractedTitle = null;
-          // Pattern 1
-          const domainMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
-          if (domainMatch) extractedTitle = domainMatch[1].trim();
-          
-          if (!extractedTitle) {
-            // Pattern 2
-            const standardMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
-            if (standardMatch) extractedTitle = standardMatch[1].trim();
+          const match1 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
+          if (match1) {
+            extractedTitle = match1[1].trim();
+          } else {
+            const match2 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
+            if (match2) {
+              extractedTitle = match2[1].trim();
+            }
           }
           
-          if (!extractedTitle && roleTokens.length > jobRoles.length) {
-            // Pattern 3: Token list pairing
-            extractedTitle = roleTokens[jobRoles.length];
+          if (!extractedTitle && jobRoleTokens.length > jobRoleIndex) {
+             extractedTitle = jobRoleTokens[jobRoleIndex];
           }
           
+          let competencies = ["Enterprise Standards", "Industry Best Practices"];
           if (extractedTitle) {
-            let competencies = ["Enterprise Standards", "Industry Best Practices"];
-            if (/Developer/i.test(extractedTitle)) competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
-            else if (/Configurator/i.test(extractedTitle)) competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
-            else if (/Analyst/i.test(extractedTitle)) competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
-            
-            jobRoles.push({ role: extractedTitle, description: cleanedText + '\n\n', competencies });
+            if (/Developer/i.test(extractedTitle)) {
+               competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
+            } else if (/Configurator/i.test(extractedTitle)) {
+               competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
+            } else if (/Analyst/i.test(extractedTitle)) {
+               competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
+            }
           }
+          
+          jobRoles.push({ role: extractedTitle || "Consultant", description: cleanDesc + '\n\n', competencies });
+          jobRoleIndex++;
         }
+      } else if (currentSection === 'faq' && currentFaq) {
+        currentFaq.answer += text + '\n\n';
       } else if (currentSection === 'certification') {
         if (!certification) certification = { title: "Industry Recognized Certification", description: '' };
         certification.description += text + '\n\n';
@@ -309,37 +322,51 @@ for (const file of courseFiles) {
         } else if (currentModule) {
            currentModule.topics.push(tTitle);
         }
+      } else if (currentSection === 'faq') {
+        let tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').text());
+        if (!tTitle && tagName === 'details') tTitle = cleanText($el.find('summary').text());
+        
+        let tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body, p, ul').text());
+        
+        if (tTitle && tContent) {
+           faqs.push({ question: tTitle, answer: tContent });
+        }
       }
     }
     
     // Check divs for jobRoles if they weren't in <p>
     if (tagName === 'div' && currentSection === 'jobRoles') {
-      if (text.length < 40) {
-        roleTokens.push(text);
-      } else {
-        const cleanedText = text.replace(/востребован/gi, "in-demand");
-        if (!jobRoles.some(j => j.description.includes(cleanedText) || cleanedText.includes(j.description))) {
+      if (text.length >= 40) {
+        // avoid duplicating the same text if there are nested divs
+        if (!jobRoles.some(j => j.description.includes(text) || text.includes(j.description))) {
+          let cleanDesc = text.replace(/востребован/gi, "in-demand");
           let extractedTitle = null;
-          const domainMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
-          if (domainMatch) extractedTitle = domainMatch[1].trim();
-          
-          if (!extractedTitle) {
-            const standardMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
-            if (standardMatch) extractedTitle = standardMatch[1].trim();
+          const match1 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
+          if (match1) {
+            extractedTitle = match1[1].trim();
+          } else {
+            const match2 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
+            if (match2) {
+              extractedTitle = match2[1].trim();
+            }
+          }
+          if (!extractedTitle && jobRoleTokens.length > jobRoleIndex) {
+             extractedTitle = jobRoleTokens[jobRoleIndex];
           }
           
-          if (!extractedTitle && roleTokens.length > jobRoles.length) {
-            extractedTitle = roleTokens[jobRoles.length];
-          }
-          
+          let competencies = ["Enterprise Standards", "Industry Best Practices"];
           if (extractedTitle) {
-            let competencies = ["Enterprise Standards", "Industry Best Practices"];
-            if (/Developer/i.test(extractedTitle)) competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
-            else if (/Configurator/i.test(extractedTitle)) competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
-            else if (/Analyst/i.test(extractedTitle)) competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
-            
-            jobRoles.push({ role: extractedTitle, description: cleanedText + '\n\n', competencies });
+            if (/Developer/i.test(extractedTitle)) {
+               competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
+            } else if (/Configurator/i.test(extractedTitle)) {
+               competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
+            } else if (/Analyst/i.test(extractedTitle)) {
+               competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
+            }
           }
+          
+          jobRoles.push({ role: extractedTitle || "Consultant", description: cleanDesc + '\n\n', competencies });
+          jobRoleIndex++;
         }
       }
     }
@@ -366,8 +393,15 @@ for (const file of courseFiles) {
     extracted.jobRoles = jobRoles.map(j => ({
       role: j.role,
       description: j.description.trim(),
-      competencies: j.competencies
+      competencies: j.competencies || ["Industry Best Practices", "Tool Mastery"]
     }));
+  }
+  
+  if (faqs.length > 0) {
+    extracted.faqs = faqs.map(f => ({
+      question: f.question.trim(),
+      answer: f.answer.trim()
+    })).filter(f => f.question && f.answer);
   }
   
   if (whyMasterDesc) {
@@ -409,55 +443,6 @@ for (const file of courseFiles) {
     };
   }
   
-  faqs = [];
-  const faqHeading = $('h2, h3').filter((_, el) => /faq'?s|frequently\s+asked/i.test($(el).text())).first();
-  if (faqHeading.length > 0) {
-    let currNode = faqHeading.next();
-    while (currNode.length > 0) {
-      const nodeText = cleanText(currNode.text());
-      const tagName = currNode.prop('tagName')?.toLowerCase();
-      
-      if (tagName === 'h2' || /(need\s+demo|let'?s\s+connect|enroll\s+now|related\s+courses)/i.test(nodeText)) {
-        break;
-      }
-      
-      if (tagName === 'p' || tagName === 'div') {
-        const rawText = nodeText.replace(/\s+/g, ' ').trim();
-        if (rawText.length >= 25) {
-          const strongTag = currNode.find('strong, b').first();
-          let question = '';
-          let answer = '';
-          
-          if (strongTag.length && rawText.startsWith(cleanText(strongTag.text()).trim())) {
-            question = cleanText(strongTag.text()).trim();
-            answer = rawText.slice(question.length).trim();
-          }
-          
-          if (!question || !answer) {
-            const qMarkIndex = rawText.indexOf('?');
-            if (qMarkIndex !== -1 && qMarkIndex < 160) {
-              question = rawText.slice(0, qMarkIndex + 1).trim();
-              answer = rawText.slice(qMarkIndex + 1).trim();
-            }
-          }
-          
-          question = question.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
-          answer = answer.replace(/^(?:A\d*[:.]?\s*|Ans[:.]?\s*|[-–—:]\s*)/i, '').trim();
-          
-          if (question.length >= 8 && answer.length >= 15) {
-            faqs.push({ question, answer });
-          }
-        }
-      }
-      
-      currNode = currNode.next();
-    }
-  }
-  
-  if (faqs.length > 0) {
-    extracted.faqs = faqs;
-  }
-  
   if (isDryRun && targetSlug === slug) {
     console.log(`\n--- Dry Run Output for ${slug} ---`);
     console.log(yaml.dump(extracted));
@@ -473,7 +458,7 @@ for (const file of courseFiles) {
         const merged = { ...existingFrontmatter, ...extracted };
         
         // Preserve baseline fields precisely
-        const preservedKeys = ['slug', 'title', 'badge', 'category', 'priorityTier', 'navigationLocation', 'rating', 'batchInfo', 'trainer', 'faqs', 'metaTitle', 'metaDescription'];
+        const preservedKeys = ['slug', 'title', 'badge', 'category', 'priorityTier', 'navigationLocation', 'rating', 'batchInfo', 'trainer', 'metaTitle', 'metaDescription'];
         for (const k of preservedKeys) {
           if (existingFrontmatter[k] !== undefined) {
              merged[k] = existingFrontmatter[k];

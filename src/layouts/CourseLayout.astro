@@ -126,7 +126,7 @@ const schemaGraph = {
   <CourseCertifications certification={data.certification} courseTitle={data.title} />
   <CourseJobRoles jobRoles={data.jobRoles} />
   <CourseTrainerProfile courseTitle={data.title} trainerProfile={data.trainer || data.trainerProfile} />
-  <CourseFAQ faqs={data.faqs} courseTitle={data.title} />
+  <CourseFAQ faqs={data.faqs} />
   
   <!-- Section 13: Related Courses -->
   <RelatedCourses currentCourseId={course.id} category={data.category} />

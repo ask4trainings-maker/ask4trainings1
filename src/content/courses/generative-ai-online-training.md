@@ -102,6 +102,16 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A Generative AI Consultant advises organizations on implementing AI solutions effectively. Skills gained through Generative AI Online Training, Generative AI with LLMs Course, and Generative AI Training with Internship help consultants design strategies, optimize processes, and integrate AI into business systems. A Generative AI Professional Certification strengthens credibility and ensures they deliver impactful AI transformation.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A Generative AI Analyst interprets AI outputs and supports decision-making processes. With Generative AI Online Training and a Generative AI and ChatGPT Course, analysts understand data patterns, automate insights, and improve workflows. A Generative AI Professional Certification combined with a Generative AI Job Oriented Course enables them to provide valuable AI-driven recommendations in business environments.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Generative AI Engineer
     description: A Generative AI Engineer focuses on designing, optimizing, and deploying AI models using advanced tools. Through Generative AI Online Training and a Generative AI Job Oriented Course, engineers learn model tuning and system integration. Knowledge from a Generative AI with LLMs Course and hands-on Generative AI Training with Internship ensures they can manage AI pipelines and deliver high-performance solutions across industries.
     competencies:

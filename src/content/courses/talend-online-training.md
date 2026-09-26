@@ -81,6 +81,21 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: Talend Consultants support organizations by implementing ETL strategies, integration frameworks, and optimized data workflows. By joining Talend Online Training, learners gain implementation knowledge and project exposure. The Talend Course with Placement Assistance and Talend Master Program Online help participants improve technical confidence and consulting-oriented problem-solving abilities.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: Data Analysts leverage Talend technologies to organize, transform, and manage data for reporting and business insights. Through Talend Online Training, participants learn workflow handling, data quality concepts, and integration techniques. The Job Oriented Talend Online Training and Talend Online Certification Program help learners develop analytical understanding and practical technical knowledge.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: Data Engineers use Talend tools to manage large-scale data pipelines, integration processes, and enterprise data systems. With Talend Online Training, learners understand data processing, ETL architecture, and cloud integration concepts. The Talend Online Course and Talend Professional Certification Training strengthen technical capabilities, helping learners prepare for modern engineering responsibilities in data-driven organizations.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Talend Architect
     description: A Talend Architect designs enterprise-level data integration solutions, ETL frameworks, and scalable workflow systems. Through Talend Online Training, learners build advanced expertise in cloud integration, automation, and data governance. The Talend Training with Real-Time Projects, Talend Online Course, and Talend Professional Certification Training support learners in mastering architecture-focused technical skills.
     competencies:

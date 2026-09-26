@@ -102,6 +102,21 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
+  - role: Consultant
+    description: A PEGA Consultant assists organizations in implementing workflow automation strategies, application enhancements, and business process improvements. Through Job Oriented PEGA Online Training, learners gain hands-on expertise in enterprise solutions and technical implementation. Knowledge developed through PEGA Training with Job Support and PEGA Online Training India helps professionals deliver effective business and technology solutions.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A PEGA Analyst evaluates business requirements, studies operational workflows, and helps organizations implement process improvement solutions. With PEGA Course for Beginners, aspiring professionals can build foundational knowledge in BPM and application functionality. Practical exposure from PEGA Online Certification Program and PEGA Training in Hyderabad supports analytical thinking and solution development capabilities.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
+  - role: Consultant
+    description: A PEGA Administrator manages application environments, system configurations, access controls, and operational monitoring tasks within enterprise platforms. By joining PEGA Online Classes with Live Projects, learners understand deployment processes, environment management, and technical maintenance practices. Skills developed through PEGA Online Training and Placement Program, PEGA Training in Hyderabad, and PEGA Certification Training enhance career readiness.
+    competencies:
+      - Enterprise Standards
+      - Industry Best Practices
   - role: PEGA Architect
     description: A PEGA Architect focuses on creating scalable application frameworks, defining technical strategies, and optimizing business process solutions. Professionals can strengthen their expertise through PEGA Online Training that covers enterprise design, automation workflows, and system architecture concepts. Advanced skills gained from PEGA Professional Certification Training and PEGA Training with Real-Time Projects support long-term professional development.
     competencies:
