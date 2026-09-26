@@ -368,24 +368,23 @@ collections:
         field: category
         pattern: other-tools
     fields:
-
       # ── Navigation & Identity (Top of Page) ──
       - label: "📍 Live Navigation Location"
         name: "navigationLocation"
         widget: "string"
         readonly: true
         required: false
-        hint: "Breadcrumb showing where this course appears in site navigation. Managed automatically."
+        hint: "Breadcrumb showing where this course appears in site navigation."
 
       - label: "🌟 Course Promotion Tier"
         name: "priorityTier"
         widget: "select"
         options:
-          - { label: "🌟 Tier 1: Flagship Program (Top Priority)", value: "tier-1" }
-          - { label: "📈 Tier 2: Core Growth Course", value: "tier-2" }
-          - { label: "📘 Tier 3: Specialized / Supporting Course", value: "tier-3" }
+          - { label: "Flagship (Tier 1)", value: "tier-1" }
+          - { label: "Core Growth (Tier 2)", value: "tier-2" }
+          - { label: "Supporting/Specialized (Tier 3)", value: "tier-3" }
         default: "tier-2"
-        hint: "Controls ranking on the catalog homepage. Tier 1 = featured prominently."
+        hint: "Controls ranking on the catalog homepage."
 
       - label: "Course Title (H1)"
         name: "title"
@@ -397,19 +396,13 @@ collections:
         name: "slug"
         widget: "string"
         required: true
-        hint: "Permanent URL path, e.g., 'guidewire-policycenter-online-training'. Do NOT change after publishing."
-
-      - label: "Last Updated Date"
-        name: "updatedDate"
-        widget: "datetime"
-        required: false
-        hint: "Optional. Leave blank if unknown. Used for sortable_fields."
+        hint: "Permanent URL path, e.g., 'guidewire-policycenter-online-training'."
 
       - label: "Course Badge / Short Code"
         name: "badge"
         widget: "string"
         required: false
-        hint: "Compact badge shown on course cards. e.g., 'GW PC' or 'SAP FICO'."
+        hint: "Compact badge text (e.g., 'GW PC' or 'SAP FICO')."
 
       - label: "Domain Category"
         name: "category"
@@ -426,7 +419,7 @@ collections:
           - { label: "🚀 Trending Technologies", value: "trending-courses" }
           - { label: "✨ New Courses", value: "new-courses" }
           - { label: "🧰 Other Specialized Tools", value: "other-tools" }
-        hint: "Select the domain this course belongs to. Controls filtering on the catalog."
+        hint: "Select the domain this course belongs to."
 
       - label: "Course Rating"
         name: "rating"
@@ -434,12 +427,12 @@ collections:
         default: "4.9"
         hint: "Displayed star rating. e.g., '4.9'"
 
-      # ── Hero Overview & Batches ──
+      # ── Hero Section & Schedule ──
       - label: "Course Description Main"
         name: "valueProp"
         widget: "text"
         required: false
-        hint: "Lead description paragraph displayed under the H1 in the hero section. 2-4 sentences."
+        hint: "Lead introductory paragraph displayed below the H1 in the hero section."
 
       - label: "Batch & Schedule Information"
         name: "batchInfo"
@@ -447,151 +440,152 @@ collections:
         required: false
         hint: "Batch timing details shown in the hero info chips."
         fields:
-          - { label: "Batch Schedule", name: "type", widget: "string", hint: "e.g., 'Weekday / Weekend Batches'" }
-          - { label: "Program Duration", name: "duration", widget: "string", hint: "e.g., '45-60 Hours'" }
-          - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Interactive Online'" }
+          - { label: "Batch Type", name: "type", widget: "string", hint: "e.g., Weekday/Weekend" }
+          - { label: "Program Duration", name: "duration", widget: "string", hint: "e.g., '40-50 Hours'" }
+          - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Online'" }
           - { label: "Next Cohort Date", name: "startDate", widget: "string", hint: "e.g., 'Upcoming Monday'" }
 
-      # ── Course Overview (shown above Curriculum on the page) ──
+      # ── Course Overview (Before Modules) ──
       - label: "📖 Course Overview"
         name: "overview"
         widget: "text"
         required: false
-        hint: "In-depth overview shown above the curriculum accordion. Explains fundamentals, scope, and industry relevance."
+        hint: "Multi-line text area supporting multi-paragraph markdown covering the comprehensive and industry-focused overview blocks."
 
-      # ── Curriculum Modules ──
+      # ── Curriculum Modules Repeater ──
       - label: "📚 Course Curriculum Modules"
         name: "modules"
         widget: "list"
-        summary: "Module: {{fields.title}}"
-        hint: "Curriculum accordion on the course page. Each item is one collapsible module."
+        summary: "Module: {{fields.title}} ({{fields.duration}})"
+        hint: "Curriculum accordion on the course page."
         fields:
           - { label: "Module Title", name: "title", widget: "string", required: true, hint: "e.g., 'Introduction to PolicyCenter Architecture'" }
+          - { label: "Duration", name: "duration", widget: "string", required: false, hint: "e.g., '5 Topics' or '2 Hours'" }
           - label: "Lessons & Topics"
             name: "topics"
             widget: "list"
             summary: "{{fields.topic}}"
             field: { label: "Topic Description", name: "topic", widget: "string", hint: "e.g., 'Understanding ProductModel XML'" }
 
-      # ── Why Master This Course (shown directly after Curriculum) ──
+      # ── Why Master This Course ("About Course" Section) ──
       - label: "🚀 Why Master This Course?"
         name: "whyMaster"
         widget: "object"
         required: false
-        hint: "Deep-dive section shown after the curriculum. Explains ecosystem demand and enterprise value."
+        hint: "Explains ecosystem demand and enterprise value."
         fields:
-          - { label: "Section Headline", name: "title", widget: "string", hint: "e.g., 'Why Master Guidewire PolicyCenter?'", required: false }
-          - { label: "Section Description", name: "description", widget: "text", hint: "2-4 sentences on industry adoption, demand, and career ROI.", required: false }
-          - label: "Key Value Pillars"
-            name: "pillars"
-            widget: "list"
-            required: false
-            summary: "{{fields.title}}"
-            hint: "Optional pillar cards shown below the description (e.g., 'Architecture Mastery', 'Enterprise Demand')."
-            fields:
-              - { label: "Pillar Title", name: "title", widget: "string", hint: "e.g., 'Architecture Mastery'" }
-              - { label: "Pillar Description", name: "description", widget: "string", hint: "e.g., 'End-to-end configuration and workflow design.'" }
+          - { label: "Section Headline", name: "title", widget: "string", required: false, hint: "e.g., 'Why Master [Course Title]?'" }
+          - { label: "Section Description", name: "description", widget: "text", required: false, hint: "Multi-paragraph in-depth domain background." }
 
-      # ── Course Objectives (shown after Why Master) ──
-      - label: "🎯 Course Objectives"
-        name: "objectives"
+      # ── Standalone Key Features Grid ──
+      - label: "⚡ Key Features (6 Core Pillars)"
+        name: "keyFeatures"
         widget: "list"
+        summary: "{{fields.title}}"
         required: false
-        summary: "{{fields.item}}"
-        hint: "Key learning outcomes displayed as a grid of checkmark cards."
-        field: { label: "Objective", name: "item", widget: "string", hint: "e.g., 'Design and implement enterprise PolicyCenter workflows'" }
+        hint: "Standalone section that renders all 6 features (Mentor, Project, Curriculum, Career, Certification, Placement) in a clean 6-card responsive grid."
+        fields:
+          - { label: "Feature Title", name: "title", widget: "string", required: true, hint: "e.g., Mentor, Project, Curriculum, Career, Certification, Placement." }
+          - { label: "Feature Description", name: "description", widget: "text", required: true, hint: "Concise takeaway description." }
 
-      # ── Course Benefits (shown after Objectives — 3 category columns) ──
+      # ── Course Benefits ──
       - label: "💡 Course Benefits"
         name: "benefits"
-        widget: "object"
+        widget: "list"
+        summary: "{{fields.title}}"
         required: false
-        hint: "Three-column benefit grid: Basic Knowledge, Technical Skills, Career Interests."
+        hint: "Benefit cards."
         fields:
-          - label: "Basic Knowledge Gains"
-            name: "basicKnowledge"
+          - { label: "Benefit Card Title", name: "title", widget: "string", required: true, hint: "e.g., 'Automation Skills', 'Career Growth'" }
+          - { label: "Card Lead Description", name: "description", widget: "text", required: true, hint: "Lead description." }
+          - label: "Points"
+            name: "points"
             widget: "list"
             required: false
-            summary: "{{fields.item}}"
-            hint: "Foundational knowledge outcomes (shown in the first column)."
-            field: { label: "Knowledge Point", name: "item", widget: "string", hint: "e.g., 'Understand Guidewire architecture and insurance domain concepts'" }
-          - label: "Technical Skills Gained"
-            name: "techSkills"
-            widget: "list"
-            required: false
-            summary: "{{fields.item}}"
-            hint: "Hands-on technical capabilities (shown in the second column)."
-            field: { label: "Technical Skill", name: "item", widget: "string", hint: "e.g., 'Configure PolicyCenter data model and PCF screens'" }
-          - label: "Career Interests Unlocked"
-            name: "careerInterests"
-            widget: "list"
-            required: false
-            summary: "{{fields.item}}"
-            hint: "Career path benefits (shown in the third column)."
-            field: { label: "Career Benefit", name: "item", widget: "string", hint: "e.g., 'Accelerate your path to becoming an Enterprise Consultant'" }
+            summary: "{{fields.point}}"
+            field: { label: "Point", name: "point", widget: "string", hint: "Optional child bullet points for that benefit card." }
 
-      # ── Who Should Enroll ──
-      - label: "🎯 Who Should Enroll?"
+      # ── Why Choose This Course ──
+      - label: "🌟 Why Choose This Specific Course?"
+        name: "whyChooseCourse"
+        widget: "text"
+        required: false
+        hint: "Course-specific rationale explaining enterprise adoption and market demand (distinct from global Ask4Trainings institutional messaging)."
+
+      # ── Eligibility Criteria ("Who Should Enroll?") ──
+      - label: "🎯 Who Should Enroll? (Eligibility Profiles)"
         name: "whoShouldEnroll"
         widget: "list"
         summary: "{{fields.title}}"
+        required: false
         hint: "Candidate profiles shown in the Eligibility section."
         fields:
-          - { label: "Candidate Profile", name: "title", widget: "string", hint: "e.g., 'IT Professionals' or 'Fresh Engineering Graduates'" }
-          - { label: "Profile Description", name: "description", widget: "text", hint: "1-2 sentences describing this candidate segment." }
+          - { label: "Profile Title", name: "title", widget: "string", required: true, hint: "e.g., 'Fresh Graduates', 'Working Professionals'" }
+          - { label: "Eligibility Description", name: "description", widget: "text", required: true, hint: "Eligibility description." }
 
-      # ── Target Job Roles (shown after Eligibility) ──
+      # ── Course Certification Showcase ──
+      - label: "🎓 Course Certification Details"
+        name: "certification"
+        widget: "object"
+        required: false
+        hint: "Course certification explanation."
+        fields:
+          - { label: "Certification Heading", name: "title", widget: "string", required: false, hint: "e.g., 'Industry Recognized Certification'" }
+          - { label: "Certification Description", name: "description", widget: "text", required: false, hint: "Multi-paragraph explanation of exam preparation and credential value." }
+
+      # ── Interactive Target Job Roles ──
       - label: "💼 Target Job Roles"
         name: "jobRoles"
         widget: "list"
-        required: false
         summary: "{{fields.role}}"
+        required: false
         hint: "Job roles shown in the interactive tab panel after the Eligibility section."
         fields:
-          - { label: "Job Role Title", name: "role", widget: "string", required: true, hint: "e.g., 'Guidewire Associate Developer' or 'PLM Solution Architect'" }
-          - { label: "Role Description", name: "description", widget: "text", hint: "Brief description of responsibilities and career trajectory." }
-          - label: "Required Skills / Competencies"
-            name: "skills"
+          - { label: "Job Role Title", name: "role", widget: "string", required: true, hint: "e.g., 'Developer', 'Configurator', 'Business Analyst'" }
+          - { label: "Role Description", name: "description", widget: "text", required: true, hint: "Responsibilities and industry scope." }
+          - label: "Key Competencies"
+            name: "competencies"
             widget: "list"
             required: false
             summary: "{{fields.skill}}"
-            hint: "Skill tags shown as chips on the role detail card."
-            field: { label: "Skill", name: "skill", widget: "string", hint: "e.g., 'Gosu Programming' or 'PCF Configuration'" }
-          - { label: "Estimated Salary", name: "salaryEstimate", widget: "string", required: false, hint: "e.g., '₹8-15 LPA' or '$80,000-$110,000'" }
+            field: { label: "Competency Skill", name: "skill", widget: "string", hint: "Key skill pills associated with the role." }
 
-      # ── Trainer Section ──
-      - label: "👨‍🏫 Trainer Section"
+      # ── Trainer Profile ──
+      - label: "👨‍🏫 Trainer Profile"
         name: "trainer"
         widget: "object"
         required: false
-        hint: "Content for the Expert Trainer section. Note: the trainer illustration is an SVG component — no image upload needed."
+        hint: "Trainer biography and enterprise background. Strictly NO image upload widget; visuals are handled by the animated illustration."
         fields:
-          - { label: "Trainer Headline", name: "title", widget: "string", hint: "e.g., 'Expert Led Guidewire Trainer'" }
-          - { label: "Trainer Background & Experience", name: "description", widget: "text", hint: "Summary of the trainer's enterprise background and mentoring approach." }
+          - { label: "Trainer Headline", name: "title", widget: "string", required: false, hint: "e.g., 'Expert Led Guidewire Trainer'" }
+          - { label: "Trainer Background & Experience", name: "description", widget: "text", required: false, hint: "Trainer biography and enterprise background." }
           - label: "Trainer Highlights"
             name: "highlights"
             widget: "list"
             summary: "{{fields.item}}"
-            field: { label: "Highlight Bullet", name: "item", widget: "string", hint: "e.g., '10+ Years of Enterprise Production Experience'" }
+            required: false
+            field: { label: "Highlight Bullet", name: "item", widget: "string", hint: "List of bulleted qualifications." }
 
       # ── FAQs ──
       - label: "❓ Frequently Asked Questions"
         name: "faqs"
         widget: "list"
         summary: "Q: {{fields.question}}"
+        required: false
         hint: "FAQ accordion at the bottom of the course page."
         fields:
           - { label: "Question", name: "question", widget: "string", required: true }
           - { label: "Detailed Answer", name: "answer", widget: "text", required: true }
 
-      # ── SEO (Bottom — always last) ──
+      # ── SEO & Social Meta (Bottom of Form) ──
       - label: "🔍 Search Engine Optimization (SEO)"
         name: "seo"
         widget: "object"
+        required: false
         hint: "Metadata for Google search results. Placed at the bottom of the editor."
         fields:
-          - { label: "Google Meta Title", name: "metaTitle", widget: "string", hint: "Page title for Google (50-60 characters max). e.g., 'Guidewire PolicyCenter Training in Hyderabad | Ask4Trainings'" }
-          - { label: "Google Meta Description", name: "metaDescription", widget: "text", hint: "Search snippet summary (140-160 characters max)." }
+          - { label: "Google Meta Title", name: "metaTitle", widget: "string", required: false, hint: "Page title tag." }
+          - { label: "Google Meta Description", name: "metaDescription", widget: "text", required: false, hint: "Meta description snippet." }
 
   # ─────────────────────────────────────────────────────────────────────────
   # 4. SERVICES & PROGRAMS
