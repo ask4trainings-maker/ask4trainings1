@@ -23,62 +23,120 @@ export const prerender = true;
     </style>
   </head>
   <body>
-    <!-- Scroll Preservation for Sveltia CMS (scroll-only, no focus stealing) -->
+    <!-- Scroll Preservation for Sveltia CMS
+         Strategy: sessionStorage-backed, dynamically detects the scrollable
+         editor pane so stale DOM references after Sveltia re-renders never
+         cause silent failures. Three-stage restore (0 / 50 / 150 ms) brackets
+         Sveltia's reactive flush cycle. Never steals focus. -->
     <script is:inline>
-      (function () {
-        // Map of URL hash → { el, top } for the currently scrolled editor pane
-        var scrollCache = {};
-        var saveTimer = null;
+      (() => {
+        const SESSION_KEY_PREFIX = 'cms_scroll_';
+        let activeScrollContainer = null;
+        let isRestoring = false;
+        let saveRaf = null;
 
-        // Save scroll position on any scroll event (capture phase)
-        document.addEventListener('scroll', function (e) {
-          var target = (e.composedPath && e.composedPath()[0]) || e.target;
-          // Ignore inputs and non-element nodes
-          if (!target || target.nodeType !== 1) return;
-          var tag = target.tagName;
-          if (tag === 'INPUT' || tag === 'TEXTAREA') return;
-
-          if (saveTimer) clearTimeout(saveTimer);
-          saveTimer = setTimeout(function () {
-            var hash = window.location.hash || '__root__';
-            scrollCache[hash] = { el: target, top: target.scrollTop };
-            // Also capture window scroll
-            scrollCache[hash + '_win'] = window.scrollY;
-          }, 100);
-        }, true); // capture phase
-
-        // Clear cache on hash change (new entry opened)
-        window.addEventListener('hashchange', function () {
-          // Don't clear — each hash is its own key, so navigating back still restores
-        });
-
-        // On tab re-focus: restore scroll without touching focus
-        function restoreScroll() {
-          var hash = window.location.hash || '__root__';
-          var cached = scrollCache[hash];
-          var winScroll = scrollCache[hash + '_win'];
-
-          // Two-pass restore: immediate + one rAF later to survive async re-renders
-          function apply() {
-            if (cached && cached.el && document.body.contains(cached.el)) {
-              cached.el.scrollTop = cached.top;
-            }
-            if (winScroll > 0) {
-              window.scrollTo(0, winScroll);
-            }
+        // ── 1. Dynamic scroll container detection ────────────────────────────
+        // Walk *all* elements; find the first visible, scroll-capable container
+        // whose computed overflowY is auto or scroll. This survives Sveltia
+        // re-renders because we re-query every time instead of caching the node.
+        function findScrollContainer() {
+          const all = document.querySelectorAll('*');
+          for (const el of all) {
+            if (el === document.body || el === document.documentElement) continue;
+            if (el.scrollHeight <= el.clientHeight + 5) continue; // not scrollable
+            if (el.clientHeight < 200) continue;                  // too small — skip
+            const ov = getComputedStyle(el).overflowY;
+            if (ov === 'auto' || ov === 'scroll') return el;
           }
-
-          apply();
-          requestAnimationFrame(apply);
+          return null;
         }
 
-        document.addEventListener('visibilitychange', function () {
+        // ── 2. Save scroll on every scroll event (capture phase) ─────────────
+        document.addEventListener('scroll', (e) => {
+          if (isRestoring) return; // ignore programmatic scrolls we trigger
+          const target = (e.composedPath && e.composedPath()[0]) || e.target;
+          if (!target || target.nodeType !== 1) return;
+          const tag = target.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+          if (target.scrollHeight <= target.clientHeight + 5) return;
+
+          // Track which element is the active scroll container
+          activeScrollContainer = target;
+
+          // Debounce via rAF to batch rapid scroll events
+          if (saveRaf) cancelAnimationFrame(saveRaf);
+          saveRaf = requestAnimationFrame(() => {
+            const key = SESSION_KEY_PREFIX + (window.location.hash || '__root__');
+            try {
+              sessionStorage.setItem(key, String(target.scrollTop));
+              // Also save window scroll for edge cases where the page itself scrolls
+              sessionStorage.setItem(key + '_win', String(window.scrollY));
+            } catch (_) {}
+          });
+        }, true); // capture phase — catches all nested scroll containers
+
+        // ── 3. Restore scroll on tab re-entry ────────────────────────────────
+        function restoreScroll() {
+          const key = SESSION_KEY_PREFIX + (window.location.hash || '__root__');
+          let saved;
+          try { saved = sessionStorage.getItem(key); } catch (_) {}
+          if (saved === null || saved === undefined) return;
+
+          const targetScroll = parseInt(saved, 10);
+          if (isNaN(targetScroll) || targetScroll <= 5) return;
+
+          isRestoring = true;
+
+          // Three-stage restoration: brackets Sveltia's async re-render flush
+          // Stage 0: immediate — before any framework work starts
+          // Stage 50ms: after first microtask flush
+          // Stage 150ms: after full reactive update & paint
+          const stages = [0, 50, 150];
+          stages.forEach((delay, idx) => {
+            setTimeout(() => {
+              // Re-query the container on every attempt — DOM may have been replaced
+              const container = activeScrollContainer && document.body.contains(activeScrollContainer)
+                ? activeScrollContainer
+                : findScrollContainer();
+
+              if (container) {
+                container.scrollTop = targetScroll;
+                activeScrollContainer = container; // update reference
+              }
+
+              // Restore window scroll too if applicable
+              let winSaved;
+              try { winSaved = sessionStorage.getItem(key + '_win'); } catch (_) {}
+              if (winSaved) {
+                const winTop = parseInt(winSaved, 10);
+                if (!isNaN(winTop) && winTop > 0) window.scrollTo(0, winTop);
+              }
+
+              // Release restoration lock after the final stage
+              if (idx === stages.length - 1) {
+                setTimeout(() => { isRestoring = false; }, 50);
+              }
+            }, delay);
+          });
+        }
+
+        // ── 4. Event bindings ─────────────────────────────────────────────────
+        document.addEventListener('visibilitychange', () => {
           if (document.visibilityState === 'visible') restoreScroll();
         });
         window.addEventListener('focus', restoreScroll);
+
+        // Hash change = new entry opened → do NOT inherit previous entry's scroll.
+        // Each hash is its own sessionStorage key, so navigating forward starts
+        // fresh while navigating *back* to the same hash still restores correctly.
+        window.addEventListener('hashchange', () => {
+          isRestoring = false; // cancel any in-flight restore from the old entry
+          activeScrollContainer = null;
+          // After the new entry renders, check if sessionStorage has a saved pos
+          setTimeout(restoreScroll, 200);
+        });
       })();
     </script>
-    
 
     <!-- Use is:inline so Vite does not hoist, bundle, or delay Sveltia CMS -->
     <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
