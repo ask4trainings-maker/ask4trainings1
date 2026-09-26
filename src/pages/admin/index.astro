@@ -23,6 +23,89 @@ export const prerender = true;
     </style>
   </head>
   <body>
+    <!-- Scroll & Focus Preservation for Sveltia CMS -->
+    <script is:inline>
+      (function() {
+        const scrollState = new Map();
+        let lastActiveInput = null;
+        let scrollTimeout = null;
+
+        // 1. Track Scroll Position
+        document.addEventListener('scroll', (e) => {
+          const target = e.target;
+          if (!target || target === document || target.nodeType !== 1) return;
+          
+          if (scrollTimeout) clearTimeout(scrollTimeout);
+          
+          scrollTimeout = setTimeout(() => {
+            const hash = window.location.hash;
+            // Only track if we are in an entry editor or list
+            if (hash) {
+              scrollState.set(hash, target.scrollTop);
+            }
+          }, 60); // throttle
+        }, true); // use capture phase
+
+        // 2. Track Active Input
+        const saveActiveElement = () => {
+          const el = document.activeElement;
+          if (el) {
+            const tag = el.tagName.toLowerCase();
+            if (tag === 'input' || tag === 'textarea' || el.isContentEditable) {
+              lastActiveInput = el;
+            } else {
+              lastActiveInput = null;
+            }
+          }
+        };
+
+        window.addEventListener('blur', saveActiveElement);
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'hidden') saveActiveElement();
+        });
+
+        // 3. Restore State
+        const restoreState = () => {
+          const hash = window.location.hash;
+          const savedScroll = scrollState.get(hash);
+          
+          if (savedScroll !== undefined) {
+            const doRestore = () => {
+              // Find the scrollable container and restore
+              const elements = document.querySelectorAll('*');
+              for (let i = 0; i < elements.length; i++) {
+                const el = elements[i];
+                // Check if it's a likely scroll container
+                if (el.scrollHeight > el.clientHeight && el.clientHeight > 300) {
+                  // Only apply if the container is tall enough to receive this scroll
+                  if (el.scrollHeight >= savedScroll) {
+                    el.scrollTop = savedScroll;
+                  }
+                }
+              }
+
+              // Restore focus to prevent viewport jumping to top on focus stealing
+              if (lastActiveInput && document.body.contains(lastActiveInput)) {
+                lastActiveInput.focus({ preventScroll: true });
+              }
+            };
+
+            // Apply across micro-ticks to outlast re-renders
+            doRestore();
+            requestAnimationFrame(() => {
+              doRestore();
+              setTimeout(doRestore, 60);
+            });
+          }
+        };
+
+        window.addEventListener('focus', restoreState);
+        document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'visible') restoreState();
+        });
+      })();
+    </script>
+    
     <!-- Use is:inline so Vite does not hoist, bundle, or delay Sveltia CMS -->
     <script is:inline src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
   </body>
