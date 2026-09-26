@@ -208,6 +208,20 @@ const courses = defineCollection({
 
     whyChooseCourse: z.string().optional(),
 
+    roiMetrics: z.object({
+      headline: z.string().optional(),
+      badge: z.string().optional(),
+      metric1: z.object({
+        value: z.string(),
+        label: z.string(),
+      }).optional(),
+      metric2: z.object({
+        value: z.string(),
+        label: z.string(),
+      }).optional(),
+      footerNote: z.string().optional(),
+    }).optional(),
+
     // ─── Section 10: Career Opportunities / Job Roles ───────────────────────
     jobRoles: z.array(z.any()).optional().default([]),
 

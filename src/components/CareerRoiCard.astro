@@ -2,8 +2,72 @@
 interface Props {
   courseTitle: string;
   category?: string;
+  roiMetrics?: {
+    headline?: string;
+    badge?: string;
+    metric1?: { value?: string; label?: string };
+    metric2?: { value?: string; label?: string };
+    footerNote?: string;
+  };
 }
-const { courseTitle, category } = Astro.props;
+
+const { courseTitle, category, roiMetrics } = Astro.props;
+
+// Default Fallback
+let resolvedHeadline = "Enterprise Adoption";
+let resolvedBadge = "High Market Viability";
+let resolvedMetric1Value = "Tier-1";
+let resolvedMetric1Label = "Consulting Demand";
+let resolvedMetric2Value = "Global";
+let resolvedMetric2Label = "Production Deployments";
+let resolvedFooterNote = "Skills aligned with current enterprise client requirements.";
+
+// Domain Mapping
+if (category === 'guidewire') {
+  resolvedBadge = "Core P&C Insurance Standard";
+  resolvedMetric1Value = "Top 10";
+  resolvedMetric1Label = "Global P&C Insurers";
+  resolvedMetric2Value = "High Demand";
+  resolvedMetric2Label = "Gosu & PCF Developers";
+  resolvedFooterNote = "Curriculum aligned with Guidewire 10.x enterprise production standards.";
+} else if (category === 'siemens' || category === 'teamcenter' || category === 'polarion') {
+  resolvedBadge = "Industrial Lifecycle Critical";
+  resolvedMetric1Value = "Fortune 500";
+  resolvedMetric1Label = "Automotive & Aerospace Use";
+  resolvedMetric2Value = "Tier-1";
+  resolvedMetric2Label = "OEM Integration Demand";
+  resolvedFooterNote = "Covers Active Workspace and enterprise engineering architectures.";
+} else if (category === 'cloud-computing' || category === 'devops') {
+  resolvedBadge = "Accelerating Hiring Velocity";
+  resolvedMetric1Value = "99.99%";
+  resolvedMetric1Label = "Infrastructure Uptime Focus";
+  resolvedMetric2Value = "Multi-Cloud";
+  resolvedMetric2Label = "AWS & Azure Toolchains";
+  resolvedFooterNote = "Focus on automated CI/CD pipelines and enterprise container orchestration.";
+} else if (category === 'data-analyst' || category === 'trending-courses' || category === 'data-analytics' || category === 'data-science') {
+  resolvedBadge = "High Hiring Velocity";
+  resolvedMetric1Value = "+38% YoY";
+  resolvedMetric1Label = "Enterprise Market Growth";
+  resolvedMetric2Value = "Real-Time";
+  resolvedMetric2Label = "Data Warehouse Integration";
+  resolvedFooterNote = "Hands-on data modeling and production analytics pipelines.";
+} else if (category === 'sap' || category === 'oracle' || category === 'ms-d365' || category === 'ms-dynamics') {
+  resolvedBadge = "Core Enterprise Backbone";
+  resolvedMetric1Value = "Tier-1";
+  resolvedMetric1Label = "Consulting & Implementation";
+  resolvedMetric2Value = "Global";
+  resolvedMetric2Label = "Financial & Supply Deployments";
+  resolvedFooterNote = "Aligned with modern ERP governance and financial compliance.";
+}
+
+// Override with Frontmatter (if provided)
+const finalHeadline = roiMetrics?.headline || resolvedHeadline;
+const finalBadge = roiMetrics?.badge || resolvedBadge;
+const finalMetric1Value = roiMetrics?.metric1?.value || resolvedMetric1Value;
+const finalMetric1Label = roiMetrics?.metric1?.label || resolvedMetric1Label;
+const finalMetric2Value = roiMetrics?.metric2?.value || resolvedMetric2Value;
+const finalMetric2Label = roiMetrics?.metric2?.label || resolvedMetric2Label;
+const finalFooterNote = roiMetrics?.footerNote || resolvedFooterNote;
 ---
 <div class="w-full max-w-lg mx-auto lg:max-w-none relative group">
   <!-- Ambient background glow -->
@@ -19,12 +83,12 @@ const { courseTitle, category } = Astro.props;
           Market Viability & Demand
         </span>
         <h3 class="font-bold text-slate-900 leading-tight">
-          Enterprise Adoption
+          {finalHeadline}
         </h3>
       </div>
       <div class="flex items-center gap-2 bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full text-xs font-medium border border-emerald-100">
         <span class="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-        High Hiring Velocity
+        {finalBadge}
       </div>
     </div>
 
@@ -53,12 +117,12 @@ const { courseTitle, category } = Astro.props;
     <!-- Key Metrics Subgrid -->
     <div class="grid grid-cols-2 gap-3 sm:gap-4 border-t border-slate-100 pt-5 mt-4">
       <div class="bg-slate-50/50 p-3 rounded-xl border border-slate-100/50">
-        <div class="text-xl sm:text-2xl font-bold text-slate-900 mb-1">Tier-1</div>
-        <div class="text-xs text-slate-500 font-medium">Consulting Demand</div>
+        <div class="text-xl sm:text-2xl font-bold text-slate-900 mb-1">{finalMetric1Value}</div>
+        <div class="text-xs text-slate-500 font-medium">{finalMetric1Label}</div>
       </div>
       <div class="bg-emerald-50/30 p-3 rounded-xl border border-emerald-100/50">
-        <div class="text-xl sm:text-2xl font-bold text-emerald-600 mb-1">Global</div>
-        <div class="text-xs text-slate-500 font-medium">Production Deployments</div>
+        <div class="text-xl sm:text-2xl font-bold text-emerald-600 mb-1">{finalMetric2Value}</div>
+        <div class="text-xs text-slate-500 font-medium">{finalMetric2Label}</div>
       </div>
     </div>
 
@@ -67,7 +131,7 @@ const { courseTitle, category } = Astro.props;
       <svg class="w-4 h-4 text-emerald-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
       </svg>
-      <span>Curriculum aligned with live enterprise production standards.</span>
+      <span>{finalFooterNote}</span>
     </div>
   </div>
 </div>

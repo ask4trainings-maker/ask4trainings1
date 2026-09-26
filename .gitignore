@@ -1,6 +1,9 @@
 # Dependency directories
 node_modules/
 node_modules.fedora-backup/
+reports/
+scratch/
+scripts/
 
 # Astro output directories
 dist/

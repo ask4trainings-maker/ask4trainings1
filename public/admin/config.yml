@@ -512,6 +512,31 @@ collections:
         required: false
         hint: "Course-specific rationale explaining enterprise adoption and market demand (distinct from global Ask4Trainings institutional messaging)."
 
+      # ── Career & Market ROI Card ──
+      - label: "📊 Career & Market ROI Card"
+        name: "roiMetrics"
+        widget: "object"
+        required: false
+        hint: "Domain-specific career metrics. If left blank, automatically falls back to smart defaults based on the course category."
+        fields:
+          - { label: "Main Headline", name: "headline", widget: "string", required: false, hint: "e.g., 'Enterprise Adoption' or 'Ecosystem Penetration'" }
+          - { label: "Pill Badge Text", name: "badge", widget: "string", required: false, hint: "e.g., 'Tier-1 Insurer Demand' or 'Cloud Core Standard'" }
+          - label: "Metric 1 (Left Box)"
+            name: "metric1"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Highlight Value", name: "value", widget: "string", required: false, hint: "e.g., 'Top 3%', '85%+', 'Tier-1'" }
+              - { label: "Metric Label", name: "label", widget: "string", required: false, hint: "e.g., 'Global Insurer Adoption'" }
+          - label: "Metric 2 (Right Box)"
+            name: "metric2"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Highlight Value", name: "value", widget: "string", required: false, hint: "e.g., '$120K+', 'Global'" }
+              - { label: "Metric Label", name: "label", widget: "string", required: false, hint: "e.g., 'Specialist Pay Band'" }
+          - { label: "Footer Verification Note", name: "footerNote", widget: "string", required: false, hint: "Verification copy beside the checkmark badge." }
+
       # ── Eligibility Criteria ("Who Should Enroll?") ──
       - label: "🎯 Who Should Enroll? (Eligibility Profiles)"
         name: "whoShouldEnroll"
