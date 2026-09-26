@@ -195,23 +195,23 @@ for (const file of courseFiles) {
     // Paragraph / Content Extraction
     if (tagName === 'p') {
       if (currentSection === 'overview') {
-        if (currentSubHeading === 'overview1') overviewPart1 += text + ' ';
-        else if (currentSubHeading === 'overview2') overviewPart2 += text + ' ';
+        if (currentSubHeading === 'overview1') overviewPart1 += text + '\n\n';
+        else if (currentSubHeading === 'overview2') overviewPart2 += text + '\n\n';
       } else if (currentSection === 'about') {
-        whyMasterDesc += text + ' ';
+        whyMasterDesc += text + '\n\n';
       } else if (currentSection === 'objectives') {
-        if (text) objectives.push({ item: text });
+        if (text) objectives.push(text);
       } else if (currentSection === 'features' && currentPillar) {
-        currentPillar.description += text + ' ';
+        currentPillar.description += text + '\n\n';
       } else if (currentSection === 'benefits' && currentBenefit) {
-        currentBenefit.description += text + ' ';
+        currentBenefit.description += text + '\n\n';
       } else if (currentSection === 'whychoose') {
-        whyChoose += text + ' ';
+        whyChoose += text + '\n\n';
       } else if (currentSection === 'eligibility' && currentProfile) {
-        currentProfile.description += text + ' ';
+        currentProfile.description += text + '\n\n';
       } else if (currentSection === 'certification') {
         if (!certification) certification = { title: "Guidewire Certification Preparation Program", description: '' };
-        certification.description += text + ' ';
+        certification.description += text + '\n\n';
       } else if (currentSection === 'modules' && currentModule) {
         // Look for duration pattern like "5 Topics" or "10 Hours"
         if (/(topics|hours?|hrs?)/i.test(text) && text.length < 20) {
@@ -229,11 +229,12 @@ for (const file of courseFiles) {
         if (!liText) return;
         
         if (currentSection === 'objectives') {
-          objectives.push({ item: liText });
+          objectives.push(liText);
         } else if (currentSection === 'modules' && currentModule) {
           currentModule.topics.push(liText);
         } else if (currentSection === 'benefits' && currentBenefit) {
-          currentBenefit.description += ' ' + liText;
+          if (!currentBenefit.points) currentBenefit.points = [];
+          currentBenefit.points.push(liText);
         }
       });
     }
@@ -284,20 +285,12 @@ for (const file of courseFiles) {
   
   if (objectives.length > 0) extracted.objectives = objectives;
   
-  // The user requested `benefits` as an array in prompt, but schema demands an object with basicKnowledge, techSkills, careerInterests.
-  // To satisfy both requirements: I'll map them strictly to the schema format but include all the user data.
-  // User says: Target Field: benefits: - title: ... description: ...
-  // Wait, if I must map them exactly to the user's string, I will do so and if Astro complains, I'll adapt it.
-  // Actually, wait, `benefits: { techSkills: [ {item: "..."} ] }` is the ONLY valid shape. If I output array, Astro will 100% fail.
-  // I will format them to an array of `{title, description}` because the user explicitly specified the Target Field shape. If `npm run check` fails, I will fix `content.config.ts`.
-  // The user prompt: "DO NOT touch template files... DO NOT overwrite existing baseline frontmatter fields." 
-  // I will output exactly what the user asked.
   if (benefits.length > 0) {
-    extracted.benefits = {
-      basicKnowledge: [],
-      techSkills: benefits.map(b => ({ item: b.title + ': ' + b.description.trim() })),
-      careerInterests: []
-    };
+    extracted.benefits = benefits.map(b => ({
+      title: b.title,
+      description: b.description.trim(),
+      points: b.points || []
+    }));
   }
   
   // The user prompt asked to extract `whyChoose` explaining why learners choose Ask4Trainings.

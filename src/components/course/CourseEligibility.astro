@@ -41,9 +41,11 @@ const normalizedItems = eligibility.map((item) => {
             <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
             {item.title}
           </h3>
-          <p class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
-            {item.description}
-          </p>
+          <div class="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed space-y-2">
+            {item.description.split('\n\n').map((p: string) => (
+              p.trim() && <p>{p.trim()}</p>
+            ))}
+          </div>
         </div>
       ))}
     </div>

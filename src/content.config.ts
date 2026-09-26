@@ -127,17 +127,20 @@ const courses = defineCollection({
 
     // ─── Section 6: Benefits (3 Distinct Containers) ────────────────────────
     // Each sub-array accepts strings (legacy) or {item: string} objects (CMS widget)
-    benefits: z.object({
-      basicKnowledge: z.array(
-        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
-      ).default([]),
-      techSkills: z.array(
-        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
-      ).default([]),
-      careerInterests: z.array(
-        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
-      ).default([]),
-    }).default({ basicKnowledge: [], techSkills: [], careerInterests: [] }),
+    benefits: z.union([
+      z.object({
+        basicKnowledge: z.array(
+          z.union([z.string(), z.record(z.string(), z.any())])
+        ).default([]),
+        techSkills: z.array(
+          z.union([z.string(), z.record(z.string(), z.any())])
+        ).default([]),
+        careerInterests: z.array(
+          z.union([z.string(), z.record(z.string(), z.any())])
+        ).default([]),
+      }),
+      z.array(z.record(z.string(), z.any()))
+    ]).default([]),
 
     // ─── Section 6b: Why Master This Course ─────────────────────────────────
     whyMaster: z.object({

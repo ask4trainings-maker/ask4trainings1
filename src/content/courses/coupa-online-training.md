@@ -51,12 +51,45 @@ mode: Online Live Interactive
 rating: 4.9/5 (1,200+ Reviews)
 brochureUrl: https://drive.google.com/
 benefits:
-  basicKnowledge: []
-  techSkills:
-    - item: 'Efficiency: Coupa Online Course helps improve procurement speed through automation and smart workflows. Learn sourcing, invoicing and Coupa Training Program with knowledge.  Spend Tracking Smart Procurement Invoice Control Workflow Setup Cost Savings Vendor Access Purchase Planning Expense Tracking Budget Control Process Automation'
-    - item: 'Growth: Build strong career opportunities with a Coupa Online Course by learning spend management, procurement and sourcing. This Coupa Certification Course supports job-ready skills.  Career Support Industry Skills Project Training Placement Help Practical Learning Real Projects Skill Building Expert Sessions Certification Prep Professional Growth'
-    - item: 'Flexibility: A Coupa Online Training program offers flexible learning with live sessions, recorded classes, and hands-on practice in Coupa Spend Management Course modules.  Online Classes Weekend Learning Flexible Timing Live Sessions Recorded Access Hands-On Tasks Cloud Learning Easy Access Expert Guidance Self Practice'
-  careerInterests: []
+  - title: Efficiency
+    description: Coupa Online Course helps improve procurement speed through automation and smart workflows. Learn sourcing, invoicing and Coupa Training Program with knowledge.
+    points:
+      - Spend Tracking
+      - Smart Procurement
+      - Invoice Control
+      - Workflow Setup
+      - Cost Savings
+      - Vendor Access
+      - Purchase Planning
+      - Expense Tracking
+      - Budget Control
+      - Process Automation
+  - title: Growth
+    description: Build strong career opportunities with a Coupa Online Course by learning spend management, procurement and sourcing. This Coupa Certification Course supports job-ready skills.
+    points:
+      - Career Support
+      - Industry Skills
+      - Project Training
+      - Placement Help
+      - Practical Learning
+      - Real Projects
+      - Skill Building
+      - Expert Sessions
+      - Certification Prep
+      - Professional Growth
+  - title: Flexibility
+    description: A Coupa Online Training program offers flexible learning with live sessions, recorded classes, and hands-on practice in Coupa Spend Management Course modules.
+    points:
+      - Online Classes
+      - Weekend Learning
+      - Flexible Timing
+      - Live Sessions
+      - Recorded Access
+      - Hands-On Tasks
+      - Cloud Learning
+      - Easy Access
+      - Expert Guidance
+      - Self Practice
 eligibility:
   - Software Developers and Engineers looking to upskill.
   - System Administrators transitioning to enterprise platforms.
@@ -74,13 +107,16 @@ aboutCourse: |-
 
   Throughout this course, you will explore the essential components, configuration strategies, and best practices for deploying robust applications. The curriculum is meticulously crafted to empower you with the skills needed to drive digital transformation and optimize business workflows.
 objectives:
-  - item: Join our industry-focused Coupa Online Training to develop expertise in procurement, sourcing, invoicing, and supplier collaboration through practical sessions and live assignments. This Coupa Course with Placement helps learners improve technical skills, gain interview preparation support, and build confidence for successful career opportunities in procurement management.
-  - item: The Coupa Online Certification Program offers comprehensive learning in procurement automation, spend management, and supplier processes with expert guidance. This Coupa Job Oriented Course is designed to provide real-time exposure, hands-on practice, and implementation knowledge that supports learners in building strong professional careers.
-  - item: Our Coupa Course with Real-Time Projects provides practical exposure to procurement workflows, sourcing operations, and invoice management using industry-based case studies. Through the Coupa Course with Internship, learners gain valuable project experience, improve problem-solving skills, and become job-ready with real-time business process understanding.
-  - item: Build advanced procurement expertise with our professional Coupa Procurement Training program designed for beginners and working professionals. The Coupa Certification Online course includes live projects, practical assignments, and expert mentorship to help learners strengthen implementation knowledge and prepare confidently for certification and career advancement.
+  - Join our industry-focused Coupa Online Training to develop expertise in procurement, sourcing, invoicing, and supplier collaboration through practical sessions and live assignments. This Coupa Course with Placement helps learners improve technical skills, gain interview preparation support, and build confidence for successful career opportunities in procurement management.
+  - The Coupa Online Certification Program offers comprehensive learning in procurement automation, spend management, and supplier processes with expert guidance. This Coupa Job Oriented Course is designed to provide real-time exposure, hands-on practice, and implementation knowledge that supports learners in building strong professional careers.
+  - Our Coupa Course with Real-Time Projects provides practical exposure to procurement workflows, sourcing operations, and invoice management using industry-based case studies. Through the Coupa Course with Internship, learners gain valuable project experience, improve problem-solving skills, and become job-ready with real-time business process understanding.
+  - Build advanced procurement expertise with our professional Coupa Procurement Training program designed for beginners and working professionals. The Coupa Certification Online course includes live projects, practical assignments, and expert mentorship to help learners strengthen implementation knowledge and prepare confidently for certification and career advancement.
 whyChoose:
   - title: Why Choose Ask4Trainings?
-    description: Choose our Coupa Online Training to gain practical knowledge in procurement automation, sourcing, invoicing, and supplier management through expert-led sessions. The industry-focused Coupa Online Bootcamp provides real-time scenarios, live assignments, and interactive learning support. Our Coupa Master Program helps learners build strong implementation skills and career-ready expertise with advanced practical exposure and project-based learning. Our Coupa Online Learning Program is designed to help beginners and professionals master procurement workflows with flexible online sessions and expert guidance. Enroll in Coupa Training with Hands-On Projects to gain real-time experience in sourcing, supplier collaboration, and spend management. Through Coupa Online Training, learners receive practical exposure, project support, and job-oriented skills for career growth.
+    description: |-
+      Choose our Coupa Online Training to gain practical knowledge in procurement automation, sourcing, invoicing, and supplier management through expert-led sessions. The industry-focused Coupa Online Bootcamp provides real-time scenarios, live assignments, and interactive learning support. Our Coupa Master Program helps learners build strong implementation skills and career-ready expertise with advanced practical exposure and project-based learning.
+
+      Our Coupa Online Learning Program is designed to help beginners and professionals master procurement workflows with flexible online sessions and expert guidance. Enroll in Coupa Training with Hands-On Projects to gain real-time experience in sourcing, supplier collaboration, and spend management. Through Coupa Online Training, learners receive practical exposure, project support, and job-oriented skills for career growth.
 certifications:
   title: Coupa Training Certified Professional
   description: Earn verified credentials upon successful completion of the capstone project and practical lab assessments, validating your expertise to top employers.
@@ -145,8 +181,14 @@ whyMaster:
     - title: Project
       description: Real-time Coupa projects for practical exposure.
     - title: curriculum
-      description: Updated Coupa curriculum aligned with industry. Career-focused training for growth in the IT industry.
+      description: |-
+        Updated Coupa curriculum aligned with industry.
+
+        Career-focused training for growth in the IT industry.
     - title: Certification
-      description: Complete Coupa certification preparation. Dedicated placement support for top Coupa jobs.
+      description: |-
+        Complete Coupa certification preparation.
+
+        Dedicated placement support for top Coupa jobs.
 ---
 This is the canonical course page for Coupa Training. Start your learning journey today with Ask 4 Trainings.

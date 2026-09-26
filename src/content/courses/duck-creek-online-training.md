@@ -51,12 +51,45 @@ mode: Online Live Interactive
 rating: 4.9/5 (1,200+ Reviews)
 brochureUrl: https://drive.google.com/
 benefits:
-  basicKnowledge: []
-  techSkills:
-    - item: 'Certification Support: The Duck Creek Certification Online program helps learners prepare for professional certifications and interviews.  Mock Interviews Resume Building Certification Prep Skill Enhancement Online Classes Mentor Support Career Growth Practical Assignments Technical Learning Job Readiness'
-    - item: 'Career Opportunities: Join the Duck Creek Job Oriented Course to improve job prospects in the insurance technology industry.  Placement Training Internship Support Real Projects Insurance Domain Professional Skills Hands-on Practice Flexible Timing Industry Experts Learning Support Career Opportunities'
-    - item: 'Industry Exposure: Gain practical skills through Duck Creek Online Training and real-time project experience for better career growth.  Live Projects Expert Guidance Practical Sessions Industry Knowledge Career Support Technical Skills Real Scenarios Project Practice Flexible Learning Placement Help'
-  careerInterests: []
+  - title: Certification Support
+    description: The Duck Creek Certification Online program helps learners prepare for professional certifications and interviews.
+    points:
+      - Mock Interviews
+      - Resume Building
+      - Certification Prep
+      - Skill Enhancement
+      - Online Classes
+      - Mentor Support
+      - Career Growth
+      - Practical Assignments
+      - Technical Learning
+      - Job Readiness
+  - title: Career Opportunities
+    description: Join the Duck Creek Job Oriented Course to improve job prospects in the insurance technology industry.
+    points:
+      - Placement Training
+      - Internship Support
+      - Real Projects
+      - Insurance Domain
+      - Professional Skills
+      - Hands-on Practice
+      - Flexible Timing
+      - Industry Experts
+      - Learning Support
+      - Career Opportunities
+  - title: Industry Exposure
+    description: Gain practical skills through Duck Creek Online Training and real-time project experience for better career growth.
+    points:
+      - Live Projects
+      - Expert Guidance
+      - Practical Sessions
+      - Industry Knowledge
+      - Career Support
+      - Technical Skills
+      - Real Scenarios
+      - Project Practice
+      - Flexible Learning
+      - Placement Help
 eligibility:
   - Software Developers and Engineers looking to upskill.
   - System Administrators transitioning to enterprise platforms.
@@ -68,19 +101,25 @@ jobRoles:
   - Platform Specialist
   - Solutions Architect
   - Technical Business Analyst
-overview: Our Duck Creek Online Training program is designed to help learners gain practical expertise in insurance software solutions used by leading global companies. As a trusted Duck Creek Training Institute in Hyderabad, we provide real-time project exposure, expert-led sessions, and hands-on practice in policy, billing, and claims modules. The course structure is suitable for freshers and working professionals who want to build strong technical and functional knowledge in Duck Creek technologies. The Advanced Duck Creek Course covers core concepts, integrations, configuration, testing, and implementation processes required in real-time projects. This comprehensive Duck Creek Professional Certification training helps learners prepare for industry-recognized credentials and improves career opportunities in the insurance IT sector. Our Duck Creek Certification Course also includes interview preparation, resume guidance, and practical assignments to enhance professional skills and job readiness.
+overview: |-
+  Our Duck Creek Online Training program is designed to help learners gain practical expertise in insurance software solutions used by leading global companies. As a trusted Duck Creek Training Institute in Hyderabad, we provide real-time project exposure, expert-led sessions, and hands-on practice in policy, billing, and claims modules. The course structure is suitable for freshers and working professionals who want to build strong technical and functional knowledge in Duck Creek technologies.
+
+  The Advanced Duck Creek Course covers core concepts, integrations, configuration, testing, and implementation processes required in real-time projects. This comprehensive Duck Creek Professional Certification training helps learners prepare for industry-recognized credentials and improves career opportunities in the insurance IT sector. Our Duck Creek Certification Course also includes interview preparation, resume guidance, and practical assignments to enhance professional skills and job readiness.
 aboutCourse: |-
   This Duck Creek Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
 
   Throughout this course, you will explore the essential components, configuration strategies, and best practices for deploying robust applications. The curriculum is meticulously crafted to empower you with the skills needed to drive digital transformation and optimize business workflows.
 objectives:
-  - item: Our Duck Creek Online Training helps learners understand insurance application development, configuration, and implementation concepts through practical sessions. The Duck Creek Online Certification Program is designed to improve technical skills and prepare students for real-time industry requirements and certification success.
-  - item: The Duck Creek Job Oriented Course focuses on hands-on learning with assignments, case studies, and live implementations. This Duck Creek Course with Real-Time Projects enables students to gain practical exposure to policy administration workflows, integrations, and business process management used in insurance companies.
-  - item: Our Duck Creek Course with Internship provides industry experience through guided project work and mentor support. The training includes practical exposure to application configuration, testing, deployment, and reporting concepts to help learners become industry-ready professionals.
-  - item: The Duck Creek Policy Administration Training included in our Duck Creek Certification Online program covers policy lifecycle management, billing, claims, and underwriting basics. This intensive Duck Creek Online Bootcamp also offers interview preparation, resume building, and placement guidance for career growth.
+  - Our Duck Creek Online Training helps learners understand insurance application development, configuration, and implementation concepts through practical sessions. The Duck Creek Online Certification Program is designed to improve technical skills and prepare students for real-time industry requirements and certification success.
+  - The Duck Creek Job Oriented Course focuses on hands-on learning with assignments, case studies, and live implementations. This Duck Creek Course with Real-Time Projects enables students to gain practical exposure to policy administration workflows, integrations, and business process management used in insurance companies.
+  - Our Duck Creek Course with Internship provides industry experience through guided project work and mentor support. The training includes practical exposure to application configuration, testing, deployment, and reporting concepts to help learners become industry-ready professionals.
+  - The Duck Creek Policy Administration Training included in our Duck Creek Certification Online program covers policy lifecycle management, billing, claims, and underwriting basics. This intensive Duck Creek Online Bootcamp also offers interview preparation, resume building, and placement guidance for career growth.
 whyChoose:
   - title: Why Choose Ask4Trainings?
-    description: Our Duck Creek Online Training is designed to provide industry-focused learning with practical implementation knowledge and real-time exposure. The Duck Creek Master Program helps learners gain expertise in policy administration, billing, claims, integrations, and insurance workflows used by global organizations. Through our Duck Creek Online Learning Program, students receive flexible learning schedules, expert trainer support, and access to live sessions that improve both technical and functional skills for real-world project environments. We provide Duck Creek Training with Hands-On Projects to ensure learners gain practical experience through assignments, case studies, and live project scenarios. Our Duck Creek Cloud Insurance Platform Course and Duck Creek Fundamentals and Advanced Course cover beginner to advanced concepts in a structured format. With interactive Duck Creek Online Classes, learners benefit from personalized guidance, interview preparation, certification support, and placement assistance to build successful careers in the insurance technology industry.
+    description: |-
+      Our Duck Creek Online Training is designed to provide industry-focused learning with practical implementation knowledge and real-time exposure. The Duck Creek Master Program helps learners gain expertise in policy administration, billing, claims, integrations, and insurance workflows used by global organizations. Through our Duck Creek Online Learning Program, students receive flexible learning schedules, expert trainer support, and access to live sessions that improve both technical and functional skills for real-world project environments.
+
+      We provide Duck Creek Training with Hands-On Projects to ensure learners gain practical experience through assignments, case studies, and live project scenarios. Our Duck Creek Cloud Insurance Platform Course and Duck Creek Fundamentals and Advanced Course cover beginner to advanced concepts in a structured format. With interactive Duck Creek Online Classes, learners benefit from personalized guidance, interview preparation, certification support, and placement assistance to build successful careers in the insurance technology industry.
 certifications:
   title: Duck Creek Training Certified Professional
   description: Earn verified credentials upon successful completion of the capstone project and practical lab assessments, validating your expertise to top employers.
@@ -136,15 +175,24 @@ thumbnail: ''
 courseImage: ''
 whyMaster:
   title: Why Master Duck Creek Online Training?
-  description: Our Duck Creek Online Training is designed to provide complete knowledge of insurance software applications with practical learning methods. This Duck Creek Policy Administration Course helps learners understand policy lifecycle management, billing, claims processing, and real-time business workflows used in the insurance industry. The Duck Creek Course for Beginners is suitable for freshers and IT professionals who want to enter the insurance technology domain. This Duck Creek Course with Placement includes live projects, expert mentoring, interview preparation, and career support to help learners gain industry-ready skills and better job opportunities.
+  description: |-
+    Our Duck Creek Online Training is designed to provide complete knowledge of insurance software applications with practical learning methods. This Duck Creek Policy Administration Course helps learners understand policy lifecycle management, billing, claims processing, and real-time business workflows used in the insurance industry.
+
+    The Duck Creek Course for Beginners is suitable for freshers and IT professionals who want to enter the insurance technology domain. This Duck Creek Course with Placement includes live projects, expert mentoring, interview preparation, and career support to help learners gain industry-ready skills and better job opportunities.
   pillars:
     - title: Mentor
       description: Expert Duck Creek Online Training with guidance support.
     - title: Project
       description: Real-time Duck Creek projects for practical exposure.
     - title: curriculum
-      description: Updated Duck Creek curriculum aligned with industry. Career-focused training for growth in the IT industry.
+      description: |-
+        Updated Duck Creek curriculum aligned with industry.
+
+        Career-focused training for growth in the IT industry.
     - title: Certification
-      description: Complete Duck Creek certification preparation. Dedicated placement support for top Duck Creek jobs.
+      description: |-
+        Complete Duck Creek certification preparation.
+
+        Dedicated placement support for top Duck Creek jobs.
 ---
 This is the canonical course page for Duck Creek Training. Start your learning journey today with Ask 4 Trainings.
