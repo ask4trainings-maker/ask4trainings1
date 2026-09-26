@@ -122,10 +122,7 @@ for (const file of courseFiles) {
         continue;
       }
       
-      if (/(faq'?s|frequently asked questions)/i.test(text)) {
-        currentSection = 'faqs';
-        continue;
-      }
+
       
       if (/(register now|your name|your email)/i.test(text)) {
         currentSection = 'register';
@@ -273,26 +270,6 @@ for (const file of courseFiles) {
         } else if (text) {
            currentModule.topics.push(text);
         }
-      } else if (currentSection === 'faqs') {
-        let question = "";
-        let answer = "";
-        const strongEl = $el.find('strong');
-        if (strongEl.length > 0) {
-           question = cleanText(strongEl.text()).replace(/^Q\d*\.?\s*:?\s*/i, '').trim();
-           // Get text of p without the strong tag
-           $el.find('strong').remove();
-           answer = cleanText($el.text()).trim();
-        } else {
-           const qIndex = text.indexOf('?');
-           if (qIndex !== -1) {
-             question = text.substring(0, qIndex + 1).trim();
-             answer = text.substring(qIndex + 1).trim();
-           }
-        }
-        
-        if (question.length > 5 && answer.length > 10) {
-           faqs.push({ question, answer });
-        }
       }
     }
     
@@ -366,15 +343,6 @@ for (const file of courseFiles) {
         }
       }
     }
-    
-    // Fallback accordion extraction for faqs
-    if (tagName === 'div' && currentSection === 'faqs' && ($el.hasClass('elementor-accordion-item') || $el.hasClass('elementor-toggle-item') || $el.hasClass('elementskit-card'))) {
-       const tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header').text());
-       const tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body').text());
-       if (tTitle && tContent && tTitle.length > 5 && tContent.length > 10) {
-         faqs.push({ question: tTitle, answer: tContent });
-       }
-    }
   }
   
   if (currentModule) modules.push(currentModule);
@@ -439,6 +407,51 @@ for (const file of courseFiles) {
       title: "Industry Recognized Certification",
       description: certification.description.trim()
     };
+  }
+  
+  faqs = [];
+  const faqHeading = $('h2, h3').filter((_, el) => /faq'?s|frequently\s+asked/i.test($(el).text())).first();
+  if (faqHeading.length > 0) {
+    let currNode = faqHeading.next();
+    while (currNode.length > 0) {
+      const nodeText = cleanText(currNode.text());
+      const tagName = currNode.prop('tagName')?.toLowerCase();
+      
+      if (tagName === 'h2' || /(need\s+demo|let'?s\s+connect|enroll\s+now|related\s+courses)/i.test(nodeText)) {
+        break;
+      }
+      
+      if (tagName === 'p' || tagName === 'div') {
+        const rawText = nodeText.replace(/\s+/g, ' ').trim();
+        if (rawText.length >= 25) {
+          const strongTag = currNode.find('strong, b').first();
+          let question = '';
+          let answer = '';
+          
+          if (strongTag.length && rawText.startsWith(cleanText(strongTag.text()).trim())) {
+            question = cleanText(strongTag.text()).trim();
+            answer = rawText.slice(question.length).trim();
+          }
+          
+          if (!question || !answer) {
+            const qMarkIndex = rawText.indexOf('?');
+            if (qMarkIndex !== -1 && qMarkIndex < 160) {
+              question = rawText.slice(0, qMarkIndex + 1).trim();
+              answer = rawText.slice(qMarkIndex + 1).trim();
+            }
+          }
+          
+          question = question.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
+          answer = answer.replace(/^(?:A\d*[:.]?\s*|Ans[:.]?\s*|[-–—:]\s*)/i, '').trim();
+          
+          if (question.length >= 8 && answer.length >= 15) {
+            faqs.push({ question, answer });
+          }
+        }
+      }
+      
+      currNode = currNode.next();
+    }
   }
   
   if (faqs.length > 0) {

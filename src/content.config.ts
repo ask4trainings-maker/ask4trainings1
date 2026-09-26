@@ -223,7 +223,7 @@ const courses = defineCollection({
         question: z.string(),
         answer: z.string(),
       })
-    ).default([]),
+    ).optional().default([]),
 
     // ─── Pricing ────────────────────────────────────────────────────────────
 
