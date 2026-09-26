@@ -26,29 +26,113 @@ batchInfo:
   duration: 45-60 Hrs
   mode: Live Interactive Online + Lab Sandbox
   startDate: Starting This Weekend
+syllabus:
+  - moduleTitle: 'Module 1: Introduction to Dynamics 365 & Architecture'
+    module: 'Module 1: Introduction to Dynamics 365 & Architecture'
+    topics:
+      - Overview of Microsoft Dynamics 365 CE / CRM platform
+      - 'Dynamics 365 architecture, deployment models (Online vs. On-Premises)'
+      - >-
+        Customer Engagement modules: Sales, Customer Service, Marketing, Field
+        Service
+      - Navigating the Unified Interface and model-driven apps
+      - Dataverse (Common Data Service) fundamentals
+  - moduleTitle: 'Module 2: Security Modeling & Business Units'
+    module: 'Module 2: Security Modeling & Business Units'
+    topics:
+      - 'Security roles, privileges, and access levels'
+      - 'Business units, teams, and user management'
+      - Field-level security and column-level access
+      - Hierarchy security models
+      - Sharing records and cascade behaviors
+  - moduleTitle: 'Module 3: Dataverse Entity Configuration & Relationships'
+    module: 'Module 3: Dataverse Entity Configuration & Relationships'
+    topics:
+      - Standard vs. custom tables and column types
+      - '1:N, N:N, and self-referential relationships'
+      - 'Views, forms, dashboards, and charts customization'
+      - Business process flows and stage gating
+      - 'Data import, export, and bulk delete jobs'
+  - moduleTitle: 'Module 4: Business Rules, Workflows & Power Automate'
+    module: 'Module 4: Business Rules, Workflows & Power Automate'
+    topics:
+      - Business rules for client-side and server-side logic
+      - Classic workflows and real-time workflows
+      - Power Automate cloud flows triggered from Dataverse
+      - Approval flows and adaptive cards
+      - 'SLA, entitlements, and routing rules in Customer Service'
+  - moduleTitle: 'Module 5: Client-Side Scripting using JavaScript & Web Resources'
+    module: 'Module 5: Client-Side Scripting using JavaScript & Web Resources'
+    topics:
+      - Xrm.Page vs. Xrm.WebApi model-driven app SDK
+      - 'Form event handlers: OnLoad, OnChange, OnSave'
+      - Ribbon/command bar customization with RibbonWorkbench
+      - HTML and JS web resources deployment
+      - PCF (Power Apps Component Framework) custom controls
+  - moduleTitle: >-
+      Module 6: Server-Side Customization (C# Plugins & Custom Workflow
+      Activities)
+    module: >-
+      Module 6: Server-Side Customization (C# Plugins & Custom Workflow
+      Activities)
+    topics:
+      - >-
+        Plugin architecture: pre-validation, pre-operation, post-operation
+        stages
+      - IOrganizationService and ITracingService
+      - Synchronous vs. asynchronous plugin registration
+      - Custom workflow activities and workflow assemblies
+      - Early-bound vs. late-bound entity programming
+      - Plugin Profiler and sandbox isolation debugging
+  - moduleTitle: 'Module 7: Integration with Azure, Web APIs & Power Platform'
+    module: 'Module 7: Integration with Azure, Web APIs & Power Platform'
+    topics:
+      - Dynamics 365 Web API (OData) for CRUD operations
+      - Azure Service Bus and Azure Functions integration
+      - Power Apps canvas apps embedded in Dynamics 365
+      - Power BI dashboards in model-driven apps
+      - Virtual entities and external data sources
+      - Dataverse connectors and custom connectors in Power Platform
 faqs:
-  - question: Need Demo session? Let’s Connect
-    answer: ''
+  - question: What prerequisites are required for this Dynamics 365 CRM course?
+    answer: >-
+      A basic understanding of CRM concepts and familiarity with Microsoft
+      Office 365 is recommended. For the technical customization modules, prior
+      exposure to C# or any object-oriented language will be helpful, though we
+      cover necessary fundamentals in the early modules.
+  - question: How long will I have access to the sandbox labs?
+    answer: >-
+      You will have 24/7 access to our Dynamics 365 cloud sandbox environment
+      for the full duration of the course plus an additional 3 months
+      post-completion, so you can continue practising real-world scenarios after
+      training ends.
+  - question: What are the batch timings and training format?
+    answer: >-
+      We offer both weekend and weekday batches conducted as live,
+      instructor-led online sessions. All sessions are recorded and made
+      available for replay. Weekend batches run Saturday–Sunday; weekday batches
+      run on flexible morning and evening schedules to accommodate working
+      professionals.
+  - question: Do you provide certification and placement support?
+    answer: >-
+      Yes. Our curriculum is aligned with the MB-910 (Fundamentals), MB-210
+      (Sales), and MB-230 (Customer Service) Microsoft certification objectives.
+      We provide mock exams, study guides, resume preparation, and dedicated
+      interview coaching sessions. Our placement team connects you with partner
+      companies actively hiring Dynamics 365 consultants.
 seo:
-  metaTitle: '[object Object] | Ask 4 Trainings'
+  metaTitle: Microsoft Dynamics 365 CRM Online Training | Live Project Training
   metaDescription: >-
-    A Microsoft Dynamics 365 CRM Online Training in Hyderabad program helps
-    learners build skills in customer relationship management, sales, customer
-    service,...
+    Master Microsoft Dynamics 365 CRM with hands-on sandbox labs. Learn Sales,
+    Customer Service, Power Apps, Dataverse, and plugin customization with
+    dedicated placement support.
 overview: >-
-  A Microsoft Dynamics 365 CRM Online Training in Hyderabad program helps
-  learners build skills in customer relationship management, sales, customer
-  service, marketing, and business process automation. The course introduces
-  Dynamics 365 Customer Engagement concepts, CRM customization, workflows,
-  dashboards, data management, security roles, and real-time business scenarios.
-  Learners can develop technical and functional knowledge needed to work with
-  CRM solutions and improve customer experiences. A Microsoft Dynamics 365 CRM
-  Certification can validate your knowledge and strengthen your profile when
-  pursuing CRM opportunities. With exercises and learning, a Dynamics 365 CRM
-  Course with Placement can help beginners and professionals prepare for
-  interviews and explore roles such as CRM Consultant, Functional Consultant,
-  CRM Developer, and Dynamics 365 Administrator while building for career
-  growth.
+  Microsoft Dynamics 365 CRM (Customer Engagement) is one of the most widely
+  deployed enterprise CRM platforms globally, powering Sales, Marketing, and
+  Customer Service operations across Fortune 500 companies. This course delivers
+  a comprehensive, hands-on curriculum covering the full Dynamics 365 CE stack —
+  from core platform architecture and Dataverse configuration to advanced plugin
+  development, Power Platform integration, and Azure connectivity.
 aboutCourse: >-
   This training programme is designed for functional consultants, technical
   developers, and business analysts who want to build production-ready skills on
@@ -71,39 +155,30 @@ objectives:
   - Connect Dynamics 365 to Azure services via Service Bus and Azure Functions
   - Prepare for and pass Microsoft MB-210 / MB-230 certification exams
 benefits:
-  basicKnowledge: []
+  basicKnowledge:
+    - >-
+      Strong understanding of CRM business processes and customer lifecycle
+      management.
+    - Familiarity with relational data concepts and Microsoft 365 ecosystem.
+    - Basic awareness of cloud SaaS platforms and enterprise software workflows.
   techSkills:
-    - item: High Demand
-    - item: Better Salary
-    - item: Global Roles
-    - item: Fast Promotion
-    - item: Skill Upgrade
-    - item: Industry Demand
-    - item: Career Switch
-    - item: Role Expansion
-    - item: Leadership Path
-    - item: Job Security
-    - item: Live Projects
-    - item: Hands Practice
-    - item: Case Studies
-    - item: Tool Usage
-    - item: Workflow Setup
-    - item: CRM Modules
-    - item: Data Handling
-    - item: System Config
-    - item: Real Scenarios
-    - item: Problem Solving
-    - item: Resume Build
-    - item: Mock Interviews
-    - item: Job Referrals
-    - item: HR Support
-    - item: Profile Review
-    - item: Interview Tips
-    - item: Career Guidance
-    - item: Job Alerts
-    - item: Placement Help
-    - item: Hiring Support
-  careerInterests: []
+    - >-
+      Advanced Dataverse customisation, plugin development, and Power Platform
+      integration.
+    - >-
+      Expertise in Dynamics 365 security models and enterprise deployment
+      architecture.
+    - >-
+      Hands-on proficiency with Web API, Azure integration, and CI/CD for D365
+      solutions.
+  careerInterests:
+    - Accelerate your path to becoming a Microsoft Dynamics 365 CRM Consultant.
+    - >-
+      Unlock high-demand Dynamics 365 Technical Developer and Solution Architect
+      roles.
+    - >-
+      Enhance your marketability with globally recognised Microsoft
+      certifications.
 whyChoose:
   - title: Enterprise Sandbox Labs
     description: >-
@@ -121,23 +196,40 @@ whyChoose:
     description: >-
       Dedicated career support including resume reviews, mock interviews, and
       direct introductions to our hiring partner network.
+eligibility:
+  - >-
+    IT professionals, ERP/CRM consultants, or developers transitioning to the
+    Microsoft Dynamics 365 stack
+  - >-
+    Business analysts seeking functional expertise in Dynamics 365 Sales or
+    Customer Service
+  - >-
+    Fresh graduates with a background in Computer Science, Information
+    Technology, or Business Management
+  - >-
+    Microsoft 365 administrators wanting to extend their skills into Dynamics
+    365 CRM
 jobRoles:
-  - role: 10. Microsoft Dynamics 365 CRM Career Growth
+  - role: Dynamics 365 CRM Functional Consultant
     description: >-
-      A career in CRM can offer exciting opportunities for professionals with
-      the right technical and business skills. Microsoft Dynamics 365 CRM Online
-      Training in Hyderabad helps learners understand CRM concepts,
-      customization, sales, customer service, and real-time business processes.
-      A structured Microsoft Dynamics 365 CRM with placement assistance program
-      can also support learners with interview preparation, resume guidance, and
-      career opportunities. Choosing a Microsoft Dynamics 365 CRM course with
-      internship provides practical exposure through real-world projects and
-      workplace scenarios. Learners can explore roles such as Dynamics 365 CRM
-      Developer, CRM Consultant, Functional Consultant, CRM Administrator, and
-      Business Analyst. With hands-on practice, certification preparation, and
-      continuous skill development, professionals can build strong expertise and
-      pursue rewarding career opportunities in the growing Microsoft Dynamics
-      365 CRM ecosystem.
+      Configure and implement D365 CE modules, gather requirements, and lead
+      user training.
+    salaryEstimate: '$90,000 – $130,000 / year'
+  - role: Dynamics 365 CRM Technical Developer
+    description: >-
+      Build custom plugins, JavaScript customisations, PCF controls, and Web API
+      integrations.
+    salaryEstimate: '$100,000 – $145,000 / year'
+  - role: Power Platform Developer
+    description: >-
+      Design canvas apps, model-driven apps, and Power Automate flows integrated
+      with Dataverse.
+    salaryEstimate: '$95,000 – $135,000 / year'
+  - role: Dynamics 365 Solution Architect
+    description: >-
+      Own end-to-end architecture decisions, integration patterns, and
+      deployment strategy.
+    salaryEstimate: '$130,000 – $175,000 / year'
 certifications:
   title: Microsoft Dynamics 365 Certification Preparation
   description: >-
@@ -157,63 +249,80 @@ relatedCourseSlugs:
 publishDate: '2026-09-24T00:00:00.000Z'
 shortCode: D365 CRM
 modules:
-  - title: 4. Dynamics 365 CE CRM Technical Skills
-    topics: []
-  - title: Need Demo session? Let’s Connect
-    topics: []
-  - title: 5. Dynamics 365 CRM Customization Training
-    topics: []
-  - title: 6. Dynamics 365 Sales and Customer Service
-    topics: []
-  - title: 7. Microsoft Dynamics 365 CRM Real Projects
-    topics: []
-  - title: 8. Dynamics 365 CRM Certification Guide
-    topics: []
-  - title: Need Demo session? Let’s Connect
-    topics: []
+  - title: 'Module 1: Introduction to Dynamics 365 & Architecture'
+    topics:
+      - Overview of Microsoft Dynamics 365 CE / CRM platform
+      - 'Dynamics 365 architecture, deployment models (Online vs. On-Premises)'
+      - >-
+        Customer Engagement modules: Sales, Customer Service, Marketing, Field
+        Service
+      - Navigating the Unified Interface and model-driven apps
+      - Dataverse (Common Data Service) fundamentals
+  - title: 'Module 2: Security Modeling & Business Units'
+    topics:
+      - 'Security roles, privileges, and access levels'
+      - 'Business units, teams, and user management'
+      - Field-level security and column-level access
+      - Hierarchy security models
+      - Sharing records and cascade behaviors
+  - title: 'Module 3: Dataverse Entity Configuration & Relationships'
+    topics:
+      - Standard vs. custom tables and column types
+      - '1:N, N:N, and self-referential relationships'
+      - 'Views, forms, dashboards, and charts customization'
+      - Business process flows and stage gating
+      - 'Data import, export, and bulk delete jobs'
+  - title: 'Module 4: Business Rules, Workflows & Power Automate'
+    topics:
+      - Business rules for client-side and server-side logic
+      - Classic workflows and real-time workflows
+      - Power Automate cloud flows triggered from Dataverse
+      - Approval flows and adaptive cards
+      - 'SLA, entitlements, and routing rules in Customer Service'
+  - title: 'Module 5: Client-Side Scripting using JavaScript & Web Resources'
+    topics:
+      - Xrm.Page vs. Xrm.WebApi model-driven app SDK
+      - 'Form event handlers: OnLoad, OnChange, OnSave'
+      - Ribbon/command bar customization with RibbonWorkbench
+      - HTML and JS web resources deployment
+      - PCF (Power Apps Component Framework) custom controls
+  - title: >-
+      Module 6: Server-Side Customization (C# Plugins & Custom Workflow
+      Activities)
+    topics:
+      - >-
+        Plugin architecture: pre-validation, pre-operation, post-operation
+        stages
+      - IOrganizationService and ITracingService
+      - Synchronous vs. asynchronous plugin registration
+      - Custom workflow activities and workflow assemblies
+      - Early-bound vs. late-bound entity programming
+      - Plugin Profiler and sandbox isolation debugging
+  - title: 'Module 7: Integration with Azure, Web APIs & Power Platform'
+    topics:
+      - Dynamics 365 Web API (OData) for CRUD operations
+      - Azure Service Bus and Azure Functions integration
+      - Power Apps canvas apps embedded in Dynamics 365
+      - Power BI dashboards in model-driven apps
+      - Virtual entities and external data sources
+      - Dataverse connectors and custom connectors in Power Platform
 whoShouldEnroll:
-  - title: Basic Knowledge
+  - title: 'IT professionals, ERP/CRM consultants, or developers transit'
     description: >-
-      Candidates with basic understanding of computers and business processes
-      can easily start Microsoft Dynamics 365 CRM Online Training. Microsoft
-      Dynamics D365 CRM step by step for beginners, making it simple to grasp
-      modules, workflows, and real-time applications effectively.
-  - title: Graduate Degree
+      IT professionals, ERP/CRM consultants, or developers transitioning to the
+      Microsoft Dynamics 365 stack
+  - title: Business analysts seeking functional expertise in Dynamics 3
     description: >-
-      A degree in any field is suitable to enroll in Microsoft Dynamics D365 CRM
-      functional training online. Graduates aiming for IT or business roles can
-      benefit from Microsoft Dynamics D365 CRM certification training, gaining
-      the knowledge required to build a strong career in CRM platforms.
-  - title: IT Interest
+      Business analysts seeking functional expertise in Dynamics 365 Sales or
+      Customer Service
+  - title: 'Fresh graduates with a background in Computer Science, Infor'
     description: >-
-      Individuals interested in technology can excel in Microsoft Dynamics D365
-      CRM with real time projects. With hands-on exposure and practical
-      learning, this course enhances skills and prepares learners for real-world
-      implementation using Microsoft Dynamics 365 CRM Online Training.
-  - title: Career Focus
+      Fresh graduates with a background in Computer Science, Information
+      Technology, or Business Management
+  - title: Microsoft 365 administrators wanting to extend their skills
     description: >-
-      Professionals looking for career growth can join Microsoft Dynamics D365
-      CRM course with internship to gain industry experience. With Microsoft
-      Dynamics D365 CRM with placement assistance, learners receive job support
-      and can enter the CRM job market confidently.
-  - title: Microsoft Dynamics 365 CRM Online Training Certification
-    description: ''
-  - title: Microsoft Dynamics 365 CRM Certification
-    description: >-
-      Earning a Microsoft Dynamics 365 CRM Online Training certification
-      validates your expertise and boosts career credibility in the CRM domain.
-      With Microsoft Dynamics D365 CRM certification training, you gain
-      industry-recognized skills. Microsoft Dynamics D365 CRM professional
-      certificate, helps you stand out and proves your ability to handle
-      real-time CRM implementations.
-  - title: Career-Focused Microsoft Dynamics 365 CRM
-    description: >-
-      Certification strengthens your profile by showcasing practical knowledge
-      gained through Microsoft Dynamics D365 CRM course with internship and
-      hands-on learning. With Microsoft Dynamics D365 CRM functional training
-      online and exposure to Microsoft Dynamics D365 CRM with real time
-      projects, you become job-ready and confident to take on roles like CRM
-      Consultant or Administrator.
+      Microsoft 365 administrators wanting to extend their skills into Dynamics
+      365 CRM
 trainer:
   title: Learn from Practising Dynamics 365 Architects
   description: >-
