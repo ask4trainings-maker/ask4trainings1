@@ -1,18 +1,19 @@
 # Dependency directories
 node_modules/
 node_modules.fedora-backup/
+
+# Temporary, agent, and unrelated directories
+.agent/
+.agents/
+.fallow/
+.opencode/
+hopeinfotech/
 reports/
 scratch/
-scripts/
 
 # Astro output directories
 dist/
 .astro/
-.opencode/
-#Folders
-hopeinfotech
-.agent
-.fallow
 # Environment Variables
 .env
 .env.*
