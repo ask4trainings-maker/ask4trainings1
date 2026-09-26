@@ -20,13 +20,36 @@ const { certification, courseTitle } = Astro.props;
         </div>
       </div>
       <div class="lg:col-span-5 flex justify-center">
-        <!-- Standardized Certificate Showcase Mockup Card -->
-        <div class="rounded-2xl border border-slate-200 bg-linear-to-b from-slate-50 to-white p-6 shadow-sm text-center max-w-md w-full">
-          <div class="h-12 w-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto mb-4 font-bold text-xl">
-            🎓
+        <div class="relative w-full max-w-lg lg:max-w-none group">
+          <!-- Subtle Glow Backdrop -->
+          <div class="absolute -inset-1.5 rounded-2xl bg-linear-to-r from-emerald-500/20 via-teal-500/10 to-emerald-600/20 blur-lg opacity-70 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+          <!-- Certificate Frame -->
+          <div class="relative overflow-hidden rounded-2xl border border-slate-800/90 bg-[#06090e] shadow-2xl transition-transform duration-300 group-hover:scale-[1.01]">
+            <img
+              src="/assets/certificate.svg"
+              alt={`Official Certificate of Completion for ${courseTitle}`}
+              class="w-full h-auto block select-none"
+              loading="lazy"
+              decoding="async"
+            />
+
+            <!-- Verification Footer Pill -->
+            <div class="flex items-center justify-between px-4 py-2.5 bg-slate-950/90 border-t border-slate-800/80 text-xs text-slate-400">
+              <span class="inline-flex items-center gap-1.5 font-medium text-emerald-400">
+                <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Verified Enterprise Credential
+              </span>
+              <a
+                href="/assets/certificate.svg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-slate-400 hover:text-white transition-colors underline-offset-2 hover:underline"
+              >
+                View Full Size ↗
+              </a>
+            </div>
           </div>
-          <h3 class="font-bold text-slate-900 text-base">Certificate of Completion</h3>
-          <p class="text-xs text-slate-500 mt-1">Accredited Enterprise Credential from Ask4Trainings</p>
         </div>
       </div>
     </div>
