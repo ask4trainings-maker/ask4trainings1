@@ -3,25 +3,29 @@ interface Props {
   faqs?: Array<{ question: string; answer: string }>;
   courseTitle: string;
 }
+
 const { faqs = [], courseTitle } = Astro.props;
 ---
+
 {faqs && faqs.length > 0 && (
-  <section id="faqs" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <section id="faqs" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-100">
     <div class="text-center max-w-3xl mx-auto mb-10">
-      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
+      <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Got Questions?</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
         FAQ'S on {courseTitle}
       </h2>
       <p class="text-sm text-slate-500 mt-2">
-        Got questions? We have got answers.
+        Find answers to common questions about prerequisites, schedules, and certification.
       </p>
     </div>
+
     <div class="space-y-4">
       {faqs.map((faq) => (
-        <details class="group rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-all open:border-emerald-500/50">
+        <details class="group rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-all duration-200 hover:border-slate-300 open:border-emerald-500/50 open:shadow-sm">
           <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none select-none text-sm sm:text-base">
-            <span>{faq.question}</span>
-            <span class="ml-4 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition-transform group-open:rotate-180 group-open:bg-emerald-50 group-open:text-emerald-600">
-              ▾
+            <span class="pr-4 leading-snug">{faq.question}</span>
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition-transform duration-200 group-open:rotate-180 group-open:bg-emerald-50 group-open:text-emerald-600 text-xs">
+              ▼
             </span>
           </summary>
           <div class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed pt-3 border-t border-slate-100">
