@@ -195,8 +195,16 @@ const courses = defineCollection({
       badges: z.array(z.string()).default([]),
     }).default({ title: 'Industry-Recognized Certification', description: 'Earn verified credentials upon capstone project evaluation.', badges: [] }),
 
-    // certification — CMS simple string field (new courses)
-    certification: z.string().optional(),
+    // certification — CMS simple string field or object
+    certification: z.union([
+      z.string(),
+      z.object({
+        title: z.string().optional(),
+        description: z.string().optional(),
+      })
+    ]).optional(),
+
+    whyChooseCourse: z.string().optional(),
 
     // ─── Section 10: Career Opportunities / Job Roles ───────────────────────
     jobRoles: z.array(

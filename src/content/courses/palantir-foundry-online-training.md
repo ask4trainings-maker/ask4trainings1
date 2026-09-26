@@ -114,18 +114,6 @@ objectives:
   - Build professional expertise with Palantir Foundry Developer Training by learning application development, data transformation, workflow automation, and analytics. The Palantir Foundry Course with Placement prepares learners with practical experience, interview skills, and career support.
   - Master enterprise-level data management through Palantir Foundry Online Training with live instructor-led sessions, hands-on exercises, and real-world case studies. Recognized as the Best Palantir Foundry Training in Hyderabad, the program helps learners become industry-ready professionals.
   - Advance your technical knowledge with the Advanced Palantir Foundry Course, covering scalable data solutions, workflow optimization, and analytics. Earn a Palantir Foundry Certification with Placement Support while receiving resume guidance, mock interviews, and placement assistance.
-whyChoose:
-  - title: Why Choose Ask4Trainings?
-    description: |-
-      Choose our Palantir Foundry Online Training to gain practical expertise through live instructor-led sessions, hands-on labs, and real-time industry projects. Our experienced trainers provide personalized guidance, helping you master data integration, application development, and workflow automation. Recognized for delivering the Best Palantir Foundry Training in Hyderabad, we focus on building job-ready skills that employers value.
-
-      Our Advanced Palantir Foundry Course combines an industry-focused curriculum with certification guidance, mock interviews, resume building, and career mentoring. Learners receive practical exposure by working on enterprise use cases while developing confidence for technical interviews. With Palantir Foundry Certification with Placement Support, you gain the knowledge and assistance needed to pursue rewarding career opportunities.
-certifications:
-  title: Palantir Foundry Training Certified Professional
-  description: Earn verified credentials upon successful completion of the capstone project and practical lab assessments, validating your expertise to top employers.
-  badges:
-    - Core Configuration Specialist
-    - Implementation Expert Badge
 navigationLocation: Navigation Bar > All Courses > Trending Course > Best Palantir Foundry Online Training
 modules:
   - title: 'Module 1: Introduction to Palantir Foundry'
@@ -157,12 +145,6 @@ whoShouldEnroll:
     description: Software developers, data engineers, and IT professionals can benefit from Palantir Foundry Developer Training. The Palantir Foundry Certification Course enhances technical expertise through hands-on exercises, real-time projects, and industry-relevant learning experiences.
   - title: Graduates
     description: Fresh graduates aiming for enterprise technology careers can join the Palantir Foundry Course with Placement. With Palantir Foundry Certification with Placement Support, learners receive career guidance, interview preparation, and practical exposure to improve employability.
-  - title: Palantir Foundry Certification
-    description: ''
-  - title: Industry-Recognized Certification
-    description: Complete our Palantir Foundry Online Training to gain practical knowledge of enterprise data integration, workflows, analytics, and application development. The Palantir Foundry Certification Course prepares you with hands-on projects, expert mentoring, and assessment-focused learning, helping you confidently validate your skills and improve your professional credibility in today's competitive job market.
-  - title: Career-Focused Certification Support
-    description: Our Palantir Foundry Online Certification Program is designed to strengthen your technical expertise while preparing you for real-world roles. Through the Palantir Foundry Certification with Placement Support, you receive resume building, mock interviews, career guidance, and placement assistance, enabling you to transition confidently into enterprise data and analytics careers.
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -188,10 +170,19 @@ whyMaster:
         Updated Palantir Foundry curriculum aligned with industry.
 
         Career-focused training for growth in the IT industry.
-    - title: Certification
-      description: |-
-        Complete Palantir Foundry certification preparation.
+whyChooseCourse: |-
+  Choose our Palantir Foundry Online Training to gain practical expertise through live instructor-led sessions, hands-on labs, and real-time industry projects. Our experienced trainers provide personalized guidance, helping you master data integration, application development, and workflow automation. Recognized for delivering the Best Palantir Foundry Training in Hyderabad, we focus on building job-ready skills that employers value.
 
-        Dedicated placement support for top Palantir Foundry jobs.
+  Our Advanced Palantir Foundry Course combines an industry-focused curriculum with certification guidance, mock interviews, resume building, and career mentoring. Learners receive practical exposure by working on enterprise use cases while developing confidence for technical interviews. With Palantir Foundry Certification with Placement Support, you gain the knowledge and assistance needed to pursue rewarding career opportunities.
+certification:
+  title: Industry Recognized Certification
+  description: |-
+    Complete Palantir Foundry certification preparation.
+
+    Dedicated placement support for top Palantir Foundry jobs.
+
+    Complete our Palantir Foundry Online Training to gain practical knowledge of enterprise data integration, workflows, analytics, and application development. The Palantir Foundry Certification Course prepares you with hands-on projects, expert mentoring, and assessment-focused learning, helping you confidently validate your skills and improve your professional credibility in today's competitive job market.
+
+    Our Palantir Foundry Online Certification Program is designed to strengthen your technical expertise while preparing you for real-world roles. Through the Palantir Foundry Certification with Placement Support, you receive resume building, mock interviews, career guidance, and placement assistance, enabling you to transition confidently into enterprise data and analytics careers.
 ---
 This is the canonical course page for Palantir Foundry Training. Start your learning journey today with Ask 4 Trainings.

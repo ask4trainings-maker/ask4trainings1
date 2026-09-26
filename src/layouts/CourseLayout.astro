@@ -102,6 +102,23 @@ const schemaGraph = {
   <CourseAbout aboutCourse={data.aboutCourse} courseTitle={data.title} category={data.category} whyMaster={data.whyMaster} />
   <CourseObjectives objectives={data.objectives} />
   <CourseBenefits benefits={data.benefits} />
+  
+  {data.whyChooseCourse && (
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 border-t border-slate-100">
+      <div class="max-w-3xl">
+        <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Course Value</span>
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-slate-900 mt-2 mb-4">
+          Why Choose {data.title}?
+        </h2>
+        <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+          {data.whyChooseCourse.split('\n\n').map((para: string) => (
+            <p>{para.trim()}</p>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+  
   <CourseWhyChoose whyChoose={data.whyChoose} />
   <CourseEligibility eligibility={data.whoShouldEnroll?.length ? data.whoShouldEnroll : data.eligibility} />
   <CourseCertifications certifications={data.certifications} />

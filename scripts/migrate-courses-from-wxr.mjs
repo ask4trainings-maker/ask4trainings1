@@ -103,8 +103,13 @@ for (const file of courseFiles) {
     
     // Header detection for sections
     if (/^h[1-6]$/.test(tagName)) {
-      if (/(job roles of)/i.test(text)) {
-        break; // Hard Stop Boundary
+      if (/(job roles|guidewire trainer|trainer|faq|certification)/i.test(text)) {
+        if (/(certification)/i.test(text)) {
+          currentSection = 'certification';
+          continue;
+        } else {
+          break; // Hard Stop Boundary
+        }
       }
       
       if (/(register now|your name|your email)/i.test(text)) {
@@ -148,17 +153,12 @@ for (const file of courseFiles) {
       }
       
       if (/(why choose.*?\?)/i.test(text)) {
-        currentSection = 'whychoose';
+        currentSection = 'whychoosecourse';
         continue;
       }
       
       if (/(eligibility criteria of)/i.test(text)) {
         currentSection = 'eligibility';
-        continue;
-      }
-      
-      if (/(certification preparation|certification program)/i.test(text)) {
-        currentSection = 'certification';
         continue;
       }
       
@@ -205,7 +205,7 @@ for (const file of courseFiles) {
         currentPillar.description += text + '\n\n';
       } else if (currentSection === 'benefits' && currentBenefit) {
         currentBenefit.description += text + '\n\n';
-      } else if (currentSection === 'whychoose') {
+      } else if (currentSection === 'whychoosecourse') {
         whyChoose += text + '\n\n';
       } else if (currentSection === 'eligibility' && currentProfile) {
         currentProfile.description += text + '\n\n';
@@ -293,21 +293,25 @@ for (const file of courseFiles) {
     }));
   }
   
-  // The user prompt asked to extract `whyChoose` explaining why learners choose Ask4Trainings.
-  // Schema for whyChoose expects `[{title, description}]`. I'll wrap the string into the first item.
+  // The user prompt asked to extract `whyChooseCourse` instead of replacing `whyChoose`.
   if (whyChoose.trim()) {
-    extracted.whyChoose = [{ title: "Why Choose Ask4Trainings?", description: whyChoose.trim() }];
+    extracted.whyChooseCourse = whyChoose.trim();
   }
   
   if (whoShouldEnroll.length > 0) {
-    extracted.whoShouldEnroll = whoShouldEnroll.map(p => ({ title: p.title, description: p.description.trim() }));
+    whoShouldEnroll = whoShouldEnroll.filter(item => 
+      !/certification/i.test(item.title) && 
+      !/certification/i.test(item.description?.slice(0, 30))
+    );
+    if (whoShouldEnroll.length > 0) {
+      extracted.whoShouldEnroll = whoShouldEnroll.map(p => ({ title: p.title, description: p.description.trim() }));
+    }
   }
   
   if (certification) {
-    extracted.certifications = {
-      title: certification.title,
-      description: certification.description.trim(),
-      badges: []
+    extracted.certification = {
+      title: "Industry Recognized Certification",
+      description: certification.description.trim()
     };
   }
   
@@ -333,7 +337,8 @@ for (const file of courseFiles) {
           }
         }
         
-        delete merged.certification; // Clean up wrong shape from previous run
+        delete merged.whyChoose; // Clean up wrong extraction from previous run
+        delete merged.certifications; // Clean up wrong extraction from previous run
         
         const newFrontmatterStr = yaml.dump(merged, { lineWidth: -1 });
         const newFileContent = mdContent.replace(/^---\n[\s\S]*?\n---/, `---\n${newFrontmatterStr}---`);

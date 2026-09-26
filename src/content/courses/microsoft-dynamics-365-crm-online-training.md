@@ -139,12 +139,6 @@ benefits:
       - Job Alerts
       - Placement Help
       - Hiring Support
-whyChoose:
-  - title: Why Choose Ask4Trainings?
-    description: |-
-      Choosing Microsoft Dynamics 365 CRM Online Training is a smart step for building a successful career in CRM and business applications. This program offers structured learning with Microsoft Dynamics D365 CRM step by step for beginners, making it easy to understand core concepts and advanced features. With Microsoft Dynamics 365 CRM functional training online, learners gain in-depth knowledge of modules like Sales, Customer Service, and Marketing. The course also includes Microsoft Dynamics 365 CRM certification training, helping you validate your skills and stand out in the competitive job market.
-
-      Another key reason to choose this program is the strong focus on practical learning and career support. Through Microsoft Dynamics D365 CRM with real time projects, you gain hands-on experience in real business scenarios and workflows. The Microsoft Dynamics 365 CRM course with internship ensures industry exposure, while Microsoft Dynamics 365 CRM with placement assistance helps you secure the right job with confidence. With expert trainers, flexible schedules, and job-oriented content, this training prepares you to excel in real-world CRM roles.
 eligibility:
   - IT professionals, ERP/CRM consultants, or developers transitioning to the Microsoft Dynamics 365 stack
   - Business analysts seeking functional expertise in Dynamics 365 Sales or Customer Service
@@ -163,13 +157,6 @@ jobRoles:
   - role: Dynamics 365 Solution Architect
     description: Own end-to-end architecture decisions, integration patterns, and deployment strategy.
     salaryEstimate: $130,000 – $175,000 / year
-certifications:
-  title: Microsoft Dynamics 365 Certification Preparation
-  description: Our curriculum aligns with multiple Microsoft Dynamics 365 certification paths. Earn verified credentials demonstrating your expertise in CRM configuration, customisation, and technical development.
-  badges:
-    - 'MB-910: Microsoft Dynamics 365 Fundamentals (CRM)'
-    - 'MB-210: Microsoft Dynamics 365 Sales Functional Consultant Associate'
-    - 'MB-230: Microsoft Dynamics 365 Customer Service Functional Consultant Associate'
 relatedCourseSlugs:
   - dynamics-365-ax-technical-training
   - microsoft-dynamics-365-finance-and-operations
@@ -237,12 +224,6 @@ whoShouldEnroll:
     description: Individuals interested in technology can excel in Microsoft Dynamics D365 CRM with real time projects. With hands-on exposure and practical learning, this course enhances skills and prepares learners for real-world implementation using Microsoft Dynamics 365 CRM Online Training.
   - title: Career Focus
     description: Professionals looking for career growth can join Microsoft Dynamics D365 CRM course with internship to gain industry experience. With Microsoft Dynamics D365 CRM with placement assistance, learners receive job support and can enter the CRM job market confidently.
-  - title: Microsoft Dynamics 365 CRM Online Training Certification
-    description: ''
-  - title: Microsoft Dynamics 365 CRM Certification
-    description: Earning a Microsoft Dynamics 365 CRM Online Training certification validates your expertise and boosts career credibility in the CRM domain. With Microsoft Dynamics D365 CRM certification training, you gain industry-recognized skills. Microsoft Dynamics D365 CRM professional certificate, helps you stand out and proves your ability to handle real-time CRM implementations.
-  - title: Career-Focused Microsoft Dynamics 365 CRM
-    description: Certification strengthens your profile by showcasing practical knowledge gained through Microsoft Dynamics D365 CRM course with internship and hands-on learning. With Microsoft Dynamics D365 CRM functional training online and exposure to Microsoft Dynamics D365 CRM with real time projects, you become job-ready and confident to take on roles like CRM Consultant or Administrator.
 trainer:
   title: Learn from Practising Dynamics 365 Architects
   description: Our instructors are active Microsoft Dynamics 365 practitioners and certified consultants with a minimum of 10 years of enterprise project experience across global implementations.
@@ -265,11 +246,28 @@ whyMaster:
         Updated MS D365 curriculum aligned with industry.
 
         Career-focused training for growth in the IT industry.
-    - title: Certification
-      description: |-
-        Complete MS D365 certification preparation.
+whyChooseCourse: |-
+  Choosing Microsoft Dynamics 365 CRM Online Training is a smart step for building a successful career in CRM and business applications. This program offers structured learning with Microsoft Dynamics D365 CRM step by step for beginners, making it easy to understand core concepts and advanced features. With Microsoft Dynamics 365 CRM functional training online, learners gain in-depth knowledge of modules like Sales, Customer Service, and Marketing. The course also includes Microsoft Dynamics 365 CRM certification training, helping you validate your skills and stand out in the competitive job market.
 
-        Dedicated placement support for top MS D365 jobs.
+  Another key reason to choose this program is the strong focus on practical learning and career support. Through Microsoft Dynamics D365 CRM with real time projects, you gain hands-on experience in real business scenarios and workflows. The Microsoft Dynamics 365 CRM course with internship ensures industry exposure, while Microsoft Dynamics 365 CRM with placement assistance helps you secure the right job with confidence. With expert trainers, flexible schedules, and job-oriented content, this training prepares you to excel in real-world CRM roles.
+certification:
+  title: Industry Recognized Certification
+  description: |-
+    Build in-demand skills with Microsoft Dynamics 365 Online Course designed for beginners and professionals. This comprehensive Microsoft Dynamics 365 Course Online Course covers Microsoft Dynamics 365 CRM Training, real-time projects, and practical use cases. Learn through expert-led sessions, gain hands-on experience and excel with Microsoft Dynamics 365 CRM Online Training.
+
+    40 Hours
+
+    Online Training
+
+    Reviews
+
+    Complete MS D365 certification preparation.
+
+    Dedicated placement support for top MS D365 jobs.
+
+    Earning a Microsoft Dynamics 365 CRM Online Training certification validates your expertise and boosts career credibility in the CRM domain. With Microsoft Dynamics D365 CRM certification training, you gain industry-recognized skills. Microsoft Dynamics D365 CRM professional certificate, helps you stand out and proves your ability to handle real-time CRM implementations.
+
+    Certification strengthens your profile by showcasing practical knowledge gained through Microsoft Dynamics D365 CRM course with internship and hands-on learning. With Microsoft Dynamics D365 CRM functional training online and exposure to Microsoft Dynamics D365 CRM with real time projects, you become job-ready and confident to take on roles like CRM Consultant or Administrator.
 ---
 ## Microsoft Dynamics 365 CRM Online Training
 
