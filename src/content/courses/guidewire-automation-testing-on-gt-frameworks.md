@@ -96,31 +96,28 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Tester in Guidewire Automation Testing
+  - role: Tester
     description: A Tester in Guidewire Automation Testing is responsible for validating insurance applications like PolicyCenter, ClaimCenter, and BillingCenter. They design and execute automated test cases using Guidewire GT framework and tools like Selenium. Testers identify defects, ensure system stability, and improve software quality. They also collaborate with developers and business analysts to understand requirements, making sure applications meet functional and performance standards in real-time environments.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Engineer
     description: An Engineer focuses on building and maintaining automation frameworks for Guidewire automation testing. They use the Guidewire GT framework along with programming skills to create reusable test scripts and optimize execution. Engineers ensure integration with CI/CD pipelines, enhance test coverage, and improve performance. Their role includes debugging issues, refining automation strategies, and implementing best practices to deliver efficient and scalable testing solutions.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Analyst
     description: An Analyst works closely with business teams to understand requirements and translate them into test scenarios for Guidewire QA automation. They analyze workflows in PolicyCenter, ClaimCenter, and BillingCenter, ensuring accurate validation through automation. Analysts focus on requirement gathering, test planning, and reporting insights. Their role is crucial in bridging the gap between business needs and technical implementation in automation testing projects.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Consultant provides expert guidance on implementing Guidewire automation frameworks and optimizing testing strategies. They help organizations adopt Guidewire GT framework, improve QA processes, and align testing with business goals. Consultants also train teams, recommend best practices, and ensure smooth project execution. Their expertise helps companies reduce testing time, improve quality, and achieve better ROI from automation investments.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Developer in Guidewire automation testing
     description: A Developer in Guidewire automation testing builds and enhances automation scripts using tools like Selenium and programming languages such as Java. They design robust frameworks using the Guidewire GT framework, integrate automation with development pipelines, and ensure smooth execution. Developers also troubleshoot issues, maintain code quality, and support continuous testing processes, enabling faster delivery of high-quality insurance applications.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Guidewire Automation Testing on GT Frameworks is a powerful approach to streamline quality assurance for insurance applications. This training focuses on Guidewire automation testing, Guidewire testing tutorial, and Guidewire GT framework concepts to help learners build scalable and efficient automation solutions. By integrating Guidewire Selenium testing and modern tools, professionals can execute faster test cycles and improve accuracy.
 

@@ -99,28 +99,19 @@ jobRoles:
   - role: Guidewire Rating Developer
     description: A Guidewire Rating Developer specializes in designing and configuring rating applications using Guidewire platforms. They create rating rules, implement pricing models, manage configurations, and support integration activities for insurance solutions. Skills developed through Guidewire Rating Online Training, Guidewire Rating Certification Program, and practical implementation projects help developers handle enterprise-level Guidewire requirements effectively.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Guidewire Rating Consultant
     description: A Guidewire Rating Consultant works with business teams to analyze requirements and deliver effective rating solutions. They support configuration, process improvements, workflow design, and implementation activities across insurance projects. Knowledge gained from Guidewire Rating Training with Real-Time Projects, Guidewire Rating Online Certification, and practical learning helps consultants provide valuable technical guidance.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Guidewire Rating Analyst evaluates insurance requirements and supports rating system implementation processes. They collaborate with developers, testers, and business teams to ensure accurate pricing workflows and business rule execution. Training through Guidewire Rating Job Oriented Course, Guidewire Rating Online Classes, and real-time scenarios prepares analysts for successful Guidewire opportunities.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Guidewire Rating Tester ensures application quality by validating rating features, testing configurations, and identifying system issues. They prepare test cases, execute validations, and maintain quality standards throughout implementation projects. Experience gained from Guidewire Rating Course with Placement, Guidewire Rating Online Training, and practical testing activities supports professional growth.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Guidewire Rating Architect develops technical strategies and
     description: A Guidewire Rating Architect develops technical strategies and designs scalable solutions for complex insurance implementations. They manage architecture decisions, integration planning, and platform optimization activities. Advanced skills from Guidewire Rating Online Bootcamp, Guidewire Rating Certification with Placement Support, and project experience enable architects to lead successful Guidewire solutions.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master the core concepts of Guidewire Rating Online Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

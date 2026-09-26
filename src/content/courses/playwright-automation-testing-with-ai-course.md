@@ -96,31 +96,16 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
-    description: A Tester role involves validating software quality, executing automation scripts, and ensuring smooth application performance across different environments. Through the Playwright Automation Testing with AI Course, learners gain expertise in browser automation, framework handling, debugging, and test execution strategies. The Playwright Testing with AI Certification Training prepares professionals for industry-focused testing responsibilities and real-time project environments.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Consultant in automation testing provides technical guidance, testing solutions, and implementation support for software quality initiatives. The Playwright Automation Testing with AI Course enables learners to understand AI-driven testing, browser automation, and automation lifecycle management. Through Playwright Online Certification Program, professionals gain the knowledge and confidence required for handling enterprise-level automation testing projects.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An Analyst role requires evaluating testing requirements, identifying defects, and improving software quality through effective automation strategies. By enrolling in the Playwright Automation Testing with AI Course, learners understand modern testing workflows, reporting mechanisms, and framework concepts. The Playwright Testing Course with Certification supports professional development through practical project-based learning and industry-aligned testing knowledge.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Engineer in automation testing
+  - role: Engineer
     description: An Engineer in automation testing focuses on creating automated frameworks, developing reusable scripts, and improving testing efficiency using modern technologies. The Playwright Automation Testing with AI Course helps learners build practical automation expertise, while Playwright Automation Testing Online Classes provide hands-on exposure to AI-powered testing methods, validation techniques, and advanced automation practices.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Specialist
     description: A Specialist focuses on advanced automation techniques, testing optimization, and scalable framework development for modern software applications. The Playwright Automation Testing with AI Course strengthens technical capabilities in scripting, automation workflows, and cross-browser validation. The Playwright Automation Testing Job Ready Course helps learners develop practical expertise and job-oriented skills for automation testing careers.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master the core concepts of Playwright Automation Testing with AI Course with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

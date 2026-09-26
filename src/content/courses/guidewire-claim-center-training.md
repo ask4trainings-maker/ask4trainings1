@@ -98,28 +98,19 @@ jobRoles:
   - role: Guidewire Claim Center Developer Training role
     description: A Guidewire Claim Center Developer Training role focuses on building and customizing applications using Guidewire GOSU Training and Claim Center Configuration Training. Professionals work on integrations, UI enhancements, and business logic within Guidewire Claim Center Course environments. With Guidewire Hands-on Training and Claim Center Real-Time Project Training, developers gain practical exposure to implement real-world insurance solutions, ensuring high demand and career growth through Guidewire Certification Training opportunities
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Consultant in Guidewire Claim Center Training
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Consultant
     description: A Consultant in Guidewire Claim Center Training works closely with clients to implement solutions using Guidewire Claim Center Functional Training and Guidewire Claim Center Technical Training. They analyze business requirements, design workflows, and ensure smooth system integration. With Guidewire Training with Placement and Guidewire Job-Oriented Course, consultants gain expertise to deliver efficient claim management systems and become valuable assets in insurance and IT organizations worldwide
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An Analyst role in Guidewire Claim Center Course involves understanding business needs and translating them into technical solutions using Claim Center Functional Training. Professionals leverage Guidewire Claim Center Online Training and real-time scenarios to evaluate system performance and improve workflows. With Claim Center Interview Preparation and Guidewire Certification Training, analysts build strong domain knowledge and analytical skills to support decision-making and optimize claims processes effectively
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An Administrator in Guidewire Claim Center Training manages system configurations, user roles, and security using Guidewire Claim Center Administration Training. They ensure system performance, handle upgrades, and maintain data integrity. With Guidewire Hands-on Training and Claim Center Implementation Training, administrators gain real-time experience to manage enterprise-level systems, making them essential for smooth business operations and long-term system stability in organizations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Guidewire Architect
     description: A Guidewire Architect designs scalable solutions using expertise from Guidewire Claim Center Developer Training and Claim Center Integration Training. They define system architecture, oversee implementations, and ensure best practices are followed. With Guidewire Professional Training and Guidewire Certification Training, architects gain advanced knowledge to lead projects, optimize performance, and deliver robust insurance solutions, making them highly valuable professionals in the Guidewire ecosystem.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Our Guidewire Development Training program is designed to provide a complete understanding of core concepts through Guidewire Online Training and Guidewire Classes in Hyderabad. This Guidewire Developer Course covers configuration, integration, and Guidewire GOSU Training with real-time scenarios. Learners gain practical exposure through Guidewire Hands-on Training and Guidewire Real-Time Project Training, ensuring they are job-ready with strong technical and functional expertise in the insurance domain.
 

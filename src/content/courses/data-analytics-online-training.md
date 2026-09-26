@@ -99,28 +99,24 @@ jobRoles:
   - role: Data Analyst
     description: A Data Analyst plays a crucial role in transforming raw data into actionable insights using tools like Python, SQL, and Excel. In a Data Analytics Online Training program, you learn data cleaning, data visualization, and reporting techniques that help businesses make informed decisions. With skills gained from a Data Analytics Course with Certification and real-time projects, analysts can work across industries. This role is ideal for those enrolling in a Data Analytics Course for Beginners Online or professionals aiming for a career switch into data analytics.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
   - role: Data Scientist
     description: A Data Scientist focuses on advanced analytics, predictive modeling, and machine learning. Through an Advanced Data Analytics Online Course, learners gain expertise in Python for data analytics, statistical analysis, and data modeling. This role demands strong problem-solving skills and is highly valued in a Data Analytics Training with Placement program. By completing a Data Analytics Online Certification Program with hands-on labs, professionals can secure high-paying roles and grow rapidly in the data domain.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Data Engineer
     description: A Data Engineer is responsible for building and managing data pipelines and infrastructure. With training from a Data Analytics Course with Tools (Python, SQL, Power BI), you’ll learn data warehousing, ETL processes, and big data technologies. This role is essential for organizations handling large-scale data. Enrolling in a Data Analytics Online Course for IT and Non-IT helps learners develop technical expertise needed to support analytics teams and ensure smooth data flow for business intelligence.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Data Analytics Consultant helps businesses optimize performance using data-driven strategies. By completing a Data Analytics Online Training for Working Professionals, individuals can master business intelligence, data visualization tools, and strategic analysis. This role is perfect for those pursuing a Data Analytics Online Bootcamp or job-oriented online course. Consultants work closely with stakeholders to deliver insights, making this role ideal for professionals seeking career growth with data analytics certification online.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Data Visualization Specialist
     description: A Data Visualization Specialist focuses on presenting complex data in easy-to-understand formats using tools like Power BI, Tableau, and Excel dashboards. Through a Data Analytics and Visualization Online Course, learners gain expertise in storytelling with data. This role is in high demand for those completing a Data Analytics Online Course with Real-Time Projects and placement support. It’s ideal for freshers and professionals looking for a Data Analytics Online Training for Career Switch with creative and analytical skills.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Start your journey with Data Analytics Online Training designed for practical learning and career growth. This Online Data Analytics Bootcamp helps you master tools, techniques, and real-world applications through structured modules. With a focus on beginners, this Data Analytics Online Training for Freshers ensures strong fundamentals, hands-on exposure, and industry-relevant skills to prepare you for modern data-driven roles.
 

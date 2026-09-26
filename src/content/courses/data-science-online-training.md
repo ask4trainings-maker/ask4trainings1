@@ -96,31 +96,27 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Data Scientist builds predictive models and
+  - role: Data Scientist
     description: A Data Scientist builds predictive models and works on advanced analytics using machine learning algorithms. This role requires strong knowledge gained from Best Data Science Training in Hyderabad. With Data Science Job Oriented Training, you will master AI, ML, and deep learning concepts. Completing a Data Science Professional Certification helps you stand out and work on real-world challenges, making this one of the most high-demand and rewarding careers.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Data Analyst
     description: A Data Analyst plays a crucial role in interpreting data and generating insights for business decisions. With Data Science Online Training, you will learn tools like Python, SQL, and visualization techniques. This role is ideal for beginners completing a Data Science Online Course and looking to enter analytics. Through Data Science Training with Real-Time Projects, you gain hands-on experience in handling datasets, creating reports, and delivering actionable insights.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
   - role: Data Engineer
     description: A Data Engineer focuses on building data pipelines and managing large datasets for analysis. Through Data Science Training in Hyderabad, you will learn data processing, ETL tools, and database management. This role is essential in organizations handling big data. With Data Science Course with Placement, you gain the skills to design scalable systems and ensure smooth data flow, making you a valuable asset in tech-driven companies.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Data Consultant helps businesses make strategic decisions using data insights. With Data Science Online Classes, you learn how to analyze trends and provide actionable recommendations. This role suits professionals completing a Data Science Certification Course who want to work closely with clients. With Data Science Course with Internship, you gain real-world exposure, improving your ability to solve business problems effectively.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Machine Learning Specialist
     description: A Machine Learning Specialist focuses on developing intelligent systems and automation models. With Data Science Online Training, you gain expertise in algorithms, model building, and deployment. This role is ideal for those completing a Data Science Online Course with advanced learning. Through Data Science Training with Real-Time Projects, you build practical skills and create AI-driven solutions, making you highly valuable in modern industries.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Our Data Science Course with Placement ensures you gain hands-on experience through Data Science Training with Real-Time Projects that simulate real industry scenarios. This Data Science Job Oriented Training prepares you for high-paying roles by focusing on practical implementation. With added benefits like a Data Science Course with Internship, you get real-world exposure and a strong portfolio to showcase your expertise.
 

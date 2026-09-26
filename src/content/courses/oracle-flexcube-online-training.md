@@ -75,31 +75,28 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Developer trained in Oracle Flexcube Online Training
+  - role: Developer trained
     description: A Developer trained in Oracle Flexcube Online Training focuses on customization, coding, and system enhancements. They work on APIs, integrations, and backend logic to improve system performance. With expertise gained from Oracle Flexcube Technical Training, developers handle database management, scripting, and module development, playing a key role in building scalable and efficient banking solutions.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: consultant trained through Kinaxis Online Training
     description: A consultant trained through Kinaxis Online Training plays a vital role in aligning business requirements with system capabilities. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course help professionals understand functional processes like demand and supply planning. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, consultants learn to implement solutions, optimize workflows, and guide clients. This role requires communication skills and domain expertise to drive successful project outcomes.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Oracle Flexcube Online Training professional as an Analyst
     description: An Oracle Flexcube Online Training professional as an Analyst works on understanding core banking requirements, business workflows, and system functionalities. They analyze customer data, transactions, and banking operations to ensure smooth execution. With knowledge from Oracle Flexcube Functional Training, analysts bridge the gap between business teams and technical teams, ensuring accurate system implementation and process optimization in banking environments.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Tester in Oracle Flexcube Online Training ensures the system
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Tester
     description: A Tester in Oracle Flexcube Online Training ensures the system works flawlessly by validating functionalities and identifying bugs. They perform functional, integration, and user acceptance testing using real-time scenarios. With skills from Oracle Flexcube Course with Placement, testers ensure system reliability, improve performance, and maintain quality standards in banking applications.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An Administrator trained through Oracle Flexcube Online Training manages system configuration, user roles, and overall system performance. They ensure smooth operations, security, and data integrity within the banking platform. With knowledge from Advanced Oracle Flexcube Training, administrators monitor system activities, resolve technical issues, and maintain stability in core banking environments.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Oracle Flexcube Online Training with a strong focus on Oracle Flexcube Functional Training covers core banking operations, business workflows, and real-time transaction processing. You will learn key modules like deposits, loans, payments, and customer lifecycle management through practical case studies. This training enhances your domain knowledge, helping you understand banking processes in Flexcube and prepares you for functional consultant roles in the BFSI sector.
 

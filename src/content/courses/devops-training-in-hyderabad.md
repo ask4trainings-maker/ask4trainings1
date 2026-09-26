@@ -99,28 +99,18 @@ jobRoles:
   - role: DevOps Engineer
     description: A DevOps Engineer is responsible for managing CI/CD pipelines, cloud deployment, automation, monitoring, and infrastructure management in modern IT environments. Through DevOps Training in Hyderabad and DevOps Engineer Certification Course, learners gain practical skills in Docker, Kubernetes, Jenkins, Git, AWS, and Terraform to support software development and deployment processes efficiently.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A DevOps Consultant helps organizations improve software delivery, automation processes, and cloud infrastructure management. Through DevOps Online Training with Certification and DevOps Cloud Integration Online Course, professionals gain expertise in deployment strategies, collaboration tools, cloud services, and workflow optimization for business productivity.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: DevOps Architect
     description: A DevOps Architect designs scalable infrastructure, automation workflows, and cloud-based deployment strategies for enterprise applications. With AWS DevOps Training Online and Azure DevOps Certification Training, professionals learn cloud integration, security practices, configuration management, and infrastructure optimization required for large-scale business environments.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A DevOps Administrator manages servers, deployment environments, system monitoring, and configuration tools to maintain application stability. The Linux for DevOps Training and Jenkins DevOps Online Course help learners understand automation, scripting, server administration, CI/CD implementation, and performance monitoring in real-time projects.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: DevOps Specialist
     description: A DevOps Specialist focuses on containerization, orchestration, automation, and deployment management using advanced DevOps tools. The Docker and Kubernetes Training along with Terraform DevOps Course Online provides practical exposure to scalable infrastructure, cloud provisioning, automation frameworks, and modern application deployment techniques.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Our DevOps Training in Hyderabad is designed to help learners gain practical skills in automation, cloud deployment, CI/CD pipelines, Docker, Kubernetes, and monitoring tools. The program includes hands-on labs, real-time projects, and expert guidance to prepare candidates for modern IT environments. Join our DevOps Engineer Course Online to build strong technical expertise and industry confidence.
 

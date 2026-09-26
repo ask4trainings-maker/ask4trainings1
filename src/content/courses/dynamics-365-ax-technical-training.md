@@ -96,31 +96,17 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Dynamics 365 AX Technical Developer
     description: A Dynamics 365 AX Technical Developer works on ERP customization, X++ programming, SSRS reports, and workflow development for enterprise applications. Professionals trained through Dynamics 365 AX Technical Training gain practical expertise in integrations, debugging, and technical implementation. Developers play a major role in improving ERP functionality, automating business operations, and supporting real-time project deployments across industries using Microsoft ERP solutions.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A technical consultant uses skills gained from MS D365 AX Technical Online Training to support ERP implementation, configuration, and customization projects. Consultants analyze business requirements, provide technical solutions, and assist organizations with integrations and reporting tools. Through Dynamics 365 AX Technical Online Classes, professionals learn to manage workflows, optimize ERP systems, and deliver efficient technical support for enterprise business environments.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An ERP analyst trained in Dynamics 365 AX Technical Course with Real Time Projects helps organizations understand technical requirements and improve ERP system performance. Analysts work on data validation, report generation, testing, and process optimization using ERP development tools. With knowledge from Dynamics 365 AX Technical X++ Programming Training, they support technical teams in maintaining smooth system functionality and business operations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A system administrator manages ERP environments, user access, security roles, and application performance using skills learned in Dynamics 365 AX Technical Training. Professionals with Dynamics 365 AX Technical Integration with ERP knowledge can handle deployments, troubleshooting, and server configurations effectively. Administrators ensure system stability, maintain ERP operations, and support technical teams with secure and efficient enterprise solutions.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: ERP architect
     description: An ERP architect designs technical frameworks, integration strategies, and scalable ERP solutions for enterprise applications. Through MS D365 AX Technical Developer Training and advanced implementation concepts, architects gain expertise in workflow automation, customization, and system architecture. Knowledge from Dynamics 365 AX Technical Professional Certificate programs helps professionals create reliable ERP infrastructures aligned with business and technical requirements.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master the core concepts of Dynamics 365 AX Technical Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 

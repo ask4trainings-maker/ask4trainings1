@@ -96,31 +96,22 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Mendix Developer
     description: A Mendix Developer builds enterprise applications using low-code technologies, workflows, integrations, and automation tools for modern business requirements. Through Mendix Training in Hyderabad and practical exposure in Mendix Online Training, professionals gain hands-on experience in designing, developing, testing, and deploying scalable applications for multiple industries.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Mendix Consultant
     description: A Mendix Consultant works with organizations to understand business needs and deliver efficient low-code application solutions. With knowledge gained from Mendix Developer Course Online and Mendix Certification Training in Hyderabad, consultants help companies improve workflows, automate operations, and enhance digital transformation projects using Mendix technologies.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Mendix Analyst gathers business requirements, studies workflows, and supports application development processes using low-code platforms. Through Mendix Training with Real-Time Projects and Mendix Online Training India, analysts gain practical skills in process improvement, requirement analysis, and solution planning for enterprise application development.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Mendix Administrator manages application deployment, user access, platform maintenance, and system monitoring for enterprise environments. Professionals trained through Mendix Course with Placement Assistance and Mendix Low Code Platform Training can support organizations in maintaining secure, efficient, and scalable low-code application infrastructures.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Mendix Architect
     description: A Mendix Architect designs application structures, integrations, and scalable enterprise solutions for complex business environments. Learners completing Mendix Full Stack Developer Training and Mendix Online Certification Program can build expertise in system architecture, deployment planning, and advanced low-code implementation strategies for modern organizations.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: Join the Best Mendix Training Institute in Hyderabad to learn from experienced trainers and work on hands-on projects that match current industry requirements. Our Mendix Developer Certification Course prepares students for global certification exams while improving problem-solving and application-building skills. With flexible online sessions, live projects, and career guidance, learners can confidently prepare for high-growth Mendix developer roles.
 aboutCourse: |-
   This Mendix Training in Hyderabad training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.

@@ -75,31 +75,23 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
+  - role: Salesforce Developer
     description: A Salesforce Developer builds custom applications using Apex, Visualforce, and Lightning components. With Salesforce Job Oriented Training, learners gain hands-on coding experience and real-time project exposure. The Salesforce CRM Cloud Specialist Training helps professionals master integrations and automation. By enrolling in salesforce online training, developers can enhance their technical expertise and achieve Salesforce Certification with Placement Assistance for high-paying opportunities.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Salesforce Consultant analyzes business needs and implements CRM solutions to improve processes. Through Salesforce Marketing Cloud Training and Salesforce CRM Online Classes, learners understand customer journeys and automation strategies. The Best Institute for Salesforce in Hyderabad provides real-time case studies to build consulting skills. With Salesforce Certification Online Course, professionals can validate expertise and work with global clients across industries.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Salesforce Analyst
     description: A Salesforce Analyst focuses on data insights, reporting, and business intelligence within the CRM system. By joining salesforce online training, learners develop skills in dashboards, analytics, and performance tracking. The Salesforce Job Oriented Training ensures practical exposure through live projects. With guidance from the Best Institute for Salesforce in Hyderabad, candidates can earn Salesforce Certification with Placement Assistance and secure data-driven roles.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Salesforce Administrator manages users, data, security, and workflows within the CRM platform. Through salesforce online training, learners gain skills in configuration, reporting, and automation. The Salesforce CRM Online Classes prepare candidates to handle dashboards, profiles, and permissions efficiently. With support from the Best Institute for Salesforce in Hyderabad, professionals can earn Salesforce Certification Online Course credentials and secure stable roles in top organizations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
   - role: Salesforce Architect
     description: A Salesforce Architect designs scalable CRM solutions and oversees system integrations. Through Salesforce CRM Cloud Specialist Training, professionals gain advanced knowledge of architecture, security, and data modeling. The Salesforce Certification Online Course helps validate high-level expertise. With salesforce online training and mentorship from the Best Institute for Salesforce in Hyderabad, learners can move into leadership roles with strong career growth.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Salesforce Online Training is the perfect choice for individuals aiming to build a strong career in cloud CRM technologies. Our Salesforce Online Course with Placement provides hands-on experience, real-time projects, and expert guidance to ensure job readiness. As a leading Salesforce Training Institute Hyderabad, we focus on practical skills, certification support, and industry-relevant knowledge to help learners succeed in competitive job markets.
 

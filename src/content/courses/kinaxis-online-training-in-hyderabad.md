@@ -96,31 +96,21 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Kinaxis Online Training professional in development
+  - role: Kinaxis Online Training professional
     description: A Kinaxis Online Training professional in development focuses on configuring and customizing RapidResponse solutions to meet business needs. Through the Kinaxis Online Master Program and Advanced Kinaxis Online Training, developers gain expertise in scripting, data modeling, and application building. With support from Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, they become capable of delivering scalable supply chain solutions. This role demands strong analytical skills and hands-on project experience to ensure seamless system integration.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: consultant trained through Kinaxis Online Training
     description: A consultant trained through Kinaxis Online Training plays a vital role in aligning business requirements with system capabilities. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course help professionals understand functional processes like demand and supply planning. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, consultants learn to implement solutions, optimize workflows, and guide clients. This role requires communication skills and domain expertise to drive successful project outcomes.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An analyst role with Kinaxis Online Training involves interpreting data and generating actionable insights for supply chain optimization. The Kinaxis Online Master Program combined with Advanced Kinaxis Online Training equips professionals with tools to analyze demand patterns and forecast trends. With Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, analysts gain hands-on experience in dashboards and reporting. This role enhances decision-making abilities and supports strategic planning in organizations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: planner trained in Kinaxis Online Training
+  - role: planner trained
     description: A planner trained in Kinaxis Online Training focuses on managing demand, supply, and inventory efficiently. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course provide deep knowledge of planning modules and execution strategies. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, planners learn to respond to real-time changes and ensure smooth operations. This role is critical for maintaining balance across supply chain processes and achieving business goals.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An architect role through Kinaxis Online Training involves designing and implementing end-to-end supply chain solutions. The Kinaxis Online Master Program and Advanced Kinaxis Online Training help professionals master system architecture, integrations, and performance optimization. With Kinaxis Advanced Certification Course, Kinaxis Certification Training in Hyderabad, and Kinaxis Professional Training Hyderabad, architects ensure scalable and efficient solutions. This role requires deep technical expertise and strategic thinking to lead complex implementations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Kinaxis RapidResponse Online Course is designed to equip learners with in-demand supply chain planning skills through practical exposure and expert guidance. Our Kinaxis Online Training India program focuses on real-time scenarios, helping you understand planning, analytics, and execution effectively. With Kinaxis Certification Training in Hyderabad, learners gain industry-recognized credentials and hands-on project experience to boost career growth and secure high-paying roles.
 

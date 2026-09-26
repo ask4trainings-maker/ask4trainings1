@@ -99,28 +99,20 @@ jobRoles:
   - role: Polarion Developer
     description: A Polarion Developer focuses on customization, scripting, and integration within the ALM environment. Using skills from Polarion Training with Tools & Use Cases and Polarion Full Course Online, developers enhance system functionality and automate processes. Polarion Online Training provides hands-on experience to work with APIs, workflows, and extensions for enterprise-level applications.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Polarion Consultant
     description: A Polarion Consultant works on implementing and customizing ALM solutions for organizations. With expertise from Polarion ALM and Traceability Course and Polarion Online Certification Program, professionals can configure workflows, integrate systems, and support clients. Polarion Online Training helps build the technical and functional skills required to deliver effective ALM solutions in real-time projects.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Business Analyst role after completing Polarion Online Training
     description: A Business Analyst role after completing Polarion Online Training focuses on gathering, analyzing, and managing requirements using ALM tools. With knowledge from Polarion Requirement Management Training and Best Online Training for Polarion ALM, professionals can create detailed documentation, ensure stakeholder communication, and maintain traceability. This role is ideal for those who want to bridge business needs with technical solutions effectively.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Test Engineer uses skills gained from Polarion Test Management Online Course to design, execute, and manage test cases efficiently. Through Polarion Online Training and Polarion Real-Time Projects Training, learners understand defect tracking, quality assurance, and reporting. This role ensures software quality by validating requirements and maintaining test coverage across the development lifecycle.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: An ALM Manager oversees project lifecycle, team coordination, and delivery using insights from Polarion Training with Placement Support and Advanced Polarion ALM Training. With Polarion Online Training, professionals gain the ability to monitor progress, ensure compliance, and maintain traceability. This role is crucial for managing end-to-end project execution and aligning business goals with development processes.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
 overview: |-
   Our Polarion Online Training is designed to deliver in-depth knowledge of ALM concepts with practical exposure. This Advanced Polarion ALM Training helps learners master requirements management, testing, and traceability. With a Polarion Course with Real-Time Projects, you gain hands-on experience, while the Online Polarion Bootcamp ensures intensive, fast learning for career growth.Gain practical exposure with real-time industry use cases and learn advanced ALM tools and workflow management.
 

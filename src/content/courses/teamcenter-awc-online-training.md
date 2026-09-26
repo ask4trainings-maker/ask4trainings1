@@ -99,28 +99,9 @@ jobRoles:
   - role: Teamcenter AWC Developer
     description: A Teamcenter AWC Developer works with Active Workspace customization, interfaces, extensions, workflows, and integrations to meet business requirements. Teamcenter AWC Online Training helps learners understand AWC architecture, application functionality, and customization concepts. Through the Teamcenter AWC Job Oriented Course, participants can strengthen their technical knowledge and learn how Teamcenter capabilities can be adapted to organizational processes while developing skills relevant to PLM development roles.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter AWC Consultant helps organizations analyze PLM requirements and implement suitable Teamcenter solutions. Teamcenter AWC Online Training provides knowledge of Active Workspace features, product data management, workflows, and business processes. The Teamcenter AWC Certification Program can help learners structure their knowledge while understanding how AWC capabilities support engineering teams, product development, collaboration, and lifecycle management across enterprise environments and industry-focused PLM implementations.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter AWC Business Analyst evaluates business requirements and translates product lifecycle needs into effective PLM processes. Teamcenter AWC Online Training helps learners understand Active Workspace functionality, workflows, product data, collaboration, and lifecycle concepts. With the Teamcenter AWC Certification Program, participants can build structured knowledge for analyzing requirements, documenting processes, supporting solution discussions, and helping organizations improve product development and information management through Teamcenter AWC capabilities.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter AWC Administrator manages users, groups, roles, access permissions, workflows, and system configurations within the PLM environment. Through Teamcenter AWC Online Training, learners can understand Active Workspace administration and enterprise data management concepts. The Advanced Teamcenter AWC Course also helps develop knowledge of configuration, lifecycle processes, preferences, and user access management needed to support Teamcenter environments effectively across engineering and product development teams.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Teamcenter AWC Support Engineer assists users with application
-    description: A Teamcenter AWC Support Engineer assists users with application issues, access problems, workflow challenges, configuration concerns, and day-to-day Active Workspace operations. Through Teamcenter AWC Online Training, learners develop an understanding of navigation, data handling, workflows, and user administration. The Teamcenter AWC Job Oriented Course can strengthen troubleshooting knowledge and practical skills required to support users and maintain efficient PLM operations within enterprise engineering environments.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Build practical skills with Teamcenter AWC Online Training covering Active Workspace navigation, configuration, customization, and real-time usage. Learn through guided sessions, hands-on exercises, and project scenarios designed for workplace needs. The Teamcenter AWC Certification Program helps validate your knowledge while improving confidence in implementation tasks and career opportunities.
 

@@ -96,31 +96,11 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: Specialist
-    description: A Teamcenter Developer customizes enterprise PLM applications, integrations, and workflows according to organizational requirements. Through Teamcenter Integration Training and advanced project-based sessions, learners understand coding support, customization, and automation concepts. Our Teamcenter Online Course helps professionals build technical expertise in workflow configuration, module enhancement, and enterprise integration to improve system functionality and business productivity within manufacturing and engineering industries.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter Consultant helps organizations implement PLM solutions, optimize workflows, and improve lifecycle management strategies. With practical exposure from Teamcenter Training with Hands-On Projects, consultants learn business process mapping, administration, and enterprise collaboration techniques. The Teamcenter Product Lifecycle Management Course prepares learners to analyze organizational requirements, support implementation processes, and deliver efficient PLM solutions for improved operational performance.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter Analyst evaluates engineering data, workflow efficiency, and product lifecycle processes to support business decision-making. Through Teamcenter Engineering Data Management Training, learners gain expertise in handling enterprise product information and process monitoring. The Teamcenter Workflow Management Course helps analysts understand lifecycle tracking, reporting, and collaboration tools used to improve productivity and ensure smooth communication across development and manufacturing teams.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Teamcenter Administrator manages system configuration, user access, workflow setup, and lifecycle management activities within enterprise PLM environments. Professionals trained through Teamcenter PLM Training gain practical knowledge in configuration, security management, and data handling processes. With support from Siemens Teamcenter Online Training, administrators learn to maintain stable PLM operations, improve collaboration, and support engineering teams through efficient workflow and product data management solutions.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
   - role: Teamcenter Architect
     description: A Teamcenter Architect designs enterprise PLM structures, integration strategies, and scalable lifecycle management solutions for organizations. Professionals trained through Teamcenter Advanced PLM Training gain expertise in system planning, workflow architecture, and enterprise integration concepts. Our Teamcenter Certification Training in Hyderabad helps architects understand advanced implementation methods, security frameworks, and data management practices required for successful PLM deployment and long-term business growth.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Join a leading Teamcenter Training Institute in Hyderabad that offers practical learning with real-time PLM projects and expert guidance. Our training program is designed to help learners understand Teamcenter architecture, workflows, administration, and lifecycle management concepts. With advanced lab sessions and professional mentoring, this Teamcenter PLM Training helps students gain strong technical knowledge required for enterprise PLM environments and industry implementation projects.
 

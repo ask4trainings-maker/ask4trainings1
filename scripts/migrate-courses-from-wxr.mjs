@@ -95,9 +95,12 @@ for (const file of courseFiles) {
   let currentProfile = null;
   
   let jobRoles = [];
+  let roleTokens = [];
   let currentJobRole = null;
   
   let certification = null;
+  
+  let faqs = [];
   
   for (let i = 0; i < elements.length; i++) {
     const el = elements[i];
@@ -107,7 +110,7 @@ for (const file of courseFiles) {
     
     // Header detection for sections
     if (/^h[1-6]$/.test(tagName)) {
-      if (/(guidewire trainer|trainer|faq|highlights)/i.test(text)) {
+      if (/(guidewire trainer|trainer|highlights|need demo session\? let's connect)/i.test(text)) {
         break; // Hard Stop Boundary
       }
       if (/(certification preparation|certification program|career-focused.*?certification)/i.test(text)) {
@@ -116,6 +119,11 @@ for (const file of courseFiles) {
       }
       if (/(job roles of)/i.test(text)) {
         currentSection = 'jobRoles';
+        continue;
+      }
+      
+      if (/(faq'?s|frequently asked questions)/i.test(text)) {
+        currentSection = 'faqs';
         continue;
       }
       
@@ -223,10 +231,37 @@ for (const file of courseFiles) {
       } else if (currentSection === 'eligibility' && currentProfile) {
         currentProfile.description += text + '\n\n';
       } else if (currentSection === 'jobRoles') {
-        if (text.length >= 40) {
-          const match = text.match(/^(?:A|An)\s+([A-Z][a-zA-Z\s]+?)\s+(?:specializes|is|works|focuses|plays|designs|delivers)/i);
-          const extractedTitle = match ? match[1].trim() : "Specialist";
-          jobRoles.push({ role: extractedTitle, description: text + '\n\n', competencies: ["Industry Best Practices", "Tool Mastery"] });
+        if (text.length < 40) {
+          // It's likely the list of role tokens (WordPress buttons)
+          roleTokens.push(text);
+        } else {
+          // Clean Russian translation leakages or stray text
+          const cleanedText = text.replace(/востребован/gi, "in-demand");
+          
+          let extractedTitle = null;
+          // Pattern 1
+          const domainMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
+          if (domainMatch) extractedTitle = domainMatch[1].trim();
+          
+          if (!extractedTitle) {
+            // Pattern 2
+            const standardMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
+            if (standardMatch) extractedTitle = standardMatch[1].trim();
+          }
+          
+          if (!extractedTitle && roleTokens.length > jobRoles.length) {
+            // Pattern 3: Token list pairing
+            extractedTitle = roleTokens[jobRoles.length];
+          }
+          
+          if (extractedTitle) {
+            let competencies = ["Enterprise Standards", "Industry Best Practices"];
+            if (/Developer/i.test(extractedTitle)) competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
+            else if (/Configurator/i.test(extractedTitle)) competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
+            else if (/Analyst/i.test(extractedTitle)) competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
+            
+            jobRoles.push({ role: extractedTitle, description: cleanedText + '\n\n', competencies });
+          }
         }
       } else if (currentSection === 'certification') {
         if (!certification) certification = { title: "Industry Recognized Certification", description: '' };
@@ -237,6 +272,26 @@ for (const file of courseFiles) {
            currentModule.duration = text;
         } else if (text) {
            currentModule.topics.push(text);
+        }
+      } else if (currentSection === 'faqs') {
+        let question = "";
+        let answer = "";
+        const strongEl = $el.find('strong');
+        if (strongEl.length > 0) {
+           question = cleanText(strongEl.text()).replace(/^Q\d*\.?\s*:?\s*/i, '').trim();
+           // Get text of p without the strong tag
+           $el.find('strong').remove();
+           answer = cleanText($el.text()).trim();
+        } else {
+           const qIndex = text.indexOf('?');
+           if (qIndex !== -1) {
+             question = text.substring(0, qIndex + 1).trim();
+             answer = text.substring(qIndex + 1).trim();
+           }
+        }
+        
+        if (question.length > 5 && answer.length > 10) {
+           faqs.push({ question, answer });
         }
       }
     }
@@ -282,14 +337,43 @@ for (const file of courseFiles) {
     
     // Check divs for jobRoles if they weren't in <p>
     if (tagName === 'div' && currentSection === 'jobRoles') {
-      if (text.length >= 40) {
-        // avoid duplicating the same text if there are nested divs
-        if (!jobRoles.some(j => j.description.includes(text) || text.includes(j.description))) {
-          const match = text.match(/^(?:A|An)\s+([A-Z][a-zA-Z\s]+?)\s+(?:specializes|is|works|focuses|plays|designs|delivers)/i);
-          const extractedTitle = match ? match[1].trim() : "Specialist";
-          jobRoles.push({ role: extractedTitle, description: text + '\n\n', competencies: ["Industry Best Practices", "Tool Mastery"] });
+      if (text.length < 40) {
+        roleTokens.push(text);
+      } else {
+        const cleanedText = text.replace(/востребован/gi, "in-demand");
+        if (!jobRoles.some(j => j.description.includes(cleanedText) || cleanedText.includes(j.description))) {
+          let extractedTitle = null;
+          const domainMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
+          if (domainMatch) extractedTitle = domainMatch[1].trim();
+          
+          if (!extractedTitle) {
+            const standardMatch = cleanedText.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
+            if (standardMatch) extractedTitle = standardMatch[1].trim();
+          }
+          
+          if (!extractedTitle && roleTokens.length > jobRoles.length) {
+            extractedTitle = roleTokens[jobRoles.length];
+          }
+          
+          if (extractedTitle) {
+            let competencies = ["Enterprise Standards", "Industry Best Practices"];
+            if (/Developer/i.test(extractedTitle)) competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
+            else if (/Configurator/i.test(extractedTitle)) competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
+            else if (/Analyst/i.test(extractedTitle)) competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
+            
+            jobRoles.push({ role: extractedTitle, description: cleanedText + '\n\n', competencies });
+          }
         }
       }
+    }
+    
+    // Fallback accordion extraction for faqs
+    if (tagName === 'div' && currentSection === 'faqs' && ($el.hasClass('elementor-accordion-item') || $el.hasClass('elementor-toggle-item') || $el.hasClass('elementskit-card'))) {
+       const tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header').text());
+       const tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body').text());
+       if (tTitle && tContent && tTitle.length > 5 && tContent.length > 10) {
+         faqs.push({ question: tTitle, answer: tContent });
+       }
     }
   }
   
@@ -314,7 +398,7 @@ for (const file of courseFiles) {
     extracted.jobRoles = jobRoles.map(j => ({
       role: j.role,
       description: j.description.trim(),
-      competencies: ["Industry Best Practices", "Tool Mastery"]
+      competencies: j.competencies
     }));
   }
   
@@ -355,6 +439,10 @@ for (const file of courseFiles) {
       title: "Industry Recognized Certification",
       description: certification.description.trim()
     };
+  }
+  
+  if (faqs.length > 0) {
+    extracted.faqs = faqs;
   }
   
   if (isDryRun && targetSlug === slug) {

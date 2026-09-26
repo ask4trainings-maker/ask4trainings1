@@ -99,28 +99,24 @@ jobRoles:
   - role: Full Stack Developer
     description: A Full Stack Developer designs, develops, tests, and maintains web applications using frontend and backend technologies. Through Dotnet Full Stack Training in Hyderabad, learners gain practical exposure to coding, database integration, API development, and deployment strategies. The Dotnet Full Stack Developer Training Online program helps professionals strengthen implementation skills, improve project understanding, and build expertise required for software application development roles.
     competencies:
-      - Industry Best Practices
-      - Tool Mastery
-  - role: Specialist
-    description: A Technical Consultant supports organizations in application planning, technology implementation, and system enhancement activities. By joining Dotnet Full Stack Professional Certification Training, learners gain knowledge of application workflows, frontend technologies, APIs, and deployment practices. The Dotnet Full Stack Online Certification Program helps participants build industry-relevant expertise and professional development skills.
-    competencies:
-      - Industry Best Practices
-      - Tool Mastery
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Software Engineer
     description: A Software Engineer works on application architecture, coding standards, debugging, and system performance optimization. With Dotnet Full Stack Online Training, learners understand modern development practices, UI technologies, backend frameworks, and database connectivity. The Advanced Dotnet Full Stack Online Course prepares candidates to handle real-time development requirements across enterprise and business software environments.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Programmer
     description: A Programmer focuses on writing efficient code, solving technical problems, and creating scalable applications for different business needs. Through Dotnet Full Stack Course with Placement Assistance, learners develop practical coding capabilities, technical confidence, and implementation knowledge. The Dotnet Full Stack Training with Real-Time Projects program strengthens hands-on experience through assignments and project-based learning.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
   - role: Solution Architect
     description: A Solution Architect designs software structures, integrates technologies, and ensures application scalability and performance. Through Dotnet Full Stack Training with Placement Support, learners improve technical understanding, development planning, and software implementation skills. The Dotnet Full Stack Master Program Online supports deeper learning in full stack technologies, project execution, and modern application development practices.
     competencies:
+      - Enterprise Standards
       - Industry Best Practices
-      - Tool Mastery
 overview: |-
   Master full stack application development with Dotnet Full Stack Training in Hyderabad designed to build practical coding expertise and real-time implementation skills. The Advanced Dotnet Full Stack Online Course helps learners strengthen technical knowledge, improve development workflows, and gain hands-on experience required for modern software development careers.
 
