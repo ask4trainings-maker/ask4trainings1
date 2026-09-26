@@ -24,7 +24,7 @@ if (!objectives || objectives.length === 0) {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
             </svg>
           </div>
-          <p class="text-slate-700 leading-relaxed">{typeof objective === 'string' ? objective : (objective.text || objective.title || objective.point || objective.objective || JSON.stringify(objective))}</p>
+          <p class="text-slate-700 leading-relaxed">{typeof objective === 'string' ? objective : ((objective as any).item || (objective as any).text || (objective as any).title || (objective as any).point || (objective as any).objective || JSON.stringify(objective))}</p>
         </div>
       ))}
     </div>

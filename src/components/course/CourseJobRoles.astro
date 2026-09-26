@@ -20,11 +20,16 @@ const normalizedRoles = jobRoles.map((role, index) => {
       salaryEstimate: ''
     };
   }
+  // Normalize skills: CMS list widget emits [{skill: string}], legacy uses [string]
+  const rawSkills: (string | Record<string, any>)[] = role.skills || [];
+  const normalizedSkills: string[] = rawSkills.map((s: string | Record<string, any>) =>
+    typeof s === 'string' ? s : (s.skill || s.text || s.title || '')
+  ).filter(Boolean);
   return {
     id: `role-${index}`,
     title: role.role || role.title || role.text || 'Job Role',
     description: role.description || 'Master this high-demand role with the skills and workflows covered in this course.',
-    skills: role.skills || [],
+    skills: normalizedSkills,
     salaryEstimate: role.salaryEstimate || ''
   };
 });

@@ -116,14 +116,40 @@ const courses = defineCollection({
     description: z.string().optional(),
 
     // ─── Section 5: Course Objectives ───────────────────────────────────────
-    objectives: z.array(z.string()).default([]),
+    // Accepts plain strings (legacy) or {item: string} objects from CMS list widget
+    objectives: z.array(
+      z.union([
+        z.string(),
+        z.object({ item: z.string() }),
+        z.record(z.string(), z.any()), // catch-all for other CMS shapes
+      ])
+    ).default([]),
 
     // ─── Section 6: Benefits (3 Distinct Containers) ────────────────────────
+    // Each sub-array accepts strings (legacy) or {item: string} objects (CMS widget)
     benefits: z.object({
-      basicKnowledge: z.array(z.string()).default([]),
-      techSkills: z.array(z.string()).default([]),
-      careerInterests: z.array(z.string()).default([]),
+      basicKnowledge: z.array(
+        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
+      ).default([]),
+      techSkills: z.array(
+        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
+      ).default([]),
+      careerInterests: z.array(
+        z.union([z.string(), z.object({ item: z.string() }), z.record(z.string(), z.any())])
+      ).default([]),
     }).default({ basicKnowledge: [], techSkills: [], careerInterests: [] }),
+
+    // ─── Section 6b: Why Master This Course ─────────────────────────────────
+    whyMaster: z.object({
+      title: z.string().optional(),
+      description: z.string().optional(),
+      pillars: z.array(
+        z.object({
+          title: z.string(),
+          description: z.string(),
+        })
+      ).optional().default([]),
+    }).optional(),
 
     // ─── Section 7: Why Choose ──────────────────────────────────────────────
     whyChoose: z.array(

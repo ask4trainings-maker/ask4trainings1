@@ -10,11 +10,23 @@ export interface Props {
   aboutCourse?: string;
   courseTitle?: string;
   category?: string;
+  whyMaster?: {
+    title?: string;
+    description?: string;
+    pillars?: { title: string; description: string }[];
+  };
 }
 
-const { aboutCourse, courseTitle = "the Course", category } = Astro.props;
+const { aboutCourse, courseTitle = "the Course", category, whyMaster } = Astro.props;
 
-if (!aboutCourse) {
+// Resolve display values: whyMaster fields take priority, fall back to legacy aboutCourse
+const bodyText = whyMaster?.description || aboutCourse;
+const sectionTitle = whyMaster?.title || `Why Master ${courseTitle}?`;
+const pillars = whyMaster?.pillars && whyMaster.pillars.length > 0
+  ? whyMaster.pillars
+  : null; // null = use hardcoded defaults
+
+if (!bodyText && !whyMaster?.title) {
   return null;
 }
 ---
@@ -26,10 +38,12 @@ if (!aboutCourse) {
         <div class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-sm font-semibold rounded-full border border-emerald-100">
           Course Deep Dive
         </div>
-        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 break-words min-w-0">Why Master {courseTitle}?</h2>
-        <div class="prose prose-slate prose-emerald max-w-none text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-lg">
-          <p>{aboutCourse}</p>
-        </div>
+        <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 break-words min-w-0">{sectionTitle}</h2>
+        {bodyText && (
+          <div class="prose prose-slate prose-emerald max-w-none text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-lg">
+            <p>{bodyText}</p>
+          </div>
+        )}
       </div>
       
       <!-- Right Column (40%) -->
@@ -47,29 +61,41 @@ if (!aboutCourse) {
             </div>
           </div>
           
-          <!-- Micro Cards -->
+          <!-- Micro Cards: CMS-driven pillars or hardcoded defaults -->
           <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <span class="text-xl leading-none">⚡</span>
-              <div>
-                <h4 class="font-bold text-white text-sm">Architecture Mastery</h4>
-                <p class="text-xs text-slate-400 mt-0.5">End-to-end operational workflows.</p>
+            {pillars ? pillars.map((pillar: { title: string; description: string }) => (
+              <div class="flex items-start gap-3">
+                <span class="text-xl leading-none">⚡</span>
+                <div>
+                  <h4 class="font-bold text-white text-sm">{pillar.title}</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">{pillar.description}</p>
+                </div>
               </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="text-xl leading-none">🛡️</span>
-              <div>
-                <h4 class="font-bold text-white text-sm">Enterprise Standards</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Production governance and compliance.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-3">
-              <span class="text-xl leading-none">📈</span>
-              <div>
-                <h4 class="font-bold text-white text-sm">High-Demand Career Path</h4>
-                <p class="text-xs text-slate-400 mt-0.5">Specialized consulting and implementation roles.</p>
-              </div>
-            </div>
+            )) : (
+              <>
+                <div class="flex items-start gap-3">
+                  <span class="text-xl leading-none">⚡</span>
+                  <div>
+                    <h4 class="font-bold text-white text-sm">Architecture Mastery</h4>
+                    <p class="text-xs text-slate-400 mt-0.5">End-to-end operational workflows.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-xl leading-none">🛡️</span>
+                  <div>
+                    <h4 class="font-bold text-white text-sm">Enterprise Standards</h4>
+                    <p class="text-xs text-slate-400 mt-0.5">Production governance and compliance.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-xl leading-none">📈</span>
+                  <div>
+                    <h4 class="font-bold text-white text-sm">High-Demand Career Path</h4>
+                    <p class="text-xs text-slate-400 mt-0.5">Specialized consulting and implementation roles.</p>
+                  </div>
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

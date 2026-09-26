@@ -452,6 +452,13 @@ collections:
           - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Interactive Online'" }
           - { label: "Next Cohort Date", name: "startDate", widget: "string", hint: "e.g., 'Upcoming Monday'" }
 
+      # ── Course Overview (shown above Curriculum on the page) ──
+      - label: "📖 Course Overview"
+        name: "overview"
+        widget: "text"
+        required: false
+        hint: "In-depth overview shown above the curriculum accordion. Explains fundamentals, scope, and industry relevance."
+
       # ── Curriculum Modules ──
       - label: "📚 Course Curriculum Modules"
         name: "modules"
@@ -466,6 +473,63 @@ collections:
             summary: "{{fields.topic}}"
             field: { label: "Topic Description", name: "topic", widget: "string", hint: "e.g., 'Understanding ProductModel XML'" }
 
+      # ── Why Master This Course (shown directly after Curriculum) ──
+      - label: "🚀 Why Master This Course?"
+        name: "whyMaster"
+        widget: "object"
+        required: false
+        hint: "Deep-dive section shown after the curriculum. Explains ecosystem demand and enterprise value."
+        fields:
+          - { label: "Section Headline", name: "title", widget: "string", hint: "e.g., 'Why Master Guidewire PolicyCenter?'", required: false }
+          - { label: "Section Description", name: "description", widget: "text", hint: "2-4 sentences on industry adoption, demand, and career ROI.", required: false }
+          - label: "Key Value Pillars"
+            name: "pillars"
+            widget: "list"
+            required: false
+            summary: "{{fields.title}}"
+            hint: "Optional pillar cards shown below the description (e.g., 'Architecture Mastery', 'Enterprise Demand')."
+            fields:
+              - { label: "Pillar Title", name: "title", widget: "string", hint: "e.g., 'Architecture Mastery'" }
+              - { label: "Pillar Description", name: "description", widget: "string", hint: "e.g., 'End-to-end configuration and workflow design.'" }
+
+      # ── Course Objectives (shown after Why Master) ──
+      - label: "🎯 Course Objectives"
+        name: "objectives"
+        widget: "list"
+        required: false
+        summary: "{{fields.item}}"
+        hint: "Key learning outcomes displayed as a grid of checkmark cards."
+        field: { label: "Objective", name: "item", widget: "string", hint: "e.g., 'Design and implement enterprise PolicyCenter workflows'" }
+
+      # ── Course Benefits (shown after Objectives — 3 category columns) ──
+      - label: "💡 Course Benefits"
+        name: "benefits"
+        widget: "object"
+        required: false
+        hint: "Three-column benefit grid: Basic Knowledge, Technical Skills, Career Interests."
+        fields:
+          - label: "Basic Knowledge Gains"
+            name: "basicKnowledge"
+            widget: "list"
+            required: false
+            summary: "{{fields.item}}"
+            hint: "Foundational knowledge outcomes (shown in the first column)."
+            field: { label: "Knowledge Point", name: "item", widget: "string", hint: "e.g., 'Understand Guidewire architecture and insurance domain concepts'" }
+          - label: "Technical Skills Gained"
+            name: "techSkills"
+            widget: "list"
+            required: false
+            summary: "{{fields.item}}"
+            hint: "Hands-on technical capabilities (shown in the second column)."
+            field: { label: "Technical Skill", name: "item", widget: "string", hint: "e.g., 'Configure PolicyCenter data model and PCF screens'" }
+          - label: "Career Interests Unlocked"
+            name: "careerInterests"
+            widget: "list"
+            required: false
+            summary: "{{fields.item}}"
+            hint: "Career path benefits (shown in the third column)."
+            field: { label: "Career Benefit", name: "item", widget: "string", hint: "e.g., 'Accelerate your path to becoming an Enterprise Consultant'" }
+
       # ── Who Should Enroll ──
       - label: "🎯 Who Should Enroll?"
         name: "whoShouldEnroll"
@@ -475,6 +539,25 @@ collections:
         fields:
           - { label: "Candidate Profile", name: "title", widget: "string", hint: "e.g., 'IT Professionals' or 'Fresh Engineering Graduates'" }
           - { label: "Profile Description", name: "description", widget: "text", hint: "1-2 sentences describing this candidate segment." }
+
+      # ── Target Job Roles (shown after Eligibility) ──
+      - label: "💼 Target Job Roles"
+        name: "jobRoles"
+        widget: "list"
+        required: false
+        summary: "{{fields.role}}"
+        hint: "Job roles shown in the interactive tab panel after the Eligibility section."
+        fields:
+          - { label: "Job Role Title", name: "role", widget: "string", required: true, hint: "e.g., 'Guidewire Associate Developer' or 'PLM Solution Architect'" }
+          - { label: "Role Description", name: "description", widget: "text", hint: "Brief description of responsibilities and career trajectory." }
+          - label: "Required Skills / Competencies"
+            name: "skills"
+            widget: "list"
+            required: false
+            summary: "{{fields.skill}}"
+            hint: "Skill tags shown as chips on the role detail card."
+            field: { label: "Skill", name: "skill", widget: "string", hint: "e.g., 'Gosu Programming' or 'PCF Configuration'" }
+          - { label: "Estimated Salary", name: "salaryEstimate", widget: "string", required: false, hint: "e.g., '₹8-15 LPA' or '$80,000-$110,000'" }
 
       # ── Trainer Section ──
       - label: "👨‍🏫 Trainer Section"
