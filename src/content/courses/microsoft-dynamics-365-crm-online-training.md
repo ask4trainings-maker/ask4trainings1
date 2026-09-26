@@ -268,6 +268,19 @@ certification:
     Earning a Microsoft Dynamics 365 CRM Online Training certification validates your expertise and boosts career credibility in the CRM domain. With Microsoft Dynamics D365 CRM certification training, you gain industry-recognized skills. Microsoft Dynamics D365 CRM professional certificate, helps you stand out and proves your ability to handle real-time CRM implementations.
 
     Certification strengthens your profile by showcasing practical knowledge gained through Microsoft Dynamics D365 CRM course with internship and hands-on learning. With Microsoft Dynamics D365 CRM functional training online and exposure to Microsoft Dynamics D365 CRM with real time projects, you become job-ready and confident to take on roles like CRM Consultant or Administrator.
+keyFeatures:
+  - title: Mentor
+    description: Expert MS D365 Training with guidance support.
+  - title: Project
+    description: Real-time MS D365 projects for practical exposure.
+  - title: curriculum
+    description: Updated MS D365 curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete MS D365 certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top MS D365 jobs.
 ---
 ## Microsoft Dynamics 365 CRM Online Training
 

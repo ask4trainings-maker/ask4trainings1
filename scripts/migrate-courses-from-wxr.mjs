@@ -82,8 +82,9 @@ for (const file of courseFiles) {
   let aboutHeaderCount = 0;
   
   let objectives = [];
-  let whyMasterPillars = [];
+  let whyMasterPillars = []; // keeping it for safety although we stopped using it
   let currentPillar = null;
+  let keyFeatures = [];
   
   let benefits = [];
   let currentBenefit = null;
@@ -92,6 +93,9 @@ for (const file of courseFiles) {
   
   let whoShouldEnroll = [];
   let currentProfile = null;
+  
+  let jobRoles = [];
+  let currentJobRole = null;
   
   let certification = null;
   
@@ -103,13 +107,16 @@ for (const file of courseFiles) {
     
     // Header detection for sections
     if (/^h[1-6]$/.test(tagName)) {
-      if (/(job roles|guidewire trainer|trainer|faq|certification)/i.test(text)) {
-        if (/(certification)/i.test(text)) {
-          currentSection = 'certification';
-          continue;
-        } else {
-          break; // Hard Stop Boundary
-        }
+      if (/(guidewire trainer|trainer|faq|highlights)/i.test(text)) {
+        break; // Hard Stop Boundary
+      }
+      if (/(certification preparation|certification program|career-focused.*?certification)/i.test(text)) {
+        currentSection = 'certification';
+        continue;
+      }
+      if (/(job roles of)/i.test(text)) {
+        currentSection = 'jobRoles';
+        continue;
       }
       
       if (/(register now|your name|your email)/i.test(text)) {
@@ -175,10 +182,13 @@ for (const file of courseFiles) {
           currentModule = { title: text, duration: '', topics: [] };
         }
       } else if (currentSection === 'features') {
-        if (/(Mentor|Project|Curriculum|Career|Certification|Placement)/i.test(text)) {
+        if (/(Mentor|Project|Curriculum|Career|Certification|Placement|Carrer|Placment)/i.test(text)) {
           currentPillar = { title: text, description: '' };
-          whyMasterPillars.push(currentPillar);
+          keyFeatures.push(currentPillar);
         }
+      } else if (currentSection === 'jobRoles') {
+        currentJobRole = { role: text, description: '', competencies: [] };
+        jobRoles.push(currentJobRole);
       } else if (currentSection === 'benefits') {
         currentBenefit = { title: text, description: '' };
         benefits.push(currentBenefit);
@@ -209,8 +219,10 @@ for (const file of courseFiles) {
         whyChoose += text + '\n\n';
       } else if (currentSection === 'eligibility' && currentProfile) {
         currentProfile.description += text + '\n\n';
+      } else if (currentSection === 'jobRoles' && currentJobRole) {
+        currentJobRole.description += text + '\n\n';
       } else if (currentSection === 'certification') {
-        if (!certification) certification = { title: "Guidewire Certification Preparation Program", description: '' };
+        if (!certification) certification = { title: "Industry Recognized Certification", description: '' };
         certification.description += text + '\n\n';
       } else if (currentSection === 'modules' && currentModule) {
         // Look for duration pattern like "5 Topics" or "10 Hours"
@@ -275,11 +287,22 @@ for (const file of courseFiles) {
   
   if (modules.length > 0) extracted.modules = modules;
   
-  if (whyMasterPillars.length > 0 || whyMasterDesc) {
+  if (keyFeatures.length > 0) {
+    extracted.keyFeatures = keyFeatures.map(p => ({ title: p.title, description: p.description.trim() }));
+  }
+  
+  if (jobRoles.length > 0) {
+    extracted.jobRoles = jobRoles.map(j => ({
+      role: j.role,
+      description: j.description.trim(),
+      competencies: ["Industry Best Practices", "Tool Mastery"]
+    }));
+  }
+  
+  if (whyMasterDesc) {
     extracted.whyMaster = {
       title: `Why Master ${getStringVal(item.title)}?`,
-      description: whyMasterDesc.trim(),
-      pillars: whyMasterPillars.map(p => ({ title: p.title, description: p.description.trim() }))
+      description: whyMasterDesc.trim()
     };
   }
   

@@ -142,16 +142,6 @@ whyMaster:
     Start your journey with our Business Analyst Online Training, designed to build strong analytical and problem-solving skills. This Job Oriented Business Analyst Course focuses on real industry needs, helping you understand business processes, requirement gathering, and documentation. With expert-led sessions, you gain practical knowledge that prepares you for real-world challenges and high-demand roles.
 
     Our Business Analyst Course with Live Projects ensures hands-on experience through real-time case studies and tools used by professionals. This Professional Business Analyst Course Online offers flexible learning with career-focused content, enabling you to work on practical scenarios, enhance your expertise, and confidently step into competitive business analyst roles across industries.
-  pillars:
-    - title: Mentor
-      description: Expert Business Analyst Online Training with guidance support.
-    - title: Project
-      description: Real-time Business Analyst projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Business Analyst curriculum aligned with industry needs.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Choose our Business Analyst Online Training to gain practical skills aligned with industry needs. This Business Analyst Course for Beginners is designed to build a strong foundation in analysis, documentation, and real-time problem solving. With expert trainers and structured learning, our Business Analyst Online Learning Program ensures you are well-prepared to handle business challenges effectively. Additionally, you benefit from real-time case studies and interactive sessions that enhance your understanding. Continuous mentor support ensures consistent progress and clarity in every concept.
 
@@ -159,12 +149,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Business Analyst certification preparation.
-
-    Dedicated placement support for top Business Analyst jobs.
-
     Our Business Analyst Certification Training Online is designed to validate your skills with industry-recognized credentials. Through this Business Analyst Online Certification Program, you gain practical knowledge, real-time projects and expert guidance. The certification makes you stand out in competitive job markets and increasing your chances of securing top roles in organizations.
 
     With our Business Analyst Training Course, you receive a certification that reflects your expertise in analysis, documentation, and business processes. This Professional Business Analyst Course Online ensures you are aligned with industry standards. It adds credibility to your resume, helping you gain employer trust and opening doors to better career opportunities with higher growth.
+keyFeatures:
+  - title: Mentor
+    description: Expert Business Analyst Online Training with guidance support.
+  - title: Project
+    description: Real-time Business Analyst projects for practical exposure.
+  - title: curriculum
+    description: Updated Business Analyst curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Business Analyst certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Business Analyst jobs.
 ---
 This is the canonical course page for Business Analyst Online Training. Start your learning journey today with Ask 4 Trainings.

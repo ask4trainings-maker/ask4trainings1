@@ -154,6 +154,11 @@ const courses = defineCollection({
       ).optional().default([]),
     }).optional(),
 
+    keyFeatures: z.array(z.object({
+      title: z.string(),
+      description: z.string(),
+    })).optional().default([]),
+
     // ─── Section 7: Why Choose ──────────────────────────────────────────────
     whyChoose: z.array(
       z.object({
@@ -195,29 +200,16 @@ const courses = defineCollection({
       badges: z.array(z.string()).default([]),
     }).default({ title: 'Industry-Recognized Certification', description: 'Earn verified credentials upon capstone project evaluation.', badges: [] }),
 
-    // certification — CMS simple string field or object
-    certification: z.union([
-      z.string(),
-      z.object({
-        title: z.string().optional(),
-        description: z.string().optional(),
-      })
-    ]).optional(),
+    // certification — XML extracted string or object
+    certification: z.object({
+      title: z.string().optional().default("Industry Recognized Certification"),
+      description: z.string().optional().default(""),
+    }).optional(),
 
     whyChooseCourse: z.string().optional(),
 
     // ─── Section 10: Career Opportunities / Job Roles ───────────────────────
-    jobRoles: z.array(
-      z.union([
-        z.string(),
-        z.object({
-          role: z.string(),
-          description: z.string().optional(),
-          skills: z.array(z.string()).optional(),
-          salaryEstimate: z.string().optional(),
-        }),
-      ])
-    ).default([]),
+    jobRoles: z.array(z.any()).optional().default([]),
 
     // careerInsights — CMS-aligned career data object
     careerInsights: z.any().optional(),
@@ -237,9 +229,6 @@ const courses = defineCollection({
 
     // ─── Testimonials ────────────────────────────────────────────────────────
     testimonials: z.array(z.any()).optional(),
-
-    // ─── Key Features ────────────────────────────────────────────────────────
-    keyFeatures: z.array(z.any()).optional(),
 
     // ─── SEO & Dates ─────────────────────────────────────────────────────────
     keywords: z.array(

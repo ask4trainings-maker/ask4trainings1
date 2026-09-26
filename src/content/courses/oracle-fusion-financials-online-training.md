@@ -177,12 +177,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Oracle Fusion Financials certification preparation.
-
-    Dedicated placement support for top Oracle Fusion Financials jobs.
-
     Earn industry-recognized credentials through Oracle Fusion Financials Professional Certification that validate your expertise in cloud financial systems. This program, combined with Oracle Fusion Financials Online Certification Training, equips you with real-time skills and practical knowledge. With Oracle Fusion Financials Course with Internship and Oracle Fusion Financials Job Oriented Training, you gain hands-on exposure and job-ready capabilities.
 
     Boost your career with Oracle Fusion Financials Online Training designed to prepare you for global opportunities in finance and ERP domains. Through Oracle Fusion Financials Online Bootcamp and Oracle Fusion Financials Training with Placement Assistance, you receive expert guidance, resume support, and interview preparation. The structured Oracle Fusion Financials Online Certification Training ensures you develop both technical and functional expertise and long-term career growth.
+keyFeatures:
+  - title: Mentor
+    description: Expert Oracle Fusion Financials Training with guidance support.
+  - title: Project
+    description: Real-time Oracle Fusion Financials projects for practical exposure.
+  - title: curriculum
+    description: Updated Oracle Fusion Financials curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Oracle Fusion Financials certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Oracle Fusion Financials jobs.
 ---
 This is the canonical course page for Oracle Fusion Financials Training. Start your learning journey today with Ask 4 Trainings.

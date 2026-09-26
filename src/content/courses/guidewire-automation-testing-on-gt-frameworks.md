@@ -163,16 +163,6 @@ whyMaster:
     Our Guidewire Automation Testing on GT Frameworks course is designed to help you master real-time testing skills for insurance applications. Learn Guidewire automation testing, Guidewire GT framework, and Selenium integration with hands-on projects. This program covers PolicyCenter, ClaimCenter, and BillingCenter testing, ensuring practical knowledge and industry readiness for QA automation roles.
 
     This course also focuses on Guidewire QA automation, testing tools, and real-time project execution to build strong expertise. You will practice automation frameworks, solve interview scenarios, and gain confidence for Guidewire automation testing jobs. With step-by-step guidance, certification support, and career-focused training, this program prepares you for high-demand opportunities.
-  pillars:
-    - title: Mentor
-      description: Expert Guidewire Automation Testing with guidance support.
-    - title: Project
-      description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Guidewire curriculum aligned with industry needs.
-
-        Career-focused training for growth in the insurance IT industry.
 whyChooseCourse: |-
   Choosing this Guidewire Automation Testing on GT Frameworks course ensures you gain industry-relevant skills with a strong focus on Guidewire automation testing, Guidewire GT framework, and real-time applications. The program is designed with practical learning, covering Guidewire Selenium testing, framework design, and real-time project execution. With expert guidance and structured modules, learners can easily understand complex concepts and apply them effectively in real-world insurance domain projects.
 
@@ -180,12 +170,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Guidewire certification preparation with exam guidance.
-
-    Dedicated placement support for top Guidewire developer jobs.
-
     Our Guidewire Automation Testing on GT Frameworks certification validates your expertise in Guidewire automation testing, Guidewire GT framework, and real-time QA practices. Upon successful completion, you will receive a recognized certificate that demonstrates your ability to work on PolicyCenter, ClaimCenter, and BillingCenter automation projects, enhancing your credibility and making your profile stand out to recruiters.
 
     This certification also strengthens your career by showcasing skills in Guidewire QA automation, Guidewire Selenium testing, and framework implementation. It helps you confidently handle Guidewire automation interview questions and proves your readiness for real-time industry challenges. With this credential, you can unlock better job opportunities and advance in high-demand Guidewire automation testing jobs.
+keyFeatures:
+  - title: Mentor
+    description: Expert Guidewire Automation Testing with guidance support.
+  - title: Project
+    description: Real-time Guidewire InsuranceSuite projects for practical exposure.
+  - title: curriculum
+    description: Updated Guidewire curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the insurance IT industry.
+  - title: Certification
+    description: Complete Guidewire certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Guidewire developer jobs.
 ---
 This is the canonical course page for Guidewire Automation Testing On Gt Frameworks Training. Start your learning journey today with Ask 4 Trainings.

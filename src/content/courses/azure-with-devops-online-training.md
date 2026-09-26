@@ -177,12 +177,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Azure DevOps certification preparation.
-
-    Dedicated placement support for top Azure DevOps jobs.
-
     Strengthen your technical profile with Azure with DevOps Online Training designed to build practical cloud, automation, and deployment expertise. Our Azure DevOps Professional Certification Training helps learners understand DevOps concepts, cloud operations, CI/CD practices, and industry workflows while improving readiness for globally recognized certification .
 
     Enhance your career potential through Azure DevOps Certification Training that focuses on hands-on learning, practical implementation, and real-time DevOps methodologies. With Azure DevOps Online Training with Certification, learners gain valuable exposure to cloud technologies, automation tools, deployment management, and structured learning aligned with current industry and certification requirements.
+keyFeatures:
+  - title: Mentor
+    description: Expert Azure with DevOps Online Training with guidance support.
+  - title: Project
+    description: Real-time Azure DevOps projects for practical exposure.
+  - title: curriculum
+    description: Updated Azure DevOps curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Azure DevOps certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Azure DevOps jobs.
 ---
 This is the canonical course page for Azure with DevOps Online Training. Start your learning journey today with Ask 4 Trainings.

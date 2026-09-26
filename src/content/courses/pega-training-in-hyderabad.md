@@ -177,12 +177,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete PEGA Training certification preparation.
-
-    Dedicated placement support for top Pega jobs.
-
     Our training program supports learners in preparing for industry-recognized credentials through structured PEGA Certification Training focused on application development, workflow automation, and BPM concepts. With expert guidance, hands-on practice, and technical learning modules, participants strengthen practical knowledge and improve readiness for certification objectives through PEGA Training in Hyderabad.
 
     The PEGA Online Certification Program helps learners enhance implementation skills, while PEGA Training with Real-Time Projects provides project-based experience to improve problem-solving abilities and industry preparedness for PEGA certification and professional growth.
+keyFeatures:
+  - title: Mentor
+    description: Expert PEGA Training in Hyderabad with guidance support.
+  - title: Project
+    description: Real-time PEGA Training projects for practical exposure.
+  - title: curriculum
+    description: Updated PEGA Training curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete PEGA Training certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Pega jobs.
 ---
 This is the canonical course page for PEGA Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

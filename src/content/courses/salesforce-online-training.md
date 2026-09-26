@@ -139,16 +139,6 @@ courseImage: ''
 whyMaster:
   title: Why Master Salesforce Online training?
   description: The Salesforce Developer Certification Training program is designed to help learners build strong coding and customization skills on the Salesforce platform. Through interactive Salesforce Online Classes, students gain practical experience in Apex, Visualforce, and Lightning components. This course also supports Salesforce Training for Beginners, making it easy for freshers to understand core concepts, workflows, and real-time applications in cloud CRM environments.Our Salesforce Marketing Cloud Training focuses on digital marketing automation, customer journeys, and campaign management. Combined with flexible Salesforceonline training, learners can access expert-led sessions from anywhere.This program covers email marketing, analytics, and personalization tools, helping students gain in-demand skills and prepare for certification, making them job-ready in today’s competitive Salesforce ecosystem.
-  pillars:
-    - title: Mentor
-      description: Expert Salesforce Online Training with guidance support.
-    - title: Project
-      description: Real-time Salesforce projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Salesforce curriculum aligned with industry needs.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Choosing salesforcoenline trinaing is the best step for building a successful career in cloud CRM technologies. As the Best Institute for Salesforce in Hyderabad, we provide industry-focused learning with expert trainers and flexible schedules. Our Salesforce Cloud Computing Online Training ensures learners gain strong foundational and advanced skills, making them job-ready with real-time exposure and practical knowledge.
 
@@ -156,20 +146,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Boost your career with the Salesforce Cloud Computing Course designed for aspiring professionals and developers. Our Salesforce Course in Hyderabad offers expert-led sessions, real-time projects, and certification support. Join the Best Salesforce Training in Hyderabad to master CRM skills through our Salesforce Developer Course and Salesforce Certification Course. Enroll in Salesforce Online Training and become job-ready with industry-focused learning.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Salesforce certification preparation with exam guidance.
-
-    Dedicated placement support for top Salesforcedeveloper jobs.
-
     Our Salesforce Certification Online Course provides complete guidance to help learners clear global certification exams with confidence. Through structured salesforce online training, students gain in-depth knowledge of CRM concepts, automation, and cloud solutions. With expert mentoring, mock tests, and real-time scenarios, learners are fully prepared to achieve Salesforce Certification with Placement Assistance and advance their careers.
 
     Earning a certification through our Salesforce CRM Cloud Specialist Training validates your expertise in handling real-world CRM applications. This Salesforce Job Oriented Training focuses on practical skills, including live projects and case studies. Recognized by top companies, our program from the Best Institute for Salesforce in Hyderabad ensures learners gain industry credibility and better job opportunities.
+keyFeatures:
+  - title: Mentor
+    description: Expert Salesforce Online Training with guidance support.
+  - title: Project
+    description: Real-time Salesforce projects for practical exposure.
+  - title: curriculum
+    description: Updated Salesforce curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Salesforce certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Salesforcedeveloper jobs.
 ---
 This is the canonical course page for Salesforce Online Training. Start your learning journey today with Ask 4 Trainings.

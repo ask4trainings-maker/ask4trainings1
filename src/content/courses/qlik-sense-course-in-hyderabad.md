@@ -184,5 +184,18 @@ certification:
     The Qlik Sense Certification Course helps learners validate their knowledge of data visualization, dashboard development, data modeling, and business intelligence. Through structured learning, practical assignments, and real-time projects, students gain the confidence to apply Qlik Sense concepts in professional environments. The Qlik Sense Online Certification adds value to your resume and demonstrates your commitment to building industry-relevant analytics skills.
 
     Our Qlik Sense Online Training provides practical knowledge and expert guidance to help learners prepare for certification and professional opportunities. Students gain hands-on experience with interactive dashboards, data integration, reporting, and analytics through industry-focused projects. The Qlik Sense Course in Hyderabad supports career development by building technical expertise, practical confidence, and job-ready skills for business intelligence roles.
+keyFeatures:
+  - title: Mentor
+    description: Expert Qlik Sense Course in Hyderabad with guidance support.
+  - title: Project
+    description: Real-time Qlik Sense projects for practical exposure.
+  - title: curriculum
+    description: Updated Qlik Sense curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Qlik Sense certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Qlik Sense jobs.
 ---
 This is the canonical course page for Qlik Sense Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

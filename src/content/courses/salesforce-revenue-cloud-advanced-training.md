@@ -177,12 +177,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Salesforce Revenue Cloud Advanced certification preparation.
-
-    Dedicated placement support for top Salesforce Revenue Cloud jobs.
-
     The Salesforce RCA Online Certification Program is designed to help learners gain the knowledge and confidence required to validate their Revenue Cloud expertise. The training covers advanced concepts, practical implementation techniques, and real-world business scenarios. Through structured learning and hands-on exercises, participants strengthen their understanding of revenue lifecycle management while preparing for the Salesforce RCA Certification examination and professional career advancement opportunities.
 
     Earning a credential through Salesforce Revenue Cloud Advanced Training demonstrates expertise in pricing, CPQ, billing, subscriptions, and revenue operations. Learners develop implementation skills and technical proficiency through Revenue Cloud Advanced Hands-on Training, helping them stand out in competitive job markets and enterprise Salesforce environments.
+keyFeatures:
+  - title: Mentor
+    description: Expert Salesforce Revenue Cloud Advanced Training with guidance .
+  - title: Project
+    description: Real-time Salesforce Revenue Cloud projects for practical exposure.
+  - title: curriculum
+    description: Updated Salesforce Revenue Cloud curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Salesforce Revenue Cloud Advanced certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Salesforce Revenue Cloud jobs.
 ---
 This is the canonical course page for Salesforce Revenue Cloud Advanced Training. Start your learning journey today with Ask 4 Trainings.

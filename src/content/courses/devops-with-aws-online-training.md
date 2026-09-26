@@ -178,12 +178,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete DevOps with AWS certification preparation.
-
-    Dedicated placement support for top DevOps with AWS jobs.
-
     Build strong cloud and automation expertise through DevOps with AWS Online Training designed to support certification and career advancement. Our AWS DevOps Certification Training covers AWS services, CI/CD pipelines, Docker, Kubernetes, Jenkins, and deployment practices.
 
     Strengthen your professional profile with AWS DevOps Professional Certification Training that focuses on real-time implementation, automation workflows, and cloud operations. Through AWS DevOps Online Course and hands-on project exposure, learners improve practical knowledge, enhance technical abilities, and prepare for industry-recognized DevOps and AWS certification opportunities for long-term professional career advancement success .
+keyFeatures:
+  - title: Mentor
+    description: Expert DevOps with AWS Training with guidance support.
+  - title: Project
+    description: Real-time DevOps with AWS projects for practical exposure.
+  - title: curriculum
+    description: Updated DevOps with AWS curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete DevOps with AWS certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top DevOps with AWS jobs.
 ---
 This is the canonical course page for DevOps with AWS Online Training. Start your learning journey today with Ask 4 Trainings.

@@ -101,7 +101,10 @@ jobRoles:
   - Platform Specialist
   - Solutions Architect
   - Technical Business Analyst
-overview: Build practical skills with Teamcenter AWC Online Training covering Active Workspace navigation, configuration, customization, and real-time usage. Learn through guided sessions, hands-on exercises, and project scenarios designed for workplace needs. The Teamcenter AWC Certification Program helps validate your knowledge while improving confidence in implementation tasks and career opportunities.
+overview: |-
+  Build practical skills with Teamcenter AWC Online Training covering Active Workspace navigation, configuration, customization, and real-time usage. Learn through guided sessions, hands-on exercises, and project scenarios designed for workplace needs. The Teamcenter AWC Certification Program helps validate your knowledge while improving confidence in implementation tasks and career opportunities.
+
+  Start your learning journey with Teamcenter AWC Course for Beginners, designed to explain concepts from the fundamentals through practical workflows. Gain exposure to user interfaces, data management, configurations, and common business processes with instructor guidance. The Teamcenter AWC Job Oriented Course adds project-based practice, interview preparation, and skills for workplace roles. now.
 aboutCourse: |-
   This Teamcenter Awc Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
 
@@ -139,6 +142,10 @@ whoShouldEnroll:
     description: Gain practical exposure through Teamcenter AWC Training with Real-Time Projects, where learners explore realistic product lifecycle scenarios, workflows, data handling, and collaboration tasks. Teamcenter AWC Job Oriented Course connects concepts with practical applications to help participants understand enterprise PLM processes.
   - title: Online Learning
     description: Strengthen your knowledge with Teamcenter AWC Online Certification, covering core Active Workspace concepts, navigation, workflows, product data, and lifecycle management. Teamcenter AWC Training with Real-Time Projects adds practical exposure, helping learners reinforce concepts and build confidence for professional PLM environments.
+  - title: Skills for Professional Growth
+    description: Build expertise through Teamcenter AWC Online Training and develop knowledge of Active Workspace, product data, workflows, search, collaboration, and lifecycle management. Teamcenter AWC Job Oriented Course helps learners understand essential concepts through structured lessons and exercises. Participants can improve technical confidence, explore enterprise PLM processes, and prepare for roles requiring Teamcenter AWC skills.
+  - title: Career-Focused Learning Route
+    description: Strengthen your profile with Teamcenter AWC Certification Program and gain structured knowledge of Active Workspace features, navigation, workflows, data management, and collaboration. Teamcenter AWC Certification with Placement Support helps learners prepare for career opportunities by reinforcing concepts and practical skills
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -180,5 +187,18 @@ certification:
     Build expertise through Teamcenter AWC Online Training and develop knowledge of Active Workspace, product data, workflows, search, collaboration, and lifecycle management. Teamcenter AWC Job Oriented Course helps learners understand essential concepts through structured lessons and exercises. Participants can improve technical confidence, explore enterprise PLM processes, and prepare for roles requiring Teamcenter AWC skills.
 
     Strengthen your profile with Teamcenter AWC Certification Program and gain structured knowledge of Active Workspace features, navigation, workflows, data management, and collaboration. Teamcenter AWC Certification with Placement Support helps learners prepare for career opportunities by reinforcing concepts and practical skills
+keyFeatures:
+  - title: Mentor
+    description: Expert Teamcenter AWC Training with guidance support.
+  - title: Project
+    description: Real-time Teamcenter AWC projects for practical exposure.
+  - title: curriculum
+    description: Updated Teamcenter AWC curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Teamcenter AWC certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Teamcenter AWC jobs.
 ---
 This is the canonical course page for Teamcenter Awc Training. Start your learning journey today with Ask 4 Trainings.

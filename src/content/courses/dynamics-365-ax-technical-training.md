@@ -162,16 +162,6 @@ whyMaster:
     Dynamics 365 AX Technical Training is designed to help learners master ERP technical development with practical knowledge and industry-focused concepts. The course includes X++, SSRS reports, integrations, workflows, forms, and customization techniques. Through Dynamics 365 AX Technical with Real Time Projects, students gain hands-on exposure that improves problem-solving skills and prepares them for real-world implementation environments.
 
     Our Dynamics 365 AX Technical with Placement Assistance program supports learners with interview preparation, resume guidance, and career mentoring. The training also includes a Dynamics 365 AX Technical Internship that helps candidates work on live assignments and business scenarios.
-  pillars:
-    - title: Mentor
-      description: Expert D365 AX Technical Training with guidance support.
-    - title: Project
-      description: Real-time D365 AX Technical projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated D365 AX Technical curriculum aligned with industry.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Our Dynamics 365 AX Technical Training is designed to provide complete technical expertise with real-time implementation knowledge. The course covers Dynamics 365 AX Technical Integration with ERP, reporting, workflows, security, and customization using advanced tools. Students gain practical exposure through Dynamics 365 AX Technical Development Tools and hands-on exercises that improve technical confidence. The program also includes Dynamics 365 AX Technical X++ Programming Training to help learners master coding, debugging, and ERP application development for enterprise projects.
 
@@ -179,14 +169,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Our Dynamics 365 AX Technical Online Classes provide flexible learning with live instructor-led sessions and hands-on assignments. The program also supports preparation for Dynamics 365 AX Technical Certification by covering essential concepts and project-based scenarios. Using a step-by-step Dynamics 365 AX Technical Tutorial, learners can understand development processes, reporting tools, and customization techniques required for successful ERP careers.
-
-    Complete D365 AX Technical certification preparation.
-
-    Dedicated placement support for top D365 AX Technical jobs.
-
     Our Dynamics 365 AX Technical Training program provides complete support for certification preparation with real-time technical concepts and practical assignments. . Through MS D365 AX Technical Online Training, learners gain hands-on exposure that improves technical confidence and helps them prepare effectively for certification exams and implementation projects.
 
     The MS D365 AX Technical Certification Course is designed to help learners gain industry-recognized skills through practical learning and project-based training. With MS D365 AX Technical Developer Training and real-time implementation scenarios, students understand ERP architecture, development tools, and integration processes.
+keyFeatures:
+  - title: Mentor
+    description: Expert D365 AX Technical Training with guidance support.
+  - title: Project
+    description: Real-time D365 AX Technical projects for practical exposure.
+  - title: curriculum
+    description: Updated D365 AX Technical curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete D365 AX Technical certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top D365 AX Technical jobs.
 ---
 This is the canonical course page for Dynamics 365 AX Technical Training. Start your learning journey today with Ask 4 Trainings.

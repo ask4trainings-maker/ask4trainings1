@@ -1,0 +1,814 @@
+
+> ask4trainings@1.0.0 build
+> astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs
+
+17:40:21 [content] Syncing content
+17:40:21 [content] Synced content
+17:40:21 [types] Generated 479ms
+17:40:21 [check] Getting diagnostics for Astro files in /home/rahul/Projects/Personal/ask4trainings...
+[96mscratch/update.js[0m:[93m1[0m:[93m12[0m - [93mwarning[0m[90m ts(80001): [0mFile is a CommonJS module; it may be converted to an ES module.
+
+[7m1[0m const fs = require('fs');
+[7m [0m [93m           ~~~~~~~~~~~~~[0m
+
+[96mscratch/write_config.js[0m:[93m1[0m:[93m12[0m - [93mwarning[0m[90m ts(80001): [0mFile is a CommonJS module; it may be converted to an ES module.
+
+[7m1[0m const fs = require('fs');
+[7m [0m [93m           ~~~~~~~~~~~~~[0m
+
+[96mscripts/audit-wxr-courses.mjs[0m:[93m145[0m:[93m87[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+
+[7m145[0m   $('.elementor-toggle-item, .elementor-tab-title, .elementskit-card, details').each((i, el) => {
+[7m   [0m [93m                                                                                      ~[0m
+[96mscripts/audit-wxr-courses.mjs[0m:[93m85[0m:[93m29[0m - [93mwarning[0m[90m ts(6133): [0m'i' is declared but its value is never read.
+
+[7m85[0m   $('h1, h2, h3, h4').each((i, el) => {
+[7m  [0m [93m                            ~[0m
+
+[96mscripts/migrate-courses-from-wxr.mjs[0m:[93m85[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'whyMasterPillars' is declared but its value is never read.
+
+[7m85[0m   let whyMasterPillars = []; // keeping it for safety although we stopped using it
+[7m  [0m [93m      ~~~~~~~~~~~~~~~~[0m
+
+[96msrc/content.config.ts[0m:[93m234[0m:[93m5[0m - [91merror[0m[90m ts(1117): [0mAn object literal cannot have multiple properties with the same name.
+
+[7m234[0m     keyFeatures: z.array(z.any()).optional(),
+[7m   [0m [91m    ~~~~~~~~~~~[0m
+[96msrc/content.config.ts[0m:[93m283[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m283[0m     navigation_path: z.string().optional(),
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m282[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m282[0m     relatedCourseSlug: z.string().optional(),
+[7m   [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m281[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m281[0m     legacyUrl: z.string().optional(),
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m280[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m280[0m     updatedDate: z.coerce.date().optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m279[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m279[0m     metaDescription: z.string().optional(),
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m278[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m278[0m     imageAlt: z.string().optional(),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m276[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m276[0m     draft: z.boolean().default(false),
+[7m   [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m275[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m275[0m     featured: z.boolean().default(false),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m274[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m274[0m     image: z.string().optional(),
+[7m   [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m273[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m273[0m     description: z.string(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m272[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m272[0m     category: z.string().default('General'),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m271[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m271[0m     author: z.string().default('Ask4Trainings Team'),
+[7m   [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m270[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m270[0m     publishDate: z.coerce.date(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m269[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m269[0m     title: z.string(),
+[7m   [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m268[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m268[0m   schema: z.object({
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m259[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m259[0m       metaDescription: z.string().optional(),
+[7m   [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m258[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m258[0m       metaTitle: z.string().optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m257[0m:[93m10[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m257[0m     seo: z.object({
+[7m   [0m [93m         ~[0m
+[96msrc/content.config.ts[0m:[93m254[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m254[0m     batchInfoText: z.string().optional(),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m252[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m252[0m     batchInfo: z.any().optional(),
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m248[0m:[93m23[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m248[0m     relatedGuideSlug: z.string().optional(),
+[7m   [0m [93m                      ~[0m
+[96msrc/content.config.ts[0m:[93m247[0m:[93m33[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m247[0m     relatedCourseSlugs: z.array(z.string()).optional(),
+[7m   [0m [93m                                ~[0m
+[96msrc/content.config.ts[0m:[93m247[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m247[0m     relatedCourseSlugs: z.array(z.string()).optional(),
+[7m   [0m [93m                        ~[0m
+[96msrc/content.config.ts[0m:[93m242[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m242[0m     updatedDate: z.coerce.date().optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m241[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m241[0m     publishDate: z.coerce.date().optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m238[0m:[93m48[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m238[0m       z.union([z.string(), z.object({ keyword: z.string() })])
+[7m   [0m [93m                                               ~[0m
+[96msrc/content.config.ts[0m:[93m238[0m:[93m28[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m238[0m       z.union([z.string(), z.object({ keyword: z.string() })])
+[7m   [0m [93m                           ~[0m
+[96msrc/content.config.ts[0m:[93m238[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m238[0m       z.union([z.string(), z.object({ keyword: z.string() })])
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m238[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m238[0m       z.union([z.string(), z.object({ keyword: z.string() })])
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m237[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m237[0m     keywords: z.array(
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m234[0m:[93m26[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m234[0m     keyFeatures: z.array(z.any()).optional(),
+[7m   [0m [93m                         ~[0m
+[96msrc/content.config.ts[0m:[93m234[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m234[0m     keyFeatures: z.array(z.any()).optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m231[0m:[93m27[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m231[0m     testimonials: z.array(z.any()).optional(),
+[7m   [0m [93m                          ~[0m
+[96msrc/content.config.ts[0m:[93m231[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m231[0m     testimonials: z.array(z.any()).optional(),
+[7m   [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m224[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m224[0m         answer: z.string(),
+[7m   [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m223[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m223[0m         question: z.string(),
+[7m   [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m222[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m222[0m       z.object({
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m221[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m221[0m     faqs: z.array(
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m218[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m218[0m     trainer: z.any().optional(),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m215[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m215[0m     careerInsights: z.any().optional(),
+[7m   [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m212[0m:[93m23[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m212[0m     jobRoles: z.array(z.any()).optional().default([]),
+[7m   [0m [93m                      ~[0m
+[96msrc/content.config.ts[0m:[93m212[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m212[0m     jobRoles: z.array(z.any()).optional().default([]),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m209[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m209[0m     whyChooseCourse: z.string().optional(),
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m206[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m206[0m       description: z.string().optional().default(""),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m205[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m205[0m       title: z.string().optional().default("Industry Recognized Certification"),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m204[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m204[0m     certification: z.object({
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m200[0m:[93m23[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m200[0m       badges: z.array(z.string()).default([]),
+[7m   [0m [93m                      ~[0m
+[96msrc/content.config.ts[0m:[93m200[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m200[0m       badges: z.array(z.string()).default([]),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m199[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m199[0m       description: z.string().default('Earn verified credentials upon capstone project evaluation and practical lab assessments.'),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m198[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m198[0m       title: z.string().default('Industry-Recognized Certification'),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m197[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m197[0m     certifications: z.object({
+[7m   [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m194[0m:[93m28[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m194[0m     prerequisites: z.array(z.string()).optional(),
+[7m   [0m [93m                           ~[0m
+[96msrc/content.config.ts[0m:[93m194[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m194[0m     prerequisites: z.array(z.string()).optional(),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m189[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m189[0m         z.string(),
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m188[0m:[93m30[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m188[0m         z.record(z.string(), z.any()), // any object shape (title+description, title+answer, etc)
+[7m   [0m [93m                             ~[0m
+[96msrc/content.config.ts[0m:[93m188[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m188[0m         z.record(z.string(), z.any()), // any object shape (title+description, title+answer, etc)
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m188[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m188[0m         z.record(z.string(), z.any()), // any object shape (title+description, title+answer, etc)
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m187[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m187[0m       z.union([
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m186[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m186[0m     whoShouldEnroll: z.array(
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m180[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m180[0m         answer: z.string().optional(),
+[7m   [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m179[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m179[0m         title: z.string().optional(),
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m178[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m178[0m         question: z.string().optional(),
+[7m   [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m177[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m177[0m       z.array(z.object({
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m177[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m177[0m       z.array(z.object({
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m176[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m176[0m       z.array(z.string()),
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m176[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m176[0m       z.array(z.string()),
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m175[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m175[0m     eligibility: z.union([
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m171[0m:[93m26[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m171[0m     whyChooseUs: z.array(z.any()).optional(),
+[7m   [0m [93m                         ~[0m
+[96msrc/content.config.ts[0m:[93m171[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m171[0m     whyChooseUs: z.array(z.any()).optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m166[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m166[0m         description: z.string(),
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m165[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m165[0m         title: z.string(),
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m164[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m164[0m       z.object({
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m163[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m163[0m     whyChoose: z.array(
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m159[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m159[0m       description: z.string(),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m158[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m158[0m       title: z.string(),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m157[0m:[93m26[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m157[0m     keyFeatures: z.array(z.object({
+[7m   [0m [93m                         ~[0m
+[96msrc/content.config.ts[0m:[93m157[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m157[0m     keyFeatures: z.array(z.object({
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m152[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m152[0m           description: z.string(),
+[7m   [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m151[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m151[0m           title: z.string(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m150[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m150[0m         z.object({
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m149[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m149[0m       pillars: z.array(
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m148[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m148[0m       description: z.string().optional(),
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m147[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m147[0m       title: z.string().optional(),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m146[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m146[0m     whyMaster: z.object({
+[7m   [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m142[0m:[93m36[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m142[0m       z.array(z.record(z.string(), z.any()))
+[7m   [0m [93m                                   ~[0m
+[96msrc/content.config.ts[0m:[93m142[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m142[0m       z.array(z.record(z.string(), z.any()))
+[7m   [0m [93m                       ~[0m
+[96msrc/content.config.ts[0m:[93m142[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m142[0m       z.array(z.record(z.string(), z.any()))
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m142[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m142[0m       z.array(z.record(z.string(), z.any()))
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m139[0m:[93m53[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m139[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                                    ~[0m
+[96msrc/content.config.ts[0m:[93m139[0m:[93m41[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m139[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                        ~[0m
+[96msrc/content.config.ts[0m:[93m139[0m:[93m32[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m139[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                               ~[0m
+[96msrc/content.config.ts[0m:[93m139[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m139[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m139[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m139[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m138[0m:[93m26[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m138[0m         careerInterests: z.array(
+[7m   [0m [93m                         ~[0m
+[96msrc/content.config.ts[0m:[93m136[0m:[93m53[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m136[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                                    ~[0m
+[96msrc/content.config.ts[0m:[93m136[0m:[93m41[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m136[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                        ~[0m
+[96msrc/content.config.ts[0m:[93m136[0m:[93m32[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m136[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                               ~[0m
+[96msrc/content.config.ts[0m:[93m136[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m136[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m136[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m136[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m135[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m135[0m         techSkills: z.array(
+[7m   [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m133[0m:[93m53[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m133[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                                    ~[0m
+[96msrc/content.config.ts[0m:[93m133[0m:[93m41[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m133[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                                        ~[0m
+[96msrc/content.config.ts[0m:[93m133[0m:[93m32[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m133[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                               ~[0m
+[96msrc/content.config.ts[0m:[93m133[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m133[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m133[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m133[0m           z.union([z.string(), z.record(z.string(), z.any())])
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m132[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m132[0m         basicKnowledge: z.array(
+[7m   [0m [93m                        ~[0m
+[96msrc/content.config.ts[0m:[93m131[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m131[0m       z.object({
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m130[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m130[0m     benefits: z.union([
+[7m   [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m124[0m:[93m30[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m124[0m         z.record(z.string(), z.any()), // catch-all for other CMS shapes
+[7m   [0m [93m                             ~[0m
+[96msrc/content.config.ts[0m:[93m124[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m124[0m         z.record(z.string(), z.any()), // catch-all for other CMS shapes
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m124[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m124[0m         z.record(z.string(), z.any()), // catch-all for other CMS shapes
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m123[0m:[93m26[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m123[0m         z.object({ item: z.string() }),
+[7m   [0m [93m                         ~[0m
+[96msrc/content.config.ts[0m:[93m123[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m123[0m         z.object({ item: z.string() }),
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m122[0m:[93m9[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m122[0m         z.string(),
+[7m   [0m [93m        ~[0m
+[96msrc/content.config.ts[0m:[93m121[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m121[0m       z.union([
+[7m   [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m120[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m120[0m     objectives: z.array(
+[7m   [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m116[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m116[0m     description: z.string().optional(),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m113[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m113[0m     aboutCourse: z.string().default(''),
+[7m   [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m110[0m:[93m43[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m110[0m     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
+[7m   [0m [93m                                          ~[0m
+[96msrc/content.config.ts[0m:[93m110[0m:[93m31[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m110[0m     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
+[7m   [0m [93m                              ~[0m
+[96msrc/content.config.ts[0m:[93m110[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m110[0m     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
+[7m   [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m110[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m110[0m     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
+[7m   [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m106[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m106[0m       }).catchall(z.any())
+[7m   [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m103[0m:[93m31[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m103[0m             z.object({ topic: z.string() }),
+[7m   [0m [93m                              ~[0m
+[96msrc/content.config.ts[0m:[93m103[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m103[0m             z.object({ topic: z.string() }),
+[7m   [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m102[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m102[0m             z.string(),
+[7m   [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m101[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m101[0m           z.union([
+[7m   [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m100[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m100[0m         topics: z.array(
+[7m   [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m99[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m99[0m         duration: z.string().optional(), // kept optional for backward-compat; not used in rendering
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m98[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m98[0m         title: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m97[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m97[0m       z.object({
+[7m  [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m96[0m:[93m14[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m96[0m     modules: z.array(
+[7m  [0m [93m             ~[0m
+[96msrc/content.config.ts[0m:[93m89[0m:[93m31[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m89[0m             z.object({ topic: z.string() }),
+[7m  [0m [93m                              ~[0m
+[96msrc/content.config.ts[0m:[93m89[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m89[0m             z.object({ topic: z.string() }),
+[7m  [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m88[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m88[0m             z.string(),
+[7m  [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m87[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m87[0m           z.union([
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m86[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m86[0m         topics: z.array(
+[7m  [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m85[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m85[0m         moduleTitle: z.string().optional(),
+[7m  [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m84[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m84[0m       z.object({
+[7m  [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m83[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m83[0m     curriculum: z.array(
+[7m  [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m78[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m78[0m         topics: z.array(z.string()),
+[7m  [0m [93m                        ~[0m
+[96msrc/content.config.ts[0m:[93m78[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m78[0m         topics: z.array(z.string()),
+[7m  [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m77[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m77[0m         moduleMeta: z.string().optional(),
+[7m  [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m76[0m:[93m17[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m76[0m         module: z.string().optional(),       // Legacy compatibility
+[7m  [0m [93m                ~[0m
+[96msrc/content.config.ts[0m:[93m75[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m75[0m         moduleTitle: z.string().optional(),
+[7m  [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m74[0m:[93m7[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m74[0m       z.object({
+[7m  [0m [93m      ~[0m
+[96msrc/content.config.ts[0m:[93m73[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m73[0m     syllabus: z.array(
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m70[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m70[0m     scheduleInfo: z.any().optional(),
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m67[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m67[0m     trainingMode: z.string().optional(),
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m64[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m64[0m     demoVideoUrl: z.string().optional(),
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m60[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m60[0m       seatsLeft: z.string().optional(),
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m59[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m59[0m       timing: z.string().optional(),
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m58[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m58[0m       startDate: z.string().optional(),
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m57[0m:[93m20[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m57[0m     upcomingBatch: z.object({
+[7m  [0m [93m                   ~[0m
+[96msrc/content.config.ts[0m:[93m54[0m:[93m23[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m54[0m     brochureDriveUrl: z.string().optional(),
+[7m  [0m [93m                      ~[0m
+[96msrc/content.config.ts[0m:[93m51[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m51[0m     brochureUrl: z.string().default('https://drive.google.com/'),
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m50[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m50[0m     overview: z.string().default(''),
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m47[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m47[0m     heroImage: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m46[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m46[0m     courseImage: z.string().optional(),       // Media preview placeholder
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m45[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m45[0m     videoUrl: z.string().optional(),          // YouTube embed link / video ID
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m44[0m:[93m34[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m44[0m     rating: z.union([z.string(), z.number()]).transform(val => String(val)).optional(),
+[7m  [0m [93m                                 ~[0m
+[96msrc/content.config.ts[0m:[93m44[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m44[0m     rating: z.union([z.string(), z.number()]).transform(val => String(val)).optional(),
+[7m  [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m44[0m:[93m13[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m44[0m     rating: z.union([z.string(), z.number()]).transform(val => String(val)).optional(),
+[7m  [0m [93m            ~[0m
+[96msrc/content.config.ts[0m:[93m43[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m43[0m     mode: z.string().default('Online Live Interactive'),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m42[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m42[0m     duration: z.string().default('45-60 Hrs'),
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m39[0m:[93m18[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m39[0m     reviewCount: z.number().optional(),        // CMS number widget
+[7m  [0m [93m                 ~[0m
+[96msrc/content.config.ts[0m:[93m38[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m38[0m     ratingNum: z.number().optional(),         // CMS number widget output
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m34[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m34[0m     permalink: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m31[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m31[0m     thumbnailAlt: z.string().optional(),
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m30[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m30[0m     thumbnail: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m27[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m27[0m     shortCode: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m24[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m24[0m     navigationLocation: z.string().optional(),
+[7m  [0m [93m                        ~[0m
+[96msrc/content.config.ts[0m:[93m19[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m19[0m     body: z.string().optional(),
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m18[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m18[0m     badge: z.string().optional(),
+[7m  [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m17[0m:[93m19[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m17[0m     priorityTier: z.string().optional(),
+[7m  [0m [93m                  ~[0m
+[96msrc/content.config.ts[0m:[93m16[0m:[93m21[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m16[0m     navigationPath: z.string().optional(),
+[7m  [0m [93m                    ~[0m
+[96msrc/content.config.ts[0m:[93m15[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m15[0m     valueProp: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m14[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m14[0m     draft: z.boolean().default(false),
+[7m  [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m13[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m13[0m     slug: z.string(), // preserves root-flat legacy slug exactly
+[7m  [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m12[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m12[0m     menuTitle: z.string().optional(),
+[7m  [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m11[0m:[93m15[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m11[0m     category: z.string().default('other-tools'),
+[7m  [0m [93m              ~[0m
+[96msrc/content.config.ts[0m:[93m10[0m:[93m22[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m10[0m     metaDescription: z.string().optional(),
+[7m  [0m [93m                     ~[0m
+[96msrc/content.config.ts[0m:[93m9[0m:[93m16[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m9[0m     metaTitle: z.string().optional(),
+[7m [0m [93m               ~[0m
+[96msrc/content.config.ts[0m:[93m8[0m:[93m12[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m8[0m     title: z.string(),
+[7m [0m [93m           ~[0m
+[96msrc/content.config.ts[0m:[93m6[0m:[93m11[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m6[0m   schema: z.object({
+[7m [0m [93m          ~[0m
+[96msrc/content.config.ts[0m:[93m1[0m:[93m28[0m - [93mwarning[0m[90m ts(6385): [0m'z' is deprecated.
+
+[7m1[0m import { defineCollection, z } from 'astro:content';
+[7m [0m [93m                           ~[0m
+
+[96msrc/components/Footer.astro[0m:[93m13[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'categories' is declared but its value is never read.
+
+[7m13[0m const categories = categoriesData?.categories ?? [];
+[7m  [0m [93m      ~~~~~~~~~~[0m
+
+[96msrc/components/SearchModal.astro[0m:[93m44[0m:[93m9[0m - [93mwarning[0m[90m astro(4000): [0mThis script will be treated as if it has the `is:inline` directive because it contains an attribute. Therefore, features that require processing (e.g. using TypeScript or npm packages in the script) are unavailable.
+
+See docs for more details: https://docs.astro.build/en/guides/client-side-scripts/#script-processing.
+
+Add the `is:inline` directive explicitly to silence this hint.
+
+[7m44[0m <script define:vars={{ coursesData, isDev }}>
+[7m  [0m [93m        ~~~~~~~~~~~[0m
+
+[96msrc/layouts/BlogLayout.astro[0m:[93m10[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'articleSchema' is declared but its value is never read.
+
+[7m10[0m const articleSchema = { "@context": "https://schema.org", "@type": "BlogPosting", "headline": title, "datePublished": publishDate.toISOString(), "author": { "@type": "Organization", "name": "Ask 4 Trainings" } };
+[7m  [0m [93m      ~~~~~~~~~~~~~[0m
+
+[96msrc/pages/index.astro[0m:[93m37[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'categories' is declared but its value is never read.
+
+[7m37[0m const categories = uniqueCategoryIds.map(id => {
+[7m  [0m [93m      ~~~~~~~~~~[0m
+[96msrc/pages/index.astro[0m:[93m31[0m:[93m7[0m - [93mwarning[0m[90m ts(6133): [0m'totalCourses' is declared but its value is never read.
+
+[7m31[0m const totalCourses = sortedCourses.length;
+[7m  [0m [93m      ~~~~~~~~~~~~[0m
+
+Result (76 files): 
+- 1 error
+- 0 warnings
+- 196 hints
+

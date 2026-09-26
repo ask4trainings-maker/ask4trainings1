@@ -5,6 +5,7 @@ import CourseSidebar from '../components/course/CourseSidebar.astro';
 import CourseOverview from '../components/course/CourseOverview.astro';
 import CourseSyllabus from '../components/course/CourseSyllabus.astro';
 import CourseAbout from '../components/course/CourseAbout.astro';
+import KeyFeatures from '../components/course/KeyFeatures.astro';
 import CourseObjectives from '../components/course/CourseObjectives.astro';
 import CourseBenefits from '../components/course/CourseBenefits.astro';
 import CourseWhyChoose from '../components/course/CourseWhyChoose.astro';
@@ -100,6 +101,7 @@ const schemaGraph = {
     </div>
   </section>
   <CourseAbout aboutCourse={data.aboutCourse} courseTitle={data.title} category={data.category} whyMaster={data.whyMaster} />
+  <KeyFeatures features={data.keyFeatures} courseTitle={data.title} />
   <CourseObjectives objectives={data.objectives} />
   <CourseBenefits benefits={data.benefits} />
   
@@ -121,7 +123,7 @@ const schemaGraph = {
   
   <CourseWhyChoose whyChoose={data.whyChoose} />
   <CourseEligibility eligibility={data.whoShouldEnroll?.length ? data.whoShouldEnroll : data.eligibility} />
-  <CourseCertifications certifications={data.certifications} />
+  <CourseCertifications certification={data.certification} courseTitle={data.title} />
   <CourseJobRoles jobRoles={data.jobRoles} />
   <CourseTrainerProfile courseTitle={data.title} trainerProfile={data.trainer || data.trainerProfile} />
   <CourseFAQ faqs={data.faqs} />

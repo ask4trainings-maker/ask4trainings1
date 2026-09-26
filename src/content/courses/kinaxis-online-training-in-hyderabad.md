@@ -96,11 +96,19 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: ''
+    description: An analyst role with Kinaxis Online Training involves interpreting data and generating actionable insights for supply chain optimization. The Kinaxis Online Master Program combined with Advanced Kinaxis Online Training equips professionals with tools to analyze demand patterns and forecast trends. With Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, analysts gain hands-on experience in dashboards and reporting. This role enhances decision-making abilities and supports strategic planning in organizations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: ''
+    description: |-
+      A planner trained in Kinaxis Online Training focuses on managing demand, supply, and inventory efficiently. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course provide deep knowledge of planning modules and execution strategies. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, planners learn to respond to real-time changes and ensure smooth operations. This role is critical for maintaining balance across supply chain processes and achieving business goals.
+
+      An architect role through Kinaxis Online Training involves designing and implementing end-to-end supply chain solutions. The Kinaxis Online Master Program and Advanced Kinaxis Online Training help professionals master system architecture, integrations, and performance optimization. With Kinaxis Advanced Certification Course, Kinaxis Certification Training in Hyderabad, and Kinaxis Professional Training Hyderabad, architects ensure scalable and efficient solutions. This role requires deep technical expertise and strategic thinking to lead complex implementations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Kinaxis RapidResponse Online Course is designed to equip learners with in-demand supply chain planning skills through practical exposure and expert guidance. Our Kinaxis Online Training India program focuses on real-time scenarios, helping you understand planning, analytics, and execution effectively. With Kinaxis Certification Training in Hyderabad, learners gain industry-recognized credentials and hands-on project experience to boost career growth and secure high-paying roles.
 
@@ -163,16 +171,6 @@ whyMaster:
     Kinaxis Online Training is designed to build strong expertise in supply chain planning using modern tools and techniques. Our Kinaxis RapidResponse Developer Courses focus on configuration, scripting, and customization. With Kinaxis RapidResponse Consultant Training, learners gain functional knowledge to manage real-world business processes effectively.
 
     This Kinaxis Online Learning Platform offers flexible access to expert-led sessions and hands-on labs. Through Kinaxis Training with Live Scenarios, you gain practical exposure to industry use cases. Our Kinaxis Online Bootcamp Hyderabad provides intensive training, helping you quickly upskill and become job-ready in competitive markets.
-  pillars:
-    - title: Mentor
-      description: Expert Kinaxis Online Training with guidance support.
-    - title: Project
-      description: Real-time Kinaxis projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Kinaxis curriculum aligned with industry needs.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Choose us for Kinaxis Online Training designed with a career-focused approach and delivered by industry experts. Our Kinaxis Online Master Program and Advanced Kinaxis Online Training provide in-depth knowledge with real-time use cases and practical exposure. With Kinaxis Certification Training in Hyderabad, learners gain strong understanding of tools, workflows, and implementation strategies required for real-world supply chain projects and business scenarios.
 
@@ -180,20 +178,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Boost your career with Kinaxis Online Training designed for real-world success. This Job Oriented Kinaxis Online Course offers hands-on learning with industry scenarios. Enroll in Kinaxis Course in Hyderabad and gain expertise through Kinaxis Online Classes with Real-Time Projects. Our Kinaxis Certification Course Online and Advanced Kinaxis Online Training help you master supply chain planning and secure top job opportunities.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Kinaxis certification preparation with exam guidance.
-
-    Dedicated placement support for top Kinaxis developer jobs.
-
     Choose us for Kinaxis Online Training that is designed with a career-focused approach and delivered by industry experts. Our Kinaxis Online Master Program and Advanced Kinaxis Online Training provide in-depth knowledge with real-time use cases. With Kinaxis Certification Training in Hyderabad, learners gain practical exposure, understanding of tools, workflows and implementation strategies required in real-world projects.
 
     We offer a structured learning path through our Kinaxis Advanced Certification Course combined with expert-led sessions and hands-on practice. Our Kinaxis Professional Training Hyderabad ensures personalized support, flexible schedules, and continuous guidance. This program helps learners build confidence, master advanced concepts, and successfully transition into high-demand supply chain roles with ease.
+keyFeatures:
+  - title: Mentor
+    description: Expert Kinaxis Online Training with guidance support.
+  - title: Project
+    description: Real-time Kinaxis projects for practical exposure.
+  - title: curriculum
+    description: Updated Kinaxis curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Kinaxis certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Kinaxis developer jobs.
 ---
 This is the canonical course page for Kinaxis Training. Start your learning journey today with Ask 4 Trainings.

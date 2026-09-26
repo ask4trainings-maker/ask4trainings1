@@ -163,37 +163,25 @@ whyMaster:
     The Cyber Security Online Course is designed to provide practical knowledge of network security, ethical hacking, malware analysis, and cyber threat prevention. This industry-oriented program helps learners understand real-time security challenges while building technical skills through hands-on exercises and live projects. The Cyber Security Course for Beginners helps freshers develop strong foundational knowledge for career growth in cybersecurity.
 
     Our Cyber Security Certification Course covers penetration testing, cloud security, SIEM tools, vulnerability assessment, and data protection methods with practical implementation. The Cyber Security Ethical Hacking Course helps learners understand attack prevention techniques and ethical security practices.
-  pillars:
-    - title: Mentor
-      description: Expert Cyber Security Online Course with guidance support.
-    - title: Project
-      description: Real-time Cyber Security projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Cyber Security curriculum aligned with industry needs.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Choosing the Cyber Security Online Course helps learners gain practical expertise in ethical hacking, cloud security, malware analysis, and cyber threat prevention with flexible online learning. Our industry-focused Cyber Security Network Defense Training provides hands-on experience through live projects, real-time scenarios, and expert mentorship. The program is designed for students, freshers, and professionals who want to build strong cybersecurity skills and stay updated with modern security technologies.
 
   Our Cyber Security Certification Online program offers career-oriented training with practical labs, placement support, and advanced security concepts. The Cyber Security Online Bootcamp helps learners quickly master penetration testing, vulnerability assessment and security monitoring techniques With the advanced Cyber Security Master Program and structured Cyber Security Online Learning Program, students gain skills that prepare them for high-demand cybersecurity careers and certification success.
 certification:
   title: Industry Recognized Certification
-  description: |-
-    Join our Cyber Security Online Course to master ethical hacking, network defense, cloud security, and risk management with real-time projects. Our Cyber Security Online Training is designed by experts to help learners gain practical skills. Enroll in the Best Cyber Security Training in Hyderabad and build a successful IT career with the industry-focused Cyber Security Course in Hyderabad today. Start your learning journey today.!!
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Cyber Security certification preparation.
-
-    Dedicated placement support for top Cyber Security jobs.
-
-    The Cyber Security Online Course is designed to help learners gain practical cybersecurity knowledge while preparing for globally recognized certifications. Our Cyber Security Professional Certification program focuses on ethical hacking, network defense, cloud security, and threat analysis through hands-on learning. This industry-oriented Cyber Security Certification Course enhances career opportunities for students and working professionals.
-
-    The Cyber Security Online Certification Program provides real-time project experience, advanced security concepts, and expert guidance to help learners succeed in modern cybersecurity roles. Through Cyber Security Certification Online, students gain practical exposure to penetration testing, vulnerability assessment, and incident response techniques.
+  description: The Cyber Security Online Certification Program provides real-time project experience, advanced security concepts, and expert guidance to help learners succeed in modern cybersecurity roles. Through Cyber Security Certification Online, students gain practical exposure to penetration testing, vulnerability assessment, and incident response techniques.
+keyFeatures:
+  - title: Mentor
+    description: Expert Cyber Security Online Course with guidance support.
+  - title: Project
+    description: Real-time Cyber Security projects for practical exposure.
+  - title: curriculum
+    description: Updated Cyber Security curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Cyber Security certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Cyber Security jobs.
 ---
 This is the canonical course page for Cyber Security Online Course. Start your learning journey today with Ask 4 Trainings.

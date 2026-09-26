@@ -95,11 +95,24 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: ''
+    description: A Consultant in Guidewire Claim Center Training works closely with clients to implement solutions using Guidewire Claim Center Functional Training and Guidewire Claim Center Technical Training. They analyze business requirements, design workflows, and ensure smooth system integration. With Guidewire Training with Placement and Guidewire Job-Oriented Course, consultants gain expertise to deliver efficient claim management systems and become valuable assets in insurance and IT organizations worldwide
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: ''
+    description: An Analyst role in Guidewire Claim Center Course involves understanding business needs and translating them into technical solutions using Claim Center Functional Training. Professionals leverage Guidewire Claim Center Online Training and real-time scenarios to evaluate system performance and improve workflows. With Claim Center Interview Preparation and Guidewire Certification Training, analysts build strong domain knowledge and analytical skills to support decision-making and optimize claims processes effectively
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: ''
+    description: |-
+      An Administrator in Guidewire Claim Center Training manages system configurations, user roles, and security using Guidewire Claim Center Administration Training. They ensure system performance, handle upgrades, and maintain data integrity. With Guidewire Hands-on Training and Claim Center Implementation Training, administrators gain real-time experience to manage enterprise-level systems, making them essential for smooth business operations and long-term system stability in organizations.
+
+      A Guidewire Architect designs scalable solutions using expertise from Guidewire Claim Center Developer Training and Claim Center Integration Training. They define system architecture, oversee implementations, and ensure best practices are followed. With Guidewire Professional Training and Guidewire Certification Training, architects gain advanced knowledge to lead projects, optimize performance, and deliver robust insurance solutions, making them highly valuable professionals in the Guidewire ecosystem.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Our Guidewire Development Training program is designed to provide a complete understanding of core concepts through Guidewire Online Training and Guidewire Classes in Hyderabad. This Guidewire Developer Course covers configuration, integration, and Guidewire GOSU Training with real-time scenarios. Learners gain practical exposure through Guidewire Hands-on Training and Guidewire Real-Time Project Training, ensuring they are job-ready with strong technical and functional expertise in the insurance domain.
 
@@ -162,16 +175,6 @@ whyMaster:
     The Guidewire Development Training program is designed to help learners master core insurance platform concepts through structured Guidewire Online Training and practical sessions. This Guidewire Developer Course covers configuration, integration, and Guidewire GOSU Training, ensuring strong technical foundations with real-time exposure.
 
     Our Guidewire Training in Hyderabad focuses on delivering Guidewire Job-Oriented Training with hands-on experience and real-time project practice. With Guidewire Certification Training and expert guidance, learners gain the skills needed to crack interviews and build successful careers in the Guidewire ecosystem.
-  pillars:
-    - title: Mentor
-      description: Expert Guidewire Claim Center Training with guidance support.
-    - title: Project
-      description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Guidewire curriculum aligned with industry needs.
-
-        Career-focused training for growth in the insurance IT industry.
 whyChooseCourse: |-
   Choosing our Guidewire Claim Center Training ensures you gain in-depth knowledge through a structured Guidewire Claim Center Course designed by industry experts. With Guidewire Claim Center Online Training, learners understand real-time insurance workflows and claim lifecycle management. The program includes Claim Center Functional Training and Claim Center Technical Training, helping you master both business and technical aspects while building strong fundamentals required for real-world Guidewire projects.
 
@@ -179,20 +182,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Kickstart your career with Guidewire Development Training, designed for aspiring professionals seeking Guidewire Developer Course expertise. Our Guidewire Training in Hyderabad and Guidewire Online Training offer hands-on experience, real-time projects, and Guidewire Certification Training to help you master Guidewire Configuration, GOSU, and insurance domain skills for high-demand jobs.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Guidewire certification preparation with exam guidance.
-
-    Dedicated placement support for top Guidewire developer jobs.
-
     Our Guidewire Claim Center Certification validates your expertise in claims management and enhances your professional credibility in the insurance domain. Through Guidewire Certification Training and structured Guidewire Claim Center Course, learners gain in-depth knowledge of configuration, integration, and workflows. This certification demonstrates your ability to work on real-time projects, making you stand out to employers and increasing your chances of securing high-paying Guidewire roles globally.
 
     With Guidewire Claim Center Training and Guidewire Training with Placement, certification helps professionals unlock better job opportunities and career growth. The program includes Claim Center Interview Preparation and hands-on experience through Claim Center Real-Time Project Training, ensuring you are job-ready. Earning this certification proves your technical and functional expertise, boosts confidence, and helps you transition into roles like Guidewire Developer or Consultant successfully.
+keyFeatures:
+  - title: Mentor
+    description: Expert Guidewire Claim Center Training with guidance support.
+  - title: Project
+    description: Real-time Guidewire InsuranceSuite projects for practical exposure.
+  - title: curriculum
+    description: Updated Guidewire curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the insurance IT industry.
+  - title: Certification
+    description: Complete Guidewire certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Guidewire developer jobs.
 ---
 This is the canonical course page for Guidewire Claim Center Training. Start your learning journey today with Ask 4 Trainings.

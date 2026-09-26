@@ -163,16 +163,6 @@ whyMaster:
     Our Dotnet Full Stack Training in Hyderabad is designed to provide practical knowledge in frontend, backend, databases, APIs, and application deployment. Through Dotnet Full Stack Online Training India, learners gain hands-on exposure to modern development practices, coding standards, and real-time implementation techniques.
 
     The Job Oriented Dotnet Full Stack Online Training focuses on building technical expertise, project experience, and professional development skills. With Dotnet Full Stack Certification Training, participants strengthen their industry knowledge and improve readiness for full stack development career opportunities.
-  pillars:
-    - title: Mentor
-      description: Expert Dotnet Full Stack Training with guidance support.
-    - title: Project
-      description: Real-time Dotnet Full Stack projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Dotnet Full Stack curriculum aligned with industry.
-
-        Career-focused training for growth in the IT industry.
 whyChooseCourse: |-
   Choose our Dotnet Full Stack Training in Hyderabad to gain practical exposure to modern web development technologies, coding standards, frontend frameworks, backend development, databases, APIs, and deployment concepts. The training structure is designed to support skill development through hands-on assignments, implementation-based learning, and technical guidance. With the Dotnet Full Stack Online Course, learners can build strong development capabilities, improve project understanding, and strengthen their readiness for real-world software environments.
 
@@ -187,5 +177,18 @@ certification:
     Validate your technical expertise with Dotnet Full Stack Training in Hyderabad designed to strengthen development knowledge, practical implementation skills, and professional capabilities. With Dotnet Full Stack Developer Training Online, participants improve industry-relevant skills and build confidence to work on modern application development requirements.
 
     Enhance your professional profile through Dotnet Full Stack Training with Placement Support focused on technical growth, project understanding, and career preparation. The program also includes practical learning opportunities through Dotnet Full Stack Training with Internship and improve readiness for software development roles in competitive industry environments.
+keyFeatures:
+  - title: Mentor
+    description: Expert Dotnet Full Stack Training with guidance support.
+  - title: Project
+    description: Real-time Dotnet Full Stack projects for practical exposure.
+  - title: curriculum
+    description: Updated Dotnet Full Stack curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Dotnet Full Stack certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Dotnet Full Stack jobs.
 ---
 This is the canonical course page for Dotnet Full Stack Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

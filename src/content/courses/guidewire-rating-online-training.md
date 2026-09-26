@@ -145,6 +145,8 @@ whoShouldEnroll:
     description: Business analysts and QA professionals interested in insurance systems can expand their knowledge through practical training. The Guidewire Rating Online Classes provide flexible learning, and the Guidewire Rating Course in Hyderabad strengthens implementation skills.
   - title: Aspirants
     description: Career aspirants aiming for Guidewire opportunities can enroll regardless of prior insurance experience. The Guidewire Rating Certification Program develops industry-ready expertise, while the Guidewire Rating Course with Placement prepares learners for interviews and employment.
+  - title: Professional Learning Path
+    description: The Guidewire Rating Online Training program equips learners with practical implementation knowledge through live classes, industry case studies, and real-world assignments. Every module is designed to strengthen configuration, pricing, and business process expertise while preparing participants for Guidewire Rating Online Certification.
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -190,5 +192,18 @@ certification:
     The Guidewire Rating Online Training program equips learners with practical implementation knowledge through live classes, industry case studies, and real-world assignments. Every module is designed to strengthen configuration, pricing, and business process expertise while preparing participants for Guidewire Rating Online Certification.
 
     Our Guidewire Rating Certification with Placement Support combines certification guidance, practical projects, technical mentoring, and interview preparation to create job-ready professionals. Participants receive continuous assistance throughout the course, helping them confidently apply their expertise in enterprise environments. The Guidewire Rating Job Oriented Course supports long-term career growth with industry-focused learning and placement assistance.
+keyFeatures:
+  - title: Mentor
+    description: Understand Guidewire Rating Concepts and it's workflows.
+  - title: Project
+    description: Real-time Guidewire Rating projects for practical exposure.
+  - title: curriculum
+    description: Latest Guidewire Rating syllabus with CRM and business needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Gudiewire Rating certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Guidewre Rating jobs.
 ---
 This is the canonical course page for Guidewire Rating Online Training. Start your learning journey today with Ask 4 Trainings.

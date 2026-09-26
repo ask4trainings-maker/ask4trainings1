@@ -163,16 +163,6 @@ whyMaster:
     Our Guidewire Business Analyst Online Course is designed to provide practical exposure through Guidewire BA Hands-On Training and Guidewire Business Analyst Functional Training. It helps learners understand insurance workflows and business analysis concepts effectively.
 
     This Guidewire BA Certification Course offers structured learning via Guidewire BA Online Bootcamp, Guidewire BA Workshop Online, and mentorship. It ensures complete preparation with Guidewire BA Interview Preparation and certification readiness.
-  pillars:
-    - title: Mentor
-      description: Expert Guidewire Business Analyst Training with guidance support.
-    - title: Project
-      description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Guidewire curriculum aligned with industry needs.
-
-        Career-focused training for growth in the insurance IT industry.
 whyChooseCourse: |-
   Choose our Guidewire BA Training in Hyderabad for expert-led sessions, flexible schedules, and real-time exposure that helps you gain practical industry knowledge. With Guidewire BA Weekend Training and Guidewire BA Fast Track Training, learners can upskill quickly without disrupting their routine. Our Guidewire Business Analyst Training Institute ensures quality education, hands-on projects, certification guidance, and strong career support to help you secure high-paying jobs in top companies.
 
@@ -180,20 +170,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Start your career with Guidewire Business Analyst Training through our Guidewire BA Online Training designed for beginners and professionals. This Guidewire Business Analyst Course covers real-time projects, certification, and placement support. Join the Best Guidewire Business Analyst Training in Hyderabad with hands-on learning, industry experts, and job-oriented skills to excel in Guidewire domain.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Guidewire certification preparation with exam guidance.
-
-    Dedicated placement support for top Guidewire developer jobs.
-
     Our Guidewire Business Analyst Certification program is designed to provide complete assistance throughout your learning journey with structured guidance and expert mentorship. Through Guidewire BA Certification Online Classes, learners gain in-depth knowledge, practical exposure, and exam-focused preparation. We also provide mock tests, real-time scenarios, and dedicated support to ensure successful certification completion and confidence.
 
     With Guidewire Business Analyst Online Certification, candidates gain strong industry recognition and credibility in the competitive job market. This certification validates your skills gained through Guidewire Business Analyst Training and enhances your professional profile. It opens doors to better job opportunities in top organizations, offering higher salary potential and long-term career growth in the insurance and IT domains.
+keyFeatures:
+  - title: Mentor
+    description: Expert Guidewire Business Analyst Training with guidance support.
+  - title: Project
+    description: Real-time Guidewire InsuranceSuite projects for practical exposure.
+  - title: curriculum
+    description: Updated Guidewire curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the insurance IT industry.
+  - title: Certification
+    description: Complete Guidewire certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Guidewire developer jobs.
 ---
 This is the canonical course page for Guidewire Business Analyst Training. Start your learning journey today with Ask 4 Trainings.

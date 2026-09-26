@@ -13,7 +13,6 @@ export interface Props {
   whyMaster?: {
     title?: string;
     description?: string;
-    pillars?: { title: string; description: string }[];
   };
 }
 
@@ -22,9 +21,6 @@ const { aboutCourse, courseTitle = "the Course", category, whyMaster } = Astro.p
 // Resolve display values: whyMaster fields take priority, fall back to legacy aboutCourse
 const bodyText = whyMaster?.description || aboutCourse;
 const sectionTitle = whyMaster?.title || `Why Master ${courseTitle}?`;
-const pillars = whyMaster?.pillars && whyMaster.pillars.length > 0
-  ? whyMaster.pillars
-  : null; // null = use hardcoded defaults
 
 if (!bodyText && !whyMaster?.title) {
   return null;
@@ -62,53 +58,8 @@ if (!bodyText && !whyMaster?.title) {
                <DefaultEnterpriseInfographic />}
             </div>
           </div>
-          
-          <!-- Micro Cards: Fallbacks -->
-          {!pillars && (
-            <div class="space-y-4">
-              <div class="flex items-start gap-3">
-                <span class="text-xl leading-none">⚡</span>
-                <div>
-                  <h4 class="font-bold text-white text-sm">Architecture Mastery</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">End-to-end operational workflows.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-xl leading-none">🛡️</span>
-                <div>
-                  <h4 class="font-bold text-white text-sm">Enterprise Standards</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">Production governance and compliance.</p>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span class="text-xl leading-none">📈</span>
-                <div>
-                  <h4 class="font-bold text-white text-sm">High-Demand Career Path</h4>
-                  <p class="text-xs text-slate-400 mt-0.5">Specialized consulting and implementation roles.</p>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </div>
-
-    {pillars && pillars.length > 0 && (
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-        {pillars.map((pillar: { title: string; description: string }) => (
-          <div class="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs hover:border-emerald-500/50 hover:shadow-sm transition-all flex flex-col justify-between">
-            <div>
-              <h4 class="text-base font-bold text-slate-900 tracking-tight flex items-center gap-2 mb-3">
-                <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-                {pillar.title}
-              </h4>
-              <div class="text-xs sm:text-sm text-slate-600 leading-relaxed space-y-2">
-                {pillar.description.split('\n\n').map(p => p.trim() && <p>{p.trim()}</p>)}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    )}
   </div>
 </section>

@@ -163,37 +163,25 @@ whyMaster:
     Advance your skills with Data Analytics Online Training designed for flexible and career-focused learning. This Data Analytics Online Training for Working Professionals helps you balance work and study while mastering key tools and concepts. Offered by a trusted Data Analytics Training Institute Online, the program ensures expert guidance, practical exposure, and industry-relevant knowledge.
 
     Learn through a modern Data Analytics Online Learning Platform that delivers interactive sessions and hands-on practice. This Data Analytics Course with Certification validates your expertise and boosts career prospects. Recognized as the Best Online Training for Data Analytics, it equips you with real-world skills, projects, and job-ready confidence.
-  pillars:
-    - title: Mentor
-      description: Expert Data Analytics Online Training with guidance support.
-    - title: Project
-      description: Real-time Data Analytics projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Data Analytics curriculum aligned with industry needs.
-
-        Career-focused training for growth in the Data Analytics IT industry.
 whyChooseCourse: |-
   Choose the Data Analytics and Visualization Online Course to gain in-demand skills with a practical approach. This Data Analytics Online Crash Course is designed for fast-track learning while maintaining strong fundamentals. Enroll in a Data Analytics Online Certification Program to validate your expertise and boost career opportunities. If you’re searching for a Data Analytics Online Course in Hyderabad, this program offers flexible online access with industry-focused training.
 
   This Data Analytics Course with Tools (Python, Power BI, SQL) ensures hands-on experience with the most востребованные technologies. Work on Data Analytics Online Projects to build a strong portfolio and solve real business problems. With expert-led sessions and career support, this Data Analytics Online Training prepares you for job roles, interviews and long-term growth in the analytics domain.
 certification:
   title: Industry Recognized Certification
-  description: |-
-    Kickstart your career with the Data Analytics Online Training designed to build in-demand skills for today’s data-driven world. This Best Data Analytics Online Course offers hands-on learning, real-time projects, and expert guidance to help you succeed. Earn a recognized Data Analytics Certification Online while attending flexible Data Analytics Online Classes. Perfect as a Data Analytics Course for Beginners Online, it covers fundamentals, tools, and career-ready techniques to boost your opportunities.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Data Analytics certification with exam guidance.
-
-    Dedicated placement support for top Data Analytics jobs.
-
-    Earn a globally recognized Data Analytics Certification Online Program that validates your practical and technical expertise. This Data Analytics Online Training Certification is designed to showcase your ability in tools, data handling, and analytics concepts. With industry-aligned curriculum and real-time projects, learners gain credibility and stand out in competitive job markets with strong, verified skills.
-
-    The Data Analytics Course with Certification enhances your professional profile and boosts job opportunities. This Best Online Data Analytics Certification Training ensures you gain hands-on experience and industry exposure. With placement-oriented learning and expert guidance, the certification helps you secure roles faster, improve salary potential, and build long-term growth in the analytics field.
+  description: The Data Analytics Course with Certification enhances your professional profile and boosts job opportunities. This Best Online Data Analytics Certification Training ensures you gain hands-on experience and industry exposure. With placement-oriented learning and expert guidance, the certification helps you secure roles faster, improve salary potential, and build long-term growth in the analytics field.
+keyFeatures:
+  - title: Mentor
+    description: Expert Data Analytics Online Training with guidance support.
+  - title: Project
+    description: Real-time Data Analytics projects for practical exposure.
+  - title: curriculum
+    description: Updated Data Analytics curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the Data Analytics IT industry.
+  - title: Certification
+    description: Complete Data Analytics certification with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Data Analytics jobs.
 ---
 This is the canonical course page for Data Analytics Online Training. Start your learning journey today with Ask 4 Trainings.

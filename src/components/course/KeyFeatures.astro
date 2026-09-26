@@ -1,0 +1,30 @@
+---
+interface Props {
+  features: Array<{ title: string; description: string }>;
+  courseTitle: string;
+}
+const { features = [], courseTitle } = Astro.props;
+---
+{features.length > 0 && (
+  <section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Core Highlights</span>
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">
+        Key Features of {courseTitle}
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {features.map((item) => (
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs hover:border-emerald-500/50 hover:shadow-sm transition-all flex flex-col justify-start">
+          <h3 class="text-base sm:text-lg font-bold text-slate-900 flex items-center gap-2 mb-2">
+            <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
+            {item.title}
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            {item.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </section>
+)}

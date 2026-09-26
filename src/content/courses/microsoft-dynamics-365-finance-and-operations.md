@@ -174,12 +174,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete MS D365 F&O certification preparation.
-
-    Dedicated placement support for top MS D365 F&O jobs.
-
     Earning Oracle Fusion HCM Certification Online validates your expertise in cloud-based HR solutions and boosts your professional credibility. Through Oracle Fusion HCM Online Training, you gain practical knowledge and real-time experience that align with certification requirements. This certification helps you stand out in competitive job markets and opens doors to high-paying roles .
 
     With Oracle Fusion Cloud Integration Training and the Oracle Fusion Cloud Developer course, you develop both functional and technical skills required in modern enterprises. Recognized as part of the Best Oracle Fusion HCM Training in Hyderabad, this program ensures you are fully prepared for certification exams and job roles. It enhances your confidence, validates your skills, and accelerates your career growth in Oracle cloud technologies.
+keyFeatures:
+  - title: Mentor
+    description: Expert MS D365 F&O Online Training with guidance support.
+  - title: Project
+    description: Real-time MS D365 F&O projects for practical exposure.
+  - title: curriculum
+    description: UpdatedMS D365 F&O curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete MS D365 F&O certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top MS D365 F&O jobs.
 ---
 This is the canonical course page for Microsoft Dynamics 365 Finance And Operations Training. Start your learning journey today with Ask 4 Trainings.

@@ -145,6 +145,10 @@ whoShouldEnroll:
     description: Working professionals aiming for promotions or career transitions can upgrade their expertise with advanced industry practices. Advanced Digital Marketing Online Training delivers practical knowledge of modern marketing platforms, while Digital Marketing Training with Real-Time Projects provides valuable hands-on experience to confidently manage live campaigns and business objectives.
   - title: Entrepreneur Mindset
     description: Business owners, freelancers, and startup founders can learn proven strategies to strengthen their online presence and customer engagement. Digital Marketing and SEO Training helps optimize digital campaigns and improve brand visibility, while Digital Marketing Training in Hyderabad provides practical guidance for implementing effective marketing strategies that support long-term business growth.
+  - title: Earn Industry Credentials With Confidence
+    description: Completing our Digital Marketing Training in Hyderabad equips you with practical knowledge and industry-recognized skills that employers value.Build job-ready expertise with Marketing Training with Real-Time Projects, work on industry-standard tools, optimize live campaigns, analyze performance metrics, and create a professional portfolio that enhances your career opportunities.
+  - title: Practical Learning With Career Recognition
+    description: Our Digital Marketing Training with Real-Time Projects enables learners to work on live campaigns, case studies, and industry assignments using professional tools and techniques. After successfully completing the program, students receive a valuable Digital Marketing Certification that validates their practical expertise, demonstrates job-ready capabilities, and improves credibility for securing rewarding opportunities in the fast-growing digital marketing industry.
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -184,5 +188,18 @@ certification:
     Completing our Digital Marketing Training in Hyderabad equips you with practical knowledge and industry-recognized skills that employers value.Build job-ready expertise with Marketing Training with Real-Time Projects, work on industry-standard tools, optimize live campaigns, analyze performance metrics, and create a professional portfolio that enhances your career opportunities.
 
     Our Digital Marketing Training with Real-Time Projects enables learners to work on live campaigns, case studies, and industry assignments using professional tools and techniques. After successfully completing the program, students receive a valuable Digital Marketing Certification that validates their practical expertise, demonstrates job-ready capabilities, and improves credibility for securing rewarding opportunities in the fast-growing digital marketing industry.
+keyFeatures:
+  - title: Mentor
+    description: Expert Digital Marketing Training with guidance support.
+  - title: Project
+    description: Real-time Digital Marketing projects for practical exposure.
+  - title: curriculum
+    description: Updated Digital Marketing curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Digital Marketing certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Digital Marketing jobs.
 ---
 This is the canonical course page for Digital Marketing Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

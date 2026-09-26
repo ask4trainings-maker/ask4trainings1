@@ -256,20 +256,18 @@ jobRoles:
   - Solutions Architect
   - Technical Business Analyst
 keyFeatures:
-  - description: Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-    iconName: Key Feature 1
-    title: Key feature title 1
-  - description: |-
-      Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-      Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-    iconName: Key feature 2
-    title: Key feature title 2
-  - description: |-
-      Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-
-      Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-    iconName: Key Feature 3
-    title: Key feature title 3
+  - title: Mentor
+    description: Expert Guidewire Policycenter Online Training with guidance .
+  - title: Project
+    description: Real-time Guidewire InsuranceSuite projects for practical exposure.
+  - title: curriculum
+    description: Updated Guidewire curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the insurance IT industry.
+  - title: Certification
+    description: Complete Guidewire certification preparation with exam guidance.
+  - title: Placment
+    description: Dedicated placement support for top Guidewire developer jobs.
 keywords: []
 media: null
 metaDescription: Master Guidewire PolicyCenter Online Training with our experts. Learn Policy Center, Billing Center, Claim Center. Enroll today 919951609609
@@ -337,16 +335,6 @@ whyMaster:
     This Guidewire Policy Center Online Training is designed to provide complete knowledge of Guidewire Development Training, covering core modules like Guidewire Policy Center Training, Guidewire Configuration Training, and Guidewire Integration Training. With expert-led Guidewire Online Training, learners gain practical exposure through real-time scenarios, for building strong technical and domain expertise in the insurance sector.
 
     The course includes Guidewire Real-Time Project Training, Guidewire Hands-on Training, and Guidewire GOSU Training to ensure industry readiness. With support from the Best Guidewire Training Institute, learners also receive Guidewire Interview Preparation Training and Guidewire Training with Placement, helping them secure top roles in Guidewire Developer Course career paths.
-  pillars:
-    - title: Mentor
-      description: Expert Guidewire Policycenter Online Training with guidance .
-    - title: Project
-      description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-    - title: curriculum
-      description: |-
-        Updated Guidewire curriculum aligned with industry needs.
-
-        Career-focused training for growth in the insurance IT industry.
 whyChooseCourse: |-
   Our Guidewire PolicyCenter Online Training stands out with expert-led sessions, industry-driven curriculum, and real-time exposure through Guidewire Real-Time Project Training. With structured Guidewire Corporate Training standards, learners gain deep knowledge in Guidewire Development Training, Guidewire Configuration Training, and Guidewire Integration Training. The inclusion of Guidewire Developer Bootcamp and Guidewire Fast-Track Training ensures faster skill development, helping learners master Guidewire Policy Center Training, Guidewire GOSU Training, and core insurance workflows effectively for real-world applications.
 
@@ -354,18 +342,6 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Start your career with Guidewire Policy Center Online Training, designed to make you a skilled Guidewire Developer. This Guidewire Development Training covers real-time scenarios, Guidewire Configuration, and GOSU Training, helping you master insurance domain skills and become job-ready with Guidewire Certification Training.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Guidewire certification preparation with exam guidance.
-
-    Dedicated placement support for top Guidewire developer jobs.
-
     Get certified with Guidewire Certification Training after successfully completing the program. This certification validates your expertise in Guidewire PolicyCenter Online Training, Guidewire Configuration Training, and Guidewire Integration Training, proving your ability to work on real-time insurance applications. It enhances your professional profile and helps you stand out in competitive job markets for Guidewire Developer Course roles.
 
     Certification from the Best Guidewire Policy Center Training Institute adds strong credibility to your resume and opens doors to top career opportunities. With recognition in Guidewire Professional Training, candidates gain trust from recruiters and employers. It supports career growth in roles like Guidewire Developer Training Hyderabad, ensuring better job prospects, higher salary potential, and long-term success in the insurance IT industry.

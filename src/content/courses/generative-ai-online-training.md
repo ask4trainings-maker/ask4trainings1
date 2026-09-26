@@ -176,27 +176,19 @@ whyChooseCourse: |-
   Enrolling in Generative AI Training with Internship gives you hands-on industry exposure, allowing you to apply knowledge in real-time projects. Earning a Generative AI Professional Certification validates your expertise and increases job opportunities in a competitive market. This combination of practical learning and certification ensures you are job-ready, confident, and equipped with the latest AI skills. With Generative AI Online Training, you can continuously learn, adapt, and grow in the fast-evolving world of artificial intelligence.
 certification:
   title: Industry Recognized Certification
-  description: |-
-    Kickstart your career with our Generative AI Course Hyderabad, designed to build strong foundations in AI innovation. This Generative AI and Machine Learning Course covers real-world applications, tools, and models to help you stay industry-ready. Enroll in our Generative AI Online Training or flexible Generative AI Online Course to learn anytime, anywhere. Perfect as a Generative AI Course for Beginners, it offers hands-on learning and expert guidance.
-
-    40 Hours
-
-    Online Training
-
-    Reviews
-
-    Complete Generative AI certification preparation .
-
-    Dedicated placement support for top Kinaxis developer jobs.
-
-    Enhance your career with our Generative AI Certification Online, validating your skills and helping you stand out in competitive AI and machine learning job markets.
-
-    Gain hands-on expertise through Generative AI Training with Real-Time Projects, enabling you to build practical solutions and confidently solve real-world AI challenges.
-
-    Learn flexibly with Generative AI Online Training and master coding through the Generative AI Course Using Python, making you job-ready with in-demand technical skills.
-
-    Our certification validates your expertise in modern AI technologies through Generative AI Online Training. Designed to meet current industry standards, it complements the Generative AI Online Certification Program and strengthens your professional profile. With practical exposure from the Generative AI Course with Live Projects and advanced concepts from the Generative AI and Deep Learning Course, this certification proves your ability to work on real-world AI applications and enhances your credibility in competitive job markets.
-
-    Earning this certification through our Generative AI Master Program boosts your career prospects with industry-relevant skills. The program integrates learning from Generative AI Online Bootcamp and Generative AI Cloud Integration Training, ensuring you gain hands-on expertise. Recognized across industries, this certification from Generative AI Online Training India helps you stand out to employers, improves job opportunities, and prepares you for high-demand roles in AI, machine learning, and data-driven innovation.
+  description: Earning this certification through our Generative AI Master Program boosts your career prospects with industry-relevant skills. The program integrates learning from Generative AI Online Bootcamp and Generative AI Cloud Integration Training, ensuring you gain hands-on expertise. Recognized across industries, this certification from Generative AI Online Training India helps you stand out to employers, improves job opportunities, and prepares you for high-demand roles in AI, machine learning, and data-driven innovation.
+keyFeatures:
+  - title: Mentor
+    description: Expert Generative AI Online Training with guidance support.
+  - title: Project
+    description: Real-time Generative AI projects for practical exposure.
+  - title: curriculum
+    description: Updated Generative AI curriculum aligned with industry needs.
+  - title: carrer
+    description: Career-focused training for growth in the i IT industry.
+  - title: Certification
+    description: Complete Generative AI certification preparation .
+  - title: Placment
+    description: Dedicated placement support for top Kinaxis developer jobs.
 ---
 This is the canonical course page for Generative AI Online Training. Start your learning journey today with Ask 4 Trainings.

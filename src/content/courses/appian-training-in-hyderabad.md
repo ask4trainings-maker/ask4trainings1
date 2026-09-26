@@ -184,5 +184,18 @@ certification:
     Upon successful completion of the program, learners receive support in preparing for Appian Certification Training, helping them validate their expertise in low-code development and business process automation. Through Appian Training in Hyderabad, participants gain the confidence and improve their professional credibility in competitive technology environments.
 
     The certification pathway is aligned with Job Oriented Appian Online Training, ensuring that learners acquire practical knowledge valued by employers. By participating in Appian Training with Real-Time Projects, candidates gain hands-on exposure to application development, workflow design, and enterprise solutions.
+keyFeatures:
+  - title: Mentor
+    description: Expert Appian Training in Hyderabad with guidance support.
+  - title: Project
+    description: Real-time CoupAppain projects for practical exposure.
+  - title: curriculum
+    description: Updated Appain curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Appain certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Appain jobs.
 ---
 This is the canonical course page for Appian Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

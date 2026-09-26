@@ -75,11 +75,16 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: ''
+    description: |-
+      An Oracle Flexcube Online Training professional as an Analyst works on understanding core banking requirements, business workflows, and system functionalities. They analyze customer data, transactions, and banking operations to ensure smooth execution. With knowledge from Oracle Flexcube Functional Training, analysts bridge the gap between business teams and technical teams, ensuring accurate system implementation and process optimization in banking environments.
+
+      A Tester in Oracle Flexcube Online Training ensures the system works flawlessly by validating functionalities and identifying bugs. They perform functional, integration, and user acceptance testing using real-time scenarios. With skills from Oracle Flexcube Course with Placement, testers ensure system reliability, improve performance, and maintain quality standards in banking applications.
+
+      An Administrator trained through Oracle Flexcube Online Training manages system configuration, user roles, and overall system performance. They ensure smooth operations, security, and data integrity within the banking platform. With knowledge from Advanced Oracle Flexcube Training, administrators monitor system activities, resolve technical issues, and maintain stability in core banking environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Oracle Flexcube Online Training with a strong focus on Oracle Flexcube Functional Training covers core banking operations, business workflows, and real-time transaction processing. You will learn key modules like deposits, loans, payments, and customer lifecycle management through practical case studies. This training enhances your domain knowledge, helping you understand banking processes in Flexcube and prepares you for functional consultant roles in the BFSI sector.
 
@@ -156,12 +161,21 @@ whyChooseCourse: |-
 certification:
   title: Industry Recognized Certification
   description: |-
-    Complete Oracle Flexcube certification preparation.
-
-    Dedicated placement support for top Oracle Flexcube developer jobs.
-
     The Oracle Flexcube Online Training certification program is designed to validate your expertise in core banking systems and real-time applications. This Oracle Flexcube certification focuses on knowledge through real-time projects, ensuring you gain industry-relevant skills. With hands-on training and structured modules, learners develop strong functional and technical capabilities.
 
     Through Oracle Flexcube Online Training, you gain recognition with a globally valued certification backed by practical exposure. The course includes hands-on training, real-time projects, and integration concepts to ensure complete learning. This Oracle Flexcube certification enhances your resume and boosts career opportunities. With continuous practice and expert guidance, learners build confidence and gain the skills required to succeed in real-world banking environments.
+keyFeatures:
+  - title: Mentor
+    description: Expert Oracle Flexcube Online Training with guidance support.
+  - title: Project
+    description: Real-time Oracle Flexcube projects for practical exposure.
+  - title: curriculum
+    description: Updated Oracle Flexcube curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Oracle Flexcube certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Oracle Flexcube developer jobs.
 ---
 This is the canonical course page for Oracle Flexcube Training. Start your learning journey today with Ask 4 Trainings.

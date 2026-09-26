@@ -176,13 +176,19 @@ whyChooseCourse: |-
   Our Advanced Palantir Foundry Course combines an industry-focused curriculum with certification guidance, mock interviews, resume building, and career mentoring. Learners receive practical exposure by working on enterprise use cases while developing confidence for technical interviews. With Palantir Foundry Certification with Placement Support, you gain the knowledge and assistance needed to pursue rewarding career opportunities.
 certification:
   title: Industry Recognized Certification
-  description: |-
-    Complete Palantir Foundry certification preparation.
-
-    Dedicated placement support for top Palantir Foundry jobs.
-
-    Complete our Palantir Foundry Online Training to gain practical knowledge of enterprise data integration, workflows, analytics, and application development. The Palantir Foundry Certification Course prepares you with hands-on projects, expert mentoring, and assessment-focused learning, helping you confidently validate your skills and improve your professional credibility in today's competitive job market.
-
-    Our Palantir Foundry Online Certification Program is designed to strengthen your technical expertise while preparing you for real-world roles. Through the Palantir Foundry Certification with Placement Support, you receive resume building, mock interviews, career guidance, and placement assistance, enabling you to transition confidently into enterprise data and analytics careers.
+  description: Our Palantir Foundry Online Certification Program is designed to strengthen your technical expertise while preparing you for real-world roles. Through the Palantir Foundry Certification with Placement Support, you receive resume building, mock interviews, career guidance, and placement assistance, enabling you to transition confidently into enterprise data and analytics careers.
+keyFeatures:
+  - title: Mentor
+    description: Expert Palantir Foundry Online Training with guidance support.
+  - title: Project
+    description: Real-time Palantir Foundry projects for practical exposure.
+  - title: curriculum
+    description: Updated Palantir Foundry curriculum aligned with industry.
+  - title: carrer
+    description: Career-focused training for growth in the IT industry.
+  - title: Certification
+    description: Complete Palantir Foundry certification preparation.
+  - title: Placment
+    description: Dedicated placement support for top Palantir Foundry jobs.
 ---
 This is the canonical course page for Palantir Foundry Training. Start your learning journey today with Ask 4 Trainings.
