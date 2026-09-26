@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Qlik Sense Developer
+    description: A Qlik Sense Developer designs interactive dashboards, develops data visualizations, creates analytical applications, and connects multiple data sources for business reporting. Professionals in this role use practical knowledge gained through Qlik Sense Online Training to deliver effective analytics solutions. The Qlik Sense Job Oriented Course helps learners develop the technical and practical skills required for successful development careers.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Qlik Sense Consultant helps organizations implement analytics solutions, understand business requirements, develop dashboards, and improve reporting processes. Practical expertise gained through Qlik Sense Online Training enables professionals to work with stakeholders and deliver effective business intelligence solutions. The Qlik Sense Course with Placement supports learners in developing job-ready skills for consulting opportunities.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Business Intelligence Analyst uses data to identify trends, generate insights, and support business decisions through reports and dashboards. Professionals can apply skills developed through the Qlik Sense Course in Hyderabad to analyze complex information and create meaningful visualizations. The Qlik Sense Certification Course helps learners strengthen their knowledge and prepare for analytics-focused career opportunities.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Qlik Sense Administrator manages applications, users, security, data access, and platform environments to ensure smooth analytics operations. Professionals can build relevant knowledge through the Qlik Sense Course in Hyderabad and gain practical exposure to administration concepts. The Qlik Sense Training Institute in Hyderabad supports learners with industry-focused training for technology and analytics career opportunities.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Data Visualization Specialist
+    description: A Data Visualization Specialist focuses on transforming complex data into interactive dashboards, reports, and visual insights that support business decisions. The Qlik Sense Online Course provides practical knowledge of visualization techniques, data modeling, and analytics. Learners completing the Qlik Sense Online Certification can demonstrate their understanding and pursue opportunities in data visualization and business intelligence.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Our Qlik Sense Online Training helps learners build practical skills in data visualization, dashboard development, data modeling, reporting, and business intelligence. This Qlik Sense Job Oriented Course combines expert instruction, real-time projects, and industry-relevant scenarios to prepare students for professional opportunities and support them in developing the technical confidence required for successful careers in analytics and business intelligence roles.
 
@@ -189,13 +209,13 @@ keyFeatures:
     description: Expert Qlik Sense Course in Hyderabad with guidance support.
   - title: Project
     description: Real-time Qlik Sense projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Qlik Sense curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Qlik Sense certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Qlik Sense jobs.
 ---
 This is the canonical course page for Qlik Sense Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

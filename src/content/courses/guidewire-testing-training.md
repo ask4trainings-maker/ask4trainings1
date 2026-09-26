@@ -99,11 +99,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Guidewire Tester
+    description: A Guidewire Tester plays a key role in ensuring application quality by performing Guidewire Testing Training practices across insurance platforms. They focus on Guidewire Functional Testing, validating workflows in PolicyCenter, BillingCenter, and ClaimCenter. With knowledge from Guidewire Manual Testing Training and Guidewire Testing Practical Training, testers execute test cases, identify defects, and ensure smooth business operations. This role requires strong analytical skills, real-time project experience, and expertise in handling QA processes in insurance domain applications effectively.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Guidewire QA Analyst
+    description: A Guidewire QA Analyst is responsible for understanding business requirements and designing test strategies using Guidewire QA Training concepts. They perform Guidewire Integration Testing and ensure seamless communication between different modules. With skills gained from Guidewire Testing Online Training, analysts create test plans, manage defects, and validate end-to-end workflows. Their role is critical in ensuring applications meet business expectations and deliver high-quality performance in real-time insurance IT environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Guidewire QA Engineer
+    description: A Guidewire QA Engineer specializes in advanced testing techniques including Guidewire Regression Testing Training and automation practices. Using knowledge from Guidewire Testing Tools Training, they develop scripts, execute regression suites, and ensure system stability after updates. With hands-on experience from Guidewire Testing Real-Time Project Training, engineers improve testing efficiency and reduce defects. This role demands technical expertise, problem-solving skills, and the ability to work on complex insurance applications.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Guidewire Testing Consultant provides expert guidance on testing strategies and implementation using Guidewire Testing Training methodologies. They handle Guidewire End-to-End Testing Training, UAT processes, and client-specific requirements. With strong domain knowledge and Guidewire Functional Testing Training, consultants ensure quality delivery and help organizations optimize testing processes. This role involves working closely with stakeholders to deliver reliable and scalable insurance solutions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Guidewire QA Lead manages testing teams and oversees complete project execution using Guidewire Testing Job-Oriented Course skills. They coordinate Guidewire Integration Testing, monitor defect management, and ensure timely delivery of high-quality applications. With expertise in Guidewire Testing Certification concepts and real-time experience, leads guide team members, improve testing strategies, and maintain quality standards across all phases of the software development lifecycle.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   This Guidewire QA Training program provides complete knowledge of Guidewire Testing Training, covering Guidewire Functional Testing, Guidewire Integration Testing, and Guidewire Regression Testing Training with real-time scenarios. It includes practical exposure to Guidewire Testing Tools Training, hands-on labs, and business workflow understanding across insurance applications like PolicyCenter, BillingCenter, and ClaimCenter. Learners gain expertise through structured Guidewire Manual Testing Training and industry-based testing practices.
 
@@ -181,13 +201,13 @@ keyFeatures:
     description: Expert Guidewire TestingTraining with continuous guidance support.
   - title: Project
     description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Guidewire curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the insurance IT industry.
   - title: Certification
     description: Complete Guidewire certification preparation with exam guidance.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Guidewire developer jobs.
 ---
 This is the canonical course page for Guidewire Testing Training. Start your learning journey today with Ask 4 Trainings.

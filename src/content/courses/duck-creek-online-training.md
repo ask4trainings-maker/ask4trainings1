@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Duck Creek Developer
+    description: A Duck Creek Developer works on configuration, customization, integrations, and implementation of insurance applications using modern enterprise technologies. Through Duck Creek Online Training, learners gain hands-on experience in policy administration, workflows, billing, and claims management systems. The role requires strong analytical skills, practical project exposure, and understanding of insurance business processes. Our Duck Creek Job Oriented Course helps learners build technical expertise and prepare for real-time implementation projects in leading insurance companies.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Duck Creek Consultant helps organizations implement and optimize insurance platform solutions based on business requirements and operational goals. With our Duck Creek Online Certification Program, learners understand policy lifecycle management, business workflows, and cloud insurance concepts. This role involves requirement analysis, client communication, solution design, and implementation support. The Duck Creek Course with Real-Time Projects provides practical exposure that helps professionals improve consulting and technical skills for enterprise insurance environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Duck Creek Analyst
+    description: A Duck Creek Analyst works closely with business teams and technical departments to understand insurance requirements and improve system processes. Through the Duck Creek Online Learning Program, learners gain knowledge in policy administration, claims workflows, billing systems, and reporting concepts. The role includes documentation, requirement gathering, process analysis, and implementation coordination. Our Duck Creek Professional Certification training helps learners build communication, analytical, and domain skills required for insurance technology projects.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Duck Creek Administrator manages application configurations, user access, workflows, and system maintenance activities within insurance platforms. The Duck Creek Online Training program helps learners understand deployment processes, security settings, application monitoring, and system administration tasks. This role requires technical knowledge, troubleshooting abilities, and practical understanding of enterprise insurance systems. With our Duck Creek Course with Placement, students receive hands-on learning and career support to become skilled professionals in insurance technology administration.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Duck Creek Tester
+    description: A Duck Creek Tester is responsible for validating insurance applications, identifying defects, and ensuring system performance through structured testing methods. Our Duck Creek Online Training provides practical knowledge in functional testing, integration testing, workflows, and business process validation. Learners gain hands-on project experience and understand real-time testing scenarios used in insurance software implementations. The Duck Creek Certification Course also helps students improve analytical abilities and prepare for quality assurance roles in enterprise projects.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Our Duck Creek Online Training program is designed to help learners gain practical expertise in insurance software solutions used by leading global companies. As a trusted Duck Creek Training Institute in Hyderabad, we provide real-time project exposure, expert-led sessions, and hands-on practice in policy, billing, and claims modules. The course structure is suitable for freshers and working professionals who want to build strong technical and functional knowledge in Duck Creek technologies.
 
@@ -190,13 +210,13 @@ keyFeatures:
     description: Expert Duck Creek Online Training with guidance support.
   - title: Project
     description: Real-time Duck Creek projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Duck Creek curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Duck Creek certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Duck Creek jobs.
 ---
 This is the canonical course page for Duck Creek Training. Start your learning journey today with Ask 4 Trainings.

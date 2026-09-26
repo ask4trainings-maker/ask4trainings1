@@ -250,23 +250,43 @@ eligibility:
   - answer: Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
     question: Graduates
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Guidewire Developer
+    description: A Guidewire Developer specializes in building and customizing applications using Guidewire PolicyCenter Online Training concepts. With strong knowledge of Guidewire Development Training, Guidewire Configuration Training, and Guidewire GOSU Training, professionals design scalable insurance solutions. Through Guidewire Policy Center Online Training and Guidewire Real-Time Project Training, developers gain hands-on experience in coding, integrations, and workflows, making them highly востребен for Guidewire Developer Course roles in top organizations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Configurator
+    description: A Configurator focuses on implementing business rules using Guidewire Policy Center Training and Policy Center Configuration Training. With expertise from Guidewire Configuration Training and Guidewire Policy Center Developer Training, they customize UI, workflows, and products. Through Guidewire Online Training and Guidewire Hands-on Training, configurators handle real-time insurance requirements, ensuring seamless system functionality and efficient policy lifecycle management.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Integrator
+    description: An Integrator works on connecting systems using Guidewire Integration Training and APIs within Guidewire PolicyCenter Online Training. With skills from Guidewire Policy Center Integration Training and Guidewire Cloud Training, they ensure smooth communication between applications. Guidewire Real-Time Project Training helps them gain practical experience in web services, messaging, and enterprise integrations, making them key contributors to large-scale insurance implementations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Consultant leverages Guidewire Insurance Domain Training and Guidewire Policy Center Online Training to guide organizations in implementing solutions. With strong understanding of Guidewire Policy Center Training, Guidewire Implementation Training, and Guidewire Professional Training, they analyze business needs and provide optimal configurations. Their role is crucial in bridging technical and functional aspects of insurance systems.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Business Analyst in Guidewire uses Guidewire Policy Center Training and Guidewire Insurance Domain Training to gather requirements and improve processes. With exposure to Guidewire Job-Oriented Training and Guidewire Interview Preparation Training, analysts understand workflows, policy lifecycle, and system enhancements. They play a vital role in ensuring successful delivery of Guidewire Policy Center Online Training based implementations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 keyFeatures:
   - title: Mentor
     description: Expert Guidewire Policycenter Online Training with guidance .
   - title: Project
     description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Guidewire curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the insurance IT industry.
   - title: Certification
     description: Complete Guidewire certification preparation with exam guidance.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Guidewire developer jobs.
 keywords: []
 media: null

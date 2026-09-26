@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Coupa Developer
+    description: A Coupa Developer designs integrations, custom workflows, API connections, and procurement automation solutions to meet organizational requirements. Advanced Coupa Online Training provides hands-on experience in technical configurations, system integration, and process optimization. Through Coupa Training with Hands-On Projects, professionals improve implementation expertise and develop scalable procurement solutions to support enterprise-level procurement and sourcing operations efficiently.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Coupa Consultant helps organizations streamline procurement operations, supplier communication, invoicing, and spend management using the Coupa platform. With practical exposure from Coupa Online Training, professionals gain expertise in configuring procurement workflows and supporting implementation projects. The industry-oriented Coupa Procurement Course enables consultants to analyze business requirements, improve sourcing strategies, and deliver effective procurement automation solutions for enterprises.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Coupa Analyst
+    description: A Coupa Analyst is responsible for tracking procurement data, supplier performance, invoice approvals, and spend analysis to support business operations. Through professional Coupa Online Training, learners build strong analytical and reporting skills required for procurement optimization. The practical Coupa Certification Online program helps professionals understand sourcing workflows, purchasing automation, and procurement analytics for better business decision-making.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Coupa Administrator handles procurement configurations, supplier management, approval workflows, and user access within enterprise systems. By enrolling in Coupa Online Training, learners gain real-time implementation knowledge and practical experience in spend management processes. The career-focused Coupa Course with Placement strengthens technical skills in procurement operations, invoice processing, and workflow administration for enterprise business environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Coupa Specialist manages sourcing activities, supplier collaboration, procurement compliance, and spend optimization across organizations. Industry-based Coupa Online Training helps learners understand procurement lifecycle processes and automation strategies with practical assignments and live scenarios. The comprehensive Coupa Online Certification Program prepares professionals to manage invoicing workflows, procurement reporting, and supplier operations for improved business efficiency and performance.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: Take your career to the next level with professional Coupa Online Training designed for aspiring procurement specialists and working professionals. Our Advanced Coupa Course provides real-time project exposure and practical implementation of Coupa solutions. Join the comprehensive Coupa Certification Course to prepare for Coupa Professional Certification and develop in-demand skills through our advanced Coupa Procurement Course training program.
 aboutCourse: |-
   This Coupa Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
@@ -190,13 +210,13 @@ keyFeatures:
     description: Expert Coupa Online Training with guidance support.
   - title: Project
     description: Real-time Coupa projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Coupa curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Coupa certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Coupa jobs.
 ---
 This is the canonical course page for Coupa Training. Start your learning journey today with Ask 4 Trainings.

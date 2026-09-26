@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Palantir Foundry Developer
+    description: A Palantir Foundry Developer designs, develops, and maintains enterprise data applications using Foundry tools and workflows. After completing Palantir Foundry Developer Training, professionals can build scalable data pipelines, automate business processes, and create interactive applications for analytics. The Palantir Foundry Online Course prepares learners with practical project experience, enabling them to contribute effectively to digital transformation initiatives across industries.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Foundry Consultant helps organizations implement enterprise data solutions, optimize workflows, and improve operational performance. The Palantir Foundry Course with Placement provides hands-on experience with real-world projects and implementation practices. Learners completing the Palantir Foundry Online Certification Program are prepared to support enterprise deployments and guide clients through digital transformation initiatives.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Business Analyst uses Foundry to transform enterprise data into meaningful insights for strategic decisions. The Palantir Foundry Certification Course develops skills in analytics, reporting, and visualization through practical learning. Completing the Palantir Foundry Job Oriented Course enables professionals to collaborate with stakeholders, improve operational efficiency, and deliver valuable business intelligence solutions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Data Engineer
+    description: A Data Engineer works with enterprise datasets by creating reliable pipelines, integrating multiple data sources, and ensuring data quality. Through Palantir Foundry Online Training, learners gain practical expertise in workflow automation and data integration. The Advanced Palantir Foundry Course equips professionals with technical knowledge to manage complex enterprise data environments and support business decision-making.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Solution Architect
+    description: A Solution Architect designs enterprise-scale data platforms that align technology with business goals. The Best Palantir Foundry Training in Hyderabad develops advanced design and integration skills through practical case studies. With Palantir Foundry Certification with Placement Support, professionals gain the confidence to architect scalable solutions, lead technical teams, and deliver successful enterprise implementations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   The Palantir Foundry Online Course is designed to help learners master data integration, analytics, workflows, and enterprise applications through practical training. The curriculum combines instructor-led sessions, hands-on exercises, and real-time projects to build industry-ready skills. Completing the Palantir Foundry Certification Course prepares you for professional opportunities with confidence and practical expertise.
 
@@ -182,13 +202,13 @@ keyFeatures:
     description: Expert Palantir Foundry Online Training with guidance support.
   - title: Project
     description: Real-time Palantir Foundry projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Palantir Foundry curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Palantir Foundry certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Palantir Foundry jobs.
 ---
 This is the canonical course page for Palantir Foundry Training. Start your learning journey today with Ask 4 Trainings.

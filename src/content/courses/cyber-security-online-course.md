@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: Ethical hackers test systems and networks to identify security weaknesses before malicious attackers can exploit them. They perform penetration testing, vulnerability assessments, and security audits using advanced tools and ethical hacking methodologies. The Cyber Security Ethical Hacking Course helps learners understand attack prevention strategies, while the Cyber Security Online Training program provides practical exposure through real-time cybersecurity projects and lab sessions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Cybersecurity consultants help businesses identify security risks, improve compliance, and implement effective cybersecurity strategies to protect critical information. They analyze organizational security frameworks and recommend solutions for data protection and cyber threat prevention. The Cyber Security Professional Certification program and Cyber Security Certification Course help learners develop consulting skills, technical expertise, and industry knowledge required for professional cybersecurity advisory roles.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: cybersecurity analyst
+    description: A cybersecurity analyst is responsible for monitoring systems, identifying security threats, analyzing vulnerabilities, and protecting organizational data from cyber attacks. Professionals trained through the Cyber Security Online Course gain practical knowledge of SIEM tools, incident response, firewall management, and threat detection techniques. The Cyber Security Analyst Course helps learners build the technical and analytical skills required to manage enterprise security operations effectively.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Cybersecurity engineers design and implement secure systems, firewalls, cloud protection frameworks, and network defense solutions for organizations. They play a key role in maintaining secure IT infrastructure and preventing cyber threats. Through the Cyber Security Network Defense Training program and Cyber Security Cloud Security Course, learners gain hands-on experience in risk management, system security configuration, and advanced protection techniques used in modern enterprises.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Security administrators manage organizational security systems, monitor network activity, control user access, and maintain overall cybersecurity operations. They ensure secure infrastructure management and respond quickly to potential security incidents. The Cyber Security Job Oriented Course and Cyber Security Course with Real-Time Projects provide learners with practical training in system monitoring, firewall configuration, threat analysis, and cybersecurity management for enterprise environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   The Cyber Security Online Course is designed to help students and professionals gain practical knowledge in ethical hacking, network protection, cloud security, penetration testing, and cyber risk management. This program offered by a leading Cyber Security Training Institute in Hyderabad provides hands-on experience with real-time projects, helping learners build strong technical and analytical skills required in today’s security-focused IT industry.
 
@@ -175,13 +195,13 @@ keyFeatures:
     description: Expert Cyber Security Online Course with guidance support.
   - title: Project
     description: Real-time Cyber Security projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Cyber Security curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Cyber Security certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Cyber Security jobs.
 ---
 This is the canonical course page for Cyber Security Online Course. Start your learning journey today with Ask 4 Trainings.

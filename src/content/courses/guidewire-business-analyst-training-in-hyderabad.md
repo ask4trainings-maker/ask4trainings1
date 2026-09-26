@@ -96,11 +96,26 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Guidewire Business Analyst
+    description: A Guidewire Business Analyst plays a key role in gathering requirements, analyzing business needs, and coordinating with stakeholders to ensure successful project delivery. Through Guidewire Business Analyst Training, professionals gain strong functional knowledge and domain expertise. With support from Guidewire BA Real-Time Project Training and practical exposure, they learn to create documentation, user stories, and workflows, making them essential contributors in insurance and IT projects.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Guidewire Functional Consultant
+    description: A Guidewire Functional Consultant focuses on implementing and configuring Guidewire applications based on business requirements. With knowledge gained from Guidewire BA Online Training and Guidewire Business Analyst Functional Training, professionals understand system workflows and client needs. They work closely with technical teams to ensure proper implementation, making this role ideal for those aiming to build a strong career in Guidewire consulting.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Guidewire PolicyCenter Analyst
+    description: A Guidewire PolicyCenter Analyst specializes in managing policy lifecycle processes using Guidewire tools. With expertise from Guidewire Policy Center BA Training and Guidewire Business Analyst Training, professionals handle policy creation, updates, and validations. This role requires strong analytical skills and understanding of insurance processes, helping organizations streamline operations and improve efficiency in policy management systems.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Insurance Domain Business Analyst
+    description: An Insurance Domain Business Analyst focuses on bridging the gap between business and technology using Guidewire platforms. With expertise gained from Guidewire Insurance Domain BA Training, Guidewire Business Analyst Training, and Guidewire BA Practical Training, professionals analyze business processes and suggest improvements. This role offers excellent career growth and opportunities in leading insurance and IT companies.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Our Guidewire Business Analyst Training provides a complete roadmap from basics to advanced concepts through Guidewire BA Course for Beginners and Guidewire BA Advanced Training. The program includes Guidewire Policy Center BA Training, Guidewire Billing Center BA Training, and insurance domain exposure. With Guidewire BA Online Classes, learners gain real-time experience, making it a Guidewire Business Analyst Professional Course suitable for freshers and working professionals aiming for high-paying roles.
 
@@ -178,13 +193,13 @@ keyFeatures:
     description: Expert Guidewire Business Analyst Training with guidance support.
   - title: Project
     description: Real-time Guidewire InsuranceSuite projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Guidewire curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the insurance IT industry.
   - title: Certification
     description: Complete Guidewire certification preparation with exam guidance.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Guidewire developer jobs.
 ---
 This is the canonical course page for Guidewire Business Analyst Training. Start your learning journey today with Ask 4 Trainings.

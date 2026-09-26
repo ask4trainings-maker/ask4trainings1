@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: A Digital Marketing Manager oversees online campaigns, coordinates marketing teams, and ensures business objectives are achieved through effective digital strategies. Digital Marketing Training in Hyderabad provides practical expertise in SEO, paid advertising, analytics, and automation. The Digital Marketing Course prepares learners to lead campaigns, optimize marketing budgets, and improve customer engagement using industry-standard tools and proven digital marketing techniques.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Conversion Optimization Specialist improves website performance by analyzing user behavior, testing landing pages, and increasing conversion rates. Digital Marketing and SEO Training develops optimization skills through practical exercises, while Digital Marketing Training with Real-Time Projects provides hands-on experience in implementing live campaigns, measuring performance, and maximizing return on digital marketing investments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Digital Marketing Coordinator supports campaign planning, content scheduling, social media management, and performance reporting across multiple digital platforms. Digital Marketing Job Oriented Course equips learners with practical skills required to coordinate successful marketing activities. Earning a Digital Marketing Certification validates professional knowledge and enhances career opportunities in growing digital marketing organizations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A PPC Advertiser creates, manages, and optimizes paid campaigns across Google Ads and social media platforms to generate quality leads and sales. Digital Marketing and Google Ads Training provides expertise in keyword research, bidding strategies, and campaign optimization. Advanced Digital Marketing Online Training strengthens practical knowledge of advanced advertising techniques and performance analysis.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Digital Marketing Freelancer helps businesses grow by offering SEO, social media marketing, paid advertising, content creation, and analytics services independently. Digital Marketing Course with Placement develops practical industry skills, while Digital Marketing Training in Hyderabad provides live project experience and expert mentoring, enabling learners to confidently manage client projects and build successful freelance careers.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Build a rewarding career through Digital Marketing Training in Hyderabad, where experienced mentors provide practical learning with real-world assignments and interactive sessions. This Digital Marketing Course helps learners master SEO, content marketing, social media, analytics, and AI-powered marketing strategies while developing the practical expertise required to achieve long-term professional success and growth.
 
@@ -193,13 +213,13 @@ keyFeatures:
     description: Expert Digital Marketing Training with guidance support.
   - title: Project
     description: Real-time Digital Marketing projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Digital Marketing curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Digital Marketing certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Digital Marketing jobs.
 ---
 This is the canonical course page for Digital Marketing Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

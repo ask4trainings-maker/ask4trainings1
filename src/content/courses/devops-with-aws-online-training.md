@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: DevOps Developers play a key role in building, testing, automating, and deploying applications across cloud environments. Through DevOps with AWS Online Training, learners gain expertise in CI/CD pipelines, AWS services, Docker, Kubernetes, Jenkins, and automation practices. The AWS DevOps Online Course helps developers strengthen coding integration, deployment management, cloud operations, and collaboration skills required for modern software development and enterprise delivery environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: DevOps Consultants help organizations improve automation, cloud migration, deployment efficiency, and operational performance. The AWS DevOps Certification Training program equips learners with practical cloud expertise, implementation strategies, and DevOps tool knowledge. Through AWS DevOps Online Course, professionals learn how to guide businesses in optimizing AWS infrastructure and deployment pipelines.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Cloud Architects design scalable, secure, and efficient cloud environments for organizations. Through AWS Cloud DevOps Training Online, learners understand cloud architecture, deployment planning, automation tools, and infrastructure management. The AWS DevOps Professional Certification Training program prepares candidates to work with AWS ecosystems, DevOps methodologies, and real-time cloud implementation practices across industries.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: DevOps Administrators are responsible for managing servers, deployment environments, cloud resources, and operational workflows. With DevOps with AWS Online Training, learners gain knowledge of AWS management, configuration handling, monitoring tools, and CI/CD operations. The AWS DevOps Training with Real-Time Projects approach provides practical exposure to real-world system administration and cloud operations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: AWS DevOps Specialists focus on automation, infrastructure deployment, cloud integration, and continuous delivery practices. The AWS DevOps Online Training and Placement Program develops industry-ready technical capabilities through hands-on assignments and practical sessions. With Job Oriented AWS DevOps Online Training, learners gain the knowledge required to handle cloud environments, deployment workflows, and enterprise DevOps solutions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Build strong cloud and automation skills with DevOps with AWS Online Training designed for students, job seekers, and IT professionals. This program covers AWS services, CI/CD pipelines, Docker, Kubernetes, Jenkins, infrastructure automation, and deployment strategies through practical sessions. The Advanced AWS DevOps Online Course helps learners gain real-time knowledge, hands-on exposure, and technical confidence for modern DevOps careers.
 
@@ -186,13 +206,13 @@ keyFeatures:
     description: Expert DevOps with AWS Training with guidance support.
   - title: Project
     description: Real-time DevOps with AWS projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated DevOps with AWS curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete DevOps with AWS certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top DevOps with AWS jobs.
 ---
 This is the canonical course page for DevOps with AWS Online Training. Start your learning journey today with Ask 4 Trainings.

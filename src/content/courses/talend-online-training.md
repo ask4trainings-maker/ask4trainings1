@@ -75,11 +75,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Talend Developer
+    description: A Talend Developer is responsible for designing, developing, and managing ETL workflows, data integration processes, and transformation solutions for business environments. Through Talend Online Training, learners gain practical skills in data migration, workflow automation, and cloud connectivity. The Talend Developer Training Online program and Advanced Talend Online Course help participants build implementation expertise required for professional development roles.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Talend Consultants support organizations by implementing ETL strategies, integration frameworks, and optimized data workflows. By joining Talend Online Training, learners gain implementation knowledge and project exposure. The Talend Course with Placement Assistance and Talend Master Program Online help participants improve technical confidence and consulting-oriented problem-solving abilities.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Data Analysts leverage Talend technologies to organize, transform, and manage data for reporting and business insights. Through Talend Online Training, participants learn workflow handling, data quality concepts, and integration techniques. The Job Oriented Talend Online Training and Talend Online Certification Program help learners develop analytical understanding and practical technical knowledge.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Data Engineers use Talend tools to manage large-scale data pipelines, integration processes, and enterprise data systems. With Talend Online Training, learners understand data processing, ETL architecture, and cloud integration concepts. The Talend Online Course and Talend Professional Certification Training strengthen technical capabilities, helping learners prepare for modern engineering responsibilities in data-driven organizations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Talend Architect
+    description: A Talend Architect designs enterprise-level data integration solutions, ETL frameworks, and scalable workflow systems. Through Talend Online Training, learners build advanced expertise in cloud integration, automation, and data governance. The Talend Training with Real-Time Projects, Talend Online Course, and Talend Professional Certification Training support learners in mastering architecture-focused technical skills.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Build practical expertise in data integration, ETL development, and data management through Talend Online Training designed for aspiring professionals and working experts. This program combines theoretical understanding with implementation-based learning to help learners handle real-time business scenarios. As the Best Talend Training Institute in Hyderabad, the course emphasizes hands-on practice, expert guidance, and project exposure for stronger technical development.
 
@@ -170,13 +190,13 @@ keyFeatures:
     description: Expert Talend Online Training with guidance support.
   - title: Project
     description: Real-time Talend projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Talend curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Talend certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Talend jobs.
 ---
 This is the canonical course page for Talend Online Training. Start your learning journey today with Ask 4 Trainings.

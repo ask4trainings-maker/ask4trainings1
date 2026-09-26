@@ -183,12 +183,15 @@ for (const file of courseFiles) {
         }
       } else if (currentSection === 'features') {
         if (/(Mentor|Project|Curriculum|Career|Certification|Placement|Carrer|Placment)/i.test(text)) {
-          currentPillar = { title: text, description: '' };
+          let sanitizedTitle = text.trim();
+          if (/carrer/i.test(sanitizedTitle)) sanitizedTitle = 'Career';
+          if (/placment/i.test(sanitizedTitle)) sanitizedTitle = 'Placement';
+          if (/curriculum/i.test(sanitizedTitle)) sanitizedTitle = 'Curriculum';
+          currentPillar = { title: sanitizedTitle, description: '' };
           keyFeatures.push(currentPillar);
         }
       } else if (currentSection === 'jobRoles') {
-        currentJobRole = { role: text, description: '', competencies: [] };
-        jobRoles.push(currentJobRole);
+        // jobRoles are extracted from <p> tags, not headers
       } else if (currentSection === 'benefits') {
         currentBenefit = { title: text, description: '' };
         benefits.push(currentBenefit);
@@ -219,8 +222,12 @@ for (const file of courseFiles) {
         whyChoose += text + '\n\n';
       } else if (currentSection === 'eligibility' && currentProfile) {
         currentProfile.description += text + '\n\n';
-      } else if (currentSection === 'jobRoles' && currentJobRole) {
-        currentJobRole.description += text + '\n\n';
+      } else if (currentSection === 'jobRoles') {
+        if (text.length >= 40) {
+          const match = text.match(/^(?:A|An)\s+([A-Z][a-zA-Z\s]+?)\s+(?:specializes|is|works|focuses|plays|designs|delivers)/i);
+          const extractedTitle = match ? match[1].trim() : "Specialist";
+          jobRoles.push({ role: extractedTitle, description: text + '\n\n', competencies: ["Industry Best Practices", "Tool Mastery"] });
+        }
       } else if (currentSection === 'certification') {
         if (!certification) certification = { title: "Industry Recognized Certification", description: '' };
         certification.description += text + '\n\n';
@@ -269,6 +276,18 @@ for (const file of courseFiles) {
           });
         } else if (currentModule) {
            currentModule.topics.push(tTitle);
+        }
+      }
+    }
+    
+    // Check divs for jobRoles if they weren't in <p>
+    if (tagName === 'div' && currentSection === 'jobRoles') {
+      if (text.length >= 40) {
+        // avoid duplicating the same text if there are nested divs
+        if (!jobRoles.some(j => j.description.includes(text) || text.includes(j.description))) {
+          const match = text.match(/^(?:A|An)\s+([A-Z][a-zA-Z\s]+?)\s+(?:specializes|is|works|focuses|plays|designs|delivers)/i);
+          const extractedTitle = match ? match[1].trim() : "Specialist";
+          jobRoles.push({ role: extractedTitle, description: text + '\n\n', competencies: ["Industry Best Practices", "Tool Mastery"] });
         }
       }
     }

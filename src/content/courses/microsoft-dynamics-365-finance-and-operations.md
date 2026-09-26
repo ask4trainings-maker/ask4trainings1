@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Developer
+    description: A Developer works on customizing and extending Microsoft Dynamics 365 Finance and Operations using coding languages like X++ and integrating external systems. With strong skills gained from Dynamics 365 Finance and Operations Developer Training and Microsoft Dynamics 365 Finance and Operations Online Training, developers build scalable solutions, automate workflows, and support business needs through technical implementations and system enhancements.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Functional Consultant
+    description: A Functional Consultant focuses on understanding business requirements and configuring ERP modules accordingly. Professionals trained in Dynamics 365 Finance and Operations Functional Consultant Course and Dynamics 365 Finance and Operations Online Training help organizations streamline finance, supply chain, and operations. They act as a bridge between technical teams and business users, ensuring smooth implementation and optimized system usage.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Business Analyst gathers requirements, analyzes workflows, and ensures ERP solutions align with organizational goals. With expertise from Microsoft Dynamics 365 Finance and Operations Online Training and Dynamics 365 F&O Job Oriented Training, analysts improve decision-making by providing insights, documentation, and system recommendations that enhance overall business performance and operational efficiency.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Architect
+    description: An Architect designs the overall ERP system structure, ensuring scalability, security, and integration with other platforms. Leveraging knowledge from Dynamics 365 Finance and Operations Advanced Training and Microsoft Dynamics 365 F&O Online Learning Platform, architects create robust frameworks that support enterprise-level implementations and future business growth.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Tester ensures system quality by validating functionalities, identifying bugs, and ensuring smooth performance. With training from Dynamics 365 Finance and Operations Online Course and Dynamics 365 F&O Certification Online, testers play a crucial role in delivering error-free solutions, improving user experience, and ensuring successful ERP deployment in real-world environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: Advance your development skills with Dynamics 365 Finance and Operations Developer Training, focused on X++, extensions, workflows, and system integrations. This program is ideal for professionals aiming to become ERP developers. With structured Microsoft Dynamics 365 Finance and Operations Online Training, you will learn to design, develop, and deploy scalable solutions, preparing you for high-demand roles in enterprise technology.
 aboutCourse: |-
   This Microsoft Dynamics 365 Finance And Operations Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
@@ -182,13 +202,13 @@ keyFeatures:
     description: Expert MS D365 F&O Online Training with guidance support.
   - title: Project
     description: Real-time MS D365 F&O projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: UpdatedMS D365 F&O curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete MS D365 F&O certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top MS D365 F&O jobs.
 ---
 This is the canonical course page for Microsoft Dynamics 365 Finance And Operations Training. Start your learning journey today with Ask 4 Trainings.

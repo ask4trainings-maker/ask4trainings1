@@ -75,11 +75,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: A coordinator in Business Analyst Training with Job Support manages communication between teams and ensures project alignment. This role includes tracking requirements, supporting project documentation, and coordinating with stakeholders. Through a Business Analyst Online Learning Program, you develop skills in workflow management and collaboration, helping teams deliver projects efficiently while maintaining quality and timelines.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A consultant trained through Business Analyst Online Certification Program helps organizations optimize processes and implement strategic solutions. This role requires strong analytical thinking, problem-solving, and domain knowledge. With Business Analyst Advanced Online Training, you gain expertise in handling client requirements, suggesting improvements, and delivering value-driven insights. It is ideal for professionals who want to work closely with clients and drive business transformation.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Business Analyst Online Training professional
+    description: A Business Analyst Online Training professional plays a key role in identifying business needs and delivering effective solutions. Through a Business Analyst Training Course, you learn requirement gathering, stakeholder communication, and documentation techniques. This role involves analyzing data, improving processes, and bridging the gap between business and IT teams. With skills gained from a Business Analyst Certification Training Online, you can confidently work on real-time projects and contribute to organizational success.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: strategist role after completing a Business Analyst Master Program
+    description: A strategist role after completing a Business Analyst Master Program focuses on planning and improving business operations. With knowledge from a Business Analyst Training and Placement in Hyderabad, you analyze market trends, define business goals, and recommend strategies for growth. This role requires strong decision-making skills and the ability to interpret complex data to guide business success.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A specialist trained through a Business Analyst Course for Beginners and advanced modules becomes an expert in tools, documentation, and analysis techniques. With Business Analyst Online Training, you gain deep insights into business systems and processes. This role involves working on specific domains, improving efficiency, and delivering precise solutions that meet organizational goals.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Master the core concepts of Business Analyst Online Training with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 
@@ -157,13 +177,13 @@ keyFeatures:
     description: Expert Business Analyst Online Training with guidance support.
   - title: Project
     description: Real-time Business Analyst projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Business Analyst curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Business Analyst certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Business Analyst jobs.
 ---
 This is the canonical course page for Business Analyst Online Training. Start your learning journey today with Ask 4 Trainings.

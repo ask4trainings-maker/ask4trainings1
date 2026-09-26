@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: Become a skilled software Developer through Python Full Stack Training in Hyderabad designed to build expertise in front-end, back-end, databases, and frameworks. Learners joining Python Full Stack Developer Training Online gain practical coding knowledge, application development understanding, and real-world project exposure that supports career growth in modern software development environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Grow into a technology Consultant with Python Full Stack Certification Training designed to improve technical expertise and professional capabilities. The Python Full Stack Online Certification Program helps learners understand software architecture, development practices, and implementation strategies needed to support technical projects and business applications.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Prepare for an Engineer role through Python Full Stack Training with Placement Support that emphasizes practical learning, technical confidence, and development workflows. By enrolling in Python Full Stack Training in Hyderabad, learners gain exposure to real-time projects, coding standards, and application deployment concepts aligned with industry requirements.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Build a successful career as a Programmer with Python Full Stack Online Training focused on coding practices, development tools, and technical implementation. Through Python Full Stack Course Online, learners strengthen programming logic, framework knowledge, and problem-solving abilities while gaining hands-on experience in developing scalable software applications.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: Advance your career as an Analyst through Python Full Stack Training with Real-Time Projects focused on application understanding, technical workflows, and software solutions. Through Python Full Stack Course with Placement Assistance, learners strengthen analytical thinking, coding exposure, and development knowledge required for software and technology-driven roles.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Build practical coding expertise with Python Full Stack Training in Hyderabad designed to cover front-end, back-end, databases, and application development concepts. As a Best Python Full Stack Training Institute in Hyderabad, the program delivers hands-on sessions, expert mentoring, and project-based learning. Learners gain career-focused knowledge through structured training and industry-oriented development practices.
 
@@ -184,13 +204,13 @@ keyFeatures:
     description: Expert Python Full Stack Training with guidance support.
   - title: Project
     description: Real-time Python Full Stack projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Python Full Stack curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Python Full Stack certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Python Full Stack jobs.
 ---
 This is the canonical course page for Python Full Stack Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

@@ -96,11 +96,28 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - role: ''
-    description: |-
-      A Specialist is an expert in specific modules like payroll or talent management through Oracle Fusion HCM and Payroll Certification Course. Using knowledge from Oracle Fusion Cloud Online Certification Program and Oracle Fusion HCM Course with Internship, they provide deep functional expertise, troubleshoot issues, and support organizations in optimizing HR operations efficiently.
-
-      An Administrator manages day-to-day operations of Oracle HCM systems after completing Oracle Fusion HCM Online Training and Oracle Fusion HCM Master Program. Their responsibilities include user management, security configuration, and system maintenance. With support from Oracle Fusion HCM Certification Online, they ensure system stability and smooth functioning of HR processes across organizations.
+  - role: Developer
+    description: A Developer works on technical aspects learned through the Oracle Fusion Cloud Developer course and Oracle Fusion Cloud Training. They handle integrations, customizations, and extensions within Oracle HCM. With strong knowledge from Oracle Fusion HCM Online Training, developers build scalable solutions, automate processes, and ensure seamless connectivity between different enterprise systems.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Consultant in Oracle Fusion HCM Online Training
+    description: A Consultant in Oracle Fusion HCM Online Training specializes in implementing and configuring HR solutions for organizations. With expertise gained through Oracle Fusion HCM Certification Online and Oracle Fusion Cloud Training, professionals handle modules like Core HR, payroll, and talent management. They work closely with clients to analyze requirements, customize solutions, and ensure smooth deployment of Oracle HCM systems in real-time environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Analyst
+    description: An Analyst focuses on data, reporting, and system performance within Oracle Fusion Cloud Online Training environments. By leveraging skills from Oracle Fusion HCM Course with Placement and Oracle Fusion Cloud Integration Training, they generate insights, manage HR data, and optimize workflows. Their role is crucial in improving decision-making processes and ensuring accurate reporting in enterprise HR systems.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Specialist is an expert in specific modules like payroll or talent management through Oracle Fusion HCM and Payroll Certification Course. Using knowledge from Oracle Fusion Cloud Online Certification Program and Oracle Fusion HCM Course with Internship, they provide deep functional expertise, troubleshoot issues, and support organizations in optimizing HR operations efficiently.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: An Administrator manages day-to-day operations of Oracle HCM systems after completing Oracle Fusion HCM Online Training and Oracle Fusion HCM Master Program. Their responsibilities include user management, security configuration, and system maintenance. With support from Oracle Fusion HCM Certification Online, they ensure system stability and smooth functioning of HR processes across organizations.
     competencies:
       - Industry Best Practices
       - Tool Mastery
@@ -185,13 +202,13 @@ keyFeatures:
     description: Expert Oracle Fusion HCM Online Training with guidance support.
   - title: Project
     description: Real-time Oracle Fusion HCM projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Oracle Fusion HCM curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete Oracle Fusion HCM certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Oracle Fusion HCM jobs.
 ---
 This is the canonical course page for Oracle Fusion Hcm Training. Start your learning journey today with Ask 4 Trainings.

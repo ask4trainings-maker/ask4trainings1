@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: A SAP MM Manager oversees procurement strategies, inventory planning, supplier performance, and material management activities while ensuring smooth SAP operations across departments. The position requires leadership, business process knowledge, and decision-making skills to improve organizational efficiency. The SAP MM Job Oriented Course develops managerial competencies, while SAP MM Online Certification strengthens career prospects for higher-level SAP management roles.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A SAP MM Consultant analyzes business requirements, configures SAP Material Management processes, and supports procurement, inventory, and vendor management activities. Professionals collaborate with business teams to optimize workflows, resolve system issues, and improve operational efficiency. Completing the SAP MM Course in Hyderabad builds practical implementation skills, while Best SAP MM Training in Hyderabad prepares candidates for consulting opportunities in leading organizations with strong career growth.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A SAP MM Analyst manages purchasing data, inventory records, material master information, and procurement reports to support business operations. The role requires strong analytical skills and knowledge of SAP MM processes to improve supply chain efficiency. The SAP MM Online Training equips learners with hands-on expertise, and the SAP MM Certification Course enhances professional credibility for enterprise-level analyst positions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A SAP MM Administrator maintains procurement configurations, manages inventory transactions, supports purchasing processes, and ensures system accuracy across business operations. The role includes monitoring material movements, resolving user issues, and maintaining SAP documentation. The Advanced SAP MM Course prepares learners with technical expertise, and SAP MM Certification with Placement Support improves employment opportunities across various industries.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: SAP MM Specialist
+    description: A SAP MM Specialist focuses on procurement operations, inventory optimization, vendor coordination, and material planning within SAP environments. Professionals ensure accurate transaction processing and support business continuity through efficient material management. The SAP MM Course with Placement develops job-ready capabilities, while SAP MM Professional Certification validates practical knowledge and industry skills.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Master the core concepts of SAP MM Course in Hyderabad with our industry-aligned curriculum. This comprehensive program is designed to bridge the gap between theoretical knowledge and practical application in real-world enterprise environments.
 
@@ -182,13 +202,13 @@ keyFeatures:
     description: Expert SAP MM Course in Hyderabad with guidance support.
   - title: Project
     description: Real-time SAP MM projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated SAP MM Course curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete SAP MM Course certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top SAP MM jobs.
 ---
 This is the canonical course page for SAP MM Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

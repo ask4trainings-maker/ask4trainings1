@@ -96,11 +96,31 @@ eligibility:
   - QA and Automation Engineers aiming for comprehensive technical knowledge.
   - Fresh Graduates with a Computer Science background seeking specialized roles.
 jobRoles:
-  - Senior Consultant
-  - Implementation Lead
-  - Platform Specialist
-  - Solutions Architect
-  - Technical Business Analyst
+  - role: Specialist
+    description: A Generative AI Developer builds intelligent applications using models and APIs learned through Generative AI Online Training. With skills from a Generative AI and ChatGPT Course and Generative AI with LLMs Course, they design chatbots, automation tools, and AI-driven systems. Completing a Generative AI Professional Certification and Generative AI Training with Internship helps developers gain real-world exposure and create scalable, efficient AI solutions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Generative AI Consultant advises organizations on implementing AI solutions effectively. Skills gained through Generative AI Online Training, Generative AI with LLMs Course, and Generative AI Training with Internship help consultants design strategies, optimize processes, and integrate AI into business systems. A Generative AI Professional Certification strengthens credibility and ensures they deliver impactful AI transformation.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Generative AI Analyst interprets AI outputs and supports decision-making processes. With Generative AI Online Training and a Generative AI and ChatGPT Course, analysts understand data patterns, automate insights, and improve workflows. A Generative AI Professional Certification combined with a Generative AI Job Oriented Course enables them to provide valuable AI-driven recommendations in business environments.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Generative AI Engineer
+    description: A Generative AI Engineer focuses on designing, optimizing, and deploying AI models using advanced tools. Through Generative AI Online Training and a Generative AI Job Oriented Course, engineers learn model tuning and system integration. Knowledge from a Generative AI with LLMs Course and hands-on Generative AI Training with Internship ensures they can manage AI pipelines and deliver high-performance solutions across industries.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Generative AI Specialist
+    description: A Generative AI Specialist focuses on niche areas like prompt engineering, content generation, and automation. With expertise from Generative AI Online Training and a Generative AI and ChatGPT Course, specialists create innovative AI-driven solutions. Completing a Generative AI Job Oriented Course and earning a Generative AI Professional Certification helps them stay competitive and excel in specialized AI roles.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 overview: |-
   Our Generative AI Online Classes are designed to provide flexible, instructor-led learning for anyone looking to build strong AI skills from anywhere. This Generative AI Certification Course covers key concepts like prompt engineering, LLMs, and real-time applications. With our Generative AI Developer Training, you gain hands-on experience through live projects, helping you understand how AI solutions are built and deployed in real industries.
 
@@ -182,13 +202,13 @@ keyFeatures:
     description: Expert Generative AI Online Training with guidance support.
   - title: Project
     description: Real-time Generative AI projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated Generative AI curriculum aligned with industry needs.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the i IT industry.
   - title: Certification
     description: Complete Generative AI certification preparation .
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top Kinaxis developer jobs.
 ---
 This is the canonical course page for Generative AI Online Training. Start your learning journey today with Ask 4 Trainings.

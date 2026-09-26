@@ -145,18 +145,31 @@ eligibility:
   - Fresh graduates with a background in Computer Science, Information Technology, or Business Management
   - Microsoft 365 administrators wanting to extend their skills into Dynamics 365 CRM
 jobRoles:
-  - role: Dynamics 365 CRM Functional Consultant
-    description: Configure and implement D365 CE modules, gather requirements, and lead user training.
-    salaryEstimate: $90,000 – $130,000 / year
-  - role: Dynamics 365 CRM Technical Developer
-    description: Build custom plugins, JavaScript customisations, PCF controls, and Web API integrations.
-    salaryEstimate: $100,000 – $145,000 / year
-  - role: Power Platform Developer
-    description: Design canvas apps, model-driven apps, and Power Automate flows integrated with Dataverse.
-    salaryEstimate: $95,000 – $135,000 / year
-  - role: Dynamics 365 Solution Architect
-    description: Own end-to-end architecture decisions, integration patterns, and deployment strategy.
-    salaryEstimate: $130,000 – $175,000 / year
+  - role: Specialist
+    description: A Microsoft Dynamics D365 CRM Administrator manages system settings, users, and data security. With Microsoft Dynamics 365 CRM Online Training, administrators learn configuration, role management, and system maintenance. Skills gained from Microsoft Dynamics 365 CRM step by step for beginners help them ensure smooth system performance, data accuracy, and efficient CRM operations within organizations.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Microsoft Dynamics 365 CRM Consultant plays a key role in analyzing business requirements and implementing CRM solutions. With Microsoft Dynamics 365 CRM Online Training, professionals gain expertise in modules like Sales and Customer Service. Using knowledge from Microsoft Dynamics 365 CRM functional training online, consultants configure systems, optimize workflows, and ensure organizations improve customer engagement and operational efficiency.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Microsoft Dynamics D365 CRM Analyst focuses on interpreting data and improving business decisions. Using insights gained from Microsoft Dynamics D365 CRM functional training online, analysts generate reports and dashboards. With exposure to Microsoft Dynamics D365 CRM with real time projects, they help organizations understand customer behavior, improve strategies, and enhance overall business performance.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Microsoft Dynamics D365 CRM Architect designs scalable CRM solutions aligned with business goals. With Microsoft Dynamics D365 CRM certification training, architects gain deep technical and functional knowledge. Leveraging experience from Microsoft Dynamics D365 CRM integration with ERP, they ensure seamless system integration, optimize architecture, and deliver efficient enterprise-level CRM solutions.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
+  - role: Specialist
+    description: A Microsoft Dynamics D365 CRM Developer focuses on customization, integrations, and advanced development tasks. Through Microsoft Dynamics D365 CRM certification training, developers learn to build plugins, workflows, and automate processes. With Microsoft Dynamics D365 CRM with real time projects, they gain hands-on experience in coding, system enhancements, and integrating CRM with other enterprise applications.
+    competencies:
+      - Industry Best Practices
+      - Tool Mastery
 relatedCourseSlugs:
   - dynamics-365-ax-technical-training
   - microsoft-dynamics-365-finance-and-operations
@@ -273,13 +286,13 @@ keyFeatures:
     description: Expert MS D365 Training with guidance support.
   - title: Project
     description: Real-time MS D365 projects for practical exposure.
-  - title: curriculum
+  - title: Curriculum
     description: Updated MS D365 curriculum aligned with industry.
-  - title: carrer
+  - title: Career
     description: Career-focused training for growth in the IT industry.
   - title: Certification
     description: Complete MS D365 certification preparation.
-  - title: Placment
+  - title: Placement
     description: Dedicated placement support for top MS D365 jobs.
 ---
 ## Microsoft Dynamics 365 CRM Online Training
