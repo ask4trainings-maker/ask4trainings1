@@ -1,8 +1,10 @@
 ---
 import categoriesData from '../../content/categories.json';
+import CourseHeroGraphic from '../CourseHeroGraphic.astro';
 
 export interface Props {
   title: string;
+  badge?: string;
   category: string;
   duration: string;
   mode: string;
@@ -14,6 +16,7 @@ export interface Props {
 
 const { 
   title, 
+  badge,
   category, 
   duration, 
   mode, 
@@ -109,22 +112,18 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
           </div>
         )}
 
-        <div class="mt-4 rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm aspect-video flex items-center justify-center relative group">
+        <div class="mt-4 w-full">
           {courseImage ? (
-            <img 
-              src={courseImage} 
-              alt={`${title} curriculum preview`} 
-              class="w-full h-full object-cover" 
-              loading="lazy"
-            />
-          ) : (
-            <div class="flex flex-col items-center justify-center text-slate-400 p-6 text-center">
-              <svg class="w-10 h-10 mb-2 stroke-current opacity-60" fill="none" viewBox="0 0 24 24" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
-              </svg>
-              <span class="text-xs font-medium text-slate-500">Course Preview Image</span>
-              <span class="text-[11px] text-slate-400 mt-0.5">Upload via CMS</span>
+            <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm aspect-video relative group">
+              <img 
+                src={courseImage} 
+                alt={`${title} curriculum preview`} 
+                class="w-full h-full object-cover" 
+                loading="lazy"
+              />
             </div>
+          ) : (
+            <CourseHeroGraphic title={title} badge={badge} category={category} />
           )}
         </div>
       </div>
