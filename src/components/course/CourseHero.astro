@@ -4,7 +4,6 @@ import CourseHeroGraphic from '../CourseHeroGraphic.astro';
 
 export interface Props {
   title: string;
-  badge?: string;
   category: string;
   duration: string;
   mode: string;
@@ -12,20 +11,17 @@ export interface Props {
   valueProp?: string;
   videoUrl?: string;
   courseImage?: string;
-  slug?: string;
 }
 
 const { 
   title, 
-  badge,
   category, 
   duration, 
   mode, 
   rating, 
   valueProp,
   videoUrl,
-  courseImage,
-  slug
+  courseImage
 } = Astro.props;
 
 const categoryLabel = (categoriesData as any)[category]?.label || category.replace(/-/g, ' ');
@@ -125,7 +121,7 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
               />
             </div>
           ) : (
-            <CourseHeroGraphic badge={badge} slug={slug} category={category} />
+            <CourseHeroGraphic category={category} courseTitle={title} />
           )}
         </div>
       </div>
