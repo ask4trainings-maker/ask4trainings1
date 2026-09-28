@@ -438,7 +438,7 @@ collections:
         name: "heroTagline"
         widget: "string"
         required: false
-        hint: "Optional 1-sentence descriptor shown in the hero graphic card. Defaults to domain description if left blank."
+        hint: "Optional 1-sentence tagline displayed in the lower container of the hero graphic. Defaults to category metadata if omitted."
 
       - label: "Course Preview Image (Deprecated)"
         name: "courseImage"
