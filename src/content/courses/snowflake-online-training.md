@@ -120,65 +120,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Cloud Computing > Snowflake Training
 modules:
   - title: 'Module 1: Snowflake Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Intro to Snowflake platform basics
+      - Cloud data warehouse overview intro
+      - Key features and architecture basics
+      - Snowflake UI navigation basics guide
+      - Account setup and environment intro
   - title: 'Module 2: Architecture & Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Snowflake architecture deep dive
+      - Virtual warehouses concept intro
+      - Storage and compute separation
+      - Multi cluster shared data model
+      - Data sharing and cloning basics
   - title: 'Module 3: Data Loading'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Bulk data loading using stages
+      - Internal and external stages intro
+      - File formats and parsing options
+      - Data ingestion best practices guide
+      - Continuous data loading methods
   - title: 'Module 4: Data Transformation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - SQL queries for data transform
+      - Data cleansing and filtering steps
+      - Using joins and aggregations
+      - Creating views and temp tables
+      - Data pipeline transformations
   - title: 'Module 5: Performance Tuning'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Query performance optimization
+      - Warehouse sizing and scaling
+      - Caching and result reuse basics
+      - Query profiling and monitoring
+      - Optimization best practices guide
   - title: 'Module 6: Security & Access'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - User roles and permissions setup
+      - Data encryption and security
+      - Access control best practices
+      - Secure data sharing concepts
+      - Compliance and governance basics
   - title: 'Module 7: Data Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Integrating Snowflake with tools
+      - ETL and ELT process overview
+      - Using connectors and APIs basics
+      - Third party tool integration
+      - Data pipeline orchestration intro
   - title: 'Module 8: Advanced Features'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Time travel and fail safe intro
+      - Zero copy cloning concept intro
+      - Streams and tasks automation
+      - Semi structured data handling
+      - Advanced query techniques
   - title: 'Module 9: Real Time Projects'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Project on data warehousing
+      - Building ETL pipelines project
+      - Real business case scenarios
+      - Performance tuning project work
+      - End to end implementation task
   - title: 'Module 10: Certification & Career'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - SnowPro certification prep guide
+      - Mock tests and assessments
+      - Resume building support guide
+      - Interview preparation sessions
+      - Job placement assistance support
 whoShouldEnroll:
   - title: Basic Technical Background
     description: A basic understanding of computers, databases, and SQL is helpful for enrolling in Snowflake Online Training. Learners with knowledge of data handling concepts can easily grasp topics in Snowflake Data Warehouse Training. This foundation supports smooth learning in Snowflake Online Training and helps build essential skills required for cloud-based roles.

@@ -118,65 +118,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > New Courses > Best Kinaxis Online Training with Certification
 modules:
   - title: 'Module 1: Introduction to Kinaxis'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Kinaxis platform overview and basics
+      - Supply chain concepts and core terms
+      - RapidResponse tool introduction basics
+      - Key features and business benefits
+      - Industry use cases and applications
   - title: 'Module 2: Supply Chain Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Demand planning concepts and methods
+      - Supply planning and balancing basics
+      - Inventory management key principles
+      - Sales and operations planning process
+      - End to end supply chain data flow
   - title: 'Module 3: RapidResponse Navigation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - User interface navigation and layout
+      - Workbooks creation and usage basics
+      - Dashboard setup and customization
+      - Navigation tools and shortcuts usage
+      - Data views and filters management
   - title: 'Module 4: Data Model Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Tables and data structure concepts
+      - Attributes configuration and setup
+      - Hierarchies design and maintenance
+      - Data integration process overview
+      - Core data model building concepts
   - title: 'Module 5: Configuration Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Workbook configuration and settings
+      - Scenario creation and management
+      - Alerts setup and notification rules
+      - Filters usage and data selection
+      - User interface customization basics
   - title: 'Module 6: Demand Planning'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Forecast models and planning methods
+      - Demand analysis and trend tracking
+      - Forecast error analysis techniques
+      - Demand shaping and adjustments
+      - Collaboration tools and workflows
   - title: 'Module 7: Supply Planning'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Supply balancing and optimization
+      - Capacity planning and constraints
+      - Constraint setup and configuration
+      - Supply scenarios and simulations
+      - Planning logic and execution flow
   - title: 'Module 8: Integration Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Data import process and validation
+      - Data export and reporting outputs
+      - API basics and system connectivity
+      - External system integration flow
+      - Integration monitoring and support
   - title: 'Module 9: Reporting and Analytics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Report creation and customization
+      - KPI tracking and performance metrics
+      - Dashboard design and visualization
+      - Data analysis and trend insights
+      - Business insights generation methods
   - title: 'Module 10: Projects and Certification'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Real time live project implementation
+      - Industry case studies and scenarios
+      - Interview preparation and guidance
+      - Resume building and profile tips
+      - Certification exam preparation guide
 whoShouldEnroll:
   - title: Educational Background
     description: Candidates with a degree in engineering, business, or related fields can easily start Kinaxis Online Training. Basic knowledge of supply chain concepts or IT systems is helpful for understanding the Kinaxis Supply Chain Management Course and progressing smoothly in real-time project learning and certification preparation.

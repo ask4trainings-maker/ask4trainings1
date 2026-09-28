@@ -120,65 +120,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Oracle > Best Oracle Fusion HCM Online Training
 modules:
   - title: 'Module 1: Introduction to Oracle Fusion HCM'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Oracle Fusion HCM cloud concepts
+      - Navigation and user interface basics explained
+      - Key modules and business process understanding
+      - Roles and responsibilities in HCM systems
+      - Setup environment and initial configuration
   - title: 'Module 2: Core HR Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Workforce structure and enterprise setup basics
+      - Employee lifecycle management process flow
+      - Job, position, and grade configurations setup
+      - Person management and document records
+      - Global HR data handling and maintenance
   - title: 'Module 3: Payroll Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Payroll processing cycle and configurations
+      - Salary structures and compensation elements
+      - Payroll calculations and validations process
+      - Statutory compliance and tax configurations
+      - Payslip generation and reporting features
   - title: 'Module 4: Talent Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Talent profiles and competency frameworks
+      - Performance management and goal tracking
+      - Succession planning and career development
+      - Learning management and training setup
+      - Employee engagement and feedback systems
   - title: 'Module 5: Absence Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Leave types and absence plan configurations
+      - Accrual plans and eligibility rules setup
+      - Absence entry and approval workflows
+      - Holiday calendars and scheduling policies
+      - Absence reporting and audit tracking
   - title: 'Module 6: Security & User Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Role-based access control configuration
+      - User roles and data security policies setup
+      - Security profiles and permissions management
+      - Audit trails and compliance monitoring
+      - User provisioning and access lifecycle
   - title: 'Module 7: Reporting & Analytics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Oracle BI reports and dashboard creation
+      - Real-time analytics and KPI tracking setup
+      - Custom report development and templates
+      - Data extraction and integration techniques
+      - Workforce insights and decision support
   - title: 'Module 8: Integration & Data Migration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Data migration tools and methods overview
+      - HDL and HCM extract configuration basics
+      - Third-party system integration techniques
+      - Web services and API usage fundamentals
+      - Data validation and error handling process
   - title: 'Module 9: Fast Formula & Configuration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Fast formula basics and syntax structure
+      - Payroll and benefits formula development
+      - Custom rules and validation logic setup
+      - Formula debugging and troubleshooting
+      - Advanced configuration and use cases
   - title: 'Module 10: Projects and Certification'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Real time live project implementation
+      - Industry case studies and scenarios
+      - Interview preparation and guidance
+      - Resume building and profile tips
+      - Certification exam preparation guide
 whoShouldEnroll:
   - title: Basic Knowledge
     description: Candidates enrolling in Oracle Fusion HCM Online Training should have a basic understanding of HR processes or business operations. This helps in grasping concepts covered in the Oracle Fusion HCM Master Program and builds a strong base to learn navigation, and workflows effectively.

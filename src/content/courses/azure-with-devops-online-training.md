@@ -118,65 +118,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Cloud & DevOps > Best Azure with DevOps Online Training
 modules:
   - title: 'Module 1: Azure DevOps Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Azure DevOps Platform
+      - DevOps Lifecycle and Core Concepts
+      - Azure DevOps Services Overview
+      - Agile and Scrum Methodologies
+      - Azure DevOps Environment Setup
   - title: 'Module 2: Source Code Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Git Fundamentals and Repository Setup
+      - Branching and Merging Strategies
+      - Azure Repos Configuration
+      - Pull Requests and Code Reviews
+      - Version Control Best Practices
   - title: 'Module 3: CI/CD Pipeline Training'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - CI/CD Pipeline Fundamentals
+      - Build Pipeline Configuration
+      - Release Pipeline Management
+      - Automated Deployment Workflows
+      - Pipeline Monitoring and Validation
   - title: 'Module 4: Azure Cloud Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Azure Resource Management Basics
+      - Virtual Machines and Networking
+      - Storage and Database Services
+      - Cloud Infrastructure Deployment
+      - Azure Service Integration Concepts
   - title: 'Module 5: Configuration Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Infrastructure as Code Concepts
+      - ARM Templates Implementation
+      - Configuration Automation Basics
+      - Environment Provisioning Setup
+      - Deployment Configuration Management
   - title: 'Module 6: Containerization and Kubernetes'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Docker Fundamentals and Images
+      - Container Deployment Workflows
+      - Kubernetes Architecture Overview
+      - Azure Kubernetes Service Setup
+      - Container Monitoring Techniques
   - title: 'Module 7: Monitoring and Security'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Application Monitoring Concepts
+      - Azure Security Best Practices
+      - Log Management and Alerts
+      - Identity and Access Management
+      - Security Compliance Fundamentals
   - title: 'Module 8: Automation and Scripting'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - PowerShell Scripting Basics
+      - Automation Workflow Creation
+      - Task Scheduling and Execution
+      - Script Integration Techniques
+      - DevOps Automation Strategies
   - title: 'Module 9: Real-Time Project Implementation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - End-to-End DevOps Project Setup
+      - Cloud Deployment Scenarios
+      - Live Project Workflow Practice
+      - CI/CD Real-Time Implementation
+      - Project Performance Optimization
   - title: 'Module 10: Certification and Career Support'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Azure DevOps Certification Prep
+      - Interview Preparation Sessions
+      - Resume Building Techniques
+      - Placement Assistance Guidance
+      - Job-Oriented Skill Development
 whoShouldEnroll:
   - title: IT Professionals
     description: Candidates with technical knowledge or industry exposure can benefit from Azure with DevOps Online Training to improve cloud automation, deployment, and DevOps skills. This program is suitable for professionals aiming to strengthen practical knowledge, gain hands-on experience, and enhance career growth through Azure DevOps Online Training with Certification and industry-focused learning.

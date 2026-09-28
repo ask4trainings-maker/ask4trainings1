@@ -98,47 +98,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Other Tools > Best Talend Online Training
 modules:
   - title: 'Module 1: Introduction to Talend'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Talend Overview and Features
+      - ETL Concepts and Basics
+      - Talend Architecture Introduction
+      - Installation and Environment Setup
+      - Talend Open Studio Navigation
   - title: 'Module 2: Talend Components Basics'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Understanding Talend Components• Input and Output Components• Mapping Component Usage• Data Flow Configuration• Component Properties Setup
+      - Understanding Talend Components
+      - Input and Output Components
+      - Mapping Component Usage
+      - Data Flow Configuration
+      - Component Properties Setup
   - title: 'Module 3: ETL Development Concepts'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • ETL Workflow Design• Data Extraction Methods• Data Transformation Techniques• Data Loading Strategies• Job Execution Process
+      - ETL Workflow Design
+      - Data Extraction Methods
+      - Data Transformation Techniques
+      - Data Loading Strategies
+      - Job Execution Process
   - title: 'Module 4: Data Integration Techniques'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Data Integration Fundamentals• Database Connectivity Setup• File Integration Handling• API Data Integration Basics• Multi-Source Data Processing
+      - Data Integration Fundamentals
+      - Database Connectivity Setup
+      - File Integration Handling
+      - API Data Integration Basics
+      - Multi-Source Data Processing
   - title: 'Module 5: Talend Job Design'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Creating Talend Jobs• Job Parameters Configuration• Context Variables Usage• Sequential Job Execution• Parallel Processing Concepts
+      - Creating Talend Jobs
+      - Job Parameters Configuration
+      - Context Variables Usage
+      - Sequential Job Execution
+      - Parallel Processing Concepts
   - title: 'Module 6: Data Transformation Module'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Data Cleansing Techniques• Data Filtering Methods• Sorting and Aggregation• Lookup and Join Operations• Schema Mapping Concepts
+      - Data Cleansing Techniques
+      - Data Filtering Methods
+      - Sorting and Aggregation
+      - Lookup and Join Operations
+      - Schema Mapping Concepts
   - title: 'Module 7: Database Management in Talend'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • SQL Integration Concepts• Database Components Usage• CRUD Operations in Talend• Data Migration Processes• Database Performance Tuning
+      - SQL Integration Concepts
+      - Database Components Usage
+      - CRUD Operations in Talend
+      - Data Migration Processes
+      - Database Performance Tuning
   - title: 'Module 8: Advanced Talend Concepts'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Error Handling Techniques• Exception Management Methods• Logging and Monitoring• Performance Optimization• Advanced Workflow Design
+      - Error Handling Techniques
+      - Exception Management Methods
+      - Logging and Monitoring
+      - Performance Optimization
+      - Advanced Workflow Design
   - title: 'Module 9: Cloud and Big Data Integration'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Cloud Integration Basics• Big Data Concepts in Talend• Hadoop Integration Overview• Cloud Data Processing• Real-Time Data Handling
+      - Cloud Integration Basics
+      - Big Data Concepts in Talend
+      - Hadoop Integration Overview
+      - Cloud Data Processing
+      - Real-Time Data Handling
   - title: 'Module 10: Projects and Career Support'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Real-Time Project Practice• Case Study Implementation• Certification Preparation• Resume Building Support• Interview Preparation Sessions
+      - Real-Time Project Practice
+      - Case Study Implementation
+      - Certification Preparation
+      - Resume Building Support
+      - Interview Preparation Sessions
 whoShouldEnroll:
   - title: Professionals
     description: Working professionals aiming to upgrade their technical expertise can enroll in Talend Online Training to learn advanced data transformation and automation concepts. The Advanced Talend Online Course supports career growth through practical learning and real-time exposure.

@@ -119,65 +119,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Trending Course > Best Data Analytics Online Training with Certification
 modules:
   - title: 'Module 1: Data Analytics Fundamentals & Basics Intro'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to data analytics concepts
+      - Types of data and data structures basics
+      - Data lifecycle and workflow overview
+      - Role of data analyst in organizations
+      - Basics of statistics for data analysis
   - title: 'Module 2: Excel for Data Analysis and Reporting Skills'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Excel formulas and functions essentials
+      - Data cleaning using Excel tools methods
+      - Pivot tables and charts for insights
+      - Data visualization using Excel charts
+      - Dashboard creation with Excel basics
   - title: 'Module 3: SQL for Data Management and Querying Data'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to databases and SQL basics
+      - Writing queries using SELECT commands
+      - Filtering data using WHERE conditions
+      - Joins and relationships between tables
+      - Aggregations using GROUP BY functions
   - title: 'Module 4: Python for Data Analytics Programming Core'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Python basics for data analysis tasks
+      - Working with NumPy and Pandas tools
+      - Data cleaning and preprocessing steps
+      - Data visualization using Matplotlib
+      - Exploratory data analysis techniques
   - title: 'Module 5: Data Visualization with Power BI Tools Use'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Power BI interface tools
+      - Data import and transformation process
+      - Creating interactive dashboards views
+      - Using charts and visuals effectively
+      - Publishing reports and sharing online
   - title: 'Module 6: Statistics for Data Analysis and Insights Core'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Descriptive statistics and measures use
+      - Probability concepts for data analysis
+      - Hypothesis testing and significance
+      - Correlation and regression basics
+      - Statistical tools for business insights
   - title: 'Module 7: Data Cleaning and Preparation Techniques Core'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Handling missing and duplicate values
+      - Data transformation and normalization
+      - Data integration from multiple sources
+      - Outlier detection and treatment steps
+      - Preparing datasets for analysis tasks
   - title: 'Module 8: Real-Time Projects and Case Studies Work'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Industry-based data analytics projects
+      - Business case studies and problem solving
+      - End to end project implementation flow
+      - Data storytelling with insights reports
+      - Portfolio building with real datasets
   - title: 'Module 9: Advanced Analytics and Machine Learning Intro'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to machine learning basics
+      - Supervised and unsupervised learning
+      - Model evaluation and performance check
+      - Feature engineering techniques basics
+      - Predictive analytics using Python tools
   - title: 'Module 10: Career Support and Placement Preparation Hub'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Resume building for data analyst roles
+      - Interview questions and mock sessions
+      - Job portals and profile optimization
+      - Communication and soft skills training
+      - Placement assistance and career guidance
 whoShouldEnroll:
   - title: Education
     description: A basic academic background is enough to join Data Analytics Online Training. Learners from any stream can enroll in this Data Analytics Self-Paced Online Course or Data Analytics Instructor-Led Online Training. Understanding math, logic, or statistics is helpful but not mandatory to begin your journey.

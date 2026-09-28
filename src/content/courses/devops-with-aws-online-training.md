@@ -127,59 +127,77 @@ modules:
       - AWS EC2 Instance Setup and Management
       - AWS Storage Services and Basics
   - title: 'Module 2: Linux and Networking Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Linux Commands for DevOps Operations
+      - User Management and File Permissions
+      - Networking Concepts and Protocols
+      - DNS, IP Addressing, and Security Groups
+      - Shell Scripting Fundamentals
   - title: 'Module 3: Version Control with Git'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Git Installation and Configuration
+      - Git Repositories and Branching Concepts
+      - Git Merge, Clone, and Commit Process
+      - GitHub Integration and Collaboration
+      - Source Code Management Practices
   - title: 'Module 4: CI/CD with Jenkins'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Jenkins Installation and Configuration
+      - Continuous Integration Workflow Setup
+      - Build Automation and Job Creation
+      - Pipeline Creation and Management
+      - Jenkins with Git and AWS Integration
   - title: 'Module 5: Docker Containerization'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Docker Installation and Architecture
+      - Docker Images and Container Creation
+      - Dockerfile and Image Management
+      - Docker Networking and Volumes
+      - Docker Compose and Multi-Container Apps
   - title: 'Module 6: Kubernetes Orchestration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Kubernetes Architecture and Components
+      - Pod, Deployment, and Service Concepts
+      - Cluster Setup and Configuration
+      - Scaling and Load Balancing
+      - Kubernetes Monitoring and Management
   - title: 'Module 7: Infrastructure Automation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Infrastructure as Code Concepts
+      - Terraform Installation and Basics
+      - AWS Resource Provisioning using Terraform
+      - Configuration Management Fundamentals
+      - Automation Workflow Implementation
   - title: 'Module 8: Monitoring and Logging'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Monitoring Tools and DevOps Practices
+      - AWS CloudWatch Configuration
+      - Log Collection and Analysis
+      - Performance Monitoring Techniques
+      - Alerting and Notification Setup
   - title: 'Module 9: DevOps Security Practices'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Security Fundamentals in DevOps
+      - AWS Security and Compliance Concepts
+      - IAM Security Best Practices
+      - Secrets and Credential Management
+      - Secure Deployment Strategies
   - title: 'Module 10: Real-Time Projects and Deployment'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - End-to-End DevOps Project Workflow
+      - Application Deployment on AWS
+      - CI/CD Pipeline Real-Time Implementation
+      - Cloud Infrastructure Project Execution
+      - Project Review and Interview Preparation
 whoShouldEnroll:
   - title: Students
     description: Students interested in cloud computing, automation, and software delivery can join DevOps with AWS Online Training to build strong technical foundations. This AWS DevOps Master Program Online helps learners understand AWS services, CI/CD pipelines, containers, and deployment practices needed for modern technology careers and industry growth.

@@ -119,65 +119,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Microsoft Dynamics 365 > Microsoft Dynamics 365 Finance And Operations Training
 modules:
   - title: 'Module 1: Introduction'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Dynamics 365 Finance & Operations basics
+      - ERP concepts and business process understanding
+      - Cloud architecture and system navigation basics
+      - Role-based access and security fundamentals
+      - Environment setup and system configuration basics
   - title: 'Module 2: Financial Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - General ledger setup and financial reporting basics
+      - Accounts payable and vendor management process
+      - Accounts receivable and customer transactions flow
+      - Budgeting, forecasting, and expense tracking tools
+      - Fixed assets management and depreciation methods
   - title: 'Module 3: Supply Chain'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Procurement and sourcing process configuration
+      - Inventory management and warehouse operations flow
+      - Product information and item master setup basics
+      - Sales order processing and order fulfillment cycle
+      - Demand forecasting and supply planning concepts
   - title: 'Module 4: Data Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Data migration using data management framework tools
+      - Import and export processes with data entities usage
+      - Data validation and error handling techniques
+      - Data integration with external systems overview
+      - Data security and compliance management basics
   - title: 'Module 5: Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to X++ programming and development basics
+      - Creating extensions and customizations in system
+      - Form development and user interface customization
+      - Workflow creation and business logic implementation
+      - Debugging and performance optimization techniques
   - title: 'Module 6: Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - API integrations with external applications overview
+      - Azure services integration with Dynamics 365 F&O
+      - Data exchange using OData and web services basics
+      - Third-party system connectivity and configurations
+      - Real-time and batch integration process handling
   - title: 'Module 7: Reporting'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Financial reporting and analysis tools overview
+      - SSRS report development and customization basics
+      - Power BI integration for advanced analytics
+      - Creating dashboards and real-time reporting views
+      - Data visualization and business insights generation
   - title: 'Module 8: Security'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Role-based security and access control configuration
+      - User roles and permissions management basics
+      - Data security and compliance standards overview
+      - Audit trails and monitoring system activities
+      - Security best practices for enterprise applications
   - title: 'Module 9: Testing'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Test planning and execution strategies overview
+      - Functional testing and validation of business processes
+      - Regression testing and performance testing basics
+      - Bug tracking and issue resolution workflows
+      - User acceptance testing and deployment readiness
   - title: 'Module 10: Deployment'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Application lifecycle management process overview
+      - Environment deployment and release management flow
+      - Version control and code management techniques
+      - Continuous integration and delivery pipeline basics
+      - Post-deployment support and maintenance strategies
 whoShouldEnroll:
   - title: Basic Knowledge
     description: Candidates with fundamental understanding of business processes or accounting concepts can easily start Microsoft Dynamics 365 Finance and Operations Online Training. ERP systems or databases is helpful in making it suitable for beginners and professionals.

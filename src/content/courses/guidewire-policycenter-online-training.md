@@ -31,14 +31,8 @@ modules:
       - Learn Extensions for customizing Guidewire data models
       - Master EffDated concepts for policy version management
   - title: 'Module 3: PCF & UI Validation'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - Understand PCF structure and UI screen development
-      - Learn Widgets and their role in Guidewire interfaces
-      - Master InputSets for reusable form components
-      - Explore Reflection concepts for dynamic behavior
-      - Learn PostOnChange for real-time field updates
-      - Understand Visibility rules for UI customization
       - Understand PCF structure and UI screen development
       - Learn Widgets and their role in Guidewire interfaces
       - Master InputSets for reusable form components
@@ -46,15 +40,8 @@ modules:
       - Learn PostOnChange for real-time field updates
       - Understand Visibility rules for UI customization
   - title: 'Module 4: PC Life Cycle'
-    duration: 14 topics
+    duration: 7 topics
     topics:
-      - Learn Submission process from policy creation stage
-      - Master Quote generation and premium calculation flow
-      - Understand Bind process and policy confirmation steps
-      - Learn Policy Issue process and activation workflow
-      - Explore Renewal process for policy continuation
-      - Understand Policy Change transactions and updates
-      - Learn Cancellation process and policy termination rules
       - Learn Submission process from policy creation stage
       - Master Quote generation and premium calculation flow
       - Understand Bind process and policy confirmation steps
@@ -63,14 +50,8 @@ modules:
       - Understand Policy Change transactions and updates
       - Learn Cancellation process and policy termination rules
   - title: 'Module 5: Product Model'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - Learn Product Designer for insurance product setup
-      - Understand Coverage configuration and management
-      - Explore Conditions and policy rule definitions
-      - Learn Exclusions and coverage restriction handling
-      - Master Modifiers for premium adjustment scenarios
-      - Understand Risk Objects and insured item modeling
       - Learn Product Designer for insurance product setup
       - Understand Coverage configuration and management
       - Explore Conditions and policy rule definitions
@@ -78,25 +59,15 @@ modules:
       - Master Modifiers for premium adjustment scenarios
       - Understand Risk Objects and insured item modeling
   - title: 'Module 6: UW Rules'
-    duration: 8 topics
+    duration: 4 topics
     topics:
-      - Learn Rule Sets for business process automation
-      - Master Validation Logic for accurate data checks
-      - Understand Referrals and exception handling flows
-      - Explore Approval workflows and decision management
       - Learn Rule Sets for business process automation
       - Master Validation Logic for accurate data checks
       - Understand Referrals and exception handling flows
       - Explore Approval workflows and decision management
   - title: 'Module 7: Gosu Syntax/Classes'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - Learn Gosu Basics and core programming concepts
-      - Understand Classes and object-oriented development
-      - Master Enhancements for extending existing classes
-      - Explore Collections and data handling techniques
-      - Learn Loops for efficient iteration and processing
-      - Build Reusable Utilities for common business logic
       - Learn Gosu Basics and core programming concepts
       - Understand Classes and object-oriented development
       - Master Enhancements for extending existing classes
@@ -104,23 +75,14 @@ modules:
       - Learn Loops for efficient iteration and processing
       - Build Reusable Utilities for common business logic
   - title: 'Module 8: Gosu Validation'
-    duration: 6 topics
+    duration: 3 topics
     topics:
-      - Learn Validation Classes for enforcing business rules
-      - Master Business Validations for data accuracy checks
-      - Implement Custom Rules for specific process needs
       - Learn Validation Classes for enforcing business rules
       - Master Business Validations for data accuracy checks
       - Implement Custom Rules for specific process needs
   - title: 'Module 9: SQL Queries & Bundles'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - Learn Query APIs for efficient data retrieval
-      - Master Joins for accessing related data records
-      - Understand Direct SQL usage and best practices
-      - Explore Read-Only Bundles for safe data access
-      - Learn Writable Bundles for data update operations
-      - Understand Transactions and data consistency control
       - Learn Query APIs for efficient data retrieval
       - Master Joins for accessing related data records
       - Understand Direct SQL usage and best practices
@@ -128,14 +90,8 @@ modules:
       - Learn Writable Bundles for data update operations
       - Understand Transactions and data consistency control
   - title: 'Module 10: Forms & Activities'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - Learn Form Patterns for document configuration
-      - Understand Availability rules for form selection
-      - Master Inference logic for automated decisions
-      - Explore Activity Patterns for task automation
-      - Learn Roles and user responsibility management
-      - Understand Permissions for secure access control
       - Learn Form Patterns for document configuration
       - Understand Availability rules for form selection
       - Master Inference logic for automated decisions
@@ -143,26 +99,16 @@ modules:
       - Learn Roles and user responsibility management
       - Understand Permissions for secure access control
   - title: 'Module 11: Batch & Messaging'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Learn Batch Server architecture and processing flow
-      - Understand Schedulers for automated job execution
-      - Explore Messaging Architecture and integration setup
-      - Master Destinations for message routing and delivery
-      - Learn Events handling for system-driven processes
       - Learn Batch Server architecture and processing flow
       - Understand Schedulers for automated job execution
       - Explore Messaging Architecture and integration setup
       - Master Destinations for message routing and delivery
       - Learn Events handling for system-driven processes
   - title: 'Module 12: Web services'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Learn SOAP fundamentals, WSDL structure and usage
-      - Master SOAP service consumption and exposure
-      - Understand REST basics and API architecture
-      - Explore REST APIs for system integrations
-      - Learn JSON format for data exchange and processing
       - Learn SOAP fundamentals, WSDL structure and usage
       - Master SOAP service consumption and exposure
       - Understand REST basics and API architecture

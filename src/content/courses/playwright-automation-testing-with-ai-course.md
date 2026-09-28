@@ -118,63 +118,145 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Other Tools > Playwright Automation Testing with AI Course
 modules:
   - title: 'Module 1: Introduction to Modern Automation'
+    duration: 8 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - What is Playwright?
+      - Why Playwright is replacing Selenium
+      - Advantages of Playwright
+      - Why companies prefer Playwright in 2026
+      - Introduction to TypeScript
+      - Why TypeScript is important for automation
+      - Playwright + TypeScript Architecture
+      - Real-time industry framework overview
   - title: 'Module 2: TypeScript for Automation Testing'
+    duration: 20 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Variables & Data Types
+      - Operators
+      - Conditional Statements
+      - Loops
+      - Functions
+      - Arrays
+      - Objects
+      - Classes & Objects
+      - Constructors
+      - Inheritance
+      - Polymorphism
+      - Encapsulation
+      - Abstraction
+      - Interfaces
+      - Types vs Interfaces
+      - Enums
+      - Async / Await
+      - Promises
+      - Exception Handling
+      - Modules & Imports
   - title: 'Module 3: Playwright Basics'
+    duration: 10 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Playwright Installation
+      - Project Structure
+      - Playwright Configuration
+      - Running Tests
+      - Headed vs Headless Mode
+      - Browser Context
+      - Multiple Browser Execution
+      - Parallel Execution
+      - Playwright Inspector
+      - Trace Viewer
   - title: 'Module 4: Playwright Locators'
+    duration: 12 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - ID Locator
+      - CSS Locator
+      - XPath Locator
+      - Text Locator
+      - Role Locator
+      - Placeholder Locator
+      - Label Locator
+      - Chained Locators
+      - Dynamic XPath
+      - Relative XPath
+      - Advanced CSS Selectors
+      - Locator Strategies in Real-Time Projects
   - title: 'Module 5: Playwright Actions'
+    duration: 14 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Click Actions
+      - Double Click
+      - Right Click
+      - Keyboard Actions
+      - Mouse Actions
+      - Drag and Drop
+      - Upload Files
+      - Download Files
+      - Handle Alerts
+      - Handle Dropdowns
+      - Radio Buttons
+      - Checkboxes
+      - Frames Handling
+      - Multiple Windows Handling
   - title: 'Module 6: Waits & Assertions'
-    duration: 1 topics
+    duration: 8 topics
     topics:
-      - 1. Hard Wait 2. Auto Wait 3. Explicit Wait 4. Assertions 5. Soft Assertions 6. Retry Mechanism 7. Network Waits 8. API Response Validation
+      - Hard Wait
+      - Auto Wait
+      - Explicit Wait
+      - Assertions
+      - Soft Assertions
+      - Retry Mechanism
+      - Network Waits
+      - API Response Validation
   - title: 'Module 7: Framework Development'
+    duration: 10 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Page Object Model (POM)
+      - Reusable Utilities
+      - Base Classes
+      - Fixtures
+      - Hooks
+      - Environment Variables
+      - Config Management
+      - Test Data Management
+      - Logger Implementation
+      - Custom Utilities
   - title: 'Module 8: Reporting & CI/CD'
+    duration: 10 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - HTML Reports
+      - Allure Reports
+      - Extent Reports
+      - Screenshots on Failure
+      - Video Recording
+      - Trace Reports
+      - Jenkins Integration
+      - GitHub Actions
+      - Docker Integration
+      - CI/CD Pipeline
   - title: 'Module 9: API Testing using Playwright'
+    duration: 9 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - GET Requests
+      - POST Requests
+      - PUT Requests
+      - DELETE Requests
+      - Headers Validation
+      - JSON Parsing
+      - Token Authentication
+      - API Assertions
+      - Chaining API + UI Tests
   - title: 'Module 10: AI Integration with Playwright'
+    duration: 9 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to AI in Testing
+      - ChatGPT API Integration
+      - AI Test Case Generation
+      - AI Test Data Generation
+      - AI Assertion Generation
+      - AI Report Analysis
+      - AI Failure Root Cause Detection
+      - AI Screenshot Validation
+      - Smart Waits using AI
 whoShouldEnroll:
   - title: Students
     description: The Playwright Automation Testing with AI Course is suitable for students looking to build strong automation testing knowledge and practical software testing skills. It helps learners understand AI-driven testing methods, browser automation, scripting concepts, and industry practices through hands-on learning. Playwright Automation Testing Online Classes support skill development and career preparation.

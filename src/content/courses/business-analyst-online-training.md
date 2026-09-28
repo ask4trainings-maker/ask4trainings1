@@ -99,65 +99,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Trending Course > Business Analyst Online Training
 modules:
   - title: 'Module 1: Introduction to Business Analysis'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Role of business analyst in organizations explained
+      - Overview of business analysis lifecycle stages
+      - Key responsibilities and core BA competencies
+      - Understanding business needs and objectives clearly
+      - Importance of BA in project success delivery
   - title: 'Module 2: Requirement Gathering'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Techniques for effective requirement elicitation
+      - Stakeholder interviews and communication methods
+      - Documenting functional and nonfunctional needs
+      - Creating clear and structured requirement docs
+      - Managing requirement changes and updates
   - title: 'Module 3: Business Process Modeling'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to process modeling concepts
+      - Creating flowcharts and process diagrams
+      - Understanding BPMN basics and symbols usage
+      - Identifying gaps in current business workflows
+      - Improving efficiency with process optimization
   - title: 'Module 4: Documentation Techniques'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Writing business requirement documents clearly
+      - Creating use cases and user stories formats
+      - Functional specification documentation process
+      - Maintaining clarity and accuracy in reports
+      - Best practices for BA documentation standards
   - title: 'Module 5: Tools and Techniques'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of BA tools like Excel and JIRA usage
+      - Data analysis basics using spreadsheets tools
+      - Creating dashboards and simple visual reports
+      - Using collaboration tools for project tracking
+      - Introduction to Agile tools and environments
   - title: 'Module 6: Agile Methodology'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Understanding Agile principles and framework
+      - Role of BA in Agile project environments
+      - Working with Scrum teams and sprint cycles
+      - Writing and managing user stories effectively
+      - Participating in Agile ceremonies and reviews
   - title: 'Module 7: Data Analysis Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to data analysis concepts basics
+      - Understanding data types and data structures
+      - Using Excel for basic data analysis tasks
+      - Interpreting data to support business decisions
+      - Creating simple reports and data insights
   - title: 'Module 8: Stakeholder Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Identifying key stakeholders in projects
+      - Effective communication and engagement skills
+      - Handling conflicts and expectation management
+      - Building strong relationships with stakeholders
+      - Ensuring alignment with business objectives
   - title: 'Module 9: Testing and Validation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Role of BA in testing and validation process
+      - Writing test cases based on requirements
+      - Supporting UAT and validating business needs
+      - Identifying defects and tracking issues
+      - Ensuring quality and requirement compliance
   - title: 'Module 10: Career Preparation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Resume building for business analyst roles
+      - Preparing for interviews with mock sessions
+      - Understanding job roles and responsibilities
+      - Building portfolio with real-time projects
+      - Placement assistance and career guidance
 whoShouldEnroll:
   - title: Beginners
     description: Anyone starting their career can join this Business Analyst Course for Beginners with no prior experience. Our Business Analyst Online Training builds core knowledge in business processes, documentation, and analysis techniques. With simple explanations and practical examples, freshers can understand concepts and start their journey confidently.

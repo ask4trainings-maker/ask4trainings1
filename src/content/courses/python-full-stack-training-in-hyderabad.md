@@ -118,53 +118,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Development > Python Full Stack Training in Hyderabad
 modules:
   - title: 'Module 1: Python Programming Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Python syntax and coding basics
+      - Variables, operators, and data types
+      - Conditional statements and loops
+      - Functions and exception handling
+      - File handling and modules
   - title: 'Module 2: Front-End Development Basics'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • HTML structure and elements• CSS styling and layouts• JavaScript programming basics• Responsive web design concepts• Form creation and validation
+      - HTML structure and elements
+      - CSS styling and layouts
+      - JavaScript programming basics
+      - Responsive web design concepts
+      - Form creation and validation
   - title: 'Module 3: Front-End Development'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Bootstrap framework concepts• DOM manipulation techniques• JavaScript ES6 features• API calls using JavaScript• Interactive UI development
+      - Bootstrap framework concepts
+      - DOM manipulation techniques
+      - JavaScript ES6 features
+      - API calls using JavaScript
+      - Interactive UI development
   - title: 'Module 4: Database Management Systems'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - SQL database fundamentals
+      - CRUD operations and queries
+      - Table creation and relationships
+      - Joins, keys, and constraints
+      - Database connectivity concepts
   - title: 'Module 5: Django Framework Development'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Django architecture overview• Models, views, and templates• URL routing and forms• Authentication and authorization• Django project deployment
+      - Django architecture overview
+      - Models, views, and templates
+      - URL routing and forms
+      - Authentication and authorization
+      - Django project deployment
   - title: 'Module 6: REST API Development'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • REST architecture principles• API creation using Python• JSON request and response• API testing and integration• Authentication in REST APIs
+      - REST architecture principles
+      - API creation using Python
+      - JSON request and response
+      - API testing and integration
+      - Authentication in REST APIs
   - title: 'Module 7: Full Stack Project Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Project planning and setup
+      - Front-end and back-end integration
+      - Database-driven applications
+      - Testing and debugging methods
+      - Live project implementation
   - title: 'Module 8: Version Control and Deployment'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Git and GitHub fundamentals• Repository management basics• Branching and merging concepts• Cloud deployment techniques• Application hosting methods
+      - Git and GitHub fundamentals
+      - Repository management basics
+      - Branching and merging concepts
+      - Cloud deployment techniques
+      - Application hosting methods
   - title: 'Module 9: Career and Placement Preparation'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Resume building strategies• Technical interview preparation• Coding assessment practice• Communication skill enhancement• Mock interview sessions
+      - Resume building strategies
+      - Technical interview preparation
+      - Coding assessment practice
+      - Communication skill enhancement
+      - Mock interview sessions
   - title: 'Module 10: Real-Time Project Training'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Industry-based project scenarios
+      - End-to-end application building
+      - Team collaboration techniques
+      - Performance optimization methods
+      - Practical implementation exposure
 whoShouldEnroll:
   - title: Graduates
     description: Fresh graduates looking to begin a software career can join Python Full Stack Training in Hyderabad to gain practical programming knowledge and development expertise. Through Python Full Stack Online Training, learners strengthen coding abilities, technical understanding, and real-world application development skills.

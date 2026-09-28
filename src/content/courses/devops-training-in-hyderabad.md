@@ -118,105 +118,64 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Cloud & DevOps > Best DevOps Training in Hyderabad
 modules:
   - title: 'Module 1: Linux & Operating Systems Fundamentals'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Understanding OS architecture and Linux kernel
-      - Linux file system structure and directory management
-      - User, group, and permission management
-      - Package management using APT and YUM
-      - Networking basics and Secure Shell (SSH)
       - Understanding OS architecture and Linux kernel
       - Linux file system structure and directory management
       - User, group, and permission management
       - Package management using APT and YUM
       - Networking basics and Secure Shell (SSH)
   - title: 'Module 2: Shell Scripting & Automation'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Shell scripting fundamentals, variables, and conditionals
-      - Loops, functions, and script debugging techniques
-      - File handling and text processing commands
-      - Cron jobs and task scheduling automation
-      - Real-time automation projects and log management
       - Shell scripting fundamentals, variables, and conditionals
       - Loops, functions, and script debugging techniques
       - File handling and text processing commands
       - Cron jobs and task scheduling automation
       - Real-time automation projects and log management
   - title: 'Module 3: Git & Version Control'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Version control concepts and Git fundamentals
-      - Repository setup, branching, and merging strategies
-      - Rebase, conflict resolution, and history management
-      - Undoing changes with reset, restore, and revert
-      - SSH authentication and advanced Git workflows
       - Version control concepts and Git fundamentals
       - Repository setup, branching, and merging strategies
       - Rebase, conflict resolution, and history management
       - Undoing changes with reset, restore, and revert
       - SSH authentication and advanced Git workflows
   - title: 'Module 4: Build Tools & Artifact Management'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Build automation concepts and dependency management
-      - Maven, Gradle, npm, and pip usage
-      - Artifact creation (JAR, WAR) and versioning
-      - Managing artifacts with repositories like Nexus
-      - Integrating build tools with CI pipelines
       - Build automation concepts and dependency management
       - Maven, Gradle, npm, and pip usage
       - Artifact creation (JAR, WAR) and versioning
       - Managing artifacts with repositories like Nexus
       - Integrating build tools with CI pipelines
   - title: 'Module 5: Docker and Containerization'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Containerization concepts and Docker architecture
-      - Writing Dockerfiles and building images
-      - Managing containers, volumes, and networking
-      - Docker Compose for multi-container applications
-      - Private registries and image optimization technique
       - Containerization concepts and Docker architecture
       - Writing Dockerfiles and building images
       - Managing containers, volumes, and networking
       - Docker Compose for multi-container applications
       - Private registries and image optimization technique
   - title: 'Module 6: Kubernetes Orchestration'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Kubernetes architecture and core components
-      - Pods, Deployments, and ReplicaSets management
-      - Services, Ingress, ConfigMaps, and Secrets
-      - Scheduling, scaling, and rolling updates
-      - Deploying real-world applications on Kubernetes
       - Kubernetes architecture and core components
       - Pods, Deployments, and ReplicaSets management
       - Services, Ingress, ConfigMaps, and Secrets
       - Scheduling, scaling, and rolling updates
       - Deploying real-world applications on Kubernetes
   - title: 'Module 7: Jenkins and CI/CD Pipelines'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - Continuous Integration and Deployment concepts
-      - Jenkins installation and architecture
-      - Pipeline as Code using Jenkinsfiles
-      - Integrating Git, Docker, and build tools
-      - Securing, monitoring, and optimizing CI/CD pipelines
       - Continuous Integration and Deployment concepts
       - Jenkins installation and architecture
       - Pipeline as Code using Jenkinsfiles
       - Integrating Git, Docker, and build tools
       - Securing, monitoring, and optimizing CI/CD pipelines
   - title: 'Module 8: Configuration Management with Ansible'
-    duration: 12 topics
+    duration: 6 topics
     topics:
-      - aAnsible
-      - rchitecture and inventory management
-      - Writing playbooks, roles, and reusable automation
-      - Variables, templates, and Ansible Vault
-      - Cloud provisioning and multi-server orchestration
-      - AWX/Tower and enterprise automation practices
       - aAnsible
       - rchitecture and inventory management
       - Writing playbooks, roles, and reusable automation
@@ -224,24 +183,15 @@ modules:
       - Cloud provisioning and multi-server orchestration
       - AWX/Tower and enterprise automation practices
   - title: 'Module 9: Infrastructure as Code with Terraform'
-    duration: 8 topics
+    duration: 4 topics
     topics:
-      - Terraform fundamentals and HCL configuration
-      - Providers, resources, and state management
-      - Remote backends and workspace environments
-      - Modular infrastructure design and best practicesMulti-cloud and real-time project deployments
       - Terraform fundamentals and HCL configuration
       - Providers, resources, and state management
       - Remote backends and workspace environments
       - Modular infrastructure design and best practicesMulti-cloud and real-time project deployments
   - title: 'Module 10: Cloud Monitoring & Career Accelerator'
-    duration: 10 topics
+    duration: 5 topics
     topics:
-      - AWS core services including IAM, EC2, S3, and VPC
-      - Monitoring with Prometheus and visualization using Grafana
-      - Implementing CI/CD pipelines on cloud platforms
-      - Resume building and interview preparation
-      - Real-time projects and internship guidance
       - AWS core services including IAM, EC2, S3, and VPC
       - Monitoring with Prometheus and visualization using Grafana
       - Implementing CI/CD pipelines on cloud platforms

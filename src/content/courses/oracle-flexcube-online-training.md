@@ -99,65 +99,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Oracle > Best Oracle Flexcube Online Training
 modules:
   - title: 'Module 1: Introduction to Flexcube'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of core banking systems and FLEXCUBE basics
+      - Understanding banking domains and financial workflows
+      - FLEXCUBE architecture and key components explained
+      - Navigation of FLEXCUBE interface and dashboards
+      - Roles and responsibilities in banking IT systems
   - title: 'Module 2: Core Banking Operations'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Deposits module and account lifecycle management
+      - Loans processing and interest calculation methods
+      - Payments processing and transaction workflows
+      - Customer onboarding and KYC management process
+      - End-to-end transaction flow in banking systems
   - title: 'Module 3: Functional Training'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Business requirement analysis in banking projects
+      - Configuration of FLEXCUBE functional modules
+      - Handling real-time banking use case scenarios
+      - Workflow management and approval processes setup
+      - Reports generation and data validation techniques
   - title: 'Module 4: Technical Training'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - FLEXCUBE technical architecture and environment setup
+      - Database concepts and SQL queries for banking apps
+      - Scripting basics and backend process customization
+      - API usage and integration fundamentals explained
+      - Debugging and error handling techniques in system
   - title: 'Module 5: Integration & APIs'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to system integrations in FLEXCUBE
+      - Working with REST and SOAP APIs in banking apps
+      - Data exchange between multiple banking systems
+      - Middleware concepts and integration architecture
+      - Real-time integration scenarios and troubleshooting
   - title: 'Module 6: Implementation Training'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Project lifecycle in FLEXCUBE implementation process
+      - Requirement gathering and solution design approach
+      - Configuration and deployment of banking modules
+      - Testing strategies and validation in implementation
+      - Go-live process and post-implementation support
   - title: 'Module 7: Testing & Quality Assurance'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Functional testing of banking applications modules
+      - Integration testing for system communication flows
+      - User acceptance testing in real-time environments
+      - Bug tracking and defect management lifecycle
+      - Ensuring system quality and performance standards
   - title: 'Module 8: Advanced Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Performance tuning and system optimization methods
+      - Security features and user role management setup
+      - Advanced configuration of FLEXCUBE modules
+      - Handling high-volume transactions and scalability
+      - Troubleshooting complex technical system issues
   - title: 'Module 9: Real-Time Projects'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Working on live banking project case studies
+      - End-to-end implementation of FLEXCUBE modules
+      - Real-time data handling and transaction processing
+      - Integration project with external banking systems
+      - Project documentation and client communication
   - title: 'Module 10: Career & Certification'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Preparation for FLEXCUBE certification exams
+      - Resume building for banking IT job roles
+      - Interview questions and mock interview sessions
+      - Job assistance and placement support guidance
+      - Career growth strategies in BFSI technology sector
 whoShouldEnroll:
   - title: Basic Knowledge
     description: To join Oracle Flexcube Online Training, learners should have basic knowledge of banking , finance or IT fundamentals. Understanding accounts and workflows will help you grasp modules easily. This foundation supports faster learning in Oracle Flexcube Functional Training and improves your ability to work on real-time banking scenarios.

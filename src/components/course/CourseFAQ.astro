@@ -29,29 +29,40 @@ const faqSchema = {
       <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">Got questions? We have got answers.</p>
     </div>
     
-    <div class="space-y-4 max-w-4xl mx-auto">
-      {faqs.map(faq => (
-        <div class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm">
-          <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600" onclick="const p=this.parentElement;const g=p.parentElement;Array.from(g.children).forEach(c=>{if(c!==p)c.classList.remove('is-open')});p.classList.toggle('is-open')">
+    <div class="space-y-4 max-w-4xl mx-auto" data-faqs-container>
+      {faqs.map((faq, idx) => (
+        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm open:border-emerald-500/40" open={idx === 0}>
+          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 list-none">
             <span class="pr-6 text-sm sm:text-base font-semibold text-slate-800">{faq.question}</span>
-            <svg class="w-5 h-5 text-slate-500 shrink-0 transition-transform duration-300 group-[.is-open]:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </div>
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition-transform duration-200 group-open:rotate-180 group-open:bg-emerald-50 group-open:text-emerald-600 text-xs">
+              ▼
+            </span>
+          </summary>
           
-          <!-- Smooth Animated Drawer -->
-          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-[.is-open]:grid-rows-[1fr]">
-            <div class="overflow-hidden">
-              <div class="px-6 pb-6 pt-2 text-sm sm:text-base md:text-lg text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
-                {faq.answer}
-              </div>
-            </div>
+          <div class="px-6 pb-6 pt-2 text-sm sm:text-base md:text-lg text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
+            {faq.answer}
           </div>
-        </div>
+        </details>
       ))}
     </div>
   </div>
 
   <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('[data-faqs-container]');
+      if (!container) return;
+      const items = container.querySelectorAll('details');
+
+      items.forEach((item) => {
+        item.addEventListener('mouseenter', () => {
+          items.forEach((sibling) => {
+            if (sibling !== item) sibling.removeAttribute('open');
+          });
+          item.setAttribute('open', '');
+        });
+      });
+    });
+  </script>
 </section>
 

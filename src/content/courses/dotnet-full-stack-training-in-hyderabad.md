@@ -119,65 +119,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Development > Dotnet Full Stack Training in Hyderabad
 modules:
   - title: 'Module 1: Dotnet Full Stack Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Dotnet Full Stack Development
+      - Software Development Lifecycle Concepts
+      - Development Environment Setup Process
+      - Basics of Web Application Architecture
+      - Understanding Client Server Models
   - title: 'Module 2: Frontend Development Essentials'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - HTML Structure and Semantic Elements
+      - CSS Styling and Responsive Design
+      - JavaScript Core Programming Concepts
+      - DOM Manipulation and Events Handling
+      - Frontend UI Development Practices
   - title: 'Module 3: Advanced Frontend Frameworks'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Angular Fundamentals and Components
+      - Routing and Navigation Concepts
+      - Forms Validation and User Inputs
+      - API Integration in Frontend Apps
+      - State Management Fundamentals
   - title: 'Module 4: C# Programming Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - C# Syntax and Language Features
+      - Object Oriented Programming Principles
+      - Exception Handling and Debugging
+      - Collections and Generic Programming
+      - File Handling and Data Operations
   - title: 'Module 5: ASP.NET Backend Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - ASP.NET Core Application Basics
+      - MVC Architecture and Controllers
+      - Building RESTful API Services
+      - Authentication and Authorization
+      - Middleware and Dependency Injection
   - title: 'Module 6: Database Management Systems'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - SQL Queries and Database Design
+      - Tables Relationships and Constraints
+      - Stored Procedures and Functions
+      - Entity Framework Core Concepts
+      - Database Connectivity Techniques
   - title: 'Module 7: API Development and Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - REST API Design Principles
+      - API Testing and Documentation
+      - JSON Data Serialization Methods
+      - Third Party API Integrations
+      - Secure API Development Concepts
   - title: 'Module 8: Cloud and Deployment Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Cloud Computing
+      - Application Hosting Fundamentals
+      - CI CD Pipeline Introduction
+      - Deployment and Release Management
+      - Monitoring and Performance Tracking
   - title: 'Module 9: Real-Time Project Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Full Stack Project Planning
+      - Frontend Backend Integration Process
+      - Database Implementation Techniques
+      - Testing and Application Debugging
+      - Project Deployment Procedures
   - title: 'Module 10: Career and Certification Preparation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Resume Building and Profile Creation
+      - Technical Interview Preparation Skills
+      - Coding Challenges and Assessments
+      - Certification Preparation Guidance
+      - Professional Development Strategies
 whoShouldEnroll:
   - title: Beginners
     description: Freshers and newcomers interested in software development can join Dotnet Full Stack Training in Hyderabad to learn frontend technologies, backend programming, databases, and APIs. The Dotnet Full Stack Course for Beginners provides structured learning, practical exposure, and technical guidance to help learners build strong development foundations and implementation skills through practical project-based learning.

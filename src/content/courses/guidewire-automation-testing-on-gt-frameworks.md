@@ -120,65 +120,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Guidewire Automation Testing On Gt Frameworks Training
 modules:
   - title: 'Module 1: Introduction to Guidewire'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Guidewire insurance platform basics
+      - Understanding PolicyCenter core functionalities
+      - Introduction to ClaimCenter workflows usage
+      - BillingCenter basics and system overview
+      - Guidewire architecture and components intro
   - title: 'Module 2: Testing Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Basics of software testing concepts and types
+      - SDLC and STLC lifecycle understanding clearly
+      - Writing effective test cases and scenarios
+      - Defect tracking and reporting fundamentals
+      - Manual vs automation testing differences
   - title: 'Module 3: Java for Automation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Core Java concepts for automation testing
+      - Object oriented programming basics in Java
+      - Exception handling and collections overview
+      - Writing reusable methods for automation use
+      - Java best practices for test script design
   - title: 'Module 4: Selenium Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Selenium automation testing
+      - WebDriver setup and browser interactions
+      - Locators and element identification methods
+      - Handling waits and synchronization issues
+      - Executing test scripts and validations
   - title: 'Module 5: Guidewire GT Framework'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Guidewire GT framework design
+      - Framework components and architecture flow
+      - Creating reusable automation test modules
+      - Data driven testing concepts implementation
+      - Integrating framework with Selenium tools
   - title: 'Module 6: Automation Framework Design'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Designing scalable automation frameworks
+      - Page Object Model implementation basics
+      - TestNG framework usage and configuration
+      - Managing test data and configurations well
+      - Logging and reporting tools integration
   - title: 'Module 7: Guidewire Automation Testing'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Automating PolicyCenter application flows
+      - ClaimCenter automation testing scenarios
+      - BillingCenter automation test case creation
+      - Handling real time business use cases well
+      - Validating UI and backend data efficiently
   - title: 'Module 8: CI/CD Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Basics of continuous integration concepts
+      - Integrating automation with Jenkins tools
+      - Running automated tests in pipelines setup
+      - Version control using Git repositories well
+      - Reporting results in CI/CD dashboards
   - title: 'Module 9: Real-Time Project'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - End to end automation testing project setup
+      - Working on real insurance domain scenarios
+      - Debugging and fixing automation issues fast
+      - Test execution and result analysis process
+      - Preparing project documentation clearly
   - title: 'Module 10: Interview & Career Preparation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Guidewire automation interview questions prep
+      - Resume building for QA automation roles well
+      - Mock interviews and practical assessments
+      - Job roles and responsibilities understanding
+      - Career roadmap in Guidewire testing domain
 whoShouldEnroll:
   - title: Basic Programming Knowledge
     description: A fundamental understanding of programming concepts is recommended for this course. Familiarity with languages like Java helps in learning Guidewire automation testing and Guidewire Selenium testing. Basic knowledge of object-oriented programming, variables and functions make easier to understand automation scripts, framework implementation.

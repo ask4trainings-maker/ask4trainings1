@@ -176,11 +176,8 @@ modules:
       - User acceptance testing practice
       - Real-time project deployment tasks
   - title: 'Module 8: Data Management'
-    topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+    duration: 0 topics
+    topics: []
   - title: 'Module 8: Security and Administration'
     duration: 5 topics
     topics:

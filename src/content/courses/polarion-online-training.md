@@ -119,65 +119,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Siemens > Best Polarion Online Training with Certification
 modules:
   - title: 'Module 1: Introduction to Polarion ALM'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Polarion ALM platform features
+      - Understanding ALM lifecycle and key concepts
+      - Benefits of Polarion in enterprise projects
+      - Navigation of Polarion user interface basics
+      - Roles and responsibilities in ALM process
   - title: 'Module 2: Requirements Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating and managing requirements in Polarion
+      - Requirement types and hierarchy structure
+      - Linking requirements with test cases easily
+      - Managing changes and version control system
+      - Traceability between requirements and tasks
   - title: 'Module 3: Work Items & Tracking'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating and customizing work items in tool
+      - Managing tasks, defects, and user stories
+      - Workflow configuration for work item states
+      - Assigning roles and permissions in projects
+      - Tracking progress using dashboards and reports
   - title: 'Module 4: Test Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating and executing test cases in Polarion
+      - Managing test runs and test configurations
+      - Defect tracking and linking with test cases
+      - Test coverage and traceability implementation
+      - Generating test reports and analysis insights
   - title: 'Module 5: LiveDocs & Collaboration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating LiveDocs for structured documentation
+      - Collaborative editing and version tracking
+      - Linking LiveDocs with requirements and tests
+      - Document workflow and approval processes
+      - Real-time team collaboration in Polarion
   - title: 'Module 6: Workflow Configuration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Designing custom workflows for work items
+      - State transitions and automation rules setup
+      - Role-based access control and permissions
+      - Customizing fields and layout configurations
+      - Workflow validation and testing scenarios
   - title: 'Module 7: Integration & APIs'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Integrating Polarion with external tools
+      - Using REST APIs for automation and data flow
+      - Connecting with Jira and other ALM systems
+      - Data import and export in Polarion platform
+      - Managing plugins and extensions effectively
   - title: 'Module 8: Reporting & Dashboards'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating dashboards for project monitoring
+      - Custom report generation in Polarion ALM
+      - Using widgets for visual data representation
+      - Metrics tracking for quality and performance
+      - Exporting reports for stakeholders review
   - title: 'Module 9: Real-Time Projects'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Working on industry-based real-time projects
+      - Requirement gathering and documentation flow
+      - End-to-end project lifecycle implementation
+      - Test management and defect handling practice
+      - Final project review and performance feedback
   - title: 'Module 10: Certification & Career Support'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Preparing for Polarion certification exams
+      - Resume building for ALM job roles effectively
+      - Mock interviews and real-time interview prep
+      - Placement assistance and job search guidance
+      - Career roadmap for ALM and Polarion roles
 whoShouldEnroll:
   - title: Education
     description: Basic educational background is enough to join a Polarion Course in Hyderabad, as the program is designed for both graduates and learners from different streams. With polarion online trianing, even non-technical candidates can understand ALM concepts. The course structure, including Polarion Instructor-Led Training and Polarion Self-Paced Online Course.

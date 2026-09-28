@@ -99,65 +99,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Cloud Computing > Best Salesforce Online Training with Certification
 modules:
   - title: 'Module 1: Introduction to Salesforce'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Salesforce CRM platform basics
+      - Understanding cloud computing concepts clearly
+      - Navigating Salesforce interface and setup
+      - Exploring standard objects and records flow
+      - Basics of users roles profiles permissions
   - title: 'Module 2: Data Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating and managing records efficiently
+      - Importing and exporting data using tools
+      - Data validation rules and field dependencies
+      - Data security and sharing settings basics
+      - Backup strategies and data quality methods
   - title: 'Module 3: User Management'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating users, roles, and profiles setup
+      - Permission sets and access control methods
+      - Managing login access and security policies
+      - User activity tracking and login history
+      - Organization-wide defaults configuration
   - title: 'Module 4: Automation Tools'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Workflow rules and process automation setup
+      - Process Builder concepts and usage details
+      - Flow builder for advanced automation logic
+      - Approval processes design and management
+      - Email alerts and task automation features
   - title: 'Module 5: Reports & Dashboards'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating custom reports with filters logic
+      - Report types and formats explained clearly
+      - Dashboard creation and data visualization
+      - Scheduling reports and sharing dashboards
+      - Data analysis using charts and summaries
   - title: 'Module 6: Salesforce Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Apex programming language
+      - Writing triggers and classes in Salesforce
+      - Visualforce pages and UI customization
+      - Debugging and testing code effectively
+      - Deployment using change sets and tools
   - title: 'Module 7: Lightning Experience'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Overview of Lightning interface and tools
+      - Lightning App Builder usage and layouts
+      - Creating dynamic pages and components
+      - User experience enhancements in Lightning
+      - Migration from classic to Lightning setup
   - title: 'Module 8: Integration Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - REST and SOAP API integration basics
+      - Connecting external systems with Salesforce
+      - Data synchronization and middleware usage
+      - Web services and callouts implementation
+      - Security in integrations and API limits
   - title: 'Module 9: Marketing Cloud'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to marketing automation tools
+      - Email campaign creation and management
+      - Customer journey builder concepts usage
+      - Data segmentation and audience targeting
+      - Analytics and campaign performance tracking
   - title: 'Module 10: Certification & Career'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Salesforce certification exam preparation
+      - Resume building and portfolio development
+      - Interview questions and mock practice
+      - Job roles and career paths in Salesforce
+      - Placement assistance and job support help
 whoShouldEnroll:
   - title: Beginners
     description: Candidates with basic computer knowledge can join salesforce online training and start learning CRM concepts easily. Our Salesforce CRM Online Classes are designed for freshers with no coding background. With step-by-step guidance, learners can prepare for Salesforce Certification Online Course and build strong fundamentals.

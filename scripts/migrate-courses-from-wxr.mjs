@@ -146,12 +146,17 @@ for (const file of courseFiles) {
        if (state === 'modules') {
          const modMatch = text.match(/(?:Module|Level)\s*\d+[:\-.]?\s*([^<\n]+)/i);
          if (modMatch) {
-            currentModule = { title: text, duration: '', topics: [] };
-            extractedModules.push(currentModule);
+            // Check if this module was already created by the parent div
+            if (!extractedModules.find(m => m.title === text)) {
+               currentModule = { title: text, duration: '', topics: [] };
+               extractedModules.push(currentModule);
+            }
          } else {
             // some don't have module prefix but are toggles in curriculum
-            currentModule = { title: text, duration: '', topics: [] };
-            extractedModules.push(currentModule);
+            if (!extractedModules.find(m => m.title === text)) {
+               currentModule = { title: text, duration: '', topics: [] };
+               extractedModules.push(currentModule);
+            }
          }
        } else if (state === 'faqs') {
          let q = text.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
@@ -184,24 +189,46 @@ for (const file of courseFiles) {
       } else if (tagName === 'p') {
         const modMatch = text.match(/(?:Module|Level)\s*\d+[:\-.]?\s*([^<\n]+)/i);
         if (modMatch) {
-          currentModule = { title: text, duration: '', topics: [] };
-          extractedModules.push(currentModule);
-        } else if (currentModule && text.length > 0 && text.length < 150) {
-          currentModule.topics.push(text);
+          if (!extractedModules.find(m => m.title === text)) {
+             currentModule = { title: text, duration: '', topics: [] };
+             extractedModules.push(currentModule);
+          }
+        } else if (currentModule && text.length > 0) {
+          // It's a paragraph of topics, potentially separated by <br> or • or just newlines
+          const pContent = cleanText($el.html() || '');
+          pContent.split(/<br\s*\/?>|\n|•/).forEach(t => {
+            const ct = cleanText(cheerio.load(t).text()).replace(/^[•\-\d.]+\s*/, '').trim();
+            if (ct && !currentModule.topics.includes(ct)) currentModule.topics.push(ct);
+          });
         }
       } else if (['div', 'details'].includes(tagName)) {
-        let tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').text());
-        if (!tTitle && tagName === 'details') tTitle = cleanText($el.find('summary').text());
+        let tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').first().text());
+        if (!tTitle && tagName === 'details') tTitle = cleanText($el.find('summary').first().text());
         
-        let tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body, p, ul').text());
-        
-        if (/(module\s*\d+:?|level\s*\d+:?)/i.test(tTitle)) {
-          currentModule = { title: tTitle, duration: '', topics: [] };
-          extractedModules.push(currentModule);
-          tContent.split(/\n|•|-/).forEach(t => {
-            const ct = t.trim();
-            if (ct) currentModule.topics.push(ct);
-          });
+        if (/(module\s*\d+:?|level\s*\d+:?)/i.test(tTitle) || tTitle.length > 5) {
+          // If we haven't added this module yet
+          if (!extractedModules.find(m => m.title === tTitle)) {
+             currentModule = { title: tTitle, duration: '', topics: [] };
+             extractedModules.push(currentModule);
+          } else {
+             currentModule = extractedModules.find(m => m.title === tTitle);
+          }
+          
+          const contentEl = $el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body').first();
+          if (contentEl.length) {
+            // Extract from <li>
+            contentEl.find('li').each((_, li) => {
+              const ct = cleanText($(li).text());
+              if (ct && !currentModule.topics.includes(ct)) currentModule.topics.push(ct.replace(/^[•\-\d.]+\s*/, ''));
+            });
+            // Fallback to <p> if no <li>
+            if (currentModule.topics.length === 0) {
+              contentEl.find('p').each((_, p) => {
+                const pText = cleanText($(p).text());
+                if (pText && !currentModule.topics.includes(pText)) currentModule.topics.push(pText.replace(/^[•\-\d.]+\s*/, ''));
+              });
+            }
+          }
         }
       }
     }

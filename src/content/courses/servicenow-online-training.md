@@ -119,65 +119,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Trending Course > Best Servicenow Online Training with Certification
 modules:
   - title: 'Module 1: ServiceNow Fundamentals'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to ServiceNow platform basics and UI
+      - Overview of ITSM concepts and lifecycle flow
+      - Navigation, users, roles, and access control setup
+      - Understanding tables, forms, and records usage
+      - Basic configuration and platform architecture
   - title: 'Module 2: ITSM Core Concepts'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Incident management lifecycle and workflows
+      - Problem management root cause analysis flow
+      - Change management process and approvals setup
+      - Service catalog creation and request handling
+      - SLA definitions and service performance tracking
   - title: 'Module 3: User Administration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - User creation and role assignment techniques
+      - Group management and permission configurations
+      - Access control lists implementation and testing
+      - Managing authentication and security settings
+      - Delegation and user preference configurations
   - title: 'Module 4: Service Catalog'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating catalog items and categories setup
+      - Designing workflows for service requests flow
+      - Managing variables and form customization
+      - Catalog client scripts and UI policies usage
+      - Order guides and request fulfillment process
   - title: 'Module 5: Workflow & Automation'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Workflow editor usage and activity configuration
+      - Creating approvals and notifications setup
+      - Automating business processes efficiently
+      - Flow Designer basics and trigger conditions
+      - Debugging workflows and execution tracking
   - title: 'Module 6: Scripting Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to JavaScript in ServiceNow
+      - Client scripts and server-side scripting usage
+      - Business rules creation and execution logic
+      - Script includes and reusable code functions
+      - Glide APIs and scripting best practices
   - title: 'Module 7: Integrations'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - REST and SOAP web services integration setup
+      - MID server configuration and usage basics
+      - Import sets and data transformation process
+      - Third-party system connectivity and APIs
+      - Error handling and monitoring integrations
   - title: 'Module 8: Reporting & Dashboards'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Creating reports and data visualization tools
+      - Building dashboards and performance analytics
+      - Scheduling reports and sharing insights
+      - KPI tracking and performance measurement
+      - Custom widgets and interactive dashboards
   - title: 'Module 9: Advanced Development'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Application development lifecycle overview
+      - Scoped applications creation and management
+      - UI pages and widgets customization process
+      - Advanced scripting and API integrations
+      - Testing and debugging applications effectively
   - title: 'Module 10: Certification & Placement'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Certification exam preparation strategies
+      - Mock tests and interview question practice
+      - Resume building and profile optimization
+      - Real-time project experience and case studies
+      - Placement support and job assistance guidance
 whoShouldEnroll:
   - title: Background
     description: Candidates with basic IT or non-IT education can join this program. Our ServiceNow Online Training is designed to simplify concepts for all learners. Even fresh graduates can benefit from the ServiceNow Course for Beginners, gaining strong foundational knowledge and understanding of ITSM processes, workflows, and platform basics for career growth.

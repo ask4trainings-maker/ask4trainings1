@@ -96,51 +96,85 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Top Guidewire billing center training in Hyderabad 2026
 modules:
   - title: 'Module 1: Guidewire Billing Center Basics'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Introduction to Billing Center concepts
+      - Insurance billing lifecycle flow
+      - Overview of billing architecture
+      - Key components and modules
+      - Navigation and UI basics
   - title: 'Module 2: Billing Center Configuration'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Account setup and configuration• Billing instructions setup flow• Invoice and statement config• Payment plan configuration• Delinquency plan setup
+      - Account setup and configuration
+      - Billing instructions setup flow
+      - Invoice and statement config
+      - Payment plan configuration
+      - Delinquency plan setup
   - title: 'Module 3: Billing Workflows & Processes'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • End-to-end billing workflows• Invoice generation process flow• Payment processing lifecycle• Refund and adjustments flow• Write-offs and reversals
+      - End-to-end billing workflows
+      - Invoice generation process flow
+      - Payment processing lifecycle
+      - Refund and adjustments flow
+      - Write-offs and reversals
   - title: 'Module 4: Billing Center Integration'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - Integration architecture basics
+      - Web services integration setup
+      - API based data exchange flow
+      - Messaging queues integration
+      - External system connectivity
   - title: 'Module 5: Guidewire GOSU Scripting'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • GOSU language fundamentals• Classes and enhancements use• Rules and triggers scripting• Debugging GOSU applications• Best coding practices
+      - GOSU language fundamentals
+      - Classes and enhancements use
+      - Rules and triggers scripting
+      - Debugging GOSU applications
+      - Best coding practices
   - title: 'Module 6: Billing Center Data Model'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Core data model structure• Entities and relationships use• Account and policy mapping• Transaction data handling• Data validation techniques
+      - Core data model structure
+      - Entities and relationships use
+      - Account and policy mapping
+      - Transaction data handling
+      - Data validation techniques
   - title: 'Module 7: Payments & Transactions'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Payment processing workflows• Direct bill vs agency bill• Credit and debit handling• Transaction lifecycle stages• Reconciliation process flow
+      - Payment processing workflows
+      - Direct bill vs agency bill
+      - Credit and debit handling
+      - Transaction lifecycle stages
+      - Reconciliation process flow
   - title: 'Module 8: Billing Center UI Customization'
+    duration: 5 topics
     topics:
-      - "Introduction and Overview"
-      - "Key Concepts and Architecture"
-      - "Hands-on Practical Session"
-      - "Best Practices and Guidelines"
+      - PCF files customization basics
+      - Screen and field modifications
+      - UI rules and validations setup
+      - Enhancing user experience UI
+      - Role based UI configurations
   - title: 'Module 9: Real-Time Project Training'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Live project implementation• Business scenario use cases• End-to-end system practice• Issue fixing and debugging• Deployment project support
+      - Live project implementation
+      - Business scenario use cases
+      - End-to-end system practice
+      - Issue fixing and debugging
+      - Deployment project support
   - title: 'Module 10: Interview & Placement Prep'
-    duration: 1 topics
+    duration: 5 topics
     topics:
-      - • Billing Center interview Q&A• Resume building techniques• Mock interview sessions• Real-time project discussions• Placement assistance support
+      - Billing Center interview Q&A
+      - Resume building techniques
+      - Mock interview sessions
+      - Real-time project discussions
+      - Placement assistance support
 whoShouldEnroll:
   - title: Basic Qualification
     description: Candidates with a background in IT, Computer Science, or related fields can enroll in this Guidewire Course for Beginners and advanced programs. This Guidewire Billing Center Training builds strong fundamentals and prepares learners for Guidewire Developer Course roles in insurance software development with real-time exposure.
