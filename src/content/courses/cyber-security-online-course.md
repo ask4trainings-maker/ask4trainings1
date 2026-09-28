@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is included in the Cyber Security training program?
+    answer: The Cyber Security Online Course includes ethical hacking, penetration testing, cloud security, SOC operations, malware analysis, network security, and threat monitoring concepts. Learners receive practical exposure through projects, assignments, and lab sessions. The Cyber Security Online Training program also provides recorded sessions, expert mentorship, and career-focused guidance for better industry preparation.
+  - question: Who can join this cybersecurity course?
+    answer: Students, freshers, IT professionals, network engineers, and career switchers can enroll in the Cyber Security Course for Beginners to build strong cybersecurity skills. The Advanced Cyber Security Course is suitable for professionals who want to upgrade their knowledge in ethical hacking, cloud security, and cyber defense technologies using practical training methods and real-world case studies.
+  - question: Does the course include practical projects?
+    answer: Yes, the Cyber Security Course with Real-Time Projects provides hands-on experience through live cybersecurity scenarios, penetration testing exercises, and security monitoring activities. Learners also gain practical exposure through the Cyber Security Training with Hands-On Labs, helping them improve technical skills and understand real-world cybersecurity operations effectively.
+  - question: Will I receive certification after course completion?
+    answer: fter completing the training successfully, learners receive a valuable Cyber Security Professional Certification that validates their technical and practical cybersecurity knowledge. The Cyber Security Certification Online program helps students improve career opportunities by preparing them for industry-recognized certifications and advanced cybersecurity job roles in leading organizations.
+  - question: Are online classes available for this course?
+    answer: Yes, our Cyber Security Online Classes are designed for flexible learning with live instructor-led sessions, recorded videos, and mentor support. The Cyber Security Online Learning Program allows learners to study from anywhere while gaining practical knowledge through projects, assignments, and interactive cybersecurity training sessions designed according to industry standards.
+  - question: Does the training provide placement support?
+    answer: The Cyber Security Course with Placement offers interview preparation, resume building, mock interviews, and career guidance to help learners secure job opportunities in cybersecurity. The Cyber Security Job Oriented Course is specifically designed to improve practical skills and industry readiness for roles such as SOC Analyst, Ethical Hacker, and Security Engineer.
+  - question: What career opportunities are available after this course?
+    answer: fter completing the Cyber Security Analyst Course, learners can apply for roles such as Security Analyst, Ethical Hacker, SOC Analyst, Security Engineer, and Cybersecurity Consultant. The Cyber Security Certification Course helps learners gain industry-relevant knowledge, practical experience, and technical expertise required for high-demand cybersecurity careers globally.
 seo:
   metaTitle: Best Cyber Security Online Course | No.1 Certification
   metaDescription: Advance your career with Cyber Security Online Course. Learn ethical hacking, network security & real-time skills from industry experts online.
@@ -137,26 +143,86 @@ objectives:
   - The Cyber Security Course with Real-Time Projects enables learners to work on live scenarios, security audits, and practical assignments that simulate actual cybersecurity challenges. Through the Cyber Security Course with Internship, students gain valuable hands-on experience, improve professional skills, and understand workplace security operations. This training program supports career growth with practical implementation and industry-relevant knowledge.
 navigationLocation: Navigation Bar > All Courses > Trending Course > Best Cyber Security Online Training with Certification
 modules:
-  - title: 'Module 1: Introduction to Cyber Security Online'
+  - title: 'Module 1: Cyber Security Basics'
+    duration: 5 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Introduction to cybersecurity concepts and security principles
+      - Understanding cyber threats, attacks, and vulnerabilities
+      - Basics of network security and system protection methods
+      - Overview of malware, phishing, and ransomware attacks
+      - Cybersecurity roles, tools, and career opportunities overview
+  - title: 'Module 2: Network Security'
+    duration: 5 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - Fundamentals of secure network architecture and protocols
+      - Firewall configuration and network traffic monitoring basics
+      - Intrusion detection and prevention system implementation
+      - VPN setup and secure remote access management concepts
+      - Wireless network security and encryption techniques training
+  - title: 'Module 3: Ethical Hacking'
+    duration: 5 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project Implementation'
+      - Introduction to ethical hacking methodologies and processes
+      - Penetration testing tools and vulnerability assessment basics
+      - Footprinting, reconnaissance, and scanning techniques overview
+      - Password cracking and authentication security concepts learning
+      - Social engineering attack prevention and awareness practices
+  - title: 'Module 4: Operating System Security'
+    duration: 5 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Windows operating system security and access management
+      - Linux security configuration and hardening techniques training
+      - User account management and privilege control concepts
+      - File permissions and endpoint security best practices overview
+      - System monitoring and security patch management methods
+  - title: 'Module 5: Cloud Security'
+    duration: 5 topics
+    topics:
+      - Introduction to cloud computing and cloud security basics
+      - Identity and access management in cloud environments
+      - Data protection and cloud storage security techniques
+      - Cloud risk management and compliance standards overview
+      - Securing cloud applications and infrastructure environments
+  - title: 'Module 6: Security Operations Center'
+    duration: 5 topics
+    topics:
+      - Fundamentals of SOC operations and incident management
+      - SIEM tools and real-time threat monitoring techniques
+      - Log analysis and security event correlation processes
+      - Incident response lifecycle and threat containment methods
+      - Security reporting and SOC analyst responsibilities overview
+  - title: 'Module 7: Threat Analysis'
+    duration: 5 topics
+    topics:
+      - Understanding cyber threats and attack lifecycle concepts
+      - Malware analysis and threat intelligence fundamentals training
+      - Vulnerability assessment and risk analysis methodologies overview
+      - Threat detection using advanced cybersecurity monitoring tools
+      - Security incident investigation and reporting best practices
+  - title: 'Module 8: Web Application Security'
+    duration: 5 topics
+    topics:
+      - Basics of web application architecture and vulnerabilities
+      - SQL injection and cross-site scripting prevention methods
+      - Secure coding standards and application testing practices
+      - Authentication and session management security techniques
+      - Web application penetration testing and security auditing
+  - title: 'Module 9: Digital Forensics'
+    duration: 5 topics
+    topics:
+      - Introduction to digital forensics and investigation processes
+      - Evidence collection and forensic data preservation methods
+      - Cybercrime investigation tools and forensic analysis basics
+      - Email and network forensic investigation techniques overview
+      - Reporting forensic findings and legal compliance standards
+  - title: 'Module 10: Career & Certification Preparation'
+    duration: 5 topics
+    topics:
+      - Resume building and cybersecurity interview preparation sessions
+      - Mock interviews and technical assessment practice activities
+      - Guidance for cybersecurity certifications and career pathways
+      - Real-time project implementation and practical case studies
+      - Placement support and professional skill development trainingccccccccccccccc
 whoShouldEnroll:
   - title: Beginners
     description: The Cyber Security Online Course is ideal for beginners who want to start a career in cybersecurity and learn essential concepts such as ethical hacking, network security, and threat prevention. Learners can build strong technical foundations through Cyber Security Online Classes designed with practical exercises, live demonstrations, and real-time security scenarios for better understanding and career preparation.

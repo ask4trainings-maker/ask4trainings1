@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is Guidewire Claim Center Training and who should take it?
+    answer: Guidewire Claim Center Training is designed to help learners understand claims management, configuration, and integration using real-time scenarios. This Guidewire Claim Center Course is ideal for beginners, developers, and professionals looking to build a career in the insurance domain. With Claim Center Training for Beginners and advanced modules, it covers both functional and technical aspects, making it suitable for anyone aiming for high-demand Guidewire roles.
+  - question: What topics are covered in the Guidewire Claim Center Course?
+    answer: The Guidewire Claim Center Course includes Claim Center Configuration Training, Guidewire GOSU Training, integrations, workflows, and UI customization. Through Guidewire Hands-on Training and Claim Center Real-Time Project Training, learners gain practical exposure to real-time scenarios. The course also covers Claim Center Functional Training and technical modules to ensure complete understanding of Guidewire Claim Center implementation.
+  - question: Is Guidewire Claim Center Training suitable for working professionals?
+    answer: Yes, Guidewire Claim Center Online Training is flexible and designed for working professionals. With recorded sessions, live classes, and Guidewire Job-Oriented Training, learners can balance work and study. The program also includes Guidewire Interview Preparation Training and real-time projects, helping professionals upgrade skills and transition into high-paying Guidewire roles without disrupting their current jobs.
+  - question: Does the training include real-time project experience?
+    answer: Yes, the program offers Claim Center Real-Time Project Training and Guidewire Hands-on Training to provide practical exposure. Learners work on live use cases, understand system workflows, and gain implementation experience. This approach ensures that participants of Guidewire Claim Center Training are job-ready and capable of handling real-world project challenges effectively in top organizations.
+  - question: Will I receive a certification after completing the course?
+    answer: Yes, learners receive Guidewire Claim Center Certification after completing the Guidewire Certification Training program. This certification validates your skills in configuration, integration, and claims management. It enhances your resume and increases job opportunities, helping you stand out in competitive job markets and secure roles like Guidewire Developer or Consultant.
+  - question: Is placement assistance provided with Guidewire Training?
+    answer: Yes, the program offers Guidewire Training with Placement support, including resume building, mock interviews, and Claim Center Interview Preparation. With guidance from experts and access to job opportunities, learners of Guidewire Job-Oriented Course can confidently apply for roles and improve their chances of getting placed in top companies.
+  - question: What career opportunities are available after this training?
+    answer: fter completing Guidewire Claim Center Training, learners can pursue roles like Developer, Analyst, Consultant, and Administrator. With Guidewire Claim Center Developer Training and Guidewire Professional Training, they gain the skills required for high-demand jobs. The course ensures strong domain knowledge, technical expertise and career growth opportunities in the global insurance IT industry.
 seo:
   metaTitle: 'Best Guidewire Claim Center Training | Development Course #1'
   metaDescription: Join Hope Infotech’s Guidewire Claim Center Training to master configuration, integration. Learn from experts with real-time.919951609609
@@ -136,26 +142,66 @@ objectives:
   - The course also prepares learners with Claim Center Interview Preparation and Guidewire Certification Training to secure high-paying jobs. With Guidewire Training with Placement, it ensures a complete Guidewire Job-Oriented Course for career success.
 navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Guidewire Claim Center Training
 modules:
-  - title: 'Module 1: Introduction to Guidewire Claim Center'
+  - title: 'Module 1: Data Model'
+    duration: 2 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Data Model Architecture
+      - Data Model Configuration
+  - title: 'Module 2: PCF'
+    duration: 5 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - PCF Architecture
+      - Container widgets Usage
+      - Locations
+      - Dynamic UI
+      - UI Validation
+  - title: 'Module 3: Claim Center'
+    duration: 5 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project implementation'
+      - Claim Life CycleFNOL and Post-FNOL
+      - Business Rules
+      - Exposure, WorkPlan, Coverages
+      - Financial and Life Cycle
+      - Validation Level
+  - title: 'Module 4: Gosu for Integration'
+    duration: 7 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Gosu Syntax
+      - Gosu Rules
+      - Gosu Classes
+      - Gosu Validation
+      - Gosu Queries
+      - Bundle Management
+      - Logging
+  - title: 'Module 5: Messaging'
+    duration: 6 topics
+    topics:
+      - Messaging Architecture
+      - Triggering Messages
+      - Create Messages
+      - Payload Transformation
+      - Sending Messages
+      - Acknowledging Messages
+  - title: 'Module 6: Restful'
+    duration: 2 topics
+    topics:
+      - Consume Rest API
+      - Publish Rest API
+  - title: 'Module 7: SOAP'
+    duration: 2 topics
+    topics:
+      - Consume SOAP
+      - Publish SOAP
+  - title: 'Module 8: Batch Process'
+    duration: 2 topics
+    topics:
+      - Batch Process Flow
+      - Create Batch Process
+  - title: 'Module 9: Plugins'
+    duration: 2 topics
+    topics:
+      - Startable Plugin
+      - Predefined Plugin
 whoShouldEnroll:
   - title: Beginners
     description: Anyone starting a career in IT can join Guidewire Claim Center Training with basic knowledge of programming and interest in insurance domain concepts. This Guidewire Claim Center Course helps beginners understand claims lifecycle, configuration, and workflows through Claim Center Training for Beginners and hands-on learning.

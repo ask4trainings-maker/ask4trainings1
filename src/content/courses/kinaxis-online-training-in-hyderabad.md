@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is included in the Kinaxis course?
+    answer: The Kinaxis Course in Hyderabad covers complete supply chain concepts through the Kinaxis Supply Chain Management Course. With Kinaxis Online Training, learners gain hands-on experience using real tools and workflows. The program also includes Kinaxis Training with Live Scenarios to ensure practical understanding and industry-ready skills for real-time project environments.
+  - question: Does the course provide placement assistance?
+    answer: Yes, the Kinaxis Course with Placement Assistance offers end-to-end career support including resume building, mock interviews, and job referrals. Along with Kinaxis Online Training, candidates are prepared for real interviews. The course ensures learners are job-ready with strong technical and functional knowledge required by top companies.
+  - question: Is certification included in this training?
+    answer: The Kinaxis Certification Course Online is designed to prepare learners for global certifications. Through Kinaxis Online Training and hands-on practice via the Kinaxis Online Learning Platform, students gain the confidence to clear certification exams and validate their expertise in supply chain planning tools.
+  - question: How are real-time scenarios covered in the course?
+    answer: The program includes Kinaxis Training with Live Scenarios, allowing learners to work on real business cases. The Kinaxis Supply Chain Management Course ensures practical exposure to planning, forecasting, and execution processes. This approach bridges the gap between theoretical learning and real-world implementation.
+  - question: Can I learn Kinaxis online with flexibility?
+    answer: Yes, the Kinaxis Online Learning Platform provides flexible access to sessions, recordings, and study materials. With Kinaxis Online Training, learners can study at their own pace while attending live classes. This makes it suitable for both working professionals and fresh graduates.
+  - question: Who should enroll in this Kinaxis course?
+    answer: The Kinaxis Course in Hyderabad is ideal for professionals in supply chain, IT, and operations. Through the Kinaxis Supply Chain Management Course and Kinaxis Online Training, learners from different backgrounds can build expertise and transition into high-demand roles in supply chain management.
+  - question: What skills will I gain after completing the course?
+    answer: By completing the Kinaxis Certification Course Online, learners gain expertise in planning, analytics, and system configuration. The Kinaxis Course with Placement Assistance combined with Kinaxis Training with Live Scenarios ensures strong practical knowledge, helping candidates confidently handle real-time projects and advance their careers.
 seo:
   metaTitle: Kinaxis Online Training in Hyd | No.1 Rapid Response Course
   metaDescription: Master Kinaxis online Training Rapid Response with expert-led, hands-on project and certification support to boost your career.
@@ -137,25 +143,35 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > New Courses > Best Kinaxis Online Training with Certification
 modules:
   - title: 'Module 1: Introduction to Kinaxis'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+    duration: 0 topics
+    topics: []
+  - title: 'Module 2: Supply Chain Fundamentals'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 3: RapidResponse Navigation'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 4: Data Model Concepts'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 5: Configuration Basics'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 6: Demand Planning'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 7: Supply Planning'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 8: Integration Concepts'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 9: Reporting and Analytics'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 10: Projects and Certification'
+    duration: 0 topics
+    topics: []
 whoShouldEnroll:
   - title: Educational Background
     description: Candidates with a degree in engineering, business, or related fields can easily start Kinaxis Online Training. Basic knowledge of supply chain concepts or IT systems is helpful for understanding the Kinaxis Supply Chain Management Course and progressing smoothly in real-time project learning and certification preparation.

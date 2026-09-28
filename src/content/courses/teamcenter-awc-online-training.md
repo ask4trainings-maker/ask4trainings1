@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is Teamcenter AWC Online Training?
+    answer: Teamcenter AWC Online Training introduces learners to Siemens Teamcenter Active Workspace Client and its core PLM capabilities. The course covers navigation, product data management, workflows, search, collaboration, lifecycle management, user access, and administration concepts. The Teamcenter AWC Job Oriented Course focuses on practical knowledge that helps students, freshers, and working professionals understand how AWC is used in enterprise product development environments and build confidence for professional PLM roles.
+  - question: Who can join Teamcenter AWC training?
+    answer: Students, freshers, working professionals, PLM beginners, engineers, administrators, developers, and professionals looking to expand their product lifecycle knowledge can consider Teamcenter AWC Online Training. Basic computer and technical knowledge can be helpful, but learners can start with foundational concepts. The Advanced Teamcenter AWC Course can further support professionals who want to strengthen their understanding of Active Workspace functionality, workflows, product data, configuration, and enterprise PLM processes.
+  - question: What topics are covered in Teamcenter AWC?
+    answer: The curriculum can cover Active Workspace navigation, search, product data management, workflows, lifecycle management, collaboration, user roles, access controls, administration, and configuration concepts. Teamcenter Active Workspace Client training helps learners understand how users interact with PLM information through the modern AWC interface. The Teamcenter AWC Job Oriented Course can also include practical scenarios that help participants connect technical concepts with common enterprise product development and information management processes.
+  - question: Is Teamcenter AWC training available online?
+    answer: Yes, learners can choose flexible online learning to study Teamcenter Active Workspace concepts from their preferred location. Teamcenter AWC Online Training can provide structured sessions covering essential AWC features, workflows, product data, and collaboration. The Teamcenter AWC Online Bootcamp approach can help learners progress through important topics in a focused format while balancing professional or academic commitments. Online learning also allows participants to revisit concepts and strengthen their understanding through guided practice.
+  - question: Does the course include practical project learning?
+    answer: Practical learning can help participants understand how Teamcenter AWC concepts are applied in enterprise environments. Teamcenter AWC Training with Real-Time Projects can introduce realistic scenarios involving product data, workflows, lifecycle processes, collaboration, and user activities. The Teamcenter AWC Job Oriented Course can reinforce these concepts through practical exercises, helping learners understand business requirements, improve technical confidence, and develop skills relevant to working with Active Workspace in professional PLM environments.
+  - question: Can Teamcenter AWC help with career opportunities?
+    answer: Learning Active Workspace can help professionals develop specialized PLM knowledge applicable to engineering and product development environments. Teamcenter AWC Online Training can build understanding of product data, workflows, collaboration, and lifecycle management. The Teamcenter AWC Certification Program can provide a structured learning path for demonstrating knowledge while supporting career preparation. Learners may explore roles such as AWC Administrator, Developer, Consultant, Support Engineer, or PLM Analyst depending on their skills and experience.
+  - question: Is Teamcenter AWC suitable for working professionals?
+    answer: Yes, working professionals can use Teamcenter AWC Online Training to develop PLM knowledge while continuing their current responsibilities. Flexible online learning can make it easier to study Active Workspace features, workflows, product data management, and collaboration concepts according to individual schedules. The Teamcenter AWC Certification with Placement Support option can provide additional career-focused guidance for eligible learners seeking to strengthen their professional profile and explore opportunities involving Teamcenter AWC and enterprise PLM environments.
 seo:
   metaTitle: 'Best Teamcenter AWC Online Training | #1 Certification'
   metaDescription: Enroll in Teamcenter AWC Online Training with hands-on projects, expert guidance, certification and placement assistance to build PLM skills.
@@ -134,26 +140,86 @@ objectives:
   - Build skills through Teamcenter AWC Online Training and learn Teamcenter Active Workspace Client training. Master navigation, data management, workflows, search, collaboration, and interface features for a confident PLM for enterprise success!Develop knowledge with Advanced Teamcenter AWC Course and pursue Teamcenter AWC Certification Program. Learn configuration, workflows, access controls, data handling, and customization basics while building skills for professional PLM roles.!Gain expertise through Teamcenter AWC Training with Real-Time Projects and Teamcenter AWC Certification with Placement Support. Practice scenarios solve workflow challenges, manage product data, and apply AWC concepts to business needs today.Strengthen teams through Teamcenter AWC Corporate Training and Teamcenter AWC Course with Placement. Improve productivity through structured learning in AWC navigation, collaboration, lifecycle management, workflows, and data processes today.
 navigationLocation: Navigation Bar > All Courses > Siemens > Best Teamcenter AWC Online Training
 modules:
-  - title: 'Module 1: Introduction to Teamcenter Awc'
+  - title: 'Module 1: AWC Configuration Basics'
+    duration: 5 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Introduction to Active Workspace architecture concepts
+      - Understanding AWC user interface and navigation basics
+      - Product lifecycle management fundamentals overview
+      - Teamcenter environment setup and access configuration
+      - Industry use cases and implementation approaches
+  - title: 'Module 2: Tile Configuration Setup'
+    duration: 5 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - Creating tile templates and collections efficiently
+      - Configuring tile visibility and grouping options
+      - Managing default tiles and external links
+      - Working with command tiles and navigation flows
+      - XML schema configuration for tile definitions
+  - title: 'Module 3: Table Configuration Management'
+    duration: 5 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project implementation'
+      - Configuring table columns and property displays
+      - Creating custom items through BMIDE integration
+      - Managing dynamic compound property configurations
+      - Implementing business rules for table behaviors
+      - Building custom BOM table rendering solutions
+  - title: 'Module 4: XRT Stylesheet Development'
+    duration: 5 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Understanding stylesheet structure and components
+      - Configuring summary and information page layouts
+      - Registering stylesheets through preference settings
+      - Applying role based stylesheet configurations
+      - Exporting and importing stylesheet definitions
+  - title: 'Module 5: Workspace Configuration Design'
+    duration: 5 topics
+    topics:
+      - Creating custom workspaces for business needs
+      - Managing commands and tile assignments
+      - Mapping workspaces with roles and groups
+      - Configuring engineering workspace environments
+      - Implementing user specific workspace settings
+  - title: 'Module 6: AWC Customization Concepts'
+    duration: 5 topics
+    topics:
+      - Understanding Active Workspace customization framework
+      - Configuring client and server side components
+      - Building applications using Siemens web framework
+      - Setting development environments and tools
+      - Deploying applications for testing activities
+  - title: 'Module 7: Command Panel Development'
+    duration: 5 topics
+    topics:
+      - Creating commands and command collections effectively
+      - Configuring command panels and user actions
+      - Implementing localization and visibility conditions
+      - Managing role based command configurations
+      - Customizing workflow action command behaviors
+  - title: 'Module 8: Events And Search Features'
+    duration: 5 topics
+    topics:
+      - Handling selection change event implementations
+      - Creating notifications and dialog interactions
+      - Configuring custom search criteria definitions
+      - Building search tiles for navigation workflows
+      - Opening search results within workspaces
+  - title: 'Module 9: React And Location Setup'
+    duration: 5 topics
+    topics:
+      - Developing React components within Active Workspace
+      - Managing state and rendering mechanisms
+      - Creating locations and sub location structures
+      - Configuring client and server data providers
+      - Building custom dashboards and navigation modules
+  - title: 'Module 10: Deployment And Integration'
+    duration: 5 topics
+    topics:
+      - Implementing debugging and logging techniques
+      - Integrating REST APIs and external libraries
+      - Migrating RAC solutions to Active Workspace
+      - Creating and exposing custom SOA services
+      - Automating enterprise workflow integration processes
 whoShouldEnroll:
   - title: Local Learning
     description: Build practical PLM knowledge through Teamcenter AWC Training in Hyderabad, covering Active Workspace navigation, product data, workflows, search, collaboration, and lifecycle processes. Teamcenter AWC Job Oriented Course helps learners develop workplace skills through structured, application-focused learning.
@@ -181,7 +247,10 @@ thumbnail: ''
 courseImage: ''
 whyMaster:
   title: Why Master Teamcenter AWC Online Training?
-  description: ''
+  description: |-
+    Teamcenter AWC Online Training covers Active Workspace concepts, navigation, configuration, customization, and workflows. Learners gain hands-on knowledge through exercises and business scenarios. Teamcenter AWC Training with Real-Time Projects adds project experience, helping participants understand tasks, solve challenges, and build skills for professional Teamcenter workplace environments.
+
+    Teamcenter AWC Course with Job Assistance helps learners develop practical skills in Active Workspace, including interface features, data management, configurations, and workflows. Interview guidance supports career preparation. Teamcenter AWC Certification Program strengthens knowledge and skills through clear preparation, practical learning, and structured assessment for confident career growth.
   pillars:
     - title: Mentor
       description: Expert Teamcenter AWC Training with guidance support.

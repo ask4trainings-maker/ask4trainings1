@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is Duck Creek Online Training?
+    answer: Duck Creek Online Training is a professional course designed to help learners understand insurance software applications, policy administration, billing, claims management, and workflow processes. The training includes practical assignments, live projects, and expert guidance to prepare students for real-time industry requirements. This Duck Creek Job Oriented Course is suitable for freshers and working professionals aiming to build careers in insurance technology.
+  - question: Who can join the Duck Creek Course for Beginners?
+    answer: The Duck Creek Course for Beginners is suitable for graduates, freshers, software professionals, testers, and business analysts who want to learn insurance platform technologies. No advanced technical background is required because our Duck Creek Online Classes start with fundamentals and gradually move to advanced concepts through practical learning and project-based training sessions.
+  - question: Does the course include real-time projects?
+    answer: Yes, our Duck Creek Course with Real-Time Projects provides practical exposure through live implementations, assignments, and case studies based on insurance business workflows. Learners gain hands-on experience in policy administration, claims, billing, and integrations. The Duck Creek Online Training program helps students improve technical skills and understand real-world project environments effectively.
+  - question: Will I receive certification after course completion?
+    answer: Yes, learners who successfully complete the training will receive support for Duck Creek Professional Certification preparation along with course completion recognition. Our Duck Creek Certification Course focuses on practical knowledge, implementation concepts, and interview preparation to improve career opportunities in insurance technology and enterprise software development.
+  - question: Are placement assistance services available?
+    answer: Yes, our Duck Creek Course with Placement includes resume preparation, mock interviews, career guidance, and job support sessions. The Duck Creek Online Certification Program is designed to improve technical, analytical, and communication skills required for insurance technology roles. We also provide guidance for interview preparation and real-time project discussions.
+  - question: What topics are covered in Duck Creek Online Classes?
+    answer: Our Duck Creek Online Classes cover policy administration, billing systems, claims management, workflows, integrations, configuration concepts, cloud insurance platform basics, and real-time implementation practices. The Duck Creek Fundamentals and Advanced Course also includes assignments, case studies, and practical exercises to improve hands-on experience and technical understanding.
+  - question: Why choose your Duck Creek Training Institute in Hyderabad?
+    answer: Our Duck Creek Training Institute in Hyderabad offers industry-focused learning with experienced trainers, flexible schedules, recorded sessions, and project-based training. Through our Duck Creek Online Training, learners receive practical exposure, certification guidance, and placement assistance. The course is designed to help students become industry-ready professionals in insurance technology and enterprise application development.
 seo:
   metaTitle: Best Duck Creek Online Training | NO.1 Certification
   metaDescription: Advance your career with Duck Creek Online Training . Learn insurance software, real-time projects & placement support from experts.
@@ -138,19 +144,84 @@ objectives:
   - The Duck Creek Policy Administration Training included in our Duck Creek Certification Online program covers policy lifecycle management, billing, claims, and underwriting basics. This intensive Duck Creek Online Bootcamp also offers interview preparation, resume building, and placement guidance for career growth.
 navigationLocation: Navigation Bar > All Courses > New Courses > Best Duck Creek Online Training
 modules:
+  - title: 'Module 1: Introduction to Duck Creek'
+    duration: 5 topics
+    topics:
+      - Insurance platform architecture basics
+      - Duck Creek application overview
+      - Core insurance workflow concepts
+      - Enterprise implementation lifecycle
+      - Beginner setup and navigation
+  - title: 'Module 2: Policy Administration'
+    duration: 5 topics
+    topics:
+      - Policy lifecycle management basics
+      - Customer policy configuration setup
+      - Coverage and premium processing
+      - Underwriting workflow introduction
+      - Policy renewal process handling
+  - title: 'Module 3: Billing Management'
+    duration: 5 topics
+    topics:
+      - Billing system process overview
+      - Invoice generation workflow setup
+      - Payment transaction configuration
+      - Billing account management basics
+      - Real-time billing scenario practice
+  - title: 'Module 4: Claims Management'
+    duration: 5 topics
+    topics:
+      - Claims processing workflow basics
+      - Insurance claims lifecycle overview
+      - Claim validation and approvals
+      - Customer claims data handling
+      - Practical claims project sessions
+  - title: 'Module 5: Duck Creek Configuration'
+    duration: 5 topics
+    topics:
+      - Application configuration concepts
+      - Product setup and customization
+      - User role configuration basics
+      - Business rules implementation
+      - Workflow configuration practice
+  - title: 'Module 6: Integrations and APIs'
+    duration: 5 topics
+    topics:
+      - API integration fundamentals
+      - External system connectivity setup
+      - Data exchange process handling
+      - Real-time integration scenarios
+      - Web services implementation basics
+  - title: 'Module 7: Testing and Deployment'
+    duration: 5 topics
+    topics:
+      - Functional testing process basics
+      - Application defect validation steps
+      - Deployment lifecycle understanding
+      - User acceptance testing practice
+      - Real-time project deployment tasks
+  - title: 'Module 8: Data Management'
+    duration: 0 topics
+    topics: []
   - title: 'Module 8: Security and Administration'
-    duration: 15 Topics
+    duration: 5 topics
     topics:
       - User access management concepts
       - Security role implementation setup
       - Application monitoring techniques
       - System administration practices
       - Troubleshooting and issue handling
+  - title: 'Module 9: Cloud Platform Concepts'
+    duration: 5 topics
+    topics:
       - Cloud insurance platform basics
       - SaaS implementation overview
       - Cloud deployment lifecycle setup
       - Enterprise scalability concepts
       - Real-time cloud project exposure
+  - title: 'Module 10: Certification and Placement'
+    duration: 5 topics
+    topics:
       - Professional certification guidance
       - Mock interview preparation sessions
       - Resume building and optimization

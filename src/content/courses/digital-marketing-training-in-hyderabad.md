@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: How long is the digital marketing course?
+    answer: The duration depends on the selected learning mode and training schedule. Our Digital Marketing Training in Hyderabad includes comprehensive classroom sessions, practical assignments, and live projects. The Digital Marketing Course is structured to help learners master digital marketing concepts step by step while developing industry-ready skills for successful career growth.
+  - question: Are trainers experienced industry experts?
+    answer: Yes. Our trainers are experienced professionals with extensive knowledge of SEO, Google Ads, Meta Ads, analytics, and digital marketing strategies. Digital Marketing Training with Real-Time Projects ensures learners receive practical exposure, while Digital Marketing Certification validates their expertise through hands-on implementation and real business scenarios.
+  - question: Is internship support available after training?
+    answer: Yes. Eligible learners can gain practical exposure through internships designed to enhance technical and professional skills. Our Digital Marketing Course with Internship helps students apply classroom knowledge in real projects, while the Digital Marketing Job Oriented Course prepares them for successful careers with practical industry experience.
+  - question: What tools will I learn during training?
+    answer: Learners work with Google Analytics, Google Ads, Search Console, Meta Ads Manager, Canva, SEMrush, and other leading platforms. Advanced Digital Marketing Online Training provides practical implementation experience, while Digital Marketing Training in Hyderabad focuses on developing industry-relevant skills using the latest digital marketing technologies.
+  - question: Can working professionals join this course?
+    answer: bsolutely. Flexible weekday and weekend schedules make learning convenient for working professionals. Our Digital Marketing Course allows learners to balance work and study, while Digital Marketing Training with Placement helps them upgrade their skills, prepare for interviews, and explore better career opportunities.
+  - question: Does the course include practical assignments?
+    answer: Yes. Every learner completes practical assignments, live case studies, and project-based activities throughout the program. Digital Marketing Training with Real-Time Projects strengthens implementation skills, while the Digital Marketing Course ensures participants confidently execute real digital marketing campaigns using industry-standard tools.
+  - question: What career opportunities are available later?
+    answer: fter completing the training, learners can pursue roles such as SEO Executive, PPC Specialist, Digital Marketing Executive, Social Media Manager, Content Marketer, or Digital Marketing Analyst. Digital Marketing Training in Hyderabad develops practical expertise, and Digital Marketing Certification enhances credibility, helping learners secure rewarding opportunities across various industries.
 seo:
   metaTitle: 'Best Digital Marketing Training in Hyderabad | #1 Course'
   metaDescription: Join the best Digital Marketing Training in Hyderabad with live projects, expert trainers, certification, and placement support. Enroll today!
@@ -136,26 +142,86 @@ objectives:
   - Our Digital Marketing Course with Internship combines classroom learning with workplace experience, allowing students to apply concepts in real business environments. The Advanced Digital Marketing Online Training program covers AI-powered marketing, advanced analytics, automation tools, and strategic campaign execution, helping learners become job-ready professionals with industry-relevant practical skills.
 navigationLocation: Navigation Bar > All Courses > New Courses > Digital Marketing Training in Hyderabad
 modules:
-  - title: 'Module 1: Introduction to Digital Marketing Training'
+  - title: 'Module 1: Digital Marketing Foundations & Strategy'
+    duration: 5 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Digital Marketing Fundamentals And Concepts
+      - Understanding Customer Journey And Funnels
+      - Website Basics And Domain Management Setup
+      - Introduction To Marketing Automation Tools
+      - Industry Trends And Career Opportunities Today
+  - title: 'Module 2: Search Engine Optimization Mastery'
+    duration: 5 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - Keyword Research And Search Intent Analysis
+      - On-Page SEO Optimization Best Practices Today
+      - Technical SEO And Website Performance Basics
+      - Link Building And Authority Development Methods
+      - SEO Audit And Reporting Techniques Practice
+  - title: 'Module 3: Google Ads Campaign Management Skills'
+    duration: 5 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project Implementation'
+      - Google Ads Account Setup And Structure
+      - Search Campaign Creation And Optimization Tips
+      - Display Advertising And Audience Targeting Setup
+      - Conversion Tracking And Campaign Analytics Tools
+      - Budget Planning And Bid Strategy Management
+  - title: 'Module 4: Meta Ads And Social Media Marketing'
+    duration: 5 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Facebook Business Manager Account Setup Guide
+      - Instagram Marketing Strategy And Content Plans
+      - Meta Ads Campaign Creation And Optimization
+      - Audience Segmentation And Retargeting Methods
+      - Social Media Performance Analytics Reporting
+  - title: 'Module 5: Content Marketing And Copywriting'
+    duration: 5 topics
+    topics:
+      - Content Planning And Editorial Calendar Design
+      - Blog Writing And SEO Content Optimization
+      - Email Marketing Campaign Creation Techniques
+      - Copywriting For Landing Pages And Advertisements
+      - Storytelling Strategies For Brand Engagement Growth
+  - title: 'Module 6: Analytics And Performance Tracking'
+    duration: 5 topics
+    topics:
+      - Google Analytics Dashboard And Navigation Skills
+      - Website Traffic Analysis And User Behavior
+      - Goal Tracking And Conversion Measurement Setup
+      - Campaign Performance Monitoring And Reporting
+      - Data Interpretation For Better Marketing Decisions
+  - title: 'Module 7: Lead Generation And Automation Tools'
+    duration: 5 topics
+    topics:
+      - Lead Generation Strategies Across Digital Channels
+      - Marketing Automation Platform Configuration Basics
+      - CRM Integration And Customer Data Management
+      - Email Automation Workflow Creation Techniques
+      - Lead Nurturing And Conversion Optimization Skills
+  - title: 'Module 8: E-Commerce Marketing Strategies Today'
+    duration: 5 topics
+    topics:
+      - E-Commerce Store Marketing Best Practices Today
+      - Product Listing And Marketplace Optimization Tips
+      - Shopping Campaign Management And Promotions Setup
+      - Customer Retention And Loyalty Marketing Plans
+      - Revenue Growth Through Digital Marketing Tactics
+  - title: 'Module 9: Real-Time Projects And Case Studies'
+    duration: 5 topics
+    topics:
+      - Live Campaign Planning And Implementation Tasks
+      - Business Case Study Analysis And Solutions
+      - Portfolio Development Through Practical Projects
+      - Team Collaboration Using Marketing Platforms Daily
+      - Project Presentation And Performance Evaluation
+  - title: 'Module 10: Career Preparation And Certification'
+    duration: 5 topics
+    topics:
+      - Resume Building For Marketing Professionals Today
+      - Mock Interviews And Technical Assessment Practice
+      - Freelancing And Client Acquisition Strategies Guide
+      - Certification Exam Preparation And Guidance Sessions
+      - Placement Support And Career Development Programs
 whoShouldEnroll:
   - title: Educational Background
     description: Individuals from any academic discipline can enroll in this program to develop industry-ready digital skills. Our Digital Marketing Training in Hyderabad provides step-by-step practical learning, making it suitable for beginners and experienced learners alike. The Digital Marketing Course equips participants with the knowledge required to build successful careers in the fast-growing digital marketing industry.
@@ -183,7 +249,10 @@ thumbnail: ''
 courseImage: ''
 whyMaster:
   title: Why Master Digital Marketing Training in Hyderabad?
-  description: ''
+  description: |-
+    Our Digital Marketing Training in Hyderabad is designed to help beginners and professionals master modern marketing strategies through practical learning. The Advanced Digital Marketing Course covers SEO, PPC, social media, content creation, email marketing, analytics, and AI-powered tools with live projects. Learners gain industry-ready skills, expert guidance, and confidence to succeed in competitive digital careers.
+
+    Our Digital Marketing Online Bootcamp offers flexible learning with interactive sessions, real-time assignments, and hands-on practice using industry tools. The Digital Marketing and SEO Training program emphasizes practical implementation, campaign optimization, website visibility, keyword research, and performance tracking. Students receive career guidance, certification support, and placement assistance for long-term professional growth.
   pillars:
     - title: Mentor
       description: Expert Digital Marketing Training with guidance support.

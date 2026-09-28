@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is covered in DevOps training?
+    answer: Our DevOps Training in Hyderabad covers CI/CD pipelines, Docker, Kubernetes, Jenkins, Git, Terraform, AWS, Linux, and automation tools used in modern IT environments. The DevOps Online Training with Certification program includes practical assignments, real-time projects, cloud deployment concepts, and hands-on implementation to prepare learners for industry-level DevOps roles.
+  - question: Who can join the DevOps course?
+    answer: Students, software developers, system administrators, cloud professionals, and job seekers can enroll in this program. The DevOps Course for Beginners is designed for freshers, while the Advanced DevOps Online Course is suitable for experienced professionals looking to upgrade automation and cloud deployment skills with practical exposure.
+  - question: Do you provide certification support?
+    answer: Yes, we provide complete support for certification preparation through our DevOps Engineer Certification Course and DevOps Certification Training in Hyderabad. Learners receive guidance on practical tools, cloud platforms, CI/CD workflows, assignments, and mock interview preparation to improve technical confidence and certification readiness.
+  - question: Are live projects included in the training?
+    answer: Yes, the course includes practical assignments and real-time implementation tasks through DevOps Training with Real-Time Projects. Our DevOps Online Classes with Live Projects help learners gain hands-on experience in deployment automation, cloud integration, monitoring, and infrastructure management using industry-standard DevOps tools.
+  - question: What job opportunities are available after DevOps training?
+    answer: fter completing DevOps Training in Hyderabad, learners can apply for roles such as DevOps Engineer, Cloud Engineer, Automation Engineer, Release Manager, and Site Reliability Engineer. The DevOps Training with Placement Assistance program also provides interview preparation and career guidance for better opportunities.
+  - question: Is the training available online?
+    answer: Yes, we offer flexible online learning through DevOps Online Training India and DevOps Course Online programs. Learners can attend live interactive classes, access recorded sessions, complete hands-on assignments, and practice real-time projects from anywhere with expert trainer support.
+  - question: Which tools are taught in the DevOps course?
+    answer: The course includes practical learning on Docker, Kubernetes, Jenkins, Git, Terraform, Linux, Ansible, AWS, and monitoring tools. Through Docker and Kubernetes Training and Jenkins DevOps Online Course, learners gain industry-focused skills required for automation, CI/CD implementation, and cloud infrastructure management.
 seo:
   metaTitle: Best DevOps Training in Hyderabad | NO.1 Placement
   metaDescription: DevOps Training in Hyderabad with real-time projects, expert mentors, certification support and placement assistance for IT careers. Enroll today !!!
@@ -136,26 +142,136 @@ objectives:
   - The DevOps Course for Beginners introduces essential concepts such as Linux, Git, scripting, automation, and cloud computing in a simple manner. Through DevOps CI/CD Pipeline Training, learners understand continuous integration and deployment processes using DevOps tools and workflows.
 navigationLocation: Navigation Bar > All Courses > Cloud & DevOps > Best DevOps Training in Hyderabad
 modules:
-  - title: 'Module 1: Introduction to Devops Training'
+  - title: 'Module 1: Linux & Operating Systems Fundamentals'
+    duration: 10 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Understanding OS architecture and Linux kernel
+      - Linux file system structure and directory management
+      - User, group, and permission management
+      - Package management using APT and YUM
+      - Networking basics and Secure Shell (SSH)
+      - Understanding OS architecture and Linux kernel
+      - Linux file system structure and directory management
+      - User, group, and permission management
+      - Package management using APT and YUM
+      - Networking basics and Secure Shell (SSH)
+  - title: 'Module 2: Shell Scripting & Automation'
+    duration: 10 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - Shell scripting fundamentals, variables, and conditionals
+      - Loops, functions, and script debugging techniques
+      - File handling and text processing commands
+      - Cron jobs and task scheduling automation
+      - Real-time automation projects and log management
+      - Shell scripting fundamentals, variables, and conditionals
+      - Loops, functions, and script debugging techniques
+      - File handling and text processing commands
+      - Cron jobs and task scheduling automation
+      - Real-time automation projects and log management
+  - title: 'Module 3: Git & Version Control'
+    duration: 10 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project Implementation'
+      - Version control concepts and Git fundamentals
+      - Repository setup, branching, and merging strategies
+      - Rebase, conflict resolution, and history management
+      - Undoing changes with reset, restore, and revert
+      - SSH authentication and advanced Git workflows
+      - Version control concepts and Git fundamentals
+      - Repository setup, branching, and merging strategies
+      - Rebase, conflict resolution, and history management
+      - Undoing changes with reset, restore, and revert
+      - SSH authentication and advanced Git workflows
+  - title: 'Module 4: Build Tools & Artifact Management'
+    duration: 10 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Build automation concepts and dependency management
+      - Maven, Gradle, npm, and pip usage
+      - Artifact creation (JAR, WAR) and versioning
+      - Managing artifacts with repositories like Nexus
+      - Integrating build tools with CI pipelines
+      - Build automation concepts and dependency management
+      - Maven, Gradle, npm, and pip usage
+      - Artifact creation (JAR, WAR) and versioning
+      - Managing artifacts with repositories like Nexus
+      - Integrating build tools with CI pipelines
+  - title: 'Module 5: Docker and Containerization'
+    duration: 10 topics
+    topics:
+      - Containerization concepts and Docker architecture
+      - Writing Dockerfiles and building images
+      - Managing containers, volumes, and networking
+      - Docker Compose for multi-container applications
+      - Private registries and image optimization technique
+      - Containerization concepts and Docker architecture
+      - Writing Dockerfiles and building images
+      - Managing containers, volumes, and networking
+      - Docker Compose for multi-container applications
+      - Private registries and image optimization technique
+  - title: 'Module 6: Kubernetes Orchestration'
+    duration: 10 topics
+    topics:
+      - Kubernetes architecture and core components
+      - Pods, Deployments, and ReplicaSets management
+      - Services, Ingress, ConfigMaps, and Secrets
+      - Scheduling, scaling, and rolling updates
+      - Deploying real-world applications on Kubernetes
+      - Kubernetes architecture and core components
+      - Pods, Deployments, and ReplicaSets management
+      - Services, Ingress, ConfigMaps, and Secrets
+      - Scheduling, scaling, and rolling updates
+      - Deploying real-world applications on Kubernetes
+  - title: 'Module 7: Jenkins and CI/CD Pipelines'
+    duration: 10 topics
+    topics:
+      - Continuous Integration and Deployment concepts
+      - Jenkins installation and architecture
+      - Pipeline as Code using Jenkinsfiles
+      - Integrating Git, Docker, and build tools
+      - Securing, monitoring, and optimizing CI/CD pipelines
+      - Continuous Integration and Deployment concepts
+      - Jenkins installation and architecture
+      - Pipeline as Code using Jenkinsfiles
+      - Integrating Git, Docker, and build tools
+      - Securing, monitoring, and optimizing CI/CD pipelines
+  - title: 'Module 8: Configuration Management with Ansible'
+    duration: 12 topics
+    topics:
+      - aAnsible
+      - rchitecture and inventory management
+      - Writing playbooks, roles, and reusable automation
+      - Variables, templates, and Ansible Vault
+      - Cloud provisioning and multi-server orchestration
+      - AWX/Tower and enterprise automation practices
+      - aAnsible
+      - rchitecture and inventory management
+      - Writing playbooks, roles, and reusable automation
+      - Variables, templates, and Ansible Vault
+      - Cloud provisioning and multi-server orchestration
+      - AWX/Tower and enterprise automation practices
+  - title: 'Module 9: Infrastructure as Code with Terraform'
+    duration: 8 topics
+    topics:
+      - Terraform fundamentals and HCL configuration
+      - Providers, resources, and state management
+      - Remote backends and workspace environments
+      - Modular infrastructure design and best practicesMulti-cloud and real-time project deployments
+      - Terraform fundamentals and HCL configuration
+      - Providers, resources, and state management
+      - Remote backends and workspace environments
+      - Modular infrastructure design and best practicesMulti-cloud and real-time project deployments
+  - title: 'Module 10: Cloud Monitoring & Career Accelerator'
+    duration: 10 topics
+    topics:
+      - AWS core services including IAM, EC2, S3, and VPC
+      - Monitoring with Prometheus and visualization using Grafana
+      - Implementing CI/CD pipelines on cloud platforms
+      - Resume building and interview preparation
+      - Real-time projects and internship guidance
+      - AWS core services including IAM, EC2, S3, and VPC
+      - Monitoring with Prometheus and visualization using Grafana
+      - Implementing CI/CD pipelines on cloud platforms
+      - Resume building and interview preparation
+      - Real-time projects and internship guidance
 whoShouldEnroll:
   - title: IT Graduates
     description: Students with technical education can join DevOps Training in Hyderabad to build practical automation and deployment skills. The Jenkins DevOps Online Course helps graduates understand CI/CD pipelines, build automation, and software delivery processes required in modern IT environments and DevOps careers.

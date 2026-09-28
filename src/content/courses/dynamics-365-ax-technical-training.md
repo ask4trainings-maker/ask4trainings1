@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is Dynamics 365 AX Technical Training?
+    answer: Dynamics 365 AX Technical Training is a professional ERP development course focused on X++, SSRS reports, workflows, integrations, forms, and customization. The program helps learners understand real-time ERP implementation concepts through practical sessions and assignments. With MS D365 AX Technical Online Training, students gain industry-focused skills required for technical consultant and developer roles in enterprise organizations.
+  - question: Who can join Dynamics 365 AX Technical Online Training?
+    answer: Freshers, software developers, ERP consultants, support engineers, and IT professionals can enroll in Dynamics 365 AX Technical Online Training. The course is suitable for anyone interested in ERP development and customization. Through Dynamics 365 AX Technical Course for Beginners, learners can understand technical concepts step-by-step with practical examples and real-time project exposure.
+  - question: What skills are covered in Dynamics 365 AX Technical Training?
+    answer: The Dynamics 365 AX Technical Training program covers X++ programming, SSRS reporting, AIF integrations, workflows, forms, security, debugging, and customization techniques. Students also learn ERP architecture and implementation concepts through Dynamics 365 AX Technical X++ Programming Training. These practical skills help candidates work confidently on real-time ERP development projects.
+  - question: Does the course include real-time projects?
+    answer: Yes, the course includes hands-on assignments and Dynamics 365 AX Technical Course with Real Time Projects to provide practical industry exposure. Learners work on implementation scenarios, report development, integrations, and ERP customization tasks. Through MS D365 AX Technical Real Time Project Training, students gain experience that improves technical confidence and job readiness.
+  - question: Is placement assistance available after training?
+    answer: Yes, learners receive career guidance, resume preparation, mock interviews, and placement support through Dynamics 365 AX Technical Training with Placement Assistance. The course also includes internship opportunities and technical mentoring. With support from MS D365 AX Technical Developer Training, candidates improve their chances of securing ERP technical roles in top companies.
+  - question: What are the benefits of Dynamics 365 AX Technical Certification?
+    answer: The MS D365 AX Technical Certification Course helps learners validate their ERP technical expertise and improve career opportunities. Certification demonstrates practical knowledge in ERP customization, development tools, integrations, and reporting. Through Dynamics 365 AX Technical Professional Certificate preparation, students gain industry-recognized skills valued by employers worldwide.
+  - question: Are online classes flexible for working professionals?
+    answer: Yes, Dynamics 365 AX Technical Online Classes are designed with flexible schedules suitable for students and working professionals. Recorded sessions, live instructor-led classes, and continuous mentor support help learners study conveniently. With Dynamics 365 AX Technical Online Course access, candidates can practice technical concepts anytime and improve their ERP development knowledge effectively.
 seo:
   metaTitle: Best Dynamics 365 AX Technical Training | NO.1 Certification
   metaDescription: Master Dynamics 365 AX Technical Training with real-time projects, X++, SSRS, integrations, and expert-led online sessions for career growth.
@@ -136,26 +142,86 @@ objectives:
   - The Dynamics 365 AX Technical Training program also supports learners in earning a Dynamics 365 AX Technical Professional Certificate with practical expertise. Along with technical development, the course introduces Dynamics 365 AX Technical Functional Training concepts to improve complete ERP understanding.
 navigationLocation: Navigation Bar > All Courses > Microsoft Dynamics 365 > Best Dynamics 365 AX Technical Training
 modules:
-  - title: 'Module 1: Introduction to Dynamics 365 Ax Technical'
+  - title: 'Module 1: Introduction to ERP'
+    duration: 5 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
+      - Overview of ERP architecture and business process flow
+      - Basics of Microsoft Dynamics AX technical environment
+      - Understanding application layers and model structure
+      - Navigation and workspace customization techniques
+      - ERP implementation lifecycle and technical overview
+  - title: 'Module 2: X++ Programming'
+    duration: 5 topics
     topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
+      - Introduction to X++ syntax and programming concepts
+      - Creating classes, tables, forms, and menu items
+      - Working with loops, methods, and conditional statements
+      - Exception handling and debugging in X++ applications
+      - Best practices for ERP technical code development
+  - title: 'Module 3: Tables and Forms'
+    duration: 5 topics
     topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project Implementation'
+      - Creating and managing tables with field properties
+      - Designing forms with controls and data sources
+      - Form methods, validations, and lookup customization
+      - Understanding relations and index configurations
+      - Working with extended data types and enums
+  - title: 'Module 4: SSRS Reporting'
+    duration: 5 topics
     topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Introduction to SSRS report architecture and setup
+      - Creating datasets and report data provider classes
+      - Designing precision reports using Visual Studio tools
+      - Deploying and managing ERP reporting solutions
+      - Report parameter configuration and data filtering
+  - title: 'Module 5: Workflow Development'
+    duration: 5 topics
+    topics:
+      - Workflow concepts and approval process configuration
+      - Creating workflow categories and approval elements
+      - Developing workflow actions and event handlers
+      - Workflow debugging and notification configuration
+      - Managing business process automation scenarios
+  - title: 'Module 6: AIF Integrations'
+    duration: 5 topics
+    topics:
+      - Understanding Application Integration Framework basics
+      - Creating services and document-based integrations
+      - Working with XML and external system connectivity
+      - Consuming and exposing custom web services
+      - Error handling and integration troubleshooting methods
+  - title: 'Module 7: Security and Administration'
+    duration: 5 topics
+    topics:
+      - User roles and security policy configuration basics
+      - Managing permissions and access control settings
+      - System administration and environment maintenance tasks
+      - Monitoring batch jobs and server performance issues
+      - Security best practices for ERP technical systems
+  - title: 'Module 8: Data Management'
+    duration: 5 topics
+    topics:
+      - Importing and exporting data using data entities
+      - Data migration strategies and validation techniques
+      - Working with Excel add-ins and integration tools
+      - Managing master data and transactional information
+      - Troubleshooting data synchronization and migration issues
+  - title: 'Module 9: Real-Time Projects'
+    duration: 5 topics
+    topics:
+      - Hands-on ERP customization with practical assignments
+      - Real-time implementation scenarios and business cases
+      - Technical documentation and project deployment methods
+      - Working on integrations and workflow automation tasks
+      - Industry-based exercises for practical experience
+  - title: 'Module 10: Certification and Placement'
+    duration: 5 topics
+    topics:
+      - Preparation for Dynamics 365 AX technical certification
+      - Resume building and interview preparation guidance
+      - Mock interviews with real-time technical questions
+      - Placement assistance and internship support sessions
+      - Career guidance for ERP technical consultant roles
 whoShouldEnroll:
   - title: Technical Knowledge
     description: Candidates joining Dynamics 365 AX Technical Training should have basic understanding of programming concepts, databases, or ERP applications. Knowledge of object-oriented programming and software development concepts helps learners understand X++, integrations, and customization topics more effectively during the training sessions.

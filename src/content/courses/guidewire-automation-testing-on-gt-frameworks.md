@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is Guidewire Automation Testing on GT Frameworks?
+    answer: Guidewire Automation Testing on GT Frameworks is a method of automating testing processes for insurance applications like PolicyCenter, ClaimCenter, and BillingCenter. It uses structured frameworks to create reusable scripts, improve efficiency, and ensure high-quality software delivery. This approach reduces manual effort, increases accuracy, and helps teams execute tests faster in real-time projects.
+  - question: Who can learn this course?
+    answer: This course is suitable for beginners, manual testers, and IT professionals who want to move into Guidewire QA automation. Anyone with basic programming or testing knowledge can learn it easily. Freshers looking for a career in automation testing and professionals aiming to upgrade their skills in Guidewire technologies will find this course highly beneficial for career growth.
+  - question: What skills will I gain from this training?
+    answer: You will gain hands-on experience in Guidewire automation testing, Guidewire GT framework, and Selenium integration. The course helps you build automation scripts, understand testing frameworks, and work on real-time projects. You will also learn test case design, debugging, and execution, making you ready to handle real-world testing challenges in the insurance domain.
+  - question: Is coding required for Guidewire Automation Testing?
+    answer: Basic coding knowledge is helpful but not mandatory to start. The course teaches programming concepts required for Guidewire Selenium testing and automation frameworks step by step. With guided practice and real-time examples, even beginners can learn scripting and gradually build confidence in writing and executing automation test cases.
+  - question: What job opportunities are available after this course?
+    answer: fter completing this course, you can apply for roles like automation tester, QA engineer, or Guidewire consultant. With expertise in Guidewire automation testing jobs, you can work in top insurance and IT companies. The demand for professionals skilled in automation frameworks and Guidewire tools is increasing, offering strong career growth and salary opportunities.
+  - question: Will I get certification after completion?
+    answer: Yes, you will receive a certification upon completing the Guidewire Automation Testing on GT Frameworks course. This certificate validates your skills in automation testing, frameworks, and real-time project handling. It enhances your resume and helps you stand out during job applications and interviews in competitive IT and software testing markets.
+  - question: Does the course include real-time projects?
+    answer: Yes, the course includes Guidewire automation testing real-time project training where you will work on practical scenarios in PolicyCenter, ClaimCenter, and BillingCenter automation testing. These projects help you understand how Guidewire QA automation works in real business environments using the Guidewire GT framework. It enhances your problem-solving abilities, strengthens your hands-on experience, and prepares you to confidently handle real-world Guidewire automation testing jobs and challenges.
 seo:
   metaTitle: 'Best Guidewire Automation Testing on GT Frameworks #1Course'
   metaDescription: Learn Guidewire Automation Testing on GT Frameworks with real-time projects and placement support to build a strong QA career.
@@ -138,26 +144,36 @@ objectives:
   - Finally, the course prepares candidates for career growth by focusing on Guidewire automation interview questions, certification guidance, and job-oriented skills. It ensures learners are ready for high-demand roles in the industry, helping them secure Guidewire automation testing jobs with confidence and strong technical expertise.
 navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Guidewire Automation Testing On Gt Frameworks Training
 modules:
-  - title: 'Module 1: Introduction to Guidewire Automation Testing On Gt Frameworks'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+  - title: 'Module 1: Introduction to Guidewire'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 2: Testing Fundamentals'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 3: Java for Automation'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 4: Selenium Basics'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 5: Guidewire GT Framework'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 6: Automation Framework Design'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 7: Guidewire Automation Testing'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 8: CI/CD Integration'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 9: Real-Time Project'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 10: Interview & Career Preparation'
+    duration: 0 topics
+    topics: []
 whoShouldEnroll:
   - title: Basic Programming Knowledge
     description: A fundamental understanding of programming concepts is recommended for this course. Familiarity with languages like Java helps in learning Guidewire automation testing and Guidewire Selenium testing. Basic knowledge of object-oriented programming, variables and functions make easier to understand automation scripts, framework implementation.

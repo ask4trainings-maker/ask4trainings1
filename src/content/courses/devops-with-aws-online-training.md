@@ -34,14 +34,20 @@ batchInfo:
   mode: Online Live Interactive
   startDate: ''
 faqs:
-  - question: How long will I have access to the sandbox labs?
-    answer: You will have 24/7 access to our cloud sandbox labs for the entire duration of the course and an additional 3 months post-completion.
-  - question: Are there any prerequisites for this course?
-    answer: Basic programming knowledge and an understanding of database concepts are recommended, but we cover the fundamentals early in the course to bring everyone up to speed.
-  - question: What are the batch timings and format?
-    answer: We offer flexible batch timings including weekends and evenings to accommodate working professionals. All sessions are conducted via online live interactive platforms.
-  - question: Do you provide certification exam preparation?
-    answer: Yes, our curriculum is aligned with the official certification objectives. We provide practice tests, study guides, and dedicated doubt-clearing sessions.
+  - question: What is DevOps with AWS Online Training?
+    answer: DevOps with AWS Online Training is a professional learning program designed to teach cloud computing, automation, CI/CD pipelines, Docker, Kubernetes, Jenkins, and AWS deployment practices. This AWS DevOps Online Course helps learners gain practical industry knowledge through hands-on assignments, live projects, and expert guidance for real-world cloud and DevOps environments.
+  - question: Who can join DevOps with AWS Online Training?
+    answer: Students, freshers, software developers, system administrators, and IT professionals can enroll in DevOps with AWS Online Training to develop cloud and automation expertise. Our AWS DevOps Course for Beginners is designed for learners who want to understand AWS services, CI/CD processes, deployment strategies, and modern DevOps practices through practical learning.
+  - question: Does the training include live projects and practical sessions?
+    answer: Yes, the program includes assignments, implementation exercises, and AWS DevOps Training with Real-Time Projects to provide practical industry exposure. Through AWS DevOps Online Classes with Live Projects, learners gain hands-on experience in cloud deployment, infrastructure automation, monitoring tools, and CI/CD pipeline management.
+  - question: Is certification preparation included in the course?
+    answer: Yes, our AWS DevOps Certification Training provides structured learning to strengthen cloud, deployment, and automation knowledge. The AWS DevOps Online Certification Program supports learners with practical concepts, AWS tools, DevOps methodologies, and implementation-focused learning to improve professional certification preparation.
+  - question: Do you provide placement assistance and job support?
+    answer: Yes, we offer AWS DevOps Training with Placement Support for learners looking to build successful cloud careers. Through the AWS DevOps Training with Job Support program, participants receive guidance on resume preparation, interview skills, project understanding, and job-oriented technical learning for industry readiness.
+  - question: What technologies are covered in the AWS DevOps course?
+    answer: The course covers AWS cloud services, Docker, Kubernetes, Jenkins, automation workflows, monitoring tools, deployment strategies, and CI/CD practices. Through AWS DevOps CI/CD Pipeline Training and AWS Cloud DevOps Training Online, learners gain practical knowledge of cloud integration, infrastructure management, and DevOps implementation.
+  - question: Why should I choose this AWS DevOps training program?
+    answer: Choose DevOps with AWS Online Training to gain practical cloud expertise, hands-on project exposure, and industry-relevant learning experiences. Our AWS DevOps Master Program Online combines technical training, expert mentorship, real-time projects, and career-focused guidance to help learners build strong DevOps and AWS skills.
 seo:
   metaTitle: Best DevOps with AWS Online Training | NO.1 Certification
   metaDescription: DevOps with AWS Online Training – Learn CI/CD, Docker, Kubernetes, AWS Cloud, automation, and deployment with real-time projects .
@@ -137,26 +143,41 @@ objectives:
   - Our AWS DevOps Online Certification Program aims to help learners gain recognized cloud and DevOps knowledge for professional growth. Combined with AWS DevOps Course for Beginners, the training builds confidence in automation, AWS tools, and deployment practices.
 navigationLocation: Navigation Bar > All Courses > Cloud & DevOps > Best DevOps with AWS Online Training
 modules:
-  - title: 'Module 1: Introduction to Devops With Aws'
+  - title: 'Module 1: AWS Cloud Fundamentals'
+    duration: 5 topics
     topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - title: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - title: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - title: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+      - Introduction to AWS Cloud Computing Concepts
+      - AWS Global Infrastructure and Regions
+      - AWS IAM Users, Roles, and Policies
+      - AWS EC2 Instance Setup and Management
+      - AWS Storage Services and Basics
+  - title: 'Module 2: Linux and Networking Basics'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 3: Version Control with Git'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 4: CI/CD with Jenkins'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 5: Docker Containerization'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 6: Kubernetes Orchestration'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 7: Infrastructure Automation'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 8: Monitoring and Logging'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 9: DevOps Security Practices'
+    duration: 0 topics
+    topics: []
+  - title: 'Module 10: Real-Time Projects and Deployment'
+    duration: 0 topics
+    topics: []
 whoShouldEnroll:
   - title: Students
     description: Students interested in cloud computing, automation, and software delivery can join DevOps with AWS Online Training to build strong technical foundations. This AWS DevOps Master Program Online helps learners understand AWS services, CI/CD pipelines, containers, and deployment practices needed for modern technology careers and industry growth.
@@ -180,7 +201,10 @@ thumbnail: ''
 courseImage: ''
 whyMaster:
   title: Why Master DevOps with AWS Online Training?
-  description: ''
+  description: |-
+    Our DevOps with AWS Online Training is designed to provide practical knowledge of cloud automation, CI/CD, Docker, Kubernetes, Jenkins, and AWS deployment practices. Through expert-led sessions and hands-on learning, learners gain industry-relevant skills. The Job Oriented AWS DevOps Online Training program focuses on real-time concepts aligned with current market requirements and career growth.
+
+    Boost your professional profile with AWS DevOps Certification Training that covers essential DevOps tools, AWS services, automation workflows, and deployment strategies. Our AWS DevOps Training with Real-Time Projects helps learners work on practical use cases, strengthen technical understanding, and gain valuable project exposure for cloud and DevOps job opportunities.
   pillars:
     - title: Mentor
       description: Expert DevOps with AWS Training with guidance support.
