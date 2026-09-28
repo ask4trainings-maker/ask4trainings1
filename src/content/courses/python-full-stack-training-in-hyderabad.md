@@ -118,8 +118,11 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Development > Python Full Stack Training in Hyderabad
 modules:
   - title: 'Module 1: Python Programming Fundamentals'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 2: Front-End Development Basics'
     duration: 1 topics
     topics:
@@ -129,8 +132,11 @@ modules:
     topics:
       - • Bootstrap framework concepts• DOM manipulation techniques• JavaScript ES6 features• API calls using JavaScript• Interactive UI development
   - title: 'Module 4: Database Management Systems'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 5: Django Framework Development'
     duration: 1 topics
     topics:
@@ -140,8 +146,11 @@ modules:
     topics:
       - • REST architecture principles• API creation using Python• JSON request and response• API testing and integration• Authentication in REST APIs
   - title: 'Module 7: Full Stack Project Development'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 8: Version Control and Deployment'
     duration: 1 topics
     topics:
@@ -151,8 +160,11 @@ modules:
     topics:
       - • Resume building strategies• Technical interview preparation• Coding assessment practice• Communication skill enhancement• Mock interview sessions
   - title: 'Module 10: Real-Time Project Training'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
 whoShouldEnroll:
   - title: Graduates
     description: Fresh graduates looking to begin a software career can join Python Full Stack Training in Hyderabad to gain practical programming knowledge and development expertise. Through Python Full Stack Online Training, learners strengthen coding abilities, technical understanding, and real-world application development skills.

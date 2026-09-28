@@ -120,35 +120,65 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Oracle > Best Oracle Fusion HCM Online Training
 modules:
   - title: 'Module 1: Introduction to Oracle Fusion HCM'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 2: Core HR Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 3: Payroll Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 4: Talent Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 5: Absence Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 6: Security & User Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 7: Reporting & Analytics'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 8: Integration & Data Migration'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 9: Fast Formula & Configuration'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 10: Projects and Certification'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
 whoShouldEnroll:
   - title: Basic Knowledge
     description: Candidates enrolling in Oracle Fusion HCM Online Training should have a basic understanding of HR processes or business operations. This helps in grasping concepts covered in the Oracle Fusion HCM Master Program and builds a strong base to learn navigation, and workflows effectively.

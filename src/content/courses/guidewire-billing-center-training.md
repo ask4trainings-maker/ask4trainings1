@@ -96,8 +96,11 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Guidewire Suite > Top Guidewire billing center training in Hyderabad 2026
 modules:
   - title: 'Module 1: Guidewire Billing Center Basics'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 2: Billing Center Configuration'
     duration: 1 topics
     topics:
@@ -107,8 +110,11 @@ modules:
     topics:
       - • End-to-end billing workflows• Invoice generation process flow• Payment processing lifecycle• Refund and adjustments flow• Write-offs and reversals
   - title: 'Module 4: Billing Center Integration'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 5: Guidewire GOSU Scripting'
     duration: 1 topics
     topics:
@@ -122,8 +128,11 @@ modules:
     topics:
       - • Payment processing workflows• Direct bill vs agency bill• Credit and debit handling• Transaction lifecycle stages• Reconciliation process flow
   - title: 'Module 8: Billing Center UI Customization'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 9: Real-Time Project Training'
     duration: 1 topics
     topics:

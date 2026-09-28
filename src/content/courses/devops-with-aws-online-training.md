@@ -127,32 +127,59 @@ modules:
       - AWS EC2 Instance Setup and Management
       - AWS Storage Services and Basics
   - title: 'Module 2: Linux and Networking Basics'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 3: Version Control with Git'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 4: CI/CD with Jenkins'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 5: Docker Containerization'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 6: Kubernetes Orchestration'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 7: Infrastructure Automation'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 8: Monitoring and Logging'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 9: DevOps Security Practices'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 10: Real-Time Projects and Deployment'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
 whoShouldEnroll:
   - title: Students
     description: Students interested in cloud computing, automation, and software delivery can join DevOps with AWS Online Training to build strong technical foundations. This AWS DevOps Master Program Online helps learners understand AWS services, CI/CD pipelines, containers, and deployment practices needed for modern technology careers and industry growth.

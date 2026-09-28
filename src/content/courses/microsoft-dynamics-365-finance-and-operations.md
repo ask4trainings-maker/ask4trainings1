@@ -119,35 +119,65 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Microsoft Dynamics 365 > Microsoft Dynamics 365 Finance And Operations Training
 modules:
   - title: 'Module 1: Introduction'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 2: Financial Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 3: Supply Chain'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 4: Data Management'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 5: Development'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 6: Integration'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 7: Reporting'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 8: Security'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 9: Testing'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 10: Deployment'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
 whoShouldEnroll:
   - title: Basic Knowledge
     description: Candidates with fundamental understanding of business processes or accounting concepts can easily start Microsoft Dynamics 365 Finance and Operations Online Training. ERP systems or databases is helpful in making it suitable for beginners and professionals.

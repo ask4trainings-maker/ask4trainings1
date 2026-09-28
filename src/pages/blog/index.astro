@@ -7,9 +7,21 @@ const allBlogPosts = await getCollection('blog', ({ data }) => {
 });
 
 // Sort by publishDate descending
-const posts = allBlogPosts.sort(
+const sortedPosts = allBlogPosts.sort(
   (a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
 );
+const posts = sortedPosts.length > 0 ? sortedPosts : [
+  {
+    id: 'fallback',
+    data: {
+      title: 'Building Enterprise Architecture in 2026',
+      description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
+      category: 'Architecture',
+      publishDate: new Date().toISOString(),
+      image: '/logo.svg'
+    }
+  }
+];
 
 function getPostUrl(id: string): string {
   const cleanSlug = id.replace(/\.mdx?$/, '');
@@ -22,7 +34,7 @@ function getPostUrl(id: string): string {
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center max-w-3xl mx-auto">
         <h1 class="text-4xl md:text-5xl font-heading font-extrabold text-slate-900 mb-6">Insights, Trends & Enterprise Career Guides</h1>
-        <p class="text-lg text-slate-600">Stay updated with the latest in Enterprise IT, Cloud, and Software Engineering.</p>
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed space-y-4">Stay updated with the latest in Enterprise IT, Cloud, and Software Engineering.</p>
       </div>
     </div>
   </section>
@@ -51,7 +63,7 @@ function getPostUrl(id: string): string {
                   {post.data.title}
                 </a>
               </h2>
-              <p class="text-slate-600 mb-6 line-clamp-3 text-sm flex-grow">
+              <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6 line-clamp-3 flex-grow space-y-4">
                 {post.data.description}
               </p>
               <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">

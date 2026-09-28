@@ -98,8 +98,11 @@ objectives:
 navigationLocation: Navigation Bar > All Courses > Other Tools > Best Talend Online Training
 modules:
   - title: 'Module 1: Introduction to Talend'
-    duration: 0 topics
-    topics: []
+    topics:
+      - "Introduction and Overview"
+      - "Key Concepts and Architecture"
+      - "Hands-on Practical Session"
+      - "Best Practices and Guidelines"
   - title: 'Module 2: Talend Components Basics'
     duration: 1 topics
     topics:

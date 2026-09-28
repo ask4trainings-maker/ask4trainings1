@@ -55,7 +55,7 @@ if (!trainerProfile) {
           {trainerProfile.title || trainerProfile.heading || `Expert Led ${courseTitle} Trainer`}
         </h3>
         
-        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mt-2">
           {trainerProfile.description || 'Practical training, mentoring, and enterprise architecture overview.'}
         </p>
         
@@ -70,7 +70,7 @@ if (!trainerProfile) {
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
                     </svg>
                   </div>
-                  <span class="text-xs sm:text-sm text-slate-600 leading-normal">
+                  <span class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                     {typeof highlight === 'string' ? highlight : (highlight.item || highlight.text || highlight.title || highlight.highlight || JSON.stringify(highlight))}
                   </span>
                 </li>

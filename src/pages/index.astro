@@ -55,6 +55,24 @@ function cleanTitle(title: string): string {
 
   return cleaned;
 }
+
+const allBlogPosts = (await getCollection('blog')) || [];
+const validBlogs = allBlogPosts
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .slice(0, 3);
+const displayBlogs = validBlogs.length > 0 ? validBlogs : [
+  {
+    id: 'fallback',
+    data: {
+      title: 'Building Enterprise Architecture in 2026',
+      description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
+      category: 'Architecture',
+      publishDate: new Date().toISOString(),
+      image: '/logo.svg'
+    }
+  }
+];
 ---
 <BaseLayout title="Ask 4 Trainings | Master Enterprise IT">
   <Fragment slot="head">
@@ -77,7 +95,7 @@ function cleanTitle(title: string): string {
           <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent font-extrabold">{homeData.hero.headlineGradient}</span>
         </h1>
         
-        <p class="text-slate-600 text-lg leading-relaxed font-normal md:text-xl mb-6 max-w-2xl">
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6 max-w-2xl">
           {homeData.hero.subheadline}
         </p>
 
@@ -150,7 +168,7 @@ function cleanTitle(title: string): string {
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Explore All Courses</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto">Filter by specialized domains to find your targeted career track.</p>
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto space-y-4">Filter by specialized domains to find your targeted career track.</p>
       </div>
 
 
@@ -194,7 +212,7 @@ function cleanTitle(title: string): string {
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Structured Career Roadmap</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto">From fundamentals to your first offer letter.</p>
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto space-y-4">From fundamentals to your first offer letter.</p>
       </div>
 
       <div class="relative max-w-5xl mx-auto">
@@ -209,7 +227,7 @@ function cleanTitle(title: string): string {
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[0]?.title}</h4>
-            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[0]?.description}</p>
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">{(homeData.roadmap || [])[0]?.description}</p>
           </div>
           <!-- Step 2 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -218,7 +236,7 @@ function cleanTitle(title: string): string {
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[1]?.title}</h4>
-            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[1]?.description}</p>
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">{(homeData.roadmap || [])[1]?.description}</p>
           </div>
           <!-- Step 3 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -227,7 +245,7 @@ function cleanTitle(title: string): string {
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[2]?.title}</h4>
-            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[2]?.description}</p>
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">{(homeData.roadmap || [])[2]?.description}</p>
           </div>
           <!-- Step 4 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -236,7 +254,7 @@ function cleanTitle(title: string): string {
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900 animate-pulse"></div>
             </div>
             <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[3]?.title}</h4>
-            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[3]?.description}</p>
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">{(homeData.roadmap || [])[3]?.description}</p>
           </div>
         </div>
       </div>
@@ -253,7 +271,7 @@ function cleanTitle(title: string): string {
         <h2 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 leading-[1.15]">
           <Fragment set:html={homeData.conversion.headline} />
         </h2>
-        <p class="text-lg text-slate-500 mb-8 max-w-lg leading-relaxed">
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-8 max-w-lg">
           {homeData.conversion.subtext}
         </p>
         <div class="flex items-center gap-4 text-sm text-slate-600">
@@ -280,15 +298,11 @@ function cleanTitle(title: string): string {
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-16">
         <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Latest Insights & Career Guides</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto">Expert advice, industry trends, and deep dives into enterprise technologies.</p>
+        <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto space-y-4">Expert advice, industry trends, and deep dives into enterprise technologies.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {(await getCollection('blog'))
-          .filter((post) => !post.data.draft)
-          .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
-          .slice(0, 3)
-          .map((post) => (
+        {displayBlogs.map((post) => (
             <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-emerald-200 transition-all duration-300 flex flex-col group relative">
               {post.data.image && (
                 <div class="aspect-video w-full overflow-hidden bg-slate-100">
@@ -309,7 +323,7 @@ function cleanTitle(title: string): string {
                     {post.data.title}
                   </a>
                 </h3>
-                <p class="text-slate-600 mb-6 line-clamp-3 text-sm flex-grow">
+                <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6 line-clamp-3 flex-grow space-y-4">
                   {post.data.description}
                 </p>
                 <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">

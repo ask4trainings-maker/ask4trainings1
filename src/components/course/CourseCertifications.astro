@@ -50,7 +50,7 @@ const { certification, courseTitle } = Astro.props;
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
           {certification.title || `${courseTitle} Certification`}
         </h2>
-        <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+        <div class="space-y-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
           {certification.description.split('\n\n').map((para) => (
             <p>{para.trim()}</p>
           ))}

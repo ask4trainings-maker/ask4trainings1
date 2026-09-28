@@ -20,7 +20,7 @@ if (!objectives || objectives.length === 0) {
       {objectives.map(objective => (
         <div class="flex items-start gap-3 rounded-xl border border-slate-200/80 bg-white p-4 shadow-2xs">
           <span class="text-emerald-600 mt-0.5">✓</span>
-          <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+          <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
             {typeof objective === 'string' ? objective : ((objective as any).item || (objective as any).text || (objective as any).title || (objective as any).point || (objective as any).objective || JSON.stringify(objective))}
           </p>
         </div>

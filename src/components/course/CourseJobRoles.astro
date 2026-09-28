@@ -42,7 +42,7 @@ const { jobRoles = [] } = Astro.props;
                 {typeof jobRoles[0] === 'string' ? jobRoles[0] : jobRoles[0]?.role}
               </h3>
             </div>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6" data-active-role-desc>
+            <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6" data-active-role-desc>
               {typeof jobRoles[0] === 'string' ? '' : jobRoles[0]?.description}
             </p>
           </div>

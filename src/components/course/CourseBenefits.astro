@@ -30,14 +30,14 @@ if ((!isArray || benefits.length === 0) && !hasBasic && !hasTech && !hasCareer) 
               {benefit.title}
             </h3>
             {benefit.description && (
-              <div class="space-y-2 mb-4 text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <div class="space-y-4 mb-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                 {String(benefit.description).split('\n\n').map((para) => (
                   <p>{para.trim()}</p>
                 ))}
               </div>
             )}
             {benefit.points && benefit.points.length > 0 && (
-              <ul class="space-y-1.5 mt-auto pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-600">
+              <ul class="space-y-1.5 mt-auto pt-3 border-t border-slate-100 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                 {benefit.points.map((pt: string) => (
                   <li class="flex items-start gap-2">
                     <span class="text-emerald-500 font-bold">•</span>
@@ -59,7 +59,7 @@ if ((!isArray || benefits.length === 0) && !hasBasic && !hasTech && !hasCareer) 
             <h3 class="text-xl font-bold text-slate-900 mb-4">Basic Knowledge</h3>
             <ul class="space-y-3">
               {benefits?.basicKnowledge?.map((item: any) => (
-                <li class="flex items-start gap-3 text-slate-600 text-sm">
+                <li class="flex items-start gap-3 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                   <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                   <span>{typeof item === 'string' ? item : (item.item || item.text || item.title || item.point || item.objective || JSON.stringify(item))}</span>
                 </li>
@@ -76,7 +76,7 @@ if ((!isArray || benefits.length === 0) && !hasBasic && !hasTech && !hasCareer) 
             <h3 class="text-xl font-bold text-slate-900 mb-4">Technical Skills</h3>
             <ul class="space-y-3">
               {benefits?.techSkills?.map((item: any) => (
-                <li class="flex items-start gap-3 text-slate-600 text-sm">
+                <li class="flex items-start gap-3 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                   <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                   <span>{typeof item === 'string' ? item : (item.item || item.text || item.title || item.point || item.objective || JSON.stringify(item))}</span>
                 </li>
@@ -93,7 +93,7 @@ if ((!isArray || benefits.length === 0) && !hasBasic && !hasTech && !hasCareer) 
             <h3 class="text-xl font-bold text-slate-900 mb-4">Career Advancement</h3>
             <ul class="space-y-3">
               {benefits?.careerInterests?.map((item: any) => (
-                <li class="flex items-start gap-3 text-slate-600 text-sm">
+                <li class="flex items-start gap-3 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
                   <svg class="w-5 h-5 text-emerald-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
                   <span>{typeof item === 'string' ? item : (item.item || item.text || item.title || item.point || item.objective || JSON.stringify(item))}</span>
                 </li>
