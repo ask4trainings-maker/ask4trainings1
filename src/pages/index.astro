@@ -19,8 +19,10 @@ const organizationSchema = {
 
 import BaseLayout from '../layouts/BaseLayout.astro';
 import categoriesData from '../data/categories.json';
-import homeData from '../data/pages/home.json';
-import { getCollection } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
+
+const homeEntry = await getEntry('pages', 'home');
+const homeData = homeEntry?.data || { hero: {}, metrics: [], bento: [], roadmap: [], conversion: {} };
 import CourseCard from '../components/CourseCard.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
 import CourseWhyChoose from '../components/course/CourseWhyChoose.astro';
@@ -70,7 +72,7 @@ function cleanTitle(title: string): string {
       <!-- Left: Scaler Value Prop (7 cols) -->
       <div class="lg:col-span-7 xl:col-span-7 animate-fade-in-up">
         
-        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-slate-900 mb-6 leading-[1.1] tracking-tight">
+        <h1 class="text-4xl md:text-5xl lg:text-7xl font-heading font-extrabold text-slate-900 mb-6 leading-[1.15] tracking-tight">
           <Fragment set:html={homeData.hero.headline} />
           <span class="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent font-extrabold">{homeData.hero.headlineGradient}</span>
         </h1>
@@ -133,7 +135,7 @@ function cleanTitle(title: string): string {
   <section class="bg-slate-50 border-y border-slate-200/60 py-8">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        {homeData.metrics.map((metric: any) => (
+        {(homeData.metrics || []).map((metric: any) => (
           <div>
             <div class="text-slate-900 font-bold text-2xl lg:text-3xl mb-1">{metric.value}</div>
             <div class="text-slate-500 text-xs font-semibold uppercase tracking-wider">{metric.label}</div>
@@ -147,7 +149,7 @@ function cleanTitle(title: string): string {
   <section id="course-catalog" class="bg-white py-16 relative">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Explore All Courses</h2>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Explore All Courses</h2>
         <p class="text-slate-500 max-w-2xl mx-auto">Filter by specialized domains to find your targeted career track.</p>
       </div>
 
@@ -183,7 +185,7 @@ function cleanTitle(title: string): string {
     </div>
   </section>
 
-  <CourseWhyChoose whyChoose={homeData.bento} />
+  <CourseWhyChoose whyChoose={homeData.bento || []} />
 
   <!-- Career Transition Roadmap / Testimonials -->
   <section class="bg-slate-50/70 py-16 border-y border-slate-200/60 relative">
@@ -191,7 +193,7 @@ function cleanTitle(title: string): string {
     <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-accent/5 via-transparent to-transparent opacity-50 pointer-events-none"></div>
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Structured Career Roadmap</h2>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Structured Career Roadmap</h2>
         <p class="text-slate-500 max-w-2xl mx-auto">From fundamentals to your first offer letter.</p>
       </div>
 
@@ -206,8 +208,8 @@ function cleanTitle(title: string): string {
               1
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[0].title}</h4>
-            <p class="text-xs text-slate-500">{homeData.roadmap[0].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[0]?.title}</h4>
+            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[0]?.description}</p>
           </div>
           <!-- Step 2 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -215,8 +217,8 @@ function cleanTitle(title: string): string {
               2
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[1].title}</h4>
-            <p class="text-xs text-slate-500">{homeData.roadmap[1].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[1]?.title}</h4>
+            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[1]?.description}</p>
           </div>
           <!-- Step 3 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -224,8 +226,8 @@ function cleanTitle(title: string): string {
               3
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900"></div>
             </div>
-            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[2].title}</h4>
-            <p class="text-xs text-slate-500">{homeData.roadmap[2].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[2]?.title}</h4>
+            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[2]?.description}</p>
           </div>
           <!-- Step 4 -->
           <div class="bg-white/80 backdrop-blur-md border border-slate-200 p-6 rounded-2xl text-center relative group hover:border-emerald-600/40 transition-colors">
@@ -233,8 +235,8 @@ function cleanTitle(title: string): string {
               4
               <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-emerald-600 rounded-full border-2 border-slate-900 animate-pulse"></div>
             </div>
-            <h4 class="font-bold text-slate-900 mb-2">{homeData.roadmap[3].title}</h4>
-            <p class="text-xs text-slate-500">{homeData.roadmap[3].description}</p>
+            <h4 class="font-bold text-slate-900 mb-2">{(homeData.roadmap || [])[3]?.title}</h4>
+            <p class="text-xs text-slate-500">{(homeData.roadmap || [])[3]?.description}</p>
           </div>
         </div>
       </div>
@@ -248,7 +250,7 @@ function cleanTitle(title: string): string {
 
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
       <div>
-        <h2 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 leading-tight">
+        <h2 class="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 leading-[1.15]">
           <Fragment set:html={homeData.conversion.headline} />
         </h2>
         <p class="text-lg text-slate-500 mb-8 max-w-lg leading-relaxed">
@@ -277,7 +279,7 @@ function cleanTitle(title: string): string {
   <section class="bg-white py-16 relative border-t border-slate-200">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4">Latest Insights & Career Guides</h2>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-slate-900 mb-4 leading-snug">Latest Insights & Career Guides</h2>
         <p class="text-slate-500 max-w-2xl mx-auto">Expert advice, industry trends, and deep dives into enterprise technologies.</p>
       </div>
 

@@ -6,8 +6,17 @@ import IconX from '../components/icons/IconX.astro';
 import IconLinkedIn from '../components/icons/IconLinkedIn.astro';
 import IconYouTube from '../components/icons/IconYouTube.astro';
 import IconInstagram from '../components/icons/IconInstagram.astro';
-import contactData from '../data/pages/contact.json';
-import settingsData from '../data/settings.json';
+import { getEntry } from 'astro:content';
+
+const contactEntry = await getEntry('pages', 'contact');
+const contactData = contactEntry?.data || { headline: '', subheadline: '', inquiryNotice: '', phoneNumbers: [], emailAddresses: [], centerAddress: { street: '', area: '', pincode: '', mapsLink: '' }, formHeader: '', formSubtext: '' };
+
+const footerEntry = await getEntry('settings', 'footer');
+const footerData = footerEntry?.data || { socialLinks: [] };
+const socials = (footerData.socialLinks || []).reduce((acc: any, curr: any) => {
+  acc[curr.platform.toLowerCase()] = curr.url;
+  return acc;
+}, {});
 
 const formatSocialHandle = (url: string, platform: string) => {
   try {
@@ -30,7 +39,7 @@ const formatSocialHandle = (url: string, platform: string) => {
 
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="text-center mb-12">
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-4">{contactData.headline}</h1>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-4 leading-[1.15]">{contactData.headline}</h1>
         <p class="text-lg text-slate-600 max-w-2xl mx-auto">{contactData.subheadline}</p>
       </div>
 
@@ -48,7 +57,7 @@ const formatSocialHandle = (url: string, platform: string) => {
         <div class="lg:col-span-7 space-y-12">
           
           <div>
-            <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Contact Information</h2>
+            <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4 leading-snug">Contact Information</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-slate-600">
               <div class="flex items-start gap-4 group">
                 <div class="bg-white/5 border border-slate-200 p-3.5 rounded-xl group-hover:bg-emerald-600/20 group-hover:border-emerald-600/50 transition-colors">
@@ -95,44 +104,44 @@ const formatSocialHandle = (url: string, platform: string) => {
             <div class="mt-12">
               <h3 class="text-xl font-heading font-bold text-slate-900 mb-6">Connect with Us</h3>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {settingsData.socials.facebook && (
-                  <a href={settingsData.socials.facebook} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
+                {socials.facebook && (
+                  <a href={socials.facebook} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
                     <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-50 text-slate-500 group-hover:text-emerald-600 group-hover:bg-emerald-100/50 transition-colors">
                       <IconFacebook class="w-5 h-5"/>
                     </div>
-                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(settingsData.socials.facebook, 'facebook')}</span>
+                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(socials.facebook, 'facebook')}</span>
                   </a>
                 )}
-                {settingsData.socials.twitter && (
-                  <a href={settingsData.socials.twitter} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
+                {socials.twitter && (
+                  <a href={socials.twitter} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
                     <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-50 text-slate-500 group-hover:text-emerald-600 group-hover:bg-emerald-100/50 transition-colors">
                       <IconX class="w-5 h-5"/>
                     </div>
-                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(settingsData.socials.twitter, 'twitter')}</span>
+                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(socials.twitter, 'twitter')}</span>
                   </a>
                 )}
-                {settingsData.socials.linkedin && (
-                  <a href={settingsData.socials.linkedin} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
+                {socials.linkedin && (
+                  <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
                     <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-50 text-slate-500 group-hover:text-emerald-600 group-hover:bg-emerald-100/50 transition-colors">
                       <IconLinkedIn class="w-5 h-5"/>
                     </div>
-                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(settingsData.socials.linkedin, 'linkedin')}</span>
+                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(socials.linkedin, 'linkedin')}</span>
                   </a>
                 )}
-                {settingsData.socials.youtube && (
-                  <a href={settingsData.socials.youtube} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
+                {socials.youtube && (
+                  <a href={socials.youtube} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
                     <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-50 text-slate-500 group-hover:text-emerald-600 group-hover:bg-emerald-100/50 transition-colors">
                       <IconYouTube class="w-5 h-5"/>
                     </div>
-                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(settingsData.socials.youtube, 'youtube')}</span>
+                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(socials.youtube, 'youtube')}</span>
                   </a>
                 )}
-                {settingsData.socials.instagram && (
-                  <a href={settingsData.socials.instagram} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
+                {socials.instagram && (
+                  <a href={socials.instagram} target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 rounded-xl bg-white border border-slate-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all group shadow-sm hover:shadow-md">
                     <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-50 text-slate-500 group-hover:text-emerald-600 group-hover:bg-emerald-100/50 transition-colors">
                       <IconInstagram class="w-5 h-5"/>
                     </div>
-                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(settingsData.socials.instagram, 'instagram')}</span>
+                    <span class="font-medium text-slate-700 group-hover:text-emerald-700 truncate">{formatSocialHandle(socials.instagram, 'instagram')}</span>
                   </a>
                 )}
               </div>
@@ -154,7 +163,7 @@ const formatSocialHandle = (url: string, platform: string) => {
 
       <div class="mt-12 w-full">
         <div class="mb-4">
-          <h2 class="text-2xl font-bold tracking-tight text-slate-900">Our Location</h2>
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900 leading-snug">Our Location</h2>
           <p class="text-sm text-slate-600 mt-1">Visit our training and corporate operations center in Hyderabad.</p>
         </div>
         

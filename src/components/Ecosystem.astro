@@ -1,5 +1,7 @@
 ---
-import homeData from '../data/pages/home.json';
+import { getEntry } from 'astro:content';
+const homeEntry = await getEntry('pages', 'home');
+const homeData = homeEntry?.data || { bento: [] };
 import { 
   Video, ScreenShare, MessageSquareQuote, 
   Server, Terminal, 

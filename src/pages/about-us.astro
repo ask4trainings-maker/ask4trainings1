@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import aboutData from '../data/pages/about.json';
+import { getEntry } from 'astro:content';
+
+const aboutEntry = await getEntry('pages', 'about');
+const aboutData = aboutEntry?.data || { story: '', milestones: [], faculty: [], infrastructure: [] };
 ---
 <BaseLayout title="About Us | Ask 4 Trainings">
   <div class="bg-slate-50 border-b border-slate-100 py-20 relative overflow-hidden">
@@ -10,14 +13,14 @@ import aboutData from '../data/pages/about.json';
     </div>
     
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-6 text-center">About Us</h1>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-6 text-center leading-[1.15]">About Us</h1>
       <p class="text-lg md:text-xl text-slate-600 max-w-4xl mx-auto text-center leading-relaxed mb-16">
         {aboutData.story}
       </p>
 
       <!-- Section: Timeline -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Our Journey</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4 leading-snug">Our Journey</h2>
         <div class="space-y-6">
           {aboutData.milestones.map((milestone: any) => (
             <div class="flex gap-4 items-start">
@@ -33,7 +36,7 @@ import aboutData from '../data/pages/about.json';
 
       <!-- Section: Faculty -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Expert Faculty</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4 leading-snug">Expert Faculty</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           {aboutData.faculty.map((member: any) => (
             <div class="bg-white/60 border border-slate-200 rounded-2xl p-6 text-center hover:border-emerald-600/30 transition-colors">
@@ -50,7 +53,7 @@ import aboutData from '../data/pages/about.json';
 
       <!-- Section: Infrastructure -->
       <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4">Lab Infrastructure</h2>
+        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4 leading-snug">Lab Infrastructure</h2>
         <div class="bg-slate-100/40 border border-slate-200 rounded-2xl p-8 flex flex-col md:flex-row items-center gap-8">
           <div class="md:w-1/2">
             <h3 class="text-xl font-bold text-slate-900 mb-4">24/7 Dedicated Sandbox Access</h3>
@@ -84,7 +87,7 @@ import aboutData from '../data/pages/about.json';
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
             Learning Management System · Ask4Trainings Portal
           </div>
-          <h2 class="text-2xl font-heading font-bold text-slate-900">Structured Learning Beyond the Live Classroom</h2>
+          <h2 class="text-2xl font-heading font-bold text-slate-900 leading-snug">Structured Learning Beyond the Live Classroom</h2>
           <p class="text-slate-600 mt-2 max-w-3xl">Every enrolled student receives dedicated credentials to our enterprise LMS, centralizing classroom recordings, architectural notes, and project repositories in one place.</p>
         </div>
         

@@ -296,4 +296,84 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { courses, blog };
+const settings = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/settings" }),
+  schema: z.object({
+    topStrip: z.object({
+      phone: z.string(),
+      email: z.string(),
+      studentPortalUrl: z.string(),
+      enquireUrl: z.string()
+    }).optional(),
+    menuCategories: z.array(z.object({
+      key: z.string(),
+      label: z.string(),
+      description: z.string(),
+      featuredCourseSlugs: z.array(z.string()).optional()
+    })).optional(),
+    summary: z.string().optional(),
+    companySummary: z.string().optional(),
+    contactInfo: z.object({
+      address: z.string(),
+      phone: z.string(),
+      email: z.string()
+    }).optional(),
+    quickLinks: z.array(z.object({
+      label: z.string(),
+      href: z.string()
+    })).optional(),
+    categoryLinks: z.array(z.object({
+      label: z.string(),
+      href: z.string()
+    })).optional(),
+    socialLinks: z.array(z.object({
+      platform: z.string(),
+      url: z.string(),
+      active: z.boolean().optional()
+    })).optional(),
+    copyrightText: z.string().optional()
+  })
+});
+
+const pages = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/pages" }),
+  schema: z.object({
+    // Home
+    hero: z.any().optional(),
+    stats: z.any().optional(),
+    values: z.any().optional(),
+    placement: z.any().optional(),
+    metrics: z.any().optional(),
+    bento: z.any().optional(),
+    roadmap: z.any().optional(),
+    conversion: z.any().optional(),
+    // About
+    mission: z.any().optional(),
+    vision: z.any().optional(),
+    background: z.any().optional(),
+    centerDetails: z.any().optional(),
+    leadership: z.any().optional(),
+    story: z.any().optional(),
+    milestones: z.any().optional(),
+    faculty: z.any().optional(),
+    infrastructure: z.any().optional(),
+    // Contact
+    heading: z.string().optional(),
+    subhead: z.string().optional(),
+    headline: z.string().optional(),
+    subheadline: z.string().optional(),
+    inquiryNotice: z.string().optional(),
+    officeHours: z.string().optional(),
+    mapEmbedUrl: z.string().optional(),
+    phone: z.string().optional(),
+    email: z.string().optional(),
+    address: z.string().optional(),
+    phoneNumbers: z.any().optional(),
+    emailAddresses: z.any().optional(),
+    centerAddress: z.any().optional(),
+    formHeader: z.string().optional(),
+    formSubtext: z.string().optional()
+  })
+});
+
+export const collections = { courses, blog, settings, pages };
