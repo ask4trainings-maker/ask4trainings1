@@ -523,7 +523,7 @@ collections:
           - { label: "Batch Type", name: "type", widget: "string", hint: "e.g., Weekday/Weekend" }
           - { label: "Program Duration", name: "duration", widget: "string", hint: "e.g., '40-50 Hours'" }
           - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Online'" }
-          - { label: "Next Cohort Date", name: "startDate", widget: "string", hint: "e.g., 'Upcoming Monday'" }
+          - { label: "Next Cohort Date", name: "startDate", required: false , widget: "string", hint: "e.g., 'Upcoming Monday'" }
 
       # ── Course Overview (Before Modules) ──
       - label: "📖 Course Overview"
