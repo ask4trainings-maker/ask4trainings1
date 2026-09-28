@@ -318,7 +318,6 @@ collections:
       - category
       - priorityTier
       - title
-      - updatedDate
     view_groups:
       - label: By Domain Category
         field: category
