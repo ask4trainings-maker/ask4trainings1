@@ -2,32 +2,7 @@
 title: Best Talend Online Training
 slug: talend-online-training
 category: other-tools
-valueProp: Master Talend Online Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Talend'
-    module: 'Module 1: Introduction to Talend'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Advance your career in data integration with Talend Online Training designed for practical learning and industry-focused skills. Our Talend Training in Hyderabad provides hands-on experience in ETL, data migration, cloud integration, and real-time implementation. Enroll in Talend Course Online to learn from expert trainers through interactive sessions. Gain professional expertise with Talend Online Training with Certification and strengthen your skills through Talend Online Classes with Live Projects for career growth.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

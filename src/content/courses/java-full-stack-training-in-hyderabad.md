@@ -2,32 +2,7 @@
 title: Best Java Full Stack Training in Hyderabad
 slug: java-full-stack-training-in-hyderabad
 category: development
-valueProp: Master Java Full Stack Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Java Full Stack Training'
-    module: 'Module 1: Introduction to Java Full Stack Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build a successful software development career with Java Full Stack Training in Hyderabad designed for students and professionals seeking practical coding skills. Our Java Full Stack Online Training covers front-end and back-end technologies through real-time learning. Enroll in the Java Full Stack Course Online to gain hands-on experience, industry knowledge, and career-focused learning. Choose Java Full Stack Online Training with Certification to strengthen your professional profile.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

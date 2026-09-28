@@ -2,32 +2,7 @@
 title: Digital Marketing Training in Hyderabad
 slug: digital-marketing-training-in-hyderabad
 category: new-courses
-valueProp: Master Digital Marketing Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Digital Marketing Training'
-    module: 'Module 1: Introduction to Digital Marketing Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Kickstart your career with our Digital Marketing Training in Hyderabad, designed for beginners and professionals. This Digital Marketing Course covers SEO, Google Ads, social media, content marketing, analytics, and AI tools through real-time projects. Earn a Digital Marketing Certification while mastering advanced strategies in our Advanced Digital Marketing Course. This Digital Marketing Job Oriented Course prepares you for in-demand digital marketing roles with placement support.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

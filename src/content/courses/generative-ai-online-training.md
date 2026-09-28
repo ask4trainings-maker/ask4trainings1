@@ -2,32 +2,7 @@
 title: Best Generative AI Online Training with Certification
 slug: generative-ai-online-training
 category: trending-courses
-valueProp: Master Generative AI Online Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Generative Ai'
-    module: 'Module 1: Introduction to Generative Ai'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Kickstart your career with our Generative AI Course Hyderabad, designed to build strong foundations in AI innovation. This Generative AI and Machine Learning Course covers real-world applications, tools, and models to help you stay industry-ready. Enroll in our Generative AI Online Training or flexible Generative AI Online Course to learn anytime, anywhere. Perfect as a Generative AI Course for Beginners, it offers hands-on learning and expert guidance.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

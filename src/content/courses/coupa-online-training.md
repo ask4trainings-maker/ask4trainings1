@@ -2,32 +2,7 @@
 title: Coupa Training
 slug: coupa-online-training
 category: new-courses
-valueProp: Master Coupa Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Coupa'
-    module: 'Module 1: Introduction to Coupa'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Join our professional Coupa Online Course to gain practical knowledge in procurement automation, supplier collaboration, invoicing, and expense management. Our Coupa Online Training includes live projects and expert mentorship for better learning outcomes. Enroll in the Best Coupa Training in Hyderabad through a top-rated Coupa Course in Hyderabad at a reliable Coupa Training Institute in Hyderabad for career growth.
 batchInfo:
   type: Online
   duration: 45-60 Hrs
@@ -129,7 +104,10 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-overview: Take your career to the next level with professional Coupa Online Training designed for aspiring procurement specialists and working professionals. Our Advanced Coupa Course provides real-time project exposure and practical implementation of Coupa solutions. Join the comprehensive Coupa Certification Course to prepare for Coupa Professional Certification and develop in-demand skills through our advanced Coupa Procurement Course training program.
+overview: |-
+  Enhance your procurement and supplier management skills through our industry-oriented Coupa Online Training program. The Advanced Coupa Course covers sourcing, invoicing, expense management, and procurement automation with practical assignments and live projects. Prepare for Coupa Professional Certification with expert guidance through our Coupa Certification Course and gain hands-on experience from our career-focused Coupa Procurement Course curriculum.
+
+  Take your career to the next level with professional Coupa Online Training designed for aspiring procurement specialists and working professionals. Our Advanced Coupa Course provides real-time project exposure and practical implementation of Coupa solutions. Join the comprehensive Coupa Certification Course to prepare for Coupa Professional Certification and develop in-demand skills through our advanced Coupa Procurement Course training program.
 aboutCourse: |-
   This Coupa Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
 

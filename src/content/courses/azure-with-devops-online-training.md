@@ -2,32 +2,7 @@
 title: Best Azure with DevOps Online Training
 slug: azure-with-devops-online-training
 category: devops
-valueProp: Master Azure with DevOps Online Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Azure With Devops'
-    module: 'Module 1: Introduction to Azure With Devops'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build a successful cloud and automation career with Azure with DevOps Online Training designed for students and professionals seeking practical industry skills. Our Azure DevOps Training in Hyderabad covers real-time project implementation, CI/CD pipelines, cloud deployment, automation, and infrastructure management. Gain hands-on expertise through Azure DevOps Course Online modules and enhance your professional profile with Azure DevOps Online Training with Certification focused on real-world learning and career growth.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

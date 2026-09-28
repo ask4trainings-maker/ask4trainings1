@@ -2,32 +2,7 @@
 title: Guidewire Claim Center Training
 slug: guidewire-claim-center-training
 category: guidewire
-valueProp: Master Guidewire Claim Center Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Guidewire Claim Center'
-    module: 'Module 1: Introduction to Guidewire Claim Center'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Kickstart your career with Guidewire Development Training, designed for aspiring professionals seeking Guidewire Developer Course expertise. Our Guidewire Training in Hyderabad and Guidewire Online Training offer hands-on experience, real-time projects, and Guidewire Certification Training to help you master Guidewire Configuration, GOSU, and insurance domain skills for high-demand jobs.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

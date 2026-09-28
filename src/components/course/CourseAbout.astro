@@ -14,15 +14,16 @@ export interface Props {
     title?: string;
     description?: string;
   };
+  valueProp?: string;
 }
 
-const { aboutCourse, courseTitle = "the Course", category, whyMaster } = Astro.props;
+const { aboutCourse, courseTitle = "the Course", category, whyMaster, valueProp } = Astro.props;
 
 // Resolve display values: whyMaster fields take priority, fall back to legacy aboutCourse
 const bodyText = whyMaster?.description || aboutCourse;
 const sectionTitle = whyMaster?.title || `Why Master ${courseTitle}?`;
 
-if (!bodyText && !whyMaster?.title) {
+if (!bodyText && !whyMaster?.title && !valueProp) {
   return null;
 }
 ---
@@ -35,11 +36,15 @@ if (!bodyText && !whyMaster?.title) {
           Course Deep Dive
         </div>
         <h2 class="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-slate-900 break-words min-w-0">{sectionTitle}</h2>
-        {bodyText && (
+        {bodyText ? (
           <div class="space-y-4 prose prose-slate prose-emerald max-w-none text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
             {bodyText.split('\n\n').map((paragraph) => (
               paragraph.trim() && <p>{paragraph.trim()}</p>
             ))}
+          </div>
+        ) : (
+          <div class="space-y-4 prose prose-slate prose-emerald max-w-none text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
+            <p>{valueProp}</p>
           </div>
         )}
       </div>

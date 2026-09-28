@@ -2,32 +2,7 @@
 title: Best Oracle Flexcube Online Training
 slug: oracle-flexcube-online-training
 category: oracle
-valueProp: Master Oracle Flexcube Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Oracle Flexcube'
-    module: 'Module 1: Introduction to Oracle Flexcube'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build your banking technology expertise with Oracle Flexcube Online Training, designed to cover real-time core banking operations and workflows. This Oracle Flexcube Online Course offers hands-on learning, practical scenarios, and expert guidance to help you master concepts. With our Oracle Flexcube Certification Course and Oracle Flexcube Functional Training, you gain job-ready skills for a successful career.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

@@ -2,32 +2,7 @@
 title: Best Kinaxis Online Training with Certification
 slug: kinaxis-online-training-in-hyderabad
 category: new-courses
-valueProp: Master Kinaxis Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Kinaxis'
-    module: 'Module 1: Introduction to Kinaxis'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Boost your career with Kinaxis Online Training designed for real-world success. This Job Oriented Kinaxis Online Course offers hands-on learning with industry scenarios. Enroll in Kinaxis Course in Hyderabad and gain expertise through Kinaxis Online Classes with Real-Time Projects. Our Kinaxis Certification Course Online and Advanced Kinaxis Online Training help you master supply chain planning and secure top job opportunities.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

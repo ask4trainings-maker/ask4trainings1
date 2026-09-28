@@ -2,32 +2,7 @@
 title: Best Duck Creek Online Training
 slug: duck-creek-online-training
 category: new-courses
-valueProp: Master Duck Creek Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Duck Creek'
-    module: 'Module 1: Introduction to Duck Creek'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Start your career in insurance technology with our Duck Creek Online Course designed for beginners and professionals. This industry-focused Duck Creek Online Training provides hands-on experience with real-time projects, policy administration, and claims management concepts. Recognized as the Best Duck Creek Training in Hyderabad, our program offers expert trainers, flexible schedules, and placement support. Join the leading Duck Creek Course in Hyderabad to gain practical skills and boost your job opportunities .
 batchInfo:
   type: Online
   duration: 45-60 Hrs

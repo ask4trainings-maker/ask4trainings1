@@ -2,32 +2,7 @@
 title: Best Palantir Foundry Online Training
 slug: palantir-foundry-online-training
 category: trending-courses
-valueProp: Master Palantir Foundry Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Palantir Foundry'
-    module: 'Module 1: Introduction to Palantir Foundry'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build a successful data engineering and analytics career with Palantir Foundry Online Course designed for beginners and professionals. Our Palantir Foundry Online Training provides practical learning through live sessions, real-world projects, and expert guidance. Recognized as the Best Palantir Foundry Training in Hyderabad, this program equips you with industry-ready skills. Enroll in the Palantir Foundry Course in Hyderabad to gain hands-on experience and boost career opportunities today.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

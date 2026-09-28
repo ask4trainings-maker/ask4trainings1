@@ -2,32 +2,7 @@
 title: PEGA Training in Hyderabad
 slug: pega-training-in-hyderabad
 category: other-tools
-valueProp: Master PEGA Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Pega Training'
-    module: 'Module 1: Introduction to Pega Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build strong BPM and application development skills with PEGA Online Training designed for beginners and professionals seeking practical expertise. Our PEGA Training in Hyderabad delivers industry-focused learning through real-time assignments, workflow automation concepts, and expert guidance. Gain career-ready knowledge with PEGA Online Training with Certification and strengthen hands-on experience through PEGA Online Classes with Live Projects. Join the Best PEGA Training Institute in Hyderabad to enhance technical capabilities and professional growth.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

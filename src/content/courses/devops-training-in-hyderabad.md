@@ -2,32 +2,7 @@
 title: Best DevOps Training in Hyderabad
 slug: devops-training-in-hyderabad
 category: devops
-valueProp: Master DevOps Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Devops Training'
-    module: 'Module 1: Introduction to Devops Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build a successful IT career with DevOps Training in Hyderabad designed for beginners and professionals. Our DevOps Online Training covers real-time tools, automation, CI/CD pipelines, Docker, Kubernetes, Jenkins, and cloud concepts. Join DevOps Course Online with expert trainers, hands-on assignments, and live projects. Get industry-ready skills through DevOps Online Training with Certification and interactive DevOps Online Classes with Live Projects.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

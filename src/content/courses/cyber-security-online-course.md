@@ -2,32 +2,7 @@
 title: Best Cyber Security Online Training with Certification
 slug: cyber-security-online-course
 category: trending-courses
-valueProp: Master Cyber Security Online Course with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Cyber Security Online'
-    module: 'Module 1: Introduction to Cyber Security Online'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Join our Cyber Security Online Course to master ethical hacking, network defense, cloud security, and risk management with real-time projects. Our Cyber Security Online Training is designed by experts to help learners gain practical skills. Enroll in the Best Cyber Security Training in Hyderabad and build a successful IT career with the industry-focused Cyber Security Course in Hyderabad today. Start your learning journey today.!!
 batchInfo:
   type: Online
   duration: 45-60 Hrs

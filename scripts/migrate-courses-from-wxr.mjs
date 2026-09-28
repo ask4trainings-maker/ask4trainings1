@@ -67,6 +67,8 @@ for (const file of courseFiles) {
   const extractedModules = [];
   const extractedFaqs = [];
   let extractedWhyLearnCopy = '';
+  let extractedValueProp = '';
+  let extractedOverview = '';
 
   const allElements = $('h1, h2, h3, h4, h5, h6, p, ul, ol, a, .elementor-accordion-item, .elementor-toggle-item, .elementskit-card, details').toArray();
 
@@ -75,6 +77,8 @@ for (const file of courseFiles) {
   let currentFaq = null;
   let aboutParagraphs = [];
   let potentialAboutParagraphs = [];
+  let overviewParagraphs = [];
+  let isCheckingForValueProp = true;
   
   for (let i = 0; i < allElements.length; i++) {
     const el = allElements[i];
@@ -82,8 +86,23 @@ for (const file of courseFiles) {
     const tagName = el.tagName.toLowerCase();
     const text = cleanText($el.text());
     
+    if (tagName === 'p' && isCheckingForValueProp && text.length > 50 && state === 'normal') {
+       if (!extractedValueProp) {
+         extractedValueProp = text;
+         isCheckingForValueProp = false;
+       }
+    }
+    
     // State transitions on Headings
     if (/^h[1-6]$/.test(tagName)) {
+      if (/(overview of|course overview)/i.test(text)) {
+        state = 'overview';
+        isCheckingForValueProp = false;
+        continue;
+      }
+      if (state === 'overview' && /(register now|course content|📘\s*course curriculum|key features)/i.test(text)) {
+        state = 'normal';
+      }
       if (/(📘\s*course curriculum|course content)/i.test(text)) {
         state = 'modules';
         continue;
@@ -248,6 +267,11 @@ for (const file of courseFiles) {
           potentialAboutParagraphs.push(text);
        }
     }
+    
+    // Step 4: Overview Extraction Logic
+    if (state === 'overview' && tagName === 'p' && text.length > 30) {
+      overviewParagraphs.push(text);
+    }
   }
   
   if (potentialAboutParagraphs.length > 0 && aboutParagraphs.length === 0) {
@@ -259,6 +283,11 @@ for (const file of courseFiles) {
   });
   
   extractedWhyLearnCopy = aboutParagraphs.join('\n\n');
+  extractedOverview = overviewParagraphs.join('\n\n');
+  
+  if (!extractedValueProp && overviewParagraphs.length > 0) {
+     extractedValueProp = overviewParagraphs[0];
+  }
   
   if (isDryRun && targetSlug === slug) {
     console.log(`\n--- Dry Run Output for ${slug} ---`);
@@ -268,6 +297,10 @@ for (const file of courseFiles) {
     console.log(yaml.dump(extractedFaqs));
     console.log("Why Learn:");
     console.log(extractedWhyLearnCopy);
+    console.log('\nOverview:');
+    console.log(extractedOverview);
+    console.log('\nValue Prop:');
+    console.log(extractedValueProp);
     process.exit(0);
   }
   
@@ -282,6 +315,7 @@ for (const file of courseFiles) {
         // Update ONLY modules, faqs, and whyMaster.description
         if (extractedModules.length > 0) {
           existingFrontmatter.modules = extractedModules;
+          delete existingFrontmatter.syllabus; // Remove stale mock syllabus
         }
         if (extractedFaqs.length > 0) {
           existingFrontmatter.faqs = extractedFaqs;
@@ -291,6 +325,12 @@ for (const file of courseFiles) {
              ...(existingFrontmatter.whyMaster || {}),
              description: extractedWhyLearnCopy
           };
+        }
+        if (extractedOverview) {
+          existingFrontmatter.overview = extractedOverview;
+        }
+        if (extractedValueProp) {
+          existingFrontmatter.valueProp = extractedValueProp;
         }
         
         const newFrontmatterStr = yaml.dump(existingFrontmatter, { lineWidth: -1 });

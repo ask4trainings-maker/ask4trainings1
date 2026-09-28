@@ -384,31 +384,6 @@ publishDate: '2026-09-24T16:00:00.000Z'
 relatedCourseSlugs: []
 reviewCount: 130
 shortCode: GW PCT
-syllabus:
-  - module: 'Module 1: Introduction to Guidewire Policycenter'
-    moduleTitle: 'Module 1: Introduction to Guidewire Policycenter'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - module: 'Module 2: Advanced Configuration'
-    moduleTitle: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - module: 'Module 3: Integration and APIs'
-    moduleTitle: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - module: 'Module 4: Real-time Project implementation'
-    moduleTitle: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
 testimonials: []
 thumbnail: https://picsum.photos/id/659/1920/1280.webp
 thumbnailAlt: Guidewire Policy center image

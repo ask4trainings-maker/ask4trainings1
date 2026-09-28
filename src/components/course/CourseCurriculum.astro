@@ -1,0 +1,61 @@
+---
+interface Props {
+  modules?: Array<{
+    title: string;
+    duration?: string;
+    topics: string[];
+  }>;
+  courseTitle: string;
+}
+
+const { modules = [], courseTitle } = Astro.props;
+---
+{modules && modules.length > 0 && (
+  <section id="curriculum" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Course Curriculum</h2>
+        <p class="text-sm text-slate-600 mt-1">Comprehensive syllabus covering fundamental to advanced topics.</p>
+      </div>
+      <a
+        href="#enquire"
+        class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-all self-start md:self-auto"
+      >
+        <span>Download Detailed Curriculum (PDF)</span>
+      </a>
+    </div>
+
+    <div class="space-y-3.5">
+      {modules.map((mod, idx) => (
+        <details class="group rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-all open:border-emerald-500/50 open:shadow-sm" open={idx === 0}>
+          <summary class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 list-none select-none text-sm sm:text-base">
+            <div class="flex items-center gap-3.5">
+              <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">
+                {idx + 1}
+              </span>
+              <span class="text-slate-900 font-bold">{mod.title}</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-xs font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
+                {mod.duration || `${mod.topics.length} topics`}
+              </span>
+              <span class="text-slate-400 transition-transform duration-200 group-open:rotate-180 group-open:text-emerald-600 text-xs">
+                ▼
+              </span>
+            </div>
+          </summary>
+          {mod.topics && mod.topics.length > 0 && (
+            <ul class="mt-4 pt-4 border-t border-slate-100 space-y-2.5 text-xs sm:text-sm text-slate-600">
+              {mod.topics.map((topic) => (
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>{topic}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </details>
+      ))}
+    </div>
+  </section>
+)}

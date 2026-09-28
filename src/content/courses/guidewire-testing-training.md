@@ -2,32 +2,7 @@
 title: Guidewire Testing Training
 slug: guidewire-testing-training
 category: guidewire
-valueProp: Master Guidewire Testing Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Guidewire Testing'
-    module: 'Module 1: Introduction to Guidewire Testing'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Guidewire Testing Training is designed to help learners master insurance domain testing with real-time scenarios. This Guidewire Testing Course covers Guidewire Manual Testing Training, automation basics, and core modules like PolicyCenter, BillingCenter, and ClaimCenter. With Guidewire Testing Online Training, you gain practical skills, certification support, and placement assistance to build a successful QA career in the insurance domain.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

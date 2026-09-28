@@ -6,7 +6,7 @@ menuTitle: MS D365 CRM
 badge: D365 CRM
 priorityTier: tier-1
 navigationLocation: Navigation Bar > All Courses > Microsoft Dynamics 365 > Microsoft Dynamics 365 CRM Online Training
-valueProp: Master Microsoft Dynamics 365 Customer Engagement (Sales, Marketing, Customer Service), Power Platform integration, and custom plugin development with hands-on enterprise sandbox labs.
+valueProp: Build in-demand skills with Microsoft Dynamics 365 Online Course designed for beginners and professionals. This comprehensive Microsoft Dynamics 365 Course Online Course covers Microsoft Dynamics 365 CRM Training, real-time projects, and practical use cases. Learn through expert-led sessions, gain hands-on experience and excel with Microsoft Dynamics 365 CRM Online Training.
 metaTitle: Microsoft Dynamics 365 CRM Online Training | Live Project Training
 metaDescription: Master Microsoft Dynamics 365 CRM with hands-on sandbox labs. Learn Sales, Customer Service, Power Apps, Dataverse, and plugin customization with dedicated placement support.
 duration: 45-60 Hrs
@@ -18,65 +18,6 @@ batchInfo:
   duration: 45-60 Hrs
   mode: Live Interactive Online + Lab Sandbox
   startDate: Starting This Weekend
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Dynamics 365 & Architecture'
-    module: 'Module 1: Introduction to Dynamics 365 & Architecture'
-    topics:
-      - Overview of Microsoft Dynamics 365 CE / CRM platform
-      - Dynamics 365 architecture, deployment models (Online vs. On-Premises)
-      - 'Customer Engagement modules: Sales, Customer Service, Marketing, Field Service'
-      - Navigating the Unified Interface and model-driven apps
-      - Dataverse (Common Data Service) fundamentals
-  - moduleTitle: 'Module 2: Security Modeling & Business Units'
-    module: 'Module 2: Security Modeling & Business Units'
-    topics:
-      - Security roles, privileges, and access levels
-      - Business units, teams, and user management
-      - Field-level security and column-level access
-      - Hierarchy security models
-      - Sharing records and cascade behaviors
-  - moduleTitle: 'Module 3: Dataverse Entity Configuration & Relationships'
-    module: 'Module 3: Dataverse Entity Configuration & Relationships'
-    topics:
-      - Standard vs. custom tables and column types
-      - 1:N, N:N, and self-referential relationships
-      - Views, forms, dashboards, and charts customization
-      - Business process flows and stage gating
-      - Data import, export, and bulk delete jobs
-  - moduleTitle: 'Module 4: Business Rules, Workflows & Power Automate'
-    module: 'Module 4: Business Rules, Workflows & Power Automate'
-    topics:
-      - Business rules for client-side and server-side logic
-      - Classic workflows and real-time workflows
-      - Power Automate cloud flows triggered from Dataverse
-      - Approval flows and adaptive cards
-      - SLA, entitlements, and routing rules in Customer Service
-  - moduleTitle: 'Module 5: Client-Side Scripting using JavaScript & Web Resources'
-    module: 'Module 5: Client-Side Scripting using JavaScript & Web Resources'
-    topics:
-      - Xrm.Page vs. Xrm.WebApi model-driven app SDK
-      - 'Form event handlers: OnLoad, OnChange, OnSave'
-      - Ribbon/command bar customization with RibbonWorkbench
-      - HTML and JS web resources deployment
-      - PCF (Power Apps Component Framework) custom controls
-  - moduleTitle: 'Module 6: Server-Side Customization (C# Plugins & Custom Workflow Activities)'
-    module: 'Module 6: Server-Side Customization (C# Plugins & Custom Workflow Activities)'
-    topics:
-      - 'Plugin architecture: pre-validation, pre-operation, post-operation stages'
-      - IOrganizationService and ITracingService
-      - Synchronous vs. asynchronous plugin registration
-      - Custom workflow activities and workflow assemblies
-      - Early-bound vs. late-bound entity programming
-      - Plugin Profiler and sandbox isolation debugging
-  - moduleTitle: 'Module 7: Integration with Azure, Web APIs & Power Platform'
-    module: 'Module 7: Integration with Azure, Web APIs & Power Platform'
-    topics:
-      - Dynamics 365 Web API (OData) for CRUD operations
-      - Azure Service Bus and Azure Functions integration
-      - Power Apps canvas apps embedded in Dynamics 365
-      - Power BI dashboards in model-driven apps
-      - Virtual entities and external data sources
-      - Dataverse connectors and custom connectors in Power Platform
 faqs:
   - question: What is Microsoft Dynamics 365 CRM?
     answer: Microsoft Dynamics 365 CRM Online Training is a cloud-based solution that helps businesses manage sales, customer service, and marketing activities. Through Microsoft Dynamics D365 CRM functional training online, learners understand how to automate workflows, track customer interactions, and improve business efficiency using real-time CRM tools and applications.

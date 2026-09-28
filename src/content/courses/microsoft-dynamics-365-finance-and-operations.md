@@ -2,32 +2,7 @@
 title: Microsoft Dynamics 365 Finance And Operations Training
 slug: microsoft-dynamics-365-finance-and-operations
 category: ms-d365
-valueProp: Master Microsoft Dynamics 365 Finance And Operations Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Microsoft Dynamics 365 Finance And Operations'
-    module: 'Module 1: Introduction to Microsoft Dynamics 365 Finance And Operations'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Kickstart your career with Microsoft Dynamics 365 Finance and Operations Online Training. This Dynamics 365 Finance and Operations Training Course covers finance, supply chain, and core business processes. Our D365 F&O Training and Dynamics 365 F&O Certification Course provide hands-on experience. Enroll in Dynamics 365 Finance and Operations Functional Training to gain practical skills and become job-ready.
 batchInfo:
   type: Online
   duration: 45-60 Hrs
@@ -128,7 +103,10 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-overview: Advance your development skills with Dynamics 365 Finance and Operations Developer Training, focused on X++, extensions, workflows, and system integrations. This program is ideal for professionals aiming to become ERP developers. With structured Microsoft Dynamics 365 Finance and Operations Online Training, you will learn to design, develop, and deploy scalable solutions, preparing you for high-demand roles in enterprise technology.
+overview: |-
+  Boost your career with Microsoft Dynamics 365 Finance and Operations Online Training, designed to build strong technical expertise in enterprise applications. This Microsoft Dynamics 365 F&O Technical Course covers architecture, data management, integrations, and customization. Through expert-led Microsoft Dynamics 365 Finance and Operations Online Classes, learners gain hands-on exposure to real-time business scenarios and industry-relevant skills.
+
+  Advance your development skills with Dynamics 365 Finance and Operations Developer Training, focused on X++, extensions, workflows, and system integrations. This program is ideal for professionals aiming to become ERP developers. With structured Microsoft Dynamics 365 Finance and Operations Online Training, you will learn to design, develop, and deploy scalable solutions, preparing you for high-demand roles in enterprise technology.
 aboutCourse: |-
   This Microsoft Dynamics 365 Finance And Operations Training training program offers a deep dive into the platform ecosystem and its architectural foundation. As organizations increasingly adopt enterprise solutions, professionals skilled in these technologies are in high demand.
 

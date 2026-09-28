@@ -2,32 +2,7 @@
 title: Dotnet Full Stack Training in Hyderabad
 slug: dotnet-full-stack-training-in-hyderabad
 category: development
-valueProp: Master Dotnet Full Stack Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Dotnet Full Stack Training'
-    module: 'Module 1: Introduction to Dotnet Full Stack Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Build industry-ready web development skills with our Dotnet Full Stack Online Training designed for beginners, graduates, and working professionals. Gain practical knowledge through Dotnet Full Stack Training in Hyderabad covering frontend, backend, databases, APIs, and deployment concepts. Our Dotnet Full Stack Course Online includes hands-on assignments, real-time implementation, and expert-led sessions. Join Dotnet Full Stack Online Training with Certification and enhance your expertise through Dotnet Full Stack Online Classes with Live Projects for better career opportunities.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

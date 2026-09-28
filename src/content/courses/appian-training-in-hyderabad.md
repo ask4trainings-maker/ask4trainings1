@@ -2,32 +2,7 @@
 title: Best Appian Training in Hyderabad
 slug: appian-training-in-hyderabad
 category: other-tools
-valueProp: Master Appian Training in Hyderabad with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Appian Training'
-    module: 'Module 1: Introduction to Appian Training'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Boost your career with Appian Online Training, designed to help learners master low-code application development, business process automation, and workflow management. Our Appian Training in Hyderabad provides practical exposure through industry-focused learning and expert guidance. The Appian Online Course covers core and advanced concepts with hands-on exercises. Gain real-world experience through Appian Online Classes with Live Projects and validate your skills with Appian Online Training with Certification, preparing you for successful Appian development careers.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

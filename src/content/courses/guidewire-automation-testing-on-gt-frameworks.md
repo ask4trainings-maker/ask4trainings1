@@ -2,32 +2,7 @@
 title: Guidewire Automation Testing On Gt Frameworks Training
 slug: guidewire-automation-testing-on-gt-frameworks
 category: guidewire
-valueProp: Master Guidewire Automation Testing on  GT Framework techniques designed for modern insurance applications. This training covers Guidewire testing tutorial, Selenium integration, and real-time project scenarios to build strong QA automation skills. Learn PolicyCenter, ClaimCenter, and BillingCenter automation testing, along with best practices, tools, and interview-ready concepts. Ideal for beginners and professionals aiming for high-demand Guidewire automation jobs and career growth in software testing.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Guidewire Automation Testing On Gt Frameworks'
-    module: 'Module 1: Introduction to Guidewire Automation Testing On Gt Frameworks'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project implementation'
-    module: 'Module 4: Real-time Project implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Master Guidewire Automation Testing on GT Framework techniques designed for modern insurance applications. This training covers Guidewire testing tutorial, Selenium integration, and real-time project scenarios to build strong QA automation skills. Learn PolicyCenter, ClaimCenter, and BillingCenter automation testing, along with best practices, tools, and interview-ready concepts. Ideal for beginners and professionals aiming for high-demand Guidewire automation jobs and career growth in software testing.
 batchInfo:
   type: Online
   duration: 45-60 Hrs

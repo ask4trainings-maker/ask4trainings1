@@ -2,32 +2,7 @@
 title: Best Data Science Online Training with Certification
 slug: data-science-online-training
 category: trending-courses
-valueProp: Master Data Science Online Training with our enterprise-grade curriculum and secure high-impact roles.
-syllabus:
-  - moduleTitle: 'Module 1: Introduction to Data Science'
-    module: 'Module 1: Introduction to Data Science'
-    topics:
-      - Architecture and Core Concepts
-      - Installation and Setup
-      - Navigation and UI
-  - moduleTitle: 'Module 2: Advanced Configuration'
-    module: 'Module 2: Advanced Configuration'
-    topics:
-      - Data Modeling
-      - Business Logic Implementation
-      - Security and Access Control
-  - moduleTitle: 'Module 3: Integration and APIs'
-    module: 'Module 3: Integration and APIs'
-    topics:
-      - RESTful APIs and Web Services
-      - Batch Processing
-      - Event Messaging
-  - moduleTitle: 'Module 4: Real-time Project Implementation'
-    module: 'Module 4: Real-time Project Implementation'
-    topics:
-      - End to end project setup
-      - Deployment and CI/CD
-      - Troubleshooting and Best Practices
+valueProp: Kickstart your career with Data Science Online Training designed for beginners and professionals. Our Data Science Online Course in Hyderabad offers flexible learning with expert guidance and real-time projects. Enroll in top-rated Data Science Online Courses in Hyderabad to gain industry-ready skills. Earn a globally recognized Data Science Certification and stand out in the job market. Choose from the Best Data Science Courses to master Python, machine learning and analytics.
 batchInfo:
   type: Online
   duration: 45-60 Hrs
