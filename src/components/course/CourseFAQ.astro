@@ -31,18 +31,22 @@ const faqSchema = {
     
     <div class="space-y-4 max-w-4xl mx-auto" data-faqs-container>
       {faqs.map((faq, idx) => (
-        <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-colors shadow-sm open:border-emerald-500/40" open={idx === 0}>
-          <summary class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 list-none">
+        <div class={`group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-all shadow-sm ${idx === 0 ? 'is-open' : ''} [&.is-open]:border-emerald-500/40`}>
+          <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 list-none">
             <span class="pr-6 text-sm sm:text-base font-semibold text-slate-800">{faq.question}</span>
-            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-100 text-slate-500 transition-transform duration-200 group-open:rotate-180 group-open:bg-emerald-50 group-open:text-emerald-600 text-xs">
-              ▼
-            </span>
-          </summary>
-          
-          <div class="px-6 pb-6 pt-2 text-sm sm:text-base md:text-lg text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
-            {faq.answer}
+            <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-[.is-open]:rotate-180 group-[.is-open]:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
           </div>
-        </details>
+          
+          <div class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out group-[.is-open]:grid-rows-[1fr]">
+            <div class="overflow-hidden">
+              <div class="px-6 pb-6 pt-2 text-sm sm:text-base md:text-lg text-slate-600 border-t border-slate-100 leading-relaxed bg-slate-50/50">
+                {faq.answer}
+              </div>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   </div>
@@ -52,15 +56,24 @@ const faqSchema = {
     document.addEventListener('DOMContentLoaded', () => {
       const container = document.querySelector('[data-faqs-container]');
       if (!container) return;
-      const items = container.querySelectorAll('details');
+      const items = container.querySelectorAll('.group');
 
       items.forEach((item) => {
         item.addEventListener('mouseenter', () => {
           items.forEach((sibling) => {
-            if (sibling !== item) sibling.removeAttribute('open');
+            if (sibling !== item) sibling.classList.remove('is-open');
           });
-          item.setAttribute('open', '');
+          item.classList.add('is-open');
         });
+        
+        const header = item.firstElementChild;
+        if (header) {
+          header.addEventListener('click', () => {
+            const isOpen = item.classList.contains('is-open');
+            items.forEach((sibling) => sibling.classList.remove('is-open'));
+            if (!isOpen) item.classList.add('is-open');
+          });
+        }
       });
     });
   </script>
