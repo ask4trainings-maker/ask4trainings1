@@ -22,6 +22,23 @@ collections:
     editor:
       preview: false
     files:
+      - label: 🚀 Navigation & Top Header
+        name: navigation
+        file: src/content/settings/navigation.json
+        format: json
+        fields:
+          - label: "Top Strip Phone"
+            name: "phone"
+            widget: "string"
+          - label: "Top Strip Email"
+            name: "email"
+            widget: "string"
+          - label: "Student Portal URL"
+            name: "studentPortalUrl"
+            widget: "string"
+          - label: "Enquire Button URL"
+            name: "enquireUrl"
+            widget: "string"
       - label: 🦶 Global Footer Settings
         name: footer
         file: src/content/settings/footer.json
@@ -153,7 +170,7 @@ collections:
       # ── Homepage (home.json) ───────────────────────────────────────────────
       - label: 🏠 Homepage (/)
         name: home
-        file: src/data/pages/home.json
+        file: src/content/pages/home.json
         format: json
         fields:
           - label: 📍 Live Location
@@ -252,7 +269,7 @@ collections:
       # ── About Us (about.json) ─────────────────────────────────────────────
       - label: 🏢 About Us (/about-us)
         name: about
-        file: src/data/pages/about.json
+        file: src/content/pages/about.json
         format: json
         fields:
           - label: 📍 Live Location
@@ -320,7 +337,7 @@ collections:
       # ── Contact Us (contact.json) ────────────────────────────────────────
       - label: 📞 Contact Us (/contact-us)
         name: contact
-        file: src/data/pages/contact.json
+        file: src/content/pages/contact.json
         format: json
         fields:
           - label: 📍 Live Location
