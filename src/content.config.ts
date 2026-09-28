@@ -13,6 +13,7 @@ const courses = defineCollection({
     slug: z.string(), // preserves root-flat legacy slug exactly
     draft: z.boolean().default(false),
     valueProp: z.string().optional(),
+    heroTagline: z.string().optional(),
     navigationPath: z.string().optional(),
     priorityTier: z.string().optional(),
     badge: z.string().optional(),

@@ -11,6 +11,7 @@ export interface Props {
   valueProp?: string;
   videoUrl?: string;
   courseImage?: string;
+  heroTagline?: string;
 }
 
 const { 
@@ -21,7 +22,8 @@ const {
   rating, 
   valueProp,
   videoUrl,
-  courseImage
+  courseImage,
+  heroTagline
 } = Astro.props;
 
 const categoryLabel = (categoriesData as any)[category]?.label || category.replace(/-/g, ' ');
@@ -121,7 +123,7 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
               />
             </div>
           ) : (
-            <CourseHeroGraphic category={category} courseTitle={title} />
+            <CourseHeroGraphic category={category} courseTitle={title} heroTagline={heroTagline} />
           )}
         </div>
       </div>

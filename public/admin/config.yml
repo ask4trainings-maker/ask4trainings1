@@ -434,6 +434,12 @@ collections:
         required: false
         hint: "Lead introductory paragraph displayed below the H1 in the hero section."
 
+      - label: "Hero Graphic Tagline"
+        name: "heroTagline"
+        widget: "string"
+        required: false
+        hint: "Optional 1-sentence descriptor shown in the hero graphic card. Defaults to domain description if left blank."
+
       - label: "Course Preview Image (Deprecated)"
         name: "courseImage"
         widget: "image"
