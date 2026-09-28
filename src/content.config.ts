@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { glob, file } from 'astro/loaders';
 
 const courses = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/courses" }),

@@ -29,7 +29,19 @@ const formatSocialHandle = (url: string, platform: string) => {
     </div>
 
     <div class="relative max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-16 text-center">Get in Touch</h1>
+      <div class="text-center mb-12">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-slate-900 mb-4">{contactData.headline}</h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto">{contactData.subheadline}</p>
+      </div>
+
+      <!-- Inquiry Notice Banner -->
+      {contactData.inquiryNotice && (
+        <div class="max-w-4xl mx-auto bg-emerald-50 border border-emerald-100 rounded-xl p-6 text-center mb-16 shadow-sm">
+          <p class="text-emerald-800 font-medium">
+            {contactData.inquiryNotice}
+          </p>
+        </div>
+      )}
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         <!-- Left Column: Contact Info & Map (7 cols) -->
@@ -47,7 +59,7 @@ const formatSocialHandle = (url: string, platform: string) => {
                 </div>
                 <div class="mt-1">
                   <h3 class="font-bold text-slate-900 text-lg mb-1">Visit Us</h3>
-                  <p class="leading-relaxed whitespace-pre-line">{settingsData.contact.address}</p>
+                  <p class="leading-relaxed whitespace-pre-line">{contactData.centerAddress.street}, {contactData.centerAddress.area}<br/>{contactData.centerAddress.pincode}</p>
                 </div>
               </div>
               
@@ -59,7 +71,9 @@ const formatSocialHandle = (url: string, platform: string) => {
                 </div>
                 <div class="mt-1">
                   <h3 class="font-bold text-slate-900 text-lg mb-1">Email Us</h3>
-                  <a href={`mailto:${settingsData.contact.email}`} class="hover:text-emerald-500 transition-colors block mb-1">{settingsData.contact.email}</a>
+                  {contactData.emailAddresses.map((email: string) => (
+                    <a href={`mailto:${email}`} class="hover:text-emerald-500 transition-colors block mb-1">{email}</a>
+                  ))}
                 </div>
               </div>
               
@@ -71,7 +85,9 @@ const formatSocialHandle = (url: string, platform: string) => {
                 </div>
                 <div class="mt-1">
                   <h3 class="font-bold text-slate-900 text-lg mb-1">Call Us</h3>
-                  <a href={`tel:${settingsData.contact.phone1}`} class="hover:text-emerald-500 transition-colors block">{settingsData.contact.phone1}</a>
+                  {contactData.phoneNumbers.map((phone: string) => (
+                    <a href={`tel:${phone}`} class="hover:text-emerald-500 transition-colors block">{phone}</a>
+                  ))}
                 </div>
               </div>
             </div>
@@ -145,7 +161,7 @@ const formatSocialHandle = (url: string, platform: string) => {
         <!-- Responsive Map Embed Shell -->
         <div class="w-full h-[380px] sm:h-[440px] md:h-[480px] rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-100">
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487066.04404752556!2d78.388885!3d17.497798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f41c11f7a7%3A0x54cfe3884c5983b!2sDeeksha%20Hospital!5e0!3m2!1sen!2sus!4v1790247363770!5m2!1sen!2sus" 
+            src={contactData.centerAddress.mapsLink}
             class="w-full h-full border-0" 
             allowfullscreen="" 
             loading="lazy" 

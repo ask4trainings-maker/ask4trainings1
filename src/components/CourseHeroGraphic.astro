@@ -14,18 +14,18 @@ const categoryMeta = (categoriesData as Record<string, any>)[catKey];
 
 // Setup fallback map (Tier 3)
 const domainArchetypeFallback: Record<string, string> = {
-  'guidewire': 'P&C insurance core platform coverage across PolicyCenter, ClaimCenter, and BillingCenter.',
-  'siemens': 'Digital enterprise lifecycle management, Active Workspace client, and industrial engineering workflows.',
-  'cloud-computing': 'Enterprise cloud architecture, multi-tenant CRM, and scalable data cloud warehousing.',
-  'devops': 'Automated CI/CD pipelines, container orchestration, and infrastructure as code across cloud ecosystems.',
-  'development': 'Full-stack architecture, backend enterprise APIs, and modern responsive frontend engineering.',
-  'sap': 'Enterprise resource planning, financial accounting (FICO), materials management, and sales distribution.',
-  'oracle': 'Fusion cloud financials, human capital management, and core banking technology architectures.',
-  'ms-d365': 'Cloud ERP and CRM customization, financial operations, and enterprise technical development.',
-  'microsoft-dynamics-365': 'Cloud ERP and CRM customization, financial operations, and enterprise technical development.',
-  'trending-courses': 'Next-generation AI, predictive data science, enterprise intelligence, and defensive cybersecurity.',
-  'new-courses': 'Emerging procurement automation, supply chain planning, and modern digital marketing ecosystems.',
-  'other-tools': 'Enterprise low-code BPM, modern automated software testing, and agile delivery tools.'
+  'guidewire': 'Core P&C Policy, Billing & Claims Architecture',
+  'siemens': 'Enterprise Teamcenter & Active Workspace Systems',
+  'cloud-computing': 'Production CI/CD Pipelines & Cloud Infrastructure',
+  'devops': 'Production CI/CD Pipelines & Cloud Infrastructure',
+  'development': 'Full-stack Architecture & Enterprise Backend APIs',
+  'sap': 'Financial Accounting, Materials & Sales Platforms',
+  'oracle': 'Core Cloud Financials & HCM Enterprise Architecture',
+  'ms-d365': 'Cloud ERP & CRM Enterprise Architecture',
+  'microsoft-dynamics-365': 'Cloud ERP & CRM Enterprise Architecture',
+  'trending-courses': 'Enterprise Data Pipelines & Predictive Modeling',
+  'new-courses': 'Emerging Enterprise Technologies & Ecosystems',
+  'other-tools': 'Enterprise Low-Code, Testing & Agile Delivery'
 };
 
 let domainLabel = categoryMeta?.label || "Professional Program";
@@ -66,17 +66,18 @@ let resolvedTagline = '';
 if (heroTagline) {
   resolvedTagline = heroTagline;
 } else if (categoryMeta?.intro) {
-  resolvedTagline = categoryMeta.intro.split('\n')[0].trim();
+  // Use a shorter version if available, otherwise just use fallback
+  resolvedTagline = domainArchetypeFallback[catKey] || domainArchetypeFallback['other-tools'];
 } else {
   resolvedTagline = domainArchetypeFallback[catKey] || domainArchetypeFallback['other-tools'];
 }
 
-// Fallback truncate to ~120 characters if necessary to preserve whitespace
-if (resolvedTagline.length > 130) {
-  resolvedTagline = resolvedTagline.substring(0, 127) + '...';
+// Fallback truncate
+if (resolvedTagline.length > 80) {
+  resolvedTagline = resolvedTagline.substring(0, 77) + '...';
 }
 ---
-<div class="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 aspect-[16/9] min-h-[220px] max-h-[340px] flex flex-col items-center justify-between p-6 w-full shadow-md shadow-slate-950/20">
+<div class="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 aspect-[16/9] min-h-[210px] sm:min-h-[220px] max-h-[340px] flex flex-col items-center justify-between p-6 w-full shadow-md shadow-slate-950/20">
 
   <!-- Layer 1 & 2: Midnight Canvas, Aurora Spotlight, Concentric Geometry -->
   <div class="absolute inset-0 pointer-events-none z-0">
@@ -110,16 +111,16 @@ if (resolvedTagline.length > 130) {
     <svg class="absolute bottom-3 right-3 w-2 h-2 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2v20m10-10H2" /></svg>
   </div>
 
-  <div class="relative z-10 flex flex-col items-center w-full flex-1 justify-center pt-2">
+  <div class="relative z-10 flex flex-col items-center w-full flex-1 justify-center pt-1">
     <!-- Layer 3: Luminous Frosted-Glass Central Emblem -->
-    <div class="h-16 w-16 sm:h-18 sm:w-18 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/20 ring-1 ring-emerald-500/30 shadow-[0_0_25px_rgba(16,185,129,0.2),inset_0_1px_1px_rgba(255,255,255,0.2)] flex items-center justify-center transition-transform duration-300 hover:scale-105 mb-4">
+    <div class="h-16 w-16 sm:h-18 sm:w-18 rounded-2xl bg-white/[0.07] backdrop-blur-md border border-white/20 ring-1 ring-emerald-500/30 shadow-[0_0_25px_rgba(16,185,129,0.2),inset_0_1px_1px_rgba(255,255,255,0.2)] flex items-center justify-center transition-transform duration-300 hover:scale-105 mb-3">
       <svg class="h-7 w-7 sm:h-8 sm:w-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.85">
         <Fragment set:html={IconSvg} />
       </svg>
     </div>
 
     <!-- Layer 4: Floating Glass Status Badge -->
-    <div class="mb-2">
+    <div class="mb-1">
       <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/[0.06] border border-white/10 shadow-sm backdrop-blur-md text-[10px] sm:text-[11px] font-semibold text-slate-200 tracking-widest uppercase">
         <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_#34d399]"></span>
         {domainLabel}
@@ -128,8 +129,8 @@ if (resolvedTagline.length > 130) {
   </div>
 
   <!-- Layer 5: Contextual Micro-Copy -->
-  <div class="relative z-10 w-full border-t border-white/5 pt-4 mt-auto">
-    <p class="text-xs sm:text-[13px] text-slate-300/90 leading-relaxed text-center max-w-xs sm:max-w-sm mx-auto">
+  <div class="relative z-10 w-full border-t border-white/5 pt-3 sm:pt-4 mt-auto">
+    <p class="text-[11px] sm:text-xs text-slate-300/90 leading-relaxed text-center max-w-[280px] sm:max-w-[320px] mx-auto line-clamp-2 px-3">
       {resolvedTagline}
     </p>
   </div>

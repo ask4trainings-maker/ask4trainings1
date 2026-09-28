@@ -1,0 +1,28 @@
+{
+  "companySummary": "An elite IT training ecosystem delivering real-time, project-driven mastery across enterprise technologies.",
+  "contactInfo": {
+    "phone": "+91 8099949888",
+    "email": "ask4trainings@gmail.com",
+    "address": "Ameerpet, Hyderabad"
+  },
+  "quickLinks": [
+    { "label": "About Us", "href": "/about-us/" },
+    { "label": "Contact Us", "href": "/contact-us/" },
+    { "label": "Privacy Policy", "href": "/privacy-policy/" },
+    { "label": "Terms of Service", "href": "/terms-of-service/" }
+  ],
+  "categoryLinks": [
+    { "label": "Guidewire PolicyCenter", "href": "/guidewire-policycenter-online-training/" },
+    { "label": "Siemens Teamcenter", "href": "/teamcenter-plm-training/" },
+    { "label": "Cloud & DevOps", "href": "/cloud-computing/" },
+    { "label": "Data & AI", "href": "/trending-courses/" }
+  ],
+  "socialLinks": [
+    { "platform": "facebook", "url": "https://facebook.com/ask4trainings", "active": true },
+    { "platform": "twitter", "url": "https://twitter.com/ask4trainings", "active": true },
+    { "platform": "linkedin", "url": "https://linkedin.com/company/ask4trainings", "active": true },
+    { "platform": "youtube", "url": "https://youtube.com/c/ask4trainings", "active": true },
+    { "platform": "instagram", "url": "https://instagram.com/ask4trainings", "active": true }
+  ],
+  "copyrightText": "© 2026 Ask 4 Trainings. All rights reserved."
+}

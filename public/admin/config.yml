@@ -22,6 +22,44 @@ collections:
     editor:
       preview: false
     files:
+      - label: 🦶 Global Footer Settings
+        name: footer
+        file: src/content/settings/footer.json
+        format: json
+        fields:
+          - label: "Company Summary"
+            name: "companySummary"
+            widget: "text"
+          - label: "Contact Info"
+            name: "contactInfo"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+          - label: "Quick Links"
+            name: "quickLinks"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Category Links"
+            name: "categoryLinks"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "href", widget: "string" }
+          - label: "Social Links"
+            name: "socialLinks"
+            widget: "list"
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Active", name: "active", widget: "boolean", default: true }
+          - label: "Copyright Text"
+            name: "copyrightText"
+            widget: "string"
+
       - label: ⚙️ Site-Wide Settings (Contact, Socials, Banner)
         name: site_settings
         file: src/data/settings.json
@@ -30,6 +68,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Sitewide — Header, Footer, Contact Page, Banner"
             required: false
             hint: "READ-ONLY. These values appear across every page."
@@ -120,6 +159,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Homepage → / (root URL)"
             required: false
             hint: "READ-ONLY. All edits here appear on ask4trainings.com/"
@@ -218,6 +258,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Navigation → About Us → /about-us/"
             required: false
             hint: "READ-ONLY. All edits here appear on ask4trainings.com/about-us/"
@@ -285,22 +326,42 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Navigation → Contact Us → /contact-us/"
             required: false
             hint: "READ-ONLY. Edits here affect the enquiry form sidebar on the Contact page."
+          - label: "Headline"
+            name: "headline"
+            widget: "string"
+          - label: "Subheadline"
+            name: "subheadline"
+            widget: "string"
+          - label: "Inquiry Notice"
+            name: "inquiryNotice"
+            widget: "text"
+          - label: "Phone Numbers"
+            name: "phoneNumbers"
+            widget: "list"
+          - label: "Email Addresses"
+            name: "emailAddresses"
+            widget: "list"
+          - label: "Center Address"
+            name: "centerAddress"
+            widget: "object"
+            fields:
+              - { label: "Street", name: "street", widget: "string" }
+              - { label: "Area", name: "area", widget: "string" }
+              - { label: "Pincode", name: "pincode", widget: "string" }
+              - { label: "Google Maps Embed Link", name: "mapsLink", widget: "string" }
+          - label: "Office Hours"
+            name: "officeHours"
+            widget: "string"
           - label: Enquiry Form Header
             name: formHeader
             widget: string
-            hint: "Heading shown above the contact form. e.g., 'Send an Enquiry'"
           - label: Enquiry Form Sub-text
             name: formSubtext
             widget: text
-            hint: "Short description under the form heading. e.g., 'Fill out the form and our team will respond within 2 hours.'"
-          - label: Guidelines / Notes
-            name: guidelines
-            widget: text
-            required: false
-            hint: "Optional internal notes or instructions for corporate / course enquiries."
 
   # ─────────────────────────────────────────────────────────────────────────
   # 3. COURSE PAGES — markdown content in src/content/courses/
@@ -394,6 +455,7 @@ collections:
       - label: "URL Slug"
         name: "slug"
         widget: "string"
+        readonly: true
         required: true
         hint: "Permanent URL path, e.g., 'guidewire-policycenter-online-training'."
 
@@ -646,6 +708,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Navigation → Services → Work Support → /work-support/"
             hint: "READ-ONLY context marker."
           - label: SEO Meta Title
@@ -726,6 +789,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Navigation → Services → Corporate Training"
             hint: "READ-ONLY context marker."
           - label: SEO Meta Title
@@ -797,6 +861,7 @@ collections:
           - label: 📍 Live Location
             name: livePath
             widget: string
+            readonly: true
             default: "Navigation → Services → Placement Assistance"
             hint: "READ-ONLY context marker."
           - label: SEO Meta Title
