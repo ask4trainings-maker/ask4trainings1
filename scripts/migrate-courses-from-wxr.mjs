@@ -63,414 +63,239 @@ for (const file of courseFiles) {
   let rawContent = getStringVal(item['content:encoded'] || '');
   rawContent = cleanHtml(rawContent);
   const $ = cheerio.load(rawContent);
+  
+  const extractedModules = [];
+  const extractedFaqs = [];
+  let extractedWhyLearnCopy = '';
 
-  const extracted = {};
+  const allElements = $('h1, h2, h3, h4, h5, h6, p, ul, ol, a, .elementor-accordion-item, .elementor-toggle-item, .elementskit-card, details').toArray();
 
-  // Find all elements to iterate sequentially
-  const elements = $('h1, h2, h3, h4, h5, h6, p, ul, ol, .elementor-accordion-item, .elementor-toggle-item, .elementskit-card, details').toArray();
-  
-  let currentSection = null;
-  let currentSubHeading = null;
-  
-  let overviewPart1 = '';
-  let overviewPart2 = '';
-  
+  let state = 'normal'; 
   let currentModule = null;
-  let modules = [];
-  
-  let whyMasterDesc = '';
-  let aboutHeaderCount = 0;
-  
-  let objectives = [];
-  let whyMasterPillars = []; // keeping it for safety although we stopped using it
-  let currentPillar = null;
-  let keyFeatures = [];
-  
-  let benefits = [];
-  let currentBenefit = null;
-  
-  let whyChoose = '';
-  
-  let whoShouldEnroll = [];
-  let currentProfile = null;
-  
-  let jobRoles = [];
-  let currentJobRole = null;
-  let jobRoleTokens = [];
-  let jobRoleIndex = 0;
-  
-  let faqs = [];
   let currentFaq = null;
+  let aboutParagraphs = [];
+  let potentialAboutParagraphs = [];
   
-  let certification = null;
-  
-  for (let i = 0; i < elements.length; i++) {
-    const el = elements[i];
+  for (let i = 0; i < allElements.length; i++) {
+    const el = allElements[i];
     const $el = $(el);
     const tagName = el.tagName.toLowerCase();
     const text = cleanText($el.text());
     
-    // Header detection for sections
+    // State transitions on Headings
     if (/^h[1-6]$/.test(tagName)) {
-      if (/(guidewire trainer|trainer|highlights)/i.test(text)) {
-        break; // Hard Stop Boundary
-      }
-      if (/(frequently asked questions|faq)/i.test(text)) {
-        currentSection = 'faq';
+      if (/(📘\s*course curriculum|course content)/i.test(text)) {
+        state = 'modules';
         continue;
       }
-      if (/(certification preparation|certification program|career-focused.*?certification)/i.test(text)) {
-        currentSection = 'certification';
+      if (/(faq'?s\s+on|frequently\s+asked\s+questions)/i.test(text)) {
+        state = 'faqs';
         continue;
       }
-      if (/(job roles of)/i.test(text)) {
-        currentSection = 'jobRoles';
-        continue;
+      if (state === 'faqs' && /(need\s+demo|let'?s\s+connect|enroll\s+now)/i.test(text)) {
+        state = 'normal';
+      }
+      if (state === 'modules' && /(about\s+.*?course|about\s+|key features)/i.test(text)) {
+        state = 'normal';
       }
       
-      if (/(register now|your name|your email)/i.test(text)) {
-        currentSection = 'register';
+      // Step 3: Why Learn extraction
+      if (/^about\s+/i.test(text)) {
+        state = 'about';
+        potentialAboutParagraphs = []; // Reset on each About heading to get the last one before objectives
         continue;
       }
-      
-      if (/(overview of)/i.test(text)) {
-        currentSection = 'overview';
-        continue;
-      }
-      
-      if (/(course content|📘 course curriculum)/i.test(text)) {
-        currentSection = 'modules';
-        continue;
-      }
-      
-      if (/^about /i.test(text) || /(why master this course)/i.test(text)) {
-        aboutHeaderCount++;
-        if (aboutHeaderCount === 2 || /(why master this course)/i.test(text)) {
-          currentSection = 'about';
-        } else {
-          currentSection = 'about_ignore';
-        }
-        continue;
-      }
-      
       if (/(course objectives of|objectives of)/i.test(text)) {
-        currentSection = 'objectives';
-        continue;
-      }
-      
-      if (/(key features of)/i.test(text)) {
-        currentSection = 'features';
-        continue;
-      }
-      
-      if (/(benefits of)/i.test(text)) {
-        currentSection = 'benefits';
-        continue;
-      }
-      
-      if (/(why choose.*?\?)/i.test(text)) {
-        currentSection = 'whychoosecourse';
-        continue;
-      }
-      
-      if (/(eligibility criteria of)/i.test(text)) {
-        currentSection = 'eligibility';
-        continue;
-      }
-      
-      // Sub-headings processing based on current section
-      if (currentSection === 'overview') {
-        if (/(comprehensive|learning path|build skills|master)/i.test(text)) {
-          currentSubHeading = 'overview1';
-        } else if (/(industry-focused|career-focused|functional & technical)/i.test(text)) {
-          currentSubHeading = 'overview2';
+        if (state === 'about' || potentialAboutParagraphs.length > 0) {
+          aboutParagraphs = [...potentialAboutParagraphs];
         }
-      } else if (currentSection === 'modules') {
-        if (/(module\s*\d+:?|level\s*\d+:?)/i.test(text)) {
-          if (currentModule) modules.push(currentModule);
+        state = 'normal';
+      }
+      
+      // Step 1: Module Extraction Pattern A (Heading)
+      if (state === 'modules') {
+        const modMatch = text.match(/(?:Module|Level)\s*\d+[:\-.]?\s*([^<\n]+)/i);
+        if (modMatch) {
           currentModule = { title: text, duration: '', topics: [] };
-        }
-      } else if (currentSection === 'features') {
-        if (/(Mentor|Project|Curriculum|Career|Certification|Placement|Carrer|Placment)/i.test(text)) {
-          let sanitizedTitle = text.trim();
-          if (/carrer/i.test(sanitizedTitle)) sanitizedTitle = 'Career';
-          if (/placment/i.test(sanitizedTitle)) sanitizedTitle = 'Placement';
-          if (/curriculum/i.test(sanitizedTitle)) sanitizedTitle = 'Curriculum';
-          currentPillar = { title: sanitizedTitle, description: '' };
-          keyFeatures.push(currentPillar);
-        }
-      } else if (currentSection === 'jobRoles') {
-        // jobRoles are extracted from <p> tags, not headers, unless they are short tokens
-        if (text.length < 40) {
-            jobRoleTokens.push(text);
-        }
-      } else if (currentSection === 'faq') {
-         currentFaq = { question: text, answer: '' };
-         faqs.push(currentFaq);
-         continue;
-      } else if (currentSection === 'benefits') {
-        currentBenefit = { title: text, description: '' };
-        benefits.push(currentBenefit);
-      } else if (currentSection === 'eligibility') {
-        currentProfile = { title: text, description: '' };
-        whoShouldEnroll.push(currentProfile);
-      }
-      continue;
-    }
-    
-    // Ignore register section content
-    if (currentSection === 'register') continue;
-    
-    // Paragraph / Content Extraction
-    if (tagName === 'p') {
-      if (currentSection === 'overview') {
-        if (currentSubHeading === 'overview1') overviewPart1 += text + '\n\n';
-        else if (currentSubHeading === 'overview2') overviewPart2 += text + '\n\n';
-      } else if (currentSection === 'about') {
-        whyMasterDesc += text + '\n\n';
-      } else if (currentSection === 'objectives') {
-        if (text) objectives.push(text);
-      } else if (currentSection === 'features' && currentPillar) {
-        currentPillar.description += text + '\n\n';
-      } else if (currentSection === 'benefits' && currentBenefit) {
-        currentBenefit.description += text + '\n\n';
-      } else if (currentSection === 'whychoosecourse') {
-        whyChoose += text + '\n\n';
-      } else if (currentSection === 'eligibility' && currentProfile) {
-        currentProfile.description += text + '\n\n';
-      } else if (currentSection === 'jobRoles') {
-        if (text.length >= 40) {
-          let cleanDesc = text.replace(/востребован/gi, "in-demand");
-          
-          let extractedTitle = null;
-          const match1 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
-          if (match1) {
-            extractedTitle = match1[1].trim();
-          } else {
-            const match2 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
-            if (match2) {
-              extractedTitle = match2[1].trim();
-            }
-          }
-          
-          if (!extractedTitle && jobRoleTokens.length > jobRoleIndex) {
-             extractedTitle = jobRoleTokens[jobRoleIndex];
-          }
-          
-          let competencies = ["Enterprise Standards", "Industry Best Practices"];
-          if (extractedTitle) {
-            if (/Developer/i.test(extractedTitle)) {
-               competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
-            } else if (/Configurator/i.test(extractedTitle)) {
-               competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
-            } else if (/Analyst/i.test(extractedTitle)) {
-               competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
-            }
-          }
-          
-          jobRoles.push({ role: extractedTitle || "Consultant", description: cleanDesc + '\n\n', competencies });
-          jobRoleIndex++;
-        }
-      } else if (currentSection === 'faq' && currentFaq) {
-        currentFaq.answer += text + '\n\n';
-      } else if (currentSection === 'certification') {
-        if (!certification) certification = { title: "Industry Recognized Certification", description: '' };
-        certification.description += text + '\n\n';
-      } else if (currentSection === 'modules' && currentModule) {
-        // Look for duration pattern like "5 Topics" or "10 Hours"
-        if (/(topics|hours?|hrs?)/i.test(text) && text.length < 20) {
-           currentModule.duration = text;
-        } else if (text) {
-           currentModule.topics.push(text);
+          extractedModules.push(currentModule);
+          continue;
         }
       }
     }
     
-    // Lists Extraction
-    if (tagName === 'ul' || tagName === 'ol') {
-      $el.find('li').each((_, li) => {
-        const liText = cleanText($(li).text());
-        if (!liText) return;
-        
-        if (currentSection === 'objectives') {
-          objectives.push(liText);
-        } else if (currentSection === 'modules' && currentModule) {
-          currentModule.topics.push(liText);
-        } else if (currentSection === 'benefits' && currentBenefit) {
-          if (!currentBenefit.points) currentBenefit.points = [];
-          currentBenefit.points.push(liText);
-        }
-      });
+    if (tagName === 'a' && ($el.attr('data-ekit-toggle') === 'collapse' || $el.hasClass('elementor-accordion-title') || $el.hasClass('elementor-toggle-title'))) {
+       if (state === 'modules') {
+         const modMatch = text.match(/(?:Module|Level)\s*\d+[:\-.]?\s*([^<\n]+)/i);
+         if (modMatch) {
+            currentModule = { title: text, duration: '', topics: [] };
+            extractedModules.push(currentModule);
+         } else {
+            // some don't have module prefix but are toggles in curriculum
+            currentModule = { title: text, duration: '', topics: [] };
+            extractedModules.push(currentModule);
+         }
+       } else if (state === 'faqs') {
+         let q = text.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
+         if (q.length >= 10) {
+            currentFaq = { question: q, answer: '' };
+            extractedFaqs.push(currentFaq);
+         }
+       }
+       continue;
     }
     
-    // Accordion/Toggle specific for modules if they use elementor toggles
-    if (['div', 'details'].includes(tagName) && ($el.hasClass('elementor-accordion-item') || $el.hasClass('elementor-toggle-item') || $el.hasClass('elementskit-card') || tagName === 'details')) {
-      if (currentSection === 'modules') {
+    // Step 1: Modules Extraction Logic
+    if (state === 'modules') {
+      if (tagName === 'ul' || tagName === 'ol') {
+        let isFlatList = false;
+        $el.find('li').each((_, li) => {
+          const liText = cleanText($(li).text());
+          if (!liText) return;
+          // Pattern B: Flat List Structure
+          if (/(?:Module|Level)\s*\d+[:\-.]?/i.test(liText)) {
+            isFlatList = true;
+            currentModule = { title: liText, duration: '', topics: [] };
+            extractedModules.push(currentModule);
+          } else if (currentModule) {
+            currentModule.topics.push(liText);
+          } else if (!isFlatList && extractedModules.length > 0) {
+             extractedModules[extractedModules.length - 1].topics.push(liText);
+          }
+        });
+      } else if (tagName === 'p') {
+        const modMatch = text.match(/(?:Module|Level)\s*\d+[:\-.]?\s*([^<\n]+)/i);
+        if (modMatch) {
+          currentModule = { title: text, duration: '', topics: [] };
+          extractedModules.push(currentModule);
+        } else if (currentModule && text.length > 0 && text.length < 150) {
+          currentModule.topics.push(text);
+        }
+      } else if (['div', 'details'].includes(tagName)) {
         let tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').text());
         if (!tTitle && tagName === 'details') tTitle = cleanText($el.find('summary').text());
         
         let tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body, p, ul').text());
         
         if (/(module\s*\d+:?|level\s*\d+:?)/i.test(tTitle)) {
-          if (currentModule) modules.push(currentModule);
           currentModule = { title: tTitle, duration: '', topics: [] };
-          // Naive split for topics in accordion content
+          extractedModules.push(currentModule);
           tContent.split(/\n|•|-/).forEach(t => {
             const ct = t.trim();
             if (ct) currentModule.topics.push(ct);
           });
-        } else if (currentModule) {
-           currentModule.topics.push(tTitle);
-        }
-      } else if (currentSection === 'faq') {
-        let tTitle = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').text());
-        if (!tTitle && tagName === 'details') tTitle = cleanText($el.find('summary').text());
-        
-        let tContent = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body, p, ul').text());
-        
-        if (tTitle && tContent) {
-           faqs.push({ question: tTitle, answer: tContent });
         }
       }
     }
     
-    // Check divs for jobRoles if they weren't in <p>
-    if (tagName === 'div' && currentSection === 'jobRoles') {
-      if (text.length >= 40) {
-        // avoid duplicating the same text if there are nested divs
-        if (!jobRoles.some(j => j.description.includes(text) || text.includes(j.description))) {
-          let cleanDesc = text.replace(/востребован/gi, "in-demand");
-          let extractedTitle = null;
-          const match1 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:in\s+[A-Za-z0-9\s]+?)\s+(?:uses|specializes|is|works|focuses|plays|designs|delivers)/i);
-          if (match1) {
-            extractedTitle = match1[1].trim();
-          } else {
-            const match2 = cleanDesc.match(/^(?:A|An)\s+([A-Z][a-zA-Z0-9\s]+?)\s+(?:specializes|is\s+responsible|works|focuses|plays|designs|delivers|builds)/i);
-            if (match2) {
-              extractedTitle = match2[1].trim();
+    // Step 2: FAQs Extraction Logic
+    if (state === 'faqs') {
+      if (['div', 'details'].includes(tagName)) {
+         // Check for accordion items
+         let q = cleanText($el.find('.elementor-tab-title, .elementor-toggle-title, a[data-ekit-toggle="collapse"], .elementskit-card-header, summary').text());
+         if (!q && tagName === 'details') q = cleanText($el.find('summary').text());
+         
+         let a = cleanText($el.find('.elementor-tab-content, .elementor-toggle-content, .elementskit-card-body, p').text());
+         
+         if (q && a) {
+           q = q.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
+           a = a.replace(/^(?:A\d*[:.]?\s*|Ans[:.]?\s*|[-–—:]\s*)/i, '').trim();
+           if (q.length >= 10 && a.length >= 20) {
+             extractedFaqs.push({ question: q, answer: a });
+           }
+         }
+      } else if (tagName === 'p') {
+         if (currentFaq && !currentFaq.answer) {
+             let a = text.replace(/^(?:A\d*[:.]?\s*|Ans[:.]?\s*|[-–—:]\s*)/i, '').trim();
+             if (a.length >= 20) {
+                 currentFaq.answer = a;
+                 currentFaq = null; 
+             }
+             continue;
+         }
+         
+         // Check for paragraph-based FAQ
+         const htmlContent = $el.html() || '';
+         let q = '';
+         let a = '';
+         
+         // Primary Check: <strong> or <b>
+         const strongMatch = htmlContent.match(/^(?:<(?:strong|b)[^>]*>)(.*?)(?:<\/(?:strong|b)>)(.*)/is);
+         if (strongMatch) {
+            q = cleanText(cheerio.load(strongMatch[1]).text());
+            a = cleanText(cheerio.load(strongMatch[2]).text());
+         } else {
+            // Secondary Check: First ? within 160 chars
+            const qmIndex = text.indexOf('?');
+            if (qmIndex !== -1 && qmIndex < 160) {
+               q = text.substring(0, qmIndex + 1).trim();
+               a = text.substring(qmIndex + 1).trim();
             }
-          }
-          if (!extractedTitle && jobRoleTokens.length > jobRoleIndex) {
-             extractedTitle = jobRoleTokens[jobRoleIndex];
-          }
-          
-          let competencies = ["Enterprise Standards", "Industry Best Practices"];
-          if (extractedTitle) {
-            if (/Developer/i.test(extractedTitle)) {
-               competencies = ["Gosu / Core Scripting", "API Integration", "Architecture Design"];
-            } else if (/Configurator/i.test(extractedTitle)) {
-               competencies = ["Data Model Configuration", "PCF Screen Design", "Business Rules"];
-            } else if (/Analyst/i.test(extractedTitle)) {
-               competencies = ["Requirement Gathering", "Workflow Analysis", "Domain Best Practices"];
-            }
-          }
-          
-          jobRoles.push({ role: extractedTitle || "Consultant", description: cleanDesc + '\n\n', competencies });
-          jobRoleIndex++;
-        }
+         }
+         
+         if (q && a) {
+           q = q.replace(/^(?:Q\d*[:.]?\s*|\d+[\.)]\s*)/i, '').trim();
+           a = a.replace(/^(?:A\d*[:.]?\s*|Ans[:.]?\s*|[-–—:]\s*)/i, '').trim();
+           if (q.length >= 10 && a.length >= 20) {
+             extractedFaqs.push({ question: q, answer: a });
+           }
+         }
       }
     }
-  }
-  
-  if (currentModule) modules.push(currentModule);
-  
-  // Post-processing for modules
-  modules.forEach(m => {
-    if (!m.duration) m.duration = `${m.topics.length} Topics`;
-  });
-  
-  // Format Overview
-  const overviewText = [overviewPart1.trim(), overviewPart2.trim()].filter(Boolean).join('\n\n');
-  if (overviewText) extracted.overview = overviewText;
-  
-  if (modules.length > 0) extracted.modules = modules;
-  
-  if (keyFeatures.length > 0) {
-    extracted.keyFeatures = keyFeatures.map(p => ({ title: p.title, description: p.description.trim() }));
-  }
-  
-  if (jobRoles.length > 0) {
-    extracted.jobRoles = jobRoles.map(j => ({
-      role: j.role,
-      description: j.description.trim(),
-      competencies: j.competencies || ["Industry Best Practices", "Tool Mastery"]
-    }));
-  }
-  
-  if (faqs.length > 0) {
-    extracted.faqs = faqs.map(f => ({
-      question: f.question.trim(),
-      answer: f.answer.trim()
-    })).filter(f => f.question && f.answer);
-  }
-  
-  if (whyMasterDesc) {
-    extracted.whyMaster = {
-      title: `Why Master ${getStringVal(item.title)}?`,
-      description: whyMasterDesc.trim()
-    };
-  }
-  
-  if (objectives.length > 0) extracted.objectives = objectives;
-  
-  if (benefits.length > 0) {
-    extracted.benefits = benefits.map(b => ({
-      title: b.title,
-      description: b.description.trim(),
-      points: b.points || []
-    }));
-  }
-  
-  // The user prompt asked to extract `whyChooseCourse` instead of replacing `whyChoose`.
-  if (whyChoose.trim()) {
-    extracted.whyChooseCourse = whyChoose.trim();
-  }
-  
-  if (whoShouldEnroll.length > 0) {
-    whoShouldEnroll = whoShouldEnroll.filter(item => 
-      !/certification/i.test(item.title) && 
-      !/certification/i.test(item.description?.slice(0, 30))
-    );
-    if (whoShouldEnroll.length > 0) {
-      extracted.whoShouldEnroll = whoShouldEnroll.map(p => ({ title: p.title, description: p.description.trim() }));
+    
+    // Step 3: Why Learn / About Extraction Logic
+    if (state === 'about' && tagName === 'p') {
+       if (text.length > 50) { // filter short marketing snippets
+          potentialAboutParagraphs.push(text);
+       }
     }
   }
   
-  if (certification) {
-    extracted.certification = {
-      title: "Industry Recognized Certification",
-      description: certification.description.trim()
-    };
+  if (potentialAboutParagraphs.length > 0 && aboutParagraphs.length === 0) {
+     aboutParagraphs = [...potentialAboutParagraphs];
   }
+  
+  extractedModules.forEach(m => {
+    m.duration = `${m.topics.length} topics`;
+  });
+  
+  extractedWhyLearnCopy = aboutParagraphs.join('\n\n');
   
   if (isDryRun && targetSlug === slug) {
     console.log(`\n--- Dry Run Output for ${slug} ---`);
-    console.log(yaml.dump(extracted));
+    console.log("Modules:");
+    console.log(yaml.dump(extractedModules));
+    console.log("FAQs:");
+    console.log(yaml.dump(extractedFaqs));
+    console.log("Why Learn:");
+    console.log(extractedWhyLearnCopy);
     process.exit(0);
   }
   
   if (isWrite) {
-    const mdContent = fs.readFileSync(path.join(coursesDir, file), 'utf8');
+    const mdPath = path.join(coursesDir, file);
+    const mdContent = fs.readFileSync(mdPath, 'utf8');
     const frontmatterMatch = mdContent.match(/^---\n([\s\S]*?)\n---/);
     if (frontmatterMatch) {
       try {
         const existingFrontmatter = yaml.load(frontmatterMatch[1]);
-        const merged = { ...existingFrontmatter, ...extracted };
         
-        // Preserve baseline fields precisely
-        const preservedKeys = ['slug', 'title', 'badge', 'category', 'priorityTier', 'navigationLocation', 'rating', 'batchInfo', 'trainer', 'metaTitle', 'metaDescription'];
-        for (const k of preservedKeys) {
-          if (existingFrontmatter[k] !== undefined) {
-             merged[k] = existingFrontmatter[k];
-          }
+        // Update ONLY modules, faqs, and whyMaster.description
+        if (extractedModules.length > 0) {
+          existingFrontmatter.modules = extractedModules;
+        }
+        if (extractedFaqs.length > 0) {
+          existingFrontmatter.faqs = extractedFaqs;
+        }
+        if (extractedWhyLearnCopy) {
+          existingFrontmatter.whyMaster = {
+             ...(existingFrontmatter.whyMaster || {}),
+             description: extractedWhyLearnCopy
+          };
         }
         
-        delete merged.whyChoose; // Clean up wrong extraction from previous run
-        delete merged.certifications; // Clean up wrong extraction from previous run
-        
-        const newFrontmatterStr = yaml.dump(merged, { lineWidth: -1 });
+        const newFrontmatterStr = yaml.dump(existingFrontmatter, { lineWidth: -1 });
         const newFileContent = mdContent.replace(/^---\n[\s\S]*?\n---/, `---\n${newFrontmatterStr}---`);
-        fs.writeFileSync(path.join(coursesDir, file), newFileContent);
+        fs.writeFileSync(mdPath, newFileContent);
         processedCount++;
       } catch (e) {
         console.error(`Error parsing YAML for ${slug}: ${e.message}`);
