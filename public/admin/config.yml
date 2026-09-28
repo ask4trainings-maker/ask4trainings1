@@ -398,6 +398,13 @@ collections:
         required: true
         hint: "Permanent URL path, e.g., 'guidewire-policycenter-online-training'."
 
+      - label: "Last Updated"
+        name: "updatedDate"
+        widget: "datetime"
+        required: false
+        format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
+        hint: "Tracks when the course was last updated."
+
       - label: "Course Badge / Short Code"
         name: "badge"
         widget: "string"
