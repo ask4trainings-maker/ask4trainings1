@@ -71,24 +71,28 @@ benefits:
       - Scenario Practice
       - Project Guidance
       - Experience Gain
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Education
+    description: A basic academic background is enough to join Data Analytics Online Training. Learners from any stream can enroll in this Data Analytics Self-Paced Online Course or Data Analytics Instructor-Led Online Training. Understanding math, logic, or statistics is helpful but not mandatory to begin your journey.
+  - title: Skills
+    description: Basic computer knowledge is required for a Data Analytics Job-Oriented Online Course. Familiarity with tools is a plus, but this Data Analytics Course with Hands-On Labs covers everything from scratch. The Online Data Analytics Class for Professionals ensures learners gain technical and analytical skills effectively.
+  - title: Transition
+    description: Professionals planning a switch can join Online Data Analytics Training for Career Switch. This Data Analytics Online Training Academy supports learners from non-IT backgrounds. With structured learning and guidance, transitioning into analytics becomes easier and more practical with expert mentor support.
+  - title: Commitment
+    description: Dedication and consistency are key for success in Data Analytics Online Training and Placement Support. Following the Data Analytics Online Course Syllabus and completing projects ensures strong understanding. Regular practice helps learners become confident and job-ready for real world career opportunities.
 jobRoles:
-  - role: Data Analyst
+  - role: Analyst
     description: A Data Analyst plays a crucial role in transforming raw data into actionable insights using tools like Python, SQL, and Excel. In a Data Analytics Online Training program, you learn data cleaning, data visualization, and reporting techniques that help businesses make informed decisions. With skills gained from a Data Analytics Course with Certification and real-time projects, analysts can work across industries. This role is ideal for those enrolling in a Data Analytics Course for Beginners Online or professionals aiming for a career switch into data analytics.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Data Scientist
+  - role: Scientist
     description: A Data Scientist focuses on advanced analytics, predictive modeling, and machine learning. Through an Advanced Data Analytics Online Course, learners gain expertise in Python for data analytics, statistical analysis, and data modeling. This role demands strong problem-solving skills and is highly valued in a Data Analytics Training with Placement program. By completing a Data Analytics Online Certification Program with hands-on labs, professionals can secure high-paying roles and grow rapidly in the data domain.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Data Engineer
+  - role: Engineer
     description: A Data Engineer is responsible for building and managing data pipelines and infrastructure. With training from a Data Analytics Course with Tools (Python, SQL, Power BI), you’ll learn data warehousing, ETL processes, and big data technologies. This role is essential for organizations handling large-scale data. Enrolling in a Data Analytics Online Course for IT and Non-IT helps learners develop technical expertise needed to support analytics teams and ensure smooth data flow for business intelligence.
     competencies:
       - Enterprise Standards
@@ -98,7 +102,7 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Data Visualization Specialist
+  - role: Specialist
     description: A Data Visualization Specialist focuses on presenting complex data in easy-to-understand formats using tools like Power BI, Tableau, and Excel dashboards. Through a Data Analytics and Visualization Online Course, learners gain expertise in storytelling with data. This role is in high demand for those completing a Data Analytics Online Course with Real-Time Projects and placement support. It’s ideal for freshers and professionals looking for a Data Analytics Online Training for Career Switch with creative and analytical skills.
     competencies:
       - Enterprise Standards
@@ -198,15 +202,7 @@ modules:
       - Job portals and profile optimization
       - Communication and soft skills training
       - Placement assistance and career guidance
-whoShouldEnroll:
-  - title: Education
-    description: A basic academic background is enough to join Data Analytics Online Training. Learners from any stream can enroll in this Data Analytics Self-Paced Online Course or Data Analytics Instructor-Led Online Training. Understanding math, logic, or statistics is helpful but not mandatory to begin your journey.
-  - title: Skills
-    description: Basic computer knowledge is required for a Data Analytics Job-Oriented Online Course. Familiarity with tools is a plus, but this Data Analytics Course with Hands-On Labs covers everything from scratch. The Online Data Analytics Class for Professionals ensures learners gain technical and analytical skills effectively.
-  - title: Transition
-    description: Professionals planning a switch can join Online Data Analytics Training for Career Switch. This Data Analytics Online Training Academy supports learners from non-IT backgrounds. With structured learning and guidance, transitioning into analytics becomes easier and more practical with expert mentor support.
-  - title: Commitment
-    description: Dedication and consistency are key for success in Data Analytics Online Training and Placement Support. Following the Data Analytics Online Course Syllabus and completing projects ensures strong understanding. Regular practice helps learners become confident and job-ready for real world career opportunities.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -246,4 +242,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Data Analytics jobs.
 ---
-This is the canonical course page for Data Analytics Online Training. Start your learning journey today with Ask 4 Trainings.

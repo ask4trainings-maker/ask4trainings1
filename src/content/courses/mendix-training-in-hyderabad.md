@@ -71,38 +71,44 @@ benefits:
       - Technical Skills
       - Professional Development
       - Practical Experience
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Basic Knowledge
+    description: Candidates with computer fundamentals and interest in application development can join Mendix Training in Hyderabad to build practical low-code skills. This program is suitable for beginners, graduates, and working professionals who want to learn modern enterprise application development through hands-on practice and live project exposure.
+  - title: Technical Interest
+    description: Learners who are passionate about software development and automation can benefit from Mendix Full Stack Developer Training with real-time knowledge. The course helps students understand workflows, integrations, UI development, and deployment concepts while improving practical and problem-solving abilities for industry projects.
+  - title: Career Focus
+    description: Students and professionals looking for career growth in low-code technology can enroll in Mendix Online Training and Placement Program for industry-focused learning. With guidance from the Mendix Training Institute Ameerpet, learners receive interview preparation, project support, and placement assistance to improve job opportunities.
+  - title: Professional Goals
+    description: Candidates aiming for certification and real-time industry skills can join Mendix Online Certification Program with expert-led sessions and practical assignments. Through Mendix Certification Training in Hyderabad, learners gain technical expertise, project experience and career-oriented knowledge for modern low-code development roles.
 jobRoles:
-  - role: Mendix Developer
+  - role: Developer
     description: A Mendix Developer builds enterprise applications using low-code technologies, workflows, integrations, and automation tools for modern business requirements. Through Mendix Training in Hyderabad and practical exposure in Mendix Online Training, professionals gain hands-on experience in designing, developing, testing, and deploying scalable applications for multiple industries.
     competencies:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
-  - role: Mendix Consultant
+  - role: Consultant
     description: A Mendix Consultant works with organizations to understand business needs and deliver efficient low-code application solutions. With knowledge gained from Mendix Developer Course Online and Mendix Certification Training in Hyderabad, consultants help companies improve workflows, automate operations, and enhance digital transformation projects using Mendix technologies.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Mendix Analyst gathers business requirements, studies workflows, and supports application development processes using low-code platforms. Through Mendix Training with Real-Time Projects and Mendix Online Training India, analysts gain practical skills in process improvement, requirement analysis, and solution planning for enterprise application development.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: A Mendix Administrator manages application deployment, user access, platform maintenance, and system monitoring for enterprise environments. Professionals trained through Mendix Course with Placement Assistance and Mendix Low Code Platform Training can support organizations in maintaining secure, efficient, and scalable low-code application infrastructures.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Mendix Architect
+  - role: Architect
     description: A Mendix Architect designs application structures, integrations, and scalable enterprise solutions for complex business environments. Learners completing Mendix Full Stack Developer Training and Mendix Online Certification Program can build expertise in system architecture, deployment planning, and advanced low-code implementation strategies for modern organizations.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Start your professional journey with Mendix Training in Hyderabad and gain in-demand low-code development skills used by top companies worldwide. This industry-focused program helps learners understand application development, workflow automation, integrations, and deployment processes. The Mendix Developer Course Online is designed with practical assignments and real-time scenarios to build strong technical expertise for modern business applications.
 
@@ -198,15 +204,7 @@ modules:
       - Interview Questions and Answers
       - Placement Assistance Sessions
       - Career Development Strategies
-whoShouldEnroll:
-  - title: Basic Knowledge
-    description: Candidates with computer fundamentals and interest in application development can join Mendix Training in Hyderabad to build practical low-code skills. This program is suitable for beginners, graduates, and working professionals who want to learn modern enterprise application development through hands-on practice and live project exposure.
-  - title: Technical Interest
-    description: Learners who are passionate about software development and automation can benefit from Mendix Full Stack Developer Training with real-time knowledge. The course helps students understand workflows, integrations, UI development, and deployment concepts while improving practical and problem-solving abilities for industry projects.
-  - title: Career Focus
-    description: Students and professionals looking for career growth in low-code technology can enroll in Mendix Online Training and Placement Program for industry-focused learning. With guidance from the Mendix Training Institute Ameerpet, learners receive interview preparation, project support, and placement assistance to improve job opportunities.
-  - title: Professional Goals
-    description: Candidates aiming for certification and real-time industry skills can join Mendix Online Certification Program with expert-led sessions and practical assignments. Through Mendix Certification Training in Hyderabad, learners gain technical expertise, project experience and career-oriented knowledge for modern low-code development roles.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -257,4 +255,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Mendix jobs.
 ---
-This is the canonical course page for Mendix Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

@@ -71,13 +71,17 @@ benefits:
       - Professional Growth
       - Job Preparation
       - Career Success
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Graduates
+    description: Graduates from any educational background can join the Qlik Sense Course in Hyderabad and build practical skills. Basic computer knowledge and an interest in data analytics are helpful. The Qlik Sense Online Training is suitable for learners beginning their analytics career.
+  - title: Professionals
+    description: Working professionals seeking to enhance their analytics and reporting expertise can enroll in the Qlik Sense Job Oriented Course. Professionals with basic data knowledge can benefit from practical learning. The Qlik Sense Certification Course helps strengthen career growth.
+  - title: Beginners
+    description: Beginners with an interest in dashboards, reporting, and data visualization can start learning through the Qlik Sense Online Course. No advanced programming experience is required. The Qlik Sense Online Training offers structured guidance for building essential skills.
+  - title: Aspirants
+    description: Career aspirants looking to enter business intelligence and analytics can choose the Qlik Sense Course with Placement for practical learning and career support. A willingness to learn is essential. The Qlik Sense Online Certification helps demonstrate acquired knowledge.
 jobRoles:
-  - role: Qlik Sense Developer
+  - role: Developer
     description: A Qlik Sense Developer designs interactive dashboards, develops data visualizations, creates analytical applications, and connects multiple data sources for business reporting. Professionals in this role use practical knowledge gained through Qlik Sense Online Training to deliver effective analytics solutions. The Qlik Sense Job Oriented Course helps learners develop the technical and practical skills required for successful development careers.
     competencies:
       - Gosu / Core Scripting
@@ -88,17 +92,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Business Intelligence Analyst uses data to identify trends, generate insights, and support business decisions through reports and dashboards. Professionals can apply skills developed through the Qlik Sense Course in Hyderabad to analyze complex information and create meaningful visualizations. The Qlik Sense Certification Course helps learners strengthen their knowledge and prepare for analytics-focused career opportunities.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: A Qlik Sense Administrator manages applications, users, security, data access, and platform environments to ensure smooth analytics operations. Professionals can build relevant knowledge through the Qlik Sense Course in Hyderabad and gain practical exposure to administration concepts. The Qlik Sense Training Institute in Hyderabad supports learners with industry-focused training for technology and analytics career opportunities.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Data Visualization Specialist
+  - role: Specialist
     description: A Data Visualization Specialist focuses on transforming complex data into interactive dashboards, reports, and visual insights that support business decisions. The Qlik Sense Online Course provides practical knowledge of visualization techniques, data modeling, and analytics. Learners completing the Qlik Sense Online Certification can demonstrate their understanding and pursue opportunities in data visualization and business intelligence.
     competencies:
       - Enterprise Standards
@@ -198,15 +203,7 @@ modules:
       - Deploy dashboards with governance
       - Monitor backup recovery processes
       - Troubleshoot production support issues
-whoShouldEnroll:
-  - title: Graduates
-    description: Graduates from any educational background can join the Qlik Sense Course in Hyderabad and build practical skills. Basic computer knowledge and an interest in data analytics are helpful. The Qlik Sense Online Training is suitable for learners beginning their analytics career.
-  - title: Professionals
-    description: Working professionals seeking to enhance their analytics and reporting expertise can enroll in the Qlik Sense Job Oriented Course. Professionals with basic data knowledge can benefit from practical learning. The Qlik Sense Certification Course helps strengthen career growth.
-  - title: Beginners
-    description: Beginners with an interest in dashboards, reporting, and data visualization can start learning through the Qlik Sense Online Course. No advanced programming experience is required. The Qlik Sense Online Training offers structured guidance for building essential skills.
-  - title: Aspirants
-    description: Career aspirants looking to enter business intelligence and analytics can choose the Qlik Sense Course with Placement for practical learning and career support. A willingness to learn is essential. The Qlik Sense Online Certification helps demonstrate acquired knowledge.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -263,4 +260,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Qlik Sense jobs.
 ---
-This is the canonical course page for Qlik Sense Course in Hyderabad. Start your learning journey today with Ask 4 Trainings.

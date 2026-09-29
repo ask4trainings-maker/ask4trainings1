@@ -71,13 +71,17 @@ benefits:
       - Industry Exposure
       - Professional Development
       - Employment Opportunities
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Graduates
+    description: Fresh graduates looking to enter the software industry can join PEGA Training in Hyderabad to develop practical knowledge in workflow automation, BPM, and application development. Through guided learning, hands-on sessions, and project exposure, learners strengthen technical understanding and improve career readiness with PEGA Online Training.
+  - title: Professionals
+    description: Working professionals aiming to upgrade technical capabilities can benefit from PEGA Certification Training focused on enterprise applications, case management, and process automation. The program supports skill enhancement, implementation learning, and practical exposure through PEGA Training with Real-Time Projects.
+  - title: Freshers
+    description: Aspiring candidates with an interest in software technologies can enroll in PEGA Course for Beginners to build foundational knowledge in PEGA tools, workflows, and business applications. With industry-focused learning and assignments, learners gain confidence through PEGA Training in Hyderabad.
+  - title: Developers
+    description: Software developers seeking specialization in BPM and enterprise application development can improve their expertise through PEGA Developer Training. The program emphasizes technical concepts, automation workflows, and implementation practices while strengthening professional capabilities with PEGA Online Certification Program.
 jobRoles:
-  - role: PEGA Developer
+  - role: Developer
     description: A PEGA Developer is responsible for designing, developing, and maintaining enterprise applications using workflow automation and BPM concepts. Through PEGA Training in Hyderabad, learners gain practical knowledge in case management, application design, and integrations. The role demands strong technical understanding, problem-solving abilities, and implementation expertise supported by PEGA Developer Training and PEGA Certification Training for career growth.
     competencies:
       - Gosu / Core Scripting
@@ -88,21 +92,23 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A PEGA Analyst evaluates business requirements, studies operational workflows, and helps organizations implement process improvement solutions. With PEGA Course for Beginners, aspiring professionals can build foundational knowledge in BPM and application functionality. Practical exposure from PEGA Online Certification Program and PEGA Training in Hyderabad supports analytical thinking and solution development capabilities.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: A PEGA Administrator manages application environments, system configurations, access controls, and operational monitoring tasks within enterprise platforms. By joining PEGA Online Classes with Live Projects, learners understand deployment processes, environment management, and technical maintenance practices. Skills developed through PEGA Online Training and Placement Program, PEGA Training in Hyderabad, and PEGA Certification Training enhance career readiness.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: PEGA Architect
+  - role: Architect
     description: A PEGA Architect focuses on creating scalable application frameworks, defining technical strategies, and optimizing business process solutions. Professionals can strengthen their expertise through PEGA Online Training that covers enterprise design, automation workflows, and system architecture concepts. Advanced skills gained from PEGA Professional Certification Training and PEGA Training with Real-Time Projects support long-term professional development.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Develop practical automation and BPM expertise through our career-oriented PEGA Training in Hyderabad program designed for aspiring developers and IT professionals. Learn application design, case management, integrations, and workflow automation with real-time exposure. The Advanced PEGA Online Course helps learners strengthen technical skills, improve implementation knowledge, and gain confidence for industry projects.
 
@@ -198,15 +204,7 @@ modules:
       - Interview questions and mock sessions
       - Real-world implementation case studies
       - Career guidance and placement support
-whoShouldEnroll:
-  - title: Graduates
-    description: Fresh graduates looking to enter the software industry can join PEGA Training in Hyderabad to develop practical knowledge in workflow automation, BPM, and application development. Through guided learning, hands-on sessions, and project exposure, learners strengthen technical understanding and improve career readiness with PEGA Online Training.
-  - title: Professionals
-    description: Working professionals aiming to upgrade technical capabilities can benefit from PEGA Certification Training focused on enterprise applications, case management, and process automation. The program supports skill enhancement, implementation learning, and practical exposure through PEGA Training with Real-Time Projects.
-  - title: Freshers
-    description: Aspiring candidates with an interest in software technologies can enroll in PEGA Course for Beginners to build foundational knowledge in PEGA tools, workflows, and business applications. With industry-focused learning and assignments, learners gain confidence through PEGA Training in Hyderabad.
-  - title: Developers
-    description: Software developers seeking specialization in BPM and enterprise application development can improve their expertise through PEGA Developer Training. The program emphasizes technical concepts, automation workflows, and implementation practices while strengthening professional capabilities with PEGA Online Certification Program.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -259,4 +257,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Pega jobs.
 ---
-This is the canonical course page for PEGA Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

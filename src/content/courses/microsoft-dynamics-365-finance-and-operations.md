@@ -71,11 +71,15 @@ benefits:
       - Career Support
       - Resume Help
       - Interview Training
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Basic Knowledge
+    description: Candidates with fundamental understanding of business processes or accounting concepts can easily start Microsoft Dynamics 365 Finance and Operations Online Training. ERP systems or databases is helpful in making it suitable for beginners and professionals.
+  - title: Technical Skills
+    description: A basic understanding of programming concepts or interest in development is beneficial for Dynamics 365 Finance and Operations Developer Training. Knowledge of databases, integrations, or coding enhances your ability to learn technical modules effectively.
+  - title: Professional Background
+    description: Graduates or working professionals in finance, IT, or business domains can enroll in Microsoft Dynamics 365 Finance and Operations Online Training. This course is ideal for those looking to switch careers or upgrade skills in enterprise resource planning systems.
+  - title: Learning Interest
+    description: A strong interest in ERP systems and willingness to learn is essential for success in Dynamics 365 Finance and Operations Certification Program. Consistent practice, participation in projects, and engagement with trainers will help you gain practical expertise and career growth.
 jobRoles:
   - role: Developer
     description: A Developer works on customizing and extending Microsoft Dynamics 365 Finance and Operations using coding languages like X++ and integrating external systems. With strong skills gained from Dynamics 365 Finance and Operations Developer Training and Microsoft Dynamics 365 Finance and Operations Online Training, developers build scalable solutions, automate workflows, and support business needs through technical implementations and system enhancements.
@@ -83,22 +87,24 @@ jobRoles:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
-  - role: Functional Consultant
+  - role: Consultant
     description: A Functional Consultant focuses on understanding business requirements and configuring ERP modules accordingly. Professionals trained in Dynamics 365 Finance and Operations Functional Consultant Course and Dynamics 365 Finance and Operations Online Training help organizations streamline finance, supply chain, and operations. They act as a bridge between technical teams and business users, ensuring smooth implementation and optimized system usage.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Business Analyst gathers requirements, analyzes workflows, and ensures ERP solutions align with organizational goals. With expertise from Microsoft Dynamics 365 Finance and Operations Online Training and Dynamics 365 F&O Job Oriented Training, analysts improve decision-making by providing insights, documentation, and system recommendations that enhance overall business performance and operational efficiency.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
   - role: Architect
     description: An Architect designs the overall ERP system structure, ensuring scalability, security, and integration with other platforms. Leveraging knowledge from Dynamics 365 Finance and Operations Advanced Training and Microsoft Dynamics 365 F&O Online Learning Platform, architects create robust frameworks that support enterprise-level implementations and future business growth.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Tester
     description: A Tester ensures system quality by validating functionalities, identifying bugs, and ensuring smooth performance. With training from Dynamics 365 Finance and Operations Online Course and Dynamics 365 F&O Certification Online, testers play a crucial role in delivering error-free solutions, improving user experience, and ensuring successful ERP deployment in real-world environments.
     competencies:
       - Enterprise Standards
@@ -198,15 +204,7 @@ modules:
       - Version control and code management techniques
       - Continuous integration and delivery pipeline basics
       - Post-deployment support and maintenance strategies
-whoShouldEnroll:
-  - title: Basic Knowledge
-    description: Candidates with fundamental understanding of business processes or accounting concepts can easily start Microsoft Dynamics 365 Finance and Operations Online Training. ERP systems or databases is helpful in making it suitable for beginners and professionals.
-  - title: Technical Skills
-    description: A basic understanding of programming concepts or interest in development is beneficial for Dynamics 365 Finance and Operations Developer Training. Knowledge of databases, integrations, or coding enhances your ability to learn technical modules effectively.
-  - title: Professional Background
-    description: Graduates or working professionals in finance, IT, or business domains can enroll in Microsoft Dynamics 365 Finance and Operations Online Training. This course is ideal for those looking to switch careers or upgrade skills in enterprise resource planning systems.
-  - title: Learning Interest
-    description: A strong interest in ERP systems and willingness to learn is essential for success in Dynamics 365 Finance and Operations Certification Program. Consistent practice, participation in projects, and engagement with trainers will help you gain practical expertise and career growth.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -259,4 +257,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top MS D365 F&O jobs.
 ---
-This is the canonical course page for Microsoft Dynamics 365 Finance And Operations Training. Start your learning journey today with Ask 4 Trainings.

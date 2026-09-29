@@ -114,7 +114,7 @@ modules:
       - Understand REST basics and API architecture
       - Explore REST APIs for system integrations
       - Learn JSON format for data exchange and processing
-whoShouldEnroll:
+whoShouldEnroll: &ref_0
   - title: Beginners
     description: Anyone interested in starting a career in insurance technology can enroll in this Guidewire Course for Beginners. No prior coding experience is required, as the program begins with fundamentals of Guidewire Development Training, Guidewire Configuration Training, and basic concepts of Guidewire Policy Center Online Training easy to learn.
   - title: IT Professionals
@@ -256,17 +256,9 @@ curriculum:
 demoVideoUrl: ''
 description: Start your career with Guidewire Policy Center Online Training, designed to make you a skilled Guidewire Developer. This Guidewire Development Training covers real-time scenarios, Guidewire Configuration, and GOSU Training, helping you master insurance domain skills and become job-ready with Guidewire Certification Training.
 duration: 20 - 25 Hrs
-eligibility:
-  - answer: Anyone interested in starting a career in insurance technology can enroll in this Guidewire Course for Beginners. No prior coding experience is required, as the program begins with fundamentals of Guidewire Development Training, Guidewire Configuration Training, and basic concepts of Guidewire Policy Center Online Training easy to learn.
-    question: Beginners
-  - answer: Developers and IT professionals looking to upgrade their skills can join this Guidewire Technical Course Hyderabad. It helps enhance expertise in Guidewire PolicyCenter Online Training, Guidewire GOSU Training, and Guidewire Cloud Training, enabling professionals to transition into high-demand roles like Guidewire Developer and implementation specialist.
-    question: IT Professionals
-  - answer: This course is perfect for individuals seeking  Guidewire Training for Working Professionals with flexible schedules. Through Guidewire Policy Center Online Training and Guidewire Developer Online Classes, learners can balance work and study while gaining hands-on experience in Guidewire Real-Time Project Training and industry-focused modules.
-    question: Working Professionals
-  - answer: Fresh graduates aiming to build a career in IT can enroll in Guidewire Policy Center Online Training, Guidewire Developer Training Hyderabad. The course provides strong foundations in Guidewire Insurance Domain Training, Guidewire Hands-on Training, and Guidewire Interview Preparation Training, helping candidates become job-ready for roles.
-    question: Graduates
+eligibility: *ref_0
 jobRoles:
-  - role: Guidewire Developer
+  - role: Developer
     description: A Guidewire Developer specializes in building and customizing applications using Guidewire PolicyCenter Online Training concepts. With strong knowledge of Guidewire Development Training, Guidewire Configuration Training, and Guidewire GOSU Training, professionals design scalable insurance solutions. Through Guidewire Policy Center Online Training and Guidewire Real-Time Project Training, developers gain hands-on experience in coding, integrations, and workflows, making them highly востребен for Guidewire Developer Course roles in top organizations.
     competencies:
       - Gosu / Core Scripting
@@ -275,9 +267,8 @@ jobRoles:
   - role: Configurator
     description: A Configurator focuses on implementing business rules using Guidewire Policy Center Training and Policy Center Configuration Training. With expertise from Guidewire Configuration Training and Guidewire Policy Center Developer Training, they customize UI, workflows, and products. Through Guidewire Online Training and Guidewire Hands-on Training, configurators handle real-time insurance requirements, ensuring seamless system functionality and efficient policy lifecycle management.
     competencies:
-      - Data Model Configuration
-      - PCF Screen Design
-      - Business Rules
+      - Enterprise Standards
+      - Industry Best Practices
   - role: Integrator
     description: An Integrator works on connecting systems using Guidewire Integration Training and APIs within Guidewire PolicyCenter Online Training. With skills from Guidewire Policy Center Integration Training and Guidewire Cloud Training, they ensure smooth communication between applications. Guidewire Real-Time Project Training helps them gain practical experience in web services, messaging, and enterprise integrations, making them key contributors to large-scale insurance implementations.
     competencies:
@@ -288,7 +279,7 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Business Analyst
+  - role: Analyst
     description: A Business Analyst in Guidewire uses Guidewire Policy Center Training and Guidewire Insurance Domain Training to gather requirements and improve processes. With exposure to Guidewire Job-Oriented Training and Guidewire Interview Preparation Training, analysts understand workflows, policy lifecycle, and system enhancements. They play a vital role in ensuring successful delivery of Guidewire Policy Center Online Training based implementations.
     competencies:
       - Requirement Gathering
@@ -361,4 +352,3 @@ certification:
     Certification from the Best Guidewire Policy Center Training Institute adds strong credibility to your resume and opens doors to top career opportunities. With recognition in Guidewire Professional Training, candidates gain trust from recruiters and employers. It supports career growth in roles like Guidewire Developer Training Hyderabad, ensuring better job prospects, higher salary potential, and long-term success in the insurance IT industry.
 ---
 
-This is the canonical course page for Guidewire Policycenter Training. Start your learning journey today with Ask 4 Trainings.

@@ -71,13 +71,17 @@ benefits:
       - Job assistance
       - Interview tips
       - Profile boost
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Background
+    description: Candidates with basic IT or non-IT education can join this program. Our ServiceNow Online Training is designed to simplify concepts for all learners. Even fresh graduates can benefit from the ServiceNow Course for Beginners, gaining strong foundational knowledge and understanding of ITSM processes, workflows, and platform basics for career growth.
+  - title: Skills
+    description: Basic computer knowledge and familiarity with software tools are helpful for this course. The ServiceNow Online Training helps you build technical confidence step by step. With the ServiceNow Platform Developer Training, learners gradually understand scripting, navigation, and system operations without needing prior advanced coding experience.
+  - title: Interest
+    description: A strong interest in IT service management and cloud platforms is important. This ServiceNow Online Training keeps learners engaged with real-time examples and use cases. The ServiceNow Online Learning Program ensures you stay motivated while learning automation, workflows, and modern enterprise solutions used in real-world projects.
+  - title: Goals
+    description: Anyone aiming for a career switch or growth in IT can enroll. Our ServiceNow Training and Placement in Hyderabad supports learners with job-oriented skills. Through ServiceNow Technical Training in Hyderabad, you will prepare for certifications, interviews, and high-demand roles in the ServiceNow ecosystem.
 jobRoles:
-  - role: ServiceNow Developer
+  - role: Developer
     description: A ServiceNow Developer focuses on building applications, scripting, and integrations within the platform. Through ServiceNow Developer Certification Course and ServiceNow Platform Developer Training, learners gain expertise in JavaScript, workflows, and API integrations. This role involves creating custom modules, automating processes, and enhancing system functionality. With ServiceNow Online Training, developers become capable of delivering scalable and efficient enterprise solutions.
     competencies:
       - Gosu / Core Scripting
@@ -88,18 +92,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: ServiceNow Analyst
+  - role: Analyst
     description: A ServiceNow Analyst focuses on analyzing data, workflows, and system performance to improve business processes. With ServiceNow Course with Live Projects and Job Oriented ServiceNow Course, analysts gain practical knowledge of reporting and dashboards. They identify gaps, suggest improvements, and support decision-making. This role benefits from ServiceNow Online Training, enabling professionals to deliver insights that enhance operational efficiency.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Consultant
+  - role: Administrator
     description: A ServiceNow Administrator manages platform configuration, user roles, and system maintenance. With ServiceNow Online Training and ServiceNow Admin Training Course, professionals learn to handle incident, problem, and change management. This role ensures smooth IT operations, data security, and workflow optimization. Administrators also customize dashboards, manage access controls, and support business processes using the ServiceNow Cloud Platform Training Course for efficient enterprise performance.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Engineer
     description: A ServiceNow Engineer handles system integrations, automation, and technical configurations. Using ServiceNow Advanced Developer Online Training and ServiceNow ITSM Training Course, engineers work on complex deployments and performance optimization. They ensure seamless connectivity between systems and maintain platform stability. With ServiceNow Online Training, engineers gain hands-on skills to manage enterprise-level solutions and support digital transformation initiatives.
     competencies:
       - Enterprise Standards
@@ -198,15 +202,7 @@ modules:
       - Resume building and profile optimization
       - Real-time project experience and case studies
       - Placement support and job assistance guidance
-whoShouldEnroll:
-  - title: Background
-    description: Candidates with basic IT or non-IT education can join this program. Our ServiceNow Online Training is designed to simplify concepts for all learners. Even fresh graduates can benefit from the ServiceNow Course for Beginners, gaining strong foundational knowledge and understanding of ITSM processes, workflows, and platform basics for career growth.
-  - title: Skills
-    description: Basic computer knowledge and familiarity with software tools are helpful for this course. The ServiceNow Online Training helps you build technical confidence step by step. With the ServiceNow Platform Developer Training, learners gradually understand scripting, navigation, and system operations without needing prior advanced coding experience.
-  - title: Interest
-    description: A strong interest in IT service management and cloud platforms is important. This ServiceNow Online Training keeps learners engaged with real-time examples and use cases. The ServiceNow Online Learning Program ensures you stay motivated while learning automation, workflows, and modern enterprise solutions used in real-world projects.
-  - title: Goals
-    description: Anyone aiming for a career switch or growth in IT can enroll. Our ServiceNow Training and Placement in Hyderabad supports learners with job-oriented skills. Through ServiceNow Technical Training in Hyderabad, you will prepare for certifications, interviews, and high-demand roles in the ServiceNow ecosystem.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -246,4 +242,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Servicenow developer jobs.
 ---
-This is the canonical course page for Servicenow Training. Start your learning journey today with Ask 4 Trainings.

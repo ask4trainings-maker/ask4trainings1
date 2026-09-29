@@ -12,6 +12,12 @@ const rootDir = path.resolve(__dirname, '..');
 const xmlPath = path.join(rootDir, 'scripts/migration/export.xml');
 const coursesDir = path.join(rootDir, 'src/content/courses');
 
+function deriveCompetencies(role, category) {
+  if (/developer|architect/i.test(role)) return ['Gosu / Core Scripting', 'API Integration', 'Architecture Design'];
+  if (/analyst/i.test(role)) return ['Requirement Gathering', 'Workflow Analysis', 'Domain Best Practices'];
+  return ['Enterprise Standards', 'Industry Best Practices'];
+}
+
 const args = process.argv.slice(2);
 const isDryRun = args.includes('--dry-run');
 const isWrite = args.includes('--write');
@@ -79,6 +85,11 @@ for (const file of courseFiles) {
   let potentialAboutParagraphs = [];
   let overviewParagraphs = [];
   let isCheckingForValueProp = true;
+  let extractedJobRoles = [];
+  let jobRoleTitles = [];
+  let jobRoleDescriptions = [];
+  let extractedEligibility = [];
+  let currentEligibilityItem = null;
   
   for (let i = 0; i < allElements.length; i++) {
     const el = allElements[i];
@@ -115,6 +126,25 @@ for (const file of courseFiles) {
         state = 'normal';
       }
       if (state === 'modules' && /(about\s+.*?course|about\s+|key features)/i.test(text)) {
+        state = 'normal';
+      }
+      if (/(job roles of|job roles)/i.test(text)) {
+        state = 'jobRoles';
+        continue;
+      }
+      if (/(eligibility criteria of|eligibility)/i.test(text)) {
+        state = 'eligibility';
+        continue;
+      }
+      if (/certification/i.test(text)) {
+        if (state === 'eligibility') {
+          state = 'certification';
+          continue;
+        }
+      }
+      
+      // End Job Roles state if next section is encountered
+      if (state === 'jobRoles' && /(trainer|certified.*?trainer|faq|why learn|certification)/i.test(text)) {
         state = 'normal';
       }
       
@@ -168,6 +198,29 @@ for (const file of courseFiles) {
        continue;
     }
     
+    // --- JOB ROLES LOGIC ---
+    if (state === 'jobRoles') {
+      if ((tagName === 'span' || tagName === 'a' || $el.hasClass('elementor-tab-title') || $el.hasClass('elementor-button')) && text.length > 0 && text.length < 35 && !/(job roles of|job roles)/i.test(text)) {
+         if (!jobRoleTitles.includes(text)) jobRoleTitles.push(text);
+      } else if (tagName === 'p' && text.length >= 40) {
+         jobRoleDescriptions.push(text);
+      }
+    }
+    
+    // --- ELIGIBILITY LOGIC ---
+    if (state === 'eligibility') {
+      if (/^h[2-6]$/.test(tagName) && !/(eligibility criteria of|eligibility)/i.test(text)) {
+         if (text.length > 0 && text.length < 100 && !/certification/i.test(text)) {
+            currentEligibilityItem = { title: text, description: '' };
+            extractedEligibility.push(currentEligibilityItem);
+         }
+      } else if (tagName === 'p' && text.length > 20) {
+         if (currentEligibilityItem) {
+            currentEligibilityItem.description += (currentEligibilityItem.description ? '\n' : '') + text;
+         }
+      }
+    }
+
     // Step 1: Modules Extraction Logic
     if (state === 'modules') {
       if (tagName === 'ul' || tagName === 'ol') {
@@ -301,6 +354,40 @@ for (const file of courseFiles) {
     }
   }
   
+  if (jobRoleTitles.length > 0) {
+    extractedJobRoles = jobRoleTitles.map((title, idx) => {
+      const desc = jobRoleDescriptions[idx] || '';
+      return {
+        role: title.trim(),
+        description: desc.trim(),
+        competencies: deriveCompetencies(title.trim(), 'category')
+      };
+    }).filter(item => item.role && item.description);
+  } else if (jobRoleDescriptions.length > 0) {
+    extractedJobRoles = jobRoleDescriptions.map(desc => {
+      const match = desc.match(/^(?:A|An)\s+(?:[A-Za-z0-9]+\s+)?([A-Z][a-zA-Z\s]+?)(?:\s+in\s+[A-Za-z0-9\s]+)?\s+(?:manages|specializes|is|works|focuses|plays|designs|delivers|builds|creates)/i);
+      let title = match ? match[1].trim() : desc.split(' ').slice(0, 3).join(' ').trim();
+      return {
+        role: title,
+        description: desc.trim(),
+        competencies: deriveCompetencies(title, 'category')
+      };
+    }).filter(item => item.role && item.description);
+  }
+
+  extractedEligibility = extractedEligibility.filter(item => {
+    const title = item.title.toLowerCase();
+    const desc = item.description.toLowerCase();
+    const isCertificationItem = 
+      title.includes('certification') || 
+      title.includes('procurement skills') ||
+      title.includes('online classes') ||
+      title.includes('exam') ||
+      desc.includes('awarded an industry-recognized') ||
+      desc.includes('validates your expertise');
+    return !isCertificationItem;
+  });
+
   if (potentialAboutParagraphs.length > 0 && aboutParagraphs.length === 0) {
      aboutParagraphs = [...potentialAboutParagraphs];
   }
@@ -318,6 +405,10 @@ for (const file of courseFiles) {
   
   if (isDryRun && targetSlug === slug) {
     console.log(`\n--- Dry Run Output for ${slug} ---`);
+    console.log("Job Roles:");
+    console.log(yaml.dump(extractedJobRoles));
+    console.log("Eligibility:");
+    console.log(yaml.dump(extractedEligibility));
     console.log("Modules:");
     console.log(yaml.dump(extractedModules));
     console.log("FAQs:");
@@ -340,6 +431,13 @@ for (const file of courseFiles) {
         const existingFrontmatter = yaml.load(frontmatterMatch[1]);
         
         // Update ONLY modules, faqs, and whyMaster.description
+        if (extractedJobRoles.length > 0) {
+          existingFrontmatter.jobRoles = extractedJobRoles;
+        }
+        if (extractedEligibility.length > 0) {
+          existingFrontmatter.eligibility = extractedEligibility;
+          existingFrontmatter.whoShouldEnroll = extractedEligibility;
+        }
         if (extractedModules.length > 0) {
           existingFrontmatter.modules = extractedModules;
           delete existingFrontmatter.syllabus; // Remove stale mock syllabus

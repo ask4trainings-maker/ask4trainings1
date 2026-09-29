@@ -71,38 +71,44 @@ benefits:
       - Global Opportunities
       - Job Confidence
       - Long-term Success
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Beginners
+    description: Individuals starting their careers in insurance technology can join Guidewire Rating Online Training without prior Guidewire experience. The curriculum gradually develops practical skills and prepares learners for Guidewire Rating Online Certification through structured sessions.
+  - title: Developers
+    description: Software developers looking to transition into Guidewire projects can benefit from implementation-focused learning. The Guidewire Rating Training with Real-Time Projects enhances practical expertise, while the Guidewire Rating Job Oriented Course supports career growth.
+  - title: Analysts
+    description: Business analysts and QA professionals interested in insurance systems can expand their knowledge through practical training. The Guidewire Rating Online Classes provide flexible learning, and the Guidewire Rating Course in Hyderabad strengthens implementation skills.
+  - title: Aspirants
+    description: Career aspirants aiming for Guidewire opportunities can enroll regardless of prior insurance experience. The Guidewire Rating Certification Program develops industry-ready expertise, while the Guidewire Rating Course with Placement prepares learners for interviews and employment.
 jobRoles:
-  - role: Guidewire Rating Developer
+  - role: Developer
     description: A Guidewire Rating Developer specializes in designing and configuring rating applications using Guidewire platforms. They create rating rules, implement pricing models, manage configurations, and support integration activities for insurance solutions. Skills developed through Guidewire Rating Online Training, Guidewire Rating Certification Program, and practical implementation projects help developers handle enterprise-level Guidewire requirements effectively.
     competencies:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
-  - role: Guidewire Rating Consultant
+  - role: Consultant
     description: A Guidewire Rating Consultant works with business teams to analyze requirements and deliver effective rating solutions. They support configuration, process improvements, workflow design, and implementation activities across insurance projects. Knowledge gained from Guidewire Rating Training with Real-Time Projects, Guidewire Rating Online Certification, and practical learning helps consultants provide valuable technical guidance.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Guidewire Rating Analyst evaluates insurance requirements and supports rating system implementation processes. They collaborate with developers, testers, and business teams to ensure accurate pricing workflows and business rule execution. Training through Guidewire Rating Job Oriented Course, Guidewire Rating Online Classes, and real-time scenarios prepares analysts for successful Guidewire opportunities.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Tester
     description: A Guidewire Rating Tester ensures application quality by validating rating features, testing configurations, and identifying system issues. They prepare test cases, execute validations, and maintain quality standards throughout implementation projects. Experience gained from Guidewire Rating Course with Placement, Guidewire Rating Online Training, and practical testing activities supports professional growth.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Guidewire Rating Architect develops technical strategies and
+  - role: Architect
     description: A Guidewire Rating Architect develops technical strategies and designs scalable solutions for complex insurance implementations. They manage architecture decisions, integration planning, and platform optimization activities. Advanced skills from Guidewire Rating Online Bootcamp, Guidewire Rating Certification with Placement Support, and project experience enable architects to lead successful Guidewire solutions.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Master insurance rating concepts through our Guidewire Rating Online Training, featuring interactive classes, real-world scenarios, and implementation-based projects. Learners develop expertise in rating rules, configuration, pricing workflows, debugging, and best practices followed in Guidewire implementations. Every module is designed to strengthen practical knowledge while helping participants confidently prepare for Guidewire Rating Online Certification with expert guidance and structured learning.
 
@@ -198,17 +204,7 @@ modules:
       - Resume building for Guidewire careers
       - Placement assistance and career tips
       - Final project assessment presentation
-whoShouldEnroll:
-  - title: Beginners
-    description: Individuals starting their careers in insurance technology can join Guidewire Rating Online Training without prior Guidewire experience. The curriculum gradually develops practical skills and prepares learners for Guidewire Rating Online Certification through structured sessions.
-  - title: Developers
-    description: Software developers looking to transition into Guidewire projects can benefit from implementation-focused learning. The Guidewire Rating Training with Real-Time Projects enhances practical expertise, while the Guidewire Rating Job Oriented Course supports career growth.
-  - title: Analysts
-    description: Business analysts and QA professionals interested in insurance systems can expand their knowledge through practical training. The Guidewire Rating Online Classes provide flexible learning, and the Guidewire Rating Course in Hyderabad strengthens implementation skills.
-  - title: Aspirants
-    description: Career aspirants aiming for Guidewire opportunities can enroll regardless of prior insurance experience. The Guidewire Rating Certification Program develops industry-ready expertise, while the Guidewire Rating Course with Placement prepares learners for interviews and employment.
-  - title: Professional Learning Path
-    description: The Guidewire Rating Online Training program equips learners with practical implementation knowledge through live classes, industry case studies, and real-world assignments. Every module is designed to strengthen configuration, pricing, and business process expertise while preparing participants for Guidewire Rating Online Certification.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -271,4 +267,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Guidewre Rating jobs.
 ---
-This is the canonical course page for Guidewire Rating Online Training. Start your learning journey today with Ask 4 Trainings.

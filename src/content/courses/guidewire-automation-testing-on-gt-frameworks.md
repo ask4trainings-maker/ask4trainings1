@@ -71,11 +71,15 @@ benefits:
       - Quality assurance
       - Technical depth
       - Practical learning
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Basic Programming Knowledge
+    description: A fundamental understanding of programming concepts is recommended for this course. Familiarity with languages like Java helps in learning Guidewire automation testing and Guidewire Selenium testing. Basic knowledge of object-oriented programming, variables and functions make easier to understand automation scripts, framework implementation.
+  - title: Software Testing Basics
+    description: Candidates should have a basic idea of software testing concepts such as manual testing, test cases, and defect tracking. Understanding testing principles helps in grasping Guidewire testing tutorial and transitioning into Guidewire QA automation. Knowledge of SDLC and STLC processes will support better learning outcomes in real-time projects.
+  - title: Understanding of Automation Tools
+    description: Having prior exposure to automation tools is beneficial but not mandatory. Awareness of tools like Selenium supports faster learning of Guidewire automation framework and Guidewire GT framework. Learners will gain hands-on experience, but a basic understanding helps in adapting quickly to automation environments and workflows.
+  - title: Interest in Insurance Domain
+    description: Since Guidewire is widely used in the insurance industry, having an interest in this domain is helpful. Learning about PolicyCenter, ClaimCenter, and BillingCenter enhances your understanding of Guidewire automation testing real time project scenarios. This knowledge helps in applying automation skills effectively in real-world business cases.
 jobRoles:
   - role: Tester
     description: A Tester in Guidewire Automation Testing is responsible for validating insurance applications like PolicyCenter, ClaimCenter, and BillingCenter. They design and execute automated test cases using Guidewire GT framework and tools like Selenium. Testers identify defects, ensure system stability, and improve software quality. They also collaborate with developers and business analysts to understand requirements, making sure applications meet functional and performance standards in real-time environments.
@@ -98,7 +102,7 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Developer in Guidewire automation testing
+  - role: Developer
     description: A Developer in Guidewire automation testing builds and enhances automation scripts using tools like Selenium and programming languages such as Java. They design robust frameworks using the Guidewire GT framework, integrate automation with development pipelines, and ensure smooth execution. Developers also troubleshoot issues, maintain code quality, and support continuous testing processes, enabling faster delivery of high-quality insurance applications.
     competencies:
       - Gosu / Core Scripting
@@ -199,15 +203,7 @@ modules:
       - Mock interviews and practical assessments
       - Job roles and responsibilities understanding
       - Career roadmap in Guidewire testing domain
-whoShouldEnroll:
-  - title: Basic Programming Knowledge
-    description: A fundamental understanding of programming concepts is recommended for this course. Familiarity with languages like Java helps in learning Guidewire automation testing and Guidewire Selenium testing. Basic knowledge of object-oriented programming, variables and functions make easier to understand automation scripts, framework implementation.
-  - title: Software Testing Basics
-    description: Candidates should have a basic idea of software testing concepts such as manual testing, test cases, and defect tracking. Understanding testing principles helps in grasping Guidewire testing tutorial and transitioning into Guidewire QA automation. Knowledge of SDLC and STLC processes will support better learning outcomes in real-time projects.
-  - title: Understanding of Automation Tools
-    description: Having prior exposure to automation tools is beneficial but not mandatory. Awareness of tools like Selenium supports faster learning of Guidewire automation framework and Guidewire GT framework. Learners will gain hands-on experience, but a basic understanding helps in adapting quickly to automation environments and workflows.
-  - title: Interest in Insurance Domain
-    description: Since Guidewire is widely used in the insurance industry, having an interest in this domain is helpful. Learning about PolicyCenter, ClaimCenter, and BillingCenter enhances your understanding of Guidewire automation testing real time project scenarios. This knowledge helps in applying automation skills effectively in real-world business cases.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -250,4 +246,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Guidewire developer jobs.
 ---
-This is the canonical course page for Guidewire Automation Testing On Gt Frameworks Training. Start your learning journey today with Ask 4 Trainings.

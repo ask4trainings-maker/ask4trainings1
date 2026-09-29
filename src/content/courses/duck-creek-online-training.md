@@ -71,13 +71,17 @@ benefits:
       - Project Practice
       - Flexible Learning
       - Placement Help
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Educational Qualification
+    description: Candidates with degrees in B.Tech, B.Sc, BCA, MCA, MBA, or related fields can join our Duck Creek Online Training program. Freshers and graduates who want to build a career in the insurance technology industry are eligible for this course. Basic computer knowledge and an interest in enterprise applications will help learners understand the concepts covered in the Duck Creek Fundamentals and Advanced Course effectively with practical learning.
+  - title: Career Interest
+    description: Individuals interested in insurance technology, cloud platforms, and enterprise software solutions are ideal candidates for our Duck Creek Cloud Insurance Platform Course. Learners aiming for certification, project experience, and placement opportunities can benefit from the Duck Creek Certification Online program. Strong communication skills, dedication to learning, and regular practice will help students successfully complete the training and achieve career growth.
+  - title: Technical Knowledge
+    description: Basic understanding of software applications, databases, or programming concepts is beneficial for joining the Duck Creek Online Classes. Prior experience is not mandatory because our trainers provide step-by-step guidance from beginner to advanced levels. This Duck Creek Course for Beginners is structured to help learners gain confidence in insurance platform configuration, policy administration, and implementation concepts through practical sessions.
+  - title: Professional Background
+    description: Working professionals from software, testing, business analysis, or insurance domains can enroll in our Duck Creek Online Learning Program to improve career opportunities. The Duck Creek Job Oriented Course is suitable for employees looking to upgrade their skills and move into cloud insurance platform projects. The course provides flexible schedules, live training sessions, and practical exposure for both freshers and experienced professionals.
 jobRoles:
-  - role: Duck Creek Developer
+  - role: Developer
     description: A Duck Creek Developer works on configuration, customization, integrations, and implementation of insurance applications using modern enterprise technologies. Through Duck Creek Online Training, learners gain hands-on experience in policy administration, workflows, billing, and claims management systems. The role requires strong analytical skills, practical project exposure, and understanding of insurance business processes. Our Duck Creek Job Oriented Course helps learners build technical expertise and prepare for real-time implementation projects in leading insurance companies.
     competencies:
       - Gosu / Core Scripting
@@ -88,18 +92,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Duck Creek Analyst
+  - role: Analyst
     description: A Duck Creek Analyst works closely with business teams and technical departments to understand insurance requirements and improve system processes. Through the Duck Creek Online Learning Program, learners gain knowledge in policy administration, claims workflows, billing systems, and reporting concepts. The role includes documentation, requirement gathering, process analysis, and implementation coordination. Our Duck Creek Professional Certification training helps learners build communication, analytical, and domain skills required for insurance technology projects.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Consultant
+  - role: Administrator
     description: A Duck Creek Administrator manages application configurations, user access, workflows, and system maintenance activities within insurance platforms. The Duck Creek Online Training program helps learners understand deployment processes, security settings, application monitoring, and system administration tasks. This role requires technical knowledge, troubleshooting abilities, and practical understanding of enterprise insurance systems. With our Duck Creek Course with Placement, students receive hands-on learning and career support to become skilled professionals in insurance technology administration.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Duck Creek Tester
+  - role: Tester
     description: A Duck Creek Tester is responsible for validating insurance applications, identifying defects, and ensuring system performance through structured testing methods. Our Duck Creek Online Training provides practical knowledge in functional testing, integration testing, workflows, and business process validation. Learners gain hands-on project experience and understand real-time testing scenarios used in insurance software implementations. The Duck Creek Certification Course also helps students improve analytical abilities and prepare for quality assurance roles in enterprise projects.
     competencies:
       - Enterprise Standards
@@ -202,17 +206,7 @@ modules:
       - Resume building and optimization
       - Real-time project presentation
       - Placement assistance and support
-whoShouldEnroll:
-  - title: Educational Qualification
-    description: Candidates with degrees in B.Tech, B.Sc, BCA, MCA, MBA, or related fields can join our Duck Creek Online Training program. Freshers and graduates who want to build a career in the insurance technology industry are eligible for this course. Basic computer knowledge and an interest in enterprise applications will help learners understand the concepts covered in the Duck Creek Fundamentals and Advanced Course effectively with practical learning.
-  - title: Career Interest
-    description: Individuals interested in insurance technology, cloud platforms, and enterprise software solutions are ideal candidates for our Duck Creek Cloud Insurance Platform Course. Learners aiming for certification, project experience, and placement opportunities can benefit from the Duck Creek Certification Online program. Strong communication skills, dedication to learning, and regular practice will help students successfully complete the training and achieve career growth.
-  - title: Technical Knowledge
-    description: Basic understanding of software applications, databases, or programming concepts is beneficial for joining the Duck Creek Online Classes. Prior experience is not mandatory because our trainers provide step-by-step guidance from beginner to advanced levels. This Duck Creek Course for Beginners is structured to help learners gain confidence in insurance platform configuration, policy administration, and implementation concepts through practical sessions.
-  - title: Professional Background
-    description: Working professionals from software, testing, business analysis, or insurance domains can enroll in our Duck Creek Online Learning Program to improve career opportunities. The Duck Creek Job Oriented Course is suitable for employees looking to upgrade their skills and move into cloud insurance platform projects. The course provides flexible schedules, live training sessions, and practical exposure for both freshers and experienced professionals.
-  - title: Career Growth with Professional Learning
-    description: The Duck Creek Online Training course helps freshers and working professionals gain expertise in policy administration, billing, claims, and cloud insurance platform concepts. Our Duck Creek Professional Certification training focuses on hands-on learning, project exposure, and interview preparation to make learners industry-ready. Duck Creek Course with Real-Time Projects enables students to build confidence and achieve long-term professional growth.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -267,4 +261,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Duck Creek jobs.
 ---
-This is the canonical course page for Duck Creek Training. Start your learning journey today with Ask 4 Trainings.

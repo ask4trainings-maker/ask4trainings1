@@ -71,13 +71,17 @@ benefits:
       - Team Coordination
       - Process Management
       - Business Understanding
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Beginners
+    description: Freshers and aspiring professionals can enroll in Jira Confluence Online Training to build strong foundations in project tracking, agile workflows, and collaboration tools. The program is suitable for candidates seeking practical exposure and industry-relevant skills. Through the Jira Confluence Project Management Course, learners gain knowledge of task management and reporting required in modern organizations.
+  - title: Professionals
+    description: Working professionals looking to enhance their skills can benefit from Jira Confluence Online Classes designed with flexible schedules and practical assignments. The Jira Confluence Expert Certification Training helps participants understand advanced concepts, administration, and workflow customization. This training supports career growth and enables professionals to manage projects efficiently in enterprise environments.
+  - title: Graduates
+    description: Recent graduates seeking career opportunities in project management and administration can join Job Oriented Jira Confluence Training to gain hands-on experience and real-world knowledge. The Jira Confluence Certification Course with Job Assistance provides project-based learning, interview preparation, and expert guidance, helping candidates develop the confidence and skills required for industry roles.
+  - title: Managers
+    description: Team leads, project managers, and business professionals can pursue Jira Confluence Certification Online to strengthen collaboration and reporting capabilities. Enrolling in the Jira Confluence Course in Hyderabad enables managers to understand dashboards, workflows, and documentation practices that improve team productivity and support efficient project execution across departments.
 jobRoles:
-  - role: Coupa Developer
+  - role: Developer
     description: A Coupa Developer designs integrations, custom workflows, API connections, and procurement automation solutions to meet organizational requirements. Advanced Coupa Online Training provides hands-on experience in technical configurations, system integration, and process optimization. Through Coupa Training with Hands-On Projects, professionals improve implementation expertise and develop scalable procurement solutions to support enterprise-level procurement and sourcing operations efficiently.
     competencies:
       - Gosu / Core Scripting
@@ -88,17 +92,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: Business Analysts use Jira and Confluence to document requirements, track tasks, and coordinate with development teams. The Jira Confluence Online Training program helps analysts understand agile methodologies, reporting tools, and knowledge management practices. Expertise gained from Jira Confluence Online Classes supports effective communication and project execution. Completing a Jira Confluence Certification Online program strengthens analytical skills and prepares professionals for roles requiring process optimization and stakeholder collaboration.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: Professionals who complete Jira Confluence Online Training can work as Administrators responsible for managing projects, workflows, permissions, and dashboards. They configure systems, optimize processes, and support teams using agile practices. Through a Jira Confluence Certification Course and practical assignments, administrators gain expertise in issue tracking and collaboration. Organizations value professionals with experience from a Jira Confluence Course with Real-Time Projects for efficient project delivery and team productivity.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Specialist
     description: A Coupa Specialist manages sourcing activities, supplier collaboration, procurement compliance, and spend optimization across organizations. Industry-based Coupa Online Training helps learners understand procurement lifecycle processes and automation strategies with practical assignments and live scenarios. The comprehensive Coupa Online Certification Program prepares professionals to manage invoicing workflows, procurement reporting, and supplier operations for improved business efficiency and performance.
     competencies:
       - Enterprise Standards
@@ -209,17 +214,7 @@ modules:
       - Resume Preparation
       - Coupa Certification Guidance
       - Placement Assistance
-whoShouldEnroll:
-  - title: Beginners
-    description: Freshers and aspiring professionals can enroll in Jira Confluence Online Training to build strong foundations in project tracking, agile workflows, and collaboration tools. The program is suitable for candidates seeking practical exposure and industry-relevant skills. Through the Jira Confluence Project Management Course, learners gain knowledge of task management and reporting required in modern organizations.
-  - title: Professionals
-    description: Working professionals looking to enhance their skills can benefit from Jira Confluence Online Classes designed with flexible schedules and practical assignments. The Jira Confluence Expert Certification Training helps participants understand advanced concepts, administration, and workflow customization. This training supports career growth and enables professionals to manage projects efficiently in enterprise environments.
-  - title: Graduates
-    description: Recent graduates seeking career opportunities in project management and administration can join Job Oriented Jira Confluence Training to gain hands-on experience and real-world knowledge. The Jira Confluence Certification Course with Job Assistance provides project-based learning, interview preparation, and expert guidance, helping candidates develop the confidence and skills required for industry roles.
-  - title: Managers
-    description: Team leads, project managers, and business professionals can pursue Jira Confluence Certification Online to strengthen collaboration and reporting capabilities. Enrolling in the Jira Confluence Course in Hyderabad enables managers to understand dashboards, workflows, and documentation practices that improve team productivity and support efficient project execution across departments.
-  - title: Career Support and Placement Assistance
-    description: The Jira Confluence Online Course provides end-to-end learning with practical assignments and real-time scenarios that strengthen technical capabilities. Through the Jira Confluence Certification Course with Job Assistance, learners receive career guidance, resume preparation, and interview support. This training equips candidates with industry knowledge and collaboration platforms.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -278,4 +273,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Jira Confluence jobs.
 ---
-This is the canonical course page for Jira Confluence Online Training. Start your learning journey today with Ask 4 Trainings.

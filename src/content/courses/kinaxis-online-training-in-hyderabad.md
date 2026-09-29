@@ -71,37 +71,44 @@ benefits:
       - Interview skills
       - Job ready
       - Placement drive
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Educational Background
+    description: Candidates with a degree in engineering, business, or related fields can easily start Kinaxis Online Training. Basic knowledge of supply chain concepts or IT systems is helpful for understanding the Kinaxis Supply Chain Management Course and progressing smoothly in real-time project learning and certification preparation.
+  - title: Technical Knowledge
+    description: Basic understanding of databases, Excel, or analytics is beneficial for Kinaxis Online Training. Learners enrolling in Kinaxis RapidResponse Planning Course or developer-level modules will find it easier to grasp configurations, workflows, and system integration concepts during training and improve overall learning efficiency quickly.
+  - title: Professional Experience
+    description: Working professionals in supply chain, logistics, or IT domains are ideal for Kinaxis Course with Placement Assistance. Prior experience is not mandatory, but it helps in better understanding Kinaxis Training with Live Scenarios and applying concepts to real business environments for faster career growth opportunities globally.
+  - title: Interest in Supply Chain
+    description: A strong interest in planning and operations is important for success in Kinaxis Online Training. Learners who are motivated to build careers in supply chain and enroll in Kinaxis Online Certification Program can quickly gain expertise and achieve better career growth opportunities with high demand across global industries.
 jobRoles:
-  - role: Kinaxis Online Training professional
+  - role: Developer
     description: A Kinaxis Online Training professional in development focuses on configuring and customizing RapidResponse solutions to meet business needs. Through the Kinaxis Online Master Program and Advanced Kinaxis Online Training, developers gain expertise in scripting, data modeling, and application building. With support from Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, they become capable of delivering scalable supply chain solutions. This role demands strong analytical skills and hands-on project experience to ensure seamless system integration.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: consultant trained through Kinaxis Online Training
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Consultant
     description: A consultant trained through Kinaxis Online Training plays a vital role in aligning business requirements with system capabilities. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course help professionals understand functional processes like demand and supply planning. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, consultants learn to implement solutions, optimize workflows, and guide clients. This role requires communication skills and domain expertise to drive successful project outcomes.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: An analyst role with Kinaxis Online Training involves interpreting data and generating actionable insights for supply chain optimization. The Kinaxis Online Master Program combined with Advanced Kinaxis Online Training equips professionals with tools to analyze demand patterns and forecast trends. With Kinaxis Certification Training in Hyderabad and Kinaxis Professional Training Hyderabad, analysts gain hands-on experience in dashboards and reporting. This role enhances decision-making abilities and supports strategic planning in organizations.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: planner trained
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Planner
     description: A planner trained in Kinaxis Online Training focuses on managing demand, supply, and inventory efficiently. The Kinaxis Online Master Program and Kinaxis Advanced Certification Course provide deep knowledge of planning modules and execution strategies. With Advanced Kinaxis Online Training and Kinaxis Certification Training in Hyderabad, planners learn to respond to real-time changes and ensure smooth operations. This role is critical for maintaining balance across supply chain processes and achieving business goals.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Architect
     description: An architect role through Kinaxis Online Training involves designing and implementing end-to-end supply chain solutions. The Kinaxis Online Master Program and Advanced Kinaxis Online Training help professionals master system architecture, integrations, and performance optimization. With Kinaxis Advanced Certification Course, Kinaxis Certification Training in Hyderabad, and Kinaxis Professional Training Hyderabad, architects ensure scalable and efficient solutions. This role requires deep technical expertise and strategic thinking to lead complex implementations.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Kinaxis RapidResponse Online Course is designed to equip learners with in-demand supply chain planning skills through practical exposure and expert guidance. Our Kinaxis Online Training India program focuses on real-time scenarios, helping you understand planning, analytics, and execution effectively. With Kinaxis Certification Training in Hyderabad, learners gain industry-recognized credentials and hands-on project experience to boost career growth and secure high-paying roles.
 
@@ -197,15 +204,7 @@ modules:
       - Interview preparation and guidance
       - Resume building and profile tips
       - Certification exam preparation guide
-whoShouldEnroll:
-  - title: Educational Background
-    description: Candidates with a degree in engineering, business, or related fields can easily start Kinaxis Online Training. Basic knowledge of supply chain concepts or IT systems is helpful for understanding the Kinaxis Supply Chain Management Course and progressing smoothly in real-time project learning and certification preparation.
-  - title: Technical Knowledge
-    description: Basic understanding of databases, Excel, or analytics is beneficial for Kinaxis Online Training. Learners enrolling in Kinaxis RapidResponse Planning Course or developer-level modules will find it easier to grasp configurations, workflows, and system integration concepts during training and improve overall learning efficiency quickly.
-  - title: Professional Experience
-    description: Working professionals in supply chain, logistics, or IT domains are ideal for Kinaxis Course with Placement Assistance. Prior experience is not mandatory, but it helps in better understanding Kinaxis Training with Live Scenarios and applying concepts to real business environments for faster career growth opportunities globally.
-  - title: Interest in Supply Chain
-    description: A strong interest in planning and operations is important for success in Kinaxis Online Training. Learners who are motivated to build careers in supply chain and enroll in Kinaxis Online Certification Program can quickly gain expertise and achieve better career growth opportunities with high demand across global industries.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -248,4 +247,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Kinaxis developer jobs.
 ---
-This is the canonical course page for Kinaxis Training. Start your learning journey today with Ask 4 Trainings.

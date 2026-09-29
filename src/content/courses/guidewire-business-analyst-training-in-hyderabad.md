@@ -71,30 +71,34 @@ benefits:
       - Client Work
       - Industry Use
       - Career Scope
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Fresh Graduates
+    description: Freshers looking to start a career in IT can enroll in the Guidewire BA Course for Beginners. This program under Guidewire Business Analyst Training requires no prior experience and builds strong fundamentals. With structured learning and Guidewire BA Online Training, graduates gain confidence, domain knowledge, and practical exposure to begin a successful career in the insurance and business analysis field.
+  - title: Working Professionals
+    description: Professionals aiming to upgrade their careers can join Guidewire BA Training for Working Professionals. With flexible options like Guidewire BA Weekend Training and Guidewire BA Remote Training, learners can balance work and study. This Guidewire Business Analyst Training helps individuals transition into high-demand roles with better salary opportunities and industry-recognized expertise.
+  - title: IT Background Candidates
+    description: Candidates with IT experience can enhance their careers through Guidewire BA Technical Training and Guidewire Business Analyst Hybrid Training. This Guidewire Business Analyst Training strengthens technical and functional knowledge while providing real-time exposure. It is ideal for those who want to specialize in Guidewire applications and grow into advanced business analyst roles.
+  - title: Career Switchers
+    description: Individuals from non-IT backgrounds can shift careers using the Guidewire Business Analyst E-learning Course. With beginner-friendly modules and Guidewire BA Online Classes, this Guidewire Business Analyst Training makes learning simple and practical. Career switchers gain the required skills, domain knowledge, and confidence to enter the IT and insurance industry successfully.
 jobRoles:
-  - role: Guidewire Business Analyst
+  - role: Business Analyst
     description: A Guidewire Business Analyst plays a key role in gathering requirements, analyzing business needs, and coordinating with stakeholders to ensure successful project delivery. Through Guidewire Business Analyst Training, professionals gain strong functional knowledge and domain expertise. With support from Guidewire BA Real-Time Project Training and practical exposure, they learn to create documentation, user stories, and workflows, making them essential contributors in insurance and IT projects.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Guidewire Functional Consultant
+  - role: Functional Consultant
     description: A Guidewire Functional Consultant focuses on implementing and configuring Guidewire applications based on business requirements. With knowledge gained from Guidewire BA Online Training and Guidewire Business Analyst Functional Training, professionals understand system workflows and client needs. They work closely with technical teams to ensure proper implementation, making this role ideal for those aiming to build a strong career in Guidewire consulting.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Guidewire PolicyCenter Analyst
+  - role: PolicyCenter Analyst
     description: A Guidewire PolicyCenter Analyst specializes in managing policy lifecycle processes using Guidewire tools. With expertise from Guidewire Policy Center BA Training and Guidewire Business Analyst Training, professionals handle policy creation, updates, and validations. This role requires strong analytical skills and understanding of insurance processes, helping organizations streamline operations and improve efficiency in policy management systems.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Insurance Domain Business Analyst
+  - role: Domain Business Analyst
     description: An Insurance Domain Business Analyst focuses on bridging the gap between business and technology using Guidewire platforms. With expertise gained from Guidewire Insurance Domain BA Training, Guidewire Business Analyst Training, and Guidewire BA Practical Training, professionals analyze business processes and suggest improvements. This role offers excellent career growth and opportunities in leading insurance and IT companies.
     competencies:
       - Requirement Gathering
@@ -195,15 +199,7 @@ modules:
       - Guidewire BA Training with Placement support
       - Job assistance and referrals
       - Career growth strategies
-whoShouldEnroll:
-  - title: Fresh Graduates
-    description: Freshers looking to start a career in IT can enroll in the Guidewire BA Course for Beginners. This program under Guidewire Business Analyst Training requires no prior experience and builds strong fundamentals. With structured learning and Guidewire BA Online Training, graduates gain confidence, domain knowledge, and practical exposure to begin a successful career in the insurance and business analysis field.
-  - title: Working Professionals
-    description: Professionals aiming to upgrade their careers can join Guidewire BA Training for Working Professionals. With flexible options like Guidewire BA Weekend Training and Guidewire BA Remote Training, learners can balance work and study. This Guidewire Business Analyst Training helps individuals transition into high-demand roles with better salary opportunities and industry-recognized expertise.
-  - title: IT Background Candidates
-    description: Candidates with IT experience can enhance their careers through Guidewire BA Technical Training and Guidewire Business Analyst Hybrid Training. This Guidewire Business Analyst Training strengthens technical and functional knowledge while providing real-time exposure. It is ideal for those who want to specialize in Guidewire applications and grow into advanced business analyst roles.
-  - title: Career Switchers
-    description: Individuals from non-IT backgrounds can shift careers using the Guidewire Business Analyst E-learning Course. With beginner-friendly modules and Guidewire BA Online Classes, this Guidewire Business Analyst Training makes learning simple and practical. Career switchers gain the required skills, domain knowledge, and confidence to enter the IT and insurance industry successfully.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -246,4 +242,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Guidewire developer jobs.
 ---
-This is the canonical course page for Guidewire Business Analyst Training. Start your learning journey today with Ask 4 Trainings.

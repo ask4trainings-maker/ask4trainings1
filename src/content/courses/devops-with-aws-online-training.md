@@ -71,33 +71,39 @@ benefits:
       - Project Experience
       - Deployment Skills
       - Cloud Careers
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Students
+    description: Students interested in cloud computing, automation, and software delivery can join DevOps with AWS Online Training to build strong technical foundations. This AWS DevOps Master Program Online helps learners understand AWS services, CI/CD pipelines, containers, and deployment practices needed for modern technology careers and industry growth.
+  - title: Professionals
+    description: Working professionals aiming to upgrade their technical expertise can enroll in the AWS Cloud DevOps Training Online program. The Job Oriented AWS DevOps Online Training is suitable for IT employees, developers, system administrators, and support engineers looking to improve automation, cloud operations and deployment skills.
+  - title: Freshers
+    description: Fresh graduates looking for career opportunities in cloud and DevOps domains are eligible for AWS DevOps Engineer Job Ready Course designed with practical learning and job-focused concepts. Through AWS DevOps Training with Placement Support, freshers can gain project exposure, technical confidence, and industry-ready knowledge.
+  - title: Learners
+    description: Anyone passionate about cloud technologies, automation, and infrastructure management can join AWS DevOps Certification Training programs. With AWS DevOps Training with Real-Time Projects, learners receive hands-on experience, practical implementation knowledge, and exposure to real-world DevOps workflows and AWS environments.
 jobRoles:
-  - role: Consultant
+  - role: Developer
     description: DevOps Developers play a key role in building, testing, automating, and deploying applications across cloud environments. Through DevOps with AWS Online Training, learners gain expertise in CI/CD pipelines, AWS services, Docker, Kubernetes, Jenkins, and automation practices. The AWS DevOps Online Course helps developers strengthen coding integration, deployment management, cloud operations, and collaboration skills required for modern software development and enterprise delivery environments.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Consultant
     description: DevOps Consultants help organizations improve automation, cloud migration, deployment efficiency, and operational performance. The AWS DevOps Certification Training program equips learners with practical cloud expertise, implementation strategies, and DevOps tool knowledge. Through AWS DevOps Online Course, professionals learn how to guide businesses in optimizing AWS infrastructure and deployment pipelines.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Architect
     description: Cloud Architects design scalable, secure, and efficient cloud environments for organizations. Through AWS Cloud DevOps Training Online, learners understand cloud architecture, deployment planning, automation tools, and infrastructure management. The AWS DevOps Professional Certification Training program prepares candidates to work with AWS ecosystems, DevOps methodologies, and real-time cloud implementation practices across industries.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Administrator
     description: DevOps Administrators are responsible for managing servers, deployment environments, cloud resources, and operational workflows. With DevOps with AWS Online Training, learners gain knowledge of AWS management, configuration handling, monitoring tools, and CI/CD operations. The AWS DevOps Training with Real-Time Projects approach provides practical exposure to real-world system administration and cloud operations.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Specialist
     description: AWS DevOps Specialists focus on automation, infrastructure deployment, cloud integration, and continuous delivery practices. The AWS DevOps Online Training and Placement Program develops industry-ready technical capabilities through hands-on assignments and practical sessions. With Job Oriented AWS DevOps Online Training, learners gain the knowledge required to handle cloud environments, deployment workflows, and enterprise DevOps solutions.
     competencies:
       - Enterprise Standards
@@ -198,15 +204,7 @@ modules:
       - CI/CD Pipeline Real-Time Implementation
       - Cloud Infrastructure Project Execution
       - Project Review and Interview Preparation
-whoShouldEnroll:
-  - title: Students
-    description: Students interested in cloud computing, automation, and software delivery can join DevOps with AWS Online Training to build strong technical foundations. This AWS DevOps Master Program Online helps learners understand AWS services, CI/CD pipelines, containers, and deployment practices needed for modern technology careers and industry growth.
-  - title: Professionals
-    description: Working professionals aiming to upgrade their technical expertise can enroll in the AWS Cloud DevOps Training Online program. The Job Oriented AWS DevOps Online Training is suitable for IT employees, developers, system administrators, and support engineers looking to improve automation, cloud operations and deployment skills.
-  - title: Freshers
-    description: Fresh graduates looking for career opportunities in cloud and DevOps domains are eligible for AWS DevOps Engineer Job Ready Course designed with practical learning and job-focused concepts. Through AWS DevOps Training with Placement Support, freshers can gain project exposure, technical confidence, and industry-ready knowledge.
-  - title: Learners
-    description: Anyone passionate about cloud technologies, automation, and infrastructure management can join AWS DevOps Certification Training programs. With AWS DevOps Training with Real-Time Projects, learners receive hands-on experience, practical implementation knowledge, and exposure to real-world DevOps workflows and AWS environments.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -259,4 +257,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top DevOps with AWS jobs.
 ---
-This is the canonical course page for DevOps with AWS Online Training. Start your learning journey today with Ask 4 Trainings.

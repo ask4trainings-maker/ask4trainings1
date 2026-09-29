@@ -71,35 +71,39 @@ benefits:
       - Expert Trainers
       - Anytime Access
       - User Friendly
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Education
+    description: Basic educational background is enough to join a Polarion Course in Hyderabad, as the program is designed for both graduates and learners from different streams. With polarion online trianing, even non-technical candidates can understand ALM concepts. The course structure, including Polarion Instructor-Led Training and Polarion Self-Paced Online Course.
+  - title: Interest
+    description: A strong interest in learning ALM tools and software processes is important for success in a Polarion Training with Tools & Use Cases. Learners who are curious about workflows, requirement handling, and testing concepts will benefit more. The Polarion Job-Oriented Course is designed to keep learners engaged with practical exposure.
+  - title: Skills
+    description: Basic computer knowledge and understanding of software environments are helpful for enrolling in a Polarion Course with Hands-On Labs. No advanced coding skills are required, but familiarity with tools improves learning speed. Through polarion online trianing, learners gain practical skills using real-time scenarios, making them job-ready for ALM roles.
+  - title: Carrers
+    description: Anyone aiming to build or switch careers in IT can join Polarion Training with Placement Supp programs. This training supports freshers and professionals looking for growth through structured learning paths. The Polarion Job-Oriented Course combined with placement assistance ensures candidates are prepared for interviews and industry demands.
 jobRoles:
-  - role: Polarion Developer
+  - role: Developer
     description: A Polarion Developer focuses on customization, scripting, and integration within the ALM environment. Using skills from Polarion Training with Tools & Use Cases and Polarion Full Course Online, developers enhance system functionality and automate processes. Polarion Online Training provides hands-on experience to work with APIs, workflows, and extensions for enterprise-level applications.
     competencies:
       - Gosu / Core Scripting
       - API Integration
       - Architecture Design
-  - role: Polarion Consultant
+  - role: Consultant
     description: A Polarion Consultant works on implementing and customizing ALM solutions for organizations. With expertise from Polarion ALM and Traceability Course and Polarion Online Certification Program, professionals can configure workflows, integrate systems, and support clients. Polarion Online Training helps build the technical and functional skills required to deliver effective ALM solutions in real-time projects.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Business Analyst role after completing Polarion Online Training
+  - role: Analyst
     description: A Business Analyst role after completing Polarion Online Training focuses on gathering, analyzing, and managing requirements using ALM tools. With knowledge from Polarion Requirement Management Training and Best Online Training for Polarion ALM, professionals can create detailed documentation, ensure stakeholder communication, and maintain traceability. This role is ideal for those who want to bridge business needs with technical solutions effectively.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Consultant
+  - role: Tester
     description: A Test Engineer uses skills gained from Polarion Test Management Online Course to design, execute, and manage test cases efficiently. Through Polarion Online Training and Polarion Real-Time Projects Training, learners understand defect tracking, quality assurance, and reporting. This role ensures software quality by validating requirements and maintaining test coverage across the development lifecycle.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Manager
     description: An ALM Manager oversees project lifecycle, team coordination, and delivery using insights from Polarion Training with Placement Support and Advanced Polarion ALM Training. With Polarion Online Training, professionals gain the ability to monitor progress, ensure compliance, and maintain traceability. This role is crucial for managing end-to-end project execution and aligning business goals with development processes.
     competencies:
       - Enterprise Standards
@@ -198,15 +202,7 @@ modules:
       - Mock interviews and real-time interview prep
       - Placement assistance and job search guidance
       - Career roadmap for ALM and Polarion roles
-whoShouldEnroll:
-  - title: Education
-    description: Basic educational background is enough to join a Polarion Course in Hyderabad, as the program is designed for both graduates and learners from different streams. With polarion online trianing, even non-technical candidates can understand ALM concepts. The course structure, including Polarion Instructor-Led Training and Polarion Self-Paced Online Course.
-  - title: Interest
-    description: A strong interest in learning ALM tools and software processes is important for success in a Polarion Training with Tools & Use Cases. Learners who are curious about workflows, requirement handling, and testing concepts will benefit more. The Polarion Job-Oriented Course is designed to keep learners engaged with practical exposure.
-  - title: Skills
-    description: Basic computer knowledge and understanding of software environments are helpful for enrolling in a Polarion Course with Hands-On Labs. No advanced coding skills are required, but familiarity with tools improves learning speed. Through polarion online trianing, learners gain practical skills using real-time scenarios, making them job-ready for ALM roles.
-  - title: Carrers
-    description: Anyone aiming to build or switch careers in IT can join Polarion Training with Placement Supp programs. This training supports freshers and professionals looking for growth through structured learning paths. The Polarion Job-Oriented Course combined with placement assistance ensures candidates are prepared for interviews and industry demands.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -249,4 +245,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Polarion developer jobs.
 ---
-This is the canonical course page for Polarion Training. Start your learning journey today with Ask 4 Trainings.

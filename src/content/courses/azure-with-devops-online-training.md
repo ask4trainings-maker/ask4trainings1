@@ -71,13 +71,17 @@ benefits:
       - Resume Building
       - Technical Confidence
       - Employment Support
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: IT Professionals
+    description: Candidates with technical knowledge or industry exposure can benefit from Azure with DevOps Online Training to improve cloud automation, deployment, and DevOps skills. This program is suitable for professionals aiming to strengthen practical knowledge, gain hands-on experience, and enhance career growth through Azure DevOps Online Training with Certification and industry-focused learning.
+  - title: Fresh Graduates
+    description: Recent graduates interested in cloud computing, automation, and software delivery are eligible for this training program. Azure DevOps Course Online helps learners understand DevOps tools, CI/CD workflows, and cloud concepts, while Azure DevOps Certification Training supports professional skill development and job-oriented technical learning for future career advancement opportunities.
+  - title: Software Developers
+    description: Software developers seeking expertise in cloud deployment, automation, and continuous delivery can enroll in this program. Through Azure with DevOps Online Training, learners gain exposure to deployment workflows, cloud integration, and infrastructure practices. Azure DevOps Online Classes with Live Projects provide practical understanding of real-world implementation scenarios.
+  - title: System Administrators
+    description: System administrators aiming to transition into cloud and DevOps careers can build practical expertise through this training. Azure DevOps Online Training India focuses on automation, cloud operations, and deployment management, while Azure DevOps Training with Real-Time Projects helps learners strengthen implementation skills and industry readiness for enhanced professional career success.
 jobRoles:
-  - role: Consultant
+  - role: Engineer
     description: An Engineer role after completing Azure with DevOps Online Training involves managing cloud infrastructure, automating deployments, monitoring systems, and supporting CI/CD implementation. Professionals work with cloud services, automation tools, and release pipelines to improve software delivery efficiency. Skills gained through Azure DevOps Certification Training help learners handle real-time DevOps environments and cloud operations.
     competencies:
       - Enterprise Standards
@@ -90,9 +94,10 @@ jobRoles:
   - role: Architect
     description: An Architect designs scalable cloud environments, automation frameworks, and deployment strategies for enterprise applications. Through Azure DevOps Online Training with Certification, professionals learn to build secure and efficient cloud solutions aligned with organizational requirements. Knowledge from Azure DevOps Course Online supports infrastructure planning, integration workflows, and DevOps transformation initiatives.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Administrator
     description: An Administrator manages cloud resources, deployment environments, access controls, and operational monitoring activities. By completing Azure DevOps Online Training India, professionals gain practical experience in automation, configuration management, and release coordination. Expertise gained through Azure DevOps Training with Real-Time Projects supports efficient management of cloud and DevOps ecosystems.
     competencies:
       - Enterprise Standards
@@ -197,15 +202,7 @@ modules:
       - Resume Building Techniques
       - Placement Assistance Guidance
       - Job-Oriented Skill Development
-whoShouldEnroll:
-  - title: IT Professionals
-    description: Candidates with technical knowledge or industry exposure can benefit from Azure with DevOps Online Training to improve cloud automation, deployment, and DevOps skills. This program is suitable for professionals aiming to strengthen practical knowledge, gain hands-on experience, and enhance career growth through Azure DevOps Online Training with Certification and industry-focused learning.
-  - title: Fresh Graduates
-    description: Recent graduates interested in cloud computing, automation, and software delivery are eligible for this training program. Azure DevOps Course Online helps learners understand DevOps tools, CI/CD workflows, and cloud concepts, while Azure DevOps Certification Training supports professional skill development and job-oriented technical learning for future career advancement opportunities.
-  - title: Software Developers
-    description: Software developers seeking expertise in cloud deployment, automation, and continuous delivery can enroll in this program. Through Azure with DevOps Online Training, learners gain exposure to deployment workflows, cloud integration, and infrastructure practices. Azure DevOps Online Classes with Live Projects provide practical understanding of real-world implementation scenarios.
-  - title: System Administrators
-    description: System administrators aiming to transition into cloud and DevOps careers can build practical expertise through this training. Azure DevOps Online Training India focuses on automation, cloud operations, and deployment management, while Azure DevOps Training with Real-Time Projects helps learners strengthen implementation skills and industry readiness for enhanced professional career success.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -258,4 +255,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Azure DevOps jobs.
 ---
-This is the canonical course page for Azure with DevOps Online Training. Start your learning journey today with Ask 4 Trainings.

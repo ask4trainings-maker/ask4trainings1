@@ -71,17 +71,22 @@ benefits:
       - Learning Achievement
       - Development Expertise
       - Career Opportunities
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Student Background
+    description: Learners with academic knowledge in programming, computer science, or software concepts can enroll in Java Full Stack Training in Hyderabad to strengthen practical development skills. The Java Full Stack Online Course is suitable for students aiming to improve coding, database, and web application development expertise.
+  - title: Working Professionals
+    description: IT professionals, developers, testers, and technical employees seeking career advancement can join Java Full Stack Training in Hyderabad for industry-focused learning. The Java Full Stack Online Training program helps professionals enhance technical knowledge, implementation skills, and modern development practices.
+  - title: Career Switchers
+    description: Individuals planning to transition into software development careers can choose Java Full Stack Training in Hyderabad to build practical technical capabilities. The Java Full Stack Course Online supports learners in understanding front-end, back-end, and real-world application development concepts. Enroll and Start Today
+  - title: Fresh Graduates
+    description: Recent graduates looking to enter the software industry can benefit from Java Full Stack Training in Hyderabad designed for practical learning and technical growth. The Java Full Stack Online Certification Program helps learners strengthen development skills, project understanding, and career readiness.Join Now Build Your Career.
 jobRoles:
-  - role: Consultant
+  - role: Developer
     description: A Developer creates, tests, and maintains software applications using front-end and back-end technologies. Through Java Full Stack Training in Hyderabad, learners gain practical experience in coding, database handling, APIs, frameworks, and application deployment. The Java Full Stack Developer Training program helps professionals strengthen implementation skills, project understanding, and technical expertise required for modern software development environments.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Consultant
     description: A Consultant provides technical guidance, solution planning, and implementation support for software and development projects. By joining Java Full Stack Training in Hyderabad, learners build strong application development and problem-solving abilities. The Java Full Stack Online Training program focuses on practical development knowledge, technical confidence, and professional software implementation skills.
     competencies:
@@ -92,7 +97,7 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Programmer
     description: A Programmer writes, analyzes, and improves application code to build reliable software solutions. Enrolling in Java Full Stack Training in Hyderabad helps learners understand front-end technologies, Java frameworks, and real-world development workflows. The Java Full Stack Online Course provides practical exposure, coding exercises, and technical learning aligned with current software industry expectations.
     competencies:
       - Enterprise Standards
@@ -100,8 +105,9 @@ jobRoles:
   - role: Architect
     description: An Architect designs software structures, technology solutions, and development strategies for scalable applications. Through Java Full Stack Training in Hyderabad, learners strengthen understanding of application frameworks, databases, APIs, and deployment concepts. The Java Full Stack Master Program Online helps professionals gain practical expertise and industry-relevant technical knowledge for advanced software roles.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Advance your programming career with Java Full Stack Training in Hyderabad designed to deliver practical development expertise and real-time application knowledge. Our Java Full Stack Online Classes with Live Projects help learners understand front-end, back-end, databases, APIs, and deployment concepts through hands-on implementation. This training approach supports skill development, technical confidence, and improved readiness for professional software development roles.
 
@@ -197,17 +203,7 @@ modules:
       - Technical Interview Question Practice
       - Certification and Career Guidance
       - Job Assistance and Placement Support
-whoShouldEnroll:
-  - title: Student Background
-    description: Learners with academic knowledge in programming, computer science, or software concepts can enroll in Java Full Stack Training in Hyderabad to strengthen practical development skills. The Java Full Stack Online Course is suitable for students aiming to improve coding, database, and web application development expertise.
-  - title: Working Professionals
-    description: IT professionals, developers, testers, and technical employees seeking career advancement can join Java Full Stack Training in Hyderabad for industry-focused learning. The Java Full Stack Online Training program helps professionals enhance technical knowledge, implementation skills, and modern development practices.
-  - title: Career Switchers
-    description: Individuals planning to transition into software development careers can choose Java Full Stack Training in Hyderabad to build practical technical capabilities. The Java Full Stack Course Online supports learners in understanding front-end, back-end, and real-world application development concepts. Enroll and Start Today
-  - title: Fresh Graduates
-    description: Recent graduates looking to enter the software industry can benefit from Java Full Stack Training in Hyderabad designed for practical learning and technical growth. The Java Full Stack Online Certification Program helps learners strengthen development skills, project understanding, and career readiness.Join Now Build Your Career.
-  - title: Career Advancement and Practical Exposure
-    description: Strengthen your career opportunities through Java Full Stack Training with Placement Support focused on skill development, interview readiness, and industry-oriented learning. The Java Full Stack Training with Internship program provides practical exposure, real-time project understanding, and hands-on experience that help learners improve confidence and professional capabilities.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -256,4 +252,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Java Full Stack jobs.
 ---
-This is the canonical course page for Java Full Stack Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

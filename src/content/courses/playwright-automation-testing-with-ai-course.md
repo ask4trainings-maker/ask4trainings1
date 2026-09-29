@@ -71,13 +71,17 @@ benefits:
       - Technical Confidence
       - Professional Skills
       - Opportunity Access
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Students
+    description: The Playwright Automation Testing with AI Course is suitable for students looking to build strong automation testing knowledge and practical software testing skills. It helps learners understand AI-driven testing methods, browser automation, scripting concepts, and industry practices through hands-on learning. Playwright Automation Testing Online Classes support skill development and career preparation.
+  - title: Professionals
+    description: Working professionals aiming to upgrade their technical expertise can benefit from the Playwright Automation Testing with AI Course through advanced automation concepts and real-time project exposure. The Playwright AI Online Bootcamp enables learners to strengthen testing workflows, automation frameworks, and AI-powered validation techniques required in modern software environments.
+  - title: Beginners
+    description: The Playwright Automation Testing with AI Course is ideal for beginners seeking an easy introduction to automation testing and modern testing tools. With support from the Playwright Course for Beginners, learners gain foundational knowledge in test scripting, browser testing, framework basics, and automation practices aligned with current industry standards for career success.
+  - title: Testers
+    description: Software testers wanting to enhance their automation capabilities can enroll in the Playwright Automation Testing with AI Course for practical and career-oriented learning. The Playwright Testing Training with Job Support helps learners improve automation strategies, debugging methods, reporting skills, and real-world testing expertise through guided project-based training.
 jobRoles:
-  - role: Consultant
+  - role: Tester
     description: A Tester role involves validating software quality, executing automation scripts, and ensuring smooth application performance across different environments. Through the Playwright Automation Testing with AI Course, learners gain expertise in browser automation, framework handling, debugging, and test execution strategies. The Playwright Testing with AI Certification Training prepares professionals for industry-focused testing responsibilities and real-time project environments.
     competencies:
       - Enterprise Standards
@@ -87,11 +91,12 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: An Analyst role requires evaluating testing requirements, identifying defects, and improving software quality through effective automation strategies. By enrolling in the Playwright Automation Testing with AI Course, learners understand modern testing workflows, reporting mechanisms, and framework concepts. The Playwright Testing Course with Certification supports professional development through practical project-based learning and industry-aligned testing knowledge.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
   - role: Engineer
     description: An Engineer in automation testing focuses on creating automated frameworks, developing reusable scripts, and improving testing efficiency using modern technologies. The Playwright Automation Testing with AI Course helps learners build practical automation expertise, while Playwright Automation Testing Online Classes provide hands-on exposure to AI-powered testing methods, validation techniques, and advanced automation practices.
     competencies:
@@ -257,17 +262,7 @@ modules:
       - AI Failure Root Cause Detection
       - AI Screenshot Validation
       - Smart Waits using AI
-whoShouldEnroll:
-  - title: Students
-    description: The Playwright Automation Testing with AI Course is suitable for students looking to build strong automation testing knowledge and practical software testing skills. It helps learners understand AI-driven testing methods, browser automation, scripting concepts, and industry practices through hands-on learning. Playwright Automation Testing Online Classes support skill development and career preparation.
-  - title: Professionals
-    description: Working professionals aiming to upgrade their technical expertise can benefit from the Playwright Automation Testing with AI Course through advanced automation concepts and real-time project exposure. The Playwright AI Online Bootcamp enables learners to strengthen testing workflows, automation frameworks, and AI-powered validation techniques required in modern software environments.
-  - title: Beginners
-    description: The Playwright Automation Testing with AI Course is ideal for beginners seeking an easy introduction to automation testing and modern testing tools. With support from the Playwright Course for Beginners, learners gain foundational knowledge in test scripting, browser testing, framework basics, and automation practices aligned with current industry standards for career success.
-  - title: Testers
-    description: Software testers wanting to enhance their automation capabilities can enroll in the Playwright Automation Testing with AI Course for practical and career-oriented learning. The Playwright Testing Training with Job Support helps learners improve automation strategies, debugging methods, reporting skills, and real-world testing expertise through guided project-based training.
-  - title: Professional Learning and Career Validation
-    description: Advance your technical profile through the Playwright Testing Course with Certification focused on hands-on automation learning and industry-oriented implementation skills. The Playwright Online Certification Program helps learners build confidence in test automation, AI-driven workflows, reporting strategies, and practical testing approaches aligned with current industry expectations.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -328,4 +323,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Playwright Automation Testing with AI jobs.
 ---
-This is the canonical course page for Playwright Automation Testing with AI Course. Start your learning journey today with Ask 4 Trainings.

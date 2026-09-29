@@ -71,13 +71,15 @@ benefits:
       - Tech Skills
       - Smart Learning
       - Quick Upgrade
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Technical Background
+    description: Generative AI Cloud Integration Training, though not mandatory. In our Generative AI Online Training India, we cover fundamentals step by step. The Generative AI and Deep Learning Course introduces core AI concepts, and the Generative AI Master Program ensures learners gain both theoretical and hands-on expertise.
+  - title: For Students & Professionals
+    description: Our Generative AI Online Training is suitable for students, graduates, and working professionals looking to upgrade skills. The Generative AI Online Bootcamp supports career transitions, while the Generative AI Course with Live Projects builds practical experience. The Generative AI Online Certification Program enhances job opportunities across industries.
+  - title: Learning Commitment
+    description: Learners should be ready to dedicate time and effort to complete our Generative AI Cloud Integration Training successfully. With Generative AI Online Training India, you get flexible schedules. The Generative AI and Deep Learning Course requires consistent practice, and the Generative AI Master Program ensures structured learning for long-term career success.
 jobRoles:
-  - role: Generative AI Developer
+  - role: Developer
     description: A Generative AI Developer builds intelligent applications using models and APIs learned through Generative AI Online Training. With skills from a Generative AI and ChatGPT Course and Generative AI with LLMs Course, they design chatbots, automation tools, and AI-driven systems. Completing a Generative AI Professional Certification and Generative AI Training with Internship helps developers gain real-world exposure and create scalable, efficient AI solutions.
     competencies:
       - Gosu / Core Scripting
@@ -88,17 +90,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Generative AI Analyst interprets AI outputs and supports decision-making processes. With Generative AI Online Training and a Generative AI and ChatGPT Course, analysts understand data patterns, automate insights, and improve workflows. A Generative AI Professional Certification combined with a Generative AI Job Oriented Course enables them to provide valuable AI-driven recommendations in business environments.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Generative AI Engineer
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Engineer
     description: A Generative AI Engineer focuses on designing, optimizing, and deploying AI models using advanced tools. Through Generative AI Online Training and a Generative AI Job Oriented Course, engineers learn model tuning and system integration. Knowledge from a Generative AI with LLMs Course and hands-on Generative AI Training with Internship ensures they can manage AI pipelines and deliver high-performance solutions across industries.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Generative AI Specialist
+  - role: Specialist
     description: A Generative AI Specialist focuses on niche areas like prompt engineering, content generation, and automation. With expertise from Generative AI Online Training and a Generative AI and ChatGPT Course, specialists create innovative AI-driven solutions. Completing a Generative AI Job Oriented Course and earning a Generative AI Professional Certification helps them stay competitive and excel in specialized AI roles.
     competencies:
       - Enterprise Standards
@@ -198,15 +201,7 @@ modules:
       - Resume building and portfolio development
       - Interview questions and preparation tips
       - Career paths in generative AI field
-whoShouldEnroll:
-  - title: Basic Eligibility
-    description: To join our Generative AI Online Training, learners should have a basic understanding AI concepts. Our Generative AI Online Bootcamp is beginner-friendly, making it easy for freshers to start. The Generative AI Course with Live Projects , while the Generative AI Online Certification Program helps validate your skills for career growth.
-  - title: Technical Background
-    description: Generative AI Cloud Integration Training, though not mandatory. In our Generative AI Online Training India, we cover fundamentals step by step. The Generative AI and Deep Learning Course introduces core AI concepts, and the Generative AI Master Program ensures learners gain both theoretical and hands-on expertise.
-  - title: For Students & Professionals
-    description: Our Generative AI Online Training is suitable for students, graduates, and working professionals looking to upgrade skills. The Generative AI Online Bootcamp supports career transitions, while the Generative AI Course with Live Projects builds practical experience. The Generative AI Online Certification Program enhances job opportunities across industries.
-  - title: Learning Commitment
-    description: Learners should be ready to dedicate time and effort to complete our Generative AI Cloud Integration Training successfully. With Generative AI Online Training India, you get flexible schedules. The Generative AI and Deep Learning Course requires consistent practice, and the Generative AI Master Program ensures structured learning for long-term career success.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -256,4 +251,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Kinaxis developer jobs.
 ---
-This is the canonical course page for Generative AI Online Training. Start your learning journey today with Ask 4 Trainings.

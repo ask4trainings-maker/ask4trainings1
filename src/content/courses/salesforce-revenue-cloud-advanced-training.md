@@ -71,37 +71,44 @@ benefits:
       - Practical Learning
       - Certification Readiness
       - Market Demand
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Professionals
+    description: Professionals seeking advanced cloud expertise can join Salesforce Revenue Cloud Advanced Training to master pricing, billing, subscriptions, and quote-to-cash processes. The course provides practical exposure through real-time scenarios and project work. Learners also gain implementation experience with Revenue Cloud Advanced Hands-on Training for enterprise environments.
+  - title: Graduates
+    description: Graduates looking to build a successful Salesforce career can enroll through a leading Salesforce Revenue Cloud Training Institute. The program develops knowledge of Revenue Cloud concepts, workflows, and automation. Participants also receive preparation support through the Salesforce RCA Online Certification Program to strengthen career opportunities.
+  - title: Consultants
+    description: Consultants aiming to expand their Revenue Cloud expertise can benefit from advanced configuration and implementation training. The curriculum includes business scenarios, best practices, and Salesforce Revenue Cloud Integration concepts for real-world applications. It also supports preparation for Salesforce RCA Certification and professional growth across multiple enterprise business environments.
+  - title: Developers
+    description: Developers interested in Revenue Cloud customization and automation can gain practical skills through project-based learning. The course covers technical concepts, workflows, and implementation strategies using Revenue Cloud Advanced Hands-on Training. Learners also strengthen their expertise with Salesforce Revenue Cloud Advanced Training for complex projects.
 jobRoles:
-  - role: Consultant
+  - role: Developer
     description: A Revenue Cloud Developer uses Salesforce Revenue Cloud Advanced Training to build custom solutions, automate workflows, and integrate external applications. The role focuses on technical implementation, coding best practices, and advanced configurations. Learners also gain knowledge in Revenue Cloud Advanced Developer Course and Salesforce Revenue Cloud Integration to support complex business processes.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
   - role: Consultant
     description: A Revenue Cloud Consultant can leverage Salesforce Revenue Cloud Advanced Training to design and implement quote-to-cash solutions. Professionals learn pricing strategies, billing configurations, and subscription management while gaining expertise in Salesforce Revenue Cloud Consultant Certification and Revenue Cloud Advanced Implementation for enterprise business requirements and successful project delivery.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: A Revenue Cloud Analyst evaluates business requirements, revenue processes, and system performance to support organizational goals. The role involves process improvement, reporting, and solution recommendations. Learners develop expertise through Salesforce Revenue Cloud Advanced Training while gaining practical knowledge of Learn Salesforce Revenue Cloud Advanced concepts and Revenue Cloud Certification Program standards.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: A Revenue Cloud Administrator manages configurations, products, pricing rules, and user access across Revenue Cloud environments. Through Salesforce Revenue Cloud Advanced Training, professionals learn administration techniques and system optimization. The role benefits from Salesforce RCA Admin Training and Salesforce RCA Certification to improve operational efficiency and platform management expertise.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Revenue Cloud Architect
+  - role: Architect
     description: A Revenue Cloud Architect designs scalable revenue management solutions that align with business objectives. The role requires deep knowledge of integrations, automation, and enterprise architecture. With Salesforce Revenue Cloud Advanced Training, professionals gain skills in Revenue Cloud Advanced Implementation and Salesforce Revenue Cloud Pricing Solutions to create robust and efficient business systems.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Salesforce Revenue Cloud Advanced Training helps professionals gain in-depth knowledge of pricing, quoting, billing, subscriptions, and revenue lifecycle processes. The course focuses on practical implementation techniques, advanced configurations, and real-world business scenarios. This program also prepares candidates for the Salesforce Revenue Cloud Consultant Certification by covering industry best practices and functional concepts.
 
@@ -196,15 +203,7 @@ modules:
       - Mock assessments and knowledge reviews
       - Real-time implementation project execution
       - Interview preparation and career guidanceBest practices for project documentation
-whoShouldEnroll:
-  - title: Professionals
-    description: Professionals seeking advanced cloud expertise can join Salesforce Revenue Cloud Advanced Training to master pricing, billing, subscriptions, and quote-to-cash processes. The course provides practical exposure through real-time scenarios and project work. Learners also gain implementation experience with Revenue Cloud Advanced Hands-on Training for enterprise environments.
-  - title: Graduates
-    description: Graduates looking to build a successful Salesforce career can enroll through a leading Salesforce Revenue Cloud Training Institute. The program develops knowledge of Revenue Cloud concepts, workflows, and automation. Participants also receive preparation support through the Salesforce RCA Online Certification Program to strengthen career opportunities.
-  - title: Consultants
-    description: Consultants aiming to expand their Revenue Cloud expertise can benefit from advanced configuration and implementation training. The curriculum includes business scenarios, best practices, and Salesforce Revenue Cloud Integration concepts for real-world applications. It also supports preparation for Salesforce RCA Certification and professional growth across multiple enterprise business environments.
-  - title: Developers
-    description: Developers interested in Revenue Cloud customization and automation can gain practical skills through project-based learning. The course covers technical concepts, workflows, and implementation strategies using Revenue Cloud Advanced Hands-on Training. Learners also strengthen their expertise with Salesforce Revenue Cloud Advanced Training for complex projects.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -257,4 +256,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Salesforce Revenue Cloud jobs.
 ---
-This is the canonical course page for Salesforce Revenue Cloud Advanced Training. Start your learning journey today with Ask 4 Trainings.

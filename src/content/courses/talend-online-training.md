@@ -50,13 +50,17 @@ benefits:
 
       • Placement Support• Interview Preparation• Resume Building• Career Growth• Job Assistance• Professional Development• Industry Readiness• Certification Guidance• Skill Enhancement• Career Opportunities
     points: []
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Professionals
+    description: Working professionals aiming to upgrade their technical expertise can enroll in Talend Online Training to learn advanced data transformation and automation concepts. The Advanced Talend Online Course supports career growth through practical learning and real-time exposure.
+  - title: Graduates
+    description: Graduates interested in data integration, ETL development, and cloud technologies can join Talend Online Training to gain practical industry knowledge. The Talend Online Course helps learners strengthen implementation skills and project experience .
+  - title: Freshers
+    description: Freshers looking to begin careers in data integration and ETL development can benefit from Talend Online Course designed for foundational and practical learning. Through Talend Online Training, learners gain exposure to industry tools, project-based assignments and technical concepts.
+  - title: Learners
+    description: Aspiring learners seeking flexible technical education can choose Talend Online Training to build expertise in ETL, data migration, and cloud integration. The Talend Professional Certification Training program helps participants improve technical confidence, practical abilities.
 jobRoles:
-  - role: Talend Developer
+  - role: Developer
     description: A Talend Developer is responsible for designing, developing, and managing ETL workflows, data integration processes, and transformation solutions for business environments. Through Talend Online Training, learners gain practical skills in data migration, workflow automation, and cloud connectivity. The Talend Developer Training Online program and Advanced Talend Online Course help participants build implementation expertise required for professional development roles.
     competencies:
       - Gosu / Core Scripting
@@ -67,21 +71,23 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: Data Analysts leverage Talend technologies to organize, transform, and manage data for reporting and business insights. Through Talend Online Training, participants learn workflow handling, data quality concepts, and integration techniques. The Job Oriented Talend Online Training and Talend Online Certification Program help learners develop analytical understanding and practical technical knowledge.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Engineer
     description: Data Engineers use Talend tools to manage large-scale data pipelines, integration processes, and enterprise data systems. With Talend Online Training, learners understand data processing, ETL architecture, and cloud integration concepts. The Talend Online Course and Talend Professional Certification Training strengthen technical capabilities, helping learners prepare for modern engineering responsibilities in data-driven organizations.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Talend Architect
+  - role: Architect
     description: A Talend Architect designs enterprise-level data integration solutions, ETL frameworks, and scalable workflow systems. Through Talend Online Training, learners build advanced expertise in cloud integration, automation, and data governance. The Talend Training with Real-Time Projects, Talend Online Course, and Talend Professional Certification Training support learners in mastering architecture-focused technical skills.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Build practical expertise in data integration, ETL development, and data management through Talend Online Training designed for aspiring professionals and working experts. This program combines theoretical understanding with implementation-based learning to help learners handle real-time business scenarios. As the Best Talend Training Institute in Hyderabad, the course emphasizes hands-on practice, expert guidance, and project exposure for stronger technical development.
 
@@ -177,17 +183,7 @@ modules:
       - Certification Preparation
       - Resume Building Support
       - Interview Preparation Sessions
-whoShouldEnroll:
-  - title: Professionals
-    description: Working professionals aiming to upgrade their technical expertise can enroll in Talend Online Training to learn advanced data transformation and automation concepts. The Advanced Talend Online Course supports career growth through practical learning and real-time exposure.
-  - title: Graduates
-    description: Graduates interested in data integration, ETL development, and cloud technologies can join Talend Online Training to gain practical industry knowledge. The Talend Online Course helps learners strengthen implementation skills and project experience .
-  - title: Freshers
-    description: Freshers looking to begin careers in data integration and ETL development can benefit from Talend Online Course designed for foundational and practical learning. Through Talend Online Training, learners gain exposure to industry tools, project-based assignments and technical concepts.
-  - title: Learners
-    description: Aspiring learners seeking flexible technical education can choose Talend Online Training to build expertise in ETL, data migration, and cloud integration. The Talend Professional Certification Training program helps participants improve technical confidence, practical abilities.
-  - title: Career and Practical Experience
-    description: Build real-world capabilities through Talend Training with Placement Support that focuses on technical preparation, project understanding, and interview readiness. Learners also benefit from Talend Training with Internship, gaining practical exposure to business-oriented data integration environments. This Talend Online Training program helps participants improve confidence, strengthen developer skills, and prepare for industry-focused career opportunities.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -244,4 +240,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Talend jobs.
 ---
-This is the canonical course page for Talend Online Training. Start your learning journey today with Ask 4 Trainings.

@@ -71,11 +71,15 @@ benefits:
       - Career Advice
       - Learning Help
       - Continuous Support
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Basic Knowledge
+    description: Candidates enrolling in Oracle Fusion HCM Online Training should have a basic understanding of HR processes or business operations. This helps in grasping concepts covered in the Oracle Fusion HCM Master Program and builds a strong base to learn navigation, and workflows effectively.
+  - title: Educational Background
+    description: A degree in HR, business, IT, or related fields is beneficial for joining the Oracle Fusion HCM and Payroll Certification Course. However, freshers and graduates from any stream can also enroll in the Oracle Fusion Cloud Online Certification Program with proper guidance and training support.
+  - title: Career Interest
+    description: Learners with a strong interest in HR technology and cloud applications can benefit from the Oracle Fusion HCM Course with Internship. This program is ideal for those aiming to build careers in HR systems, payroll management and enterprise cloud solutions using practical exposure.
+  - title: Commitment Level
+    description: Dedication to learn are essential to complete Oracle Fusion HCM Online Training successfully. Active participation in sessions, practice tasks, and projects within the Oracle Fusion HCM Master Program ensures better understanding and improves chances of certification and job placement.
 jobRoles:
   - role: Developer
     description: A Developer works on technical aspects learned through the Oracle Fusion Cloud Developer course and Oracle Fusion Cloud Training. They handle integrations, customizations, and extensions within Oracle HCM. With strong knowledge from Oracle Fusion HCM Online Training, developers build scalable solutions, automate processes, and ensure seamless connectivity between different enterprise systems.
@@ -94,12 +98,12 @@ jobRoles:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Consultant
+  - role: Specialist
     description: A Specialist is an expert in specific modules like payroll or talent management through Oracle Fusion HCM and Payroll Certification Course. Using knowledge from Oracle Fusion Cloud Online Certification Program and Oracle Fusion HCM Course with Internship, they provide deep functional expertise, troubleshoot issues, and support organizations in optimizing HR operations efficiently.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Administrator
     description: An Administrator manages day-to-day operations of Oracle HCM systems after completing Oracle Fusion HCM Online Training and Oracle Fusion HCM Master Program. Their responsibilities include user management, security configuration, and system maintenance. With support from Oracle Fusion HCM Certification Online, they ensure system stability and smooth functioning of HR processes across organizations.
     competencies:
       - Enterprise Standards
@@ -199,15 +203,7 @@ modules:
       - Interview preparation and guidance
       - Resume building and profile tips
       - Certification exam preparation guide
-whoShouldEnroll:
-  - title: Basic Knowledge
-    description: Candidates enrolling in Oracle Fusion HCM Online Training should have a basic understanding of HR processes or business operations. This helps in grasping concepts covered in the Oracle Fusion HCM Master Program and builds a strong base to learn navigation, and workflows effectively.
-  - title: Educational Background
-    description: A degree in HR, business, IT, or related fields is beneficial for joining the Oracle Fusion HCM and Payroll Certification Course. However, freshers and graduates from any stream can also enroll in the Oracle Fusion Cloud Online Certification Program with proper guidance and training support.
-  - title: Career Interest
-    description: Learners with a strong interest in HR technology and cloud applications can benefit from the Oracle Fusion HCM Course with Internship. This program is ideal for those aiming to build careers in HR systems, payroll management and enterprise cloud solutions using practical exposure.
-  - title: Commitment Level
-    description: Dedication to learn are essential to complete Oracle Fusion HCM Online Training successfully. Active participation in sessions, practice tasks, and projects within the Oracle Fusion HCM Master Program ensures better understanding and improves chances of certification and job placement.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -260,4 +256,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Oracle Fusion HCM jobs.
 ---
-This is the canonical course page for Oracle Fusion Hcm Training. Start your learning journey today with Ask 4 Trainings.

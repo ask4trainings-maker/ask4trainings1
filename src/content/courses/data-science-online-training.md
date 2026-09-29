@@ -71,24 +71,28 @@ benefits:
       - Certification Support
       - Exam Guidance
       - Portfolio Strength
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Basic Knowledge
+    description: Candidates with fundamental understanding of computers can join this Data Science Online Training. No advanced coding experience is required, making this Data Science Online Course suitable for beginners who want to start a career in data science with structured learning.
+  - title: Technical Skills
+    description: Basic knowledge of programming or willingness to learn is helpful for Data Science Training in Hyderabad. This Data Science Online Classes program introduces Python and tools from scratch, ensuring learners gradually build strong technical and analytical capabilities.
+  - title: Analytical Thinking
+    description: An interest in problem-solving and logical reasoning is essential for this Data Science Certification Course. The Data Science Online Training helps learners improve analytical thinking, enabling them to work with data, interpret results, and derive meaningful insights.
+  - title: Career Interest
+    description: Anyone aiming for a career shift or growth can enroll in this Data Science Course with Placement. This Best Data Science Training in Hyderabad is ideal for students and professionals who want to build a future in data-driven roles and high-demand industries.
 jobRoles:
-  - role: Data Scientist
+  - role: Scientist
     description: A Data Scientist builds predictive models and works on advanced analytics using machine learning algorithms. This role requires strong knowledge gained from Best Data Science Training in Hyderabad. With Data Science Job Oriented Training, you will master AI, ML, and deep learning concepts. Completing a Data Science Professional Certification helps you stand out and work on real-world challenges, making this one of the most high-demand and rewarding careers.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Data Analyst
+  - role: Analyst
     description: A Data Analyst plays a crucial role in interpreting data and generating insights for business decisions. With Data Science Online Training, you will learn tools like Python, SQL, and visualization techniques. This role is ideal for beginners completing a Data Science Online Course and looking to enter analytics. Through Data Science Training with Real-Time Projects, you gain hands-on experience in handling datasets, creating reports, and delivering actionable insights.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Data Engineer
+  - role: Engineer
     description: A Data Engineer focuses on building data pipelines and managing large datasets for analysis. Through Data Science Training in Hyderabad, you will learn data processing, ETL tools, and database management. This role is essential in organizations handling big data. With Data Science Course with Placement, you gain the skills to design scalable systems and ensure smooth data flow, making you a valuable asset in tech-driven companies.
     competencies:
       - Enterprise Standards
@@ -98,7 +102,7 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Machine Learning Specialist
+  - role: Specialist
     description: A Machine Learning Specialist focuses on developing intelligent systems and automation models. With Data Science Online Training, you gain expertise in algorithms, model building, and deployment. This role is ideal for those completing a Data Science Online Course with advanced learning. Through Data Science Training with Real-Time Projects, you build practical skills and create AI-driven solutions, making you highly valuable in modern industries.
     competencies:
       - Enterprise Standards
@@ -197,15 +201,7 @@ modules:
       - Model evaluation and performance tuning
       - Deployment using APIs and cloud services
       - Portfolio building and case study creation
-whoShouldEnroll:
-  - title: Basic Knowledge
-    description: Candidates with fundamental understanding of computers can join this Data Science Online Training. No advanced coding experience is required, making this Data Science Online Course suitable for beginners who want to start a career in data science with structured learning.
-  - title: Technical Skills
-    description: Basic knowledge of programming or willingness to learn is helpful for Data Science Training in Hyderabad. This Data Science Online Classes program introduces Python and tools from scratch, ensuring learners gradually build strong technical and analytical capabilities.
-  - title: Analytical Thinking
-    description: An interest in problem-solving and logical reasoning is essential for this Data Science Certification Course. The Data Science Online Training helps learners improve analytical thinking, enabling them to work with data, interpret results, and derive meaningful insights.
-  - title: Career Interest
-    description: Anyone aiming for a career shift or growth can enroll in this Data Science Course with Placement. This Best Data Science Training in Hyderabad is ideal for students and professionals who want to build a future in data-driven roles and high-demand industries.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -248,4 +244,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Data Science developer jobs.
 ---
-This is the canonical course page for Data Science Online Training. Start your learning journey today with Ask 4 Trainings.

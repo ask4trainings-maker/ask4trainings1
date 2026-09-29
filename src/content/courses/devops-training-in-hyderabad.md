@@ -71,13 +71,17 @@ benefits:
       - Hands-on Training
       - Career Growth
       - Professional Development
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: IT Graduates
+    description: Students with technical education can join DevOps Training in Hyderabad to build practical automation and deployment skills. The Jenkins DevOps Online Course helps graduates understand CI/CD pipelines, build automation, and software delivery processes required in modern IT environments and DevOps careers.
+  - title: System Administrators
+    description: Professionals managing servers and infrastructure can enhance their expertise through Linux for DevOps Training and Terraform DevOps Course Online. These programs help learners understand cloud provisioning, infrastructure automation, scripting, and configuration management for scalable enterprise environments.
+  - title: Software Developers
+    description: Developers looking to improve deployment and automation knowledge can benefit from Ansible Automation Training and Git and GitHub for DevOps Course. These courses provide practical exposure to version control, configuration management, collaboration workflows, and automated application deployment practices.
+  - title: Career Seekers
+    description: Job seekers aiming for cloud and automation careers can enroll in the DevOps Master Program Online to gain complete practical knowledge. The DevOps Engineer Job Ready Course focuses on real-time projects, interview preparation, certification guidance, and industry-relevant DevOps tools for better opportunities.
 jobRoles:
-  - role: DevOps Engineer
+  - role: Engineer
     description: A DevOps Engineer is responsible for managing CI/CD pipelines, cloud deployment, automation, monitoring, and infrastructure management in modern IT environments. Through DevOps Training in Hyderabad and DevOps Engineer Certification Course, learners gain practical skills in Docker, Kubernetes, Jenkins, Git, AWS, and Terraform to support software development and deployment processes efficiently.
     competencies:
       - Enterprise Standards
@@ -87,17 +91,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: DevOps Architect
+  - role: Architect
     description: A DevOps Architect designs scalable infrastructure, automation workflows, and cloud-based deployment strategies for enterprise applications. With AWS DevOps Training Online and Azure DevOps Certification Training, professionals learn cloud integration, security practices, configuration management, and infrastructure optimization required for large-scale business environments.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
+  - role: Administrator
     description: A DevOps Administrator manages servers, deployment environments, system monitoring, and configuration tools to maintain application stability. The Linux for DevOps Training and Jenkins DevOps Online Course help learners understand automation, scripting, server administration, CI/CD implementation, and performance monitoring in real-time projects.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: DevOps Specialist
+  - role: Specialist
     description: A DevOps Specialist focuses on containerization, orchestration, automation, and deployment management using advanced DevOps tools. The Docker and Kubernetes Training along with Terraform DevOps Course Online provides practical exposure to scalable infrastructure, cloud provisioning, automation frameworks, and modern application deployment techniques.
     competencies:
       - Enterprise Standards
@@ -197,15 +202,7 @@ modules:
       - Implementing CI/CD pipelines on cloud platforms
       - Resume building and interview preparation
       - Real-time projects and internship guidance
-whoShouldEnroll:
-  - title: IT Graduates
-    description: Students with technical education can join DevOps Training in Hyderabad to build practical automation and deployment skills. The Jenkins DevOps Online Course helps graduates understand CI/CD pipelines, build automation, and software delivery processes required in modern IT environments and DevOps careers.
-  - title: System Administrators
-    description: Professionals managing servers and infrastructure can enhance their expertise through Linux for DevOps Training and Terraform DevOps Course Online. These programs help learners understand cloud provisioning, infrastructure automation, scripting, and configuration management for scalable enterprise environments.
-  - title: Software Developers
-    description: Developers looking to improve deployment and automation knowledge can benefit from Ansible Automation Training and Git and GitHub for DevOps Course. These courses provide practical exposure to version control, configuration management, collaboration workflows, and automated application deployment practices.
-  - title: Career Seekers
-    description: Job seekers aiming for cloud and automation careers can enroll in the DevOps Master Program Online to gain complete practical knowledge. The DevOps Engineer Job Ready Course focuses on real-time projects, interview preparation, certification guidance, and industry-relevant DevOps tools for better opportunities.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -245,4 +242,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top DevOps jobs.
 ---
-This is the canonical course page for DevOps Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

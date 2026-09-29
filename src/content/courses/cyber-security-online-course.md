@@ -71,13 +71,17 @@ benefits:
       - Professional Skills
       - Industry Exposure
       - Advanced Concepts
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Beginners
+    description: The Cyber Security Online Course is ideal for beginners who want to start a career in cybersecurity and learn essential concepts such as ethical hacking, network security, and threat prevention. Learners can build strong technical foundations through Cyber Security Online Classes designed with practical exercises, live demonstrations, and real-time security scenarios for better understanding and career preparation.
+  - title: Students
+    description: College students and graduates interested in IT security careers can enroll in the Cyber Security Fundamentals and Advanced Course to gain industry-focused knowledge and practical exposure. The program includes Cyber Security Training with Hands-On Labs that helps students improve technical skills in penetration testing, malware analysis, firewall management, and vulnerability assessment.
+  - title: Professionals
+    description: IT professionals, system administrators, and network engineers looking to upgrade their skills can benefit from the Cyber Security SOC Analyst Training and Cyber Security Threat Analysis Training programs. These courses help professionals understand security monitoring, incident response, risk analysis, and SOC operations while preparing them for advanced cybersecurity job roles in enterprise environments.
+  - title: Career Switchers
+    description: Individuals planning to transition into the cybersecurity field can join the Cyber Security Cloud Security Course to learn cloud protection, identity management, and modern cyber defense strategies. This training program helps career switchers gain practical knowledge, hands-on experience, and job-oriented skills required to secure opportunities in the rapidly growing cybersecurity industry.
 jobRoles:
-  - role: Consultant
+  - role: Hacker
     description: Ethical hackers test systems and networks to identify security weaknesses before malicious attackers can exploit them. They perform penetration testing, vulnerability assessments, and security audits using advanced tools and ethical hacking methodologies. The Cyber Security Ethical Hacking Course helps learners understand attack prevention strategies, while the Cyber Security Online Training program provides practical exposure through real-time cybersecurity projects and lab sessions.
     competencies:
       - Enterprise Standards
@@ -87,18 +91,18 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: cybersecurity analyst
+  - role: Analyst
     description: A cybersecurity analyst is responsible for monitoring systems, identifying security threats, analyzing vulnerabilities, and protecting organizational data from cyber attacks. Professionals trained through the Cyber Security Online Course gain practical knowledge of SIEM tools, incident response, firewall management, and threat detection techniques. The Cyber Security Analyst Course helps learners build the technical and analytical skills required to manage enterprise security operations effectively.
     competencies:
       - Requirement Gathering
       - Workflow Analysis
       - Domain Best Practices
-  - role: Consultant
+  - role: Engineer
     description: Cybersecurity engineers design and implement secure systems, firewalls, cloud protection frameworks, and network defense solutions for organizations. They play a key role in maintaining secure IT infrastructure and preventing cyber threats. Through the Cyber Security Network Defense Training program and Cyber Security Cloud Security Course, learners gain hands-on experience in risk management, system security configuration, and advanced protection techniques used in modern enterprises.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Administrator
     description: Security administrators manage organizational security systems, monitor network activity, control user access, and maintain overall cybersecurity operations. They ensure secure infrastructure management and respond quickly to potential security incidents. The Cyber Security Job Oriented Course and Cyber Security Course with Real-Time Projects provide learners with practical training in system monitoring, firewall configuration, threat analysis, and cybersecurity management for enterprise environments.
     competencies:
       - Enterprise Standards
@@ -198,15 +202,7 @@ modules:
       - Guidance for cybersecurity certifications and career pathways
       - Real-time project implementation and practical case studies
       - Placement support and professional skill development trainingccccccccccccccc
-whoShouldEnroll:
-  - title: Beginners
-    description: The Cyber Security Online Course is ideal for beginners who want to start a career in cybersecurity and learn essential concepts such as ethical hacking, network security, and threat prevention. Learners can build strong technical foundations through Cyber Security Online Classes designed with practical exercises, live demonstrations, and real-time security scenarios for better understanding and career preparation.
-  - title: Students
-    description: College students and graduates interested in IT security careers can enroll in the Cyber Security Fundamentals and Advanced Course to gain industry-focused knowledge and practical exposure. The program includes Cyber Security Training with Hands-On Labs that helps students improve technical skills in penetration testing, malware analysis, firewall management, and vulnerability assessment.
-  - title: Professionals
-    description: IT professionals, system administrators, and network engineers looking to upgrade their skills can benefit from the Cyber Security SOC Analyst Training and Cyber Security Threat Analysis Training programs. These courses help professionals understand security monitoring, incident response, risk analysis, and SOC operations while preparing them for advanced cybersecurity job roles in enterprise environments.
-  - title: Career Switchers
-    description: Individuals planning to transition into the cybersecurity field can join the Cyber Security Cloud Security Course to learn cloud protection, identity management, and modern cyber defense strategies. This training program helps career switchers gain practical knowledge, hands-on experience, and job-oriented skills required to secure opportunities in the rapidly growing cybersecurity industry.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -246,4 +242,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Cyber Security jobs.
 ---
-This is the canonical course page for Cyber Security Online Course. Start your learning journey today with Ask 4 Trainings.

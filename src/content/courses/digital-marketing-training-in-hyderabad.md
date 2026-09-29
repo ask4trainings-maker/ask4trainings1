@@ -71,33 +71,37 @@ benefits:
       - Website Optimization
       - Conversion Tracking
       - Business Growth
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Educational Background
+    description: Individuals from any academic discipline can enroll in this program to develop industry-ready digital skills. Our Digital Marketing Training in Hyderabad provides step-by-step practical learning, making it suitable for beginners and experienced learners alike. The Digital Marketing Course equips participants with the knowledge required to build successful careers in the fast-growing digital marketing industry.
+  - title: Fresh Graduates
+    description: Fresh graduates looking to start a rewarding career can benefit from practical learning and expert mentorship. The Digital Marketing Job Oriented Course focuses on real-world assignments, industry tools, and interview preparation. Earning a Digital Marketing Certification helps learners showcase validated skills and improve their employment opportunities with complete professional confidence.
+  - title: Professional Growth
+    description: Working professionals aiming for promotions or career transitions can upgrade their expertise with advanced industry practices. Advanced Digital Marketing Online Training delivers practical knowledge of modern marketing platforms, while Digital Marketing Training with Real-Time Projects provides valuable hands-on experience to confidently manage live campaigns and business objectives.
+  - title: Entrepreneur Mindset
+    description: Business owners, freelancers, and startup founders can learn proven strategies to strengthen their online presence and customer engagement. Digital Marketing and SEO Training helps optimize digital campaigns and improve brand visibility, while Digital Marketing Training in Hyderabad provides practical guidance for implementing effective marketing strategies that support long-term business growth.
 jobRoles:
-  - role: Consultant
+  - role: Manager
     description: A Digital Marketing Manager oversees online campaigns, coordinates marketing teams, and ensures business objectives are achieved through effective digital strategies. Digital Marketing Training in Hyderabad provides practical expertise in SEO, paid advertising, analytics, and automation. The Digital Marketing Course prepares learners to lead campaigns, optimize marketing budgets, and improve customer engagement using industry-standard tools and proven digital marketing techniques.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Optimizer
     description: A Conversion Optimization Specialist improves website performance by analyzing user behavior, testing landing pages, and increasing conversion rates. Digital Marketing and SEO Training develops optimization skills through practical exercises, while Digital Marketing Training with Real-Time Projects provides hands-on experience in implementing live campaigns, measuring performance, and maximizing return on digital marketing investments.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Coordinator
     description: A Digital Marketing Coordinator supports campaign planning, content scheduling, social media management, and performance reporting across multiple digital platforms. Digital Marketing Job Oriented Course equips learners with practical skills required to coordinate successful marketing activities. Earning a Digital Marketing Certification validates professional knowledge and enhances career opportunities in growing digital marketing organizations.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Advertiser
     description: A PPC Advertiser creates, manages, and optimizes paid campaigns across Google Ads and social media platforms to generate quality leads and sales. Digital Marketing and Google Ads Training provides expertise in keyword research, bidding strategies, and campaign optimization. Advanced Digital Marketing Online Training strengthens practical knowledge of advanced advertising techniques and performance analysis.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Freelancer
     description: A Digital Marketing Freelancer helps businesses grow by offering SEO, social media marketing, paid advertising, content creation, and analytics services independently. Digital Marketing Course with Placement develops practical industry skills, while Digital Marketing Training in Hyderabad provides live project experience and expert mentoring, enabling learners to confidently manage client projects and build successful freelance careers.
     competencies:
       - Enterprise Standards
@@ -197,19 +201,7 @@ modules:
       - Freelancing And Client Acquisition Strategies Guide
       - Certification Exam Preparation And Guidance Sessions
       - Placement Support And Career Development Programs
-whoShouldEnroll:
-  - title: Educational Background
-    description: Individuals from any academic discipline can enroll in this program to develop industry-ready digital skills. Our Digital Marketing Training in Hyderabad provides step-by-step practical learning, making it suitable for beginners and experienced learners alike. The Digital Marketing Course equips participants with the knowledge required to build successful careers in the fast-growing digital marketing industry.
-  - title: Fresh Graduates
-    description: Fresh graduates looking to start a rewarding career can benefit from practical learning and expert mentorship. The Digital Marketing Job Oriented Course focuses on real-world assignments, industry tools, and interview preparation. Earning a Digital Marketing Certification helps learners showcase validated skills and improve their employment opportunities with complete professional confidence.
-  - title: Professional Growth
-    description: Working professionals aiming for promotions or career transitions can upgrade their expertise with advanced industry practices. Advanced Digital Marketing Online Training delivers practical knowledge of modern marketing platforms, while Digital Marketing Training with Real-Time Projects provides valuable hands-on experience to confidently manage live campaigns and business objectives.
-  - title: Entrepreneur Mindset
-    description: Business owners, freelancers, and startup founders can learn proven strategies to strengthen their online presence and customer engagement. Digital Marketing and SEO Training helps optimize digital campaigns and improve brand visibility, while Digital Marketing Training in Hyderabad provides practical guidance for implementing effective marketing strategies that support long-term business growth.
-  - title: Earn Industry Credentials With Confidence
-    description: Completing our Digital Marketing Training in Hyderabad equips you with practical knowledge and industry-recognized skills that employers value.Build job-ready expertise with Marketing Training with Real-Time Projects, work on industry-standard tools, optimize live campaigns, analyze performance metrics, and create a professional portfolio that enhances your career opportunities.
-  - title: Practical Learning With Career Recognition
-    description: Our Digital Marketing Training with Real-Time Projects enables learners to work on live campaigns, case studies, and industry assignments using professional tools and techniques. After successfully completing the program, students receive a valuable Digital Marketing Certification that validates their practical expertise, demonstrates job-ready capabilities, and improves credibility for securing rewarding opportunities in the fast-growing digital marketing industry.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -266,4 +258,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top Digital Marketing jobs.
 ---
-This is the canonical course page for Digital Marketing Training in Hyderabad. Start your learning journey today with Ask 4 Trainings.

@@ -71,13 +71,17 @@ benefits:
       - User Management
       - Reporting Tools
       - Implementation Skills
-eligibility:
-  - Software Developers and Engineers looking to upskill.
-  - System Administrators transitioning to enterprise platforms.
-  - QA and Automation Engineers aiming for comprehensive technical knowledge.
-  - Fresh Graduates with a Computer Science background seeking specialized roles.
+eligibility: &ref_0
+  - title: Technical Knowledge
+    description: Candidates joining Dynamics 365 AX Technical Training should have basic understanding of programming concepts, databases, or ERP applications. Knowledge of object-oriented programming and software development concepts helps learners understand X++, integrations, and customization topics more effectively during the training sessions.
+  - title: Freshers
+    description: This course is ideal for beginners who want to start a career in ERP technologies. The Dynamics 365 AX Technical Course for Beginners provides step-by-step learning with practical sessions, making it suitable for graduates, freshers, and career changers interested in technical ERP development roles.
+  - title: IT Professionals
+    description: Software developers, support engineers, ERP consultants, and system administrators can enroll in MS D365 AX Technical Developer Training to improve technical expertise. Professionals with experience in .NET, SQL, or ERP systems can easily understand development tools, integrations, and reporting concepts covered in the course.
+  - title: Learning Commitment
+    description: Learners should have interest in ERP customization, technical development, and real-time project implementation. Regular practice during Dynamics 365 AX Technical Online Training and participation in assignments, projects, and internship activities help students gain strong practical skills and industry-ready knowledge.
 jobRoles:
-  - role: Dynamics 365 AX Technical Developer
+  - role: Developer
     description: A Dynamics 365 AX Technical Developer works on ERP customization, X++ programming, SSRS reports, and workflow development for enterprise applications. Professionals trained through Dynamics 365 AX Technical Training gain practical expertise in integrations, debugging, and technical implementation. Developers play a major role in improving ERP functionality, automating business operations, and supporting real-time project deployments across industries using Microsoft ERP solutions.
     competencies:
       - Gosu / Core Scripting
@@ -88,21 +92,23 @@ jobRoles:
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: Consultant
+  - role: Analyst
     description: An ERP analyst trained in Dynamics 365 AX Technical Course with Real Time Projects helps organizations understand technical requirements and improve ERP system performance. Analysts work on data validation, report generation, testing, and process optimization using ERP development tools. With knowledge from Dynamics 365 AX Technical X++ Programming Training, they support technical teams in maintaining smooth system functionality and business operations.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
-  - role: Consultant
+      - Requirement Gathering
+      - Workflow Analysis
+      - Domain Best Practices
+  - role: Administrator
     description: A system administrator manages ERP environments, user access, security roles, and application performance using skills learned in Dynamics 365 AX Technical Training. Professionals with Dynamics 365 AX Technical Integration with ERP knowledge can handle deployments, troubleshooting, and server configurations effectively. Administrators ensure system stability, maintain ERP operations, and support technical teams with secure and efficient enterprise solutions.
     competencies:
       - Enterprise Standards
       - Industry Best Practices
-  - role: ERP architect
+  - role: Architect
     description: An ERP architect designs technical frameworks, integration strategies, and scalable ERP solutions for enterprise applications. Through MS D365 AX Technical Developer Training and advanced implementation concepts, architects gain expertise in workflow automation, customization, and system architecture. Knowledge from Dynamics 365 AX Technical Professional Certificate programs helps professionals create reliable ERP infrastructures aligned with business and technical requirements.
     competencies:
-      - Enterprise Standards
-      - Industry Best Practices
+      - Gosu / Core Scripting
+      - API Integration
+      - Architecture Design
 overview: |-
   Dynamics 365 AX Technical Training helps professionals build strong expertise in ERP development, customization, and integrations. The course covers X++, SSRS reporting, AIF services, workflows, and security concepts through practical sessions. With industry-focused learning, students gain real-time exposure that improves technical knowledge and prepares them for implementation and support roles in leading organizations worldwide.
 
@@ -197,15 +203,7 @@ modules:
       - Mock interviews with real-time technical questions
       - Placement assistance and internship support sessions
       - Career guidance for ERP technical consultant roles
-whoShouldEnroll:
-  - title: Technical Knowledge
-    description: Candidates joining Dynamics 365 AX Technical Training should have basic understanding of programming concepts, databases, or ERP applications. Knowledge of object-oriented programming and software development concepts helps learners understand X++, integrations, and customization topics more effectively during the training sessions.
-  - title: Freshers
-    description: This course is ideal for beginners who want to start a career in ERP technologies. The Dynamics 365 AX Technical Course for Beginners provides step-by-step learning with practical sessions, making it suitable for graduates, freshers, and career changers interested in technical ERP development roles.
-  - title: IT Professionals
-    description: Software developers, support engineers, ERP consultants, and system administrators can enroll in MS D365 AX Technical Developer Training to improve technical expertise. Professionals with experience in .NET, SQL, or ERP systems can easily understand development tools, integrations, and reporting concepts covered in the course.
-  - title: Learning Commitment
-    description: Learners should have interest in ERP customization, technical development, and real-time project implementation. Regular practice during Dynamics 365 AX Technical Online Training and participation in assignments, projects, and internship activities help students gain strong practical skills and industry-ready knowledge.
+whoShouldEnroll: *ref_0
 trainer:
   title: Learn from Practicing Enterprise Architects
   description: Our instructors are active industry leaders and enterprise consultants with a minimum of 10+ years of production experience.
@@ -248,4 +246,3 @@ keyFeatures:
   - title: Placement
     description: Dedicated placement support for top D365 AX Technical jobs.
 ---
-This is the canonical course page for Dynamics 365 AX Technical Training. Start your learning journey today with Ask 4 Trainings.
