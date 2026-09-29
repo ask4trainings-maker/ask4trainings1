@@ -57,6 +57,44 @@
       
       observer.observe(placeholder);
     }
+
+    // Scrollspy logic
+    const navLinks = document.querySelectorAll('#course-nav-ribbon a');
+    const sections = Array.from(navLinks).map((link) => {
+      const url = new URL((link as HTMLAnchorElement).href);
+      return document.querySelector(url.hash);
+    }).filter(Boolean);
+
+    if (sections.length > 0) {
+      const scrollspyObserver = new IntersectionObserver(
+        (entries) => {
+          let activeId: string | null = null;
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              activeId = entry.target.id;
+            }
+          });
+
+          if (activeId) {
+            navLinks.forEach(link => {
+              const url = new URL((link as HTMLAnchorElement).href);
+              if (url.hash === `#${activeId}`) {
+                link.classList.add('font-bold', 'text-emerald-700', 'bg-emerald-50', 'border-b-2', 'border-emerald-500');
+                link.classList.remove('text-slate-700', 'font-medium');
+                // Auto-scroll the ribbon on mobile
+                link.scrollIntoView({ inline: 'center', behavior: 'smooth', block: 'nearest' });
+              } else {
+                link.classList.remove('font-bold', 'text-emerald-700', 'bg-emerald-50', 'border-b-2', 'border-emerald-500');
+                link.classList.add('text-slate-700', 'font-medium');
+              }
+            });
+          }
+        },
+        { rootMargin: '-20% 0px -65% 0px' }
+      );
+
+      sections.forEach(section => { if (section) scrollspyObserver.observe(section as Element); });
+    }
   });
 </script>
 

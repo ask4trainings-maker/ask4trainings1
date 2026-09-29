@@ -53,8 +53,8 @@ if (!bodyText && !whyMaster?.title && !valueProp) {
       <div class="lg:col-span-5 w-full">
         <div class="bg-slate-900 text-white rounded-2xl border border-slate-800 p-6 sm:p-8 shadow-md">
           <!-- Enterprise SVG Graphic -->
-          <div class="w-full overflow-x-auto no-scrollbar sm:overflow-visible my-6">
-            <div class="min-w-[340px] sm:min-w-0 flex justify-center aspect-[4/3] bg-slate-900 rounded-xl mb-6 p-4">
+          <div class="w-full flex items-center justify-center mx-auto max-w-sm sm:max-w-md lg:max-w-none p-4 sm:p-6 my-6">
+            <div class="w-full flex justify-center bg-slate-900 rounded-xl mb-6 [&>svg]:w-full [&>svg]:h-auto [&>svg]:max-h-[300px] sm:[&>svg]:max-h-[380px]">
               {category === 'guidewire' ? <GuidewireInfographic /> :
                category === 'sap' ? <SAPInfographic /> :
                ['cloud-computing', 'devops'].includes(category || '') ? <CloudDevOpsInfographic /> :

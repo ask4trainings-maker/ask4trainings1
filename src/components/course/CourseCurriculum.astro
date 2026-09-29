@@ -36,7 +36,7 @@ const { modules = [], courseTitle } = Astro.props;
               <span class="text-slate-900 font-bold">{mod.title}</span>
             </div>
             <div class="flex items-center gap-3">
-              <span class="text-xs font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
+              <span class="hidden sm:inline-block text-xs font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
                 {mod.duration || `${mod.topics.length} topics`}
               </span>
               <svg class="w-5 h-5 text-slate-400 shrink-0 transition-transform duration-300 group-[.is-open]:rotate-180 group-[.is-open]:text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -71,9 +71,13 @@ const { modules = [], courseTitle } = Astro.props;
     const container = document.querySelector('[data-curriculum-container]');
     if (!container) return;
     const items = container.querySelectorAll('.group');
+    
+    let isTouch = false;
+    window.addEventListener('touchstart', () => { isTouch = true; }, { passive: true });
 
     items.forEach((item) => {
       item.addEventListener('mouseenter', () => {
+        if (isTouch || window.innerWidth < 1024) return;
         items.forEach((sibling) => {
           if (sibling !== item) sibling.classList.remove('is-open');
         });

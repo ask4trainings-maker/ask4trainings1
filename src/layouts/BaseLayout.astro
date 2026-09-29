@@ -82,6 +82,26 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
       }
+
+      @media (max-width: 767px) {
+        h1, h2, h3, h4, h5, h6 {
+          text-align: center;
+        }
+        p {
+          text-align: left;
+          font-size: 0.95rem !important;
+          line-height: 1.6 !important;
+          letter-spacing: -0.01em !important;
+          color: #374151 !important;
+          margin-bottom: 1rem;
+        }
+        li:not(nav li) {
+          font-size: 0.95rem;
+          line-height: 1.6;
+          letter-spacing: -0.01em;
+          color: #374151;
+        }
+      }
     </style>
   </head>
   <body class="bg-slate-50 text-slate-900 font-body antialiased flex flex-col min-h-screen selection:bg-emerald-600 selection:text-white relative overflow-x-clip">

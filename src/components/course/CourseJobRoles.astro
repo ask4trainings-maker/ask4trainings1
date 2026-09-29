@@ -11,13 +11,47 @@ const { jobRoles = [] } = Astro.props;
       <p class="text-slate-600 text-sm mt-1">Prepare for these high-demand positions in the industry.</p>
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start" data-job-roles-container>
+    <!-- MOBILE: Side Scrollable Cards -->
+    <div class="flex lg:hidden overflow-x-auto gap-4 py-8 -my-8 -mx-4 px-4 snap-x snap-mandatory no-scrollbar" data-swipe-container>
+      {jobRoles.map((item) => (
+        <div class="swipe-card shrink-0 w-[92%] sm:w-[85%] snap-center rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs min-h-[260px] flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="h-10 w-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
+                💼
+              </div>
+              <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+                {typeof item === 'string' ? item : item.role}
+              </h3>
+            </div>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
+              {typeof item === 'string' ? '' : item.description}
+            </p>
+          </div>
+          <div>
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3">
+              Required Competencies
+            </h4>
+            <div class="flex flex-wrap gap-2">
+              {((typeof item === 'string' ? undefined : item.competencies) || ["Industry Best Practices", "Tool Mastery"]).map((comp: string) => (
+                <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-medium border border-slate-200/60">
+                  {comp}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- DESKTOP: Tab Selector Layout -->
+    <div class="hidden lg:grid grid-cols-12 gap-8 items-start" data-job-roles-container>
       <!-- Left Column: Role Selector List -->
-      <div class="lg:col-span-5 space-y-3">
+      <div class="lg:col-span-5 flex lg:flex-col overflow-x-auto no-scrollbar gap-2 lg:gap-3 pb-2 lg:pb-0 snap-x">
         {jobRoles.map((item, idx) => (
           <button
             type="button"
-            class={`w-full text-left px-5 py-4 rounded-xl font-semibold text-sm sm:text-base flex items-center justify-between border transition-all cursor-pointer ${
+            class={`shrink-0 snap-start px-4 py-2 text-xs sm:text-sm lg:w-full lg:text-left lg:px-5 lg:py-4 rounded-xl font-semibold flex items-center justify-between border transition-all cursor-pointer whitespace-nowrap lg:whitespace-normal ${
               idx === 0
                 ? 'bg-emerald-600 text-white border-emerald-600 shadow-sm'
                 : 'bg-white text-slate-700 border-slate-200/90 hover:bg-slate-50'
@@ -25,14 +59,14 @@ const { jobRoles = [] } = Astro.props;
             data-role-tab={idx}
           >
             <span>{typeof item === 'string' ? item : item.role}</span>
-            <span class="text-sm font-bold opacity-75">›</span>
+            <span class="text-sm font-bold opacity-75 hidden lg:inline-block">›</span>
           </button>
         ))}
       </div>
 
       <!-- Right Column: Active Role Detail Card -->
       <div class="lg:col-span-7">
-        <div class="rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-8 shadow-xs min-h-[260px] flex flex-col justify-between">
+        <div class="rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs min-h-[260px] flex flex-col justify-between">
           <div>
             <div class="flex items-center gap-3 mb-4">
               <div class="h-10 w-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg">
@@ -81,11 +115,11 @@ const { jobRoles = [] } = Astro.props;
 
             // Reset all tab button styles
             tabs.forEach((t) => {
-              t.className = 'w-full text-left px-5 py-4 rounded-xl font-semibold text-sm sm:text-base flex items-center justify-between border transition-all cursor-pointer bg-white text-slate-700 border-slate-200/90 hover:bg-slate-50';
+              t.className = 'shrink-0 snap-start px-4 py-2 text-xs sm:text-sm lg:w-full lg:text-left lg:px-5 lg:py-4 rounded-xl font-semibold flex items-center justify-between border transition-all cursor-pointer whitespace-nowrap lg:whitespace-normal bg-white text-slate-700 border-slate-200/90 hover:bg-slate-50';
             });
 
             // Apply active style to clicked button
-            tab.className = 'w-full text-left px-5 py-4 rounded-xl font-semibold text-sm sm:text-base flex items-center justify-between border transition-all cursor-pointer bg-emerald-600 text-white border-emerald-600 shadow-sm';
+            tab.className = 'shrink-0 snap-start px-4 py-2 text-xs sm:text-sm lg:w-full lg:text-left lg:px-5 lg:py-4 rounded-xl font-semibold flex items-center justify-between border transition-all cursor-pointer whitespace-nowrap lg:whitespace-normal bg-emerald-600 text-white border-emerald-600 shadow-sm';
 
             const isStr = typeof activeData === 'string';
 
@@ -103,5 +137,44 @@ const { jobRoles = [] } = Astro.props;
         });
       });
     </script>
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const containers = document.querySelectorAll('[data-swipe-container]');
+        containers.forEach(container => {
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-snapped');
+              } else {
+                entry.target.classList.remove('is-snapped');
+              }
+            });
+          }, {
+            root: container,
+            threshold: 0.6
+          });
+
+          const cards = container.querySelectorAll('.swipe-card');
+          cards.forEach(card => observer.observe(card));
+        });
+      });
+    </script>
+    <style>
+      @media (max-width: 1023px) {
+        .swipe-card {
+          opacity: 0.5;
+          transform: scale(0.9);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .swipe-card.is-snapped {
+          opacity: 1;
+          transform: scale(1);
+          box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        .swipe-card:active {
+          transform: scale(0.96) !important;
+        }
+      }
+    </style>
   </section>
 )}

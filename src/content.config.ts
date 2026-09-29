@@ -40,16 +40,16 @@ const courses = defineCollection({
     reviewCount: z.number().optional(),        // CMS number widget
 
     // ─── Section 1: Main / Hero Meta Chips ─────────────────────────────────
-    duration: z.string().default('45-60 Hrs'),
-    mode: z.string().default('Online Live Interactive'),
+    duration: z.string().optional().default('45-60 Hrs'),
+    mode: z.string().optional().default('Online Live Interactive'),
     rating: z.union([z.string(), z.number()]).transform(val => String(val)).optional(),
     videoUrl: z.string().optional(),          // YouTube embed link / video ID
     courseImage: z.string().optional(),       // Media preview placeholder
     heroImage: z.string().optional(),
 
     // ─── Section 2: Overview & Brochure ─────────────────────────────────────
-    overview: z.string().default(''),
-    brochureUrl: z.string().default('https://drive.google.com/'),
+    overview: z.string().optional().default(''),
+    brochureUrl: z.string().optional().default('https://drive.google.com/'),
 
     // brochureDriveUrl — CMS widget name for the same field
     brochureDriveUrl: z.string().optional(),
@@ -111,7 +111,7 @@ const courses = defineCollection({
     batches: z.array(z.record(z.string(), z.any())).optional().default([]),
 
     // ─── Section 4: About the Course ────────────────────────────────────────
-    aboutCourse: z.string().default(''),
+    aboutCourse: z.string().optional().default(''),
 
     // description — short hero summary (CMS-aligned, max 160 chars guideline)
     description: z.string().optional(),
@@ -149,24 +149,24 @@ const courses = defineCollection({
       description: z.string().optional(),
       pillars: z.array(
         z.object({
-          title: z.string(),
-          description: z.string(),
+          title: z.string().optional(),
+          description: z.string().optional(),
         })
       ).optional().default([]),
     }).optional(),
 
     keyFeatures: z.array(z.object({
-      title: z.string(),
-      description: z.string(),
+      title: z.string().optional(),
+      description: z.string().optional(),
     })).optional().default([]),
 
     // ─── Section 7: Why Choose ──────────────────────────────────────────────
     whyChoose: z.array(
       z.object({
-        title: z.string(),
-        description: z.string(),
+        title: z.string().optional(),
+        description: z.string().optional(),
       })
-    ).default([]),
+    ).optional().default([]),
 
     // whyChooseUs — CMS-aligned name (harmonization alias)
     whyChooseUs: z.array(z.any()).optional(),
@@ -196,10 +196,10 @@ const courses = defineCollection({
 
     // ─── Section 9: Certifications ──────────────────────────────────────────
     certifications: z.object({
-      title: z.string().default('Industry-Recognized Certification'),
-      description: z.string().default('Earn verified credentials upon capstone project evaluation and practical lab assessments.'),
-      badges: z.array(z.string()).default([]),
-    }).default({ title: 'Industry-Recognized Certification', description: 'Earn verified credentials upon capstone project evaluation.', badges: [] }),
+      title: z.string().optional().default('Industry-Recognized Certification'),
+      description: z.string().optional().default('Earn verified credentials upon capstone project evaluation and practical lab assessments.'),
+      badges: z.array(z.string()).optional().default([]),
+    }).optional().default({ title: 'Industry-Recognized Certification', description: 'Earn verified credentials upon capstone project evaluation.', badges: [] }),
 
     // certification — XML extracted string or object
     certification: z.object({
@@ -213,12 +213,12 @@ const courses = defineCollection({
       headline: z.string().optional(),
       badge: z.string().optional(),
       metric1: z.object({
-        value: z.string(),
-        label: z.string(),
+        value: z.string().optional(),
+        label: z.string().optional(),
       }).optional(),
       metric2: z.object({
-        value: z.string(),
-        label: z.string(),
+        value: z.string().optional(),
+        label: z.string().optional(),
       }).optional(),
       footerNote: z.string().optional(),
     }).optional(),
@@ -235,10 +235,10 @@ const courses = defineCollection({
     // ─── Section 12: FAQs ───────────────────────────────────────────────────
     faqs: z.array(
       z.object({
-        question: z.string(),
-        answer: z.string(),
+        question: z.string().optional(),
+        answer: z.string().optional(),
       })
-    ).default([]),
+    ).optional().default([]),
 
     // ─── Pricing ────────────────────────────────────────────────────────────
 

@@ -57,9 +57,13 @@ const faqSchema = {
       const container = document.querySelector('[data-faqs-container]');
       if (!container) return;
       const items = container.querySelectorAll('.group');
+      
+      let isTouch = false;
+      window.addEventListener('touchstart', () => { isTouch = true; }, { passive: true });
 
       items.forEach((item) => {
         item.addEventListener('mouseenter', () => {
+          if (isTouch || window.innerWidth < 1024) return;
           items.forEach((sibling) => {
             if (sibling !== item) sibling.classList.remove('is-open');
           });

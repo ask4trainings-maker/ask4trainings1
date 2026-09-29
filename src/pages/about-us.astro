@@ -3,7 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getEntry } from 'astro:content';
 
 const aboutEntry = await getEntry('pages', 'about');
-const aboutData = aboutEntry?.data || { story: '', milestones: [], faculty: [], infrastructure: [] };
+const aboutData = aboutEntry?.data || { story: '', faculty: [], infrastructure: [] };
 ---
 <BaseLayout title="About Us | Ask 4 Trainings">
   <div class="bg-slate-50 border-b border-slate-100 py-20 relative overflow-hidden">
@@ -18,21 +18,6 @@ const aboutData = aboutEntry?.data || { story: '', milestones: [], faculty: [], 
         {aboutData.story}
       </p>
 
-      <!-- Section: Timeline -->
-      <div class="mb-20">
-        <h2 class="text-2xl font-heading font-bold text-slate-900 mb-8 border-b border-slate-200 pb-4 leading-snug">Our Journey</h2>
-        <div class="space-y-6">
-          {aboutData.milestones.map((milestone: any) => (
-            <div class="flex gap-4 items-start">
-              <div class="w-12 h-12 rounded-full bg-emerald-600/20 border border-emerald-600/40 flex items-center justify-center shrink-0 text-emerald-600 font-bold">{milestone.year}</div>
-              <div class="bg-slate-100/40 border border-slate-200 rounded-xl p-5 flex-1">
-                <h3 class="text-lg font-bold text-slate-900 mb-2">{milestone.title}</h3>
-                <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed space-y-4">{milestone.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <!-- Section: Faculty -->
       <div class="mb-20">
