@@ -10,7 +10,7 @@ node_modules.fedora-backup/
 hopeinfotech/
 reports/
 scratch/
-
+docs/
 # Astro output directories
 dist/
 .astro/

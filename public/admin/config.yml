@@ -1001,7 +1001,7 @@ collections:
   # LEGAL & POLICIES
   # ─────────────────────────────────────────────────────────────────────────
   - name: "legal"
-    label: "📜 Legal & Policies"
+    label: "📜 Terms & Policies"
     folder: "src/content/legal"
     create: false
     slug: "{{slug}}"
