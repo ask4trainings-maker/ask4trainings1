@@ -1,12 +1,84 @@
 {
-  "companySummary": "Ask4Trainings provides industry-leading software training.",
+  "companySummary": "Empowering IT professionals and graduates since 2012 with enterprise-grade cloud curriculum, real-time project mentorship, and global certification pathways.",
   "contactInfo": {
-    "address": "Ameerpet, Hyderabad, Telangana 500038",
     "phone": "+91 80999 49888",
-    "email": "ask4trainings@gmail.com"
+    "email": "ask4trainings@gmail.com",
+    "address": "Plot No 32/27, Door No:402, Deeksha Hospital Building, Nizampet 'X' Road, Sardar Patel Nagar, Hyderabad, Telangana - 500072"
   },
-  "categoryLinks": [],
-  "quickLinks": [],
-  "socialLinks": [],
-  "copyrightText": "© 2026 Ask4Trainings"
+  "popularCourses": [
+    {
+      "title": "Guidewire PolicyCenter Training",
+      "href": "/guidewire-policycenter-online-training"
+    },
+    {
+      "title": "Teamcenter PLM Training",
+      "href": "/teamcenter-plm-training"
+    },
+    {
+      "title": "Salesforce CRM Training",
+      "href": "/salesforce-online-training"
+    },
+    {
+      "title": "DevOps with AWS Online Training",
+      "href": "/devops-with-aws-online-training"
+    },
+    {
+      "title": "Snowflake Data Warehouse Training",
+      "href": "/snowflake-online-training"
+    },
+    {
+      "title": "SAP S/4 HANA FICO Training",
+      "href": "/sap-s-4-hana-fico-online-training"
+    }
+  ],
+  "termsPoliciesLinks": [
+    {
+      "title": "Terms & Conditions",
+      "href": "/terms-and-conditions"
+    },
+    {
+      "title": "Course Cancellations",
+      "href": "/course-cancellations"
+    },
+    {
+      "title": "Refund Policy",
+      "href": "/refund-policy"
+    },
+    {
+      "title": "Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "title": "Shipping Policy",
+      "href": "/shipping-policy"
+    }
+  ],
+  "socialLinks": [
+    {
+      "platform": "YouTube",
+      "url": "https://www.youtube.com/@ask4trainings",
+      "active": true
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://www.linkedin.com/company/ask4trainings",
+      "active": true
+    },
+    {
+      "platform": "Instagram",
+      "url": "https://www.instagram.com/ask4trainings",
+      "active": true
+    },
+    {
+      "platform": "X (Twitter)",
+      "url": "https://x.com/ask4trainings",
+      "active": true
+    },
+    {
+      "platform": "Facebook",
+      "url": "https://www.facebook.com/ask4trainings",
+      "active": true
+    }
+  ],
+  "copyright": "© 2026 Ask4Trainings. All rights reserved."
 }

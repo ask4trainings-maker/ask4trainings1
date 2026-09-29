@@ -318,12 +318,12 @@ const settings = defineCollection({
       phone: z.string(),
       email: z.string()
     }).optional(),
-    quickLinks: z.array(z.object({
-      label: z.string(),
+    popularCourses: z.array(z.object({
+      title: z.string(),
       href: z.string()
     })).optional(),
-    categoryLinks: z.array(z.object({
-      label: z.string(),
+    termsPoliciesLinks: z.array(z.object({
+      title: z.string(),
       href: z.string()
     })).optional(),
     socialLinks: z.array(z.object({
@@ -331,7 +331,7 @@ const settings = defineCollection({
       url: z.string(),
       active: z.boolean().optional()
     })).optional(),
-    copyrightText: z.string().optional()
+    copyright: z.string().optional()
   })
 });
 
@@ -376,4 +376,13 @@ const pages = defineCollection({
   })
 });
 
-export const collections = { courses, blog, settings, pages };
+const legal = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "./src/content/legal" }),
+  schema: z.object({
+    title: z.string(),
+    lastUpdated: z.union([z.string(), z.date()]).transform(val => String(val)).optional(),
+    description: z.string().optional(),
+  })
+});
+
+export const collections = { courses, blog, settings, pages, legal };

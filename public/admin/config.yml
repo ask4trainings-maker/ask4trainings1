@@ -47,6 +47,7 @@ collections:
           - label: "Company Summary"
             name: "companySummary"
             widget: "text"
+            rows: 3
           - label: "Contact Info"
             name: "contactInfo"
             widget: "object"
@@ -54,27 +55,27 @@ collections:
               - { label: "Phone", name: "phone", widget: "string" }
               - { label: "Email", name: "email", widget: "string" }
               - { label: "Address", name: "address", widget: "string" }
-          - label: "Quick Links"
-            name: "quickLinks"
+          - label: "Popular Courses Links"
+            name: "popularCourses"
             widget: "list"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
               - { label: "URL", name: "href", widget: "string" }
-          - label: "Category Links"
-            name: "categoryLinks"
+          - label: "Terms & Policies Links"
+            name: "termsPoliciesLinks"
             widget: "list"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
               - { label: "URL", name: "href", widget: "string" }
-          - label: "Social Links"
+          - label: "Social Media Channels"
             name: "socialLinks"
             widget: "list"
             fields:
-              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "Platform", name: "platform", widget: "select", options: ["YouTube", "LinkedIn", "Instagram", "X (Twitter)", "Facebook"] }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Active", name: "active", widget: "boolean", default: true }
           - label: "Copyright Text"
-            name: "copyrightText"
+            name: "copyright"
             widget: "string"
 
       - label: ⚙️ Site-Wide Settings (Contact, Socials, Banner)
@@ -995,3 +996,17 @@ collections:
         default: false
         required: false
         hint: "Enable to hide this article from the public site."
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # LEGAL & POLICIES
+  # ─────────────────────────────────────────────────────────────────────────
+  - name: "legal"
+    label: "📜 Legal & Policies"
+    folder: "src/content/legal"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Page Title", widget: "string" }
+      - { name: "lastUpdated", label: "Last Updated Date", widget: "string", required: false }
+      - { name: "description", label: "Description", widget: "string", required: false }
+      - { name: "body", label: "Policy Content (Markdown)", widget: "markdown" }
