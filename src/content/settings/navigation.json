@@ -1,8 +1,7 @@
 {
-  "topStrip": {
-    "phone": "+91 80999 49888",
-    "email": "ask4trainings@gmail.com",
-    "studentPortalUrl": "#",
-    "enquireUrl": "#"
-  }
+  "phone": "+91 80999 49888",
+  "email": "ask4trainings@gmail.com",
+  "studentPortalUrl": "https://portal.ask4trainings.com",
+  "whatsappNumber": "918099949888",
+  "enquireMessage": "Hi Ask4Trainings, I'm looking for online training and would like to attend a free live demo session. Could you please share the available programs and curriculum details?"
 }

@@ -299,12 +299,11 @@ const blog = defineCollection({
 const settings = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/settings" }),
   schema: z.object({
-    topStrip: z.object({
-      phone: z.string(),
-      email: z.string(),
-      studentPortalUrl: z.string(),
-      enquireUrl: z.string()
-    }).optional(),
+    phone: z.string().optional(),
+    email: z.string().optional(),
+    studentPortalUrl: z.string().optional(),
+    whatsappNumber: z.string().optional(),
+    enquireMessage: z.string().optional(),
     menuCategories: z.array(z.object({
       key: z.string(),
       label: z.string(),

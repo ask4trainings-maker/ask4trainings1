@@ -8,49 +8,49 @@
   "popularCourses": [
     {
       "title": "Guidewire PolicyCenter Training",
-      "href": "/guidewire-policycenter-online-training"
+      "href": "/guidewire-policycenter-online-training/"
     },
     {
       "title": "Teamcenter PLM Training",
-      "href": "/teamcenter-plm-training"
+      "href": "/teamcenter-plm-training/"
     },
     {
       "title": "Salesforce CRM Training",
-      "href": "/salesforce-online-training"
+      "href": "/salesforce-online-training/"
     },
     {
       "title": "DevOps with AWS Online Training",
-      "href": "/devops-with-aws-online-training"
+      "href": "/devops-with-aws-online-training/"
     },
     {
       "title": "Snowflake Data Warehouse Training",
-      "href": "/snowflake-online-training"
+      "href": "/snowflake-online-training/"
     },
     {
       "title": "SAP S/4 HANA FICO Training",
-      "href": "/sap-s-4-hana-fico-online-training"
+      "href": "/sap-s-4-hana-fico-online-training/"
     }
   ],
   "termsPoliciesLinks": [
     {
       "title": "Terms & Conditions",
-      "href": "/terms-and-conditions"
+      "href": "/terms-and-conditions/"
     },
     {
       "title": "Course Cancellations",
-      "href": "/course-cancellations"
+      "href": "/course-cancellations/"
     },
     {
       "title": "Refund Policy",
-      "href": "/refund-policy"
+      "href": "/refund-policy/"
     },
     {
       "title": "Privacy Policy",
-      "href": "/privacy-policy"
+      "href": "/privacy-policy/"
     },
     {
       "title": "Shipping Policy",
-      "href": "/shipping-policy"
+      "href": "/shipping-policy/"
     }
   ],
   "socialLinks": [

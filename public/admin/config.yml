@@ -27,20 +27,26 @@ collections:
         file: src/content/settings/navigation.json
         format: json
         fields:
-          - label: "Top Strip Phone"
+          - label: "Helpline Phone Number"
             name: "phone"
             widget: "string"
-          - label: "Top Strip Email"
+            hint: "Displays in the top announcement bar. Format: +91 80999 49888"
+          - label: "Official Support Email"
             name: "email"
             widget: "string"
-          - label: "Student LMS Portal Link"
+            hint: "Displays in the top bar. Format: ask4trainings@gmail.com"
+          - label: "Student Portal Login Address"
             name: "studentPortalUrl"
             widget: "string"
-            hint: "Web address where enrolled students log in. e.g., https://portal.ask4trainings.com"
-          - label: "Enquire Now Button Link"
-            name: "enquireUrl"
+            hint: "External portal URL starting with https:// (e.g., https://portal.ask4trainings.com)"
+          - label: "WhatsApp Target Phone Number"
+            name: "whatsappNumber"
             widget: "string"
-            hint: "Link or section anchor opened when clicking Enquire Now. e.g., #enquire or /contact"
+            hint: "Only digits including country code with no + or spaces (e.g., 918099949888)"
+          - label: "Enquire Now Default WhatsApp Message"
+            name: "enquireMessage"
+            widget: "text"
+            hint: "Default text pre-filled when a user clicks 'Enquire Now'. Plain text only; the site automatically encodes it for WhatsApp."
       - label: 🦶 Global Footer Settings
         name: footer
         file: src/content/settings/footer.json
@@ -227,7 +233,7 @@ collections:
                 widget: string
                 hint: "e.g., 'Years Exp' or 'Alumni'"
 
-          - label: "── Section 3: Why Choose Us Cards (Bento) ──"
+          - label: "── Section 3: Why Choose Ask4Trainings Cards ──"
             name: bento
             widget: list
             summary: "{{fields.title}}"
