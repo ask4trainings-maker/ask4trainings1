@@ -33,50 +33,54 @@ collections:
           - label: "Top Strip Email"
             name: "email"
             widget: "string"
-          - label: "Student Portal URL"
+          - label: "Student LMS Portal Link"
             name: "studentPortalUrl"
             widget: "string"
-          - label: "Enquire Button URL"
+            hint: "Web address where enrolled students log in. e.g., https://portal.ask4trainings.com"
+          - label: "Enquire Now Button Link"
             name: "enquireUrl"
             widget: "string"
+            hint: "Link or section anchor opened when clicking Enquire Now. e.g., #enquire or /contact"
       - label: 🦶 Global Footer Settings
         name: footer
         file: src/content/settings/footer.json
         format: json
         fields:
-          - label: "Company Summary"
+          - label: "About Company (Short Footer Blurb)"
             name: "companySummary"
             widget: "text"
             rows: 3
+            hint: "A brief 1 to 2 sentence summary shown under the logo. Keep under 140 characters. e.g., Empowering IT professionals and graduates since 2012 with enterprise cloud training and certification mentorship."
           - label: "Contact Info"
             name: "contactInfo"
             widget: "object"
             fields:
-              - { label: "Phone", name: "phone", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Helpline Phone Number", name: "phone", widget: "string", hint: "Include country code and spaces for clean display. e.g., +91 80999 49888" }
+              - { label: "Official Support Email", name: "email", widget: "string", hint: "General inquiry email address. e.g., ask4trainings@gmail.com" }
+              - { label: "Physical Center Address", name: "address", widget: "string", hint: "Full street and center address shown in the footer and contact sections. e.g., Plot No 32/27, Door No:402, Deeksha Hospital Building, Nizampet 'X' Road, Hyderabad - 500072" }
           - label: "Popular Courses Links"
             name: "popularCourses"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "href", widget: "string" }
+              - { label: "Course Display Name", name: "title", widget: "string", hint: "The text visitors see in the footer link list. e.g., Guidewire PolicyCenter Training" }
+              - { label: "Course Page Address (URL)", name: "href", widget: "string", hint: "The internal address of the course page. Must start with a slash /. e.g., /guidewire-policycenter-online-training" }
           - label: "Terms & Policies Links"
             name: "termsPoliciesLinks"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "href", widget: "string" }
+              - { label: "Policy Page Name", name: "title", widget: "string", hint: "Name of the legal page displayed to students. e.g., Refund Policy" }
+              - { label: "Policy Page Address (URL)", name: "href", widget: "string", hint: "Internal link starting with a slash /. e.g., /refund-policy or /terms-and-conditions" }
           - label: "Social Media Channels"
             name: "socialLinks"
             widget: "list"
             fields:
-              - { label: "Platform", name: "platform", widget: "select", options: ["YouTube", "LinkedIn", "Instagram", "X (Twitter)", "Facebook"] }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Active", name: "active", widget: "boolean", default: true }
-          - label: "Copyright Text"
+              - { label: "Social Media Platform", name: "platform", widget: "select", options: ["YouTube", "LinkedIn", "Instagram", "X (Twitter)", "Facebook"], hint: "Choose which platform icon will display." }
+              - { label: "Full Profile Web Address", name: "url", widget: "string", hint: "Copy the complete link directly from your browser bar. Must start with https://. e.g., https://www.youtube.com/@ask4trainings" }
+              - { label: "Show on Website?", name: "active", widget: "boolean", default: true, hint: "Turn off to temporarily hide this social link without deleting the URL." }
+          - label: "Footer Copyright Line"
             name: "copyright"
             widget: "string"
+            hint: "Appears at the very bottom of every page. e.g., © 2026 Ask4Trainings. All rights reserved."
 
       - label: ⚙️ Site-Wide Settings (Contact, Socials, Banner)
         name: site_settings
@@ -354,9 +358,10 @@ collections:
           - label: "Subheadline"
             name: "subheadline"
             widget: "string"
-          - label: "Inquiry Notice"
+          - label: "Enrollment & Corporate Callout Banner"
             name: "inquiryNotice"
             widget: "text"
+            hint: "Prominent notice displayed above the contact form. e.g., For corporate training inquiries, please email us directly. For course enrollment, call our helpline or visit our Ameerpet center."
           - label: "Phone Numbers"
             name: "phoneNumbers"
             widget: "list"
@@ -371,9 +376,10 @@ collections:
               - { label: "Area", name: "area", widget: "string" }
               - { label: "Pincode", name: "pincode", widget: "string" }
               - { label: "Google Maps Embed Link", name: "mapsLink", widget: "string" }
-          - label: "Office Hours"
+          - label: "Operating Timings"
             name: "officeHours"
             widget: "string"
+            hint: "Days and hours when helpline is active. e.g., Mon - Sat: 8:00 AM - 8:30 PM"
           - label: Enquiry Form Header
             name: formHeader
             widget: string
@@ -464,18 +470,18 @@ collections:
         default: "tier-2"
         hint: "Controls ranking on the catalog homepage."
 
-      - label: "Course Title (H1)"
+      - label: "Full Course Title"
         name: "title"
         widget: "string"
         required: true
-        hint: "The main heading shown at the top of the course page."
+        hint: "The main name of the course shown on the hero banner. e.g., Guidewire PolicyCenter Online Training"
 
-      - label: "URL Slug"
+      - label: "Page Web Address (Slug)"
         name: "slug"
         widget: "string"
         readonly: true
         required: true
-        hint: "Permanent URL path, e.g., 'guidewire-policycenter-online-training'."
+        hint: "Lowercase letters and hyphens only. No spaces. e.g., guidewire-policycenter-online-training"
 
       - label: "Last Updated"
         name: "updatedDate"
@@ -484,11 +490,11 @@ collections:
         format: "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
         hint: "Tracks when the course was last updated."
 
-      - label: "Course Badge / Short Code"
+      - label: "Short Acronym / Code"
         name: "badge"
         widget: "string"
         required: false
-        hint: "Compact badge text (e.g., 'GW PC' or 'SAP FICO')."
+        hint: "2 to 6 character code used on mobile cards and central icons. e.g., GW PC or D365"
 
       - label: "Domain Category"
         name: "category"
@@ -505,7 +511,7 @@ collections:
           - { label: "🚀 Trending Technologies", value: "trending-courses" }
           - { label: "✨ New Courses", value: "new-courses" }
           - { label: "🧰 Other Specialized Tools", value: "other-tools" }
-        hint: "Select the domain this course belongs to."
+        hint: "Determines which tab this course appears under in the main menu."
 
       - label: "Course Rating"
         name: "rating"
@@ -520,11 +526,11 @@ collections:
         required: false
         hint: "Lead introductory paragraph displayed below the H1 in the hero section."
 
-      - label: "Hero Graphic Tagline"
+      - label: "Hero Graphic Subtitle"
         name: "heroTagline"
         widget: "string"
         required: false
-        hint: "Optional 1-sentence tagline displayed in the lower container of the hero graphic. Defaults to category metadata if omitted."
+        hint: "One short sentence (under 60 characters) shown inside the dark tech card on the top right. e.g., Core P&C Policy, Billing & Claims Architecture"
 
       - label: "Course Preview Image (Deprecated)"
         name: "courseImage"
@@ -539,31 +545,31 @@ collections:
         hint: "Batch timing details shown in the hero info chips."
         fields:
           - { label: "Batch Type", name: "type", widget: "string", hint: "e.g., Weekday/Weekend" }
-          - { label: "Program Duration", name: "duration", widget: "string", hint: "e.g., '40-50 Hours'" }
-          - { label: "Training Mode", name: "mode", widget: "string", hint: "e.g., '100% Live Online'" }
+          - { label: "Estimated Completion Time", name: "duration", widget: "string", hint: "Total training hours. e.g., 40-45 Hrs or 6 Weeks" }
+          - { label: "Delivery Format", name: "mode", widget: "string", hint: "How classes are conducted. e.g., Online Live Interactive or Weekend Batches" }
           - { label: "Next Cohort Date", name: "startDate", required: false , widget: "string", hint: "e.g., 'Upcoming Monday'" }
 
       # ── Course Overview (Before Modules) ──
-      - label: "📖 Course Overview"
+      - label: "Course Overview (1-2 Paragraphs)"
         name: "overview"
         widget: "text"
         required: false
-        hint: "Multi-line text area supporting multi-paragraph markdown covering the comprehensive and industry-focused overview blocks."
+        hint: "Foundational description of the course. Separate multiple paragraphs with a blank line."
 
       # ── Curriculum Modules Repeater ──
-      - label: "📚 Course Curriculum Modules"
+      - label: "📘 Course Curriculum Modules"
         name: "modules"
         widget: "list"
         summary: "Module: {{fields.title}} ({{fields.duration}})"
-        hint: "Curriculum accordion on the course page."
+        hint: "The structured syllabus broken into sequential modules. Each module can have multiple lesson topics."
         fields:
-          - { label: "Module Title", name: "title", widget: "string", required: true, hint: "e.g., 'Introduction to PolicyCenter Architecture'" }
+          - { label: "Module Name", name: "title", widget: "string", required: true, hint: "Include the module number and topic name. e.g., Module 1: Mendix Fundamentals" }
           - { label: "Duration", name: "duration", widget: "string", required: false, hint: "e.g., '5 Topics' or '2 Hours'" }
-          - label: "Lessons & Topics"
+          - label: "Lesson Topics List"
             name: "topics"
             widget: "list"
             summary: "{{fields.topic}}"
-            field: { label: "Topic Description", name: "topic", widget: "string", hint: "e.g., 'Understanding ProductModel XML'" }
+            field: { label: "Topic Description", name: "topic", widget: "string", hint: "Add individual bullet points covered in this module. e.g., Introduction to Mendix Studio Basics" }
 
       # ── Why Master This Course ("About Course" Section) ──
       - label: "🚀 Why Master This Course?"
@@ -573,7 +579,7 @@ collections:
         hint: "Explains ecosystem demand and enterprise value."
         fields:
           - { label: "Section Headline", name: "title", widget: "string", required: false, hint: "e.g., 'Why Master [Course Title]?'" }
-          - { label: "Section Description", name: "description", widget: "text", required: false, hint: "Multi-paragraph in-depth domain background." }
+          - { label: "Deep-Dive Syllabus & Training Value", name: "description", widget: "text", required: false, hint: "Detailed course write-up displayed in the Why Master section next to the system architecture diagram." }
 
       # ── Standalone Key Features Grid ──
       - label: "⚡ Key Features (6 Core Pillars)"
@@ -604,11 +610,11 @@ collections:
             field: { label: "Point", name: "point", widget: "string", hint: "Optional child bullet points for that benefit card." }
 
       # ── Why Choose This Course ──
-      - label: "🌟 Why Choose This Specific Course?"
+      - label: "Market Demand & Career ROI Description"
         name: "whyChooseCourse"
         widget: "text"
         required: false
-        hint: "Course-specific rationale explaining enterprise adoption and market demand (distinct from global Ask4Trainings institutional messaging)."
+        hint: "Explain industry hiring demand and enterprise adoption. Shown directly next to the Career ROI Metric Card."
 
       # ── Career & Market ROI Card ──
       - label: "📊 Career & Market ROI Card"
@@ -657,15 +663,15 @@ collections:
           - { label: "Certification Description", name: "description", widget: "text", required: false, hint: "Multi-paragraph explanation of exam preparation and credential value." }
 
       # ── Interactive Target Job Roles ──
-      - label: "💼 Target Job Roles"
+      - label: "💼 Target Job Positions"
         name: "jobRoles"
         widget: "list"
         summary: "{{fields.role}}"
         required: false
         hint: "Job roles shown in the interactive tab panel after the Eligibility section."
         fields:
-          - { label: "Job Role Title", name: "role", widget: "string", required: true, hint: "e.g., 'Developer', 'Configurator', 'Business Analyst'" }
-          - { label: "Role Description", name: "description", widget: "text", required: true, hint: "Responsibilities and industry scope." }
+          - { label: "Job Title", name: "role", widget: "string", required: true, hint: "Professional position graduates can apply for. e.g., PolicyCenter Developer or Functional Consultant" }
+          - { label: "Role Responsibilities", name: "description", widget: "text", required: true, hint: "1 to 2 sentences describing what someone in this job does. e.g., Configures insurance product rules and integrates PolicyCenter with external billing systems." }
           - label: "Key Competencies"
             name: "competencies"
             widget: "list"
@@ -697,8 +703,8 @@ collections:
         required: false
         hint: "FAQ accordion at the bottom of the course page."
         fields:
-          - { label: "Question", name: "question", widget: "string", required: true }
-          - { label: "Detailed Answer", name: "answer", widget: "text", required: true }
+          - { label: "Student Question", name: "question", widget: "string", required: true, hint: "Common question asked by potential learners. End with a question mark ?. e.g., Are there any prerequisites for this course?" }
+          - { label: "Detailed Answer", name: "answer", widget: "text", required: true, hint: "Clear, reassuring response addressing prerequisites, lab access, batch timings, or certifications." }
 
       # ── SEO & Social Meta (Bottom of Form) ──
       - label: "🔍 Search Engine Optimization (SEO)"
@@ -1006,7 +1012,7 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - { name: "title", label: "Page Title", widget: "string" }
-      - { name: "lastUpdated", label: "Last Updated Date", widget: "string", required: false }
+      - { name: "title", label: "Document Name", widget: "string", hint: "Official legal document heading. e.g., Terms & Conditions or Refund Policy" }
+      - { name: "lastUpdated", label: "Effective Date", widget: "string", required: false, hint: "Displayed at the top of the policy page. e.g., September 2026 or 2026-09-01" }
       - { name: "description", label: "Description", widget: "string", required: false }
-      - { name: "body", label: "Policy Content (Markdown)", widget: "markdown" }
+      - { name: "body", label: "Legal Clauses & Terms", widget: "markdown", hint: "Use Markdown formatting (headings with ##, bullet points with -, and bold text with **word**)." }
