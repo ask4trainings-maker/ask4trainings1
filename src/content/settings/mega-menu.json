@@ -6,6 +6,12 @@
       "description": "Master PolicyCenter, ClaimCenter & BillingCenter — the P&C insurance platform powering global carriers.",
       "links": [
         {
+          "title": "Guidewire Claim Center Training",
+          "href": "/guidewire-claim-center-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
           "title": "Guidewire Policycenter Training",
           "href": "/guidewire-policycenter-online-training/",
           "duration": "20-25 Hrs",
@@ -24,12 +30,6 @@
           "isPopular": false
         },
         {
-          "title": "Guidewire Claim Center Training",
-          "href": "/guidewire-claim-center-training/",
-          "duration": "45-60 Hrs",
-          "isPopular": false
-        },
-        {
           "title": "Guidewire Rating Online Training",
           "href": "/guidewire-rating-online-training/",
           "duration": "45-60 Hrs",
@@ -42,7 +42,7 @@
           "isPopular": false
         },
         {
-          "title": "Top Guidewire billing center training in Hyderabad 2026",
+          "title": "Guidewire billing center training",
           "href": "/guidewire-billing-center-training/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -73,7 +73,7 @@
           "isPopular": false
         },
         {
-          "title": "Mendix Training in Hyderabad",
+          "title": "Mendix Online Training Course",
           "href": "/mendix-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -110,7 +110,7 @@
           "isPopular": false
         },
         {
-          "title": "Digital Marketing Training in Hyderabad",
+          "title": "Digital Marketing Training",
           "href": "/digital-marketing-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -179,7 +179,7 @@
           "isPopular": false
         },
         {
-          "title": "DevOps Training in Hyderabad",
+          "title": "DevOps Online Training",
           "href": "/devops-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -198,19 +198,19 @@
       "description": "Full-stack Java, Python, MERN, .NET, React and data analytics with real-time project experience.",
       "links": [
         {
-          "title": "Java Full Stack Training in Hyderabad",
+          "title": "Java Full Stack Training",
           "href": "/java-full-stack-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "Dotnet Full Stack Training in Hyderabad",
+          "title": "Dotnet Full Stack Training",
           "href": "/dotnet-full-stack-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "Python Full Stack Training in Hyderabad",
+          "title": "Python Full Stack Training",
           "href": "/python-full-stack-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -248,19 +248,19 @@
       "description": "End-to-end SAP training: FICO, MM, SD, ABAP, BW/4HANA, SuccessFactors, Ariba, CPI, BRIM and more.",
       "links": [
         {
-          "title": "SAP SD Course in Hyderabad",
+          "title": "SAP SD Course Online Training",
           "href": "/sap-sd-course-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "SAP MM Course in Hyderabad",
+          "title": "SAP MM Course Online Training",
           "href": "/sap-mm-course-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "SAP S/4 Hana Fico Online Training",
+          "title": "SAP S/4 Hana Fico Course Online Training",
           "href": "/sap-s-4-hana-fico-online-training/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -303,7 +303,7 @@
           "isPopular": false
         },
         {
-          "title": "Qlik Sense Course in Hyderabad",
+          "title": "Qlik Sense Online Training Course",
           "href": "/qlik-sense-course-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
@@ -328,25 +328,25 @@
       "description": "Business intelligence, ERP extensions, Mulesoft, Jira, Kinaxis, Palantir Foundry and niche enterprise tools.",
       "links": [
         {
-          "title": "Appian Training in Hyderabad",
+          "title": "Appian Training Online Training course",
           "href": "/appian-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "Jira Confluence Online Training",
+          "title": "Jira Confluence Online Training Course",
           "href": "/jira-confluence-online-training/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "Talend Online Training",
+          "title": "Talend Online Training Course",
           "href": "/talend-online-training/",
           "duration": "45-60 Hrs",
           "isPopular": false
         },
         {
-          "title": "PEGA Training in Hyderabad",
+          "title": "PEGA Online Training Course",
           "href": "/pega-training-in-hyderabad/",
           "duration": "45-60 Hrs",
           "isPopular": false

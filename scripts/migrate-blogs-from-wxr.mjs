@@ -2,63 +2,20 @@ import fs from 'fs';
 import path from 'path';
 import { XMLParser } from 'fast-xml-parser';
 import * as cheerio from 'cheerio';
-import * as yaml from 'js-yaml';
 import TurndownService from 'turndown';
-import turndownPluginGfm from 'turndown-plugin-gfm';
+import { gfm } from 'turndown-plugin-gfm';
 
-const { gfm } = turndownPluginGfm;
+const EXPORT_PATH = path.join(process.cwd(), 'scripts/migration/export.xml');
+const BLOG_DIR = path.join(process.cwd(), 'src/content/blog');
+const REPORTS_DIR = path.join(process.cwd(), 'reports');
 
-const args = process.argv.slice(2);
-const isDryRun = args.includes('--dry-run');
-const isWrite = args.includes('--write');
+const isDryRun = process.argv.includes('--dry-run');
+const isWrite = process.argv.includes('--write');
 
 if (!isDryRun && !isWrite) {
-  console.log("Please specify --dry-run or --write");
+  console.log('Please specify --dry-run or --write');
   process.exit(1);
 }
-
-const inputPath = path.resolve('scripts/migration/export.xml');
-const outputDir = path.resolve('src/content/blog');
-
-if (!fs.existsSync(inputPath)) {
-  console.error(`File not found: ${inputPath}`);
-  process.exit(1);
-}
-
-const xmlData = fs.readFileSync(inputPath, 'utf8');
-
-const parser = new XMLParser({
-  ignoreAttributes: false,
-  attributeNamePrefix: "@_",
-  cdataPropName: "__cdata"
-});
-
-const parsed = parser.parse(xmlData);
-
-const items = parsed?.rss?.channel?.item;
-if (!items) {
-  console.error("No items found in XML.");
-  process.exit(1);
-}
-
-const postsArray = Array.isArray(items) ? items : [items];
-
-// Normalize string (extract CDATA if needed)
-const extractText = (val) => {
-  if (typeof val === 'object' && val !== null && val.__cdata) {
-    return val.__cdata;
-  }
-  return typeof val === 'string' ? val : '';
-};
-
-// 1. Post Filtering Rules
-const blogPosts = postsArray.filter(item => {
-  const postType = extractText(item['wp:post_type']);
-  const status = extractText(item['wp:status']);
-  return postType === 'post' && status === 'publish';
-});
-
-console.log(`Found ${blogPosts.length} published blog posts.`);
 
 const turndownService = new TurndownService({
   headingStyle: 'atx',
@@ -66,128 +23,199 @@ const turndownService = new TurndownService({
 });
 turndownService.use(gfm);
 
-// Rule to strip CMS comments and builder shortcodes
-const stripShortcodesAndComments = (html) => {
-  let clean = html;
-  // strip wp comments
-  clean = clean.replace(/<!--\s*\/?wp:[^>]+-->/g, '');
-  // strip builder shortcodes [vc_row] [/vc_row] etc
-  clean = clean.replace(/\[\/?(vc_[^\]]+|elementor[^\]]+|ekit[^\]]+)\]/gi, '');
-  return clean;
-};
+// Custom rules to preserve double newlines around blocks if needed, but Turndown mostly does it.
+// We can pre-process HTML to strip WP and shortcodes.
+function cleanHtml(rawHtml) {
+  if (!rawHtml) return '';
+  let html = rawHtml;
 
-const resolveThumbnailUrl = (postId, itemsList) => {
-  const post = itemsList.find(i => i['wp:post_id'] == postId);
-  if (!post) return '';
-  const postMeta = Array.isArray(post['wp:postmeta']) ? post['wp:postmeta'] : [post['wp:postmeta']].filter(Boolean);
-  const thumbnailMeta = postMeta.find(meta => meta['wp:meta_key'] === '_thumbnail_id');
-  
-  if (thumbnailMeta) {
-    const thumbId = extractText(thumbnailMeta['wp:meta_value']);
-    const attachment = itemsList.find(i => i['wp:post_id'] == thumbId && i['wp:post_type'] === 'attachment');
-    if (attachment && attachment['wp:attachment_url']) {
-      return extractText(attachment['wp:attachment_url']);
+  // Remove WP block comments
+  html = html.replace(/<!--\s*\/?wp:[^>]+-->/g, '');
+
+  // Remove shortcodes
+  html = html.replace(/\[\/?vc_[^\]]+\]/g, '');
+  html = html.replace(/\[\/?elementor[^\]]+\]/g, '');
+  html = html.replace(/\[\/?ekit[^\]]+\]/g, '');
+
+  // Clean nbsp
+  html = html.replace(/&nbsp;/g, ' ');
+
+  return html;
+}
+
+function kebabCase(str) {
+  return str
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)+/g, '');
+}
+
+async function run() {
+  console.log(`Loading XML from ${EXPORT_PATH}...`);
+  const xmlData = fs.readFileSync(EXPORT_PATH, 'utf-8');
+
+  const parser = new XMLParser({
+    ignoreAttributes: false,
+    cdataPropName: '__cdata',
+    parseTagValue: true,
+  });
+
+  const parsed = parser.parse(xmlData);
+  const items = parsed.rss?.channel?.item || [];
+  const itemsArr = Array.isArray(items) ? items : [items];
+
+  // 1. Pre-index attachments
+  const attachments = {};
+  itemsArr.forEach(item => {
+    if (item['wp:post_type'] === 'attachment') {
+      const postId = item['wp:post_id'];
+      const url = item['wp:attachment_url'];
+      if (postId && url) {
+        attachments[postId] = typeof url === 'object' && url.__cdata ? url.__cdata : url;
+      }
     }
-  }
-  return '';
-};
+  });
 
-for (const post of blogPosts) {
-  const title = extractText(post.title).trim();
-  let slug = extractText(post['wp:post_name']);
-  if (!slug) {
-    slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  }
+  // 2. Filter posts
+  const posts = itemsArr.filter(item => {
+    return item['wp:post_type'] === 'post' && item['wp:status'] === 'publish';
+  });
 
-  let rawDate = extractText(post['wp:post_date']) || extractText(post.pubDate);
-  let pubDate = rawDate ? new Date(rawDate).toISOString().split('T')[0] : new Date().toISOString().split('T')[0];
+  console.log(`Found ${posts.length} published blog posts.`);
 
-  let author = extractText(post['dc:creator']) || "Ask4Trainings Editorial Team";
+  const auditReport = [];
 
-  let tags = [];
-  const categoryData = post.category;
-  if (categoryData) {
-    const catArray = Array.isArray(categoryData) ? categoryData : [categoryData];
-    catArray.forEach(c => {
-      let catText = extractText(c);
-      if (typeof c === 'object' && c['#text']) catText = c['#text']; // fast-xml-parser might parse it this way
-      catText = catText.toLowerCase().trim();
-      if (catText && catText !== 'uncategorized') {
-        tags.push(catText);
+  for (const item of posts) {
+    // Title
+    let title = item.title;
+    if (typeof title === 'object' && title.__cdata) title = title.__cdata;
+    if (!title) title = 'Untitled Post';
+
+    // Slug
+    let slug = item['wp:post_name'];
+    if (typeof slug === 'object' && slug.__cdata) slug = slug.__cdata;
+    if (!slug) slug = kebabCase(title);
+
+    // Date
+    let pubDate = item['wp:post_date'] || item.pubDate;
+    if (typeof pubDate === 'object' && pubDate.__cdata) pubDate = pubDate.__cdata;
+    const dateObj = new Date(pubDate);
+    const dateStr = !isNaN(dateObj.getTime()) ? dateObj.toISOString().split('T')[0] : '2023-01-01';
+
+    // Author
+    let author = item['dc:creator'];
+    if (typeof author === 'object' && author.__cdata) author = author.__cdata;
+    author = author || "Ask4Trainings Editorial Team";
+
+    // Categories and Tags
+    const catsAndTags = Array.isArray(item.category) ? item.category : (item.category ? [item.category] : []);
+    const tags = [];
+    catsAndTags.forEach(cat => {
+      let catName = '';
+      if (typeof cat === 'object') {
+        catName = cat['#text'] || cat.__cdata || '';
+      } else if (typeof cat === 'string') {
+        catName = cat;
+      }
+      if (catName && catName.toLowerCase() !== 'uncategorized') {
+        tags.push(catName);
       }
     });
-  }
-  tags = [...new Set(tags)];
+    const uniqueTags = [...new Set(tags)];
 
-  let rawContent = extractText(post['content:encoded']);
-  let rawExcerpt = extractText(post['excerpt:encoded']);
+    // Thumbnail
+    let featuredImage = '';
+    const meta = Array.isArray(item['wp:postmeta']) ? item['wp:postmeta'] : (item['wp:postmeta'] ? [item['wp:postmeta']] : []);
+    const thumbMeta = meta.find(m => m['wp:meta_key'] === '_thumbnail_id');
+    if (thumbMeta) {
+      let thumbId = thumbMeta['wp:meta_value'];
+      if (typeof thumbId === 'object' && thumbId.__cdata) thumbId = thumbId.__cdata;
+      if (attachments[thumbId]) {
+        featuredImage = attachments[thumbId];
+      }
+    }
 
-  let description = '';
-  if (rawExcerpt) {
-    const $ = cheerio.load(rawExcerpt);
-    description = $.text().trim();
-  } else {
-    const $ = cheerio.load(rawContent);
-    const firstP = $('p').first().text().trim();
-    if (firstP) {
-      description = firstP.substring(0, 155);
-      if (firstP.length > 155) description += '...';
-    } else {
-      description = $.text().substring(0, 155).trim();
-      if ($.text().length > 155) description += '...';
+    // Body
+    let bodyRaw = item['content:encoded'];
+    if (typeof bodyRaw === 'object' && bodyRaw.__cdata) bodyRaw = bodyRaw.__cdata;
+    
+    let excerptRaw = item['excerpt:encoded'];
+    if (typeof excerptRaw === 'object' && excerptRaw.__cdata) excerptRaw = excerptRaw.__cdata;
+
+    const cleanedHtml = cleanHtml(bodyRaw);
+    
+    // Extract headings for audit
+    const $ = cheerio.load(cleanedHtml);
+    const headings = [];
+    $('h1, h2, h3, h4, h5, h6').each((i, el) => {
+      headings.push({
+        tag: el.tagName.toLowerCase(),
+        text: $(el).text().trim()
+      });
+    });
+
+    const bodyMarkdown = turndownService.turndown(cleanedHtml).replace(/\n{3,}/g, '\n\n');
+    
+    let excerpt = excerptRaw ? turndownService.turndown(cleanHtml(excerptRaw)) : '';
+    if (!excerpt) {
+      const firstPara = $('p').first().text().trim();
+      excerpt = firstPara.length > 160 ? firstPara.substring(0, 157) + '...' : firstPara;
+    }
+    excerpt = excerpt.replace(/\n/g, ' ').replace(/"/g, '\\"');
+    
+    const wordCount = bodyMarkdown.split(/\s+/).filter(w => w.length > 0).length;
+
+    auditReport.push({
+      title,
+      slug,
+      pubDate: dateStr,
+      author,
+      tags: uniqueTags,
+      featuredImage: featuredImage || null,
+      wordCount,
+      headings,
+      first200Chars: $('p').first().text().substring(0, 200)
+    });
+
+    if (isWrite) {
+      let frontmatter = `---
+title: "${title.replace(/"/g, '\\"')}"
+description: "${excerpt}"
+pubDate: ${dateStr}
+author: "${author.replace(/"/g, '\\"')}"
+tags: ${JSON.stringify(uniqueTags)}
+draft: false
+`;
+      if (featuredImage) {
+        frontmatter += `image: "${featuredImage}"\n`;
+      }
+      frontmatter += `---\n\n`;
+      frontmatter += bodyMarkdown + '\n';
+
+      fs.writeFileSync(path.join(BLOG_DIR, `${slug}.md`), frontmatter);
     }
   }
-  description = description.replace(/\s+/g, ' ').trim() || "No description available.";
 
-  let image = resolveThumbnailUrl(post['wp:post_id'], postsArray);
+  // Write Reports
+  if (!fs.existsSync(REPORTS_DIR)) {
+    fs.mkdirSync(REPORTS_DIR, { recursive: true });
+  }
 
-  // Body sanitization
-  let cleanHtml = stripShortcodesAndComments(rawContent);
-  const $ = cheerio.load(cleanHtml);
+  fs.writeFileSync(path.join(REPORTS_DIR, 'blog-content-audit.json'), JSON.stringify(auditReport, null, 2));
+
+  let mdReport = `# Blog Content Audit Report\n\n`;
+  mdReport += `Total Articles Found: **${auditReport.length}**\n\n`;
   
-  // replace &nbsp;
-  $('body').contents().each(function() {
-    if (this.type === 'text') {
-      this.data = this.data.replace(/\u00a0/g, ' ');
-    }
-  });
-
-  // remove empty p
-  $('p').each((i, el) => {
-    if ($(el).text().trim() === '' && $(el).find('img, iframe').length === 0) {
-      $(el).remove();
-    }
-  });
-
-  const finalHtml = $('body').html() || '';
-  const markdownBody = turndownService.turndown(finalHtml);
-
-  const frontmatter = {
-    title,
-    description,
-    pubDate: pubDate + 'T00:00:00.000Z',
-    author,
-    tags,
-    draft: false
-  };
+  mdReport += `| Title | Slug | Date | Author | Tags | Words | Headings | Image |\n`;
+  mdReport += `| --- | --- | --- | --- | --- | --- | --- | --- |\n`;
   
-  if (image) frontmatter.image = image;
-
-  const yamlStr = yaml.dump(frontmatter);
-  const fileContent = `---\n${yamlStr}---\n\n${markdownBody}\n`;
-
-  if (isDryRun) {
-    console.log(`\n--- DRY RUN: ${slug} ---`);
-    console.log(yamlStr);
-    break;
+  for (const post of auditReport) {
+    mdReport += `| ${post.title} | ${post.slug} | ${post.pubDate} | ${post.author} | ${post.tags.length} | ${post.wordCount} | ${post.headings.length} | ${post.featuredImage ? '✅' : '❌'} |\n`;
   }
 
-  if (isWrite) {
-    const outFilePath = path.join(outputDir, `${slug}.md`);
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-    fs.writeFileSync(outFilePath, fileContent, 'utf8');
-    console.log(`Wrote ${slug}.md`);
-  }
+  fs.writeFileSync(path.join(REPORTS_DIR, 'blog-content-audit.md'), mdReport);
+  console.log('Audit reports generated in reports/ directory.');
+
 }
+
+run().catch(console.error);
