@@ -279,20 +279,12 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
   schema: z.object({
     title: z.string(),
-    publishDate: z.coerce.date(),
-    author: z.string().default('Ask4Trainings Team'),
-    category: z.string().default('General'),
     description: z.string(),
+    pubDate: z.coerce.date(),
+    author: z.string().default('Ask4Trainings Team'),
+    tags: z.array(z.string()).default([]),
     image: z.string().optional(),
-    featured: z.boolean().default(false),
-    draft: z.boolean().default(false),
-    // CMS-aligned additions (optional)
-    imageAlt: z.string().optional(),
-    metaDescription: z.string().optional(),
-    updatedDate: z.coerce.date().optional(),
-    legacyUrl: z.string().optional(),
-    relatedCourseSlug: z.string().optional(),
-    navigation_path: z.string().optional(),
+    draft: z.boolean().default(false)
   }),
 });
 

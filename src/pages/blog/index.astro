@@ -6,9 +6,9 @@ const allBlogPosts = await getCollection('blog', ({ data }) => {
   return data.draft !== true;
 });
 
-// Sort by publishDate descending
+// Sort by pubDate descending
 const sortedPosts = allBlogPosts.sort(
-  (a, b) => new Date(b.data.publishDate).valueOf() - new Date(a.data.publishDate).valueOf()
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );
 const posts = sortedPosts.length > 0 ? sortedPosts : [
   {
@@ -16,8 +16,8 @@ const posts = sortedPosts.length > 0 ? sortedPosts : [
     data: {
       title: 'Building Enterprise Architecture in 2026',
       description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
-      category: 'Architecture',
-      publishDate: new Date().toISOString(),
+      tags: ['Architecture'],
+      pubDate: new Date().toISOString(),
       image: '/logo.svg'
     }
   }
@@ -50,12 +50,14 @@ function getPostUrl(id: string): string {
               </div>
             )}
             <div class="p-6 flex flex-col flex-grow">
-              <div class="flex items-center gap-3 mb-4">
-                <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                  {post.data.category}
-                </span>
-                <time class="text-sm text-slate-500 font-medium" datetime={new Date(post.data.publishDate).toISOString()}>
-                  admin / {new Date(post.data.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              <div class="flex flex-wrap items-center gap-2 mb-4">
+                {post.data.tags && post.data.tags.map((tag: string) => (
+                  <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    {tag}
+                  </span>
+                ))}
+                <time class="text-sm text-slate-500 font-medium ml-auto" datetime={new Date(post.data.pubDate).toISOString()}>
+                  {new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                 </time>
               </div>
               <h2 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
@@ -63,12 +65,12 @@ function getPostUrl(id: string): string {
                   {post.data.title}
                 </a>
               </h2>
-              <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6 line-clamp-3 flex-grow space-y-4">
+              <p class="text-sm text-slate-600 line-clamp-2 sm:line-clamp-3 mb-6 flex-grow space-y-4">
                 {post.data.description}
               </p>
               <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
                 <span class="text-emerald-600 font-semibold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read More &rarr; <svg class="w-4 h-4 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                  Read Article &rarr;
                 </span>
               </div>
             </div>

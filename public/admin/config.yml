@@ -969,22 +969,17 @@ collections:
         widget: string
         hint: "Full article title shown on the blog listing and detail pages."
       - label: Publish Date
-        name: publishDate
+        name: pubDate
         widget: datetime
         format: YYYY-MM-DD
       - label: Author
         name: author
         widget: string
         default: Ask4Trainings Editorial
-      - label: Category
-        name: category
-        widget: select
-        options:
-          - { label: "Guidewire", value: "Guidewire" }
-          - { label: "SAP", value: "SAP" }
-          - { label: "Cloud & DevOps", value: "Cloud & DevOps" }
-          - { label: "Enterprise IT", value: "Enterprise IT" }
-          - { label: "Career Guides", value: "Career Guides" }
+      - label: Tags
+        name: tags
+        widget: list
+        hint: "Tags for the blog post."
       - label: Introduction / Excerpt
         name: description
         widget: text
@@ -996,12 +991,6 @@ collections:
       - label: Article Content
         name: body
         widget: markdown
-      - label: Featured Article
-        name: featured
-        widget: boolean
-        default: false
-        required: false
-        hint: "Enable to pin this article at the top of the blog listing."
       - label: Draft
         name: draft
         widget: boolean

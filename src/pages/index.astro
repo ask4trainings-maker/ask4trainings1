@@ -59,7 +59,7 @@ function cleanTitle(title: string): string {
 const allBlogPosts = (await getCollection('blog')) || [];
 const validBlogs = allBlogPosts
   .filter((post) => !post.data.draft)
-  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
   .slice(0, 3);
 const displayBlogs = validBlogs.length > 0 ? validBlogs : [
   {
@@ -67,8 +67,8 @@ const displayBlogs = validBlogs.length > 0 ? validBlogs : [
     data: {
       title: 'Building Enterprise Architecture in 2026',
       description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
-      category: 'Architecture',
-      publishDate: new Date().toISOString(),
+      tags: ['Architecture'],
+      pubDate: new Date().toISOString(),
       image: '/logo.svg'
     }
   }
@@ -310,12 +310,14 @@ const displayBlogs = validBlogs.length > 0 ? validBlogs : [
                 </div>
               )}
               <div class="p-6 flex flex-col flex-grow">
-                <div class="flex items-center gap-3 mb-4">
-                  <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {post.data.category}
-                  </span>
-                  <time class="text-sm text-slate-500 font-medium" datetime={new Date(post.data.publishDate).toISOString()}>
-                    {new Date(post.data.publishDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                <div class="flex flex-wrap items-center gap-2 mb-4">
+                  {post.data.tags && post.data.tags.map((tag: string) => (
+                    <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
+                      {tag}
+                    </span>
+                  ))}
+                  <time class="text-sm text-slate-500 font-medium ml-auto" datetime={new Date(post.data.pubDate).toISOString()}>
+                    {new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </time>
                 </div>
                 <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
