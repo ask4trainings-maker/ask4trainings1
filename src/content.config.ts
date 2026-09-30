@@ -284,7 +284,14 @@ const blog = defineCollection({
     author: z.string().default('Ask4Trainings Team'),
     tags: z.array(z.string()).default([]),
     image: z.string().optional(),
-    draft: z.boolean().default(false)
+    draft: z.boolean().default(false),
+    cta: z.object({
+      enabled: z.boolean().default(true),
+      headline: z.string().default('Need a Demo Session? Let’s Connect'),
+      subheadline: z.string().default('Get in touch with our expert advisors to book a free live interactive demo.'),
+      enrollUrl: z.string().default('/contact-us/'),
+      whatsappMessage: z.string().optional()
+    }).optional()
   }),
 });
 

@@ -30,7 +30,7 @@ collections:
             widget: "list"
             summary: "{{fields.label}}"
             fields:
-              - { label: "System Category Identifier", name: "key", widget: "string", readonly: true }
+              - { label: "System Category Identifier", name: "key", widget: "string" }
               - { label: "Display Tab Name", name: "label", widget: "string" }
               - { label: "Category Sub-headline", name: "description", widget: "string", required: false }
               - label: "Course Links"
@@ -429,7 +429,7 @@ collections:
     label: 🎓 Edit Course Pages
     folder: src/content/courses
     create: true
-    slug: '{{slug}}'
+    slug: '{{fields.slug}}'
     extension: md
     format: frontmatter
     editor:
@@ -1017,9 +1017,40 @@ collections:
         name: image
         widget: image
         required: false
-      - label: Article Content
+      - label: "Article Body (Markdown Content)"
         name: body
         widget: markdown
+        hint: "Write your article using Markdown. For Inbound Links (internal pages on this site), use relative paths starting with a slash: [Course Name](/guidewire-policycenter-online-training/). For Outbound Links (external sites), use the full URL: [External Reference](https://example.com)."
+      - label: "Call to Action Banner"
+        name: cta
+        widget: object
+        required: false
+        fields:
+          - label: "Display Dual Action Banner?"
+            name: enabled
+            widget: boolean
+            default: true
+            hint: "Turn on to show the 'Enroll Now' and 'WhatsApp Us' action buttons in this article."
+          - label: "CTA Banner Heading"
+            name: headline
+            widget: string
+            required: false
+            hint: "Callout title. e.g., 'Ready to Master Guidewire?' or 'Need a Live Demo Session? Let’s Connect'"
+          - label: "CTA Subtitle / Value Proposition"
+            name: subheadline
+            widget: string
+            required: false
+            hint: "Brief 1-sentence prompt. e.g., 'Book your free interactive demo session with industry-certified trainers today.'"
+          - label: "Enroll Now Button Link (Inbound Link)"
+            name: enrollUrl
+            widget: string
+            required: false
+            hint: "Internal link to the related course page or registration section. Must start with a slash /. e.g., /guidewire-policycenter-online-training/ or /contact-us/"
+          - label: "WhatsApp Pre-filled Message"
+            name: whatsappMessage
+            widget: string
+            required: false
+            hint: "Custom inquiry text sent when a student taps WhatsApp Us. e.g., 'Hi Ask4Trainings, I read your blog and want to attend a free live demo session.'"
       - label: Draft
         name: draft
         widget: boolean
