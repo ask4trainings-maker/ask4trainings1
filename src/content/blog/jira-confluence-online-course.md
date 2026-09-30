@@ -13,15 +13,7 @@ draft: false
 
 A [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/) provides practical knowledge of Jira and Confluence for Agile project management, team collaboration, and project documentation. Through **Jira Confluence Online Training**, learners understand how to create projects, manage tasks, track issues, plan sprints, configure workflows, and monitor project progress using Jira. The course also introduces Confluence for creating, organizing, and sharing project documents, meeting notes, requirements, and knowledge bases. **Jira Confluence Training** helps learners understand how both platforms work together to improve communication and project visibility. With practical exercises and real-time project scenarios, learners can develop job-oriented skills for Agile and Scrum environments. This training can be useful for professionals, freshers, project teams, QA professionals, business analysts, and aspiring Jira administrators.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 2.Why Choose Jira Confluence Online Training for Agile Project Management?
 
@@ -31,16 +23,7 @@ Choosing a [**Jira Confluence Online Course**](https://ask4trainings.com/jira-co
 
 In our [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/), you will learn practical skills for managing Agile projects, tasks, workflows, and team collaboration. The **Jira Confluence Course** covers Jira project management, issue tracking, sprint planning, Scrum boards, dashboards, reports, and workflow management. You will also learn Confluence for creating project documentation, knowledge bases, team spaces, and collaborative content. The training includes practical exercises to help you understand how Jira and Confluence work together in real-time project environments. With **Jira Confluence Training in Hyderabad**, learners can develop job-oriented skills through hands-on practice and industry-based scenarios. You will gain an understanding of Agile and Scrum practices, Jira administration basics, Confluence documentation, project tracking, and collaboration tools. This practical learning approach helps you build confidence for Jira and Confluence-related roles.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 4.How Does Jira Support Agile and Scrum Project Management?
 
@@ -50,15 +33,7 @@ Jira is widely used by Agile teams to plan, track, and manage software projects 
 
 Confluence helps teams create, organize, and share important project information in one centralized workspace. Through a [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/), learners can understand how Confluence supports Agile teams and improves collaboration. **Confluence Collaboration Training** teaches professionals how to create team spaces, share project updates, manage meeting notes, and collaborate on documents efficiently. A **Confluence documentation course** helps learners develop practical skills for creating structured pages, maintaining knowledge bases, and managing project documentation. Confluence can also be integrated with Jira, allowing teams to connect tasks, issues, requirements, and project information. These capabilities improve communication, reduce information gaps, and make important documents easier to access. Learning Confluence through practical projects can help professionals build useful collaboration and documentation skills for modern Agile project environments.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 6.What Are the Key Features of Jira Project Management?
 
@@ -68,16 +43,7 @@ Jira provides powerful features for planning, tracking, and managing Agile proje
 
 Confluence provides powerful features for team collaboration, documentation, and knowledge management. In a [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/), learners can understand how to create and organize pages, spaces, templates, and project documentation. A practical **Jira Confluence Course** also covers page editing, content sharing, comments, file attachments, permissions, and search features. Learners can understand how Confluence works with Jira to connect project tasks with documentation and improve team collaboration. The **Jira Confluence Training in Hyderabad** can help participants gain practical knowledge through real-time project scenarios. Important topics include creating team spaces, managing page hierarchies, using templates, tracking content updates, and collaborating with Agile teams. These skills are useful for professionals working in project management, software development, business analysis, and Agile environments.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 8.How to Manage Jira Issues, Tasks, Sprints and Workflows?
 
@@ -91,15 +57,7 @@ Managing Jira issues, tasks, sprints, and workflows is an important part of effe
 
 Jira administration skills are an important part of the **Jira Confluence Online Course**, helping learners understand how to manage Jira projects and support Agile teams effectively. In **Jira Administration Training**, you will learn user and group management, project configuration, permission schemes, issue types, workflows, screens, custom fields, notifications, and Jira security settings. The **Jira Administrator Course** also covers dashboards, project roles, workflow customization, issue management, and reporting features. Learners gain practical knowledge through real-time project scenarios and hands-on exercises. The course helps you understand how Jira administrators configure projects, manage access, maintain workflows, and support teams using Jira and Confluence. This practical approach can help professionals develop useful Jira administration skills for Agile project environments and Jira-related career opportunities.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 11.How to Create Jira Dashboards and Generate Project Reports?
 
@@ -109,16 +67,7 @@ A [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-
 
 Jira and Confluence work together to help Agile teams manage projects, tasks, documentation, and team collaboration efficiently. Through a [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/), learners can understand how Jira supports sprint planning, issue tracking, task management, workflows, and project reporting. **Jira Online Training** helps professionals learn how to create and manage projects, boards, backlogs, and Agile workflows. At the same time, **Confluence Online Training** focuses on creating project documentation, meeting notes, requirements, knowledge bases, and team resources. Teams can connect Jira issues with Confluence pages, making project information easier to access and maintain. This integrated approach improves communication, supports Agile and Scrum practices, and helps teams organize real-time project activities effectively.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 13.Who Can Join Jira Confluence Online Training?
 
@@ -128,15 +77,7 @@ Jira and Confluence work together to help Agile teams manage projects, tasks, do
 
 Completing a [**Jira Confluence Online Course**](https://ask4trainings.com/jira-confluence-online-training/) can help learners develop practical skills for Agile project management, issue tracking, team collaboration, documentation, and workflow management. After training, candidates can explore roles such as **Jira Administrator, Jira Project Coordinator, Agile Project Coordinator, Scrum Team Member, Confluence Administrator, and Project Management Support Specialist**. A **Jira Confluence Certification Training** program can help demonstrate knowledge of Jira workflows, dashboards, Scrum boards, Confluence spaces, and project documentation. Learners can also gain practical experience by working on real-time project scenarios. **Jira Confluence Placement Assistance Training** may provide career guidance, resume preparation, interview support, and job-search assistance. With hands-on knowledge of Jira and Confluence, professionals can apply these skills across Agile teams, software projects, IT organizations, and project management environments.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 15.How Can Jira Confluence Certification Support Your Career Growth?
 

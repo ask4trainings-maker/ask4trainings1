@@ -17,15 +17,7 @@ A [**Data Analytics Course**](https://ask4trainings.com/data-analytics-online-tr
 
 Enrolling in a **Data Analytics Course** offers many benefits for students, freshers, and working professionals who want to upgrade their careers. This training helps learners understand data collection, reporting, and business intelligence techniques used across industries. Through **Data Analytics Online Training**, students learn industry-relevant tools and practical methods to analyze business data efficiently. The **Data Analytics Course for Beginners Online** is ideal for individuals with no technical background, making learning simple and structured. Many institutes provide an **Online Data Analytics Bootcamp** to help learners gain practical exposure in less time. Completing a **Data Analytics Certification Online** program improves credibility and job readiness. A well-designed **Data Analytics Training with Placement** program can also help learners secure rewarding opportunities quickly.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 3\. Start With Data Analytics Course
 
@@ -39,16 +31,7 @@ A [**Data Analytics Course**](https://ask4trainings.com/data-analytics-online-tr
 
 A **Data Analytics Course** is suitable for students, freshers, working professionals, and career changers who want to enter a fast-growing field. Beginners can start with a **Data Analytics Course for Beginners Online** to understand analytics concepts in a simple way. Professionals often choose **Data Analytics Online Training for Working Professionals** to upgrade skills without affecting their work schedules. Those planning a career transition can join **Online Data Analytics Training for Career Switch** programs for structured guidance. Many learners prefer a **Data Analytics Instructor-Led Online Training** model because it offers expert mentorship and real-time doubt clarification. A **Data Analytics Job-Oriented Online Course** is highly beneficial for anyone seeking practical skills and better career opportunities in competitive industries.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 6\. Data Analytics Course Overview
 
@@ -62,15 +45,7 @@ Completing a **Data Analytics Course** opens many career opportunities across in
 
 A **Data Analytics Course** prepares learners for multiple job roles in growing industries where analytical skills are highly valued. After completing training, learners can explore positions related to reporting, business intelligence, and performance analysis. A strong **Data Analytics Online Training** program helps students understand practical workflows used in professional environments. Many institutes offer **Data Analytics Training Live Online**, helping learners gain expert guidance from experienced mentors. Through **Data Analytics Online Projects**, students gain hands-on exposure and improve problem-solving abilities. A **Data Analytics Job-Oriented Online Course** focuses on building industry-ready skills for better employability. Choosing the **Best Online Training for Data Analytics** helps candidates prepare for interviews and increases opportunities for long-term career growth successfully.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 9\. Learn Fast With Data Analytics Course
 
@@ -80,16 +55,7 @@ Learning through a **Data Analytics Course** is faster and easier today because 
 
 A **Data Analytics Course** is an excellent option for freshers who want to start a successful career in a growing technology field. Many beginners join **Data Analytics Online Training for Freshers** to learn analytics concepts step by step without prior experience. A structured **Data Analytics Course for Beginners Online** helps students understand reporting, visualization, and data interpretation in simple terms. Learners can also gain practical experience through **Data Analytics Online Projects**, improving confidence and technical understanding. Many institutes provide **Data Analytics Online Training and Placement Support** to help freshers prepare for interviews and career opportunities. Completing a **Data Analytics Course with Real-Time Projects** strengthens practical knowledge and increases chances of securing better entry-level roles quickly.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 11\. Why Enroll in Data Analytics Course
 
@@ -99,15 +65,7 @@ Enrolling in a **Data Analytics Course** helps learners build valuable skills ne
 
 The future scope of a **Data Analytics Course** continues to grow as businesses increasingly rely on data for better decision-making. Skilled professionals are in high demand across industries such as healthcare, banking, retail, and technology. A quality **Data Analytics Course** prepares learners with practical skills needed to analyze trends and business performance. Through **Data Analytics Online Classes**, students can learn flexibly while developing industry-relevant knowledge. Many learners choose **Data Analytics Certification Online** to improve credibility and gain better job opportunities. Completing an **Advanced Data Analytics Online Course** enhances analytical expertise and problem-solving abilities. A career-focused **Data Analytics Course** can lead to stable growth, competitive salaries, and long-term professional success.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 13\. How Data Analytics Course Helps
 
@@ -121,13 +79,5 @@ A **Data Analytics Course** helps students master important analytical skills re
 
 Success through a **Data Analytics Course** becomes possible when learners develop strong analytical and problem-solving skills. Businesses need skilled professionals who can interpret information and improve decision-making processes. A structured **Data Analytics Online Training** program helps learners understand practical concepts and real-world applications. Many students enroll in an **Online Data Analytics Bootcamp** to gain focused training in less time. Choosing a **Data Analytics Online Course with Internship** improves practical exposure and professional confidence. Completing a **Data Analytics Online Certification Program** increases credibility and career opportunities in competitive industries. A quality **Data Analytics Course** helps learners achieve long-term growth and build a rewarding professional future successfully.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
+

@@ -1020,7 +1020,13 @@ collections:
       - label: "Article Body (Markdown Content)"
         name: body
         widget: markdown
-        hint: "Write your article using Markdown. For Inbound Links (internal pages on this site), use relative paths starting with a slash: [Course Name](/guidewire-policycenter-online-training/). For Outbound Links (external sites), use the full URL: [External Reference](https://example.com)."
+        hint: >-
+          Write your article in Markdown.
+          To add a call-to-action banner anywhere in the post, simply type one of these short tags on a new line:
+          1) Type ::enroll-now to add the 'Ready to Start Learning? Enroll Now' card.
+          2) Type ::whatsapp-us to add the 'Need a Demo Session? WhatsApp Us' card.
+          For internal links, use: [Link Text](/course-slug/).
+          For external links, use: [Link Text](https://example.com).
       - label: "Call to Action Banner"
         name: cta
         widget: object

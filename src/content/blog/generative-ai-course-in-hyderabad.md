@@ -17,15 +17,7 @@ draft: false
 
 Choosing the [Generative AI course in Hyderabad](https://ask4trainings.com/) is the ideal way to build in-demand AI skills and stay competitive in today's technology-driven job market. Our industry-focused curriculum covers prompt engineering, Large Language Models (LLMs), AI-powered applications, automation, and real-world project development. The **Generative AI online course** offers flexible learning through live instructor-led sessions, recorded classes, practical assignments, and hands-on projects, making it suitable for students and working professionals. With expert trainers, career-oriented learning, certification guidance, and placement assistance, our **Generative AI training in Hyderabad** prepares you for roles such as AI Engineer, Prompt Engineer, Machine Learning Engineer, and AI Developer. Gain practical experience with the latest AI tools and confidently advance your career in the rapidly growing field of Generative AI.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 3.Benefits of Learning Generative AI
 
@@ -39,16 +31,7 @@ The **Generative AI course in Hyderabad** is designed for anyone who wants to bu
 
 Our [Generative AI course in Hyderabad](https://ask4trainings.com/) features a comprehensive, industry-focused curriculum designed to help learners master modern AI technologies. The course covers AI fundamentals, machine learning basics, prompt engineering, Large Language Models (LLMs), ChatGPT, Retrieval-Augmented Generation (RAG), vector databases, AI agents, Python for AI, API integration, and popular frameworks such as LangChain. Students also gain practical experience through real-world projects, case studies, and hands-on assignments. The **Generative AI online course** is delivered by experienced trainers with live interactive sessions, recorded classes, and continuous mentor support. Whether you are a beginner or an experienced IT professional, our **Generative AI training in Hyderabad** equips you with job-ready skills, industry-recognized certification, and the confidence to build intelligent AI-powered applications.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 6.Generative AI Tools You Will Learn
 
@@ -58,15 +41,7 @@ Our **Generative AI course in Hyderabad** provides hands-on experience with the 
 
 Our **Generative AI course in Hyderabad** emphasizes practical learning through hands-on projects and real-world applications that prepare you for industry roles. You will build AI-powered chatbots, content generation tools, document summarization systems, question-answering applications, AI assistants, and automation solutions using modern Generative AI technologies. The **Generative AI online course** includes project-based assignments, case studies, and live coding sessions to help you apply theoretical concepts in real business scenarios. Under the guidance of experienced mentors, you will create a professional portfolio that showcases your skills to employers. Our **Generative AI training in Hyderabad** ensures you gain practical experience with the latest AI tools, improve problem-solving abilities, and become job-ready for high-demand careers in artificial intelligence.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 8.Online and Classroom Generative AI Training in Hyderabad
 
@@ -80,16 +55,7 @@ Our **Generative AI Certification Training** is designed to help you gain practi
 
 Completing a **Generative AI course in Hyderabad** opens the door to exciting career opportunities in the rapidly growing AI industry. As businesses adopt AI-powered solutions, there is increasing demand for skilled professionals in roles such as Generative AI Engineer, AI Developer, Prompt Engineer, Machine Learning Engineer, Data Scientist, AI Solutions Architect, and NLP Engineer. Our **Generative AI online course** equips you with practical knowledge through hands-on projects, real-world case studies, and industry-relevant tools, making you job-ready. With expert mentorship, certification, and placement assistance, our **Generative AI training in Hyderabad** helps you build a strong portfolio and confidently apply for high-paying positions across IT, healthcare, finance, e-commerce, education, and other industries embracing artificial intelligence.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 11.Why Choose Our Generative AI Training Institute in Hyderabad?
 
@@ -99,15 +65,7 @@ Our institute is committed to delivering high-quality **Generative AI training i
 
 Our **Generative AI course in Hyderabad** is designed to provide flexible learning options at an affordable fee, making it accessible to students, fresh graduates, and working professionals. The course duration typically ranges from **6 to 10 weeks**, depending on the learning format and curriculum. We offer weekday, weekend, and fast-track batches to suit your schedule. Our **Generative AI online course** includes live instructor-led classes, recorded sessions, hands-on projects, study materials, and lifetime access to learning resources. With expert trainers, practical assignments, certification guidance, and placement support, our **Generative AI training in Hyderabad** ensures you gain industry-ready skills while learning at your own pace. Contact us today for the latest fee structure, upcoming batch schedules, and exclusive training offers.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 13.Placement Assistance and Career Support
 
@@ -121,13 +79,5 @@ Our **Generative AI course in Hyderabad** is designed to answer the most common 
 
 Take the first step toward a successful AI career by enrolling in our **Generative AI course in Hyderabad** today. Our industry-focused training program is designed to help you master prompt engineering, Large Language Models (LLMs), ChatGPT, LangChain, OpenAI APIs, AI agents, and real-world AI application development. The **Generative AI online course** offers flexible weekday, weekend, and fast-track batches, making it ideal for students, fresh graduates, and working professionals. With expert trainers, hands-on projects, certification guidance, interview preparation, and dedicated placement assistance, our **Generative AI training in Hyderabad** equips you with the practical skills required by top employers. Join now to gain industry-recognized certification, build an impressive AI portfolio, and accelerate your career in the rapidly growing field of Generative AI.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
+

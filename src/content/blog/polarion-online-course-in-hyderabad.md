@@ -17,15 +17,7 @@ The **Polarion Online Course** provides a comprehensive introduction to applicat
 
 The **Polarion Online Course** offers powerful features designed to help learners master application lifecycle management with ease. This **Polarion Training Online** covers requirement management, test case management, and end-to-end traceability in a single platform. With the **Polarion Course Online**, you gain hands-on experience in creating work items, managing LiveDocs, and automating workflows. The **Polarion ALM Training** also includes real-time dashboards and reporting tools that improve project visibility and decision-making. Through **Polarion Certification Training**, learners understand how to link requirements with testing and development tasks effectively. This **Polarion Job Oriented Course** focuses on practical implementation using real-time projects and case studies. The **Best Polarion Online Course** ensures you learn integration with tools and maintain compliance across projects.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 3\. Polarion ALM Benefits Explained
 
@@ -39,16 +31,7 @@ The **Polarion Online Course** helps learners master requirement management usin
 
 The **Polarion Online Course** emphasizes real-time project experience to help learners gain practical skills in application lifecycle management. This **Polarion Training Online** includes hands-on exercises where you work on live scenarios involving requirement management, test case creation, and workflow automation. Through the **Polarion Course Online**, you learn how to manage work items, create LiveDocs, and maintain end-to-end traceability in real projects. The **Polarion ALM Training** also demonstrates how teams collaborate, track changes, and ensure quality across development cycles. With **Polarion Certification Training**, learners build confidence by solving industry-based case studies and using reporting dashboards. This **Polarion Job Oriented Course** prepares you to handle real business challenges and implement ALM solutions effectively. The **Best Polarion Online Course** ensures you gain experience that matches industry expectations. 
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 6\. Polarion ALM Tools Training
 
@@ -58,15 +41,7 @@ The **Polarion Online Course** provides in-depth training on essential tools use
 
 The **Polarion Online Course** provides hands-on experience with LiveDocs, a powerful feature for managing requirements in a structured format. This **Polarion Training Online** teaches learners how to create, edit, and organize documents while maintaining full traceability across projects. Through the **Polarion Course Online**, you understand how LiveDocs help teams collaborate efficiently by linking requirements, test cases, and development tasks in one place. The **Polarion ALM Training** also covers version control, document reuse, and real-time updates to ensure consistency and accuracy. With **Polarion Certification Training**, learners gain practical exposure through real-time scenarios and case studies. This **Polarion Job Oriented Course** focuses on implementing LiveDocs in enterprise environments for better workflow management. The **Best Polarion Online Course** prepares you to handle documentation challenges effectively.
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 8\. Polarion Work Items Guide
 
@@ -80,16 +55,7 @@ The **Polarion Online Course** provides a strong foundation in traceability conc
 
 The **Polarion Online Course** delivers strong expertise in integrating testing processes within ALM systems. This **Polarion Testing Integration Course** helps learners connect requirements, test cases, and defects for seamless tracking. Through the **Polarion Course Online**, you understand test execution, reporting, and defect management in real-time scenarios. The **Polarion ALM Training** also covers automation support and quality metrics for better project outcomes. With **Polarion Certification Training**, learners gain hands-on experience through case studies. This **Polarion Job Oriented Course** prepares you for real-world testing roles. Choose the **Polarion Self-Paced Online Course** for flexible learning or **Polarion Instructor-Led Training** for expert sessions. The **Polarion Course with Hands-On Labs** ensures practical exposure, while **Polarion Training with Placement Support** and **Polarion Classes for Professionals** help you become job-ready quickly.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
 
 ## 11\. Polarion Testing Integration Course
 
@@ -99,15 +65,7 @@ The **Polarion Online Course** focuses on mastering testing integration for comp
 
 The **Polarion Online Course** offers comprehensive certification training designed to validate your skills in application lifecycle management. This **Polarion ALM Certification Training** helps learners gain expertise in requirement management, testing, and traceability processes. Through the **Polarion Course Online**, you learn to manage work items, workflows, and documentation efficiently. The **Polarion Test Management Online Course** provides hands-on experience in handling test cases, execution, and defect tracking. With the **Polarion ALM and Traceability Course**, learners understand linking requirements with testing and development tasks. The **Polarion Workflow & LiveDocs Training** enhances skills in document management and automation. This **Polarion Online Crash Course** is ideal for quick learning and revision. Enroll in the **Polarion Online Certification Program** to boost your career . 
 
-<div class="not-prose my-10 py-6 px-8 bg-slate-50 border border-slate-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Ready to Start Learning?</h3>
-    <p class="text-sm text-slate-600">Join our comprehensive enterprise IT training programs today.</p>
-  </div>
-  <a href="/contact-us/" target="_blank" class="shrink-0 inline-flex items-center justify-center bg-slate-900 hover:bg-slate-800 text-white font-semibold px-8 py-3.5 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    Enroll Now
-  </a>
-</div>
+::enroll-now
 
 ## 13\. Polarion Career Opportunities Guide
 
@@ -121,13 +79,5 @@ The **Polarion Online Course** offers numerous benefits for professionals aiming
 
 The **Polarion Online Course** is designed to prepare learners for real-world roles in application lifecycle management. This **Polarion Job-Oriented Course** focuses on practical skills required to handle requirement management, testing, and traceability in enterprise environments. Through the **Polarion Course with Certification**, learners gain recognized credentials that validate their expertise and improve job prospects. The **Polarion Course with Job Assistance** provides support in resume building, interview preparation, and placement opportunities. With the **Polarion Course with Internship**, students get hands-on experience by working on real-time projects and industry use cases. This **Polarion Online Course** helps both freshers and professionals develop strong technical and functional knowledge. By enrolling in this **Polarion Job-Oriented Course**, you gain confidence to work on live projects and meet industry demands. Start your journey today with the **Polarion Online Course** and build a successful career in ALM domains.
 
-<div class="not-prose my-10 p-6 bg-emerald-50/50 border border-emerald-100 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
-  <div>
-    <h3 class="text-xl font-bold text-slate-900 mb-2">Need a Demo Session? Let's Connect</h3>
-    <p class="text-sm text-slate-600">Reach out to our experts directly on WhatsApp to clear your queries and get course details.</p>
-  </div>
-  <a href="https://wa.me/918099949888?text=Hi%20Ask4Trainings,%20I'm%20looking%20for%20online%20training%20and%20would%20like%20to%20attend%20a%20free%20live%20demo%20session." target="_blank" class="shrink-0 inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md hover:-translate-y-0.5">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    WhatsApp Us
-  </a>
-</div>
+::whatsapp-us
+
