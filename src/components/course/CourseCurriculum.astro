@@ -10,7 +10,7 @@ interface Props {
 
 const { modules = [], courseTitle } = Astro.props;
 ---
-{modules && modules.length > 0 && (
+{modules && modules.length > 0 ? (
   <section id="curriculum" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14" data-curriculum-container>
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
       <div>
@@ -63,6 +63,16 @@ const { modules = [], courseTitle } = Astro.props;
           </div>
         </div>
       ))}
+    </div>
+  </section>
+) : (
+  <section id="curriculum" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center shadow-sm">
+      <h2 class="text-xl font-bold text-slate-900 mb-2">Curriculum Under Review</h2>
+      <p class="text-slate-600 text-sm mb-6 max-w-md mx-auto">Full syllabus available upon request. Enquire now to get the complete curriculum for the upcoming cohort.</p>
+      <a href="#enquire" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white text-sm font-semibold hover:bg-emerald-700 transition-colors">
+        Enquire for Syllabus
+      </a>
     </div>
   </section>
 )}

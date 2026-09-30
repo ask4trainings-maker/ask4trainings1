@@ -1,0 +1,363 @@
+{
+  "categories": [
+    {
+      "key": "guidewire",
+      "label": "Guidewire",
+      "description": "Master PolicyCenter, ClaimCenter & BillingCenter — the P&C insurance platform powering global carriers.",
+      "links": [
+        {
+          "title": "Guidewire Policycenter Training",
+          "href": "/guidewire-policycenter-online-training/",
+          "duration": "20-25 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Guidewire Automation Testing On Gt Frameworks Training",
+          "href": "/guidewire-automation-testing-on-gt-frameworks/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Guidewire Business Analyst Training",
+          "href": "/guidewire-business-analyst-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Guidewire Claim Center Training",
+          "href": "/guidewire-claim-center-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Guidewire Rating Online Training",
+          "href": "/guidewire-rating-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Guidewire Testing Training",
+          "href": "/guidewire-testing-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Top Guidewire billing center training in Hyderabad 2026",
+          "href": "/guidewire-billing-center-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "siemens",
+      "label": "Siemens",
+      "description": "Teamcenter, Polarion, PTC Windchill and enterprise PLM toolchains for manufacturing and engineering.",
+      "links": [
+        {
+          "title": "Polarion Online Training with Certification",
+          "href": "/polarion-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Teamcenter AWC Online Training",
+          "href": "/teamcenter-awc-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Teamcenter PLM Training & Certification",
+          "href": "/teamcenter-plm-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Mendix Training in Hyderabad",
+          "href": "/mendix-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Teamcenter High Level Training",
+          "href": "/teamcenter-high-level-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "new-courses",
+      "label": "New Courses",
+      "description": "Emerging tech: Generative AI, Cybersecurity, Playwright automation, Appian, Mendix and more.",
+      "links": [
+        {
+          "title": "Duck Creek Online Training",
+          "href": "/duck-creek-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Kinaxis Online Training with Certification",
+          "href": "/kinaxis-online-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Coupa Training",
+          "href": "/coupa-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Digital Marketing Training in Hyderabad",
+          "href": "/digital-marketing-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "cloud-computing",
+      "label": "Cloud Computing",
+      "description": "AWS, Azure, GCP, OCI, Snowflake — gain cloud certifications and hands-on deployment experience.",
+      "links": [
+        {
+          "title": "Salesforce Online Training with Certification",
+          "href": "/salesforce-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Salesforce Revenue Cloud Advanced Training",
+          "href": "/salesforce-revenue-cloud-advanced-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Snowflake Training",
+          "href": "/snowflake-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "oracle",
+      "label": "Oracle",
+      "description": "Oracle Fusion Financials, HCM, SCM, Technical, APEX, FlexCube, OIC, PeopleSoft, OTM and OCI.",
+      "links": [
+        {
+          "title": "Oracle Flexcube Online Training",
+          "href": "/oracle-flexcube-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Oracle Fusion Financials Online Training",
+          "href": "/oracle-fusion-financials-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Oracle Fusion HCM Online Training",
+          "href": "/oracle-fusion-hcm-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "devops",
+      "label": "DevOps",
+      "description": "CI/CD pipelines, Docker, Kubernetes, Terraform, Azure DevOps and site reliability engineering.",
+      "links": [
+        {
+          "title": "Azure with DevOps Online Training",
+          "href": "/azure-with-devops-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "DevOps Training in Hyderabad",
+          "href": "/devops-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "DevOps with AWS Online Training",
+          "href": "/devops-with-aws-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "development",
+      "label": "Development",
+      "description": "Full-stack Java, Python, MERN, .NET, React and data analytics with real-time project experience.",
+      "links": [
+        {
+          "title": "Java Full Stack Training in Hyderabad",
+          "href": "/java-full-stack-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Dotnet Full Stack Training in Hyderabad",
+          "href": "/dotnet-full-stack-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Python Full Stack Training in Hyderabad",
+          "href": "/python-full-stack-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "ms-d365",
+      "label": "MS D365",
+      "description": "Microsoft Dynamics 365 Finance, Operations, CRM — AX Technical and functional training tracks.",
+      "links": [
+        {
+          "title": "Dynamics 365 AX Technical Training",
+          "href": "/dynamics-365-ax-technical-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Microsoft Dynamics 365 CRM Online Training",
+          "href": "/microsoft-dynamics-365-crm-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Microsoft Dynamics 365 Finance And Operations Training",
+          "href": "/microsoft-dynamics-365-finance-and-operations/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "sap",
+      "label": "SAP",
+      "description": "End-to-end SAP training: FICO, MM, SD, ABAP, BW/4HANA, SuccessFactors, Ariba, CPI, BRIM and more.",
+      "links": [
+        {
+          "title": "SAP SD Course in Hyderabad",
+          "href": "/sap-sd-course-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "SAP MM Course in Hyderabad",
+          "href": "/sap-mm-course-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "SAP S/4 Hana Fico Online Training",
+          "href": "/sap-s-4-hana-fico-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "trending-courses",
+      "label": "Trending Course",
+      "description": "High-demand enterprise platforms: Salesforce, ServiceNow, Workday, Duck Creek, Coupa, SailPoint and more.",
+      "links": [
+        {
+          "title": "Cyber Security Online Training with Certification",
+          "href": "/cyber-security-online-course/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Data Analytics Online Training with Certification",
+          "href": "/data-analytics-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Data Science Online Training with Certification",
+          "href": "/data-science-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Generative AI Online Training with Certification",
+          "href": "/generative-ai-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Palantir Foundry Online Training",
+          "href": "/palantir-foundry-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Qlik Sense Course in Hyderabad",
+          "href": "/qlik-sense-course-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Servicenow Online Training with Certification",
+          "href": "/servicenow-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Business Analyst Online Training",
+          "href": "/business-analyst-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    },
+    {
+      "key": "other-tools",
+      "label": "Other Tools",
+      "description": "Business intelligence, ERP extensions, Mulesoft, Jira, Kinaxis, Palantir Foundry and niche enterprise tools.",
+      "links": [
+        {
+          "title": "Appian Training in Hyderabad",
+          "href": "/appian-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Jira Confluence Online Training",
+          "href": "/jira-confluence-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Talend Online Training",
+          "href": "/talend-online-training/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "PEGA Training in Hyderabad",
+          "href": "/pega-training-in-hyderabad/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        },
+        {
+          "title": "Playwright Automation Testing with AI Course",
+          "href": "/playwright-automation-testing-with-ai-course/",
+          "duration": "45-60 Hrs",
+          "isPopular": false
+        }
+      ]
+    }
+  ]
+}

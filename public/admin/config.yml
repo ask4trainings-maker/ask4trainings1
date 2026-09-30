@@ -14,6 +14,35 @@ public_folder: "/images/uploads"
 
 collections:
 
+  - name: mega_menu
+    label: "🧭 Mega Navigation Menu"
+    editor:
+      preview: false
+    files:
+      - label: "Mega Navigation"
+        name: mega_menu_file
+        file: "src/content/settings/mega-menu.json"
+        description: "Manage the order and categorization of course links in the main All Courses dropdown."
+        format: json
+        fields:
+          - label: "Category Groups List"
+            name: "categories"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "System Category Identifier", name: "key", widget: "string", readonly: true }
+              - { label: "Display Tab Name", name: "label", widget: "string" }
+              - { label: "Category Sub-headline", name: "description", widget: "string", required: false }
+              - label: "Course Links"
+                name: "links"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Link Label", name: "title", widget: "string" }
+                  - { label: "Internal URL Path", name: "href", widget: "string", hint: "Must start with / (e.g., /guidewire-policycenter/)" }
+                  - { label: "Batch Schedule Pill", name: "duration", widget: "string", required: false, hint: "e.g., 45-60 Hrs · Live Online" }
+                  - { label: "Is Popular Course?", name: "isPopular", widget: "boolean", required: false, default: false }
+
   # ─────────────────────────────────────────────────────────────────────────
   # 1. GLOBAL SETTINGS — settings.json (contact, socials, topBanner)
   # ─────────────────────────────────────────────────────────────────────────
@@ -485,9 +514,9 @@ collections:
       - label: "Page Web Address (Slug)"
         name: "slug"
         widget: "string"
-        readonly: true
         required: true
-        hint: "Lowercase letters and hyphens only. No spaces. e.g., guidewire-policycenter-online-training"
+        pattern: ["^[a-z0-9]+(?:-[a-z0-9]+)*$", "Must contain only lowercase letters, numbers, and single hyphens without spaces"]
+        hint: "The web address for this course. Use lowercase letters and hyphens (e.g., sap-ariba-online-training). Do NOT include domain or slashes."
 
       - label: "Last Updated"
         name: "updatedDate"

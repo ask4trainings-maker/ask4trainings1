@@ -5,11 +5,7 @@ export interface Props {
 
 const { faqs = [] } = Astro.props;
 
-if (!faqs || faqs.length === 0) {
-  return null;
-}
-
-const faqSchema = {
+const faqSchema = faqs && faqs.length > 0 ? {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faqs.map(faq => ({
@@ -20,7 +16,7 @@ const faqSchema = {
       text: faq.answer
     }
   }))
-};
+} : null;
 ---
 <section id="faqs" class="py-16 bg-white scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4">
@@ -29,7 +25,16 @@ const faqSchema = {
       <p class="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-3xl">Got questions? We have got answers.</p>
     </div>
     
-    <div class="space-y-4 max-w-4xl mx-auto" data-faqs-container>
+    {(!faqs || faqs.length === 0) ? (
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center shadow-sm max-w-3xl mx-auto">
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Have a question?</h3>
+        <p class="text-slate-600 text-sm mb-6 max-w-md mx-auto">Our FAQs are being updated. If you have any queries about the course, please feel free to contact us.</p>
+        <a href="/contact-us/" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 text-white text-sm font-semibold hover:bg-slate-800 transition-colors">
+          Contact Us
+        </a>
+      </div>
+    ) : (
+      <div class="space-y-4 max-w-4xl mx-auto" data-faqs-container>
       {faqs.map((faq, idx) => (
         <div class={`group bg-white border border-slate-200 rounded-xl overflow-hidden hover:border-emerald-500/40 transition-all shadow-sm ${idx === 0 ? 'is-open' : ''} [&.is-open]:border-emerald-500/40`}>
           <div class="flex items-center justify-between px-6 py-5 cursor-pointer select-none font-medium text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 list-none">
@@ -49,9 +54,10 @@ const faqSchema = {
         </div>
       ))}
     </div>
+    )}
   </div>
 
-  <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  {faqSchema && <script is:inline type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
   <script is:inline>
     document.addEventListener('DOMContentLoaded', () => {
       const container = document.querySelector('[data-faqs-container]');
