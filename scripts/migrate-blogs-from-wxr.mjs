@@ -138,11 +138,11 @@ async function run() {
     }
 
     // Body
-    let bodyRaw = item['content:encoded'];
-    if (typeof bodyRaw === 'object' && bodyRaw.__cdata) bodyRaw = bodyRaw.__cdata;
+    let bodyRaw = getVal(item['content:encoded']);
+    if (typeof bodyRaw === 'object') bodyRaw = '';
     
-    let excerptRaw = item['excerpt:encoded'];
-    if (typeof excerptRaw === 'object' && excerptRaw.__cdata) excerptRaw = excerptRaw.__cdata;
+    let excerptRaw = getVal(item['excerpt:encoded']);
+    if (typeof excerptRaw === 'object') excerptRaw = '';
 
     const cleanedHtml = cleanHtml(bodyRaw);
     

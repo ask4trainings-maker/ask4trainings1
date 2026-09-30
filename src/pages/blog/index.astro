@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { resolveExcerpt, decodeHtmlEntities } from '../../utils/text';
 
 const allBlogPosts = await getCollection('blog', ({ data }) => {
   return data.draft !== true;
@@ -18,8 +19,10 @@ const posts = sortedPosts.length > 0 ? sortedPosts : [
       description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
       tags: ['Architecture'],
       pubDate: new Date().toISOString(),
-      image: '/logo.svg'
-    }
+      image: '/logo.svg',
+      author: 'Admin'
+    },
+    body: ''
   }
 ];
 
@@ -42,40 +45,53 @@ function getPostUrl(id: string): string {
   <section class="py-20">
     <div class="max-w-[1440px] 2xl:max-w-[1560px] mx-auto px-6 sm:px-10 xl:px-16 w-full">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.map(post => (
-          <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-emerald-200 transition-all duration-300 flex flex-col group relative">
-            {post.data.image && (
-              <div class="aspect-video w-full overflow-hidden bg-slate-100">
-                <img src={post.data.image} alt={post.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
-              </div>
-            )}
-            <div class="p-6 flex flex-col flex-grow">
-              <div class="flex flex-wrap items-center gap-2 mb-4">
-                {post.data.tags && post.data.tags.map((tag: string) => (
-                  <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">
-                    {tag}
+        {posts.map(post => {
+          const wordCount = post.body ? post.body.split(/\s+/).length : 200;
+          const readTime = Math.max(1, Math.ceil(wordCount / 200)) + " min read";
+          const category = post.data.tags?.[0] || (post.data as any).category || "Career Guide";
+          const formattedDate = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', year: 'numeric' }).format(new Date(post.data.pubDate));
+          const decodedTitle = decodeHtmlEntities(post.data.title);
+          const excerpt = resolveExcerpt(post.data.description, post.body || '');
+
+          return (
+            <a href={getPostUrl(post.id)} class="group relative flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-6 sm:p-7 shadow-xs hover:border-emerald-500/60 hover:shadow-lg hover:shadow-emerald-500/10 hover:-translate-y-1 transition-all duration-300">
+              <div class="flex flex-col flex-grow">
+                
+                {/* Top Meta Row */}
+                <div class="flex items-center justify-between mb-4">
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-[11px] font-semibold text-emerald-700 tracking-wide">
+                    {category}
                   </span>
-                ))}
-                <time class="text-sm text-slate-500 font-medium ml-auto" datetime={new Date(post.data.pubDate).toISOString()}>
-                  {new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
-                </time>
+                  <div class="text-xs text-slate-400 font-medium flex items-center gap-2">
+                    <time datetime={new Date(post.data.pubDate).toISOString()}>{formattedDate}</time>
+                    <span class="w-1 h-1 rounded-full bg-slate-300"></span>
+                    <span>{readTime}</span>
+                  </div>
+                </div>
+                
+                {/* Card Body */}
+                <h3 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-snug line-clamp-2 mt-2 group-hover:text-emerald-600 transition-colors">
+                  {decodedTitle}
+                </h3>
+                <p class="text-sm sm:text-base leading-relaxed text-slate-600 line-clamp-3 mt-3 flex-grow">
+                  {excerpt}
+                </p>
+                
+                {/* Footer Action Row */}
+                <div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                  <span class="text-xs font-medium text-slate-500">
+                    {post.data.author || 'Ask4Trainings Editorial'}
+                  </span>
+                  <span class="inline-flex items-center gap-1.5 text-xs font-bold text-emerald-600 group-hover:text-emerald-500">
+                    <span>Read Article</span>
+                    <span class="transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
+                  </span>
+                </div>
+                
               </div>
-              <h2 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-emerald-700 transition-colors line-clamp-2">
-                <a href={getPostUrl(post.id)} class="focus:outline-none before:absolute before:inset-0">
-                  {post.data.title}
-                </a>
-              </h2>
-              <p class="text-sm text-slate-600 line-clamp-2 sm:line-clamp-3 mb-6 flex-grow space-y-4">
-                {post.data.description}
-              </p>
-              <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
-                <span class="text-emerald-600 font-semibold text-sm flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  Read Article &rarr;
-                </span>
-              </div>
-            </div>
-          </article>
-        ))}
+            </a>
+          );
+        })}
       </div>
     </div>
   </section>
