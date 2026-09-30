@@ -27,7 +27,7 @@ turndownService.use(gfm);
 // We can pre-process HTML to strip WP and shortcodes.
 function cleanHtml(rawHtml) {
   if (!rawHtml) return '';
-  let html = rawHtml;
+  let html = String(rawHtml);
 
   // Remove WP block comments
   html = html.replace(/<!--\s*\/?wp:[^>]+-->/g, '');
@@ -64,21 +64,23 @@ async function run() {
   const items = parsed.rss?.channel?.item || [];
   const itemsArr = Array.isArray(items) ? items : [items];
 
+  const getVal = (val) => (typeof val === 'object' && val !== null && val.__cdata) ? val.__cdata : val;
+
   // 1. Pre-index attachments
   const attachments = {};
   itemsArr.forEach(item => {
-    if (item['wp:post_type'] === 'attachment') {
-      const postId = item['wp:post_id'];
-      const url = item['wp:attachment_url'];
+    if (getVal(item['wp:post_type']) === 'attachment') {
+      const postId = getVal(item['wp:post_id']);
+      const url = getVal(item['wp:attachment_url']);
       if (postId && url) {
-        attachments[postId] = typeof url === 'object' && url.__cdata ? url.__cdata : url;
+        attachments[postId] = url;
       }
     }
   });
 
   // 2. Filter posts
   const posts = itemsArr.filter(item => {
-    return item['wp:post_type'] === 'post' && item['wp:status'] === 'publish';
+    return getVal(item['wp:post_type']) === 'post' && getVal(item['wp:status']) === 'publish';
   });
 
   console.log(`Found ${posts.length} published blog posts.`);
@@ -161,7 +163,7 @@ async function run() {
       const firstPara = $('p').first().text().trim();
       excerpt = firstPara.length > 160 ? firstPara.substring(0, 157) + '...' : firstPara;
     }
-    excerpt = excerpt.replace(/\n/g, ' ').replace(/"/g, '\\"');
+    excerpt = excerpt.replace(/\n/g, ' ');
     
     const wordCount = bodyMarkdown.split(/\s+/).filter(w => w.length > 0).length;
 
@@ -179,10 +181,10 @@ async function run() {
 
     if (isWrite) {
       let frontmatter = `---
-title: "${title.replace(/"/g, '\\"')}"
-description: "${excerpt}"
+title: ${JSON.stringify(title)}
+description: ${JSON.stringify(excerpt)}
 pubDate: ${dateStr}
-author: "${author.replace(/"/g, '\\"')}"
+author: ${JSON.stringify(author)}
 tags: ${JSON.stringify(uniqueTags)}
 draft: false
 `;
