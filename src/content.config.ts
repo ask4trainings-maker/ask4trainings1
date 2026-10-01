@@ -215,13 +215,13 @@ const courses = defineCollection({
       metric1: z.object({
         value: z.string().optional(),
         label: z.string().optional(),
-      }).optional(),
+      }).nullable().optional(),
       metric2: z.object({
         value: z.string().optional(),
         label: z.string().optional(),
-      }).optional(),
+      }).nullable().optional(),
       footerNote: z.string().optional(),
-    }).optional(),
+    }).nullable().optional(),
 
     // ─── Section 10: Career Opportunities / Job Roles ───────────────────────
     jobRoles: z.array(z.any()).optional().default([]),
@@ -250,8 +250,8 @@ const courses = defineCollection({
       z.union([z.string(), z.object({ keyword: z.string() })])
     ).optional(),
 
-    publishDate: z.coerce.date().optional(),
-    updatedDate: z.coerce.date().optional(),
+    publishDate: z.preprocess((val) => (val === '' || val === null ? undefined : val), z.coerce.date().optional()),
+    updatedDate: z.preprocess((val) => (val === '' || val === null ? undefined : val), z.coerce.date().optional()),
 
 
 
