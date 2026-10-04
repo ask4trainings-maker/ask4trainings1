@@ -4,3 +4,6 @@
 /feed/* /blog/ 301
 /category/* /courses/ 301
 /tag/* /blog/ 301
+/blogs/ /blog/ 301
+/blogs/* /blog/:splat 301
+/blog /blog/ 301
