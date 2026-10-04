@@ -69,6 +69,57 @@ const resolvedOgImage = new URL(image || '/og-default.jpg', Astro.site || 'https
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={resolvedOgImage} />
 
+    <!-- Google Search Console Verification -->
+    {import.meta.env.PUBLIC_GSC_VERIFICATION_ID && (
+      <meta name="google-site-verification" content={import.meta.env.PUBLIC_GSC_VERIFICATION_ID} />
+    )}
+
+    <!-- Google Analytics 4 -->
+    {import.meta.env.PUBLIC_GA_MEASUREMENT_ID && (
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_MEASUREMENT_ID}`}></script>
+      <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_MEASUREMENT_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', gaId, { 'anonymize_ip': true });
+      </script>
+    )}
+
+    <!-- Global Conversion Telemetry -->
+    <script>
+      document.addEventListener('click', (e) => {
+        const target = e.target as HTMLElement;
+        const anchor = target.closest('a');
+        if (!anchor || typeof (window as any).gtag !== 'function') return;
+
+        const href = anchor.getAttribute('href') || '';
+        
+        // WhatsApp Clicks
+        if (href.includes('wa.me') || href.includes('whatsapp.com')) {
+          const location = anchor.closest('header') ? 'header' :
+                           anchor.closest('footer') ? 'footer' :
+                           anchor.closest('.fixed') ? 'floating_button' : 'content';
+          (window as any).gtag('event', 'click_whatsapp_cta', {
+            link_url: href,
+            button_location: location
+          });
+        }
+        
+        // Student Portal Clicks
+        if (href.includes('student-portal') || href.includes('lms')) {
+          (window as any).gtag('event', 'click_student_portal');
+        }
+
+        // Contact Clicks (Phone/Email)
+        if (href.startsWith('tel:')) {
+          (window as any).gtag('event', 'click_contact_lead', { contact_type: 'phone' });
+        } else if (href.startsWith('mailto:')) {
+          (window as any).gtag('event', 'click_contact_lead', { contact_type: 'email' });
+        }
+      });
+    </script>
+
     <!-- Organization / LocalBusiness Schema -->
     <SchemaOrg schema={orgSchema} />
 

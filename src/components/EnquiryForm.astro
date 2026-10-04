@@ -389,6 +389,16 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         if (successUI) {
           successUI.classList.remove('opacity-0', 'pointer-events-none');
         }
+        
+        // Google Analytics Form Event Tracking
+        if (typeof (window as any).gtag === 'function') {
+          (window as any).gtag('event', 'submit_enquire_form', {
+            course_name: payload.course,
+            source_url: payload.sourceUrl,
+            timestamp: payload.date + ' ' + payload.time
+          });
+        }
+
         (form as HTMLFormElement).reset();
         clearState(nameInput, nameError);
         clearState(phoneInput, phoneError);
