@@ -5,6 +5,7 @@ pubDate: 2026-09-11
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/MS-Dynamics-FO--1024x576.jpeg'
 ---
 
 ![MS Dynamics 365 F&O Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/MS-Dynamics-FO--1024x576.jpeg)

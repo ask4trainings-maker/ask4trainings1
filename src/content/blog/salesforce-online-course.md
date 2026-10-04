@@ -5,6 +5,7 @@ pubDate: 2026-06-19
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/salesforce-1.jpeg'
 ---
 
 ![salesforce online course](https://ask4trainings.com/wp-content/uploads/2026/06/salesforce-1.jpeg)

@@ -5,6 +5,7 @@ pubDate: 2026-04-30
 author: "admin"
 tags: ["Polarion"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/04/polarion-course.jpeg'
 ---
 
 ![Polarion Online Course](https://ask4trainings.com/wp-content/uploads/2026/04/polarion-course.jpeg)

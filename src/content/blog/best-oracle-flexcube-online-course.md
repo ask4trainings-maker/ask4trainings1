@@ -5,6 +5,7 @@ pubDate: 2026-06-25
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun25202601_43_01P.jpeg'
 ---
 
 ![oracle flexcube online course](https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun25202601_43_01P.jpeg)

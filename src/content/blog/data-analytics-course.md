@@ -5,6 +5,7 @@ pubDate: 2026-05-12
 author: "admin"
 tags: ["Data Analyst"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/Data-Analytics-Course-1024x573.jpeg'
 ---
 
 ![Data Analytics Course](https://ask4trainings.com/wp-content/uploads/2026/05/Data-Analytics-Course-1024x573.jpeg)

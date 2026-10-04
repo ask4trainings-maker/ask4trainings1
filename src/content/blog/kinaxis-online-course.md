@@ -5,6 +5,7 @@ pubDate: 2026-05-01
 author: "admin"
 tags: ["Kinaxis"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/kinaxis-1-Edited-1024x576.png'
 ---
 
 ![Kinaxis Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/kinaxis-1-Edited-1024x576.png)

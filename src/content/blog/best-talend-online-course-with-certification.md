@@ -5,6 +5,7 @@ pubDate: 2026-07-04
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/07/Talend-Online-Course-1024x683.png'
 ---
 
 ![Talend Online Course](https://ask4trainings.com/wp-content/uploads/2026/07/Talend-Online-Course-1024x683.png)

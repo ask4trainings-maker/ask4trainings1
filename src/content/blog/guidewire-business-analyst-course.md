@@ -5,6 +5,7 @@ pubDate: 2026-05-04
 author: "admin"
 tags: ["Guidewire"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg'
 ---
 
 ![](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg)

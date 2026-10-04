@@ -5,6 +5,7 @@ pubDate: 2026-05-06
 author: "admin"
 tags: ["Guidewire Development"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/GuidewirePolicyCente.jpeg'
 ---
 
 ![Guidewire Policy Centre Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/GuidewirePolicyCente.jpeg)

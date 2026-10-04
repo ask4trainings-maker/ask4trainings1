@@ -5,6 +5,7 @@ pubDate: 2026-09-16
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/sap-sd-28kb-1024x576.jpeg'
 ---
 
 ![SAP SD Course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/sap-sd-28kb-1024x576.jpeg)

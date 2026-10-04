@@ -5,6 +5,7 @@ pubDate: 2026-06-27
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/data-science-1.jpeg'
 ---
 
 ![Best data science course in hyderabad](https://ask4trainings.com/wp-content/uploads/2026/06/data-science-1.jpeg)

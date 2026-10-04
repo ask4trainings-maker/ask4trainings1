@@ -5,6 +5,7 @@ pubDate: 2026-09-11
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Microsoft-dynamic-365-CRM-1024x576.jpeg'
 ---
 
 ![Microsoft Dynamics 365 CRM Online Training](https://ask4trainings.com/wp-content/uploads/2026/09/Microsoft-dynamic-365-CRM-1024x576.jpeg)

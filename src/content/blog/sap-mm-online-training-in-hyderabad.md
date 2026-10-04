@@ -5,6 +5,7 @@ pubDate: 2026-09-11
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png'
 ---
 
 ![SAP MM online training in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png)

@@ -5,6 +5,7 @@ pubDate: 2026-09-16
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Azure-devops-1024x577.jpeg'
 ---
 
 ![Azure devOps Online Course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/Azure-devops-1024x577.jpeg)

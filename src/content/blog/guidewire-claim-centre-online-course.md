@@ -5,6 +5,7 @@ pubDate: 2026-05-07
 author: "admin"
 tags: ["Guidewire Development"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewireclai.jpeg'
 ---
 
 ![Guidewire Claim Centre Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewireclai.jpeg)

@@ -5,6 +5,7 @@ pubDate: 2026-08-01
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Guidewire-Rating-Online-Training.jpeg'
 ---
 
 ![Guidewire Rating Online Training](https://ask4trainings.com/wp-content/uploads/2026/08/Guidewire-Rating-Online-Training.jpeg)

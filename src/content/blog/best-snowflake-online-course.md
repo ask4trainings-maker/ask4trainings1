@@ -5,6 +5,7 @@ pubDate: 2026-06-19
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun19202603_55_25P.jpeg'
 ---
 
 ![Snowflake Online Course](https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun19202603_55_25P.jpeg)

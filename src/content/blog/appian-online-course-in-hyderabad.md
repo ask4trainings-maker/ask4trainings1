@@ -5,6 +5,7 @@ pubDate: 2026-09-22
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/appian-1024x576.jpeg'
 ---
 
 ![Appian Online course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/appian-1024x576.jpeg)

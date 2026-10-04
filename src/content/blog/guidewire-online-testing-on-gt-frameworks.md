@@ -5,6 +5,7 @@ pubDate: 2026-05-02
 author: "admin"
 tags: ["Guidewire Frameworks"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewireg.jpeg'
 ---
 
 ![Guidewire Online Testing On GT Frameworks](https://ask4trainings.com/wp-content/uploads/2026/05/guidewireg.jpeg)

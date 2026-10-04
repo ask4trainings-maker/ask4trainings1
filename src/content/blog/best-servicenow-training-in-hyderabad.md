@@ -5,6 +5,7 @@ pubDate: 2026-07-03
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/07/servicenow.jpeg'
 ---
 
 ![servicenow training in hyderabad](https://ask4trainings.com/wp-content/uploads/2026/07/servicenow.jpeg)

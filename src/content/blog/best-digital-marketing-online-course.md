@@ -5,6 +5,7 @@ pubDate: 2026-08-03
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Digital-marketing.jpeg'
 ---
 
 ![Digital Marketing Online Course](https://ask4trainings.com/wp-content/uploads/2026/08/Digital-marketing.jpeg)

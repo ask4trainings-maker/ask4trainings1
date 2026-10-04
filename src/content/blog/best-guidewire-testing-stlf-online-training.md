@@ -5,6 +5,7 @@ pubDate: 2026-07-10
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/07/guidewire-stlf.jpeg'
 ---
 
 ![guidewire testing STLF online training](https://ask4trainings.com/wp-content/uploads/2026/07/guidewire-stlf.jpeg)

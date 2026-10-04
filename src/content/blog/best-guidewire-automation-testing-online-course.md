@@ -5,6 +5,7 @@ pubDate: 2026-09-05
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg'
 ---
 
 ![Guidewire Automation Testing Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg)

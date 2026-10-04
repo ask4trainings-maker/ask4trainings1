@@ -5,6 +5,7 @@ pubDate: 2026-04-25
 author: "admin"
 tags: ["Guidewire Testing"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/04/Guidewire-Training-Testing.jpeg'
 ---
 
 ![Guidewire Testing](https://ask4trainings.com/wp-content/uploads/2026/04/Guidewire-Training-Testing.jpeg)

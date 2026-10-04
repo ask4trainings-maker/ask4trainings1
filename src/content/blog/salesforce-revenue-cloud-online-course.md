@@ -5,6 +5,7 @@ pubDate: 2026-09-11
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Salesforce-revenue-cloud-online-course-1024x577.jpeg'
 ---
 
 ![Salesforce Revenue Cloud Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/Salesforce-revenue-cloud-online-course-1024x577.jpeg)

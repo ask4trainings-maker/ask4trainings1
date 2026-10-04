@@ -5,6 +5,7 @@ pubDate: 2026-06-29
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/GENERATIVE-AI-1.jpeg'
 ---
 
 ![Generativ AI Course](https://ask4trainings.com/wp-content/uploads/2026/06/GENERATIVE-AI-1.jpeg)

@@ -5,6 +5,7 @@ pubDate: 2026-09-08
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Mendix-Online-Training-1024x576.jpeg'
 ---
 
 ![Mendix Online Training](https://ask4trainings.com/wp-content/uploads/2026/09/Mendix-Online-Training-1024x576.jpeg)

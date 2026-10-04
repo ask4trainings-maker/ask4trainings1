@@ -5,6 +5,7 @@ pubDate: 2026-06-25
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/06/oracle-fusion-financial.jpeg'
 ---
 
 ![Oracle fusion financials Course](https://ask4trainings.com/wp-content/uploads/2026/06/oracle-fusion-financial.jpeg)

@@ -25,6 +25,9 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
   month: 'long',
   day: 'numeric'
 });
+
+const bodyRaw = entry.body || '';
+const hasDuplicateImageInBody = entry.data.image && bodyRaw.includes(entry.data.image);
 ---
 
 <BaseLayout title={`${decodedTitle} | Ask 4 Trainings Blog`} description={decodedDesc}>
@@ -71,7 +74,7 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
       </header>
 
       <!-- Featured Image -->
-      {entry.data.image && (
+      {entry.data.image && !hasDuplicateImageInBody && (
         <div class="mb-12 aspect-[21/9] overflow-hidden rounded-2xl shadow-lg border border-slate-200">
           <img src={entry.data.image} alt={entry.data.title} class="w-full h-full object-cover" loading="lazy" />
         </div>

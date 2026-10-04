@@ -5,6 +5,7 @@ pubDate: 2026-08-06
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Coupa-online-course.jpeg'
 ---
 
 ![Coupa Online Course](https://ask4trainings.com/wp-content/uploads/2026/08/Coupa-online-course.jpeg)

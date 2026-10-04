@@ -5,6 +5,7 @@ pubDate: 2026-05-23
 author: "admin"
 tags: []
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/DevOps-Online-Training.jpeg'
 ---
 
 ![DevOps Online Training](https://ask4trainings.com/wp-content/uploads/2026/05/DevOps-Online-Training.jpeg)

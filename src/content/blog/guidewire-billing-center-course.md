@@ -5,6 +5,7 @@ pubDate: 2026-05-08
 author: "admin"
 tags: ["Guidewire Development"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-billing-center-1024x683.jpeg'
 ---
 
 ![guidewire billing center Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-billing-center-1024x683.jpeg)

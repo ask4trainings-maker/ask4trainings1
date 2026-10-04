@@ -5,6 +5,7 @@ pubDate: 2026-05-26
 author: "admin"
 tags: ["Teamcenter"]
 draft: false
+image: 'https://ask4trainings.com/wp-content/uploads/2026/05/teamcente.jpeg'
 ---
 
 ![Teamcenter PLM Online Training](https://ask4trainings.com/wp-content/uploads/2026/05/teamcente.jpeg)
