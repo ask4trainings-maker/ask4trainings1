@@ -8,7 +8,7 @@ draft: false
 image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg'
 ---
 
-![](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg)
+![Guidewire Business Analyst Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg)
 
 ## 1\. What is Guidewire Business Analyst Course?
 

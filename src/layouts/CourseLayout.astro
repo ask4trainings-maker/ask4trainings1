@@ -28,7 +28,17 @@ const { course } = Astro.props;
 const data = course.data;
 
 const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.com/';
-const metaDesc = data.seo?.metaDescription || data.valueProp || data.overview;
+
+let metaDesc = data.seo?.metaDescription || data.heroTagline || data.overview || '';
+if (!data.seo?.metaDescription) {
+  metaDesc = `Master ${data.title} with live interactive online training, 24/7 cloud sandbox lab access, real-time projects, and certification mentorship at Ask4Trainings. ${metaDesc}`;
+}
+if (metaDesc.length > 155) {
+  metaDesc = metaDesc.substring(0, 152).replace(/\s+\S*$/, '') + '...';
+}
+const pageTitle = data.seo?.metaTitle || `${data.title} Training in Hyderabad | Live Online - Ask4Trainings`;
+// Limit page title length if it exceeds 65 roughly, though the prompt says 50-60
+const finalTitle = pageTitle.length > 65 ? (data.seo?.metaTitle || `${data.title} Training | Ask4Trainings`) : pageTitle;
 
 // SEO Metadata (JSON-LD)
 const courseSchema = getCourseSchema(data);
@@ -45,7 +55,7 @@ const schemaGraph = {
 };
 ---
 
-<BaseLayout title={data.seo?.metaTitle || `${data.title} | Ask 4 Trainings`} description={metaDesc} courseName={data.title}>
+<BaseLayout title={finalTitle} description={metaDesc} courseName={data.title} type="website" image={data.courseImage}>
   <Fragment slot="head">
     <SchemaOrg schema={schemaGraph} />
   </Fragment>

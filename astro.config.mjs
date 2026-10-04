@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 import react from '@astrojs/react';
 import remarkBlogCtas from './remark-blog-ctas.mjs';
+import rehypeDownscaleH1 from './rehype-downscale-h1.mjs';
 
 export default defineConfig({
   site: 'https://ask4trainings.com',
@@ -15,6 +16,7 @@ export default defineConfig({
 
   markdown: {
     remarkPlugins: [remarkBlogCtas],
+    rehypePlugins: [rehypeDownscaleH1],
   },
 
   build: {

@@ -42,9 +42,24 @@ const schemaGraph = {
   '@context': 'https://schema.org',
   '@graph': [blogPostingSchema, breadcrumbSchema]
 };
+let finalDesc = decodedDesc || '';
+if (!finalDesc && entry.body) {
+  finalDesc = entry.body.replace(/[#*`_\[\]]/g, '').substring(0, 150).trim();
+}
+if (finalDesc.length > 155) {
+  finalDesc = finalDesc.substring(0, 152).replace(/\s+\S*$/, '') + '...';
+}
+
+const pubDateStr = new Date(entry.data.pubDate).toISOString();
 ---
 
-<BaseLayout title={`${decodedTitle} | Ask 4 Trainings Blog`} description={decodedDesc}>
+<BaseLayout 
+  title={`${decodedTitle} - Ask4Trainings Blog`} 
+  description={finalDesc}
+  type="article"
+  publishDate={pubDateStr}
+  image={entry.data.image}
+>
   <Fragment slot="head">
     <SchemaOrg schema={schemaGraph} />
   </Fragment>
