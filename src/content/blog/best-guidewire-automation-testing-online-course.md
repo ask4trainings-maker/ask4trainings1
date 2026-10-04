@@ -20,8 +20,7 @@ Guidewire is widely used in the insurance industry, creating growing opportuniti
 
 ## Need Demo session? Let’s Connect
 
-[  
-WhatsApp Me](https://wa.me/918099949888)
+::whatsapp-us
 
 ## 3.Guidewire Automation Testing Online Training for Beginners
 
@@ -44,8 +43,7 @@ Guidewire testing requires a combination of automation tools, testing frameworks
 
 ## Need Demo session? Let’s Connect
 
-[  
-WhatsApp Me](https://wa.me/918099949888)
+::whatsapp-us
 
 ## 7.Guidewire Automation Testing with Selenium and Java
 
@@ -68,8 +66,7 @@ Earning a certification can strengthen your professional profile and open new op
 
 ## Need Demo session? Let’s Connect
 
-[  
-WhatsApp Me](https://wa.me/918099949888)
+::whatsapp-us
 
 ## 11.Guidewire Automation Testing vs Manual Testing: Key Differences
 
@@ -92,8 +89,7 @@ A Guidewire Automation Tester needs strong knowledge of software testing, automa
 
 ## Need Demo session? Let’s Connect
 
-[  
-WhatsApp Me](https://wa.me/918099949888)
+::whatsapp-us
 
 ## 15.Build Your Testing Career with Guidewire Automation Training
 

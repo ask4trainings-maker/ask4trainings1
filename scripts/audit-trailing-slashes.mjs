@@ -43,7 +43,7 @@ function auditFile(filePath) {
     }
     
     // Ignore static assets
-    const assetRegex = /\.(png|jpg|jpeg|gif|svg|webp|ico|css|js|json|xml|pdf|txt|webmanifest)$/i;
+    const assetRegex = /\.(png|jpg|jpeg|gif|svg|webp|ico|css|js|json|xml|pdf|txt|webmanifest|woff2)$/i;
     if (assetRegex.test(link)) {
       continue;
     }

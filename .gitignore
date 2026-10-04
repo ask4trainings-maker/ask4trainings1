@@ -48,7 +48,6 @@ lerna-debug.log*
 *.tsbuildinfo
 
 # One-off migration scripts and outputs
-scripts/
 scripts/migration/
 scripts/migrate-*.mjs
 scripts/audit-wxr-*.mjs
@@ -57,8 +56,30 @@ scripts/cleanup-*.mjs
 scripts/normalize-*.mjs
 scripts/sanitize-*.mjs
 scripts/update-*.mjs
+scripts/generate-legacy-redirects.mjs
 migration-manifest.json
 
 # Local backup and error logs
 build-error.log
 *.before-oxc-fix
+
+# Temporary Debugging Files
+audit_output.log
+build-error.log
+test-remark.mjs
+
+# Caches
+.cache/
+.pagefind/
+
+# Reports and Audits
+*.log
+*-audit.json
+*-audit.md
+
+# IDE & OS Scaffolding
+Thumbs.db
+
+# Agent & Scratchpad Working Dirs
+.agents/**/temp/
+.opencode/**/temp/

@@ -95,7 +95,7 @@ const formatSocialHandle = (url: string, platform: string) => {
                 <div class="mt-1">
                   <h3 class="font-bold text-slate-900 text-lg mb-1">Call Us</h3>
                   {contactData.phoneNumbers.map((phone: string) => (
-                    <a href={`tel:${phone}`} class="hover:text-emerald-500 transition-colors block">{phone}</a>
+                    <a href={`tel:${phone.replace(/[\s-()]/g, '')}`} class="hover:text-emerald-500 transition-colors block">{phone}</a>
                   ))}
                 </div>
               </div>
