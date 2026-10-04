@@ -36,10 +36,22 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         </svg>
       </div>
       <div class="rounded-xl border border-emerald-600/20 bg-emerald-600/5 p-3 sm:p-4 text-center text-xs sm:text-sm font-medium text-slate-900 mb-6 w-full max-w-[280px]">
-        Thank you! Your enquiry has been received. Our team will contact you shortly.
+        Thank you! Our admissions advisor will contact you within 15 minutes.
       </div>
       <button type="button" class="reset-form-btn px-5 py-2.5 bg-white/5 hover:bg-white/10 text-slate-600 text-sm font-semibold rounded-lg transition-colors border border-slate-200">
         Submit another enquiry
+      </button>
+    </div>
+
+    <!-- Error/Retry Banner -->
+    <div id={`${formId}-error-banner`} class="absolute inset-x-0 top-1.5 z-20 flex-col items-center justify-center bg-rose-50 backdrop-blur-md p-4 text-center transition-all duration-300 hidden border-b border-rose-200">
+      <p class="text-sm font-medium text-rose-700 mb-2">There was a problem submitting your enquiry.</p>
+      <a href="https://wa.me/918099949888" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-sm font-bold text-emerald-600 hover:text-emerald-700">
+        Contact us on WhatsApp instead
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+      <button type="button" class="close-error-btn absolute top-2 right-2 text-rose-500 hover:text-rose-700">
+        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
@@ -55,9 +67,18 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         <p class="text-xs sm:text-sm text-slate-500">{subtitle}</p>
       </div>
 
-      <form id={formId} class="enquiry-form flex flex-col space-y-4" data-source={sourcePage}>
+      <form id={formId} class="enquiry-form flex flex-col space-y-4" data-source={sourcePage} novalidate>
         <!-- Honeypot -->
-        <input type="text" name="b_field" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="hidden" aria-hidden="true" style="display: none !important;">
+          <label for={`${formId}-website_hp`}>Leave this field blank</label>
+          <input 
+            type="text" 
+            id={`${formId}-website_hp`}
+            name="website_hp" 
+            tabindex="-1" 
+            autocomplete="off" 
+          />
+        </div>
         
         <div>
           <label for={`${formId}-name`} class="block text-xs font-semibold text-slate-600 uppercase tracking-wider mb-1.5">
@@ -67,10 +88,13 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
             id={`${formId}-name`}
             name="name"
             type="text"
+            autocomplete="name"
+            autocapitalize="words"
             placeholder="e.g. Rahul Sharma"
             required
-            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-600 placeholder:text-slate-400"
+            class="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 placeholder:text-slate-400"
           />
+          <p id={`${formId}-name-error`} class="mt-1.5 text-xs font-medium text-rose-500 hidden" role="alert"></p>
         </div>
 
         <div>
@@ -80,7 +104,7 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
           <div class="flex gap-2 w-full">
             <select
               name="countryCode"
-              class="w-[30%] max-w-[96px] shrink-0 truncate rounded-lg border border-slate-300 bg-white px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-600 appearance-none"
+              class="w-[30%] max-w-[96px] shrink-0 truncate rounded-lg border border-slate-200 bg-white px-2 sm:px-3 py-3 text-xs sm:text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 appearance-none"
             >
               <option value="+91">+91 (IN)</option>
               <option value="+1">+1 (US)</option>
@@ -92,13 +116,14 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
               id={`${formId}-phone`}
               name="phone"
               type="tel"
-              pattern="^[6-9]\\d{9}$"
-              placeholder="Enter mobile number"
+              inputmode="tel"
+              autocomplete="tel"
+              placeholder="e.g. 98765 43210 or +91 98765 43210"
               required
-              title="Please enter a valid 10-digit Indian mobile number starting with 6-9."
-              class="flex-1 min-w-0 rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-600 placeholder:text-slate-400"
+              class="flex-1 min-w-0 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 placeholder:text-slate-400"
             />
           </div>
+          <p id={`${formId}-phone-error`} class="mt-1.5 text-xs font-medium text-rose-500 hidden" role="alert"></p>
         </div>
 
         <div>
@@ -109,10 +134,13 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
             id={`${formId}-email`}
             name="email"
             type="email"
+            inputmode="email"
+            autocomplete="email"
             required
             placeholder="you@email.com"
-            class="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-600 placeholder:text-slate-400"
+            class="w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 placeholder:text-slate-400"
           />
+          <p id={`${formId}-email-error`} class="mt-1.5 text-xs font-medium text-rose-500 hidden" role="alert"></p>
         </div>
 
         <div>
@@ -126,10 +154,10 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
             placeholder="e.g. AWS Cloud Architect"
             value={courseName}
             readonly={lockCourseName ? true : undefined}
-            class={`w-full rounded-lg border px-4 py-3 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-600 placeholder:text-slate-400 ${
+            class={`w-full rounded-lg border px-4 py-3 text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 placeholder:text-slate-400 ${
               lockCourseName 
                 ? 'cursor-not-allowed bg-slate-50 border-slate-200 text-slate-500' 
-                : 'bg-white border-slate-300 text-slate-900'
+                : 'bg-white border-slate-200 text-slate-900'
             }`}
           />
         </div>
@@ -178,25 +206,113 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
 </div>
 
 <script>
+  import { validatePhone, validateName, validateEmail } from '../utils/formValidation';
+
   const forms = document.querySelectorAll('.enquiry-form');
   const APPS_SCRIPT_URL = import.meta.env.PUBLIC_STUDENT_APPS_SCRIPT_URL || import.meta.env.PUBLIC_APPS_SCRIPT_URL;
 
   forms.forEach(form => {
     const formId = form.id;
+    const initTime = Date.now();
     const successUI = document.getElementById(`${formId}-success`);
+    const errorBanner = document.getElementById(`${formId}-error-banner`);
     const resetBtn = successUI?.querySelector('.reset-form-btn');
+    const closeErrorBtn = errorBanner?.querySelector('.close-error-btn');
     const submitBtn = form.querySelector('.submit-btn') as HTMLButtonElement;
     const submitText = form.querySelector('.submit-text');
     const loadingSpinner = form.querySelector('.loading-spinner');
+
+    const nameInput = form.querySelector('input[name="name"]') as HTMLInputElement;
+    const nameError = document.getElementById(`${formId}-name-error`);
+    const phoneInput = form.querySelector('input[name="phone"]') as HTMLInputElement;
+    const phoneError = document.getElementById(`${formId}-phone-error`);
+    const emailInput = form.querySelector('input[name="email"]') as HTMLInputElement;
+    const emailError = document.getElementById(`${formId}-email-error`);
+    
+    // Real-time phone formatting (filtering out invalid chars)
+    phoneInput?.addEventListener('input', (e) => {
+      const target = e.target as HTMLInputElement;
+      target.value = target.value.replace(/[^\d\s\-\+()]/g, '');
+    });
+
+    const setError = (input: HTMLInputElement, errorEl: HTMLElement | null, message: string) => {
+      input.classList.remove('border-slate-200', 'focus:border-emerald-500', 'focus:ring-emerald-500/20', 'border-emerald-400');
+      input.classList.add('border-rose-400', 'focus:border-rose-500', 'focus:ring-rose-500/20');
+      input.setAttribute('aria-invalid', 'true');
+      if (errorEl) {
+        errorEl.textContent = message;
+        errorEl.classList.remove('hidden');
+        input.setAttribute('aria-describedby', errorEl.id);
+      }
+    };
+
+    const setSuccess = (input: HTMLInputElement, errorEl: HTMLElement | null) => {
+      input.classList.remove('border-slate-200', 'focus:border-emerald-500', 'focus:ring-emerald-500/20', 'border-rose-400', 'focus:border-rose-500', 'focus:ring-rose-500/20');
+      input.classList.add('border-emerald-400');
+      input.removeAttribute('aria-invalid');
+      if (errorEl) {
+        errorEl.classList.add('hidden');
+        input.removeAttribute('aria-describedby');
+      }
+    };
+
+    const clearState = (input: HTMLInputElement, errorEl: HTMLElement | null) => {
+      input.classList.remove('border-emerald-400', 'border-rose-400', 'focus:border-rose-500', 'focus:ring-rose-500/20');
+      input.classList.add('border-slate-200', 'focus:border-emerald-500', 'focus:ring-emerald-500/20');
+      input.removeAttribute('aria-invalid');
+      if (errorEl) {
+        errorEl.classList.add('hidden');
+        input.removeAttribute('aria-describedby');
+      }
+    };
+
+    // Clear error on focus
+    nameInput?.addEventListener('focus', () => clearState(nameInput, nameError));
+    phoneInput?.addEventListener('focus', () => clearState(phoneInput, phoneError));
+    emailInput?.addEventListener('focus', () => clearState(emailInput, emailError));
+
+    // Validate on blur
+    nameInput?.addEventListener('blur', () => {
+      const val = validateName(nameInput.value);
+      if (!val.isValid) setError(nameInput, nameError, val.error!);
+      else setSuccess(nameInput, nameError);
+    });
+
+    phoneInput?.addEventListener('blur', () => {
+      const countryCode = (form.querySelector('select[name="countryCode"]') as HTMLSelectElement)?.value || '';
+      // If user typed +91 in input, we just validate it. 
+      // validatePhone handles concatenation if needed, but let's pass the combined string
+      const fullPhoneNumber = phoneInput.value.startsWith('+') ? phoneInput.value : `${countryCode} ${phoneInput.value}`;
+      const val = validatePhone(fullPhoneNumber);
+      if (!val.isValid) setError(phoneInput, phoneError, val.error!);
+      else setSuccess(phoneInput, phoneError);
+    });
+
+    emailInput?.addEventListener('blur', () => {
+      const val = validateEmail(emailInput.value);
+      if (!val.isValid) setError(emailInput, emailError, val.error!);
+      else setSuccess(emailInput, emailError);
+    });
 
     const resetForm = () => {
       if (successUI) {
         successUI.classList.add('opacity-0', 'pointer-events-none');
       }
+      if (errorBanner) {
+        errorBanner.classList.add('hidden');
+        errorBanner.classList.remove('flex');
+      }
       (form as HTMLFormElement).reset();
+      clearState(nameInput, nameError);
+      clearState(phoneInput, phoneError);
+      clearState(emailInput, emailError);
     };
 
     resetBtn?.addEventListener('click', resetForm);
+    closeErrorBtn?.addEventListener('click', () => {
+      errorBanner?.classList.add('hidden');
+      errorBanner?.classList.remove('flex');
+    });
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -204,9 +320,33 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
       const formData = new FormData(form as HTMLFormElement);
       const data = Object.fromEntries(formData.entries());
       
+      // Timestamp Spam Guard
+      if (Date.now() - initTime < 2000) {
+        // Fast bot submission, simulate success
+        if (successUI) successUI.classList.remove('opacity-0', 'pointer-events-none');
+        return;
+      }
+
       // Honeypot check
-      if (data.b_field) {
-        resetForm();
+      if (data.website_hp) {
+        if (successUI) successUI.classList.remove('opacity-0', 'pointer-events-none');
+        return;
+      }
+
+      // Validate all
+      const nameVal = validateName(data.name as string);
+      if (!nameVal.isValid) setError(nameInput, nameError, nameVal.error!);
+
+      const countryCode = data.countryCode as string;
+      const phoneInputVal = data.phone as string;
+      const fullPhoneNumber = phoneInputVal.startsWith('+') ? phoneInputVal : `${countryCode} ${phoneInputVal}`;
+      const phoneVal = validatePhone(fullPhoneNumber);
+      if (!phoneVal.isValid) setError(phoneInput, phoneError, phoneVal.error!);
+
+      const emailVal = validateEmail(data.email as string);
+      if (!emailVal.isValid) setError(emailInput, emailError, emailVal.error!);
+
+      if (!nameVal.isValid || !phoneVal.isValid || !emailVal.isValid) {
         return;
       }
 
@@ -215,16 +355,18 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
       if (submitText) submitText.textContent = 'Submitting...';
       if (loadingSpinner) loadingSpinner.classList.remove('hidden');
       form.querySelector('.submit-icon')?.classList.add('hidden');
+      if (errorBanner) {
+        errorBanner.classList.add('hidden');
+        errorBanner.classList.remove('flex');
+      }
 
-      const fullPhoneNumber = `${data.countryCode} ${data.phone}`;
-      
       const payload = {
         type: 'student',
         date: new Date().toLocaleDateString('en-IN', { timeZone: 'Asia/Kolkata' }),
         time: new Date().toLocaleTimeString('en-IN', { timeZone: 'Asia/Kolkata' }),
-        name: data.name,
-        phone: fullPhoneNumber,
-        email: data.email,
+        name: nameVal.sanitizedValue,
+        phone: fullPhoneNumber, // Use standard format
+        email: emailVal.sanitizedValue,
         course: data.course || 'General Enquiry',
         sourceUrl: form.getAttribute('data-source') || window.location.href
       };
@@ -246,9 +388,16 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
         if (successUI) {
           successUI.classList.remove('opacity-0', 'pointer-events-none');
         }
+        (form as HTMLFormElement).reset();
+        clearState(nameInput, nameError);
+        clearState(phoneInput, phoneError);
+        clearState(emailInput, emailError);
       } catch (err) {
         console.error('Submission failed', err);
-        alert('There was a problem submitting your enquiry. Please try again or contact us via WhatsApp.');
+        if (errorBanner) {
+          errorBanner.classList.remove('hidden');
+          errorBanner.classList.add('flex');
+        }
       } finally {
         // Unlock state
         if (submitBtn) submitBtn.disabled = false;
