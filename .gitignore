@@ -46,3 +46,19 @@ lerna-debug.log*
 
 # Typescript
 *.tsbuildinfo
+
+# One-off migration scripts and outputs
+scripts/
+scripts/migration/
+scripts/migrate-*.mjs
+scripts/audit-wxr-*.mjs
+scripts/backfill.mjs
+scripts/cleanup-*.mjs
+scripts/normalize-*.mjs
+scripts/sanitize-*.mjs
+scripts/update-*.mjs
+migration-manifest.json
+
+# Local backup and error logs
+build-error.log
+*.before-oxc-fix

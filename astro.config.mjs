@@ -5,9 +5,9 @@ import react from '@astrojs/react';
 import remarkBlogCtas from './remark-blog-ctas.mjs';
 
 export default defineConfig({
-  site: 'https://ask4trainings.pages.dev',
+  site: 'https://ask4trainings.com',
   output: 'static',
-  trailingSlash: 'ignore',
+  trailingSlash: 'always',
 
   vite: {
     tsconfig: './tsconfig.json',
@@ -28,7 +28,9 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: true,
     }),
-    sitemap(),
+    sitemap({
+      filter: (page) => !page.includes('/admin/')
+    }),
     react(),
   ],
 });

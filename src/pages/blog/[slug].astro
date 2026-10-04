@@ -16,6 +16,8 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 import { decodeHtmlEntities } from '../../utils/text';
+import { getBlogPostingSchema, getBreadcrumbSchema } from '../../utils/seoSchema';
+import SchemaOrg from '../../components/seo/SchemaOrg.astro';
 
 const decodedTitle = decodeHtmlEntities(entry.data.title);
 const decodedDesc = decodeHtmlEntities(entry.data.description);
@@ -28,9 +30,24 @@ const formattedDate = new Date(entry.data.pubDate).toLocaleDateString('en-US', {
 
 const bodyRaw = entry.body || '';
 const hasDuplicateImageInBody = entry.data.image && bodyRaw.includes(entry.data.image);
+
+const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.com/';
+const blogPostingSchema = getBlogPostingSchema({ ...entry, slug: entry.id.replace(/\.mdx?$/, '') }, siteUrl);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: 'Home', path: siteUrl },
+  { name: 'Blog', path: `${siteUrl}blog/` },
+  { name: decodedTitle, path: `${siteUrl}blog/${entry.id.replace(/\.mdx?$/, '')}/` }
+]);
+const schemaGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [blogPostingSchema, breadcrumbSchema]
+};
 ---
 
 <BaseLayout title={`${decodedTitle} | Ask 4 Trainings Blog`} description={decodedDesc}>
+  <Fragment slot="head">
+    <SchemaOrg schema={schemaGraph} />
+  </Fragment>
   
   <article class="pt-24 pb-20">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 xl:px-0">

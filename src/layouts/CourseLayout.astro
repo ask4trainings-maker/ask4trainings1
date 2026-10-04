@@ -17,6 +17,8 @@ import CourseFAQ from '../components/course/CourseFAQ.astro';
 import RelatedCourses from '../components/course/RelatedCourses.astro';
 import CourseNavRibbon from '../components/course/CourseNavRibbon.astro';
 import CareerRoiCard from '../components/CareerRoiCard.astro';
+import { getCourseSchema, getBreadcrumbSchema, getFaqSchema } from '../utils/seoSchema';
+import SchemaOrg from '../components/seo/SchemaOrg.astro';
 
 export interface Props {
   course: any;
@@ -25,39 +27,27 @@ export interface Props {
 const { course } = Astro.props;
 const data = course.data;
 
-const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.pages.dev/';
+const siteUrl = Astro.site ? Astro.site.toString() : 'https://ask4trainings.com/';
 const metaDesc = data.seo?.metaDescription || data.valueProp || data.overview;
 
 // SEO Metadata (JSON-LD)
-const courseSchema = {
-  '@type': 'Course',
-  name: data.title, 
-  description: metaDesc,
-  provider: { '@type': 'EducationalOrganization', name: 'Ask 4 Trainings', sameAs: siteUrl },
-  hasCourseInstance: {
-    '@type': 'CourseInstance',
-    courseMode: data.mode?.toLowerCase().includes('online') ? 'online' : 'blended'
-  }
-};
-const breadcrumbSchema = {
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
-    { '@type': 'ListItem', position: 2, name: data.category?.replace(/-/g, ' ') || 'Courses', item: `${siteUrl}courses/${data.category}` },
-    { '@type': 'ListItem', position: 3, name: data.title },
-  ],
-};
+const courseSchema = getCourseSchema(data);
+const breadcrumbSchema = getBreadcrumbSchema([
+  { name: 'Home', path: siteUrl },
+  { name: data.category?.replace(/-/g, ' ') || 'Courses', path: `${siteUrl}courses/${data.category}/` },
+  { name: data.title, path: `${siteUrl}${data.slug}/` }
+]);
+const faqSchema = getFaqSchema(data.faqs);
 
 const schemaGraph = {
   '@context': 'https://schema.org',
-  '@graph': [courseSchema, breadcrumbSchema]
+  '@graph': [courseSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])]
 };
 ---
 
 <BaseLayout title={data.seo?.metaTitle || `${data.title} | Ask 4 Trainings`} description={metaDesc} courseName={data.title}>
   <Fragment slot="head">
-    {data.slug && <link rel="canonical" href={`${siteUrl}${data.slug}/`} />}
-    <script is:inline type="application/ld+json" set:html={JSON.stringify(schemaGraph)} />
+    <SchemaOrg schema={schemaGraph} />
   </Fragment>
 
   <!-- Section 1: Hero / Main Section -->

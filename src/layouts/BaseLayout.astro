@@ -4,6 +4,8 @@ import Footer from '../components/Footer.astro';
 import StickyMobileBar from '../components/StickyMobileBar.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 import '@fontsource-variable/geist';
+import SchemaOrg from '../components/seo/SchemaOrg.astro';
+import { getOrganizationSchema } from '../utils/seoSchema';
 
 export interface Props {
   title: string;
@@ -12,6 +14,14 @@ export interface Props {
 }
 
 const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in Hyderabad', courseName } = Astro.props;
+
+// Canonical URL Construction
+let pathname = Astro.url.pathname;
+if (!pathname.endsWith('/') && !pathname.match(/\.[a-z0-9]+$/i)) {
+  pathname += '/';
+}
+const canonicalUrl = new URL(pathname, Astro.site || 'https://ask4trainings.com').href;
+const orgSchema = getOrganizationSchema();
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -24,21 +34,24 @@ const { title, description = 'Ask 4 Trainings - Leading IT Training Institute in
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.pages.dev').href} />
+    <link rel="canonical" href={canonicalUrl} />
 
     <!-- OpenGraph Metadata -->
     <meta property="og:site_name" content="Ask 4 Trainings" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site || 'https://ask4trainings.pages.dev').href} />
-    <meta property="og:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.pages.dev').href} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
 
     <!-- Twitter Card Metadata -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.pages.dev').href} />
+    <meta name="twitter:image" content={new URL('/assets/og-image.jpg', Astro.site || 'https://ask4trainings.com').href} />
+
+    <!-- Organization / LocalBusiness Schema -->
+    <SchemaOrg schema={orgSchema} />
 
     <slot name="head" />
     <style is:global>
