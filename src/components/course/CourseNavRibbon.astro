@@ -1,9 +1,9 @@
 ---
 // src/components/course/CourseNavRibbon.astro
 ---
-<div id="course-nav-placeholder" class="w-full"></div>
-<div id="course-nav-ribbon" class="w-full bg-slate-50 border-b border-slate-200 transition-all duration-300 z-40">
-  <div class="flex items-center gap-4 overflow-x-auto scrollbar-none py-3.5 px-4 max-w-7xl mx-auto">
+<div id="course-nav-placeholder" class="w-full min-h-[48px] sm:min-h-[56px] relative">
+  <div id="course-nav-ribbon" class="w-full bg-slate-50 border-b border-slate-200 transition-all duration-300 z-40 absolute top-0 left-0">
+    <div class="flex items-center gap-4 overflow-x-auto scrollbar-none py-3.5 px-4 max-w-7xl mx-auto">
     <a href="#overview" class="text-xs md:text-sm font-medium whitespace-nowrap text-slate-700 hover:text-emerald-600 transition-colors py-1 px-3 rounded-lg hover:bg-emerald-50">Overview</a>
     <a href="#curriculum" class="text-xs md:text-sm font-medium whitespace-nowrap text-slate-700 hover:text-emerald-600 transition-colors py-1 px-3 rounded-lg hover:bg-emerald-50">Curriculum</a>
     <a href="#objectives" class="text-xs md:text-sm font-medium whitespace-nowrap text-slate-700 hover:text-emerald-600 transition-colors py-1 px-3 rounded-lg hover:bg-emerald-50">Objectives</a>
@@ -15,13 +15,15 @@
     <a href="#trainer-profile" class="text-xs md:text-sm font-medium whitespace-nowrap text-slate-700 hover:text-emerald-600 transition-colors py-1 px-3 rounded-lg hover:bg-emerald-50">Trainer Profile</a>
     <a href="#faqs" class="text-xs md:text-sm font-medium whitespace-nowrap text-slate-700 hover:text-emerald-600 transition-colors py-1 px-3 rounded-lg hover:bg-emerald-50">FAQs</a>
   </div>
+  </div>
 </div>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const ribbon = document.getElementById('course-nav-ribbon');
-    const placeholder = document.getElementById('course-nav-placeholder');
-    const mainHeader = document.getElementById('main-header') || document.querySelector('header');
+    const initObserver = () => {
+      const ribbon = document.getElementById('course-nav-ribbon');
+      const placeholder = document.getElementById('course-nav-placeholder');
+      const mainHeader = document.getElementById('main-header') || document.querySelector('header');
     
     if (ribbon && placeholder) {
       const observer = new IntersectionObserver(
@@ -29,11 +31,8 @@
           entries.forEach(entry => {
             if (!entry.isIntersecting && entry.boundingClientRect.top < 0) {
               // Scrolled past the placeholder, pin ribbon and hide main header
-              const height = ribbon.offsetHeight;
-              placeholder.style.height = `${height}px`;
-              
-              ribbon.classList.add('fixed', 'top-0', 'left-0', 'bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-              ribbon.classList.remove('bg-slate-50');
+              ribbon.classList.add('fixed', 'top-0', 'left-0', 'bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'w-full');
+              ribbon.classList.remove('bg-slate-50', 'absolute');
               
               if (mainHeader) {
                 mainHeader.style.transition = 'transform 0.3s ease';
@@ -41,10 +40,8 @@
               }
             } else {
               // Scrolled above the placeholder, unpin ribbon and show main header
-              placeholder.style.height = '0px';
-              
-              ribbon.classList.remove('fixed', 'top-0', 'left-0', 'bg-white/95', 'backdrop-blur-md', 'shadow-sm');
-              ribbon.classList.add('bg-slate-50');
+              ribbon.classList.remove('fixed', 'top-0', 'left-0', 'bg-white/95', 'backdrop-blur-md', 'shadow-sm', 'w-full');
+              ribbon.classList.add('bg-slate-50', 'absolute');
               
               if (mainHeader) {
                 mainHeader.style.transform = 'translateY(0)';
@@ -94,6 +91,13 @@
       );
 
       sections.forEach(section => { if (section) scrollspyObserver.observe(section as Element); });
+    }
+    };
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(initObserver);
+    } else {
+      setTimeout(initObserver, 1);
     }
   });
 </script>

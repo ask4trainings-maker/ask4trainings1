@@ -58,6 +58,9 @@ const schemaGraph = {
 <BaseLayout title={finalTitle} description={metaDesc} courseName={data.title} type="website" image={data.courseImage}>
   <Fragment slot="head">
     <SchemaOrg schema={schemaGraph} />
+    {data.courseImage && (
+      <link rel="preload" as="image" href={data.courseImage} fetchpriority="high" />
+    )}
   </Fragment>
 
   <!-- Section 1: Hero / Main Section -->

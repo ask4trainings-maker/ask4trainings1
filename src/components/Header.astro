@@ -314,6 +314,7 @@ const isContactActive = checkActive('/contact-us');
 </div>
 
 <script>
+const initHeader = () => {
 // ── MEGA MENU: Category Tab Logic ───────────────────────────────────────────
 const categoryTabs = document.querySelectorAll('.category-tab-btn');
 const categoryPanels = document.querySelectorAll('.subcourse-panel');
@@ -481,4 +482,10 @@ document.addEventListener('keydown', (e) => {
     toggleMenu();
   }
 });
+};
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(initHeader);
+} else {
+  setTimeout(initHeader, 1);
+}
 </script>

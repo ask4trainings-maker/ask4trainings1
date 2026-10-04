@@ -208,6 +208,7 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
 <script>
   import { validatePhone, validateName, validateEmail } from '../utils/formValidation';
 
+  const initForms = () => {
   const forms = document.querySelectorAll('.enquiry-form');
   const APPS_SCRIPT_URL = import.meta.env.PUBLIC_STUDENT_APPS_SCRIPT_URL || import.meta.env.PUBLIC_APPS_SCRIPT_URL;
 
@@ -407,4 +408,11 @@ const formId = `enquiry-form-${Math.random().toString(36).substring(2, 9)}`;
       }
     });
   });
+  };
+  
+  if ('requestIdleCallback' in window) {
+    requestIdleCallback(initForms);
+  } else {
+    setTimeout(initForms, 1);
+  }
 </script>

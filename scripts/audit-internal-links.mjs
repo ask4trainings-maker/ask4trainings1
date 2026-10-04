@@ -109,7 +109,7 @@ function verifyInternalPath(urlPath) {
 const SKIP_PATTERNS = [
   '/_astro/',  // Hashed Astro build assets (CSS/JS bundles)
   '/assets/', '/pagefind/', '/_pagefind/', '/admin',
-  '/sitemap', '/robots.txt', '/favicon', '/.well-known',
+  '/sitemap', '/robots.txt', '/favicon', '/.well-known', '/fonts/',
 ];
 
 const broken = []; // { source, href }
