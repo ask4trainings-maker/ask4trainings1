@@ -20,6 +20,10 @@ export default defineConfig({
   build: {
     format: 'directory',
   },
+  image: {
+    service: { entrypoint: 'astro/assets/services/sharp' },
+    domains: ['ask4trainings.com'],
+  },
   integrations: [
     tailwind({
       applyBaseStyles: true,
