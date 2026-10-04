@@ -20,6 +20,7 @@ const organizationSchema = {
 import BaseLayout from '../layouts/BaseLayout.astro';
 import categoriesData from '../data/categories.json';
 import { getCollection, getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const homeEntry = await getEntry('pages', 'home');
 const homeData = homeEntry?.data || { hero: {}, metrics: [], bento: [], roadmap: [], conversion: {} };
@@ -69,7 +70,7 @@ const displayBlogs = validBlogs.length > 0 ? validBlogs : [
       description: 'Explore the key concepts in scaling cloud-native enterprise systems.',
       tags: ['Architecture'],
       pubDate: new Date().toISOString(),
-      image: '/logo.svg'
+      image: undefined as any
     }
   }
 ];
@@ -307,7 +308,7 @@ const displayBlogs = validBlogs.length > 0 ? validBlogs : [
             <article class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-emerald-200 transition-all duration-300 flex flex-col group relative">
               {post.data.image && (
                 <div class="aspect-video w-full overflow-hidden bg-slate-100">
-                  <img src={post.data.image} alt={post.data.title} class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                  <Image src={post.data.image} alt={post.data.title} width={640} height={360} format="webp" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
               )}
               <div class="p-6 flex flex-col flex-grow">

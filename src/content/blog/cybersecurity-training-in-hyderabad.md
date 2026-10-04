@@ -1,14 +1,17 @@
 ---
-title: "Cybersecurity Training in Hyderabad"
-description: "Cybersecurity Training in Hyderabad is designed to help learners build strong cybersecurity skills through practical, industry-focused training. Cybersecurit..."
-pubDate: 2026-08-07
-author: "admin"
+title: Cybersecurity Training in Hyderabad
+description: >-
+  Cybersecurity Training in Hyderabad is designed to help learners build strong
+  cybersecurity skills through practical, industry-focused training.
+  Cybersecurit...
+pubDate: 2026-08-07T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Cybersecurity-Training-in-Hyderabad.jpeg'
+image: ../../assets/blog/Cybersecurity-Training-in-Hyderabad.jpeg
 ---
 
-![Cybersecurity Training in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/08/Cybersecurity-Training-in-Hyderabad.jpeg)
+![Cybersecurity Training in Hyderabad](../../assets/blog/Cybersecurity-Training-in-Hyderabad.jpeg)
 
 ## 1\. Introduction to Cybersecurity
 

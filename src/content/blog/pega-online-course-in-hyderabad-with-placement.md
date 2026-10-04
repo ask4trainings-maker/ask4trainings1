@@ -1,14 +1,17 @@
 ---
-title: "PEGA Online Course with Real-Time Projects and Practical Training"
-description: "A PEGA Online Course in Hyderabad is designed to help beginners and professionals learn PEGA concepts through structured lessons and practical exercises. A P..."
-pubDate: 2026-09-22
-author: "admin"
+title: PEGA Online Course with Real-Time Projects and Practical Training
+description: >-
+  A PEGA Online Course in Hyderabad is designed to help beginners and
+  professionals learn PEGA concepts through structured lessons and practical
+  exercises. A P...
+pubDate: 2026-09-22T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/PEGA-Online-Course-1024x576.jpeg'
+image: ../../assets/blog/PEGA-Online-Course-1024x576.jpeg
 ---
 
-![PEGA Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/PEGA-Online-Course-1024x576.jpeg)
+![PEGA Online Course](../../assets/blog/PEGA-Online-Course-1024x576.jpeg)
 
 ## 1.What Is a PEGA Online Course and Why Learn PEGA?
 

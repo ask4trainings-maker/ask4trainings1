@@ -1,14 +1,18 @@
 ---
-title: "No Coding? No Problem! Start Your Data Analytics Career"
-description: "A Data Analytics Course is the perfect choice for anyone who wants to build a successful career in today’s data-driven world. Businesses rely on analytics to..."
-pubDate: 2026-05-12
-author: "admin"
-tags: ["Data Analyst"]
+title: No Coding? No Problem! Start Your Data Analytics Career
+description: >-
+  A Data Analytics Course is the perfect choice for anyone who wants to build a
+  successful career in today’s data-driven world. Businesses rely on analytics
+  to...
+pubDate: 2026-05-12T00:00:00.000Z
+author: admin
+tags:
+  - Data Analyst
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/Data-Analytics-Course-1024x573.jpeg'
+image: ../../assets/blog/Data-Analytics-Course-1024x573.jpeg
 ---
 
-![Data Analytics Course](https://ask4trainings.com/wp-content/uploads/2026/05/Data-Analytics-Course-1024x573.jpeg)
+![Data Analytics Course](../../assets/blog/Data-Analytics-Course-1024x573.jpeg)
 
 ## 1\. Why Choose Data Analytics Course
 

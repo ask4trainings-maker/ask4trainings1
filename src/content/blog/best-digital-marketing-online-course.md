@@ -1,14 +1,17 @@
 ---
-title: "Best Digital Marketing Online Course to Boost Your Career"
-description: "A Digital Marketing Online Course is a structured learning program designed to help individuals master the latest digital marketing strategies and tools from..."
-pubDate: 2026-08-03
-author: "admin"
+title: Best Digital Marketing Online Course to Boost Your Career
+description: >-
+  A Digital Marketing Online Course is a structured learning program designed to
+  help individuals master the latest digital marketing strategies and tools
+  from...
+pubDate: 2026-08-03T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Digital-marketing.jpeg'
+image: ../../assets/blog/Digital-marketing.jpeg
 ---
 
-![Digital Marketing Online Course](https://ask4trainings.com/wp-content/uploads/2026/08/Digital-marketing.jpeg)
+![Digital Marketing Online Course](../../assets/blog/Digital-marketing.jpeg)
 
 ## 1.What Is a Digital Marketing Online Course?
 

@@ -1,14 +1,18 @@
 ---
-title: "Mastering Guidewire BillingCenter: Complete Beginner’s Guide"
-description: "The insurance industry is rapidly adopting digital billing platforms, and Guidewire Billing Center Course has become one of the most preferred solutions for ..."
-pubDate: 2026-05-08
-author: "admin"
-tags: ["Guidewire Development"]
+title: 'Mastering Guidewire BillingCenter: Complete Beginner’s Guide'
+description: >-
+  The insurance industry is rapidly adopting digital billing platforms, and
+  Guidewire Billing Center Course has become one of the most preferred solutions
+  for ...
+pubDate: 2026-05-08T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire Development
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-billing-center-1024x683.jpeg'
+image: ../../assets/blog/guidewire-billing-center-1024x683.jpeg
 ---
 
-![guidewire billing center Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-billing-center-1024x683.jpeg)
+![guidewire billing center Course](../../assets/blog/guidewire-billing-center-1024x683.jpeg)
 
 ## 1\. Introduction to Guidewire Billing Center
 

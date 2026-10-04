@@ -1,14 +1,17 @@
 ---
-title: "Appian Online course in Hyderabad | Certification &amp; Career Growth"
-description: "Appian is a leading low-code automation platform that helps organizations build applications quickly, automate workflows, and improve business processes. It ..."
-pubDate: 2026-09-22
-author: "admin"
+title: Appian Online course in Hyderabad | Certification &amp; Career Growth
+description: >-
+  Appian is a leading low-code automation platform that helps organizations
+  build applications quickly, automate workflows, and improve business
+  processes. It ...
+pubDate: 2026-09-22T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/appian-1024x576.jpeg'
+image: ../../assets/blog/appian-1024x576.jpeg
 ---
 
-![Appian Online course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/appian-1024x576.jpeg)
+![Appian Online course in Hyderabad](../../assets/blog/appian-1024x576.jpeg)
 
 ## 1\. What Is Appian? A Complete Guide for Beginners
 

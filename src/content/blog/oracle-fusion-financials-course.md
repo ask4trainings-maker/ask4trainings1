@@ -1,14 +1,17 @@
 ---
-title: "Oracle Fusion Financials"
-description: "Oracle Fusion is a modern cloud-based enterprise resource planning (ERP) solution that helps organizations streamline and automate their financial operations..."
-pubDate: 2026-06-25
-author: "admin"
+title: Oracle Fusion Financials
+description: >-
+  Oracle Fusion is a modern cloud-based enterprise resource planning (ERP)
+  solution that helps organizations streamline and automate their financial
+  operations...
+pubDate: 2026-06-25T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/oracle-fusion-financial.jpeg'
+image: ../../assets/blog/oracle-fusion-financial.jpeg
 ---
 
-![Oracle fusion financials Course](https://ask4trainings.com/wp-content/uploads/2026/06/oracle-fusion-financial.jpeg)
+![Oracle fusion financials Course](../../assets/blog/oracle-fusion-financial.jpeg)
 
 ## 1.Introduction to Oracle Fusion
 

@@ -1,14 +1,17 @@
 ---
-title: "Generative AI Online Course with Certification"
-description: "Generative AI is an advanced branch of artificial intelligence that enables machines to create human-like content, including text, images, videos, code, and ..."
-pubDate: 2026-06-29
-author: "admin"
+title: Generative AI Online Course with Certification
+description: >-
+  Generative AI is an advanced branch of artificial intelligence that enables
+  machines to create human-like content, including text, images, videos, code,
+  and ...
+pubDate: 2026-06-29T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/GENERATIVE-AI-1.jpeg'
+image: ../../assets/blog/GENERATIVE-AI-1.jpeg
 ---
 
-![Generativ AI Course](https://ask4trainings.com/wp-content/uploads/2026/06/GENERATIVE-AI-1.jpeg)
+![Generativ AI Course](../../assets/blog/GENERATIVE-AI-1.jpeg)
 
 ## 1.What is Generative AI?
 

@@ -1,14 +1,17 @@
 ---
-title: "SAP SD Career Guide 2026: Skills, Jobs, Certification &amp; Growth"
-description: "Starting a career in SAP SD can be a great way to develop practical skills in sales, distribution, order management, and business processes. The SAP SD Cours..."
-pubDate: 2026-09-16
-author: "admin"
+title: 'SAP SD Career Guide 2026: Skills, Jobs, Certification &amp; Growth'
+description: >-
+  Starting a career in SAP SD can be a great way to develop practical skills in
+  sales, distribution, order management, and business processes. The SAP SD
+  Cours...
+pubDate: 2026-09-16T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/sap-sd-28kb-1024x576.jpeg'
+image: ../../assets/blog/sap-sd-28kb-1024x576.jpeg
 ---
 
-![SAP SD Course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/sap-sd-28kb-1024x576.jpeg)
+![SAP SD Course in Hyderabad](../../assets/blog/sap-sd-28kb-1024x576.jpeg)
 
 ## 1\. SAP SD Training in Hyderabad for Beginners
 

@@ -1,14 +1,17 @@
 ---
-title: "SAP MM Online Training in Hyderabad | Master SAP MM Skills &amp; Get Certified"
-description: "SAP MM Online Training in Hyderabad is a practical learning program designed to help students and professionals understand SAP Material Management and its ro..."
-pubDate: 2026-09-11
-author: "admin"
+title: SAP MM Online Training in Hyderabad | Master SAP MM Skills &amp; Get Certified
+description: >-
+  SAP MM Online Training in Hyderabad is a practical learning program designed
+  to help students and professionals understand SAP Material Management and its
+  ro...
+pubDate: 2026-09-11T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png'
+image: ../../assets/blog/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png
 ---
 
-![SAP MM online training in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png)
+![SAP MM online training in Hyderabad](../../assets/blog/ChatGPT-Image-Sep-11-2026-02_48_56-PM-1024x576.png)
 
 ## 1\. What Is SAP MM Online Training?
 

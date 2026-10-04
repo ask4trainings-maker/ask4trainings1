@@ -1,14 +1,17 @@
 ---
-title: "MS Dynamics 365 F&O Online Course | Training with Real-Time Projects"
-description: "MS Dynamics 365 F&O Online Course is a practical learning program designed to help learners understand Microsoft Dynamics 365 Finance and Operations and its ..."
-pubDate: 2026-09-11
-author: "admin"
+title: MS Dynamics 365 F&O Online Course | Training with Real-Time Projects
+description: >-
+  MS Dynamics 365 F&O Online Course is a practical learning program designed to
+  help learners understand Microsoft Dynamics 365 Finance and Operations and its
+  ...
+pubDate: 2026-09-11T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/MS-Dynamics-FO--1024x576.jpeg'
+image: ../../assets/blog/MS-Dynamics-FO--1024x576.jpeg
 ---
 
-![MS Dynamics 365 F&O Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/MS-Dynamics-FO--1024x576.jpeg)
+![MS Dynamics 365 F&O Online Course](../../assets/blog/MS-Dynamics-FO--1024x576.jpeg)
 
 ## 1.What Is MS Dynamics 365 F&O Online Course?
 

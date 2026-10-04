@@ -1,14 +1,14 @@
 ---
-title: "Microsoft Dynamics 365 CRM Course: Skills, Jobs & Career Opportunities"
-description: "A Microsoft Dynamics 365 CRM Online Training in Hyderabad program helps learners build skills in customer relationship management, sales, customer service, m..."
-pubDate: 2026-09-11
-author: "admin"
+title: 'Microsoft Dynamics 365 CRM Course: Skills, Jobs & Career Opportunities'
+description: "A\_Microsoft Dynamics 365 CRM Online Training in Hyderabad\_program helps learners build skills in customer relationship management, sales, customer service, m..."
+pubDate: 2026-09-11T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Microsoft-dynamic-365-CRM-1024x576.jpeg'
+image: ../../assets/blog/Microsoft-dynamic-365-CRM-1024x576.jpeg
 ---
 
-![Microsoft Dynamics 365 CRM Online Training](https://ask4trainings.com/wp-content/uploads/2026/09/Microsoft-dynamic-365-CRM-1024x576.jpeg)
+![Microsoft Dynamics 365 CRM Online Training](../../assets/blog/Microsoft-dynamic-365-CRM-1024x576.jpeg)
 
 ## 1\. Microsoft Dynamics 365 CRM Course Overview
 

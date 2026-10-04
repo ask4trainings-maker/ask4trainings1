@@ -1,14 +1,17 @@
 ---
-title: "AWS DevOps Online Training | Learn with Real-Time Projects"
-description: "AWS DevOps combines cloud computing and DevOps practices to help organizations build, test, deploy, and manage applications efficiently. AWS DevOps Online Tr..."
-pubDate: 2026-09-16
-author: "admin"
+title: AWS DevOps Online Training | Learn with Real-Time Projects
+description: >-
+  AWS DevOps combines cloud computing and DevOps practices to help organizations
+  build, test, deploy, and manage applications efficiently. AWS DevOps Online
+  Tr...
+pubDate: 2026-09-16T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-16-2026-02_59_43-PM-28kb-1024x576.jpeg'
+image: ../../assets/blog/ChatGPT-Image-Sep-16-2026-02_59_43-PM-28kb-1024x576.jpeg
 ---
 
-![best aws devops online course](https://ask4trainings.com/wp-content/uploads/2026/09/ChatGPT-Image-Sep-16-2026-02_59_43-PM-28kb-1024x576.jpeg)
+![best aws devops online course](../../assets/blog/ChatGPT-Image-Sep-16-2026-02_59_43-PM-28kb-1024x576.jpeg)
 
 ## 1\. What Is AWS DevOps and Why Is It Important?
 

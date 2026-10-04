@@ -1,14 +1,18 @@
 ---
-title: "Guidewire Claim Centre Online Course – Complete Career Guide"
-description: "The Guidewire Claim Centre Online Course is designed for professionals who want to build a successful career in the insurance technology domain. This Guidewi..."
-pubDate: 2026-05-07
-author: "admin"
-tags: ["Guidewire Development"]
+title: Guidewire Claim Centre Online Course – Complete Career Guide
+description: >-
+  The Guidewire Claim Centre Online Course is designed for professionals who
+  want to build a successful career in the insurance technology domain. This
+  Guidewi...
+pubDate: 2026-05-07T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire Development
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewireclai.jpeg'
+image: ../../assets/blog/guidewireclai.jpeg
 ---
 
-![Guidewire Claim Centre Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewireclai.jpeg)
+![Guidewire Claim Centre Online Course](../../assets/blog/guidewireclai.jpeg)
 
 ## Introduction to Guidewire Claim Centre Online Course
 

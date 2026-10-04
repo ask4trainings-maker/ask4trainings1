@@ -1,14 +1,20 @@
 ---
-title: "Guidewire Policy Centre Online Course: Complete Guide for Beginners and Professionals"
-description: "Guidewire Policy Centre is a leading platform used by insurance companies to manage the complete policy lifecycle efficiently. A Guidewire Online Course is t..."
-pubDate: 2026-05-06
-author: "admin"
-tags: ["Guidewire Development"]
+title: >-
+  Guidewire Policy Centre Online Course: Complete Guide for Beginners and
+  Professionals
+description: >-
+  Guidewire Policy Centre is a leading platform used by insurance companies to
+  manage the complete policy lifecycle efficiently. A Guidewire Online Course is
+  t...
+pubDate: 2026-05-06T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire Development
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/GuidewirePolicyCente.jpeg'
+image: ../../assets/blog/GuidewirePolicyCente.jpeg
 ---
 
-![Guidewire Policy Centre Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/GuidewirePolicyCente.jpeg)
+![Guidewire Policy Centre Online Course](../../assets/blog/GuidewirePolicyCente.jpeg)
 
 ## 1\. Introduction to Guidewire Policy Centre
 

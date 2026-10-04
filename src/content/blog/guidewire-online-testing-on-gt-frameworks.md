@@ -1,14 +1,20 @@
 ---
-title: "Guidewire Online Testing On GT Framework – Complete Beginner to Advanced Guide (2026)"
-description: "The insurance industry is rapidly evolving with digital transformation, increasing the demand for efficient testing solutions like Guidewire Online Testing o..."
-pubDate: 2026-05-02
-author: "admin"
-tags: ["Guidewire Frameworks"]
+title: >-
+  Guidewire Online Testing On GT Framework – Complete Beginner to Advanced Guide
+  (2026)
+description: >-
+  The insurance industry is rapidly evolving with digital transformation,
+  increasing the demand for efficient testing solutions like Guidewire Online
+  Testing o...
+pubDate: 2026-05-02T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire Frameworks
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewireg.jpeg'
+image: ../../assets/blog/guidewireg.jpeg
 ---
 
-![Guidewire Online Testing On GT Frameworks](https://ask4trainings.com/wp-content/uploads/2026/05/guidewireg.jpeg)
+![Guidewire Online Testing On GT Frameworks](../../assets/blog/guidewireg.jpeg)
 
 ## 1.Introduction
 

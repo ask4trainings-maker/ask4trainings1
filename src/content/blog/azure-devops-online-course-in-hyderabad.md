@@ -1,14 +1,17 @@
 ---
-title: "Azure Devops Online Course Skills Certification and Career Opportunities"
-description: "Azure DevOps is a set of cloud-based development services that helps teams plan, develop, test, and deliver applications efficiently. It supports collaborati..."
-pubDate: 2026-09-16
-author: "admin"
+title: Azure Devops Online Course Skills Certification and Career Opportunities
+description: >-
+  Azure DevOps is a set of cloud-based development services that helps teams
+  plan, develop, test, and deliver applications efficiently. It supports
+  collaborati...
+pubDate: 2026-09-16T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Azure-devops-1024x577.jpeg'
+image: ../../assets/blog/Azure-devops-1024x577.jpeg
 ---
 
-![Azure devOps Online Course in Hyderabad](https://ask4trainings.com/wp-content/uploads/2026/09/Azure-devops-1024x577.jpeg)
+![Azure devOps Online Course in Hyderabad](../../assets/blog/Azure-devops-1024x577.jpeg)
 
 ## 1.What Is Azure DevOps and Why Is It Important?
 

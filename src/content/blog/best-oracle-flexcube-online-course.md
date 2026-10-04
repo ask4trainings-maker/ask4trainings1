@@ -1,14 +1,17 @@
 ---
-title: "Why Oracle Flexcube? Benefits &amp; Career Opportunities"
-description: "Oracle Flexcube is a leading core banking solution used by financial institutions worldwide to manage retail banking, corporate banking, lending, payments, t..."
-pubDate: 2026-06-25
-author: "admin"
+title: Why Oracle Flexcube? Benefits &amp; Career Opportunities
+description: >-
+  Oracle Flexcube is a leading core banking solution used by financial
+  institutions worldwide to manage retail banking, corporate banking, lending,
+  payments, t...
+pubDate: 2026-06-25T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun25202601_43_01P.jpeg'
+image: ../../assets/blog/ChatGPTImageJun25202601_43_01P.jpeg
 ---
 
-![oracle flexcube online course](https://ask4trainings.com/wp-content/uploads/2026/06/ChatGPTImageJun25202601_43_01P.jpeg)
+![oracle flexcube online course](../../assets/blog/ChatGPTImageJun25202601_43_01P.jpeg)
 
 ## 1.What is Oracle Flexcube? An Introduction
 

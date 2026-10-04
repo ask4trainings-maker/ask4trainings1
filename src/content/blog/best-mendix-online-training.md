@@ -1,14 +1,17 @@
 ---
-title: "Mendix Online Training with Certification and Career Opportunities"
-description: "Mendix Online Training is an excellent way for beginners and IT professionals to build practical skills in low-code application development. A structured Men..."
-pubDate: 2026-09-08
-author: "admin"
+title: Mendix Online Training with Certification and Career Opportunities
+description: >-
+  Mendix Online Training is an excellent way for beginners and IT professionals
+  to build practical skills in low-code application development. A structured
+  Men...
+pubDate: 2026-09-08T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Mendix-Online-Training-1024x576.jpeg'
+image: ../../assets/blog/Mendix-Online-Training-1024x576.jpeg
 ---
 
-![Mendix Online Training](https://ask4trainings.com/wp-content/uploads/2026/09/Mendix-Online-Training-1024x576.jpeg)
+![Mendix Online Training](../../assets/blog/Mendix-Online-Training-1024x576.jpeg)
 
 ## 1.Mendix Online Training for Beginners and Professionals
 

@@ -1,14 +1,17 @@
 ---
-title: "Talend Certification Course for Freshers & Professionals"
-description: "Talend is a leading open-source ETL and data integration platform that helps organizations collect, transform, and manage data from multiple sources efficien..."
-pubDate: 2026-07-04
-author: "admin"
+title: Talend Certification Course for Freshers & Professionals
+description: >-
+  Talend is a leading open-source ETL and data integration platform that helps
+  organizations collect, transform, and manage data from multiple sources
+  efficien...
+pubDate: 2026-07-04T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/07/Talend-Online-Course-1024x683.png'
+image: ../../assets/blog/Talend-Online-Course-1024x683.png
 ---
 
-![Talend Online Course](https://ask4trainings.com/wp-content/uploads/2026/07/Talend-Online-Course-1024x683.png)
+![Talend Online Course](../../assets/blog/Talend-Online-Course-1024x683.png)
 
 ## 1.What is Talend and Why Should You Learn It?
 

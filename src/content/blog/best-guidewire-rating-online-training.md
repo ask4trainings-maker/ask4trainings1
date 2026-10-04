@@ -1,14 +1,17 @@
 ---
-title: "Why Guidewire Rating Online Training Is Essential for Insurance Careers"
-description: "The Guidewire Rating Online Training program is designed to help aspiring insurance professionals and IT specialists gain practical knowledge of one of the m..."
-pubDate: 2026-08-01
-author: "admin"
+title: Why Guidewire Rating Online Training Is Essential for Insurance Careers
+description: >-
+  The Guidewire Rating Online Training program is designed to help aspiring
+  insurance professionals and IT specialists gain practical knowledge of one of
+  the m...
+pubDate: 2026-08-01T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Guidewire-Rating-Online-Training.jpeg'
+image: ../../assets/blog/Guidewire-Rating-Online-Training.jpeg
 ---
 
-![Guidewire Rating Online Training](https://ask4trainings.com/wp-content/uploads/2026/08/Guidewire-Rating-Online-Training.jpeg)
+![Guidewire Rating Online Training](../../assets/blog/Guidewire-Rating-Online-Training.jpeg)
 
 ## 1.Introduction to Guidewire Rating Online Training
 

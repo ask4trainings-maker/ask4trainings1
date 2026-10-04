@@ -1,14 +1,18 @@
 ---
-title: "Teamcenter PLM Online Training"
-description: "Teamcenter PLM Online Training is a powerful software solution developed by Siemens to manage product data, engineering processes, and business workflows thr..."
-pubDate: 2026-05-26
-author: "admin"
-tags: ["Teamcenter"]
+title: Teamcenter PLM Online Training
+description: >-
+  Teamcenter PLM Online Training is a powerful software solution developed by
+  Siemens to manage product data, engineering processes, and business workflows
+  thr...
+pubDate: 2026-05-26T00:00:00.000Z
+author: admin
+tags:
+  - Teamcenter
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/teamcente.jpeg'
+image: ../../assets/blog/teamcente.jpeg
 ---
 
-![Teamcenter PLM Online Training](https://ask4trainings.com/wp-content/uploads/2026/05/teamcente.jpeg)
+![Teamcenter PLM Online Training](../../assets/blog/teamcente.jpeg)
 
 ## What is Teamcenter PLM?
 

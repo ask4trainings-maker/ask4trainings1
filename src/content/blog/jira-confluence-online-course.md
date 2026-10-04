@@ -1,14 +1,19 @@
 ---
-title: "Jira Confluence Online Course | Agile Project Management Training with Real-Time Projects"
-description: "A Jira Confluence Online Course provides practical knowledge of Jira and Confluence for Agile project management, team collaboration, and project documentati..."
-pubDate: 2026-09-22
-author: "admin"
+title: >-
+  Jira Confluence Online Course | Agile Project Management Training with
+  Real-Time Projects
+description: >-
+  A Jira Confluence Online Course provides practical knowledge of Jira and
+  Confluence for Agile project management, team collaboration, and project
+  documentati...
+pubDate: 2026-09-22T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Jira-confluence-online-course-28kb-1024x576.jpeg'
+image: ../../assets/blog/Jira-confluence-online-course-28kb-1024x576.jpeg
 ---
 
-![Jira and Confluence Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/Jira-confluence-online-course-28kb-1024x576.jpeg)
+![Jira and Confluence Online Course](../../assets/blog/Jira-confluence-online-course-28kb-1024x576.jpeg)
 
 ## 1.**What Is Jira Confluence Online Course and How Does It Work?**
 

@@ -1,14 +1,18 @@
 ---
-title: "Kinaxis Online Course India – Build a Future in Supply Chain Excellence"
-description: "Kinaxis RapidResponse is a leading cloud-based solution used for modern supply chain planning and analytics. It enables organizations to manage demand planni..."
-pubDate: 2026-05-01
-author: "admin"
-tags: ["Kinaxis"]
+title: Kinaxis Online Course India – Build a Future in Supply Chain Excellence
+description: >-
+  Kinaxis RapidResponse is a leading cloud-based solution used for modern supply
+  chain planning and analytics. It enables organizations to manage demand
+  planni...
+pubDate: 2026-05-01T00:00:00.000Z
+author: admin
+tags:
+  - Kinaxis
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/kinaxis-1-Edited-1024x576.png'
+image: ../../assets/blog/kinaxis-1-Edited-1024x576.png
 ---
 
-![Kinaxis Online Course](https://ask4trainings.com/wp-content/uploads/2026/05/kinaxis-1-Edited-1024x576.png)
+![Kinaxis Online Course](../../assets/blog/kinaxis-1-Edited-1024x576.png)
 
 ## 1.What is Kinaxis RapidResponse?
 

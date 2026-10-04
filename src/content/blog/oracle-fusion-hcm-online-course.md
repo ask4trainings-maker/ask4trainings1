@@ -1,14 +1,17 @@
 ---
-title: "Why Oracle Fusion HCM Skills Are in High Demand in 2026"
-description: "Oracle Fusion HCM is a powerful cloud-based Human Capital Management solution that helps organizations streamline HR operations, talent management, payroll, ..."
-pubDate: 2026-06-25
-author: "admin"
+title: Why Oracle Fusion HCM Skills Are in High Demand in 2026
+description: >-
+  Oracle Fusion HCM is a powerful cloud-based Human Capital Management solution
+  that helps organizations streamline HR operations, talent management, payroll,
+  ...
+pubDate: 2026-06-25T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/Oracle-Fusion-HCM.jpeg'
+image: ../../assets/blog/Oracle-Fusion-HCM.jpeg
 ---
 
-![Oracle Fusion HCM online Course](https://ask4trainings.com/wp-content/uploads/2026/06/Oracle-Fusion-HCM.jpeg)
+![Oracle Fusion HCM online Course](../../assets/blog/Oracle-Fusion-HCM.jpeg)
 
 ## 1.Introduction to Oracle Fusion HCM
 

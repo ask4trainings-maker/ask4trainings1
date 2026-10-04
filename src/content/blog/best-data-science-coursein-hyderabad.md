@@ -1,14 +1,17 @@
 ---
-title: "Best Data Science Course in Hyderabad | 100% Placement Assistance"
-description: "Data Science is the process of collecting, analyzing, and interpreting data to uncover valuable insights that help businesses make smarter decisions. It comb..."
-pubDate: 2026-06-27
-author: "admin"
+title: Best Data Science Course in Hyderabad | 100% Placement Assistance
+description: >-
+  Data Science is the process of collecting, analyzing, and interpreting data to
+  uncover valuable insights that help businesses make smarter decisions. It
+  comb...
+pubDate: 2026-06-27T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/data-science-1.jpeg'
+image: ../../assets/blog/data-science-1.jpeg
 ---
 
-![Best data science course in hyderabad](https://ask4trainings.com/wp-content/uploads/2026/06/data-science-1.jpeg)
+![Best data science course in hyderabad](../../assets/blog/data-science-1.jpeg)
 
 ## 1.What is Data Science?
 

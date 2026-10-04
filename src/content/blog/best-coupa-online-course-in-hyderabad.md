@@ -1,14 +1,17 @@
 ---
-title: "Professional Coupa Online Course with Industry-Expert Trainers"
-description: "The demand for Coupa professionals continues to grow as organizations adopt cloud-based procurement and spend management solutions. Enrolling in a Coupa Onli..."
-pubDate: 2026-08-06
-author: "admin"
+title: Professional Coupa Online Course with Industry-Expert Trainers
+description: >-
+  The demand for Coupa professionals continues to grow as organizations adopt
+  cloud-based procurement and spend management solutions. Enrolling in a Coupa
+  Onli...
+pubDate: 2026-08-06T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/08/Coupa-online-course.jpeg'
+image: ../../assets/blog/Coupa-online-course.jpeg
 ---
 
-![Coupa Online Course](https://ask4trainings.com/wp-content/uploads/2026/08/Coupa-online-course.jpeg)
+![Coupa Online Course](../../assets/blog/Coupa-online-course.jpeg)
 
 ## 1.Why Choose a Professional Coupa Online Course in 2026?
 

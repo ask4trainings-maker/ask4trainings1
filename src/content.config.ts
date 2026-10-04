@@ -277,13 +277,13 @@ const courses = defineCollection({
 
 const blog = defineCollection({
   loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/blog" }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     pubDate: z.coerce.date(),
     author: z.string().default('Ask4Trainings Team'),
     tags: z.array(z.string()).default([]),
-    image: z.string().optional(),
+    image: image().optional(),
     draft: z.boolean().default(false),
     cta: z.object({
       enabled: z.boolean().default(true),

@@ -1,14 +1,17 @@
 ---
-title: "Top 10 Reasons to Learn Salesforce and Boost Your Career Growth"
-description: "Salesforce is the world's leading Customer Relationship Management (CRM) platform, helping businesses streamline sales, marketing, customer service, and busi..."
-pubDate: 2026-06-19
-author: "admin"
+title: Top 10 Reasons to Learn Salesforce and Boost Your Career Growth
+description: >-
+  Salesforce is the world's leading Customer Relationship Management (CRM)
+  platform, helping businesses streamline sales, marketing, customer service,
+  and busi...
+pubDate: 2026-06-19T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/06/salesforce-1.jpeg'
+image: ../../assets/blog/salesforce-1.jpeg
 ---
 
-![salesforce online course](https://ask4trainings.com/wp-content/uploads/2026/06/salesforce-1.jpeg)
+![salesforce online course](../../assets/blog/salesforce-1.jpeg)
 
 ## 1.Introduction to Salesforce
 

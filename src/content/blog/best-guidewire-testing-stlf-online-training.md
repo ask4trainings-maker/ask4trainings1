@@ -1,14 +1,17 @@
 ---
-title: "Guidewire Testing Software Testing Life Cycle Explained"
-description: "Guidewire Testing is a specialized software testing process used to validate Guidewire InsuranceSuite applications, including PolicyCenter, ClaimCenter, and ..."
-pubDate: 2026-07-10
-author: "admin"
+title: Guidewire Testing Software Testing Life Cycle Explained
+description: >-
+  Guidewire Testing is a specialized software testing process used to validate
+  Guidewire InsuranceSuite applications, including PolicyCenter, ClaimCenter,
+  and ...
+pubDate: 2026-07-10T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/07/guidewire-stlf.jpeg'
+image: ../../assets/blog/guidewire-stlf.jpeg
 ---
 
-![guidewire testing STLF online training](https://ask4trainings.com/wp-content/uploads/2026/07/guidewire-stlf.jpeg)
+![guidewire testing STLF online training](../../assets/blog/guidewire-stlf.jpeg)
 
 ## 1.Introduction to Guidewire Testing and STLC
 

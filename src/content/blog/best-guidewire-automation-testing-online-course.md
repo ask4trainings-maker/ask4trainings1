@@ -1,14 +1,14 @@
 ---
-title: "Learn Guidewire Automation Testing Online and Build Your Testing Career"
-description: ""
-pubDate: 2026-09-05
-author: "admin"
+title: Learn Guidewire Automation Testing Online and Build Your Testing Career
+description: ''
+pubDate: 2026-09-05T00:00:00.000Z
+author: admin
 tags: []
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/09/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg'
+image: ../../assets/blog/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg
 ---
 
-![Guidewire Automation Testing Online Course](https://ask4trainings.com/wp-content/uploads/2026/09/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg)
+![Guidewire Automation Testing Online Course](../../assets/blog/Guidewire-Automation-Testing-Online-Course-1024x576.jpeg)
 
 ## 1.Learn Guidewire Automation Testing Online: Complete Career Guide
 

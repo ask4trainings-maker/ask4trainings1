@@ -1,14 +1,20 @@
 ---
-title: "Complete Guide to Guidewire Testing Training: Course, Certification, QA & Real-Time Project Learning"
-description: "Choosing Guidewire Testing Training is a smart move for professionals aiming to build a strong career in the insurance IT domain. Guidewire is widely used by..."
-pubDate: 2026-04-25
-author: "admin"
-tags: ["Guidewire Testing"]
+title: >-
+  Complete Guide to Guidewire Testing Training: Course, Certification, QA &
+  Real-Time Project Learning
+description: >-
+  Choosing Guidewire Testing Training is a smart move for professionals aiming
+  to build a strong career in the insurance IT domain. Guidewire is widely used
+  by...
+pubDate: 2026-04-25T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire Testing
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/04/Guidewire-Training-Testing.jpeg'
+image: ../../assets/blog/Guidewire-Training-Testing.jpeg
 ---
 
-![Guidewire Testing](https://ask4trainings.com/wp-content/uploads/2026/04/Guidewire-Training-Testing.jpeg)
+![Guidewire Testing](../../assets/blog/Guidewire-Training-Testing.jpeg)
 
 ## 1\. Why Choose Guidewire Testing Training
 

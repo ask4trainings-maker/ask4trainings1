@@ -1,14 +1,18 @@
 ---
-title: "Guidewire Business Analyst Course – Complete Career Guide"
-description: "Guidewire Business Analyst Course is a specialized program designed to equip learners with the skills required to work on Guidewire applications within the i..."
-pubDate: 2026-05-04
-author: "admin"
-tags: ["Guidewire"]
+title: Guidewire Business Analyst Course – Complete Career Guide
+description: >-
+  Guidewire Business Analyst Course is a specialized program designed to equip
+  learners with the skills required to work on Guidewire applications within the
+  i...
+pubDate: 2026-05-04T00:00:00.000Z
+author: admin
+tags:
+  - Guidewire
 draft: false
-image: 'https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg'
+image: ../../assets/blog/guidewire-business-analyst.jpeg
 ---
 
-![Guidewire Business Analyst Course](https://ask4trainings.com/wp-content/uploads/2026/05/guidewire-business-analyst.jpeg)
+![Guidewire Business Analyst Course](../../assets/blog/guidewire-business-analyst.jpeg)
 
 ## 1\. What is Guidewire Business Analyst Course?
 
