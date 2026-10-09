@@ -7,7 +7,7 @@ import IconInstagram from './icons/IconInstagram.astro';
 import { getEntry } from 'astro:content';
 
 const footerEntry = await getEntry('settings', 'footer');
-const fd = footerEntry?.data || {};
+const fd: any = footerEntry?.data || {};
 const companySummary = fd.companySummary || 'Empowering IT professionals and graduates since 2012 with enterprise-grade cloud curriculum, real-time project mentorship, and global certification pathways.';
 const address = fd.contactInfo?.address || 'Plot No 32/27, Door No:402, Deeksha Hospital Building, Nizampet \'X\' Road, Sardar Patel Nagar, Hyderabad, Telangana - 500072';
 const phone = fd.contactInfo?.phone || '+91 80999 49888';

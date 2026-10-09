@@ -300,6 +300,7 @@ const settings = defineCollection({
   schema: z.object({
     phone: z.string().optional(),
     email: z.string().optional(),
+    enable_lms_portal: z.boolean().default(false),
     studentPortalUrl: z.string().optional(),
     whatsappNumber: z.string().optional(),
     enquireMessage: z.string().optional(),
