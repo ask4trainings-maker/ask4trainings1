@@ -482,6 +482,61 @@ document.addEventListener('keydown', (e) => {
     toggleMenu();
   }
 });
+
+// Smart Scroll Header Hand-off Handler
+const siteHeader = document.getElementById('main-site-header');
+if (siteHeader) {
+  let lastScrollY = window.scrollY;
+  let ticking = false;
+  const SCROLL_THRESHOLD = 8;
+  const TOP_HERO_BOUNDARY = 80;
+
+  const setHeaderState = (visible: boolean) => {
+    if (visible) {
+      siteHeader.classList.remove('-translate-y-full');
+      siteHeader.classList.add('translate-y-0');
+      const h = siteHeader.offsetHeight || 64;
+      document.documentElement.style.setProperty('--ribbon-dock-top', `${h}px`);
+    } else {
+      siteHeader.classList.add('-translate-y-full');
+      siteHeader.classList.remove('translate-y-0');
+      document.documentElement.style.setProperty('--ribbon-dock-top', '0px');
+    }
+  };
+
+  const onScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    // Keep header visible when mobile drawer is open or near page top
+    if (isMenuOpen || currentScrollY <= TOP_HERO_BOUNDARY) {
+      setHeaderState(true);
+      lastScrollY = currentScrollY;
+      ticking = false;
+      return;
+    }
+
+    const diff = currentScrollY - lastScrollY;
+
+    // Scrolling down -> hide header, allow docked ribbon to hit top-0
+    if (diff > SCROLL_THRESHOLD) {
+      setHeaderState(false);
+    }
+    // Scrolling up -> restore header
+    else if (diff < -SCROLL_THRESHOLD) {
+      setHeaderState(true);
+    }
+
+    lastScrollY = currentScrollY;
+    ticking = false;
+  };
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+}
 };
 if ('requestIdleCallback' in window) {
   requestIdleCallback(initHeader);
