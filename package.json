@@ -2,6 +2,14 @@
   "name": "ask4trainings",
   "type": "module",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ask4trainings-maker/ask4trainings1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ask4trainings-maker/ask4trainings1/issues"
+  },
+  "homepage": "https://github.com/ask4trainings-maker/ask4trainings1#readme",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

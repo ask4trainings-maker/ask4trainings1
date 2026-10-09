@@ -1,10 +1,12 @@
 backend:
   name: github
-  repo: rahulabhishek5/ask4trainings
+  repo: ask4trainings-maker/ask4trainings1
   branch: main
   base_url: https://ask4trainings.pages.dev
   auth_endpoint: /api/auth
 
+site_url: https://ask4trainings.com
+display_url: https://ask4trainings.com
 publish_mode: editorial_workflow
 logo_url: /logo.svg
 local_backend: true
