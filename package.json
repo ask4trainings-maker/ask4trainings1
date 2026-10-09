@@ -13,6 +13,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "check": "astro check",
     "cms:proxy": "npx decap-server",
     "dev:cms": "concurrently \"npx decap-server\" \"astro dev\"",
     "build": "astro check && astro build && pagefind --site dist && node scripts/audit-internal-links.mjs && node scripts/audit-trailing-slashes.mjs",
