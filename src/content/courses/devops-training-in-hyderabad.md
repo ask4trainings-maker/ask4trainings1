@@ -59,7 +59,7 @@ benefits:
       - Job Readiness
       - Skill Enhancement
   - title: Certification
-    description: Gain practical DevOps knowledge at DevOps Training Institute Ameerpet with a professional DevOps Online Certification Program for career growth.
+    description: Gain practical DevOps knowledge at DevOps Training Institute Sardar Patel Nagar, Hyderabad with a professional DevOps Online Certification Program for career growth.
     points:
       - Expert Trainers
       - Certification Support

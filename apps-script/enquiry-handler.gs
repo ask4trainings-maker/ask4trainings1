@@ -47,7 +47,7 @@ function doPost(e) {
     // Normalize phone for WhatsApp API (digits only)
     const cleanPhone = String(phone).replace(/[^0-9]/g, '');
     const waPhone = cleanPhone.length === 10 ? '91' + cleanPhone : cleanPhone;
-    const waLink = `https://wa.me/${waPhone}?text=${encodeURIComponent(`Hi ${name}, thank you for contacting ${WEBSITE_NAME} regarding${course} training. How can we help you today?`)}`;
+    const waLink = `https://wa.me/${waPhone}?text=${encodeURIComponent(`Hi ${name}! Thanks for messaging ${WEBSITE_NAME} about${course}.\nHow can we help you today? Feel free to ask about our batches, Timings, or course curriculum!`)}`;
 
     let sheetName = isTrainer ? 'Trainer-Applications' : 'Website-Enquiry';
     let headers = isTrainer

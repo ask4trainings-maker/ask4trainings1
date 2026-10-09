@@ -2,7 +2,7 @@
   "livePath": "Student Registration form > Training Mode dropdown; all enquiry forms",
   "trainingModes": [
     { "mode": "Live Online" },
-    { "mode": "Classroom (Ameerpet)" },
+    { "mode": "Classroom (Sardar Patel Nagar, Hyderabad)" },
     { "mode": "Weekend Fast-Track" },
     { "mode": "Self-Paced" }
   ]
