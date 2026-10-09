@@ -95,9 +95,9 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
       </div>
 
       <!-- Right Column: Media (YouTube or Fallback Image) -->
-      <div class="lg:col-span-5 xl:col-span-4 flex flex-col w-full">
+      <div class="lg:col-span-5 xl:col-span-4 flex flex-col w-full max-w-full min-w-0">
         {embedUrl ? (
-          <div class="w-full aspect-video bg-slate-900 border border-slate-200 rounded-2xl overflow-hidden relative shadow-xl lg:rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div class="w-full max-w-full aspect-video bg-slate-900 border border-slate-200 rounded-2xl overflow-hidden relative shadow-xl lg:rotate-1 hover:rotate-0 transition-transform duration-300">
             <iframe 
               src={embedUrl}
               class="absolute inset-0 w-full h-full border-0"
@@ -107,20 +107,20 @@ const embedUrl = getYoutubeEmbedUrl(videoUrl);
             ></iframe>
           </div>
         ) : (
-          <div class="w-full aspect-video bg-slate-900 border border-slate-200 rounded-2xl overflow-hidden relative shadow-xl flex items-center justify-center lg:rotate-1 hover:rotate-0 transition-transform duration-300">
+          <div class="w-full max-w-full aspect-video bg-slate-900 border border-slate-200 rounded-2xl overflow-hidden relative shadow-xl flex items-center justify-center lg:rotate-1 hover:rotate-0 transition-transform duration-300">
             <span class="text-white/50 text-sm">Video Player Placeholder</span>
           </div>
         )}
 
-        <div class="mt-4 w-full">
+        <div class="mt-4 w-full max-w-full">
           {courseImage ? (
-            <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm aspect-video relative group">
+            <div class="rounded-2xl overflow-hidden border border-slate-200 bg-slate-50 shadow-sm aspect-video relative group w-full max-w-full">
               <img 
                 src={courseImage} 
                 alt={`${title} curriculum preview`} 
                 width="1280"
                 height="720"
-                class="w-full h-full object-cover" 
+                class="max-w-full w-full h-auto object-cover rounded-2xl" 
                 loading="lazy"
               />
             </div>

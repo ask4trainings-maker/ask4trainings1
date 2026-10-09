@@ -5,14 +5,14 @@ interface Props {
 const { jobRoles = [] } = Astro.props;
 ---
 {jobRoles.length > 0 && (
-  <section id="job-roles" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <section id="job-roles" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full max-w-full overflow-hidden">
     <div class="mb-8">
       <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Target Job Roles</h2>
       <p class="text-slate-600 text-sm mt-1">Prepare for these high-demand positions in the industry.</p>
     </div>
 
     <!-- MOBILE: Side Scrollable Cards -->
-    <div class="flex lg:hidden overflow-x-auto gap-4 py-8 -my-8 -mx-4 px-5 snap-x snap-mandatory no-scrollbar mobile-fade-mask" data-swipe-container>
+    <div class="flex lg:hidden overflow-x-auto gap-4 py-8 -my-8 -mx-4 px-4 snap-x snap-mandatory no-scrollbar mobile-fade-mask" data-swipe-container>
       {jobRoles.map((item) => (
         <div class="swipe-card shrink-0 w-[78vw] sm:w-[85%] snap-start rounded-2xl border border-slate-200/90 bg-white p-5 sm:p-6 shadow-xs min-h-[260px] flex flex-col justify-between">
           <div>

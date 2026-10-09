@@ -11,7 +11,7 @@ interface Props {
 const { modules = [], courseTitle } = Astro.props;
 ---
 {modules && modules.length > 0 ? (
-  <section id="curriculum" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14" data-curriculum-container>
+  <section id="curriculum" class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-14" data-curriculum-container>
     <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
       <div>
         <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">Course Curriculum</h2>
@@ -25,17 +25,17 @@ const { modules = [], courseTitle } = Astro.props;
       </a>
     </div>
 
-    <div class="space-y-3.5">
+    <div class="space-y-3.5 w-full max-w-full">
       {modules.map((mod, idx) => (
-        <div class={`group rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all hover:border-emerald-500/50 hover:shadow-sm ${idx === 0 ? 'is-open' : ''}`}>
+        <div class={`group rounded-2xl border border-slate-200/90 bg-white shadow-xs transition-all hover:border-emerald-500/50 hover:shadow-sm w-full max-w-full break-words min-w-0 ${idx === 0 ? 'is-open' : ''}`}>
           <div class="flex cursor-pointer items-center justify-between font-semibold text-slate-900 select-none text-sm sm:text-base p-5">
-            <div class="flex items-center gap-3.5">
+            <div class="flex items-center gap-3.5 min-w-0">
               <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">
                 {idx + 1}
               </span>
-              <span class="text-slate-900 font-bold">{mod.title}</span>
+              <span class="text-slate-900 font-bold break-words min-w-0">{mod.title}</span>
             </div>
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 shrink-0">
               <span class="hidden sm:inline-block text-xs font-medium text-slate-400 bg-slate-100 px-2.5 py-1 rounded-full">
                 {mod.duration || `${mod.topics.length} topics`}
               </span>
@@ -49,11 +49,11 @@ const { modules = [], courseTitle } = Astro.props;
             <div class="overflow-hidden">
               <div class="px-5 pb-5 pt-0">
                 {mod.topics && mod.topics.length > 0 && (
-                  <ul class="pt-4 border-t border-slate-100 space-y-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed">
+                  <ul class="pt-4 border-t border-slate-100 space-y-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed max-w-full break-words">
                     {mod.topics.map((topic) => (
-                      <li class="flex items-start gap-2.5">
-                        <span class="text-emerald-500 font-bold">✓</span>
-                        <span>{topic}</span>
+                      <li class="flex items-start gap-2.5 min-w-0">
+                        <span class="text-emerald-500 font-bold shrink-0">✓</span>
+                        <span class="break-words min-w-0">{topic}</span>
                       </li>
                     ))}
                   </ul>
@@ -66,7 +66,7 @@ const { modules = [], courseTitle } = Astro.props;
     </div>
   </section>
 ) : (
-  <section id="curriculum" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+  <section id="curriculum" class="w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-14">
     <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center shadow-sm">
       <h2 class="text-xl font-bold text-slate-900 mb-2">Curriculum Under Review</h2>
       <p class="text-slate-600 text-sm mb-6 max-w-md mx-auto">Full syllabus available upon request. Enquire now to get the complete curriculum for the upcoming cohort.</p>

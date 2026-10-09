@@ -79,23 +79,23 @@ const schemaGraph = {
   <CourseNavRibbon />
 
   <!-- Section 2: Course Overview & Curriculum (Shared Grid Container) -->
-  <section class="bg-slate-50/70 py-14 border-b border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative">
+  <section class="bg-slate-50/70 py-14 border-b border-slate-200/60 w-full max-w-full">
+    <div class="max-w-7xl mx-auto px-4 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative w-full min-w-0">
       <!-- Left Column: Overview + Curriculum -->
-      <div class="lg:col-span-7 xl:col-span-8 space-y-12">
-        <div id="overview" class="scroll-mt-28">
+      <div class="lg:col-span-7 xl:col-span-8 space-y-12 w-full max-w-full min-w-0">
+        <div id="overview" class="scroll-mt-28 w-full max-w-full min-w-0">
           <CourseOverview title={data.title} overview={data.overview}>
             <slot />
           </CourseOverview>
         </div>
-        <div id="curriculum" class="scroll-mt-28">
+        <div id="curriculum" class="scroll-mt-28 w-full max-w-full min-w-0">
           <CourseCurriculum modules={data.modules} courseTitle={data.title} />
         </div>
       </div>
 
       <!-- Right Column: Sticky Lead Workbench -->
-      <div class="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-24 z-20 self-start transition-none">
+      <div class="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-24 z-20 self-start transition-none w-full max-w-full min-w-0">
         <CourseSidebar 
           courseName={data.title}
           duration={data.duration}

@@ -10,7 +10,7 @@ if (!overview && !Astro.slots.has('default')) {
   return null;
 }
 ---
-<div class="prose prose-slate prose-emerald max-w-none text-slate-600">
+<div class="prose prose-slate prose-emerald max-w-none text-slate-600 w-full max-w-full break-words min-w-0">
   {title && <h2 class="text-2xl font-bold text-slate-900 mb-6 mt-0">Overview of {title}</h2>}
   {overview && (
     <div class="space-y-4 text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed mb-6">
