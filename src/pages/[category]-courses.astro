@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import CategoryHub from '../components/CategoryHub.astro';
+
+export async function getStaticPaths() {
+  const allCourses = await getCollection('courses', ({ data }) => !data.draft);
+
+  // Map the 10 category tracks that have the "-courses" suffix in XML Page-Sitemap.xml
+  const tracks = [
+    { categoryParam: 'guidewire', categoryKey: 'guidewire', slug: 'guidewire-courses' },
+    { categoryParam: 'siemens', categoryKey: 'siemens', slug: 'siemens-courses' },
+    { categoryParam: 'new', categoryKey: 'new-courses', slug: 'new-courses' },
+    { categoryParam: 'oracle', categoryKey: 'oracle', slug: 'oracle-courses' },
+    { categoryParam: 'devops', categoryKey: 'devops', slug: 'devops-courses' },
+    { categoryParam: 'development', categoryKey: 'development', slug: 'development-courses' },
+    { categoryParam: 'microsoft-dynamics-365', categoryKey: 'ms-d365', slug: 'microsoft-dynamics-365-courses' },
+    { categoryParam: 'sap', categoryKey: 'sap', slug: 'sap-courses' },
+    { categoryParam: 'trending', categoryKey: 'trending-courses', slug: 'trending-courses' },
+    { categoryParam: 'other-tools', categoryKey: 'other-tools', slug: 'other-tools-courses' },
+  ];
+
+  return tracks.map(track => {
+    const courses = allCourses.filter(c => c.data.category === track.categoryKey);
+    return {
+      params: { category: track.categoryParam },
+      props: {
+        categoryKey: track.categoryKey,
+        categorySlug: track.slug,
+        courses,
+      },
+    };
+  });
+}
+
+const { categoryKey, categorySlug, courses } = Astro.props;
+---
+
+<CategoryHub 
+  categoryKey={categoryKey}
+  categorySlug={categorySlug}
+  courses={courses}
+/>

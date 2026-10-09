@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import CategoryHub from '../components/CategoryHub.astro';
+
+const allCourses = await getCollection('courses', ({ data }) => !data.draft);
+const courses = allCourses.filter(c => c.data.category === 'cloud-computing');
+---
+
+<CategoryHub 
+  categoryKey="cloud-computing"
+  categorySlug="cloud-computing"
+  courses={courses}
+/>
