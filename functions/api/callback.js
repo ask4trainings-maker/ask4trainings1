@@ -1,10 +1,37 @@
+const ALLOWED_ORIGINS = [
+  "https://ask4trainings.com",
+  "https://www.ask4trainings.com",
+  "http://localhost:4321",
+  "http://127.0.0.1:4321"
+];
+
+function getCorsHeaders(request) {
+  const origin = request.headers.get("Origin");
+  const corsOrigin = origin && ALLOWED_ORIGINS.includes(origin) ? origin : "https://ask4trainings.com";
+  return {
+    "Access-Control-Allow-Origin": corsOrigin,
+    "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type, Authorization"
+  };
+}
+
+export async function onRequestOptions(context) {
+  return new Response(null, {
+    status: 204,
+    headers: getCorsHeaders(context.request)
+  });
+}
+
 export async function onRequestGet(context) {
   const { request, env } = context;
   const url = new URL(request.url);
   const code = url.searchParams.get("code");
 
   if (!code) {
-    return new Response("Missing authorization code", { status: 400 });
+    return new Response("Missing authorization code", {
+      status: 400,
+      headers: getCorsHeaders(request)
+    });
   }
 
   try {
@@ -25,7 +52,10 @@ export async function onRequestGet(context) {
     const data = await tokenResponse.json();
 
     if (data.error || !data.access_token) {
-      return new Response(`OAuth Error: ${data.error_description || data.error}`, { status: 400 });
+      return new Response(`OAuth Error: ${data.error_description || data.error}`, {
+        status: 400,
+        headers: getCorsHeaders(request)
+      });
     }
 
     let targetRepo = env.GITHUB_REPO;
@@ -44,7 +74,10 @@ export async function onRequestGet(context) {
     }
 
     if (!targetRepo) {
-      return new Response("Configuration Error: Target repository not found in env or config.", { status: 500 });
+      return new Response("Configuration Error: Target repository not found in env or config.", {
+        status: 500,
+        headers: getCorsHeaders(request)
+      });
     }
 
     const repoResponse = await fetch(`https://api.github.com/repos/${targetRepo}`, {
@@ -56,7 +89,10 @@ export async function onRequestGet(context) {
     });
 
     if (!repoResponse.ok) {
-      return new Response("Access Denied: Unable to verify repository permissions.", { status: 403 });
+      return new Response("Access Denied: Unable to verify repository permissions.", {
+        status: 403,
+        headers: getCorsHeaders(request)
+      });
     }
 
     const repoData = await repoResponse.json();
@@ -68,7 +104,10 @@ export async function onRequestGet(context) {
     if (!hasWriteAccess) {
       return new Response("Access Denied: You must be an authorized collaborator or repository owner to access this CMS.", {
         status: 403,
-        headers: { "Content-Type": "text/plain" }
+        headers: {
+          "Content-Type": "text/plain",
+          ...getCorsHeaders(request)
+        }
       });
     }
 
@@ -79,19 +118,34 @@ export async function onRequestGet(context) {
         <body>
           <script>
             (function() {
+              const allowedOrigins = [
+                "https://ask4trainings.com",
+                "https://www.ask4trainings.com",
+                "http://localhost:4321",
+                "http://127.0.0.1:4321"
+              ];
               function receiveMessage(e) {
-                window.opener.postMessage(
-                  'authorization:github:success:${JSON.stringify({
-                    token: data.access_token,
-                    provider: "github"
-                  })}',
-                  e.origin
-                );
-                window.removeEventListener("message", receiveMessage, false);
-                window.close();
+                if (!allowedOrigins.includes(e.origin)) return;
+                if (window.opener) {
+                  window.opener.postMessage(
+                    'authorization:github:success:${JSON.stringify({
+                      token: data.access_token,
+                      provider: "github"
+                    })}',
+                    e.origin
+                  );
+                  window.removeEventListener("message", receiveMessage, false);
+                  window.close();
+                } else {
+                  window.location.href = "https://ask4trainings.com/admin/";
+                }
               }
-              window.addEventListener("message", receiveMessage, false);
-              window.opener.postMessage("authorizing:github", "*");
+              if (window.opener) {
+                window.addEventListener("message", receiveMessage, false);
+                window.opener.postMessage("authorizing:github", "*");
+              } else {
+                window.location.href = "https://ask4trainings.com/admin/";
+              }
             })();
           </script>
         </body>
@@ -99,9 +153,15 @@ export async function onRequestGet(context) {
     `;
 
     return new Response(content, {
-      headers: { "Content-Type": "text/html;charset=UTF-8" }
+      headers: {
+        "Content-Type": "text/html;charset=UTF-8",
+        ...getCorsHeaders(request)
+      }
     });
   } catch (err) {
-    return new Response(`Internal Server Error: ${err.message}`, { status: 500 });
+    return new Response(`Internal Server Error: ${err.message}`, {
+      status: 500,
+      headers: getCorsHeaders(request)
+    });
   }
 }

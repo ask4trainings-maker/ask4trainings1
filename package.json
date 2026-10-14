@@ -9,7 +9,7 @@
   "bugs": {
     "url": "https://github.com/ask4trainings-maker/ask4trainings1/issues"
   },
-  "homepage": "https://github.com/ask4trainings-maker/ask4trainings1#readme",
+  "homepage": "https://ask4trainings.com",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

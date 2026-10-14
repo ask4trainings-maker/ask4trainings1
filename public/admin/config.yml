@@ -2,7 +2,7 @@ backend:
   name: github
   repo: ask4trainings-maker/ask4trainings1
   branch: main
-  base_url: https://ask4trainings.pages.dev
+  base_url: https://ask4trainings.com
   auth_endpoint: /api/auth
 
 site_url: https://ask4trainings.com
